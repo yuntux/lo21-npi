@@ -3,20 +3,18 @@
 
 #include <iostream>
 
-class TypeDonnee{
 
-};
-
-class Complexe : public TypeDonnee{
+class Complexe {
     float _reelle;
     float _imaginaire;
 
 public:
     Complexe(float r=0, float i=0):_reelle(r), _imaginaire(i){}
+    virtual void Afficher(){ std::cout<<_reelle<<_imaginaire<<"\n";}
 };
 
 
-class Rationnel : public TypeDonnee{
+class Rationnel {
     int _numerateur;
     int _denominateur;
 

@@ -15,6 +15,8 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+    void num0Clicked();
+
 private:
     Ui::MainWindow *ui;
 };
