@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mainwindow.h'
 **
-** Created: Sat May 19 15:57:05 2012
+** Created: Sat May 19 21:46:49 2012
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.4)
 **
 ** WARNING! All changes made in this file will be lost!
@@ -23,7 +23,7 @@ static const uint qt_meta_data_MainWindow[] = {
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-      19,   14, // methods
+      21,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -50,6 +50,8 @@ static const uint qt_meta_data_MainWindow[] = {
      263,   11,   11,   11, 0x0a,
      280,   11,   11,   11, 0x0a,
      310,   11,   11,   11, 0x0a,
+     341,   11,   11,   11, 0x0a,
+     369,   11,   11,   11, 0x0a,
 
        0        // eod
 };
@@ -64,6 +66,8 @@ static const char qt_meta_stringdata_MainWindow[] = {
     "MULTIPLIERClicked()\0DIVISERClicked()\0"
     "_clavierBasicStateChange(int)\0"
     "_clavierAvanceStateChange(int)\0"
+    "_modComplexeONClicked(bool)\0"
+    "_modComplexeOFFClicked(bool)\0"
 };
 
 const QMetaObject MainWindow::staticMetaObject = {
@@ -114,9 +118,11 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         case 16: DIVISERClicked(); break;
         case 17: _clavierBasicStateChange((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 18: _clavierAvanceStateChange((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 19: _modComplexeONClicked((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 20: _modComplexeOFFClicked((*reinterpret_cast< bool(*)>(_a[1]))); break;
         default: ;
         }
-        _id -= 19;
+        _id -= 21;
     }
     return _id;
 }

@@ -4,10 +4,11 @@
 #include "fonctions.h"
 
 //qt example calculator
-//design pattern command
+//DESIGN PATTERN : command
 //trois Clases : Complexe, Rationnel, MainWindow
 //math.h
-//Gérer les exeptions => exeptions standards
+//Gérer les erreurs => exeptions standards
+//Sauvegarde/Chargmenet de la calculatrice
 
 //=> OnClik sur MODE_COMPLEXE on bascule les piles en complexes en vidant tous les nombres en mémoire
 

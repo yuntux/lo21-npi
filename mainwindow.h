@@ -2,7 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QStack>
+#include "TypeDonnee.h"
 
+enum MesureAngle { degre, radian};
+enum TypeConstante { entier, reel, rationnel};
 namespace Ui {
     class MainWindow;
 }
@@ -10,6 +14,14 @@ namespace Ui {
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
+
+private:
+    enum MesureAngle _modAngles;
+    enum TypeConstante _modConstante;
+    bool _modComplexe;
+    QStack<std::string> _pileAffichage;
+    QStack<float> _pileStockageReelle;
+    QStack<Complexe> _pileStockageComplexe; //ATTENTION : vider la pile float lors du passage en  mode complexes
 
 public:
     explicit MainWindow(QWidget *parent = 0);
@@ -35,6 +47,8 @@ public slots:
    void DIVISERClicked();
    void _clavierBasicStateChange(int);
    void _clavierAvanceStateChange(int);
+   void _modComplexeONClicked(bool);
+   void _modComplexeOFFClicked(bool);
 
 private:
     Ui::MainWindow *ui;
