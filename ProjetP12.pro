@@ -6,7 +6,9 @@ QT += core \
 TARGET = ProjetP12
 TEMPLATE = app
 SOURCES += main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    fonctions.cpp
 HEADERS += mainwindow.h \
-    TypeDonnee.h
+    TypeDonnee.h \
+    fonctions.h
 FORMS += mainwindow.ui

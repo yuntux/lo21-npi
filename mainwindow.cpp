@@ -60,6 +60,7 @@ void MainWindow::_clavierAvanceStateChange(int cochee){
 
 void MainWindow::num0Clicked(){
     ui->inputLine->setText(ui->inputLine->text()+"0");
+
 }
 
 void MainWindow::num1Clicked(){

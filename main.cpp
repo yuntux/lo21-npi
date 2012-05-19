@@ -1,6 +1,7 @@
 #include <QtGui/QApplication>
 #include "mainwindow.h"
 #include "TypeDonnee.h"
+#include "fonctions.h"
 
 //qt example calculator
 //design pattern command
