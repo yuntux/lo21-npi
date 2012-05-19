@@ -33,6 +33,8 @@ public slots:
    void SOUSTRAIREClicked();
    void MULTIPLIERClicked();
    void DIVISERClicked();
+   void _clavierBasicStateChange(int);
+   void _clavierAvanceStateChange(int);
 
 private:
     Ui::MainWindow *ui;

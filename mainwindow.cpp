@@ -12,9 +12,9 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-    enum MesureAngle _modAngles;
-    enum TypeConstante _modConstante;
-    bool _modComplexe;
+    enum MesureAngle _modAngles = degre;
+    enum TypeConstante _modConstante = entier;
+    bool _modComplexe = false;
     QStack<std::string> _pileAffichage;
     QStack<float> _pileStockageReelle;
     QStack<Complexe> _pileStockageComplexe; //ATTENTION : vider la pile float lors du passage en  mode complexes
@@ -38,6 +38,24 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->MULTIPLIER, SIGNAL(clicked()), this, SLOT(MULTIPLIERClicked()));
     connect(ui->DIVISER, SIGNAL(clicked()), this, SLOT(FACTORIELClicked()));
 
+    connect(ui->_clavierBasic, SIGNAL(stateChanged(int)), this, SLOT(_clavierBasicStateChange(int)));
+    connect(ui->_clavierAvance, SIGNAL(stateChanged(int)), this, SLOT(_clavierAvanceStateChange(int)));
+}
+
+void MainWindow::_clavierBasicStateChange(int cochee){
+    if(cochee==0){ //a été décochée
+        ui->_modComplexeOFF->hide();
+    } else if (cochee==2) { //a été cochée
+        ui->_modComplexeOFF->show();
+    }
+}
+
+void MainWindow::_clavierAvanceStateChange(int cochee){
+    if(cochee==0){ //a été décochée
+        ui->inputLine->setText(ui->inputLine->text()+"0");
+    } else if (cochee==2) { //a été cochée
+        ui->inputLine->setText(ui->inputLine->text()+"1");
+    }
 }
 
 void MainWindow::num0Clicked(){
