@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Fri May 18 18:28:32 2012
+** Created: Sat May 19 14:49:17 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -55,11 +55,11 @@ public:
     QPushButton *pushButton_29;
     QPushButton *pushButton_30;
     QPushButton *pushButton_31;
-    QPushButton *pushButton_32;
-    QPushButton *pushButton;
-    QPushButton *pushButton_17;
-    QPushButton *pushButton_18;
-    QPushButton *pushButton_19;
+    QPushButton *FACTORIEL;
+    QPushButton *DIVISER;
+    QPushButton *MULTIPLIER;
+    QPushButton *SOUSTRAIRE;
+    QPushButton *ADDITIONNER;
     QGridLayout *gridLayout_3;
     QPushButton *num7;
     QPushButton *num8;
@@ -115,6 +115,7 @@ public:
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         inputLine = new QLineEdit(centralWidget);
         inputLine->setObjectName(QString::fromUtf8("inputLine"));
+        inputLine->setEnabled(false);
 
         gridLayout->addWidget(inputLine, 2, 0, 1, 1);
 
@@ -196,30 +197,30 @@ public:
 
         gridLayout_4->addWidget(pushButton_31, 2, 4, 1, 1);
 
-        pushButton_32 = new QPushButton(centralWidget);
-        pushButton_32->setObjectName(QString::fromUtf8("pushButton_32"));
+        FACTORIEL = new QPushButton(centralWidget);
+        FACTORIEL->setObjectName(QString::fromUtf8("FACTORIEL"));
 
-        gridLayout_4->addWidget(pushButton_32, 3, 0, 1, 1);
+        gridLayout_4->addWidget(FACTORIEL, 3, 0, 1, 1);
 
-        pushButton = new QPushButton(centralWidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        DIVISER = new QPushButton(centralWidget);
+        DIVISER->setObjectName(QString::fromUtf8("DIVISER"));
 
-        gridLayout_4->addWidget(pushButton, 3, 2, 1, 1);
+        gridLayout_4->addWidget(DIVISER, 3, 2, 1, 1);
 
-        pushButton_17 = new QPushButton(centralWidget);
-        pushButton_17->setObjectName(QString::fromUtf8("pushButton_17"));
+        MULTIPLIER = new QPushButton(centralWidget);
+        MULTIPLIER->setObjectName(QString::fromUtf8("MULTIPLIER"));
 
-        gridLayout_4->addWidget(pushButton_17, 3, 1, 1, 1);
+        gridLayout_4->addWidget(MULTIPLIER, 3, 1, 1, 1);
 
-        pushButton_18 = new QPushButton(centralWidget);
-        pushButton_18->setObjectName(QString::fromUtf8("pushButton_18"));
+        SOUSTRAIRE = new QPushButton(centralWidget);
+        SOUSTRAIRE->setObjectName(QString::fromUtf8("SOUSTRAIRE"));
 
-        gridLayout_4->addWidget(pushButton_18, 3, 3, 1, 1);
+        gridLayout_4->addWidget(SOUSTRAIRE, 3, 3, 1, 1);
 
-        pushButton_19 = new QPushButton(centralWidget);
-        pushButton_19->setObjectName(QString::fromUtf8("pushButton_19"));
+        ADDITIONNER = new QPushButton(centralWidget);
+        ADDITIONNER->setObjectName(QString::fromUtf8("ADDITIONNER"));
 
-        gridLayout_4->addWidget(pushButton_19, 3, 4, 1, 1);
+        gridLayout_4->addWidget(ADDITIONNER, 3, 4, 1, 1);
 
 
         gridLayout->addLayout(gridLayout_4, 3, 0, 1, 1);
@@ -443,11 +444,16 @@ public:
         pushButton_29->setText(QApplication::translate("MainWindow", "TANH", 0, QApplication::UnicodeUTF8));
         pushButton_30->setText(QApplication::translate("MainWindow", "INV", 0, QApplication::UnicodeUTF8));
         pushButton_31->setText(QApplication::translate("MainWindow", "CUBE", 0, QApplication::UnicodeUTF8));
-        pushButton_32->setText(QApplication::translate("MainWindow", "!", 0, QApplication::UnicodeUTF8));
-        pushButton->setText(QApplication::translate("MainWindow", "/", 0, QApplication::UnicodeUTF8));
-        pushButton_17->setText(QApplication::translate("MainWindow", "*", 0, QApplication::UnicodeUTF8));
-        pushButton_18->setText(QApplication::translate("MainWindow", "-", 0, QApplication::UnicodeUTF8));
-        pushButton_19->setText(QApplication::translate("MainWindow", "+", 0, QApplication::UnicodeUTF8));
+        FACTORIEL->setText(QApplication::translate("MainWindow", "!", 0, QApplication::UnicodeUTF8));
+        FACTORIEL->setShortcut(QApplication::translate("MainWindow", "!", 0, QApplication::UnicodeUTF8));
+        DIVISER->setText(QApplication::translate("MainWindow", "/", 0, QApplication::UnicodeUTF8));
+        DIVISER->setShortcut(QApplication::translate("MainWindow", "/", 0, QApplication::UnicodeUTF8));
+        MULTIPLIER->setText(QApplication::translate("MainWindow", "*", 0, QApplication::UnicodeUTF8));
+        MULTIPLIER->setShortcut(QApplication::translate("MainWindow", "*", 0, QApplication::UnicodeUTF8));
+        SOUSTRAIRE->setText(QApplication::translate("MainWindow", "-", 0, QApplication::UnicodeUTF8));
+        SOUSTRAIRE->setShortcut(QApplication::translate("MainWindow", "-", 0, QApplication::UnicodeUTF8));
+        ADDITIONNER->setText(QApplication::translate("MainWindow", "+", 0, QApplication::UnicodeUTF8));
+        ADDITIONNER->setShortcut(QApplication::translate("MainWindow", "+", 0, QApplication::UnicodeUTF8));
         num7->setText(QApplication::translate("MainWindow", "7", 0, QApplication::UnicodeUTF8));
         num7->setShortcut(QApplication::translate("MainWindow", "7", 0, QApplication::UnicodeUTF8));
         num8->setText(QApplication::translate("MainWindow", "8", 0, QApplication::UnicodeUTF8));
@@ -474,6 +480,7 @@ public:
         ESPACE->setText(QApplication::translate("MainWindow", "_", 0, QApplication::UnicodeUTF8));
         ESPACE->setShortcut(QApplication::translate("MainWindow", "Space", 0, QApplication::UnicodeUTF8));
         ENTER->setText(QApplication::translate("MainWindow", "ENTRER", 0, QApplication::UnicodeUTF8));
+        ENTER->setShortcut(QApplication::translate("MainWindow", "Enter", 0, QApplication::UnicodeUTF8));
         CE->setText(QApplication::translate("MainWindow", "CE", 0, QApplication::UnicodeUTF8));
         label_3->setText(QApplication::translate("MainWindow", "Nombres complexes", 0, QApplication::UnicodeUTF8));
         radioButton_7->setText(QApplication::translate("MainWindow", "Activ\303\251s", 0, QApplication::UnicodeUTF8));
