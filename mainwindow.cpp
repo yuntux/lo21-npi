@@ -1,10 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QStack>
+#include <QtGui>
 #include "TypeDonnee.h"
-
-
-
 
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -12,12 +9,32 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     //Initialisation de la calculatrice
-    _modAngles = degre;
+    _modAngle = degre;
     _modConstante = entier;
     _modComplexe = false;
 
+    //FIXME : comment lier la pile d'affichage à la QListveiw étant donné que QStack n'hérite pas de QAstractmodelitem ?
+    //ui->listView_2->setModel(_pileAffichage);
+    _pileStockageReelle.append(3.14);
+    _pileStockageReelle.append(3.14);
+    _pileStockageReelle.append(3.14);
+
+    Complexe c1(2,3);
+    Complexe c2(4,5);
+    Complexe c3(6,7);
+    _pileStockageComplexe.append(c1);
+    _pileStockageComplexe.append(c2);
+    _pileStockageComplexe.append(c3);
+
+    _pileAffichage.append("premier élement de la pile affichage");
+    _pileAffichage.append("deuxième élement de la pile affichage");
+    _pileAffichage.append("troisième élement de la pile affichage");
+
+
+
+
     ui->setupUi(this);
-    //CONNXIONS CLAVIER BASIC
+    //CONNEXIONS CLAVIER BASIC
     connect(ui->num0, SIGNAL(clicked()), this, SLOT(num0Clicked()));
     connect(ui->num1, SIGNAL(clicked()), this, SLOT(num1Clicked()));
     connect(ui->num2, SIGNAL(clicked()), this, SLOT(num2Clicked()));
@@ -38,10 +55,141 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->MULTIPLIER, SIGNAL(clicked()), this, SLOT(MULTIPLIERClicked()));
     connect(ui->DIVISER, SIGNAL(clicked()), this, SLOT(FACTORIELClicked()));
 
+    //CONNEXIONS POUR CHANGEMENT DE MOD
     connect(ui->_clavierBasic, SIGNAL(stateChanged(int)), this, SLOT(_clavierBasicStateChange(int)));
     connect(ui->_clavierAvance, SIGNAL(stateChanged(int)), this, SLOT(_clavierAvanceStateChange(int)));
     connect(ui->_modComplexeOFF, SIGNAL(toggled(bool)), this, SLOT(_modComplexeOFFClicked(bool)));
     connect(ui->_modComplexeON, SIGNAL(toggled(bool)), this, SLOT(_modComplexeONClicked(bool)));
+    connect(ui->_modDegres, SIGNAL(toggled(bool)), this, SLOT(_modDegresToggled(bool)));
+    connect(ui->_modRadians, SIGNAL(toggled(bool)), this, SLOT(_modRadiansToggled(bool)));
+
+    //this->saveToFile();
+    this->loadFromFile();
+}
+
+void MainWindow::saveToFile(){
+    QFile file("context");
+    if (!file.open(QIODevice::WriteOnly)) {
+        QMessageBox::information(this, tr("Impossible d'ouvrir le fichier."),
+            file.errorString());
+        return;
+    }
+
+    QTextStream out(&file);
+
+    if (_modAngle==degre) out<< "degre\n";
+    if (_modAngle==radian) out<< "radian\n";
+
+    if (_modComplexe) {out<< "complexeON\n";} else {out<< "complexeOFF\n";}
+    if (_modConstante==entier) {out<< "entier\n";} else if (_modConstante==reel) {out<< "reel\n";} else if (_modConstante==rationnel) {out<<"rationnel\n";}
+
+    if (ui->_clavierBasic->isChecked()) {out<<"clavierBasicON\n";} else {out<<"clavierBasicOFF\n";}
+    if (ui->_clavierAvance->isChecked()) {out<<"clavierAvanceON\n";} else {out<<"clavierAvanceOFF\n";}
+
+
+    while (!_pileAffichage.empty())
+    {
+        QString temp = _pileAffichage.pop();
+        out << temp <<"\n";
+    }
+    out<<"\n"; // on a fini la pile => une ligne vide
+
+    while (!_pileStockageReelle.empty())
+        out << _pileStockageReelle.pop()<<"\n";
+    out<<"\n"; // on a fini la pile => une ligne vide
+
+    while (!_pileStockageComplexe.empty())
+    {
+        Complexe temp = _pileStockageComplexe.pop();
+        out << temp.getPartieReelle()<<"$"<<temp.getPartieImaginaire()<<"\n";
+    }
+    out<<"\n"; // on a fini la pile => une ligne vide
+
+}
+
+
+void MainWindow::loadFromFile(){
+    QFile file("context");
+
+    if (!file.open(QIODevice::ReadOnly)) {
+        QMessageBox::information(this, tr("Impossible d'ouvrir le fichier."),
+            file.errorString());
+        return;
+    }
+
+    QTextStream in(&file);
+    QString line;
+    //la première ligne contient _modAngle
+    line = in.readLine();
+    if (line=="degre") {
+        _modAngle=degre;
+        ui->_modDegres->setChecked(true);
+    } else if (line=="radian") {
+        _modAngle=radian;
+        ui->_modRadians->setChecked(true);
+    }
+    //la deuxième ligne contient _mdoComplexe
+    line = in.readLine();
+    if (line=="complexeOFF") {
+        _modComplexe=false;
+        ui->_modComplexeOFF->setChecked(true);
+    } else if (line=="complexeON") {
+        _modComplexe=true;
+        ui->_modComplexeON->setChecked(true);
+    }
+    //la deuxième ligne contient _modConstante
+    line = in.readLine();
+    if (line=="entier") {
+        _modConstante=entier;
+        ui->_modEntiers->setChecked(true);
+    } else if (line=="rationnel") {
+        _modConstante=rationnel;
+        ui->_modRationnels->setChecked(true);
+    } else if (line=="reel") {
+        ui->_modReels->setChecked(true);
+        //propager dans l'interface
+    }
+    //affichage du clavier basic
+    line = in.readLine();
+    if (line=="clavierBasicON") {
+        ui->widget_clavierBasic->show();
+        ui->_clavierBasic->setCheckState(Qt::Checked);
+    } else {
+        ui->widget_clavierBasic->hide();
+        ui->_clavierBasic->setCheckState(Qt::Unchecked);
+    }
+    //affichage du clavier avance
+    line = in.readLine();
+    if (line=="clavierAvanceON") {
+        ui->widget_clavierAvance->show();
+        ui->_clavierAvance->setCheckState(Qt::Checked);
+    } else {
+        ui->widget_clavierAvance->hide();
+        ui->_clavierAvance->setCheckState(Qt::Unchecked);
+    }
+    //pile d'affichage
+    do {
+        line = in.readLine();
+    } while (!line.isNull());
+ui->inputLine->setText("FIN");
+}
+
+void MainWindow::_modDegresToggled(bool b){
+    if(b){
+        _modAngle=degre;
+        ui->inputLine->setText("DegresON");
+    } else {
+        this->_modRadiansToggled(true);
+    }
+}
+
+void MainWindow::_modRadiansToggled(bool b){
+    if(b){
+        _modAngle=radian;
+        ui->inputLine->setText("RadiansON");
+    } else {
+        this->_modDegresToggled(true);
+    }
 }
 
 void MainWindow::_modComplexeONClicked(bool b){

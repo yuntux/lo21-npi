@@ -16,12 +16,15 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 private:
-    enum MesureAngle _modAngles;
+    enum MesureAngle _modAngle;
     enum TypeConstante _modConstante;
     bool _modComplexe;
-    QStack<std::string> _pileAffichage;
+    QStack<QString> _pileAffichage;
     QStack<float> _pileStockageReelle;
     QStack<Complexe> _pileStockageComplexe; //ATTENTION : vider la pile float lors du passage en  mode complexes
+
+    void saveToFile();
+    void loadFromFile();
 
 public:
     explicit MainWindow(QWidget *parent = 0);
@@ -49,6 +52,8 @@ public slots:
    void _clavierAvanceStateChange(int);
    void _modComplexeONClicked(bool);
    void _modComplexeOFFClicked(bool);
+   void _modRadiansToggled(bool);
+   void _modDegresToggled(bool);
 
 private:
     Ui::MainWindow *ui;

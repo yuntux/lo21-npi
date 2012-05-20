@@ -11,6 +11,8 @@ class Complexe {
 public:
     Complexe(float r=0, float i=0):_reelle(r), _imaginaire(i){}
     virtual void Afficher(){ std::cout<<_reelle<<_imaginaire<<"\n";}
+    float getPartieReelle() const {return _reelle;}
+    float getPartieImaginaire() const {return _imaginaire;}
 };
 
 

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sat May 19 21:20:44 2012
+** Created: Sun May 20 15:49:43 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -27,6 +27,7 @@
 #include <QtGui/QPushButton>
 #include <QtGui/QRadioButton>
 #include <QtGui/QStatusBar>
+#include <QtGui/QTabWidget>
 #include <QtGui/QToolBar>
 #include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
@@ -42,7 +43,7 @@ public:
     QGridLayout *gridLayout;
     QLineEdit *inputLine;
     QWidget *widget_clavierBasic;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QGridLayout *_clavierBasicLayout;
     QPushButton *num8;
     QPushButton *num4;
@@ -60,7 +61,7 @@ public:
     QPushButton *CE;
     QPushButton *num7;
     QWidget *widget_clavierAvance;
-    QWidget *widget1;
+    QWidget *layoutWidget1;
     QGridLayout *_clavierAvanceLayout;
     QPushButton *MOD;
     QPushButton *SQR;
@@ -82,18 +83,21 @@ public:
     QPushButton *SQRT;
     QPushButton *CUBE;
     QPushButton *POW;
+    QTabWidget *tabWidget;
+    QWidget *tab;
     QListView *listView;
+    QWidget *tab_2;
     QVBoxLayout *verticalLayout_2;
     QGroupBox *groupBox_4;
     QRadioButton *_modComplexeON;
     QRadioButton *_modComplexeOFF;
     QGroupBox *groupBox;
-    QRadioButton *radioButton_2;
-    QRadioButton *radioButton;
+    QRadioButton *_modDegres;
+    QRadioButton *_modRadians;
     QGroupBox *groupBox_2;
-    QRadioButton *radioButton_3;
-    QRadioButton *radioButton_4;
-    QRadioButton *radioButton_5;
+    QRadioButton *_modEntiers;
+    QRadioButton *_modRationnels;
+    QRadioButton *_modReels;
     QGroupBox *groupBox_3;
     QCheckBox *_clavierBasic;
     QCheckBox *_clavierAvance;
@@ -127,85 +131,85 @@ public:
 
         widget_clavierBasic = new QWidget(centralWidget);
         widget_clavierBasic->setObjectName(QString::fromUtf8("widget_clavierBasic"));
-        widget = new QWidget(widget_clavierBasic);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(0, 0, 787, 182));
-        _clavierBasicLayout = new QGridLayout(widget);
+        layoutWidget = new QWidget(widget_clavierBasic);
+        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setGeometry(QRect(0, 0, 787, 182));
+        _clavierBasicLayout = new QGridLayout(layoutWidget);
         _clavierBasicLayout->setSpacing(6);
         _clavierBasicLayout->setContentsMargins(11, 11, 11, 11);
         _clavierBasicLayout->setObjectName(QString::fromUtf8("_clavierBasicLayout"));
         _clavierBasicLayout->setContentsMargins(0, 0, 0, 0);
-        num8 = new QPushButton(widget);
+        num8 = new QPushButton(layoutWidget);
         num8->setObjectName(QString::fromUtf8("num8"));
 
         _clavierBasicLayout->addWidget(num8, 1, 1, 1, 1);
 
-        num4 = new QPushButton(widget);
+        num4 = new QPushButton(layoutWidget);
         num4->setObjectName(QString::fromUtf8("num4"));
 
         _clavierBasicLayout->addWidget(num4, 2, 0, 1, 1);
 
-        num5 = new QPushButton(widget);
+        num5 = new QPushButton(layoutWidget);
         num5->setObjectName(QString::fromUtf8("num5"));
 
         _clavierBasicLayout->addWidget(num5, 2, 1, 1, 1);
 
-        num9 = new QPushButton(widget);
+        num9 = new QPushButton(layoutWidget);
         num9->setObjectName(QString::fromUtf8("num9"));
 
         _clavierBasicLayout->addWidget(num9, 1, 2, 1, 1);
 
-        num6 = new QPushButton(widget);
+        num6 = new QPushButton(layoutWidget);
         num6->setObjectName(QString::fromUtf8("num6"));
 
         _clavierBasicLayout->addWidget(num6, 2, 2, 1, 1);
 
-        num2 = new QPushButton(widget);
+        num2 = new QPushButton(layoutWidget);
         num2->setObjectName(QString::fromUtf8("num2"));
 
         _clavierBasicLayout->addWidget(num2, 3, 1, 1, 1);
 
-        num1 = new QPushButton(widget);
+        num1 = new QPushButton(layoutWidget);
         num1->setObjectName(QString::fromUtf8("num1"));
 
         _clavierBasicLayout->addWidget(num1, 3, 0, 1, 1);
 
-        num3 = new QPushButton(widget);
+        num3 = new QPushButton(layoutWidget);
         num3->setObjectName(QString::fromUtf8("num3"));
 
         _clavierBasicLayout->addWidget(num3, 3, 2, 1, 1);
 
-        num0 = new QPushButton(widget);
+        num0 = new QPushButton(layoutWidget);
         num0->setObjectName(QString::fromUtf8("num0"));
 
         _clavierBasicLayout->addWidget(num0, 4, 0, 1, 1);
 
-        POINT = new QPushButton(widget);
+        POINT = new QPushButton(layoutWidget);
         POINT->setObjectName(QString::fromUtf8("POINT"));
 
         _clavierBasicLayout->addWidget(POINT, 4, 1, 1, 1);
 
-        EVAL = new QPushButton(widget);
+        EVAL = new QPushButton(layoutWidget);
         EVAL->setObjectName(QString::fromUtf8("EVAL"));
 
         _clavierBasicLayout->addWidget(EVAL, 5, 1, 1, 1);
 
-        ESPACE = new QPushButton(widget);
+        ESPACE = new QPushButton(layoutWidget);
         ESPACE->setObjectName(QString::fromUtf8("ESPACE"));
 
         _clavierBasicLayout->addWidget(ESPACE, 4, 2, 1, 1);
 
-        ENTER = new QPushButton(widget);
+        ENTER = new QPushButton(layoutWidget);
         ENTER->setObjectName(QString::fromUtf8("ENTER"));
 
         _clavierBasicLayout->addWidget(ENTER, 5, 0, 1, 1);
 
-        CE = new QPushButton(widget);
+        CE = new QPushButton(layoutWidget);
         CE->setObjectName(QString::fromUtf8("CE"));
 
         _clavierBasicLayout->addWidget(CE, 5, 2, 1, 1);
 
-        num7 = new QPushButton(widget);
+        num7 = new QPushButton(layoutWidget);
         num7->setObjectName(QString::fromUtf8("num7"));
 
         _clavierBasicLayout->addWidget(num7, 1, 0, 1, 1);
@@ -215,100 +219,100 @@ public:
 
         widget_clavierAvance = new QWidget(centralWidget);
         widget_clavierAvance->setObjectName(QString::fromUtf8("widget_clavierAvance"));
-        widget1 = new QWidget(widget_clavierAvance);
-        widget1->setObjectName(QString::fromUtf8("widget1"));
-        widget1->setGeometry(QRect(0, 0, 787, 202));
-        _clavierAvanceLayout = new QGridLayout(widget1);
+        layoutWidget1 = new QWidget(widget_clavierAvance);
+        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setGeometry(QRect(0, 0, 787, 202));
+        _clavierAvanceLayout = new QGridLayout(layoutWidget1);
         _clavierAvanceLayout->setSpacing(6);
         _clavierAvanceLayout->setContentsMargins(11, 11, 11, 11);
         _clavierAvanceLayout->setObjectName(QString::fromUtf8("_clavierAvanceLayout"));
         _clavierAvanceLayout->setContentsMargins(0, 0, 0, 0);
-        MOD = new QPushButton(widget1);
+        MOD = new QPushButton(layoutWidget1);
         MOD->setObjectName(QString::fromUtf8("MOD"));
 
         _clavierAvanceLayout->addWidget(MOD, 1, 0, 1, 1);
 
-        SQR = new QPushButton(widget1);
+        SQR = new QPushButton(layoutWidget1);
         SQR->setObjectName(QString::fromUtf8("SQR"));
 
         _clavierAvanceLayout->addWidget(SQR, 1, 4, 1, 1);
 
-        COSH = new QPushButton(widget1);
+        COSH = new QPushButton(layoutWidget1);
         COSH->setObjectName(QString::fromUtf8("COSH"));
 
         _clavierAvanceLayout->addWidget(COSH, 1, 2, 1, 1);
 
-        SINH = new QPushButton(widget1);
+        SINH = new QPushButton(layoutWidget1);
         SINH->setObjectName(QString::fromUtf8("SINH"));
 
         _clavierAvanceLayout->addWidget(SINH, 0, 2, 1, 1);
 
-        LN = new QPushButton(widget1);
+        LN = new QPushButton(layoutWidget1);
         LN->setObjectName(QString::fromUtf8("LN"));
 
         _clavierAvanceLayout->addWidget(LN, 0, 3, 1, 1);
 
-        LOG = new QPushButton(widget1);
+        LOG = new QPushButton(layoutWidget1);
         LOG->setObjectName(QString::fromUtf8("LOG"));
 
         _clavierAvanceLayout->addWidget(LOG, 1, 3, 1, 1);
 
-        SIN = new QPushButton(widget1);
+        SIN = new QPushButton(layoutWidget1);
         SIN->setObjectName(QString::fromUtf8("SIN"));
 
         _clavierAvanceLayout->addWidget(SIN, 0, 1, 1, 1);
 
-        COS = new QPushButton(widget1);
+        COS = new QPushButton(layoutWidget1);
         COS->setObjectName(QString::fromUtf8("COS"));
 
         _clavierAvanceLayout->addWidget(COS, 1, 1, 1, 1);
 
-        SIGN = new QPushButton(widget1);
+        SIGN = new QPushButton(layoutWidget1);
         SIGN->setObjectName(QString::fromUtf8("SIGN"));
 
         _clavierAvanceLayout->addWidget(SIGN, 2, 0, 1, 1);
 
-        TAN = new QPushButton(widget1);
+        TAN = new QPushButton(layoutWidget1);
         TAN->setObjectName(QString::fromUtf8("TAN"));
 
         _clavierAvanceLayout->addWidget(TAN, 2, 1, 1, 1);
 
-        TANH = new QPushButton(widget1);
+        TANH = new QPushButton(layoutWidget1);
         TANH->setObjectName(QString::fromUtf8("TANH"));
 
         _clavierAvanceLayout->addWidget(TANH, 2, 2, 1, 1);
 
-        INV = new QPushButton(widget1);
+        INV = new QPushButton(layoutWidget1);
         INV->setObjectName(QString::fromUtf8("INV"));
 
         _clavierAvanceLayout->addWidget(INV, 2, 3, 1, 1);
 
-        FACTORIEL = new QPushButton(widget1);
+        FACTORIEL = new QPushButton(layoutWidget1);
         FACTORIEL->setObjectName(QString::fromUtf8("FACTORIEL"));
 
         _clavierAvanceLayout->addWidget(FACTORIEL, 4, 0, 1, 1);
 
-        DIVISER = new QPushButton(widget1);
+        DIVISER = new QPushButton(layoutWidget1);
         DIVISER->setObjectName(QString::fromUtf8("DIVISER"));
 
         _clavierAvanceLayout->addWidget(DIVISER, 4, 2, 1, 1);
 
-        MULTIPLIER = new QPushButton(widget1);
+        MULTIPLIER = new QPushButton(layoutWidget1);
         MULTIPLIER->setObjectName(QString::fromUtf8("MULTIPLIER"));
 
         _clavierAvanceLayout->addWidget(MULTIPLIER, 4, 1, 1, 1);
 
-        SOUSTRAIRE = new QPushButton(widget1);
+        SOUSTRAIRE = new QPushButton(layoutWidget1);
         SOUSTRAIRE->setObjectName(QString::fromUtf8("SOUSTRAIRE"));
 
         _clavierAvanceLayout->addWidget(SOUSTRAIRE, 4, 3, 1, 1);
 
-        ADDITIONNER = new QPushButton(widget1);
+        ADDITIONNER = new QPushButton(layoutWidget1);
         ADDITIONNER->setObjectName(QString::fromUtf8("ADDITIONNER"));
 
         _clavierAvanceLayout->addWidget(ADDITIONNER, 4, 4, 1, 1);
 
-        SQRT = new QPushButton(widget1);
+        SQRT = new QPushButton(layoutWidget1);
         SQRT->setObjectName(QString::fromUtf8("SQRT"));
         SQRT->setAutoExclusive(false);
         SQRT->setAutoDefault(false);
@@ -317,12 +321,12 @@ public:
 
         _clavierAvanceLayout->addWidget(SQRT, 0, 4, 1, 1);
 
-        CUBE = new QPushButton(widget1);
+        CUBE = new QPushButton(layoutWidget1);
         CUBE->setObjectName(QString::fromUtf8("CUBE"));
 
         _clavierAvanceLayout->addWidget(CUBE, 2, 4, 1, 1);
 
-        POW = new QPushButton(widget1);
+        POW = new QPushButton(layoutWidget1);
         POW->setObjectName(QString::fromUtf8("POW"));
 
         _clavierAvanceLayout->addWidget(POW, 0, 0, 1, 1);
@@ -330,15 +334,29 @@ public:
 
         gridLayout->addWidget(widget_clavierAvance, 3, 0, 1, 1);
 
-        listView = new QListView(centralWidget);
-        listView->setObjectName(QString::fromUtf8("listView"));
-        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        tabWidget = new QTabWidget(centralWidget);
+        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(listView->sizePolicy().hasHeightForWidth());
-        listView->setSizePolicy(sizePolicy);
+        sizePolicy.setHeightForWidth(tabWidget->sizePolicy().hasHeightForWidth());
+        tabWidget->setSizePolicy(sizePolicy);
+        tab = new QWidget();
+        tab->setObjectName(QString::fromUtf8("tab"));
+        listView = new QListView(tab);
+        listView->setObjectName(QString::fromUtf8("listView"));
+        listView->setGeometry(QRect(-80, 0, 787, 192));
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Fixed);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(listView->sizePolicy().hasHeightForWidth());
+        listView->setSizePolicy(sizePolicy1);
+        tabWidget->addTab(tab, QString());
+        tab_2 = new QWidget();
+        tab_2->setObjectName(QString::fromUtf8("tab_2"));
+        tabWidget->addTab(tab_2, QString());
 
-        gridLayout->addWidget(listView, 0, 0, 1, 1);
+        gridLayout->addWidget(tabWidget, 0, 0, 2, 1);
 
 
         horizontalLayout->addLayout(gridLayout);
@@ -360,13 +378,13 @@ public:
 
         groupBox = new QGroupBox(centralWidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        radioButton_2 = new QRadioButton(groupBox);
-        radioButton_2->setObjectName(QString::fromUtf8("radioButton_2"));
-        radioButton_2->setGeometry(QRect(0, 10, 161, 20));
-        radioButton_2->setChecked(true);
-        radioButton = new QRadioButton(groupBox);
-        radioButton->setObjectName(QString::fromUtf8("radioButton"));
-        radioButton->setGeometry(QRect(0, 30, 161, 20));
+        _modDegres = new QRadioButton(groupBox);
+        _modDegres->setObjectName(QString::fromUtf8("_modDegres"));
+        _modDegres->setGeometry(QRect(0, 10, 161, 20));
+        _modDegres->setChecked(true);
+        _modRadians = new QRadioButton(groupBox);
+        _modRadians->setObjectName(QString::fromUtf8("_modRadians"));
+        _modRadians->setGeometry(QRect(0, 30, 161, 20));
 
         verticalLayout_2->addWidget(groupBox);
 
@@ -375,16 +393,16 @@ public:
         groupBox_2->setAlignment(Qt::AlignJustify|Qt::AlignVCenter);
         groupBox_2->setFlat(false);
         groupBox_2->setCheckable(false);
-        radioButton_3 = new QRadioButton(groupBox_2);
-        radioButton_3->setObjectName(QString::fromUtf8("radioButton_3"));
-        radioButton_3->setGeometry(QRect(0, 20, 143, 20));
-        radioButton_3->setChecked(true);
-        radioButton_4 = new QRadioButton(groupBox_2);
-        radioButton_4->setObjectName(QString::fromUtf8("radioButton_4"));
-        radioButton_4->setGeometry(QRect(0, 40, 143, 20));
-        radioButton_5 = new QRadioButton(groupBox_2);
-        radioButton_5->setObjectName(QString::fromUtf8("radioButton_5"));
-        radioButton_5->setGeometry(QRect(0, 60, 143, 20));
+        _modEntiers = new QRadioButton(groupBox_2);
+        _modEntiers->setObjectName(QString::fromUtf8("_modEntiers"));
+        _modEntiers->setGeometry(QRect(0, 20, 143, 20));
+        _modEntiers->setChecked(true);
+        _modRationnels = new QRadioButton(groupBox_2);
+        _modRationnels->setObjectName(QString::fromUtf8("_modRationnels"));
+        _modRationnels->setGeometry(QRect(0, 40, 143, 20));
+        _modReels = new QRadioButton(groupBox_2);
+        _modReels->setObjectName(QString::fromUtf8("_modReels"));
+        _modReels->setGeometry(QRect(0, 60, 143, 20));
 
         verticalLayout_2->addWidget(groupBox_2);
 
@@ -486,16 +504,18 @@ public:
         SQRT->setText(QApplication::translate("MainWindow", "SQRT", 0, QApplication::UnicodeUTF8));
         CUBE->setText(QApplication::translate("MainWindow", "CUBE", 0, QApplication::UnicodeUTF8));
         POW->setText(QApplication::translate("MainWindow", "POW", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Tab 1", 0, QApplication::UnicodeUTF8));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Tab 2", 0, QApplication::UnicodeUTF8));
         groupBox_4->setTitle(QApplication::translate("MainWindow", "Mode complexe", 0, QApplication::UnicodeUTF8));
         _modComplexeON->setText(QApplication::translate("MainWindow", "Activ\303\251s", 0, QApplication::UnicodeUTF8));
         _modComplexeOFF->setText(QApplication::translate("MainWindow", "D\303\251sactiv\303\251s", 0, QApplication::UnicodeUTF8));
         groupBox->setTitle(QApplication::translate("MainWindow", "Unit\303\251 de mesure", 0, QApplication::UnicodeUTF8));
-        radioButton_2->setText(QApplication::translate("MainWindow", "Degr\303\251s", 0, QApplication::UnicodeUTF8));
-        radioButton->setText(QApplication::translate("MainWindow", "Radians", 0, QApplication::UnicodeUTF8));
+        _modDegres->setText(QApplication::translate("MainWindow", "Degr\303\251s", 0, QApplication::UnicodeUTF8));
+        _modRadians->setText(QApplication::translate("MainWindow", "Radians", 0, QApplication::UnicodeUTF8));
         groupBox_2->setTitle(QApplication::translate("MainWindow", "Type des constantes", 0, QApplication::UnicodeUTF8));
-        radioButton_3->setText(QApplication::translate("MainWindow", "Enti\303\250res", 0, QApplication::UnicodeUTF8));
-        radioButton_4->setText(QApplication::translate("MainWindow", "Rationnelles", 0, QApplication::UnicodeUTF8));
-        radioButton_5->setText(QApplication::translate("MainWindow", "R\303\251elles", 0, QApplication::UnicodeUTF8));
+        _modEntiers->setText(QApplication::translate("MainWindow", "Enti\303\250res", 0, QApplication::UnicodeUTF8));
+        _modRationnels->setText(QApplication::translate("MainWindow", "Rationnelles", 0, QApplication::UnicodeUTF8));
+        _modReels->setText(QApplication::translate("MainWindow", "R\303\251elles", 0, QApplication::UnicodeUTF8));
         groupBox_3->setTitle(QApplication::translate("MainWindow", "Affichage claviers", 0, QApplication::UnicodeUTF8));
         _clavierBasic->setText(QApplication::translate("MainWindow", "&Basic", 0, QApplication::UnicodeUTF8));
         _clavierAvance->setText(QApplication::translate("MainWindow", "&Avanc\303\251", 0, QApplication::UnicodeUTF8));
