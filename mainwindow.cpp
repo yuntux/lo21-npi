@@ -48,6 +48,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->POINT, SIGNAL(clicked()), this, SLOT(POINTClicked()));
     connect(ui->ESPACE, SIGNAL(clicked()), this, SLOT(ESPACEClicked()));
 
+    connect(ui->ENTER, SIGNAL(clicked()), this, SLOT(ENTERClicked()));
+
     //CONNEXIONS CLAVIER AVANCE
     connect(ui->FACTORIEL, SIGNAL(clicked()), this, SLOT(FACTORIELClicked()));
     connect(ui->ADDITIONNER, SIGNAL(clicked()), this, SLOT(ADDITIONNERClicked()));
@@ -154,9 +156,11 @@ void MainWindow::loadFromFile(){
     if (line=="clavierBasicON") {
         ui->widget_clavierBasic->show();
         ui->_clavierBasic->setCheckState(Qt::Checked);
+        ui->inputLine->setEnabled(false);
     } else {
         ui->widget_clavierBasic->hide();
         ui->_clavierBasic->setCheckState(Qt::Unchecked);
+        ui->inputLine->setEnabled(true);
     }
     //affichage du clavier avance
     line = in.readLine();
@@ -168,9 +172,12 @@ void MainWindow::loadFromFile(){
         ui->_clavierAvance->setCheckState(Qt::Unchecked);
     }
     //pile d'affichage
-    do {
+/*    do {
         line = in.readLine();
     } while (!line.isNull());
+    //pile reels
+    //pile complexe
+*/
 ui->inputLine->setText("FIN");
 }
 
@@ -305,6 +312,39 @@ void MainWindow::MULTIPLIERClicked(){
 
 void MainWindow::DIVISERClicked(){
     ui->inputLine->setText(ui->inputLine->text()+"/");
+}
+
+void MainWindow::ENTERClicked(){
+    QStringList list = ui->inputLine->text().split(QRegExp("\\s+"));
+    ui->inputLine->setText("");
+
+    for (int t=0; t<list.size(); t++){
+        QString temp = list.at(t);
+        int i=0; //on regarde le premier caractère
+            if (temp[i]=='\'') {
+                //c'est une expression
+                //on fusionne les strings suivante jusqu'à rencontrer' à la fin d'une string
+                //il faut vérifier que le denier caractère est bien un '
+                //on empile
+            } else if (temp[i]=='+' || temp[i]=='-' || temp[i]=='*' || temp[i]=='/') {
+                //c'est un opérateur
+                //on vérifie que temp.size()==1
+                //on dépile les deux derniers
+                //on effectue le calcul
+                //on rempile le résultat
+            } else if (temp[i]>='0' && temp[i]<='9') {
+                //c'est un chiffre
+
+            } else if (temp[i]=='$'){
+                //c'est l'oprérateur de séparation des complexes
+            } else if (temp[i]=='/') {
+                //on a un problème car on ne sait pas différencier l'opérateur diviser du séparateur de rationnel en entrée
+            }
+
+    }
+ //   for(int i=0; i<list.size(); i++)
+        //non1'exp1'non2'exp2'non3
+//        ui->inputLine->setText(ui->inputLine->text()+list.at(i)+"    ");
 }
 
 MainWindow::~MainWindow()

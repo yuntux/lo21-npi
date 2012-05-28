@@ -8,12 +8,13 @@
 //trois Clases : Complexe, Rationnel, MainWindow
 //math.h
 //Gérer les erreurs => exeptions standards
-//Sauvegarde/Chargmenet de la calculatrice
+//Sauvegarde/Chargmenet des piles
 //Traiter l'une des trois options : logMessage/onglets/CommmandeUtilisateur
 //DocDOXYGEN
 //Rapport et modélisation UML(diag de class et diag de séquence)
 
 //mods de la calto en static ???
+//quid des concepts centraux de LO21 : surcharge, héritage, polymorphisme, designPattern...
 
 //=> OnClik sur MODE_COMPLEXE on bascule les piles en complexes en vidant tous les nombres en mémoire
 

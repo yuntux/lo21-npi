@@ -67,14 +67,12 @@ void read_expression(string expr,QStack<float>& pile)
             chiffres++;
             pile.push(expr[i]-48);
         }
-        else
-        if(expr[i]=='+' || expr[i]=='-' || expr[i]=='*' || expr[i]=='/')
+        else if(expr[i]=='+' || expr[i]=='-' || expr[i]=='*' || expr[i]=='/')
         {
             if(expr[i]='+')
                 sum(pile,2);
-
-
         }
+
         i++;
     }
 
@@ -82,14 +80,3 @@ void read_expression(string expr,QStack<float>& pile)
     cout<<"chiffres : "<<chiffres<<endl;
     cout<<"operateurs : "<<operateur<<endl;
 }
-
-
-
-
-
-
-
-
-
-
-

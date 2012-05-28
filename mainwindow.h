@@ -54,6 +54,7 @@ public slots:
    void _modComplexeOFFClicked(bool);
    void _modRadiansToggled(bool);
    void _modDegresToggled(bool);
+   void ENTERClicked();
 
 private:
     Ui::MainWindow *ui;

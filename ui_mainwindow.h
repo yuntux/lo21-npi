@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sun May 20 15:49:43 2012
+** Created: Sun May 20 16:00:15 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -27,7 +27,6 @@
 #include <QtGui/QPushButton>
 #include <QtGui/QRadioButton>
 #include <QtGui/QStatusBar>
-#include <QtGui/QTabWidget>
 #include <QtGui/QToolBar>
 #include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
@@ -41,7 +40,6 @@ public:
     QWidget *centralWidget;
     QHBoxLayout *horizontalLayout;
     QGridLayout *gridLayout;
-    QLineEdit *inputLine;
     QWidget *widget_clavierBasic;
     QWidget *layoutWidget;
     QGridLayout *_clavierBasicLayout;
@@ -83,10 +81,8 @@ public:
     QPushButton *SQRT;
     QPushButton *CUBE;
     QPushButton *POW;
-    QTabWidget *tabWidget;
-    QWidget *tab;
     QListView *listView;
-    QWidget *tab_2;
+    QLineEdit *inputLine;
     QVBoxLayout *verticalLayout_2;
     QGroupBox *groupBox_4;
     QRadioButton *_modComplexeON;
@@ -123,12 +119,6 @@ public:
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(6);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        inputLine = new QLineEdit(centralWidget);
-        inputLine->setObjectName(QString::fromUtf8("inputLine"));
-        inputLine->setEnabled(false);
-
-        gridLayout->addWidget(inputLine, 2, 0, 1, 1);
-
         widget_clavierBasic = new QWidget(centralWidget);
         widget_clavierBasic->setObjectName(QString::fromUtf8("widget_clavierBasic"));
         layoutWidget = new QWidget(widget_clavierBasic);
@@ -334,29 +324,21 @@ public:
 
         gridLayout->addWidget(widget_clavierAvance, 3, 0, 1, 1);
 
-        tabWidget = new QTabWidget(centralWidget);
-        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
+        listView = new QListView(centralWidget);
+        listView->setObjectName(QString::fromUtf8("listView"));
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(tabWidget->sizePolicy().hasHeightForWidth());
-        tabWidget->setSizePolicy(sizePolicy);
-        tab = new QWidget();
-        tab->setObjectName(QString::fromUtf8("tab"));
-        listView = new QListView(tab);
-        listView->setObjectName(QString::fromUtf8("listView"));
-        listView->setGeometry(QRect(-80, 0, 787, 192));
-        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Fixed);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(listView->sizePolicy().hasHeightForWidth());
-        listView->setSizePolicy(sizePolicy1);
-        tabWidget->addTab(tab, QString());
-        tab_2 = new QWidget();
-        tab_2->setObjectName(QString::fromUtf8("tab_2"));
-        tabWidget->addTab(tab_2, QString());
+        sizePolicy.setHeightForWidth(listView->sizePolicy().hasHeightForWidth());
+        listView->setSizePolicy(sizePolicy);
 
-        gridLayout->addWidget(tabWidget, 0, 0, 2, 1);
+        gridLayout->addWidget(listView, 1, 0, 1, 1);
+
+        inputLine = new QLineEdit(centralWidget);
+        inputLine->setObjectName(QString::fromUtf8("inputLine"));
+        inputLine->setEnabled(false);
+
+        gridLayout->addWidget(inputLine, 2, 0, 1, 1);
 
 
         horizontalLayout->addLayout(gridLayout);
@@ -504,8 +486,6 @@ public:
         SQRT->setText(QApplication::translate("MainWindow", "SQRT", 0, QApplication::UnicodeUTF8));
         CUBE->setText(QApplication::translate("MainWindow", "CUBE", 0, QApplication::UnicodeUTF8));
         POW->setText(QApplication::translate("MainWindow", "POW", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Tab 1", 0, QApplication::UnicodeUTF8));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Tab 2", 0, QApplication::UnicodeUTF8));
         groupBox_4->setTitle(QApplication::translate("MainWindow", "Mode complexe", 0, QApplication::UnicodeUTF8));
         _modComplexeON->setText(QApplication::translate("MainWindow", "Activ\303\251s", 0, QApplication::UnicodeUTF8));
         _modComplexeOFF->setText(QApplication::translate("MainWindow", "D\303\251sactiv\303\251s", 0, QApplication::UnicodeUTF8));
