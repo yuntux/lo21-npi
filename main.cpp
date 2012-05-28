@@ -2,7 +2,6 @@
 #include "mainwindow.h"
 #include "TypeDonnee.h"
 #include "fonctions.h"
-
 //qt example calculator
 //DESIGN PATTERN : command(Annuler/Rétablir)
 //trois Clases : Complexe, Rationnel, MainWindow
@@ -23,6 +22,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
+    w.empiler(5.2);
 
     return a.exec();
 }

@@ -28,6 +28,10 @@ int fact(int n);
 
 float sum(QStack<float>& pile, int x);
 
+float prod(QStack<float>& pile);
+
+float divise(QStack<float>& pile);
+
 float mean(QStack<float>& pile, int x);
 
 void dup(QStack<float>& pile);

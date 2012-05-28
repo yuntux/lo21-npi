@@ -2,7 +2,8 @@
 #include "ui_mainwindow.h"
 #include <QtGui>
 #include "TypeDonnee.h"
-
+#include "fonctions.h"
+#include <iostream>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -13,7 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
     _modConstante = entier;
     _modComplexe = false;
 
-    //FIXME : comment lier la pile d'affichage à la QListveiw étant donné que QStack n'hérite pas de QAstractmodelitem ?
+    //FIXME : comment lier la pile d'affichage �  la QListveiw étant donné que QStack n'hérite pas de QAstractmodelitem ?
     //ui->listView_2->setModel(_pileAffichage);
     _pileStockageReelle.append(3.14);
     _pileStockageReelle.append(3.14);
@@ -55,7 +56,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->ADDITIONNER, SIGNAL(clicked()), this, SLOT(ADDITIONNERClicked()));
     connect(ui->SOUSTRAIRE, SIGNAL(clicked()), this, SLOT(SOUSTRAIREClicked()));
     connect(ui->MULTIPLIER, SIGNAL(clicked()), this, SLOT(MULTIPLIERClicked()));
-    connect(ui->DIVISER, SIGNAL(clicked()), this, SLOT(FACTORIELClicked()));
+    connect(ui->DIVISER, SIGNAL(clicked()), this, SLOT(DIVISERClicked()));
 
     //CONNEXIONS POUR CHANGEMENT DE MOD
     connect(ui->_clavierBasic, SIGNAL(stateChanged(int)), this, SLOT(_clavierBasicStateChange(int)));
@@ -64,7 +65,9 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->_modComplexeON, SIGNAL(toggled(bool)), this, SLOT(_modComplexeONClicked(bool)));
     connect(ui->_modDegres, SIGNAL(toggled(bool)), this, SLOT(_modDegresToggled(bool)));
     connect(ui->_modRadians, SIGNAL(toggled(bool)), this, SLOT(_modRadiansToggled(bool)));
-
+    connect(ui->_modEntiers, SIGNAL(toggled(bool)), this, SLOT(_modEntier(bool)));
+    connect(ui->_modRationnels, SIGNAL(toggled(bool)), this, SLOT(_modRationnel(bool)));
+    connect(ui->_modReels, SIGNAL(toggled(bool)), this, SLOT(_modReel(bool)));
     //this->saveToFile();
     this->loadFromFile();
 }
@@ -185,8 +188,10 @@ void MainWindow::_modDegresToggled(bool b){
     if(b){
         _modAngle=degre;
         ui->inputLine->setText("DegresON");
+        saveToFile();
     } else {
         this->_modRadiansToggled(true);
+        saveToFile();
     }
 }
 
@@ -194,8 +199,10 @@ void MainWindow::_modRadiansToggled(bool b){
     if(b){
         _modAngle=radian;
         ui->inputLine->setText("RadiansON");
+        saveToFile();
     } else {
         this->_modDegresToggled(true);
+        saveToFile();
     }
 }
 
@@ -206,8 +213,10 @@ void MainWindow::_modComplexeONClicked(bool b){
         this->_pileStockageReelle.clear();
         this->_pileAffichage.clear();
         ui->inputLine->setText("ComplexeON");
+        saveToFile();
     } else {
         this->_modComplexeOFFClicked(true);
+        saveToFile();
     }
 }
 
@@ -218,8 +227,10 @@ void MainWindow::_modComplexeOFFClicked(bool b){
         this->_pileStockageReelle.clear();
         this->_pileAffichage.clear();
         ui->inputLine->setText("ComplexeOFF");
+        saveToFile();
     } else {
         this->_modComplexeONClicked(true);
+        saveToFile();
     }
 }
 
@@ -228,19 +239,62 @@ void MainWindow::_clavierBasicStateChange(int cochee){
         ui->widget_clavierBasic->hide();
         //FIXME :quand le clavier est caché on ne peut plus rien saisir !
         ui->inputLine->setEnabled(true);
+        saveToFile();
     } else if (cochee==2) { //a été cochée
         ui->widget_clavierBasic->show();
         ui->inputLine->setEnabled(false);
+        saveToFile();
     }
 }
 
 void MainWindow::_clavierAvanceStateChange(int cochee){
     if(cochee==0){ //a été décochée
         ui->widget_clavierAvance->hide();
+        saveToFile();
     } else if (cochee==2) { //a été cochée
         ui->widget_clavierAvance->show();
+        saveToFile();
     }
 }
+
+void MainWindow::_modReel(bool b)
+{
+    if(b){
+        _modConstante=reel;
+        ui->inputLine->setText("R�els");
+        saveToFile();
+    } else {
+        this->_modRationnel(true);
+        saveToFile();
+    }
+}
+
+
+void MainWindow::_modRationnel(bool b)
+{
+    if(b){
+        _modConstante=rationnel;
+        ui->inputLine->setText("Rationnel");
+        saveToFile();
+    } else {
+        this->_modReel(true);
+        saveToFile();
+    }
+}
+
+
+void MainWindow::_modEntier(bool b)
+{
+    if(b){
+        _modConstante=entier;
+        ui->inputLine->setText("Entier");
+        saveToFile();
+    } else {
+        this->_modRationnel(true);
+        saveToFile();
+    }
+}
+
 
 void MainWindow::num0Clicked(){
     ui->inputLine->setText(ui->inputLine->text()+"0");
@@ -317,13 +371,13 @@ void MainWindow::DIVISERClicked(){
 void MainWindow::ENTERClicked(){
     QStringList list = ui->inputLine->text().split(QRegExp("\\s+"));
     ui->inputLine->setText("");
-
+float res;
     for (int t=0; t<list.size(); t++){
         QString temp = list.at(t);
         int i=0; //on regarde le premier caractère
-            if (temp[i]=='\'') {
+          /*  if (temp[i]=='\'') {
                 //c'est une expression
-                //on fusionne les strings suivante jusqu'à rencontrer' à la fin d'une string
+                //on fusionne les strings suivante jusqu'�  rencontrer' �  la fin d'une string
                 //il faut vérifier que le denier caractère est bien un '
                 //on empile
             } else if (temp[i]=='+' || temp[i]=='-' || temp[i]=='*' || temp[i]=='/') {
@@ -341,13 +395,65 @@ void MainWindow::ENTERClicked(){
                 //on a un problème car on ne sait pas différencier l'opérateur diviser du séparateur de rationnel en entrée
             }
 
-    }
+    }*/
+        if(_modComplexe)
+        {
+            while(temp[i]!=NULL)
+            {
+                if(temp[i] != ' ' && temp[i]>='0' && temp[i]<='9')
+                {
+                    _pileStockageComplexe.push(temp[i].toAscii()-48);
+
+
+                }
+                else if(temp[i]=='+' || temp[i]=='-' || temp[i]=='*' || temp[i]=='/')
+                {
+                  /*  if(temp[i]=='+')
+                        std::cout<<"\nsomme : "<<sum(_pileStockageComplexe,2)<<"\n";
+                    if(temp[i]=='*')
+                        std::cout<<"\nproduit : "<<prod(_pileStockageComplexe)<<"\n";
+                    if(temp[i]=='/')
+                        std::cout<<"\ndivision : "<<divise(_pileStockageComplexe)<<"\n";*/
+                }
+
+                i++;
+            }
+        }
+    else
+        {
+            while(temp[i]!=NULL)
+            {
+                if(temp[i] != ' ' && temp[i]>='0' && temp[i]<='9')
+                {
+                    _pileStockageReelle.push(temp[i].toAscii()-48);
+
+                }
+                else if(temp[i]=='+' || temp[i]=='-' || temp[i]=='*' || temp[i]=='/')
+                {
+                    if(temp[i]=='+')
+                        std::cout<<"\nsomme : "<<sum(_pileStockageReelle,2)<<"\n";
+                    if(temp[i]=='*')
+                        std::cout<<"\nproduit : "<<prod(_pileStockageReelle)<<"\n";
+                    if(temp[i]=='/')
+                        std::cout<<"\ndivision : "<<divise(_pileStockageReelle)<<"\n";
+                }
+
+                i++;
+            }
+  }
+
  //   for(int i=0; i<list.size(); i++)
         //non1'exp1'non2'exp2'non3
 //        ui->inputLine->setText(ui->inputLine->text()+list.at(i)+"    ");
+}
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::empiler(float r)
+{
+    _pileStockageReelle.push(r);
 }

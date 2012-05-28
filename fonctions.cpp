@@ -25,6 +25,26 @@ float sum(QStack<float>& pile, int x)
     return res;
 }
 
+float prod(QStack<float>& pile)
+{
+    float res=1;
+    for(int i=0;i<2;i++)
+    {
+        res=res*pile.top();
+        pile.pop();
+    }
+    pile.push(res);
+    return res;
+}
+
+float divise(QStack<float>& pile)
+{
+    float res=pile.top();
+    pile.pop();
+    res=pile.pop()/res;
+    pile.push(res);
+    return res;
+}
 
 float mean(QStack<float>& pile, int x)
 {

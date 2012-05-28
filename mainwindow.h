@@ -29,6 +29,7 @@ private:
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    void empiler(float r);
 
 public slots:
    void num0Clicked();
@@ -54,6 +55,10 @@ public slots:
    void _modComplexeOFFClicked(bool);
    void _modRadiansToggled(bool);
    void _modDegresToggled(bool);
+   void _modReel(bool);
+   void _modRationnel(bool);
+   void _modEntier(bool);
+
    void ENTERClicked();
 
 private:
