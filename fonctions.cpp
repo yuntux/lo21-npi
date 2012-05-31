@@ -4,9 +4,11 @@
 #include <string>
 using namespace std;
 
-int fact(int n){
-
+float fact(float n){
     int result=1;
+    if (n==0)
+        return result;
+    else
     for(int i=1;i<=n;i++)
         result=result*i;
     return result;
@@ -43,6 +45,14 @@ float divise(QStack<float>& pile)
     pile.pop();
     res=pile.pop()/res;
     pile.push(res);
+    return res;
+}
+
+float diff(QStack<float>& pile)
+{
+    float res=pile.top();
+    pile.pop();
+    res=pile.pop()-res;
     return res;
 }
 

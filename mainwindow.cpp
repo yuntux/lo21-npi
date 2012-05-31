@@ -4,6 +4,7 @@
 #include "TypeDonnee.h"
 #include "fonctions.h"
 #include <iostream>
+#include <cmath>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -48,6 +49,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->num9, SIGNAL(clicked()), this, SLOT(num9Clicked()));
     connect(ui->POINT, SIGNAL(clicked()), this, SLOT(POINTClicked()));
     connect(ui->ESPACE, SIGNAL(clicked()), this, SLOT(ESPACEClicked()));
+    //connect(ui->DOLLAR, SIGNAL(clicked()), this, SLOT(DOLLARClicked()));
 
     connect(ui->ENTER, SIGNAL(clicked()), this, SLOT(ENTERClicked()));
 
@@ -181,13 +183,13 @@ void MainWindow::loadFromFile(){
     //pile reels
     //pile complexe
 */
-ui->inputLine->setText("FIN");
+//ui->inputLine->setText("FIN");
 }
 
 void MainWindow::_modDegresToggled(bool b){
     if(b){
         _modAngle=degre;
-        ui->inputLine->setText("DegresON");
+    //    ui->inputLine->setText("DegresON");
         saveToFile();
     } else {
         this->_modRadiansToggled(true);
@@ -198,7 +200,7 @@ void MainWindow::_modDegresToggled(bool b){
 void MainWindow::_modRadiansToggled(bool b){
     if(b){
         _modAngle=radian;
-        ui->inputLine->setText("RadiansON");
+      //  ui->inputLine->setText("RadiansON");
         saveToFile();
     } else {
         this->_modDegresToggled(true);
@@ -212,7 +214,7 @@ void MainWindow::_modComplexeONClicked(bool b){
         this->_pileStockageComplexe.clear();
         this->_pileStockageReelle.clear();
         this->_pileAffichage.clear();
-        ui->inputLine->setText("ComplexeON");
+        //ui->inputLine->setText("ComplexeON");
         saveToFile();
     } else {
         this->_modComplexeOFFClicked(true);
@@ -226,7 +228,7 @@ void MainWindow::_modComplexeOFFClicked(bool b){
         this->_pileStockageComplexe.clear();
         this->_pileStockageReelle.clear();
         this->_pileAffichage.clear();
-        ui->inputLine->setText("ComplexeOFF");
+        //ui->inputLine->setText("ComplexeOFF");
         saveToFile();
     } else {
         this->_modComplexeONClicked(true);
@@ -261,7 +263,7 @@ void MainWindow::_modReel(bool b)
 {
     if(b){
         _modConstante=reel;
-        ui->inputLine->setText("Réels");
+        //ui->inputLine->setText("Réels");
         saveToFile();
     } else {
         this->_modRationnel(true);
@@ -274,7 +276,7 @@ void MainWindow::_modRationnel(bool b)
 {
     if(b){
         _modConstante=rationnel;
-        ui->inputLine->setText("Rationnel");
+       // ui->inputLine->setText("Rationnel");
         saveToFile();
     } else {
         this->_modReel(true);
@@ -368,13 +370,133 @@ void MainWindow::DIVISERClicked(){
     ui->inputLine->setText(ui->inputLine->text()+"/");
 }
 
+/*void MainWindow::DOLLARClicked(){
+
+}*/
+
 void MainWindow::ENTERClicked(){
-    QStringList list = ui->inputLine->text().split(QRegExp("\\s+"));
+    QStringList list = ui->inputLine->text().split(" ");
     ui->inputLine->setText("");
-float res;
-    for (int t=0; t<list.size(); t++){
-        QString temp = list.at(t);
-        int i=0; //on regarde le premier caractÃ¨re
+
+float res=0;
+float res2;
+float res3;
+
+//string s1;
+
+if(!_modComplexe)
+{
+    foreach(QString temp, list)
+    {
+        if(temp.at(0)=='+')
+        {
+            res2=sum(_pileStockageReelle,2);
+
+            std::cout<<"\nsomme = "<<res2;
+        }
+
+        else if(temp.at(0)=='*')
+        {
+            res2=prod(_pileStockageReelle);
+
+            std::cout<<"\nproduit = "<<res2;
+        }
+
+        else if(temp.at(0)=='/')
+        {
+            res2=divise(_pileStockageReelle);
+
+            std::cout<<"\nquotient = "<<res2;
+        }
+
+        else if(temp.at(0)=='-')
+        {
+            res2=diff(_pileStockageReelle);
+
+            std::cout<<"\ndifférence = "<<res2;
+        }
+
+        else if(temp.at(0)=='!')
+        {
+            res2=fact(_pileStockageReelle.pop());
+            empiler(res2);
+            std::cout<<"\nfactoriel : "<<_pileStockageReelle.top();
+        }
+
+        else if(temp.at(0)=='\'')
+        {
+            std::cout<<"\nexpression";
+        }
+
+        else if(temp[0]>='0' && temp[0]<='9')
+        {
+
+           res=temp.toDouble();
+           empiler(res);
+
+            std::cout<<"\n"<<_pileStockageReelle.top();
+        }
+    }
+}
+else
+{
+    foreach(QString temp, list)
+    {
+        QStringList list2 = temp.split('$');
+        foreach(QString temp2,list2)
+        {
+            if(temp.at(0)=='+')
+            {
+                res2=sum(_pileStockageReelle,2);
+
+                std::cout<<"\nsomme = "<<res2;
+            }
+
+            else if(temp.at(0)=='*')
+            {
+                res2=prod(_pileStockageReelle);
+
+                std::cout<<"\nproduit = "<<res2;
+            }
+
+            else if(temp.at(0)=='/')
+            {
+                res2=divise(_pileStockageReelle);
+
+                std::cout<<"\nquotient = "<<res2;
+            }
+
+            else if(temp.at(0)=='-')
+            {
+                res2=diff(_pileStockageReelle);
+
+                std::cout<<"\ndifférence = "<<res2;
+            }
+
+            else if(temp.at(0)=='!')
+            {
+                res2=fact(_pileStockageReelle.pop());
+                empiler(res2);
+                std::cout<<"\nfactoriel : "<<_pileStockageReelle.top();
+            }
+
+            else if(temp[0]>='0' && temp[0]<='9')
+            {
+
+               res=temp.toDouble();
+               empiler(res);
+
+                std::cout<<"\n"<<_pileStockageReelle.top();
+            }
+
+
+        }
+    }
+
+
+}
+
+        //on regarde le premier caractÃ¨re
           /*  if (temp[i]=='\'') {
                 //c'est une expression
                 //on fusionne les strings suivante jusqu'Ã  rencontrer' Ã  la fin d'une string
@@ -396,13 +518,20 @@ float res;
             }
 
     }*/
-        if(_modComplexe)
+
+
+
+
+    /*if(_modComplexe)
         {
             while(temp[i]!=NULL)
             {
-                if(temp[i] != ' ' && temp[i]>='0' && temp[i]<='9')
+                while(temp[i]!=' ')
                 {
-                    _pileStockageComplexe.push(temp[i].toAscii()-48);
+                if(temp[i]>='0' && temp[i]<='9')
+                {
+                    res=temp[i].toAscii()-48;
+                    _pileStockageComplexe.push(res);
 
 
                 }
@@ -414,21 +543,33 @@ float res;
                         std::cout<<"\nproduit : "<<prod(_pileStockageComplexe)<<"\n";
                     if(temp[i]=='/')
                         std::cout<<"\ndivision : "<<divise(_pileStockageComplexe)<<"\n";*/
-                }
+       /*         }
 
                 i++;
             }
+        }
         }
     else
         {
             while(temp[i]!=NULL)
             {
-                if(temp[i] != ' ' && temp[i]>='0' && temp[i]<='9')
+
+                while(temp[i]>='0' && temp[i]<='9' && temp[i]!=' ')
                 {
-                    _pileStockageReelle.push(temp[i].toAscii()-48);
+
+                    res2=pow(10,res)*(temp[i].toAscii()-48);
+                    res=res+1;
+                    res3=res3+res2;
+                    std::cout<<"\n"<<res3;
+
+                    i++;
 
                 }
-                else if(temp[i]=='+' || temp[i]=='-' || temp[i]=='*' || temp[i]=='/')
+                _pileStockageReelle.push(res3);
+                res3=0;
+                res=0;
+                std::cout<<"\ntest : "<<_pileStockageReelle.top();
+               if(temp[i]=='+' || temp[i]=='-' || temp[i]=='*' || temp[i]=='/')
                 {
                     if(temp[i]=='+')
                         std::cout<<"\nsomme : "<<sum(_pileStockageReelle,2)<<"\n";
@@ -439,15 +580,16 @@ float res;
                 }
 
                 i++;
-            }
-  }
 
+  }
+}
  //   for(int i=0; i<list.size(); i++)
         //non1'exp1'non2'exp2'non3
 //        ui->inputLine->setText(ui->inputLine->text()+list.at(i)+"    ");
 }
 }
-
+*/
+}
 MainWindow::~MainWindow()
 {
     delete ui;

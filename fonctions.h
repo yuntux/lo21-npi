@@ -24,11 +24,13 @@ template <class T>
     return (result);
 }
 
-int fact(int n);
+float fact(float n);
 
 float sum(QStack<float>& pile, int x);
 
 float prod(QStack<float>& pile);
+
+float diff(QStack<float>& pile);
 
 float divise(QStack<float>& pile);
 
