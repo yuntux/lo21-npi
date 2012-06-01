@@ -7,8 +7,12 @@ TARGET = ProjetP12
 TEMPLATE = app
 SOURCES += main.cpp \
     mainwindow.cpp \
-    fonctions.cpp
+    fonctions.cpp \
+    logmessage.cpp \
+    logsystem.cpp
 HEADERS += mainwindow.h \
     TypeDonnee.h \
-    fonctions.h
+    fonctions.h \
+    logmessage.h \
+    logsystem.h
 FORMS += mainwindow.ui

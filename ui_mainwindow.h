@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Fri Jun 1 12:59:45 2012
+** Created: Fri Jun 1 13:53:08 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -481,6 +481,7 @@ public:
         C->setText(QApplication::translate("MainWindow", "C", 0, QApplication::UnicodeUTF8));
         CE->setText(QApplication::translate("MainWindow", "CE", 0, QApplication::UnicodeUTF8));
         QUOTE->setText(QApplication::translate("MainWindow", "'", 0, QApplication::UnicodeUTF8));
+        QUOTE->setShortcut(QApplication::translate("MainWindow", "'", 0, QApplication::UnicodeUTF8));
         DOLLAR->setText(QApplication::translate("MainWindow", "$", 0, QApplication::UnicodeUTF8));
         MOD->setText(QApplication::translate("MainWindow", "MOD", 0, QApplication::UnicodeUTF8));
         SQR->setText(QApplication::translate("MainWindow", "SQR", 0, QApplication::UnicodeUTF8));
