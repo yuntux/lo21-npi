@@ -5,6 +5,7 @@
 #include <QStack>
 #include "TypeDonnee.h"
 
+
 enum MesureAngle { degre, radian};
 enum TypeConstante { entier, reel, rationnel};
 namespace Ui {
