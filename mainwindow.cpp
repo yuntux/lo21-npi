@@ -49,9 +49,13 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->num9, SIGNAL(clicked()), this, SLOT(num9Clicked()));
     connect(ui->POINT, SIGNAL(clicked()), this, SLOT(POINTClicked()));
     connect(ui->ESPACE, SIGNAL(clicked()), this, SLOT(ESPACEClicked()));
-    //connect(ui->DOLLAR, SIGNAL(clicked()), this, SLOT(DOLLARClicked()));
+    connect(ui->DOLLAR, SIGNAL(clicked()), this, SLOT(DOLLARClicked()));
+    connect(ui->QUOTE, SIGNAL(clicked()), this, SLOT(QUOTEClicked()));
+    connect(ui->CE, SIGNAL(clicked()), this, SLOT(CEClicked()));
+    connect(ui->C, SIGNAL(clicked()), this, SLOT(CClicked()));
 
     connect(ui->ENTER, SIGNAL(clicked()), this, SLOT(ENTERClicked()));
+    //connect(ui->EVAL, SIGNAL(clicked()), this, SLOT(EVALClicked()));
 
     //CONNEXIONS CLAVIER AVANCE
     connect(ui->FACTORIEL, SIGNAL(clicked()), this, SLOT(FACTORIELClicked()));
@@ -59,6 +63,22 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->SOUSTRAIRE, SIGNAL(clicked()), this, SLOT(SOUSTRAIREClicked()));
     connect(ui->MULTIPLIER, SIGNAL(clicked()), this, SLOT(MULTIPLIERClicked()));
     connect(ui->DIVISER, SIGNAL(clicked()), this, SLOT(DIVISERClicked()));
+    connect(ui->POW, SIGNAL(clicked()), this, SLOT(POWClicked()));
+    connect(ui->SIN, SIGNAL(clicked()), this, SLOT(SINClicked()));
+    connect(ui->COS, SIGNAL(clicked()), this, SLOT(COSClicked()));
+    connect(ui->TAN, SIGNAL(clicked()), this, SLOT(TANClicked()));
+    connect(ui->SINH, SIGNAL(clicked()), this, SLOT(SINHClicked()));
+    connect(ui->COSH, SIGNAL(clicked()), this, SLOT(COSHClicked()));
+    connect(ui->TANH, SIGNAL(clicked()), this, SLOT(TANHClicked()));
+    connect(ui->MOD, SIGNAL(clicked()), this, SLOT(MODClicked()));
+    connect(ui->SIGN, SIGNAL(clicked()), this, SLOT(SIGNClicked()));
+    connect(ui->LN, SIGNAL(clicked()), this, SLOT(LNClicked()));
+    connect(ui->LOG, SIGNAL(clicked()), this, SLOT(LOGClicked()));
+    connect(ui->INV, SIGNAL(clicked()), this, SLOT(INVClicked()));
+    connect(ui->SQR, SIGNAL(clicked()), this, SLOT(SQRClicked()));
+    connect(ui->SQRT, SIGNAL(clicked()), this, SLOT(SQRTClicked()));
+    connect(ui->CUBE, SIGNAL(clicked()), this, SLOT(CUBEClicked()));
+
 
     //CONNEXIONS POUR CHANGEMENT DE MOD
     connect(ui->_clavierBasic, SIGNAL(stateChanged(int)), this, SLOT(_clavierBasicStateChange(int)));
@@ -370,9 +390,83 @@ void MainWindow::DIVISERClicked(){
     ui->inputLine->setText(ui->inputLine->text()+"/");
 }
 
-/*void MainWindow::DOLLARClicked(){
+void MainWindow::POWClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"POW");
+}
 
-}*/
+void MainWindow::SINClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"SIN");
+}
+
+void MainWindow::COSClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"COS");
+}
+
+void MainWindow::TANClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"TAN");
+}
+
+void MainWindow::SINHClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"SINH");
+}
+
+void MainWindow::COSHClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"COSH");
+}
+
+void MainWindow::TANHClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"TANH");
+}
+
+void MainWindow::MODClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"MOD");
+}
+
+void MainWindow::SIGNClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"SIGN");
+}
+
+void MainWindow::SQRClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"SQR");
+}
+
+void MainWindow::SQRTClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"SQRT");
+}
+
+void MainWindow::CUBEClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"CUBE");
+}
+
+void MainWindow::LNClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"LN");
+}
+
+void MainWindow::LOGClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"LOG");
+}
+
+void MainWindow::INVClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"INV");
+}
+
+void MainWindow::DOLLARClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"$");
+}
+
+void MainWindow::QUOTEClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+"'");
+}
+
+void MainWindow::CEClicked(){
+    ui->inputLine->setText("");
+}
+
+void MainWindow::CClicked(){
+    //on retire le dernier cractère entré : celui le plus à gauche
+    QString newstring = ui->inputLine->text().remove(ui->inputLine->text().size()-1, 1);
+    ui->inputLine->setText(newstring);
+}
 
 void MainWindow::ENTERClicked(){
     QStringList list = ui->inputLine->text().split(" ");

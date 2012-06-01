@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sun May 20 16:00:15 2012
+** Created: Fri Jun 1 12:59:45 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -56,8 +56,11 @@ public:
     QPushButton *EVAL;
     QPushButton *ESPACE;
     QPushButton *ENTER;
-    QPushButton *CE;
     QPushButton *num7;
+    QPushButton *C;
+    QPushButton *CE;
+    QPushButton *QUOTE;
+    QPushButton *DOLLAR;
     QWidget *widget_clavierAvance;
     QWidget *layoutWidget1;
     QGridLayout *_clavierAvanceLayout;
@@ -123,7 +126,7 @@ public:
         widget_clavierBasic->setObjectName(QString::fromUtf8("widget_clavierBasic"));
         layoutWidget = new QWidget(widget_clavierBasic);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(0, 0, 787, 182));
+        layoutWidget->setGeometry(QRect(0, 0, 787, 211));
         _clavierBasicLayout = new QGridLayout(layoutWidget);
         _clavierBasicLayout->setSpacing(6);
         _clavierBasicLayout->setContentsMargins(11, 11, 11, 11);
@@ -194,15 +197,30 @@ public:
 
         _clavierBasicLayout->addWidget(ENTER, 5, 0, 1, 1);
 
-        CE = new QPushButton(layoutWidget);
-        CE->setObjectName(QString::fromUtf8("CE"));
-
-        _clavierBasicLayout->addWidget(CE, 5, 2, 1, 1);
-
         num7 = new QPushButton(layoutWidget);
         num7->setObjectName(QString::fromUtf8("num7"));
 
         _clavierBasicLayout->addWidget(num7, 1, 0, 1, 1);
+
+        C = new QPushButton(layoutWidget);
+        C->setObjectName(QString::fromUtf8("C"));
+
+        _clavierBasicLayout->addWidget(C, 6, 1, 1, 1);
+
+        CE = new QPushButton(layoutWidget);
+        CE->setObjectName(QString::fromUtf8("CE"));
+
+        _clavierBasicLayout->addWidget(CE, 6, 2, 1, 1);
+
+        QUOTE = new QPushButton(layoutWidget);
+        QUOTE->setObjectName(QString::fromUtf8("QUOTE"));
+
+        _clavierBasicLayout->addWidget(QUOTE, 6, 0, 1, 1);
+
+        DOLLAR = new QPushButton(layoutWidget);
+        DOLLAR->setObjectName(QString::fromUtf8("DOLLAR"));
+
+        _clavierBasicLayout->addWidget(DOLLAR, 5, 2, 1, 1);
 
 
         gridLayout->addWidget(widget_clavierBasic, 4, 0, 1, 1);
@@ -458,9 +476,12 @@ public:
         ESPACE->setShortcut(QApplication::translate("MainWindow", "Space", 0, QApplication::UnicodeUTF8));
         ENTER->setText(QApplication::translate("MainWindow", "ENTRER", 0, QApplication::UnicodeUTF8));
         ENTER->setShortcut(QApplication::translate("MainWindow", "Enter", 0, QApplication::UnicodeUTF8));
-        CE->setText(QApplication::translate("MainWindow", "CE", 0, QApplication::UnicodeUTF8));
         num7->setText(QApplication::translate("MainWindow", "7", 0, QApplication::UnicodeUTF8));
         num7->setShortcut(QApplication::translate("MainWindow", "7", 0, QApplication::UnicodeUTF8));
+        C->setText(QApplication::translate("MainWindow", "C", 0, QApplication::UnicodeUTF8));
+        CE->setText(QApplication::translate("MainWindow", "CE", 0, QApplication::UnicodeUTF8));
+        QUOTE->setText(QApplication::translate("MainWindow", "'", 0, QApplication::UnicodeUTF8));
+        DOLLAR->setText(QApplication::translate("MainWindow", "$", 0, QApplication::UnicodeUTF8));
         MOD->setText(QApplication::translate("MainWindow", "MOD", 0, QApplication::UnicodeUTF8));
         SQR->setText(QApplication::translate("MainWindow", "SQR", 0, QApplication::UnicodeUTF8));
         COSH->setText(QApplication::translate("MainWindow", "COSH", 0, QApplication::UnicodeUTF8));

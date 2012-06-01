@@ -32,6 +32,25 @@ public:
     void empiler(float r);
 
 public slots:
+   void POWClicked();
+   void SINClicked();
+   void COSClicked();
+   void TANClicked();
+   void SINHClicked();
+   void COSHClicked();
+   void TANHClicked();
+   void MODClicked();
+   void SIGNClicked();
+   void LNClicked();
+   void LOGClicked();
+   void INVClicked();
+   void SQRClicked();
+   void SQRTClicked();
+   void CUBEClicked();
+   void QUOTEClicked();
+   void CClicked();
+   void CEClicked();
+   void DOLLARClicked();
    void num0Clicked();
    void num1Clicked();
    void num2Clicked();
