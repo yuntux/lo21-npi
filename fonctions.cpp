@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-float fact(float n){
+float fact(int n){
     int result=1;
     if (n==0)
         return result;
@@ -110,3 +110,48 @@ void read_expression(string expr,QStack<float>& pile)
     cout<<"chiffres : "<<chiffres<<endl;
     cout<<"operateurs : "<<operateur<<endl;
 }
+
+Complexe sum_comp(QStack<Complexe> &pile, int x)
+{
+    Complexe res,res2,res3;
+    res=pile.pop();
+    res2=pile.pop();
+    res3.setReelle(res.getPartieReelle()+res2.getPartieReelle());
+    res3.setImaginaire(res.getPartieImaginaire()+res2.getPartieImaginaire());
+
+    pile.push(res3);
+    return res3;
+}
+
+Complexe diff_comp(QStack<Complexe> &pile)
+{
+    Complexe res,res2,res3;
+    res=pile.pop();
+    res2=pile.pop();
+    res3.setReelle(res2.getPartieReelle()-res.getPartieReelle());
+    res3.setImaginaire(res2.getPartieImaginaire()-res.getPartieImaginaire());
+
+    pile.push(res3);
+    return res3;
+}
+
+Complexe prod_comp(QStack<Complexe> &pile)
+{
+    Complexe res,res2,res3;
+    res=pile.pop();
+    res2=pile.pop();
+    res3.setReelle((res2.getPartieReelle()*res.getPartieReelle())-(res2.getPartieImaginaire()*res.getPartieImaginaire()));
+    res3.setImaginaire((res2.getPartieReelle()*res.getPartieImaginaire())+(res2.getPartieImaginaire()*res.getPartieReelle()));
+
+    pile.push(res3);
+    return res3;
+}
+
+Complexe conjugue(Complexe c)
+{
+    Complexe c1;
+    c1.setImaginaire(-c.getPartieImaginaire());
+    return c1;
+}
+
+

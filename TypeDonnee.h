@@ -2,17 +2,39 @@
 #define TYPEDONNEE_H
 
 #include <iostream>
+#include <QtGui>
 
+enum Type {
+       ent,
+       rat,
+       real,
+       comp,
+       expr,
+       erreur
+    };
 
-class Complexe {
-    float _reelle;
-    float _imaginaire;
+class Constante
+{
+public:
+    const Type& getType() { return genre; }
+    virtual QString afficher() const = 0;
+protected:
+    Type genre;
+//    virtual void construireConstante(const std::string&) = 0;
+};
+
+class Complexe : public Constante{
+    double _reelle;
+    double _imaginaire;
 
 public:
     Complexe(float r=0, float i=0):_reelle(r), _imaginaire(i){}
-    virtual void Afficher(){ std::cout<<_reelle<<_imaginaire<<"\n";}
+    virtual QString afficher() const{ return QString::number(_reelle)+"+"+QString::number(_imaginaire)+"i\n";}
     float getPartieReelle() const {return _reelle;}
     float getPartieImaginaire() const {return _imaginaire;}
+    void setReelle(float re){_reelle=re;}
+    void setImaginaire(float im){_imaginaire=im;}
+
 };
 
 

@@ -9,10 +9,12 @@ SOURCES += main.cpp \
     mainwindow.cpp \
     fonctions.cpp \
     logmessage.cpp \
-    logsystem.cpp
+    logsystem.cpp \
+    pile.cpp
 HEADERS += mainwindow.h \
     TypeDonnee.h \
     fonctions.h \
     logmessage.h \
-    logsystem.h
+    logsystem.h \
+    pile.h
 FORMS += mainwindow.ui

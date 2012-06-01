@@ -2,6 +2,7 @@
 #define FONCTIONS_H
 #include <QStack>
 #include <string>
+#include "TypeDonnee.h"
 
 template <class T>
 T inv(T num) {
@@ -24,7 +25,7 @@ template <class T>
     return (result);
 }
 
-float fact(float n);
+float fact(int n);
 
 float sum(QStack<float>& pile, int x);
 
@@ -41,5 +42,13 @@ void dup(QStack<float>& pile);
 void afficher(QStack<float>& pile);
 
 void read_expression(std::string expr, QStack<float>& pile);
+
+Complexe sum_comp(QStack<Complexe> &pile, int x);
+
+Complexe diff_comp(QStack<Complexe> &pile);
+
+Complexe prod_comp(QStack<Complexe> &pile);
+
+Complexe conjugue(Complexe c);
 
 #endif // FONCTIONS_H

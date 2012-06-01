@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Fri Jun 1 13:53:08 2012
+** Created: Fri Jun 1 19:44:35 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -20,7 +20,7 @@
 #include <QtGui/QHBoxLayout>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLineEdit>
-#include <QtGui/QListView>
+#include <QtGui/QListWidget>
 #include <QtGui/QMainWindow>
 #include <QtGui/QMenu>
 #include <QtGui/QMenuBar>
@@ -84,8 +84,8 @@ public:
     QPushButton *SQRT;
     QPushButton *CUBE;
     QPushButton *POW;
-    QListView *listView;
     QLineEdit *inputLine;
+    QListWidget *listWidget;
     QVBoxLayout *verticalLayout_2;
     QGroupBox *groupBox_4;
     QRadioButton *_modComplexeON;
@@ -100,6 +100,8 @@ public:
     QGroupBox *groupBox_3;
     QCheckBox *_clavierBasic;
     QCheckBox *_clavierAvance;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
     QMenuBar *menuBar;
     QMenu *menuFichier;
     QMenu *menu;
@@ -223,7 +225,7 @@ public:
         _clavierBasicLayout->addWidget(DOLLAR, 5, 2, 1, 1);
 
 
-        gridLayout->addWidget(widget_clavierBasic, 4, 0, 1, 1);
+        gridLayout->addWidget(widget_clavierBasic, 3, 0, 1, 1);
 
         widget_clavierAvance = new QWidget(centralWidget);
         widget_clavierAvance->setObjectName(QString::fromUtf8("widget_clavierAvance"));
@@ -340,23 +342,23 @@ public:
         _clavierAvanceLayout->addWidget(POW, 0, 0, 1, 1);
 
 
-        gridLayout->addWidget(widget_clavierAvance, 3, 0, 1, 1);
-
-        listView = new QListView(centralWidget);
-        listView->setObjectName(QString::fromUtf8("listView"));
-        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(listView->sizePolicy().hasHeightForWidth());
-        listView->setSizePolicy(sizePolicy);
-
-        gridLayout->addWidget(listView, 1, 0, 1, 1);
+        gridLayout->addWidget(widget_clavierAvance, 2, 0, 1, 1);
 
         inputLine = new QLineEdit(centralWidget);
         inputLine->setObjectName(QString::fromUtf8("inputLine"));
         inputLine->setEnabled(false);
 
-        gridLayout->addWidget(inputLine, 2, 0, 1, 1);
+        gridLayout->addWidget(inputLine, 1, 0, 1, 1);
+
+        listWidget = new QListWidget(centralWidget);
+        listWidget->setObjectName(QString::fromUtf8("listWidget"));
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(listWidget->sizePolicy().hasHeightForWidth());
+        listWidget->setSizePolicy(sizePolicy);
+
+        gridLayout->addWidget(listWidget, 0, 0, 1, 1);
 
 
         horizontalLayout->addLayout(gridLayout);
@@ -419,6 +421,16 @@ public:
 
         verticalLayout_2->addWidget(groupBox_3);
 
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+
+        verticalLayout_2->addWidget(pushButton);
+
+        pushButton_2 = new QPushButton(centralWidget);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+
+        verticalLayout_2->addWidget(pushButton_2);
+
 
         horizontalLayout->addLayout(verticalLayout_2);
 
@@ -479,6 +491,7 @@ public:
         num7->setText(QApplication::translate("MainWindow", "7", 0, QApplication::UnicodeUTF8));
         num7->setShortcut(QApplication::translate("MainWindow", "7", 0, QApplication::UnicodeUTF8));
         C->setText(QApplication::translate("MainWindow", "C", 0, QApplication::UnicodeUTF8));
+        C->setShortcut(QApplication::translate("MainWindow", "Backspace", 0, QApplication::UnicodeUTF8));
         CE->setText(QApplication::translate("MainWindow", "CE", 0, QApplication::UnicodeUTF8));
         QUOTE->setText(QApplication::translate("MainWindow", "'", 0, QApplication::UnicodeUTF8));
         QUOTE->setShortcut(QApplication::translate("MainWindow", "'", 0, QApplication::UnicodeUTF8));
@@ -521,6 +534,8 @@ public:
         groupBox_3->setTitle(QApplication::translate("MainWindow", "Affichage claviers", 0, QApplication::UnicodeUTF8));
         _clavierBasic->setText(QApplication::translate("MainWindow", "&Basic", 0, QApplication::UnicodeUTF8));
         _clavierAvance->setText(QApplication::translate("MainWindow", "&Avanc\303\251", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("MainWindow", "Vider Pile", 0, QApplication::UnicodeUTF8));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Supprimer un \303\251l\303\251ment", 0, QApplication::UnicodeUTF8));
         menuFichier->setTitle(QApplication::translate("MainWindow", "Fichier", 0, QApplication::UnicodeUTF8));
         menu->setTitle(QApplication::translate("MainWindow", "?", 0, QApplication::UnicodeUTF8));
     } // retranslateUi

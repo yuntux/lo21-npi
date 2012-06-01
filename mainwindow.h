@@ -3,7 +3,8 @@
 
 #include <QMainWindow>
 #include <QStack>
-#include "TypeDonnee.h"
+//#include "TypeDonnee.h"
+#include "pile.h"
 
 
 enum MesureAngle { degre, radian};
@@ -20,6 +21,9 @@ private:
     enum MesureAngle _modAngle;
     enum TypeConstante _modConstante;
     bool _modComplexe;
+
+    void afficheur_pile(Pile p);
+    Pile _pileStockage;
     QStack<QString> _pileAffichage;
     QStack<float> _pileStockageReelle;
     QStack<Complexe> _pileStockageComplexe; //ATTENTION : vider la pile float lors du passage en  mode complexes

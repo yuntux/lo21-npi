@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+
     //Initialisation de la calculatrice
     _modAngle = degre;
     _modConstante = entier;
@@ -92,7 +93,23 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->_modReels, SIGNAL(toggled(bool)), this, SLOT(_modReel(bool)));
     //this->saveToFile();
     this->loadFromFile();
+
+    Complexe c(2,3);
+    Complexe d(2,8);
+    _pileStockage.append(&c);
+    _pileStockage.append(&c);
+    _pileStockage.append(&d);
+    _pileStockage.append(&c);
+    this->afficheur_pile(_pileStockage);
 }
+
+
+void MainWindow::afficheur_pile(Pile p){
+    //on copie la liste en local pour l'itérer en la détr
+    for (int i=0; i<p.size(); i++)
+        ui->listWidget->addItem(p.pop()->afficher());
+}
+
 
 void MainWindow::saveToFile(){
     QFile file("context");
@@ -475,8 +492,9 @@ void MainWindow::ENTERClicked(){
 float res=0;
 float res2;
 float res3;
+bool reel_pur=false;
 
-//string s1;
+
 
 if(!_modComplexe)
 {
@@ -486,41 +504,52 @@ if(!_modComplexe)
         {
             res2=sum(_pileStockageReelle,2);
 
-            std::cout<<"\nsomme = "<<res2;
+            qDebug()<<"\nsomme = "<<res2;
         }
 
         else if(temp.at(0)=='*')
         {
             res2=prod(_pileStockageReelle);
 
-            std::cout<<"\nproduit = "<<res2;
+            qDebug()<<"\nproduit = "<<res2;
         }
 
         else if(temp.at(0)=='/')
         {
             res2=divise(_pileStockageReelle);
 
-            std::cout<<"\nquotient = "<<res2;
+            qDebug()<<"\nquotient = "<<res2;
         }
 
         else if(temp.at(0)=='-')
         {
             res2=diff(_pileStockageReelle);
 
-            std::cout<<"\ndifférence = "<<res2;
+            qDebug()<<"\ndifférence = "<<res2;
         }
 
         else if(temp.at(0)=='!')
         {
             res2=fact(_pileStockageReelle.pop());
             empiler(res2);
-            std::cout<<"\nfactoriel : "<<_pileStockageReelle.top();
+            qDebug()<<"\nfactoriel : "<<_pileStockageReelle.top();
         }
 
         else if(temp.at(0)=='\'')
         {
-            std::cout<<"\nexpression";
+
+            QString s1;
+            for(int i=1;i<temp.size();i++)
+            {
+                s1=s1+temp.at(i);
+
+            }
+
+                _pileAffichage.push(s1);
+                qDebug()<<_pileAffichage.top();
         }
+
+
 
         else if(temp[0]>='0' && temp[0]<='9')
         {
@@ -528,7 +557,7 @@ if(!_modComplexe)
            res=temp.toDouble();
            empiler(res);
 
-            std::cout<<"\n"<<_pileStockageReelle.top();
+           qDebug()<<"\n"<<_pileStockageReelle.top();
         }
     }
 }
@@ -536,55 +565,87 @@ else
 {
     foreach(QString temp, list)
     {
-        QStringList list2 = temp.split('$');
-        foreach(QString temp2,list2)
-        {
             if(temp.at(0)=='+')
             {
-                res2=sum(_pileStockageReelle,2);
+                Complexe c;
+                c=sum_comp(_pileStockageComplexe,2);
 
-                std::cout<<"\nsomme = "<<res2;
+                qDebug()<<"\nsomme partie réelle= "<<c.getPartieReelle();
+                qDebug()<<"\nsomme partie imaginaire= "<<c.getPartieImaginaire();
             }
 
             else if(temp.at(0)=='*')
             {
-                res2=prod(_pileStockageReelle);
+                Complexe c;
+                c=prod_comp(_pileStockageComplexe);
 
-                std::cout<<"\nproduit = "<<res2;
+                qDebug()<<"\nproduit partie réelle= "<<c.getPartieReelle();
+                qDebug()<<"\nproduit partie imaginaire= "<<c.getPartieImaginaire();
             }
 
             else if(temp.at(0)=='/')
             {
                 res2=divise(_pileStockageReelle);
 
-                std::cout<<"\nquotient = "<<res2;
+                qDebug()<<"\nquotient = "<<res2;
             }
 
             else if(temp.at(0)=='-')
             {
-                res2=diff(_pileStockageReelle);
+                Complexe c;
+                c=diff_comp(_pileStockageComplexe);
+                qDebug()<<"\ndiff partie réelle= "<<c.getPartieReelle();
+                qDebug()<<"\ndiff partie imaginaire= "<<c.getPartieImaginaire();
 
-                std::cout<<"\ndifférence = "<<res2;
             }
 
             else if(temp.at(0)=='!')
             {
                 res2=fact(_pileStockageReelle.pop());
                 empiler(res2);
-                std::cout<<"\nfactoriel : "<<_pileStockageReelle.top();
+                qDebug()<<"\nfactoriel : "<<_pileStockageReelle.top();
             }
 
             else if(temp[0]>='0' && temp[0]<='9')
             {
 
-               res=temp.toDouble();
-               empiler(res);
+                for(int i=0;i<temp.size();i++)
+                {
+                    if(temp[i]=='$')
+                        reel_pur=true;
 
-                std::cout<<"\n"<<_pileStockageReelle.top();
+                }
+
+                if(reel_pur==true)
+                {
+                QStringList list2 = temp.split('$');
+
+
+                    Complexe c(list2.at(0).toDouble(),list2.at(1).toDouble());
+                    _pileStockageComplexe.push(c);
+                    Complexe c1;
+                    c1=_pileStockageComplexe.top();
+
+                    qDebug()<<"\nPartie réelle : "<<c1.getPartieReelle();
+                    qDebug()<<"\nPartie imaginaire : "<<c1.getPartieImaginaire();
+
+                }
+                else
+                {
+                    Complexe c(temp.toDouble(),0);
+                    _pileStockageComplexe.push(c);
+                    Complexe c1;
+                    c1=_pileStockageComplexe.top();
+
+                    qDebug()<<"\nPartie réelle : "<<c1.getPartieReelle();
+                    qDebug()<<"\nPartie imaginaire : "<<c1.getPartieImaginaire();
+                }
+                reel_pur=false;
             }
 
 
-        }
+
+
     }
 
 
@@ -632,11 +693,11 @@ else
                 else if(temp[i]=='+' || temp[i]=='-' || temp[i]=='*' || temp[i]=='/')
                 {
                   /*  if(temp[i]=='+')
-                        std::cout<<"\nsomme : "<<sum(_pileStockageComplexe,2)<<"\n";
+                        qDebug()<<"\nsomme : "<<sum(_pileStockageComplexe,2)<<"\n";
                     if(temp[i]=='*')
-                        std::cout<<"\nproduit : "<<prod(_pileStockageComplexe)<<"\n";
+                        qDebug()<<"\nproduit : "<<prod(_pileStockageComplexe)<<"\n";
                     if(temp[i]=='/')
-                        std::cout<<"\ndivision : "<<divise(_pileStockageComplexe)<<"\n";*/
+                        qDebug()<<"\ndivision : "<<divise(_pileStockageComplexe)<<"\n";*/
        /*         }
 
                 i++;
@@ -654,7 +715,7 @@ else
                     res2=pow(10,res)*(temp[i].toAscii()-48);
                     res=res+1;
                     res3=res3+res2;
-                    std::cout<<"\n"<<res3;
+                    qDebug()<<"\n"<<res3;
 
                     i++;
 
@@ -662,15 +723,15 @@ else
                 _pileStockageReelle.push(res3);
                 res3=0;
                 res=0;
-                std::cout<<"\ntest : "<<_pileStockageReelle.top();
+                qDebug()<<"\ntest : "<<_pileStockageReelle.top();
                if(temp[i]=='+' || temp[i]=='-' || temp[i]=='*' || temp[i]=='/')
                 {
                     if(temp[i]=='+')
-                        std::cout<<"\nsomme : "<<sum(_pileStockageReelle,2)<<"\n";
+                        qDebug()<<"\nsomme : "<<sum(_pileStockageReelle,2)<<"\n";
                     if(temp[i]=='*')
-                        std::cout<<"\nproduit : "<<prod(_pileStockageReelle)<<"\n";
+                        qDebug()<<"\nproduit : "<<prod(_pileStockageReelle)<<"\n";
                     if(temp[i]=='/')
-                        std::cout<<"\ndivision : "<<divise(_pileStockageReelle)<<"\n";
+                        qDebug()<<"\ndivision : "<<divise(_pileStockageReelle)<<"\n";
                 }
 
                 i++;

@@ -17,7 +17,7 @@
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="4" column="0">
+      <item row="3" column="0">
        <widget class="QWidget" name="widget_clavierBasic" native="true">
         <widget class="QWidget" name="layoutWidget">
          <property name="geometry">
@@ -171,6 +171,9 @@
             <property name="text">
              <string>C</string>
             </property>
+            <property name="shortcut">
+             <string>Backspace</string>
+            </property>
            </widget>
           </item>
           <item row="6" column="2">
@@ -201,7 +204,7 @@
         </widget>
        </widget>
       </item>
-      <item row="3" column="0">
+      <item row="2" column="0">
        <widget class="QWidget" name="widget_clavierAvance" native="true">
         <widget class="QWidget" name="layoutWidget">
          <property name="geometry">
@@ -385,19 +388,19 @@
        </widget>
       </item>
       <item row="1" column="0">
-       <widget class="QListView" name="listView">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
        <widget class="QLineEdit" name="inputLine">
         <property name="enabled">
          <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QListWidget" name="listWidget">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
         </property>
        </widget>
       </item>
@@ -572,6 +575,20 @@
           <bool>true</bool>
          </property>
         </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Vider Pile</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Supprimer un élément</string>
+        </property>
        </widget>
       </item>
      </layout>
