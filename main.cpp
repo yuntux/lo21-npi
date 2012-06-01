@@ -3,7 +3,7 @@
 #include "TypeDonnee.h"
 #include "fonctions.h"
 //qt example calculator
-//DESIGN PATTERN : command(Annuler/Rétablir)
+//DESIGN PATTERN : command(Annuler/Rétablir), Factory, Composite,
 //trois Clases : Complexe, Rationnel, MainWindow
 //math.h
 //Gérer les erreurs => exeptions standards
