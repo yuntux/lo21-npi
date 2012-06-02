@@ -2,7 +2,9 @@
 #define FONCTIONS_H
 #include <QStack>
 #include <string>
-#include "TypeDonnee.h"
+#include "constante.h"
+#include "complexe.h"
+#include "rationnel.h"
 
 template <class T>
 T inv(T num) {

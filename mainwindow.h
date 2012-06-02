@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <QStack>
-//#include "TypeDonnee.h"
 #include "pile.h"
 
 

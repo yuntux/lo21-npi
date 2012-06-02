@@ -2,6 +2,10 @@
 #include <QStack>
 #include <iostream>
 #include <string>
+#include "complexe.h"
+#include "constante.h"
+#include "rationnel.h"
+
 using namespace std;
 
 float fact(int n){

@@ -1,7 +1,5 @@
 #include <QtGui/QApplication>
 #include "mainwindow.h"
-#include "TypeDonnee.h"
-#include "fonctions.h"
 //qt example calculator
 //
 //DESIGN PATTERN : command(Annuler/Rétablir), Factory, Composite,
@@ -21,7 +19,7 @@
 
 //RAPOPRT : on gère les rationnel sans touche supplémentaire. On considère que le slash est l'opréateur de division que s'il est précédé d'un esdpace
 //mods de la calto en static ???
-//quid des concepts centraux de LO21 : surcharge, héritage, polymorphisme, designPattern...
+//quid des concepts centraux de LO21 : surcharge, héritage, polymorphisme, designPattern, dynamicCast...
 
 //=> OnClik sur MODE_COMPLEXE on bascule les piles en complexes en vidant tous les nombres en mémoire
 
@@ -31,9 +29,5 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-    w.empiler(5.2);
-
-
-
     return a.exec();
 }

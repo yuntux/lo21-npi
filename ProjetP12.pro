@@ -5,16 +5,23 @@ QT += core \
     gui
 TARGET = ProjetP12
 TEMPLATE = app
-SOURCES += main.cpp \
-    mainwindow.cpp \
-    fonctions.cpp \
-    logmessage.cpp \
+SOURCES += mainwindow.cpp \
+    main.cpp \
     logsystem.cpp \
+    logmessage.cpp \
+    fonctions.cpp \
+    constante.cpp \
+    complexe.cpp \
+    rationnel.cpp \
     pile.cpp
 HEADERS += mainwindow.h \
-    TypeDonnee.h \
-    fonctions.h \
-    logmessage.h \
     logsystem.h \
+    logmessage.h \
+    fonctions.h \
+    constante.h \
+    complexe.h \
+    TypeDonnee.h \
+    rationnel.h \
     pile.h
 FORMS += mainwindow.ui
+OTHER_FILES += 
