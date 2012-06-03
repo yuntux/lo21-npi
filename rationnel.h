@@ -4,7 +4,7 @@
 #include "constante.h"
 #include <iostream>
 
-class Rationnel {
+class Rationnel : public Constante{
     int _numerateur;
     int _denominateur;
 
@@ -17,7 +17,7 @@ public:
     void setDenominateur(int v){_denominateur=v;}
 
     virtual Constante* addition(Constante* c);
-    //virtual Constante* signe(Constante* c);
+    virtual Constante* signe();
 
     Rationnel(int num, int den=1):_numerateur(num), _denominateur(den)
     {

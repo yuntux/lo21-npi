@@ -29,7 +29,7 @@
 
 
 //DYNAMIC CAST sur toutes les fonction assymétrique des toutes les classes déivée des constante sauf pour la classe complexe (rationnel?)
-
+//implémenter une fonction de simplification pour les rationnels
 int main(int argc, char *argv[])
 {
 

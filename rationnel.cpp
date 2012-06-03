@@ -19,3 +19,7 @@ Constante* Rationnel::addition(Constante* c){
         return new Complexe(c_reel->getValeur()+(_numerateur/_denominateur));
     }
 }
+
+Constante* Rationnel::signe(){
+    return new Rationnel(-_numerateur, _denominateur);
+}

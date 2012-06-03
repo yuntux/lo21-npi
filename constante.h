@@ -18,7 +18,7 @@ class Constante
 public:
     virtual QString afficher() const = 0;
     virtual Constante* addition(Constante* c)=0;
-    //virtual Constante* signe()=0;
+    virtual Constante* signe()=0;
 };
 
 class FrabriqueConstante{

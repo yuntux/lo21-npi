@@ -23,3 +23,7 @@ Constante* Complexe::addition(Constante* c){
         return new Complexe(c_complexe->getPartieReelle()+_reelle, c_complexe->getPartieImaginaire()+_imaginaire);
     }
 }
+
+Constante* Complexe::signe(){
+    return new Complexe(-_reelle, _imaginaire);
+}
