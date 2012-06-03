@@ -6,6 +6,7 @@
 #include "complexe.h"
 #include "rationnel.h"
 
+/*
 template <class T>
 T inv(T num) {
   T result;
@@ -52,5 +53,5 @@ Complexe diff_comp(QStack<Complexe> &pile);
 Complexe prod_comp(QStack<Complexe> &pile);
 
 Complexe conjugue(Complexe c);
-
+*/
 #endif // FONCTIONS_H

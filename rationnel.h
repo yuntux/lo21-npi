@@ -21,7 +21,7 @@ public:
     virtual Constante* signe();
     virtual Constante* soustraction(Constante* c);
 
-    Rationnel(int num, int den=1):_numerateur(num), _denominateur(den)
+    Rationnel(int num=0, int den=1):_numerateur(num), _denominateur(den)
     {
         if (_denominateur==0)
         {

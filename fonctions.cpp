@@ -7,7 +7,7 @@
 #include "rationnel.h"
 
 using namespace std;
-
+/*
 float fact(int n){
     int result=1;
     if (n==0)
@@ -158,4 +158,4 @@ Complexe conjugue(Complexe c)
     return c1;
 }
 
-
+*/

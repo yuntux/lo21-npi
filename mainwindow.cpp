@@ -21,13 +21,13 @@ MainWindow::MainWindow(QWidget *parent) :
     _pileStockageReelle.append(3.14);
     _pileStockageReelle.append(3.14);
 
-    Complexe c1(2,3);
+    /*Complexe c1(2,3);
     Complexe c2(4,5);
     Complexe c3(6,7);
     _pileStockageComplexe.append(c1);
     _pileStockageComplexe.append(c2);
     _pileStockageComplexe.append(c3);
-
+*/
     _pileAffichage.append("premier élement de la pile affichage");
     _pileAffichage.append("deuxième élement de la pile affichage");
     _pileAffichage.append("troisième élement de la pile affichage");
@@ -93,7 +93,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //this->saveToFile();
     this->loadFromFile();
 
-    Complexe c(1,3);
+    /*Complexe c(1,3);
     Complexe d(2,8);
     Complexe e(3,8);
     Complexe f(4,8);
@@ -107,6 +107,7 @@ MainWindow::MainWindow(QWidget *parent) :
     _pileStockage.append(&g);
     _pileStockage.append(&h);
     this->afficheur_pile(_pileStockage);
+    */
 }
 
 
@@ -494,7 +495,7 @@ void MainWindow::CClicked(){
 void MainWindow::ENTERClicked(){
     QStringList list = ui->inputLine->text().split(" ");
     ui->inputLine->setText("");
-
+/*DEBUT SIMON
 float res=0;
 float res2;
 float res3;
@@ -656,7 +657,8 @@ else
 
 
 }
-
+//FIN SIMON
+*/
         //on regarde le premier caractère
           /*  if (temp[i]=='\'') {
                 //c'est une expression

@@ -29,11 +29,12 @@ Constante* Rationnel::addition(Constante* c){
         return new Complexe(c_complexe->getPartieReelle()+(_numerateur/_denominateur), c_complexe->getPartieImaginaire());
     } else if (typeid(*c)==typeid(Rationnel)) {
         Rationnel *c_rationnel=dynamic_cast<Rationnel *>(c);
-        //FIXME : on doit pouvoir mettre des type constantes pour les réels et rationnel => PAS DE CAST SUR LA CLASSE COMPLEXE
-        return new Complexe((c_rationnel->getNumerateur()+_numerateur)/(c_rationnel->getDenominateur()+_denominateur));
+        Rationnel* tmp  = new Rationnel(c_rationnel->getNumerateur()+_numerateur, c_rationnel->getDenominateur()+_denominateur);
+        return new Complexe(tmp);
     } else if (typeid(*c)==typeid(Reel)) {
         Reel *c_reel=dynamic_cast<Reel *>(c);
-        return new Complexe(c_reel->getValeur()+(_numerateur/_denominateur));
+        Rationnel* tmp = new Rationnel(c_reel->getValeur()*_denominateur + _numerateur, _denominateur);
+        return new Complexe(tmp);
     }
 }
 
