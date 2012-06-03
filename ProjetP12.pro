@@ -22,7 +22,6 @@ HEADERS += mainwindow.h \
     fonctions.h \
     constante.h \
     complexe.h \
-    TypeDonnee.h \
     rationnel.h \
     pile.h \
     entier.h \

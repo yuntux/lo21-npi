@@ -15,9 +15,11 @@ public:
     float getDenominateur() const {return _denominateur;}
     void setNumerateur(int v){_numerateur=v;}
     void setDenominateur(int v){_denominateur=v;}
+    Rationnel(Constante* c);
 
     virtual Constante* addition(Constante* c);
     virtual Constante* signe();
+    virtual Constante* soustraction(Constante* c);
 
     Rationnel(int num, int den=1):_numerateur(num), _denominateur(den)
     {

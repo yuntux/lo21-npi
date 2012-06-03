@@ -16,8 +16,11 @@ public:
     void setReelle(double re){_reelle=re;}
     void setImaginaire(double im){_imaginaire=im;}
 
+    Complexe(Constante* c);
+
     virtual Constante* addition(Constante* c);
     virtual Constante* signe();
+    virtual Constante* soustraction(Constante* c);
 };
 
 class FrabriqueComplexe : public Complexe{
