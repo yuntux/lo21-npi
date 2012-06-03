@@ -4,6 +4,7 @@
 #include "constante.h"
 
 class Complexe : public Constante{
+    //attention _reel et _imaginaire doivent être de type constante
     double _reelle;
     double _imaginaire;
 
@@ -15,9 +16,9 @@ public:
     void setReelle(float re){_reelle=re;}
     void setImaginaire(float im){_imaginaire=im;}
 
-    virtual Complexe* operator+(Complexe& c);
+    virtual Constante* addition(Constante* c);
+    //virtual Constante* signe();
 };
-    //Complexe operator+(Complexe const&a, Complexe const&b);
 
 class FrabriqueComplexe : public Complexe{
 public:

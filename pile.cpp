@@ -29,16 +29,15 @@ Constante* Pile::top()
 
 }
 
-/*Complexe* Pile::sum(unsigned int x)
+Constante* Pile::sum(unsigned int x)
 {
-    Complexe* res= new Complexe;
+    Constante* res= new Complexe;
     res = 0;
     for(int i=0;i<x;i++)
     {
-        res=res+this->top();
+        res=res->addition(top());
         this->pop();
     }
     this->push(res);
     return res;
 }
-*/

@@ -94,12 +94,19 @@ MainWindow::MainWindow(QWidget *parent) :
     //this->saveToFile();
     this->loadFromFile();
 
-    Complexe c(2,3);
+    Complexe c(1,3);
     Complexe d(2,8);
+    Complexe e(3,8);
+    Complexe f(4,8);
+    Complexe g(5,8);
+    Complexe h(6,8);
     _pileStockage.append(&c);
     _pileStockage.append(&c);
     _pileStockage.append(&d);
-    _pileStockage.append(&c);
+    _pileStockage.append(&e);
+    _pileStockage.append(&f);
+    _pileStockage.append(&g);
+    _pileStockage.append(&h);
     this->afficheur_pile(_pileStockage);
 }
 

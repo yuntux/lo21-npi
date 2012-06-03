@@ -15,6 +15,7 @@ public:
     Constante* pop();
     void append(Constante* ptr);
     Constante* top();
+    void push(Constante* ptr) {p.push(ptr);}
     bool isEmpty() const {return p.isEmpty();}
     int size() const {return p.size();}
     Pile();

@@ -7,7 +7,7 @@
 
 
 enum MesureAngle { degre, radian};
-enum TypeConstante { entier, reel, rationnel};
+//enum TypeConstante { entier, reel, rationnel};
 namespace Ui {
     class MainWindow;
 }
@@ -18,7 +18,7 @@ class MainWindow : public QMainWindow
 
 private:
     enum MesureAngle _modAngle;
-    enum TypeConstante _modConstante;
+    enum Type _modConstante;
     bool _modComplexe;
 
     void afficheur_pile(Pile p);

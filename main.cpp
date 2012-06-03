@@ -1,5 +1,8 @@
 #include <QtGui/QApplication>
 #include "mainwindow.h"
+
+#include "complexe.h"
+
 //qt example calculator
 //
 //DESIGN PATTERN : command(Annuler/Rétablir), Factory, Composite,
@@ -24,10 +27,22 @@
 //=> OnClik sur MODE_COMPLEXE on bascule les piles en complexes en vidant tous les nombres en mémoire
 
 
+
+//DYNAMIC CAST sur toutes les fonction assymétrique des toutes les classes déivée des constante sauf pour la classe complexe (rationnel?)
+
 int main(int argc, char *argv[])
 {
+
+    /* DEBUG */
+  /*  Complexe * c1 = new Complexe(3, 3);
+    Complexe * c2 = new Complexe(4, 5);
+    c1->addition(c2);
+    c1->afficher();
+    return 0;
+*/
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
     return a.exec();
+
 }
