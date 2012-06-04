@@ -33,33 +33,6 @@ Complexe::Complexe(Constante* c) {
     }
 }
 
-/*
-Constante* Complexe::fabrique_composant_complexe(Complexe* c){
-    //PARTIES IMAGINAIRES
-if(typeid(*c_complexe->getPartieImaginaire())==typeid(Entier) && typeid(this->getPartieImaginaire())==typeid(Entier)) {
-    Entier *im_entier1=dynamic_cast<Entier *>(c_complexe->getPartieImaginaire());
-    Entier *im_entier2=dynamic_cast<Entier *>(this->getPartieImaginaire());
-    Entier* im = new Entier(im_entier1->getValeur()+im_entier2->getValeur());
-    tmp->setImaginaire(im);
-}
-if(typeid(*c_complexe->getPartieImaginaire())==typeid(Reel) && typeid(this->getPartieImaginaire())==typeid(Reel)) {
-    Reel *im_reel1=dynamic_cast<Reel *>(c_complexe->getPartieImaginaire());
-    Reel *im_reel2=dynamic_cast<Reel *>(this->getPartieImaginaire());
-    Reel* im = new Reel(im_reel1->getValeur()+im_reel2->getValeur());
-    tmp->setImaginaire(im);
-}
-if(typeid(*c_complexe->getPartieImaginaire())==typeid(Rationnel) && typeid(this->getPartieImaginaire())==typeid(Rationnel)) {
-    Rationnel *im_rationnel1=dynamic_cast<Rationnel *>(c_complexe->getPartieImaginaire());
-    Rationnel *im_rationnel2=dynamic_cast<Rationnel *>(this->getPartieImaginaire());
-    Rationnel* im = new Rationnel((im_rationnel1->getNumerateur()*im_rationnel2->getDenominateur())+(im_rationnel2->getNumerateur()*im_rationnel1->getDenominateur()), im_rationnel1->getDenominateur()*im_rationnel2->getDenominateur());
-    tmp->setImaginaire(im);
-}
-//FIWME : entier + rationnel => rationnel
-//FIWME : rationnel + entier => rationnel
-//FIWME : entier + reel => reel
-//FIWME : reel + entier => reel
-}
-*/
 
 Constante* Complexe::addition(Constante* c){
     if (Complexe *c_complexe=dynamic_cast<Complexe *>(c)){
@@ -75,34 +48,28 @@ Constante* Complexe::addition(Constante* c){
     } else if (typeid(*c)==typeid(Entier)) {
         Entier *c_entier=dynamic_cast<Entier *>(c);
         Complexe* re = new Complexe(c_entier->addition(this->getPartieReelle()));
-        Entier e(0); //FIXME : c'est très moche -> implémenter une fabrique de recopie
-        Complexe* im = new Complexe(e.addition(this->getPartieImaginaire()));
+        Constante* im = this->getPartieImaginaire()->recopie();
         Complexe *tmp = new Complexe;
         tmp->setReelle(re->getPartieReelle());
-        tmp->setImaginaire(im->getPartieReelle());
+        tmp->setImaginaire(im);
         return tmp;
     } else if (typeid(*c)==typeid(Rationnel)) {
         Rationnel *c_rationnel = dynamic_cast<Rationnel *>(c);
         Complexe* re = new Complexe(c_rationnel->addition(this->getPartieReelle()));
-        Entier e(0);//FIXME : c'est très moche -> implémenter une fabrique de recopie
-        Complexe* im = new Complexe(e.addition(this->getPartieImaginaire()));
+        Constante* im = this->getPartieImaginaire()->recopie();
         Complexe *tmp = new Complexe;
         tmp->setReelle(re->getPartieReelle());
-        tmp->setImaginaire(im->getPartieReelle());
+        tmp->setImaginaire(im);
         return tmp;
     } else if (typeid(*c)==typeid(Reel)) {
         Reel *c_reel=dynamic_cast<Reel *>(c);
         Complexe* re = new Complexe(c_reel->addition(this->getPartieReelle()));
-        Entier e(0);//FIXME : c'est très moche -> implémenter une fabrique de recopie
-        Complexe* im = new Complexe(e.addition(this->getPartieImaginaire()));
+        Constante* im = this->getPartieImaginaire()->recopie();
         Complexe *tmp = new Complexe;
         tmp->setReelle(re->getPartieReelle());
-        tmp->setImaginaire(im->getPartieReelle());
+        tmp->setImaginaire(im);
         return tmp;
     }
-
-    Entier* tmp = new Entier(0);
-    return tmp;
 }
 
 Constante* Complexe::signe(){
