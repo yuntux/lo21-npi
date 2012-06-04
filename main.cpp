@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 {
 
     /* DEBUG */
-    /*
+
     Entier e1(1);
     Entier e2(2);
     Entier e3(3);
@@ -58,14 +58,20 @@ int main(int argc, char *argv[])
     Complexe c32(&re1, &ra3);
     Complexe c33(&re1, &e3);
 
-    qDebug() << e1.addition(&e1);
+    //qDebug() << e1.addition(&e1)->afficher();
+    Constante *a = e1.addition(&e2);
+    Complexe *ent = new Complexe(&re1);
+    qDebug() << ent->afficher();
+    qDebug() << ent->getPartieReelle()->afficher();
+    qDebug() << ent->getPartieImaginaire()->afficher();
+    //qDebug() << a->afficher();
 
     return 0;
-    */
 
+/*
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
     return a.exec();
-
+*/
 }

@@ -10,7 +10,7 @@ class Rationnel : public Constante{
 
 public:
 
-    virtual QString afficher() const{ return QString::number(_numerateur)+"+"+QString::number(_denominateur);}
+    virtual QString afficher() const{ return QString::number(_numerateur)+"/"+QString::number(_denominateur);}
     float getNumerateur() const {return _numerateur;}
     float getDenominateur() const {return _denominateur;}
     void setNumerateur(int v){_numerateur=v;}

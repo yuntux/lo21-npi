@@ -21,15 +21,15 @@ Complexe::Complexe(Constante* c) {
         //transtypage en entier
         Entier *c_entier= new Entier (dynamic_cast<Entier *>(c));
         _reelle = c_entier;
-        _imaginaire = 0;
+        _imaginaire = new Entier(0);
     } else if (typeid(*c)==typeid(Rationnel)) {
         Rationnel *c_rationnel= new Rationnel(dynamic_cast<Rationnel *>(c));
         _reelle = c_rationnel;
-        _imaginaire = 0;
+        _imaginaire = new Rationnel(0);
     } else if (typeid(*c)==typeid(Reel)) {
         Reel *c_reel= new Reel(dynamic_cast<Reel *>(c));
         _reelle = c_reel;
-        _imaginaire =0;
+        _imaginaire = new Reel(0.0);
     }
 }
 

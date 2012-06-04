@@ -10,6 +10,7 @@ public:
     Entier(int e):_valeur(e){}
     Entier(Constante* c);
     virtual QString afficher() const{ return QString::number(_valeur);}
+    //virtual QString afficher() const{ std::cout<<_valeur; return "a";}
     int getValeur() const {return _valeur;}
     void setValeur(int v){_valeur=v;}
 

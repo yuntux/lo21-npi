@@ -18,8 +18,11 @@ Entier::Entier(Constante* c) {
 
 Constante* Entier::addition(Constante* c){
     if (Entier *c_entier=dynamic_cast<Entier *>(c)){
+        qDebug() << "a";
         Entier* tmp = new Entier(c_entier->getValeur()+_valeur);
-        return new Complexe(tmp);
+        tmp->afficher();
+        qDebug() << "b";
+        return tmp;
     }
     if (typeid(*c)==typeid(Complexe)) {
         Complexe *c_complexe=dynamic_cast<Complexe *>(c);
@@ -27,11 +30,11 @@ Constante* Entier::addition(Constante* c){
     } else if (typeid(*c)==typeid(Rationnel)) {
         Rationnel *c_rationnel=dynamic_cast<Rationnel *>(c);
         Rationnel* tmp = new Rationnel((_valeur*c_rationnel->getDenominateur())+c_rationnel->getNumerateur(), c_rationnel->getDenominateur());
-        return new Complexe(tmp);
+        return tmp;
     } else if (typeid(*c)==typeid(Reel)) {
         Reel *c_reel=dynamic_cast<Reel *>(c);
         Reel*  tmp = new Reel(_valeur+c_reel->getValeur());
-        return new Complexe(tmp);
+        return tmp;
     }
 }
 
