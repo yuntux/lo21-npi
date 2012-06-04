@@ -2,6 +2,10 @@
 #include "mainwindow.h"
 
 #include "complexe.h"
+#include "entier.h"
+#include "rationnel.h"
+#include "reel.h"
+#include <typeinfo>
 
 //qt example calculator
 //
@@ -34,12 +38,31 @@ int main(int argc, char *argv[])
 {
 
     /* DEBUG */
-  /*  Complexe * c1 = new Complexe(3, 3);
-    Complexe * c2 = new Complexe(4, 5);
-    c1->addition(c2);
-    c1->afficher();
+    /*
+    Entier e1(1);
+    Entier e2(2);
+    Entier e3(3);
+    Rationnel ra1(1,2);
+    Rationnel ra2(2,2);
+    Rationnel ra3(3,2);
+    Reel re1(3.1);
+    Reel re2(3.2);
+    Reel re3(3.3);
+    Complexe c11(&e1, &e2);
+    Complexe c12(&e1, &ra2);
+    Complexe c13(&e1, &re3);
+    Complexe c21(&ra1, &ra2);
+    Complexe c22(&ra2, &re2);
+    Complexe c23(&ra3, &e3);
+    Complexe c31(&re1, &re2);
+    Complexe c32(&re1, &ra3);
+    Complexe c33(&re1, &e3);
+
+    qDebug() << e1.addition(&e1);
+
     return 0;
-*/
+    */
+
     QApplication a(argc, argv);
     MainWindow w;
     w.show();

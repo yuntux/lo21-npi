@@ -12,7 +12,7 @@ class Complexe : public Constante{
 public:
     Complexe():_reelle(new Entier(0)), _imaginaire(new Entier(0)){}
     Complexe(Constante* r, Constante* i);
-    virtual QString afficher() const{ return _reelle->afficher()+"$"+_imaginaire->afficher()+"\n";}
+    virtual QString afficher() const{ return _reelle->afficher()+"$"+_imaginaire->afficher();}
     Constante* getPartieReelle() const {return _reelle;}
     Constante* getPartieImaginaire() const {return _imaginaire;}
     void setReelle(Constante* re){_reelle=re;}
