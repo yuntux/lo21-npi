@@ -73,7 +73,13 @@ Constante* Complexe::addition(Constante* c){
 }
 
 Constante* Complexe::signe(){
-  //  return new Complexe(-_reelle, _imaginaire);
+    Constante *tmp = this->recopie();
+
+/*    Entier e(-1);
+    tmp->setImaginaire(_imaginaire->multiplication(&e));
+    tmp->setReelle(_reel->multiplication(&e));
+*/
+    return tmp;
 }
 
 Constante* Complexe::soustraction(Constante* c){

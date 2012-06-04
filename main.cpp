@@ -58,14 +58,14 @@ int main(int argc, char *argv[])
     Complexe c32(&re1, &ra3);
     Complexe c33(&re1, &e3);
 
-    //qDebug() << e1.addition(&e1)->afficher();
-    Constante *a = e1.addition(&e2);
+    qDebug() << e1.addition(&e1)->afficher();
+    /*Constante *a = e1.addition(&e2);
     Complexe *ent = new Complexe(&re1);
     qDebug() << ent->afficher();
     qDebug() << ent->getPartieReelle()->afficher();
     qDebug() << ent->getPartieImaginaire()->afficher();
     //qDebug() << a->afficher();
-
+*/
     return 0;
 
 /*
