@@ -495,77 +495,306 @@ void MainWindow::CClicked(){
 void MainWindow::ENTERClicked(){
     QStringList list = ui->inputLine->text().split(" ");
     ui->inputLine->setText("");
-/*DEBUT SIMON
+/*
 float res=0;
 float res2;
 float res3;
 bool reel_pur=false;
-
-
+bool rat=false;
+int i = 1;
+int j=0;
 
 if(!_modComplexe)
 {
     foreach(QString temp, list)
     {
-        if(temp.at(0)=='+')
+
+        if(temp=="+")
         {
             res2=sum(_pileStockageReelle,2);
 
             qDebug()<<"\nsomme = "<<res2;
         }
 
-        else if(temp.at(0)=='*')
+        else if(temp=="*")
         {
             res2=prod(_pileStockageReelle);
 
             qDebug()<<"\nproduit = "<<res2;
         }
 
-        else if(temp.at(0)=='/')
+        else if(temp=="/")
         {
             res2=divise(_pileStockageReelle);
 
             qDebug()<<"\nquotient = "<<res2;
         }
 
-        else if(temp.at(0)=='-')
+        else if(temp=="-")
         {
             res2=diff(_pileStockageReelle);
 
             qDebug()<<"\ndifférence = "<<res2;
         }
 
-        else if(temp.at(0)=='!')
+        else if(temp=="!")
         {
             res2=fact(_pileStockageReelle.pop());
             empiler(res2);
             qDebug()<<"\nfactoriel : "<<_pileStockageReelle.top();
         }
 
-        else if(temp.at(0)=='\'')
+        else if(temp=="SIN")
         {
-
-            QString s1;
-            for(int i=1;i<temp.size();i++)
+            float s,val;
+            if(_modAngle==degre)
             {
-                s1=s1+temp.at(i);
-
+                val=_pileStockageReelle.pop();
+                val=val*PI/180;
+                s=sin(val);
+                empiler(s);
+                qDebug()<<_pileStockageReelle.top();
             }
+            else
+            {
+                s=sin(_pileStockageReelle.pop());
+                empiler(s);
+                qDebug()<<_pileStockageReelle.top();
+           }
+        }
 
-                _pileAffichage.push(s1);
-                qDebug()<<_pileAffichage.top();
+        else if(temp=="COS")
+        {
+            float c,val;
+            if(_modAngle==degre)
+            {
+                val=_pileStockageReelle.pop();
+                val=val*PI/180;
+                c=cos(val);
+                empiler(c);
+                qDebug()<<_pileStockageReelle.top();
+            }
+            else
+            {
+            c=cos(_pileStockageReelle.pop());
+            empiler(c);
+            qDebug()<<_pileStockageReelle.top();
+            }
+        }
+
+        else if(temp=="TAN")
+        {
+            float t,val;
+            if(_modAngle==degre)
+            {
+                val=_pileStockageReelle.pop();
+                val=val*PI/180;
+                t=tan(val);
+                empiler(t);
+                qDebug()<<_pileStockageReelle.top();
+            }
+            else
+            {
+            t=tan(_pileStockageReelle.pop());
+            empiler(t);
+            qDebug()<<_pileStockageReelle.top();
+            }
+        }
+
+        else if(temp=="SINH")
+        {
+            float sh,val;
+            if(_modAngle==degre)
+            {
+                val=_pileStockageReelle.pop();
+                val=val*PI/180;
+                sh=sinh(val);
+                empiler(sh);
+                qDebug()<<_pileStockageReelle.top();
+            }
+            else
+            {
+            sh=sinh(_pileStockageReelle.pop());
+            empiler(sh);
+            qDebug()<<_pileStockageReelle.top();
+            }
+        }
+
+        else if(temp=="COSH")
+        {
+            float ch,val;
+            if(_modAngle==degre)
+            {
+                val=_pileStockageReelle.pop();
+                val=val*PI/180;
+                ch=cosh(val);
+                empiler(ch);
+                qDebug()<<_pileStockageReelle.top();
+            }
+            else
+            {
+            ch=cosh(_pileStockageReelle.pop());
+            empiler(ch);
+            qDebug()<<_pileStockageReelle.top();
+            }
         }
 
 
+        else if(temp=="TANH")
+        {
+            float th,val;
+            if(_modAngle==degre)
+            {
+                val=_pileStockageReelle.pop();
+                val=val*PI/180;
+                th=tanh(val);
+                empiler(th);
+                qDebug()<<_pileStockageReelle.top();
+            }
+            else
+            {
+            th=tanh(_pileStockageReelle.pop());
+            empiler(th);
+            qDebug()<<_pileStockageReelle.top();
+            }
+        }
+
+        else if(temp=="LN")
+        {
+            float l;
+            l=log(_pileStockageReelle.pop());
+            empiler(l);
+            qDebug()<<_pileStockageReelle.top();
+        }
+
+        else if(temp=="LOG")
+        {
+            float lo;
+            lo=log10(_pileStockageReelle.pop());
+            empiler(lo);
+            qDebug()<<_pileStockageReelle.top();
+        }
+
+        else if(temp=="POW")
+        {
+            float p;
+            float p1=_pileStockageReelle.pop();
+            p=pow(_pileStockageReelle.pop(),p1);
+            empiler(p);
+            qDebug()<<_pileStockageReelle.top();
+        }
+
+        else if(temp=="SQR")
+        {
+            float sq,sq1;
+            sq=_pileStockageReelle.pop();
+            sq1=pow(sq,2);
+            empiler(sq1);
+            qDebug()<<_pileStockageReelle.top();
+        }
+
+        else if(temp=="CUBE")
+        {
+            float cu,cu1;
+            cu=_pileStockageReelle.pop();
+            cu1=pow(cu,3);
+            empiler(cu1);
+            qDebug()<<_pileStockageReelle.top();
+        }
+
+        else if(temp=="SQRT")
+        {
+            float sq;
+            sq=sqrt(_pileStockageReelle.pop());
+            empiler(sq);
+            qDebug()<<_pileStockageReelle.top();
+        }
+
+        else if(temp.at(0)=='\'')
+        {
+
+            while(list.at(i).at(0)!='\'')
+            {
+                i++;
+
+            }
+            int k=i+1;
+            while(list.at(k).at(0)!='\'')
+            {
+                k++;
+            }
+
+            traitement_expr(i+1,k,list);
+            i=k;
+            qDebug()<<"\ni = "<<i;
+            qDebug()<<"\nk = "<<k;
+
+
+                //_pileAffichage.push(s1);
+                //qDebug()<<_pileAffichage.top();
+        }
+
+        else if(temp.at(0)=='-' && temp.at(1)>='0' && temp.at(1)<='9')
+        {
+            QString s;
+            for(int i=1;i<temp.size();i++)
+                s=s+temp.at(i);
+
+            res=s.toDouble();
+            res=-res;
+            empiler(res);
+            qDebug()<<"\n"<<_pileStockageReelle.top();
+        }
 
         else if(temp[0]>='0' && temp[0]<='9')
         {
+            if(_modConstante==rationnel)
+            {
+                for(int i=0;i<temp.size();i++)
+                {
+                    if(temp[i]=='/')
+                        rat=true;
+                }
+                if(rat==true)
+                {
+                    QStringList list2 = temp.split('/');
 
+                        int a,b;
+                        a=list2.at(0).toInt();
+                        b=list2.at(1).toInt();
+                        Rationnel r(a,b);
+                        _pileStockageRationnel.push(r);
+                        Rationnel r1;
+                        r1=_pileStockageRationnel.top();
+
+                        qDebug()<<"\nNumérateur : "<<r.getNumerateur();
+                        qDebug()<<"\nDénominateur : "<<r.getDenominateur();
+                }
+                else
+                {
+                    int value;
+                    value=temp.toInt();
+                    Rationnel r(value,1);
+                    _pileStockageRationnel.push(r);
+                    Rationnel r1;
+                    r1=_pileStockageRationnel.top();
+
+                    qDebug()<<"\nNumérateur : "<<r.getNumerateur();
+                    qDebug()<<"\nDénominateur : "<<r.getDenominateur();
+                }
+
+            }
+
+            else
+            {
            res=temp.toDouble();
            empiler(res);
 
            qDebug()<<"\n"<<_pileStockageReelle.top();
+            }
+            rat=false;
         }
+
     }
 }
 else
@@ -592,7 +821,7 @@ else
 
             else if(temp.at(0)=='/')
             {
-                res2=divise(_pileStockageReelle);
+                //res2=divise(_pileStockageComplexe);
 
                 qDebug()<<"\nquotient = "<<res2;
             }
@@ -605,6 +834,8 @@ else
                 qDebug()<<"\ndiff partie imaginaire= "<<c.getPartieImaginaire();
 
             }
+
+
 
             else if(temp.at(0)=='!')
             {
@@ -656,14 +887,13 @@ else
     }
 
 
-}
-//FIN SIMON
-*/
-        //on regarde le premier caractÃ¨re
+}*/
+
+        //on regarde le premier caractÃ?re
           /*  if (temp[i]=='\'') {
                 //c'est une expression
                 //on fusionne les strings suivante jusqu'Ã  rencontrer' Ã  la fin d'une string
-                //il faut vÃ©rifier que le denier caractÃ¨re est bien un '
+                //il faut vÃ©rifier que le denier caractÃ?re est bien un '
                 //on empile
             } else if (temp[i]=='+' || temp[i]=='-' || temp[i]=='*' || temp[i]=='/') {
                 //c'est un opÃ©rateur
@@ -677,7 +907,7 @@ else
             } else if (temp[i]=='$'){
                 //c'est l'oprÃ©rateur de sÃ©paration des complexes
             } else if (temp[i]=='/') {
-                //on a un problÃ¨me car on ne sait pas diffÃ©rencier l'opÃ©rateur diviser du sÃ©parateur de rationnel en entrÃ©e
+                //on a un problÃ?me car on ne sait pas diffÃ©rencier l'opÃ©rateur diviser du sÃ©parateur de rationnel en entrÃ©e
             }
 
     }*/
@@ -752,6 +982,7 @@ else
 }
 }
 */
+//qDebug()<<"\nj = "<<j;
 }
 MainWindow::~MainWindow()
 {
@@ -761,4 +992,22 @@ MainWindow::~MainWindow()
 void MainWindow::empiler(float r)
 {
     _pileStockageReelle.push(r);
+}
+
+
+void MainWindow::traitement_expr(int i,int j, QStringList list)
+{
+    int it=i;
+    QString s1;
+    qDebug()<<"\ntest traitement d'expression"<<list.at(i+1);
+    while (it!=j)
+    {
+        s1=s1+list.at(it)+" ";
+        it++;
+    }
+    qDebug()<<"\n test s1 : "<<s1;
+
+   /* QStringList expr = s1.split('\'');
+    foreach (QString temp2,expr)
+        qDebug()<<"\ntest expr : "<<temp2;*/
 }

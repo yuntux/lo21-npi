@@ -32,6 +32,7 @@ private:
 
 public:
     explicit MainWindow(QWidget *parent = 0);
+    void traitement_expr(int i,int j, QStringList list);
     ~MainWindow();
     void empiler(float r);
 
