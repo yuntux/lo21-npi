@@ -4,6 +4,7 @@
 #include "complexe.h"
 #include "entier.h"
 #include "rationnel.h"
+#include "pile.h"
 #include "reel.h"
 #include <typeinfo>
 #include <cmath>
@@ -60,16 +61,35 @@ int main(int argc, char *argv[])
     Complexe c32(&re1, &ra3);
     Complexe c33(&re1, &e3);
 
+    Pile Stockage;
+    QString tmp1 = "30"; //on detecte que c'est un entier
+    Stockage.push(new Entier(tmp1.toInt()));
+    QString tmp2 = "2.3"; //on detecte que c'est un réel
+    Stockage.push(new Reel(tmp2.toFloat()));
+    QString tmp3 = "+"; //on détecte que c'est l'opérateur +
+    Constante* operande1 = Stockage.pop();
+    Constante* operande2 = Stockage.pop();
+    Stockage.push(operande1->addition(operande2));
+    QString tmp4 = "5.3"; //on detecte que c'est un réel
+    Stockage.push(new Reel(tmp4.toFloat()));
+    QString tmp5 = "+"; //on détecte que c'est l'opérateur +
+    Constante* operande11 = Stockage.pop();
+    Constante* operande12 = Stockage.pop();
+    Stockage.push(operande11->addition(operande12));
+    qDebug() << Stockage.afficher();
+    qDebug() << Stockage.afficher();
+    //Stockage.pop()->afficher();
+
     //IL FAUT QU'ON UTILISE AU PLUS LA SYMETRIE DES OPERATIONS (+ et *) :
     //on implemente la multiplication que d'un coté (complexe) et de l'autre on revoie c_complexe.multiplication(this)
     //utiliser INV et multiplication pour avoir la multiplication ? Fuite de mémoire du à la non libération de l'intermédiaire créé par INV ?
 
-    qDebug() << c11.addition(&c21)->afficher(); //Complexe(int$int) + Complexe (ra$ra) OK
-    qDebug() << c21.addition(&c22)->afficher(); //Complexe(ra$ra) + Complexe (ra$ra) OK
+  //  qDebug() << c11.addition(&c21)->afficher(); //Complexe(int$int) + Complexe (ra$ra) OK
+    //qDebug() << c21.addition(&c22)->afficher(); //Complexe(ra$ra) + Complexe (ra$ra) OK
     //qDebug() << c23.addition(&c31)->afficher(); //Complexe(ra$e) + Complexe (re$re) KO => ra+re impossible sans perte de précision
 
-    qDebug() << c11.produit(&c12)->afficher();
-    qDebug() << c11.soustraction(&c12)->afficher();
+    //qDebug() << c11.produit(&c12)->afficher();
+    //qDebug() << c11.soustraction(&c12)->afficher();
     /*qDebug() << e3.addition(&e1)->afficher();
     qDebug()<<re1.addition(&re2)->afficher();
     qDebug()<<ra1.addition(&ra2)->afficher();

@@ -13,7 +13,6 @@ class Pile
 
 public:
     Constante* pop();
-    void append(Constante* ptr);
     Constante* top();
     void push(Constante* ptr) {p.push(ptr);}
     bool isEmpty() const {return p.isEmpty();}
@@ -21,6 +20,7 @@ public:
     Pile();
     ~Pile();
     Constante* sum(unsigned int x=2);
+    QString afficher() const; //FIXME : affichage devrait être const
 
 protected:
 

@@ -10,11 +10,17 @@ class Rationnel : public Constante{
 
 public:
 
-    virtual QString afficher() const{ return QString::number(_numerateur)+"/"+QString::number(_denominateur);}
+    virtual QString afficher() const;
     float getNumerateur() const {return _numerateur;}
     float getDenominateur() const {return _denominateur;}
     void setNumerateur(int v){_numerateur=v;}
-    void setDenominateur(int v){_denominateur=v;}
+    void setDenominateur(int v){
+        if (v!=0) {
+            _denominateur=v;
+        } else {
+            //FIXME : lever une exeption -> dénminateur nul illégal
+        }
+    }
     Rationnel(Constante* c);
 
     virtual Constante* addition(Constante* c);
@@ -27,8 +33,7 @@ public:
     {
         if (_denominateur==0)
         {
-//FIME exeption
-            std::cout<<"BOUHHHHHHH";
+        //FIXME : lever une exeption -> dénminateur nul illégal
         }
     }
 };

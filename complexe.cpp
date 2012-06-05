@@ -33,7 +33,22 @@ Complexe::Complexe(Constante* c) {
     }
 }
 
-
+QString Complexe::afficher() const{
+    if (typeid(this->getPartieImaginaire())==typeid(Entier)) {
+        Entier *im_entier=dynamic_cast<Entier *>(this->getPartieImaginaire());
+        if (im_entier->getValeur()==0)
+            return _reelle->afficher();
+    } else if (typeid(this->getPartieImaginaire())==typeid(Rationnel)) {
+        Rationnel *im_rationnel=dynamic_cast<Rationnel *>(this->getPartieImaginaire());
+        if (im_rationnel->getNumerateur()==0)
+            return _reelle->afficher();
+    } else if (typeid(this->getPartieImaginaire())==typeid(Reel)) {
+       Reel *im_reel=dynamic_cast<Reel *>(this->getPartieImaginaire());
+       if (im_reel->getValeur()==0)
+           return _reelle->afficher();
+   }
+    return _reelle->afficher()+"$"+_imaginaire->afficher();
+}
 
 Constante* Complexe::addition(Constante* c){
     Complexe *c_complexe = new Complexe(c);

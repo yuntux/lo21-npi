@@ -13,14 +13,20 @@ Pile::~Pile()
 //FIXME
 }
 
+QString Pile::afficher() const {
+    //FIXME : affichage ne devrait pas DETRUIRE LA PILE !
+    QString pile;
+    pile = pile + "### DEBUT PILE###\n";
+    QStack<Constante*> copie(this->p);
+    while (!copie.isEmpty())
+         pile = pile + copie.pop()->afficher() + "\n";
+    pile = pile + "### FIN PILE###";
+    return pile;
+}
+
 Constante* Pile::pop()
 {
     return p.pop();
-}
-
-void Pile::append(Constante* ptr)
-{
-    p.push(ptr);
 }
 
 Constante* Pile::top()

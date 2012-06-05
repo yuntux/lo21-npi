@@ -22,6 +22,14 @@ Rationnel::Rationnel(Constante* c) {
     }
 }
 
+QString Rationnel::afficher() const{
+    if (this->getDenominateur()==1) {
+        return QString::number(_numerateur);
+    } else {
+         return QString::number(_numerateur)+"/"+QString::number(_denominateur);
+    }
+}
+
 Constante* Rationnel::addition(Constante* c){
     if (typeid(*c)==typeid(Entier)){
         Entier *c_entier=dynamic_cast<Entier *>(c);
