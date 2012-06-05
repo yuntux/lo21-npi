@@ -68,6 +68,8 @@ int main(int argc, char *argv[])
     qDebug() << c21.addition(&c22)->afficher(); //Complexe(ra$ra) + Complexe (ra$ra) OK
     //qDebug() << c23.addition(&c31)->afficher(); //Complexe(ra$e) + Complexe (re$re) KO => ra+re impossible sans perte de précision
 
+    qDebug() << c11.produit(&c12)->afficher();
+    qDebug() << c11.soustraction(&c12)->afficher();
     /*qDebug() << e3.addition(&e1)->afficher();
     qDebug()<<re1.addition(&re2)->afficher();
     qDebug()<<ra1.addition(&ra2)->afficher();

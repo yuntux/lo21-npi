@@ -19,6 +19,9 @@ public:
     void setImaginaire(Constante* im){_imaginaire=im;}
 
     Complexe(Constante* c);
+    //Complexe* conjugue(Complexe* c);
+    //Constante* module(Complexe* c);
+    //Constante* argument(Complexe* c);
 
     virtual Constante* addition(Constante* c);
     virtual Constante* produit(Constante *c);

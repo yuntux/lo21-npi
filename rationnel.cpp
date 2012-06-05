@@ -45,11 +45,6 @@ Constante* Rationnel::addition(Constante* c){
             return new Complexe(tmp);
         }
     } else if (typeid(*c)==typeid(Reel)) {
-        /*
-        Reel *c_reel=dynamic_cast<Reel *>(c);
-        Rationnel* tmp = new Rationnel(c_reel->getValeur()*_denominateur + _numerateur, _denominateur);
-        return new Complexe(tmp);
-        */
         //FIXME : doit lever une exeption car perte de précesion
     }
 }
@@ -57,9 +52,8 @@ Constante* Rationnel::addition(Constante* c){
 Constante* Rationnel::produit(Constante *c)
 {
     if (Entier *c_entier=dynamic_cast<Entier *>(c)){
-        Rationnel* tmp = new Rationnel((c_entier->getValeur()*_numerateur),_denominateur);
-                return new Complexe(tmp);}
-    else if (typeid(*c)==typeid(Rationnel)) {
+        return c_entier->produit(this);
+    } else if (typeid(*c)==typeid(Rationnel)) {
             Rationnel *c_rationnel=dynamic_cast<Rationnel *>(c);
             Rationnel* tmp = new Rationnel((_numerateur*c_rationnel->getNumerateur()),(_denominateur*c_rationnel->getDenominateur()));
             return new Complexe(tmp);
@@ -69,6 +63,11 @@ Constante* Rationnel::produit(Constante *c)
             Rationnel*  tmp = new Rationnel((c_reel->getValeur()*_numerateur),_denominateur);
             return new Complexe(tmp);
         }
+    else if (typeid(*c)==typeid(Complexe)) {
+             Complexe *c_complexe=dynamic_cast<Complexe *>(c);
+             return c_complexe->produit(this);
+
+     }
 }
 
 Constante* Rationnel::division(Constante *c)
@@ -91,8 +90,9 @@ Constante* Rationnel::division(Constante *c)
             return new Complexe(tmp);
         }
    else if (typeid(*c)==typeid(Complexe)) {
-       Complexe *c_complexe=dynamic_cast<Complexe *>(c);
-       return c_complexe->produit(this);
+       /* Complexe *c_complexe=dynamic_cast<Complexe *>(c);
+        Constante* tmp = new Complexe(c_complexe->getPartieReelle()*_valeur, c_complexe->getPartieImaginaire());
+        return new Complexe(tmp);*/
 
     }
 }
