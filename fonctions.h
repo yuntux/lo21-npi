@@ -6,6 +6,16 @@
 #include "complexe.h"
 #include "rationnel.h"
 
+int ppcm(int X,int Y);
+
+float sinus(Rationnel *r);
+
+float cosinus(Rationnel *r);
+
+float tangente(Rationnel *r);
+
+float sinush(Rationnel *r);
+
 /*
 template <class T>
 T inv(T num) {

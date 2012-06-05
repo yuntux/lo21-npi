@@ -34,6 +34,7 @@ Complexe::Complexe(Constante* c) {
 }
 
 
+
 Constante* Complexe::addition(Constante* c){
     if (Complexe *c_complexe=dynamic_cast<Complexe *>(c)){
         Complexe* im = new Complexe(c_complexe->getPartieImaginaire()->addition(this->getPartieImaginaire()));
@@ -55,7 +56,8 @@ Constante* Complexe::addition(Constante* c){
         return tmp;
     } else if (typeid(*c)==typeid(Rationnel)) {
         Rationnel *c_rationnel = dynamic_cast<Rationnel *>(c);
-        Complexe* re = new Complexe(c_rationnel->addition(this->getPartieReelle()));
+
+        Complexe* re = new Complexe(this->getPartieReelle()->addition(c_rationnel));
         Constante* im = this->getPartieImaginaire()->recopie();
         Complexe *tmp = new Complexe;
         tmp->setReelle(re->getPartieReelle());
@@ -70,6 +72,51 @@ Constante* Complexe::addition(Constante* c){
         tmp->setImaginaire(im);
         return tmp;
     }
+}
+
+Constante* Complexe::produit(Constante *c)
+{
+    if (Complexe *c_complexe=dynamic_cast<Complexe *>(c)){
+        Complexe* im = new Complexe(c_complexe->getPartieImaginaire()->addition(this->getPartieImaginaire()));
+        //les parties imaginaires sont des reels/rationnels/entiers donc leur somme renvoie un complexe donc l'im est nulle
+        Complexe* re = new Complexe(c_complexe->getPartieReelle()->addition(this->getPartieReelle()));
+        //les parties réelles sont des reels/rationnels/entiers donc leur somme renvoie un complexe donc l'im est nulle
+        Complexe* tmp = new Complexe;
+        tmp->setImaginaire(im->getPartieReelle());
+        tmp->setReelle(re->getPartieReelle());
+        return tmp;
+
+    } else if (typeid(*c)==typeid(Entier)) {
+        Entier *c_entier=dynamic_cast<Entier *>(c);
+        Complexe* re = new Complexe(c_entier->produit(this->getPartieReelle()));
+        Constante* im = this->getPartieImaginaire()->recopie();
+        Complexe *tmp = new Complexe;
+        tmp->setReelle(re->getPartieReelle());
+        tmp->setImaginaire(im);
+        return tmp;
+    } else if (typeid(*c)==typeid(Rationnel)) {
+        Rationnel *c_rationnel = dynamic_cast<Rationnel *>(c);
+
+        Complexe* re = new Complexe(this->getPartieReelle()->produit(c_rationnel));
+        Constante* im = this->getPartieImaginaire()->recopie();
+        Complexe *tmp = new Complexe;
+        tmp->setReelle(re->getPartieReelle());
+        tmp->setImaginaire(im);
+        return tmp;
+    } else if (typeid(*c)==typeid(Reel)) {
+        Reel *c_reel=dynamic_cast<Reel *>(c);
+        Complexe* re = new Complexe(c_reel->produit(this->getPartieReelle()));
+        Constante* im = this->getPartieImaginaire()->recopie();
+        Complexe *tmp = new Complexe;
+        tmp->setReelle(re->getPartieReelle());
+        tmp->setImaginaire(im);
+        return tmp;
+    }
+}
+
+Constante* Complexe::division(Constante *c)
+{
+    return c;
 }
 
 Constante* Complexe::signe(){

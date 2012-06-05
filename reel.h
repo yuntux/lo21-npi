@@ -14,6 +14,8 @@ public:
     void setValeur(int v){_valeur=v;}
 
     virtual Constante* addition(Constante* c);
+    virtual Constante* produit(Constante *c);
+    virtual Constante* division(Constante* c);
     virtual Constante* signe();
     virtual Constante* soustraction(Constante* c);
 };

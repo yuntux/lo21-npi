@@ -5,8 +5,53 @@
 #include "complexe.h"
 #include "constante.h"
 #include "rationnel.h"
-
+#include <cmath>
 using namespace std;
+
+int ppcm(int X,int Y)
+{
+  int A=X;
+  int B=Y;
+  while (A!=B)
+  {
+    while (A>B) B=B+Y;
+    while (A<B) A=A+X;
+  }
+  return A;
+}
+
+float sinus(Rationnel *r)
+{
+    int num=r->getNumerateur();
+    int den=r->getDenominateur();
+    float res=num/den;
+    return sin(res);
+}
+
+float cosinus(Rationnel *r)
+{
+    int num=r->getNumerateur();
+    int den=r->getDenominateur();
+    float res=num/den;
+    return cos(res);
+}
+
+float tangente(Rationnel *r)
+{
+    int num=r->getNumerateur();
+    int den=r->getDenominateur();
+    float res=num/den;
+    return tan(res);
+}
+
+float sinush(Rationnel *r)
+{
+    int num=r->getNumerateur();
+    int den=r->getDenominateur();
+    float res=num/den;
+    return sinh(res);
+}
+
 /*
 float fact(int n){
     int result=1;

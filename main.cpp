@@ -1,11 +1,13 @@
 #include <QtGui/QApplication>
 #include "mainwindow.h"
-
+#include "fonctions.h"
 #include "complexe.h"
 #include "entier.h"
 #include "rationnel.h"
 #include "reel.h"
 #include <typeinfo>
+#include <cmath>
+
 
 //qt example calculator
 //
@@ -39,26 +41,43 @@ int main(int argc, char *argv[])
 
     /* DEBUG */
 
-    Entier e1(1);
+    Entier e1(5);
     Entier e2(2);
     Entier e3(3);
-    Rationnel ra1(1,2);
-    Rationnel ra2(2,2);
-    Rationnel ra3(3,2);
+    Rationnel ra1(2,5);
+    Rationnel ra2(5,6);
+    Rationnel ra3(2,3);
     Reel re1(3.1);
     Reel re2(3.2);
     Reel re3(3.3);
     Complexe c11(&e1, &e2);
-    Complexe c12(&e1, &ra2);
+    Complexe c12(&e3, &e1);
     Complexe c13(&e1, &re3);
     Complexe c21(&ra1, &ra2);
-    Complexe c22(&ra2, &re2);
+    Complexe c22(&ra2, &ra3);
     Complexe c23(&ra3, &e3);
     Complexe c31(&re1, &re2);
     Complexe c32(&re1, &ra3);
     Complexe c33(&re1, &e3);
 
-    qDebug() << e1.addition(&e1)->afficher();
+    //IL FAUT QU'ON UTILISE AU PLUS LA SYMETRIE DES OPERATIONS (+ et *) :
+    //on implemente la multiplication que d'un coté (complexe) et de l'autre on revoie c_complexe.multiplication(this)
+    //utiliser INV et multiplication pour avoir la multiplication ? Fuite de mémoire du à la non libération de l'intermédiaire créé par INV ?
+
+    qDebug() << c11.addition(&c21)->afficher(); //Complexe(int$int) + Complexe (ra$ra) OK
+    qDebug() << c21.addition(&c22)->afficher(); //Complexe(ra$ra) + Complexe (ra$ra) OK
+    //qDebug() << c23.addition(&c31)->afficher(); //Complexe(ra$e) + Complexe (re$re) KO => ra+re impossible sans perte de précision
+
+    /*qDebug() << e3.addition(&e1)->afficher();
+    qDebug()<<re1.addition(&re2)->afficher();
+    qDebug()<<ra1.addition(&ra2)->afficher();
+    qDebug()<<c21.addition(&ra1)->afficher();
+    qDebug()<<e2.produit(&e2)->afficher();
+    qDebug()<<e2.soustraction(&re1)->afficher();
+    qDebug()<<ra2.division(&ra3)->afficher();
+    qDebug()<<c11.produit(&ra1)->afficher();
+    qDebug()<<"\n"<<sinush(&ra1);
+*/
     /*Constante *a = e1.addition(&e2);
     Complexe *ent = new Complexe(&re1);
     qDebug() << ent->afficher();
@@ -72,6 +91,6 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-    return a.exec();
-*/
+    return a.exec();*/
+
 }

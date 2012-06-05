@@ -18,6 +18,8 @@ public:
     Rationnel(Constante* c);
 
     virtual Constante* addition(Constante* c);
+    virtual Constante* produit(Constante *c);
+    virtual Constante* division(Constante* c);
     virtual Constante* signe();
     virtual Constante* soustraction(Constante* c);
 

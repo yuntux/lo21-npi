@@ -18,6 +18,8 @@ class Constante
 public:
     virtual QString afficher() const = 0;
     virtual Constante* addition(Constante* c)=0;
+    virtual Constante* produit(Constante* c)=0;
+    virtual Constante* division(Constante* c)=0;
     virtual Constante* signe()=0;
     Constante* recopie();
     virtual Constante* soustraction(Constante* c)=0;
