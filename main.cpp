@@ -62,24 +62,27 @@ int main(int argc, char *argv[])
     Complexe c33(&re1, &e3);
 
     Pile Stockage;
+    QString tmp0 = "100";
+    Stockage.push(new Entier(tmp0.toInt()));
     QString tmp1 = "30"; //on detecte que c'est un entier
     Stockage.push(new Entier(tmp1.toInt()));
     QString tmp2 = "2.3"; //on detecte que c'est un réel
     Stockage.push(new Reel(tmp2.toFloat()));
+    qDebug() << Stockage.afficher();
     QString tmp3 = "+"; //on détecte que c'est l'opérateur +
     Constante* operande1 = Stockage.pop();
     Constante* operande2 = Stockage.pop();
     Stockage.push(operande1->addition(operande2));
+    qDebug() << Stockage.afficher();/*
     QString tmp4 = "5.3"; //on detecte que c'est un réel
     Stockage.push(new Reel(tmp4.toFloat()));
+    qDebug() << Stockage.afficher();
     QString tmp5 = "+"; //on détecte que c'est l'opérateur +
     Constante* operande11 = Stockage.pop();
     Constante* operande12 = Stockage.pop();
     Stockage.push(operande11->addition(operande12));
-    qDebug() << Stockage.afficher();
-    qDebug() << Stockage.afficher();
-    //Stockage.pop()->afficher();
-
+    //qDebug() << Stockage.afficher();
+*/
     //IL FAUT QU'ON UTILISE AU PLUS LA SYMETRIE DES OPERATIONS (+ et *) :
     //on implemente la multiplication que d'un coté (complexe) et de l'autre on revoie c_complexe.multiplication(this)
     //utiliser INV et multiplication pour avoir la multiplication ? Fuite de mémoire du à la non libération de l'intermédiaire créé par INV ?
