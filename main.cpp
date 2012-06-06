@@ -9,12 +9,7 @@
 #include <typeinfo>
 #include <cmath>
 
-
-//qt example calculator
-//
 //DESIGN PATTERN : command(Annuler/Rétablir), Factory, Composite,
-//trois Clases : Complexe, Rationnel, MainWindow
-//math.h
 //Gérer les erreurs => exeptions standards
 //Sauvegarde/Chargmenet des piles
 //Traiter l'une des trois options : logMessage/onglets/CommmandeUtilisateur
@@ -31,9 +26,9 @@
 //mods de la calto en static ???
 //quid des concepts centraux de LO21 : surcharge, héritage, polymorphisme, designPattern, dynamicCast...
 
-//=> OnClik sur MODE_COMPLEXE on bascule les piles en complexes en vidant tous les nombres en mémoire
-
-
+//RAPPORT : Étant donné que dans un ordi un réel non rationnel est stocké comme une approcx (PI, RACINE_2 sont des approx dans un float)
+//      On aurait pu représenter les parties imaginaire et réélles d'un complexe par des rationnels et toutes les constantes par des complexes
+//      => code simplifié mais gaspillage de mémoire
 
 //DYNAMIC CAST sur toutes les fonction assymétrique des toutes les classes déivée des constante sauf pour la classe complexe (rationnel?)
 //implémenter une fonction de simplification pour les rationnels
@@ -62,9 +57,15 @@ int main(int argc, char *argv[])
     Complexe c33(&re1, &e3);
 
     Pile Stockage;
-    qDebug() << e1.division(&c11)->afficher();
-    qDebug() << ra1.division(&c11)->afficher();
-    qDebug() << re1.division(&c11)->afficher();
+    Reel r1(7854.735294);
+    r1.toRationnel();
+    double r(7854.735294);
+    int partie_entiere = floor(r);
+    float partie_decimale = r-partie_entiere;
+    std::cout<<partie_decimale;
+    //qDebug() << e1.division(&c11)->afficher();
+    //qDebug() << ra1.division(&c11)->afficher();
+    //qDebug() << re1.division(&c11)->afficher();
     //Stockage.push(c11.division(&c12));
     /*
     QString tmp0 = "100";

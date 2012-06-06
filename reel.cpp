@@ -3,7 +3,17 @@
 #include "rationnel.h"
 #include "reel.h"
 #include <typeinfo>
+#include <QString>
+#include <iostream>
 
+Rationnel Reel::toRationnel() const {
+    //DANS LE BUT DE NE PAS PERDRE DE PRÉCISION LORS DES DIVISIONS ON A BESOIN DE TRANSFORMER LES RÉELS EN RATIONNELS
+    int partie_entiere = floor(this->getValeur());
+    float partie_decimale = this->getValeur()-partie_entiere;
+    std::cout<<partie_decimale;
+
+    //NUL => ETANT DONNE LA MEMORISATION DU FLOAT CA SERVIRA A RIEN
+}
 
 Reel::Reel(Constante* c) {
     if (Entier *c_entier=dynamic_cast<Entier *>(c)){
@@ -39,10 +49,10 @@ Constante* Reel::addition(Constante* c){
 Constante* Reel::produit(Constante *c)
 {
     if (Entier *c_entier=dynamic_cast<Entier *>(c)){
-        return c_entier->addition(this);
+        return c_entier->produit(this);
     } else if (typeid(*c)==typeid(Rationnel)) {
         Rationnel *c_rationnel=dynamic_cast<Rationnel *>(c);
-        return c_rationnel->addition(this);
+        return c_rationnel->produit(this);
     }
     else if (typeid(*c)==typeid(Reel)) {
             Reel *c_reel=dynamic_cast<Reel *>(c);
@@ -118,6 +128,6 @@ Constante* Reel::sinus()
 
 Constante* Reel::fact()
 {
-    //FIXME : pas de fact pour les complexes
+    //FIXME : pas de fact pour les réels
     return this;
 }

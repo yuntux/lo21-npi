@@ -2,6 +2,7 @@
 #define REEL_H
 
 #include "constante.h"
+#include "rationnel.h"
 
 class Reel: public Constante{
     float _valeur;
@@ -12,6 +13,8 @@ public:
     virtual QString afficher() const{ return QString::number(_valeur);}
     float getValeur() const {return _valeur;}
     void setValeur(int v){_valeur=v;}
+
+    Rationnel toRationnel() const;
 
     virtual Constante* addition(Constante* c);
     virtual Constante* produit(Constante *c);
