@@ -13,15 +13,18 @@ public:
     virtual QString afficher() const;
     float getNumerateur() const {return _numerateur;}
     float getDenominateur() const {return _denominateur;}
-    void setNumerateur(int v){_numerateur=v;}
+    void setNumerateur(int v){_numerateur=v; simplification();}
     void setDenominateur(int v){
         if (v!=0) {
             _denominateur=v;
+            simplification();
         } else {
             //FIXME : lever une exeption -> dénminateur nul illégal
         }
     }
     Rationnel(Constante* c);
+    Rationnel(int num=0, int den=1);
+    void simplification();
 
     virtual Constante* addition(Constante* c);
     virtual Constante* produit(Constante *c);
@@ -32,13 +35,7 @@ public:
     virtual Constante* fact();
     virtual Constante* sinus();
 
-    Rationnel(int num=0, int den=1):_numerateur(num), _denominateur(den)
-    {
-        if (_denominateur==0)
-        {
-        //FIXME : lever une exeption -> dénminateur nul illégal
-        }
-    }
+
 };
 
 #endif // RATIONNEL_H

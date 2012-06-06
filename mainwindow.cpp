@@ -21,26 +21,6 @@ MainWindow::MainWindow(QWidget *parent) :
     _modConstante = entier;
     _modComplexe = false;
 
-    //FIXME : comment lier la pile d'affichage �  la QListveiw étant donné que QStack n'hérite pas de QAstractmodelitem ?
-    //ui->listView_2->setModel(_pileAffichage);
-    _pileStockageReelle.append(3.14);
-    _pileStockageReelle.append(3.14);
-    _pileStockageReelle.append(3.14);
-
-    /*Complexe c1(2,3);
-    Complexe c2(4,5);
-    Complexe c3(6,7);
-    _pileStockageComplexe.append(c1);
-    _pileStockageComplexe.append(c2);
-    _pileStockageComplexe.append(c3);
-*/
-    _pileAffichage.append("premier élement de la pile affichage");
-    _pileAffichage.append("deuxième élement de la pile affichage");
-    _pileAffichage.append("troisième élement de la pile affichage");
-
-
-
-
     ui->setupUi(this);
     //CONNEXIONS CLAVIER BASIC
     connect(ui->num0, SIGNAL(clicked()), this, SLOT(num0Clicked()));
@@ -99,28 +79,25 @@ MainWindow::MainWindow(QWidget *parent) :
     //this->saveToFile();
     this->loadFromFile();
 
-    /*Complexe c(1,3);
-    Complexe d(2,8);
-    Complexe e(3,8);
-    Complexe f(4,8);
-    Complexe g(5,8);
-    Complexe h(6,8);
-    _pileStockage.append(&c);
-    _pileStockage.append(&c);
-    _pileStockage.append(&d);
-    _pileStockage.append(&e);
-    _pileStockage.append(&f);
-    _pileStockage.append(&g);
-    _pileStockage.append(&h);
-    this->afficheur_pile(_pileStockage);
-    */
+    Pile Stockage;
+    QString tmp0 = "100";
+    Stockage.push(new Entier(tmp0.toInt()));
+    QString tmp1 = "30"; //on detecte que c'est un entier
+    Stockage.push(new Entier(tmp1.toInt()));
+    QString tmp2 = "2.3"; //on detecte que c'est un r�el
+    Stockage.push(new Reel(tmp2.toFloat()));
+    ui->listView->setModel(&Stockage);
+    Stockage.push(new Reel(2.3));
+    Stockage.push(new Reel(2.4));
+    Stockage.push(new Reel(2.5));
+
 }
 
 
 void MainWindow::afficheur_pile(Pile p){
     //on copie la liste en local pour l'it�rer en la d�tr
-    for (int i=0; i<p.size(); i++)
-        ui->listWidget->addItem(p.pop()->afficher());
+    //ui->listWidget->reset();
+
 }
 
 

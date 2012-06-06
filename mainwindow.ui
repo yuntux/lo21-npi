@@ -16,8 +16,11 @@
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
+     <widget class="QListView" name="listView"/>
+    </item>
+    <item>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="3" column="0">
+      <item row="2" column="0">
        <widget class="QWidget" name="widget_clavierBasic" native="true">
         <widget class="QWidget" name="layoutWidget">
          <property name="geometry">
@@ -204,7 +207,7 @@
         </widget>
        </widget>
       </item>
-      <item row="2" column="0">
+      <item row="1" column="0">
        <widget class="QWidget" name="widget_clavierAvance" native="true">
         <widget class="QWidget" name="layoutWidget">
          <property name="geometry">
@@ -387,20 +390,10 @@
         </widget>
        </widget>
       </item>
-      <item row="1" column="0">
+      <item row="0" column="0">
        <widget class="QLineEdit" name="inputLine">
         <property name="enabled">
          <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="0">
-       <widget class="QListWidget" name="listWidget">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
         </property>
        </widget>
       </item>

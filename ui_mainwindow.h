@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Fri Jun 1 23:21:14 2012
+** Created: Wed Jun 6 16:29:36 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -20,7 +20,7 @@
 #include <QtGui/QHBoxLayout>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLineEdit>
-#include <QtGui/QListWidget>
+#include <QtGui/QListView>
 #include <QtGui/QMainWindow>
 #include <QtGui/QMenu>
 #include <QtGui/QMenuBar>
@@ -39,6 +39,7 @@ public:
     QAction *action_propos;
     QWidget *centralWidget;
     QHBoxLayout *horizontalLayout;
+    QListView *listView;
     QGridLayout *gridLayout;
     QWidget *widget_clavierBasic;
     QWidget *layoutWidget;
@@ -85,7 +86,6 @@ public:
     QPushButton *CUBE;
     QPushButton *POW;
     QLineEdit *inputLine;
-    QListWidget *listWidget;
     QVBoxLayout *verticalLayout_2;
     QGroupBox *groupBox_4;
     QRadioButton *_modComplexeON;
@@ -121,6 +121,11 @@ public:
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        listView = new QListView(centralWidget);
+        listView->setObjectName(QString::fromUtf8("listView"));
+
+        horizontalLayout->addWidget(listView);
+
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(6);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
@@ -225,7 +230,7 @@ public:
         _clavierBasicLayout->addWidget(DOLLAR, 5, 2, 1, 1);
 
 
-        gridLayout->addWidget(widget_clavierBasic, 3, 0, 1, 1);
+        gridLayout->addWidget(widget_clavierBasic, 2, 0, 1, 1);
 
         widget_clavierAvance = new QWidget(centralWidget);
         widget_clavierAvance->setObjectName(QString::fromUtf8("widget_clavierAvance"));
@@ -342,23 +347,13 @@ public:
         _clavierAvanceLayout->addWidget(POW, 0, 0, 1, 1);
 
 
-        gridLayout->addWidget(widget_clavierAvance, 2, 0, 1, 1);
+        gridLayout->addWidget(widget_clavierAvance, 1, 0, 1, 1);
 
         inputLine = new QLineEdit(centralWidget);
         inputLine->setObjectName(QString::fromUtf8("inputLine"));
         inputLine->setEnabled(false);
 
-        gridLayout->addWidget(inputLine, 1, 0, 1, 1);
-
-        listWidget = new QListWidget(centralWidget);
-        listWidget->setObjectName(QString::fromUtf8("listWidget"));
-        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(listWidget->sizePolicy().hasHeightForWidth());
-        listWidget->setSizePolicy(sizePolicy);
-
-        gridLayout->addWidget(listWidget, 0, 0, 1, 1);
+        gridLayout->addWidget(inputLine, 0, 0, 1, 1);
 
 
         horizontalLayout->addLayout(gridLayout);

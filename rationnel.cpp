@@ -17,9 +17,19 @@ Rationnel::Rationnel(Constante* c) {
         Rationnel *c_rationnel=dynamic_cast<Rationnel *>(c);
         _numerateur = c_rationnel->getNumerateur();
         _denominateur = c_rationnel->getDenominateur();
+        this->simplification();
     } else if (typeid(*c)==typeid(Reel)) {
         //FIXME : impossible de construire un rationnel Ã  partir d'un rÃ©el
     }
+}
+
+Rationnel::Rationnel(int num, int den):_numerateur(num), _denominateur(den)
+{
+    if (_denominateur==0)
+    {
+    //FIXME : lever une exeption -> dénminateur nul illégal
+    }
+    this->simplification();
 }
 
 QString Rationnel::afficher() const{
@@ -49,7 +59,7 @@ Constante* Rationnel::addition(Constante* c){
             int p=ppcm(c_rationnel->getDenominateur(), _denominateur);
             int new_num1=(p/_denominateur*_numerateur);
             int new_num2=(p/c_rationnel->getDenominateur()*c_rationnel->getNumerateur());
-            Rationnel* tmp = new Rationnel (new_num1+new_num2,p);
+            Rationnel* tmp = new Rationnel(new_num1+new_num2,p);
             return new Complexe(tmp);
         }
     } else if (typeid(*c)==typeid(Reel)) {
@@ -149,4 +159,16 @@ Constante *Rationnel::inv()
 {
     Rationnel* tmp = new Rationnel(this->getDenominateur(),this->getNumerateur());
     return tmp;
+}
+
+void Rationnel::simplification(){
+        if (_numerateur==0) { _denominateur=1; return; }
+        if (_denominateur==0) return; //FIXME : lever une exeption
+        int p=pgcd(_numerateur,_denominateur);
+        _numerateur/=p;
+        _denominateur/=p;
+        if (_denominateur<0) {
+                _denominateur=-_denominateur;
+                _numerateur=-_numerateur;
+        }
 }

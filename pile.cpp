@@ -2,12 +2,13 @@
 
 using namespace std;
 
-/*
-int Pile::rowCount(const QModelIndex &parent) const { return p.size();}
-int Pile::columnCount(const QModelIndex &parent) const {return createIndex(0,0);}
-QModelIndex Pile::parent(const QModelIndex &child) const{ return createIndex(0, 0);}
-QModelIndex Pile::index(int row, int column, const QModelIndex &parent = QModelIndex()) const{ return creanteIndex(row, column);}
+void Pile::push(Constante* ptr) {
+    p.push_front(ptr);
+    emit dataChanged(index(0), index(p.size()));
 }
+
+int Pile::rowCount(const QModelIndex &parent) const { return p.size();}
+
 
 QVariant Pile::data(const QModelIndex &index, int role) const
 {
@@ -18,64 +19,16 @@ QVariant Pile::data(const QModelIndex &index, int role) const
         return QVariant();
 
     if (role == Qt::DisplayRole)
-        return p.at(index.row());
+        return p.at(index.row())->afficher(); //renvoyer un QStrigng
     else
         return QVariant();
 }
 
-QVariant Pile::headerData(int section, Qt::Orientation orientation, int role) const
-{
-    if (role != Qt::DisplayRole)
-        return QVariant();
-
-    if (orientation == Qt::Horizontal)
-        return QString("Column %1").arg(section);
-    else
-        return QString("Row %1").arg(section);
-}
-
-Qt::ItemFlags Pile::flags(const QModelIndex &index) const
-{
-    if (!index.isValid())
-        return Qt::ItemIsEnabled;
-
-    return QAbstractItemModel::flags(index) | Qt::ItemIsEditable;
-}
-
-bool Pile::setData(const QModelIndex &index, const QVariant &value, int role)
-{
-    if (index.isValid() && role == Qt::EditRole) {
-        p.replace(index.row(), value.toString());
-        emit dataChanged(index, index);
-        return true;
-    }
-    return false;
-}
-
-bool Pile::insertRows(int position, int rows, const QModelIndex &parent)
-{
-    beginInsertRows(QModelIndex(), position, position+rows-1);
-    for (int row = 0; row < rows; ++row) {
-        p.insert(position, "");
-    }
-    endInsertRows();
-    return true;
-}
-
-bool Pile::removeRows(int position, int rows, const QModelIndex &parent)
-{
-    beginRemoveRows(QModelIndex(), position, position+rows-1);
-    for (int row = 0; row < rows; ++row) {
-        p.removeAt(position);
-    }
-    endRemoveRows();
-    return true;
-}
-*/
+/*
 Pile::~Pile()
 {
 //FIXME
-}
+}*/
 
 QString Pile::afficher() const {
     //FIXME : affichage ne devrait pas DETRUIRE LA PILE !

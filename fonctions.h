@@ -6,6 +6,8 @@
 #include "complexe.h"
 #include "rationnel.h"
 
+int pgcd(int a, int b);
+
 int ppcm(int X,int Y);
 
 float sinus(Rationnel *r);

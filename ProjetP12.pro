@@ -16,7 +16,8 @@ SOURCES += mainwindow.cpp \
     pile.cpp \
     entier.cpp \
     reel.cpp \
-    expression.cpp
+    expression.cpp \
+    calculatrice.cpp
 HEADERS += mainwindow.h \
     logsystem.h \
     logmessage.h \
@@ -27,6 +28,7 @@ HEADERS += mainwindow.h \
     pile.h \
     entier.h \
     reel.h \
-    expression.h
+    expression.h \
+    calculatrice.h
 FORMS += mainwindow.ui
 OTHER_FILES += 
