@@ -152,3 +152,21 @@ Constante* Complexe::soustraction(Constante* c){
     return c_complexe;
 }
 
+
+Constante* Complexe::fact()
+{
+    //FIXME : pas de fact pour les complexes
+    return this;
+}
+
+Constante* Complexe::sinus()
+{
+    //FIXME : pas de fact pour les complexes
+    return this;
+}
+
+Constante* Complexe::inv()
+{
+    //FIXME : pas d'inverse pour les complexes
+    return this;
+}

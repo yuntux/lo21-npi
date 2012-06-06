@@ -127,11 +127,26 @@ Constante* Rationnel::soustraction(Constante* c){
     }
 }
 
+Constante* Rationnel::fact()
+{
+    //FIXME : pas de fact pour les complexes
+    return this;
+}
 
+Constante* Rationnel::sinus()
+{
 
+    float num = _numerateur;
+    float den = _denominateur;
+    float res=num/den;
 
+    Rationnel *r = new Rationnel(sin(res),1);
+    return new Complexe(r);
 
+}
 
-
-
-
+Constante *Rationnel::inv()
+{
+    Rationnel* tmp = new Rationnel(this->getDenominateur(),this->getNumerateur());
+    return tmp;
+}

@@ -52,6 +52,33 @@ float sinush(Rationnel *r)
     return sinh(res);
 }
 
+float cosinush(Rationnel *r)
+{
+    int num=r->getNumerateur();
+    int den=r->getDenominateur();
+    float res=num/den;
+    return cosh(res);
+}
+
+float tangenteh(Rationnel *r)
+{
+    int num=r->getNumerateur();
+    int den=r->getDenominateur();
+    float res=num/den;
+    return tanh(res);
+}
+
+
+float fact(int n){
+    int result=1;
+    if (n==0)
+        return result;
+    else
+    for(int i=1;i<=n;i++)
+        result=result*i;
+    return result;
+}
+
 /*
 float fact(int n){
     int result=1;

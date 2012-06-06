@@ -1,10 +1,16 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QtGui>
-#include "fonctions.h"
 #include <iostream>
+#include "mainwindow.h"
+#include "fonctions.h"
+#include "complexe.h"
+#include "entier.h"
+#include "rationnel.h"
+#include "pile.h"
+#include "reel.h"
+#include <typeinfo>
 #include <cmath>
-
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -495,7 +501,7 @@ void MainWindow::CClicked(){
 void MainWindow::ENTERClicked(){
     QStringList list = ui->inputLine->text().split(" ");
     ui->inputLine->setText("");
-/*
+
 float res=0;
 float res2;
 float res3;
@@ -511,43 +517,142 @@ if(!_modComplexe)
 
         if(temp=="+")
         {
-            res2=sum(_pileStockageReelle,2);
-
-            qDebug()<<"\nsomme = "<<res2;
+            if(_modConstante==entier)
+            {
+                Constante *e1 = _pileStockage.pop();
+                Constante *e2 = _pileStockage.pop();
+                _pileStockage.push(e1->addition(e2));
+                Constante *e3 = _pileStockage.top();
+                qDebug()<<e3->afficher();
+            }
+            else if(_modConstante==reel)
+            {
+                Constante *re1 = _pileStockage.pop();
+                Constante *re2 = _pileStockage.pop();
+                _pileStockage.push(re1->addition(re2));
+                Constante *e3 = _pileStockage.top();
+                qDebug()<<e3->afficher();
+            }
+            else if(_modConstante==rationnel)
+            {
+                Constante *ra1 = _pileStockage.pop();
+                Constante *ra2 = _pileStockage.pop();
+                _pileStockage.push(ra1->addition(ra2));
+                Constante *ra3 = _pileStockage.top();
+                qDebug()<<ra3->afficher();
+            }
         }
 
         else if(temp=="*")
         {
-            res2=prod(_pileStockageReelle);
-
-            qDebug()<<"\nproduit = "<<res2;
+            if(_modConstante==entier)
+            {
+                Constante *e1 = _pileStockage.pop();
+                Constante *e2 = _pileStockage.pop();
+                _pileStockage.push(e1->produit(e2));
+                Constante *e3 = _pileStockage.top();
+                qDebug()<<e3->afficher();
+            }
+            else if(_modConstante==reel)
+            {
+                Constante *re1 = _pileStockage.pop();
+                Constante *re2 = _pileStockage.pop();
+                _pileStockage.push(re1->produit(re2));
+                Constante *e3 = _pileStockage.top();
+                qDebug()<<e3->afficher();
+            }
+            else if(_modConstante==rationnel)
+            {
+                Constante *ra1 = _pileStockage.pop();
+                Constante *ra2 = _pileStockage.pop();
+                _pileStockage.push(ra1->produit(ra2));
+                Constante *ra3 = _pileStockage.top();
+                qDebug()<<ra3->afficher();
+            }
         }
 
         else if(temp=="/")
         {
-            res2=divise(_pileStockageReelle);
-
-            qDebug()<<"\nquotient = "<<res2;
+            if(_modConstante==entier)
+            {
+                Constante *e1 = _pileStockage.pop();
+                Constante *e2 = _pileStockage.pop();
+                _pileStockage.push(e2->division(e1));
+                Constante *e3 = _pileStockage.top();
+                qDebug()<<e3->afficher();
+            }
+            else if(_modConstante==reel)
+            {
+                Constante *re1 = _pileStockage.pop();
+                Constante *re2 = _pileStockage.pop();
+                _pileStockage.push(re2->division(re1));
+                Constante *e3 = _pileStockage.top();
+                qDebug()<<e3->afficher();
+            }
+            else if(_modConstante==rationnel)
+            {
+                Constante *ra1 = _pileStockage.pop();
+                Constante *ra2 = _pileStockage.pop();
+                _pileStockage.push(ra2->division(ra1));
+                Constante *ra3 = _pileStockage.top();
+                qDebug()<<ra3->afficher();
+            }
         }
 
         else if(temp=="-")
         {
-            res2=diff(_pileStockageReelle);
-
-            qDebug()<<"\ndifférence = "<<res2;
+            if(_modConstante==entier)
+            {
+                Constante *e1 = _pileStockage.pop();
+                Constante *e2 = _pileStockage.pop();
+                _pileStockage.push(e2->soustraction(e1));
+                Constante *e3 = _pileStockage.top();
+                qDebug()<<e3->afficher();
+            }
+            else if(_modConstante==reel)
+            {
+                Constante *re1 = _pileStockage.pop();
+                Constante *re2 = _pileStockage.pop();
+                _pileStockage.push(re2->soustraction(re1));
+                Constante *e3 = _pileStockage.top();
+                qDebug()<<e3->afficher();
+            }
+            else if(_modConstante==rationnel)
+            {
+                Constante *ra1 = _pileStockage.pop();
+                Constante *ra2 = _pileStockage.pop();
+                _pileStockage.push(ra2->soustraction(ra1));
+                Constante *ra3 = _pileStockage.top();
+                qDebug()<<ra3->afficher();
+            }
         }
+
 
         else if(temp=="!")
         {
-            res2=fact(_pileStockageReelle.pop());
-            empiler(res2);
-            qDebug()<<"\nfactoriel : "<<_pileStockageReelle.top();
+            if(_modConstante==entier)
+            {
+                Constante *e = _pileStockage.pop();
+                _pileStockage.push(e->fact());
+                Constante *ra3 = _pileStockage.top();
+                qDebug()<<ra3->afficher();
+            }
+
+
+
         }
 
         else if(temp=="SIN")
         {
-            float s,val;
-            if(_modAngle==degre)
+            if(_modConstante==entier || _modConstante==reel || _modConstante==rationnel)
+            {
+                Constante *e = _pileStockage.pop();
+                _pileStockage.push(e->sinus());
+                Constante *ra3 = _pileStockage.top();
+                qDebug()<<ra3->afficher();
+            }
+
+         /*   if(_modAngle==degre)
             {
                 val=_pileStockageReelle.pop();
                 val=val*PI/180;
@@ -560,9 +665,9 @@ if(!_modComplexe)
                 s=sin(_pileStockageReelle.pop());
                 empiler(s);
                 qDebug()<<_pileStockageReelle.top();
-           }
+           }*/
         }
-
+/*
         else if(temp=="COS")
         {
             float c,val;
@@ -745,7 +850,7 @@ if(!_modComplexe)
             empiler(res);
             qDebug()<<"\n"<<_pileStockageReelle.top();
         }
-
+*/
         else if(temp[0]>='0' && temp[0]<='9')
         {
             if(_modConstante==rationnel)
@@ -762,41 +867,49 @@ if(!_modComplexe)
                         int a,b;
                         a=list2.at(0).toInt();
                         b=list2.at(1).toInt();
-                        Rationnel r(a,b);
-                        _pileStockageRationnel.push(r);
-                        Rationnel r1;
-                        r1=_pileStockageRationnel.top();
+                        Rationnel *r = new Rationnel(a,b);
+                        _pileStockage.push(r);
 
-                        qDebug()<<"\nNumérateur : "<<r.getNumerateur();
-                        qDebug()<<"\nDénominateur : "<<r.getDenominateur();
+                        Rationnel *r1=new Rationnel(_pileStockage.top());
+                        qDebug()<<"\nNumérateur : "<<r1->getNumerateur();
+                        qDebug()<<"\nDénominateur : "<<r1->getDenominateur();
                 }
                 else
                 {
                     int value;
                     value=temp.toInt();
-                    Rationnel r(value,1);
-                    _pileStockageRationnel.push(r);
-                    Rationnel r1;
-                    r1=_pileStockageRationnel.top();
+                    Rationnel *r = new Rationnel(value,1);
+                    _pileStockage.push(r);
 
-                    qDebug()<<"\nNumérateur : "<<r.getNumerateur();
-                    qDebug()<<"\nDénominateur : "<<r.getDenominateur();
+                    Rationnel *r1=new Rationnel(_pileStockage.top());
+                    qDebug()<<"\nNumérateur : "<<r1->getNumerateur();
+                    qDebug()<<"\nDénominateur : "<<r1->getDenominateur();
                 }
 
             }
 
-            else
+            else if(_modConstante==entier)
             {
-           res=temp.toDouble();
-           empiler(res);
-
-           qDebug()<<"\n"<<_pileStockageReelle.top();
+                int value = temp.toInt();
+                Entier *e = new Entier(value);
+                _pileStockage.push(e);
+                Entier *e1 = new Entier(_pileStockage.top());
+                qDebug()<<"\nvaleur entier : "<<e1->getValeur();
+            }
+            else if(_modConstante==reel)
+            {
+                float value = temp.toDouble();
+                Reel *re= new Reel(value);
+                _pileStockage.push(re);
+                Reel *re1=new Reel(_pileStockage.top());
+                qDebug()<<"\nvaleur réel : "<<re1->getValeur();
             }
             rat=false;
         }
 
     }
 }
+/*
 else
 {
     foreach(QString temp, list)
@@ -984,6 +1097,7 @@ else
 */
 //qDebug()<<"\nj = "<<j;
 }
+
 MainWindow::~MainWindow()
 {
     delete ui;

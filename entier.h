@@ -19,6 +19,10 @@ public:
     virtual Constante* signe();
     virtual Constante* division(Constante* c);
     virtual Constante* soustraction(Constante* c);
+    int mod(Entier *c);
+    virtual Constante* inv();
+    virtual Constante* fact();
+    virtual Constante* sinus();
 };
 
 #endif // ENTIER_H

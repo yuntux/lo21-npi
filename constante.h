@@ -23,6 +23,9 @@ public:
     virtual Constante* signe()=0;
     Constante* recopie();
     virtual Constante* soustraction(Constante* c)=0;
+    virtual Constante* inv()=0;
+    virtual Constante* fact()=0;
+    virtual Constante* sinus()=0;
 };
 
 class FrabriqueConstante{

@@ -3,6 +3,7 @@
 #include "rationnel.h"
 #include "reel.h"
 #include <typeinfo>
+#include <cmath>
 
 Entier::Entier(Constante* c) {
     if (Entier *c_entier=dynamic_cast<Entier *>(c)){
@@ -103,4 +104,39 @@ Constante* Entier::soustraction(Constante* c){
         Reel *c_reel=dynamic_cast<Reel *>(c);
         return new Complexe(this->addition(c_reel->signe()));
     }
+}
+
+Constante* Entier::fact()
+{
+    int result=1;
+    if (this->getValeur()==0)
+    {
+        Entier *e = new Entier(result);
+        return new Complexe(e);
+    }
+    else
+    for(int i=1;i<=this->getValeur();i++)
+        result=result*i;
+    Entier *e = new Entier(result);
+    return new Complexe(e);
+}
+
+Constante* Entier::sinus()
+{
+    float res = _valeur;
+    Entier *e = new Entier(sin(res));
+    return new Complexe(e);
+}
+
+int Entier::mod(Entier* c)
+{
+    int res;
+    res=_valeur%c->getValeur();
+    return res;
+}
+
+
+Constante *Entier::inv()
+{   //FIXME : pas d'inverse pour les entiers
+    return this;
 }

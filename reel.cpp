@@ -101,3 +101,22 @@ Constante* Reel::soustraction(Constante* c){
         return new Complexe(this->addition(c_reel->signe()));
     }
 }
+
+Constante *Reel::inv()
+{
+    Reel *res;
+    res->setValeur(1/this->getValeur());
+    return res;
+}
+
+Constante* Reel::sinus()
+{
+    Reel *e = new Reel(sin(_valeur));
+    return new Complexe(e);
+}
+
+Constante* Reel::fact()
+{
+    //FIXME : pas de fact pour les complexes
+    return this;
+}

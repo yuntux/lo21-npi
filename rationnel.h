@@ -28,6 +28,9 @@ public:
     virtual Constante* division(Constante* c);
     virtual Constante* signe();
     virtual Constante* soustraction(Constante* c);
+    virtual Constante* inv();
+    virtual Constante* fact();
+    virtual Constante* sinus();
 
     Rationnel(int num=0, int den=1):_numerateur(num), _denominateur(den)
     {

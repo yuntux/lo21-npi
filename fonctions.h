@@ -16,6 +16,8 @@ float tangente(Rationnel *r);
 
 float sinush(Rationnel *r);
 
+float cosinush(Rationnel *r);
+
 /*
 template <class T>
 T inv(T num) {
