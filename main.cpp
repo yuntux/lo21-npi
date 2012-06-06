@@ -62,7 +62,9 @@ int main(int argc, char *argv[])
     Complexe c33(&re1, &e3);
 
     Pile Stockage;
-    qDebug() << c11.signe()->afficher();
+    qDebug() << e1.division(&c11)->afficher();
+    qDebug() << ra1.division(&c11)->afficher();
+    qDebug() << re1.division(&c11)->afficher();
     //Stockage.push(c11.division(&c12));
     /*
     QString tmp0 = "100";

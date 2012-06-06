@@ -108,10 +108,9 @@ Constante* Rationnel::division(Constante *c)
             return new Complexe(tmp);
         }
    else if (typeid(*c)==typeid(Complexe)) {
-       /* Complexe *c_complexe=dynamic_cast<Complexe *>(c);
-        Constante* tmp = new Complexe(c_complexe->getPartieReelle()*_valeur, c_complexe->getPartieImaginaire());
-        return new Complexe(tmp);*/
-
+       Complexe *c_complexe=dynamic_cast<Complexe *>(c);
+       Complexe rationnel_complexe(this);
+       return rationnel_complexe.division(c_complexe);
     }
 }
 

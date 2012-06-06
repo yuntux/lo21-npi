@@ -176,5 +176,4 @@ Constante* Complexe::sinus()
 Constante* Complexe::inv()
 {
     //FIXME : pas d'inverse pour les complexes
-    return this;
 }
