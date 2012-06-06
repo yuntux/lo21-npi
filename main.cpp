@@ -57,12 +57,7 @@ int main(int argc, char *argv[])
     Complexe c33(&re1, &e3);
 
     Pile Stockage;
-    Reel r1(7854.735294);
-    r1.toRationnel();
-    double r(7854.735294);
-    int partie_entiere = floor(r);
-    float partie_decimale = r-partie_entiere;
-    std::cout<<partie_decimale;
+
     //qDebug() << e1.division(&c11)->afficher();
     //qDebug() << ra1.division(&c11)->afficher();
     //qDebug() << re1.division(&c11)->afficher();

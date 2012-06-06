@@ -128,11 +128,7 @@ Constante* Complexe::division(Constante *c)
 
     Complexe* im_num = new Complexe(diviseur->getPartieReelle()->produit(dividende->getPartieImaginaire())->soustraction(dividende->getPartieReelle()->produit(diviseur->getPartieImaginaire())));
     Complexe* im = new Complexe(im_num->getPartieReelle()->division(denom->getPartieReelle()));
-qDebug() << dividende->getPartieReelle()->produit(diviseur->getPartieReelle())->afficher();
-qDebug() << dividende->getPartieImaginaire()->produit(diviseur->getPartieImaginaire())->afficher();
-qDebug() << re_num->afficher();
-//qDebug() << im_num->afficher();
-//qDebug() << dividende->afficher();
+
     Complexe* res = new Complexe(re->getPartieReelle(), im->getPartieReelle());
     delete(denom);
     delete(re_num);
