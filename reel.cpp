@@ -9,9 +9,10 @@ Reel::Reel(Constante* c) {
     if (Entier *c_entier=dynamic_cast<Entier *>(c)){
         _valeur = c_entier->getValeur();
     } else if (typeid(*c)==typeid(Complexe)) {
-        //FIXME : impossible de construire un entier avec un complexe
+        //FIXME : impossible de renvoyer un reel Ã  partir d'un complexe
+            //SAUF si la partie imaginaire est nulle et que la partie réelle est castable (entier ou rationnel décimal ou réel)
     } else if (typeid(*c)==typeid(Rationnel)) {
-        //FIXME : impossible de construire un entier avec un rationnel
+        //FIXME : impossible de construire un réel avec un rationnel sauf si sa partie décimale est nulle
     } else if (typeid(*c)==typeid(Reel)) {
         Reel *c_reel=dynamic_cast<Reel *>(c);
         _valeur = c_reel->getValeur();

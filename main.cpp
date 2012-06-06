@@ -62,6 +62,9 @@ int main(int argc, char *argv[])
     Complexe c33(&re1, &e3);
 
     Pile Stockage;
+    qDebug() << c11.signe()->afficher();
+    //Stockage.push(c11.division(&c12));
+    /*
     QString tmp0 = "100";
     Stockage.push(new Entier(tmp0.toInt()));
     QString tmp1 = "30"; //on detecte que c'est un entier
@@ -73,7 +76,7 @@ int main(int argc, char *argv[])
     Constante* operande1 = Stockage.pop();
     Constante* operande2 = Stockage.pop();
     Stockage.push(operande1->addition(operande2));
-    qDebug() << Stockage.afficher();/*
+    qDebug() << Stockage.afficher();
     QString tmp4 = "5.3"; //on detecte que c'est un réel
     Stockage.push(new Reel(tmp4.toFloat()));
     qDebug() << Stockage.afficher();
@@ -110,13 +113,13 @@ int main(int argc, char *argv[])
     qDebug() << ent->getPartieImaginaire()->afficher();
     //qDebug() << a->afficher();
 */
- //   return 0;
+    return 0;
 
-
+/*
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
-
     return a.exec();
+    */
 
 }

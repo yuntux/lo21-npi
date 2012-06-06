@@ -8,8 +8,8 @@
 Rationnel::Rationnel(Constante* c) {
     if (typeid(*c)==typeid(Complexe)){
         //FIXME : impossible de renvoyer un rationnel Ã  partir d'un complexe
+            //SAUF si la partie imaginaire est nulle et que la partie réelle est castable (entier ou rationnel ou réel avec partie décimale nulle)
     } else if (typeid(*c)==typeid(Entier)) {
-        //transtypage en entier
         Entier *c_entier=dynamic_cast<Entier *>(c);
         _numerateur = c_entier->getValeur();
         _denominateur = 1;
@@ -19,7 +19,7 @@ Rationnel::Rationnel(Constante* c) {
         _denominateur = c_rationnel->getDenominateur();
         this->simplification();
     } else if (typeid(*c)==typeid(Reel)) {
-        //FIXME : impossible de construire un rationnel Ã  partir d'un rÃ©el
+        //FIXME : impossible de construire un rationnel Ã  partir d'un rÃ©el SAUF si la partie décimale est nulle
     }
 }
 

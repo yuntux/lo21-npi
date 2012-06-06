@@ -9,11 +9,13 @@ Entier::Entier(Constante* c) {
     if (Entier *c_entier=dynamic_cast<Entier *>(c)){
         _valeur = c_entier->getValeur();
     } else if (typeid(*c)==typeid(Complexe)) {
-        //FIXME : impossible de construire un entier avec un complexe
+        //FIXME : impossible de construire un entier avec un complexe SAUF si la partie imaginaire est nulle
+  //      Complexe *c_complexe=dynamic_cast<Complexe *>(c);
+    //    if c_complexe->getPartieImaginaire()
     } else if (typeid(*c)==typeid(Rationnel)) {
-        //FIXME : impossible de construire un entier avec un rationnel
+        //FIXME : impossible de construire un entier avec un rationnel SAUF si le dénominateur vaut 1
     } else if (typeid(*c)==typeid(Reel)) {
-        //FIXME : impossible de construire un entier Ã  partir d'un rÃ©el
+        //FIXME : impossible de construire un entier Ã  partir d'un rÃ©el SAUF c'est la parti décimale est nulle
     }
 }
 
@@ -64,7 +66,8 @@ Constante* Entier::division(Constante *c)
 {
     if(Entier *c_entier=dynamic_cast<Entier *>(c))
     {
-        Entier* tmp = new Entier(_valeur/c_entier->getValeur());
+        //On renvoie forcément un rationnel pour ne pas perdre en précision
+        Rationnel* tmp = new Rationnel(_valeur, c_entier->getValeur());
         return new Complexe(tmp);
     }
     else if (typeid(*c)==typeid(Rationnel)) {
@@ -73,6 +76,7 @@ Constante* Entier::division(Constante *c)
             return new Complexe(tmp);
     }
     else if (typeid(*c)==typeid(Reel)) {
+        //FIXME : perte de précision ???
             Reel *c_reel=dynamic_cast<Reel *>(c);
             Reel*  tmp = new Reel(_valeur/c_reel->getValeur());
             return new Complexe(tmp);

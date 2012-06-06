@@ -8,8 +8,9 @@ Complexe::Complexe(Constante* r, Constante* i){
     if (typeid(*r)==typeid(Complexe) || typeid(*r)==typeid(Complexe)) {
         //FIXME : lève une exeption (éviter les boucles de récursion infinies)
     } else {
-        _reelle=r;
-        _imaginaire=i;
+        //plutot copier les composantes ?
+        _reelle = r->recopie();;
+        _imaginaire= i->recopie();
     }
 }
 
@@ -115,28 +116,35 @@ Constante* Complexe::produit(Constante *c)
 
 Constante* Complexe::division(Constante *c)
 {
-    /*
-    Complexe *c_complexe = new Complexe(c);
-    Complexe* re = new Complexe(c_complexe->getPartieReelle()->produit(_reelle)->soustraction(c_complexe->getPartieImaginaire()->produit(_imaginaire)));
-    Complexe* im = new Complexe(c_complexe->getPartieImaginaire()->produit(_reelle)->addition(c_complexe->getPartieReelle()->produit(_imaginaire)));
-    c_complexe->setImaginaire(im->getPartieReelle());
-    c_complexe->setReelle(re->getPartieReelle());
-    delete(re);
-    delete(im);
-    return c_complexe;
-    */
+    // On utilise la multiplication par le conjugué du diviseur au numérateur et au dénominateur
+    //    a+ib / c+id = (a+ib)*(c-id) / (c+id)*(c-id) = ... = [(ac+bd)/(c²+d²)] + i[(cb-ad)/(c²+d²)]
+    Complexe *dividende = this;
+    Complexe *diviseur=dynamic_cast<Complexe *>(c);
+
+    Complexe* denom = new Complexe(diviseur->getPartieReelle()->produit(diviseur->getPartieReelle())->addition(diviseur->getPartieImaginaire()->produit(diviseur->getPartieImaginaire())));
+
+    Complexe* re_num = new Complexe(dividende->getPartieReelle()->produit(diviseur->getPartieReelle())->addition(dividende->getPartieImaginaire()->produit(diviseur->getPartieImaginaire())));
+    Complexe* re = new Complexe(re_num->getPartieReelle()->division(denom->getPartieReelle()));
+
+    Complexe* im_num = new Complexe(diviseur->getPartieReelle()->produit(dividende->getPartieImaginaire())->soustraction(dividende->getPartieReelle()->produit(diviseur->getPartieImaginaire())));
+    Complexe* im = new Complexe(im_num->getPartieReelle()->division(denom->getPartieReelle()));
+
+    Complexe* res = new Complexe(re->getPartieReelle(), im->getPartieReelle());
+    delete(denom);
+    delete(re_num);
+    delete(im_num);
+    return res;
 }
 
 Constante* Complexe::signe(){
-    /*
     Constante *c = this->recopie();
-    Complexe *tmp= new Complexe (c);
+    Complexe *tmp = dynamic_cast<Complexe *>(c);
     Entier e(-1);
-    tmp->setImaginaire(_imaginaire->multiplication(&e));
-    tmp->setReelle(_reel->multiplication(&e));
-    delete c;
+    Complexe tmp1(tmp->getPartieImaginaire()->produit(&e));
+    tmp->setImaginaire(tmp1.getPartieReelle());
+    Complexe tmp2(tmp->getPartieReelle()->produit(&e));
+    tmp->setReelle(tmp2.getPartieReelle());
     return tmp;
-    */
 }
 
 Constante* Complexe::soustraction(Constante* c){
