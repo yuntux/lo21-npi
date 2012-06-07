@@ -138,7 +138,7 @@ Constante* Rationnel::soustraction(Constante* c){
 
 Constante* Rationnel::fact()
 {
-    //FIXME : pas de fact pour les complexes
+    throw LogMessage(2,"La fonction factorielle n'est pas implémentée pour les rationnels.", moyen);
     return this;
 }
 

@@ -62,44 +62,6 @@ Constante* Complexe::addition(Constante* c){
     delete(re);
     delete(im);
     return c_complexe;
-  /*  if (Complexe *c_complexe=dynamic_cast<Complexe *>(c)){
-        Complexe* im = new Complexe(c_complexe->getPartieImaginaire()->addition(this->getPartieImaginaire()));
-        //les parties imaginaires sont des reels/rationnels/entiers donc leur somme renvoie un complexe donc l'im est nulle
-        Complexe* re = new Complexe(c_complexe->getPartieReelle()->addition(this->getPartieReelle()));
-        //les parties réelles sont des reels/rationnels/entiers donc leur somme renvoie un complexe donc l'im est nulle
-        Complexe* tmp = new Complexe;
-        tmp->setImaginaire(im->getPartieReelle());
-        tmp->setReelle(re->getPartieReelle());
-        return tmp;
-
-    } else if (typeid(*c)==typeid(Entier)) {
-        Entier *c_entier=dynamic_cast<Entier *>(c);
-        Complexe* re = new Complexe(c_entier->addition(this->getPartieReelle()));
-        Constante* im = this->getPartieImaginaire()->recopie();
-        Complexe *tmp = new Complexe;
-        tmp->setReelle(re->getPartieReelle());
-        tmp->setImaginaire(im);
-        return tmp;
-    } else if (typeid(*c)==typeid(Rationnel)) {
-        Rationnel *c_rationnel = dynamic_cast<Rationnel *>(c);
-
-        Complexe* re = new Complexe(this->getPartieReelle()->addition(c_rationnel));
-        Constante* im = this->getPartieImaginaire()->recopie();
-        Complexe *tmp = new Complexe;
-        tmp->setReelle(re->getPartieReelle());
-        tmp->setImaginaire(im);
-        return tmp;
-    } else if (typeid(*c)==typeid(Reel)) {
-        Reel *c_reel=dynamic_cast<Reel *>(c);
-        Complexe* re = new Complexe(c_reel->addition(this->getPartieReelle()));
-        Constante* im = this->getPartieImaginaire()->recopie();
-        Complexe *tmp = new Complexe;
-        tmp->setReelle(re->getPartieReelle());
-        tmp->setImaginaire(im);
-        return tmp;
-    }
-
-    */
 }
 
 Constante* Complexe::produit(Constante *c)
@@ -163,17 +125,19 @@ Constante* Complexe::soustraction(Constante* c){
 
 Constante* Complexe::fact()
 {
-    //FIXME : pas de fact pour les complexes
+    throw LogMessage(2,"La fonction factorielle n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
 
 Constante* Complexe::sinus()
 {
-    //FIXME : pas de fact pour les complexes
+    throw LogMessage(2,"La fonction SIN n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
 
 Constante* Complexe::inv()
 {
     //FIXME : pas d'inverse pour les complexes
+    throw LogMessage(2,"La fonction INV n'est pas implémentée pour les complexes.", moyen);
+    return this;
 }

@@ -140,6 +140,7 @@ int Entier::mod(Entier* c)
 
 
 Constante *Entier::inv()
-{   //FIXME : pas d'inverse pour les entiers
-    return this;
+{
+    //FIXME : pas d'inverse pour les entiers sans perte de précision
+    return new Rationnel(1, this->getValeur());
 }

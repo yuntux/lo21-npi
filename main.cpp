@@ -8,6 +8,8 @@
 #include "reel.h"
 #include <typeinfo>
 #include <cmath>
+#include "logmessage.h"
+#include "logsystem.h"
 
 //DESIGN PATTERN : command(Annuler/Rétablir), Factory, Composite,
 //Gérer les erreurs => exeptions standards
@@ -56,8 +58,15 @@ int main(int argc, char *argv[])
     Complexe c32(&re1, &ra3);
     Complexe c33(&re1, &e3);
 
-    Pile Stockage;
-
+    try {
+        ra1.setDenominateur(0);
+    }
+    catch(std::exception const& e)
+    {
+        // FIXME : interagir avec logsystem
+        cerr << "ERREUR : " << e.what() << endl;
+    }
+    //Pile Stockage;
     //qDebug() << e1.division(&c11)->afficher();
     //qDebug() << ra1.division(&c11)->afficher();
     //qDebug() << re1.division(&c11)->afficher();

@@ -14,7 +14,6 @@ class Pile : public QAbstractListModel
 //http://www.developpez.net/forums/d414542/c-cpp/bibliotheques/qt/qabstractitemmodel-qlistview/
 
 private:
-    //QStack<Constante*> p;
     QList<Constante*> p;
 
 public:
@@ -24,7 +23,7 @@ public:
     bool isEmpty() const {return p.isEmpty();}
     int size() const {return p.size();}
     Pile(QObject *parent = 0):QAbstractListModel(parent){};
-    //virtual ~Pile();
+    virtual ~Pile();
     Constante* sum(unsigned int x=2);
     QString afficher() const;
 

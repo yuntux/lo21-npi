@@ -100,7 +100,6 @@ Constante* Reel::soustraction(Constante* c){
     if (Complexe *c_complexe=dynamic_cast<Complexe *>(c)){
         return new Complexe(this->addition(c_complexe->signe()));
     } else if (typeid(*c)==typeid(Entier)) {
-        //transtypage en entier
         Entier *c_entier=dynamic_cast<Entier *>(c);
         return new Complexe(this->addition(c_entier->signe()));
     } else if (typeid(*c)==typeid(Rationnel)) {
@@ -115,9 +114,7 @@ Constante* Reel::soustraction(Constante* c){
 
 Constante *Reel::inv()
 {
-    Reel *res;
-    res->setValeur(1/this->getValeur());
-    return res;
+    return new Reel(1/this->getValeur());
 }
 
 Constante* Reel::sinus()
@@ -128,6 +125,6 @@ Constante* Reel::sinus()
 
 Constante* Reel::fact()
 {
-    //FIXME : pas de fact pour les réels
+    throw LogMessage(2,"La fonction factorielle n'est pas implémentée pour les réels.", moyen);
     return this;
 }

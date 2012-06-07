@@ -1,21 +1,31 @@
 #ifndef LOGMESSAGE_H
 #define LOGMESSAGE_H
 #include <QtGui>
+#include <exception>
 
-enum level {warning, error};
+enum niveau {faible, moyen, important};
+using namespace std;
 
-class LogMessage
+class LogMessage: public exception
 {
-    enum level _level;
-    QString _message;
+    int m_numero;               // Numéro de l'erreur.
+    string m_phrase;            // Description de l'erreur.
+    enum niveau _level;               // Niveau de l'erreur.
 
 public:
-    LogMessage();
-    QString getMessage() const {return _message;}
-    QString getLevel() const {
-        if (_level==warning) return "Warning";
-        if (_level==error) return "Error";
-    }
+    LogMessage(int numero=0, string const& phrase="", enum niveau lev=faible) throw() : m_numero(numero),m_phrase(phrase),_level(lev){}
+
+     virtual const char* what() const throw()     { return m_phrase.c_str(); }
+
+     virtual const char* getNiveau() const throw()
+     {
+         if (_level==faible) return "Faible";
+         if (_level==moyen) return "Moyen";
+         if (_level==important) return "Important";
+         return "Niveau inconnu";
+     }
+
+    virtual ~LogMessage() throw() {}
 };
 
 #endif // LOGMESSAGE_H

@@ -24,22 +24,15 @@ QVariant Pile::data(const QModelIndex &index, int role) const
         return QVariant();
 }
 
-/*
+
 Pile::~Pile()
 {
-//FIXME
-}*/
+    for(int i=0; i<this->size(); i++){
+        delete p.at(i);
+    }
+}
 
 QString Pile::afficher() const {
-    //FIXME : affichage ne devrait pas DETRUIRE LA PILE !
-    /*QString pile;
-    pile = pile + "### DEBUT PILE###\n";
-    QStack<Constante*> copie(this->p);
-    while (!copie.isEmpty())
-         pile = pile + copie.pop()->afficher() + "\n";
-    pile = pile + "### FIN PILE###";
-    return pile;
-    */
     QString string_pile;
     string_pile = string_pile + "### DEBUT PILE###\n";
 

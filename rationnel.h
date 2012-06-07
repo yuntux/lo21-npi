@@ -3,6 +3,8 @@
 
 #include "constante.h"
 #include <iostream>
+#include "logmessage.h"
+#include "exception"
 
 class Rationnel : public Constante{
     int _numerateur;
@@ -19,7 +21,8 @@ public:
             _denominateur=v;
             simplification();
         } else {
-            //FIXME : lever une exeption -> dénminateur nul illégal
+            //throw domain_error("Division par zéro");
+            throw LogMessage(1,"Division par zéro", important);
         }
     }
     Rationnel(Constante* c);

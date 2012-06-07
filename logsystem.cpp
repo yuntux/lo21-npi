@@ -1,6 +1,7 @@
 #include "logsystem.h"
 #include <QtGui>
 #include <iostream>
+#include "iostream"
 
 LogSystem::LogSystem()
 {
@@ -21,9 +22,11 @@ void LogSystem::ajouterFichierLog(LogMessage m){
     }
 
     QTextStream out(&file);
-    out<< m.getMessage();
+    out<< m.what();
 }
 
 void LogSystem::ajouterConsoleLog(LogMessage m){
-    qDebug() << m.getMessage();
+    //qDebug() << m.what();
+    //std::cout << m.what();
+    cerr << "MESSAGE DE LOG : " << m.what() << endl;
 }
