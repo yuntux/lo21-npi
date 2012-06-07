@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_rationnel" kind="class" prot="public">
+    <compoundname>Rationnel</compoundname>
+    <basecompoundref refid="class_constante" prot="public" virt="non-virtual">Constante</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_rationnel_1ae81ee8a165cb6e3c18a66791e50c6f1e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Rationnel::_numerateur</definition>
+        <argsstring></argsstring>
+        <name>_numerateur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="10" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_rationnel_1a243f6f39a8bca7e35f16ad8fe4173ba8" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Rationnel::_denominateur</definition>
+        <argsstring></argsstring>
+        <name>_denominateur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="11" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_rationnel_1aef5b4fb13f34b03cdf9132c272b5144f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QString</type>
+        <definition>QString Rationnel::afficher</definition>
+        <argsstring>() const </argsstring>
+        <name>afficher</name>
+        <reimplements refid="class_constante_1a78b5d9ee6a7e70349db6641a08f77479">afficher</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="15" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a5802a9dda12b8af3ffef1eae3ee23d4a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Rationnel::getNumerateur</definition>
+        <argsstring>() const </argsstring>
+        <name>getNumerateur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="16" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1ae2a533befbdf1ec3977d36cd792af2ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Rationnel::getDenominateur</definition>
+        <argsstring>() const </argsstring>
+        <name>getDenominateur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="17" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1ae96e448dcef2ceade17d42ddc58076bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Rationnel::setNumerateur</definition>
+        <argsstring>(int v)</argsstring>
+        <name>setNumerateur</name>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="18" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a09af735e39194e35ca2bfbaa6f8eb0b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Rationnel::setDenominateur</definition>
+        <argsstring>(int v)</argsstring>
+        <name>setDenominateur</name>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="19" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="19" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Rationnel::Rationnel</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>Rationnel</name>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="8" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1abfbb081364b14280bd0dad5c446078d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Rationnel::Rationnel</definition>
+        <argsstring>(int num=0, int den=1)</argsstring>
+        <name>Rationnel</name>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>den</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="29" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="27" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a90d440a5d909748f5fda471e027e3a85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Rationnel::simplification</definition>
+        <argsstring>()</argsstring>
+        <name>simplification</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="30" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="161" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a4dc6b238834ace05451e69ea2bb6d02a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::addition</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>addition</name>
+        <reimplements refid="class_constante_1a580f4535e16d4c9331da85750be6e5ad">addition</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="32" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="44" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1aa1a21dae65f5fb48c56a376aea420bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::produit</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>produit</name>
+        <reimplements refid="class_constante_1ad805854dd4e53f0ef5b2d482398b682a">produit</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="72" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1acf6c7167cfd8005ac723ce11feae2845" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::division</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>division</name>
+        <reimplements refid="class_constante_1ab9b969ad6ad0d8463d44a1273667ee79">division</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="34" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="93" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a12ba8bcf6c200e85c4d260ee0bbb78b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::signe</definition>
+        <argsstring>()</argsstring>
+        <name>signe</name>
+        <reimplements refid="class_constante_1a1c6f79dbc7623529ee4fd5ae9c556b45">signe</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="35" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a268c0a861cdacea0593774b50a346a98" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::soustraction</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>soustraction</name>
+        <reimplements refid="class_constante_1ad1df4970f093fdb4235d4945ec2dbf12">soustraction</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="36" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="125" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a45dd892e3366ff9be810fde32739b899" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::inv</definition>
+        <argsstring>()</argsstring>
+        <name>inv</name>
+        <reimplements refid="class_constante_1a63d03e59594b74aa2fbc35f559b0ad46">inv</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="37" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="155" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a68ab5e97a92bb2a08d667861eb920052" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::fact</definition>
+        <argsstring>()</argsstring>
+        <name>fact</name>
+        <reimplements refid="class_constante_1a57dafd18c718935af9f97dcbb8de9ad9">fact</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="38" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="143" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a4082f9cbebb6d96c496552b93b106c99" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::sinus</definition>
+        <argsstring>()</argsstring>
+        <name>sinus</name>
+        <reimplements refid="class_constante_1ad1a0ed2f6f6e9c3e7fc3f0c4ffaeaa76">sinus</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="39" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="149" bodyend="153"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="97">
+        <label>Rationnel</label>
+        <link refid="class_rationnel"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>Constante</label>
+        <link refid="class_constante"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="99">
+        <label>Rationnel</label>
+        <link refid="class_rationnel"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>Constante</label>
+        <link refid="class_constante"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="9" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="9" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_rationnel_1a243f6f39a8bca7e35f16ad8fe4173ba8" prot="private" virt="non-virtual"><scope>Rationnel</scope><name>_denominateur</name></member>
+      <member refid="class_rationnel_1ae81ee8a165cb6e3c18a66791e50c6f1e" prot="private" virt="non-virtual"><scope>Rationnel</scope><name>_numerateur</name></member>
+      <member refid="class_rationnel_1a4dc6b238834ace05451e69ea2bb6d02a" prot="public" virt="virtual"><scope>Rationnel</scope><name>addition</name></member>
+      <member refid="class_rationnel_1aef5b4fb13f34b03cdf9132c272b5144f" prot="public" virt="virtual"><scope>Rationnel</scope><name>afficher</name></member>
+      <member refid="class_rationnel_1acf6c7167cfd8005ac723ce11feae2845" prot="public" virt="virtual"><scope>Rationnel</scope><name>division</name></member>
+      <member refid="class_rationnel_1a68ab5e97a92bb2a08d667861eb920052" prot="public" virt="virtual"><scope>Rationnel</scope><name>fact</name></member>
+      <member refid="class_rationnel_1ae2a533befbdf1ec3977d36cd792af2ea" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>getDenominateur</name></member>
+      <member refid="class_rationnel_1a5802a9dda12b8af3ffef1eae3ee23d4a" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>getNumerateur</name></member>
+      <member refid="class_rationnel_1a45dd892e3366ff9be810fde32739b899" prot="public" virt="virtual"><scope>Rationnel</scope><name>inv</name></member>
+      <member refid="class_rationnel_1aa1a21dae65f5fb48c56a376aea420bd6" prot="public" virt="virtual"><scope>Rationnel</scope><name>produit</name></member>
+      <member refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>Rationnel</name></member>
+      <member refid="class_rationnel_1abfbb081364b14280bd0dad5c446078d5" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>Rationnel</name></member>
+      <member refid="class_constante_1ac6fb071229429f82cf489f8313461efa" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>recopie</name></member>
+      <member refid="class_rationnel_1a09af735e39194e35ca2bfbaa6f8eb0b9" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>setDenominateur</name></member>
+      <member refid="class_rationnel_1ae96e448dcef2ceade17d42ddc58076bf" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>setNumerateur</name></member>
+      <member refid="class_rationnel_1a12ba8bcf6c200e85c4d260ee0bbb78b6" prot="public" virt="virtual"><scope>Rationnel</scope><name>signe</name></member>
+      <member refid="class_rationnel_1a90d440a5d909748f5fda471e027e3a85" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>simplification</name></member>
+      <member refid="class_rationnel_1a4082f9cbebb6d96c496552b93b106c99" prot="public" virt="virtual"><scope>Rationnel</scope><name>sinus</name></member>
+      <member refid="class_rationnel_1a268c0a861cdacea0593774b50a346a98" prot="public" virt="virtual"><scope>Rationnel</scope><name>soustraction</name></member>
+      <member refid="class_constante_1af747f270ad3d50813786a1b013bac959" prot="public" virt="virtual"><scope>Rationnel</scope><name>~Constante</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

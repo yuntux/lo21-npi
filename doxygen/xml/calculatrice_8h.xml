@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="calculatrice_8h" kind="file">
+    <compoundname>calculatrice.h</compoundname>
+    <includes refid="pile_8h" local="yes">pile.h</includes>
+    <includes refid="constante_8h" local="yes">constante.h</includes>
+    <includes refid="mainwindow_8h" local="yes">mainwindow.h</includes>
+    <includedby refid="calculatrice_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.cpp</includedby>
+    <incdepgraph>
+      <node id="69">
+        <label>pile.h</label>
+        <link refid="pile_8h_source"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>QStack</label>
+      </node>
+      <node id="78">
+        <label>logmessage.h</label>
+        <link refid="logmessage_8h_source"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>QMainWindow</label>
+      </node>
+      <node id="80">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h_source"/>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>exception</label>
+      </node>
+      <node id="76">
+        <label>entier.h</label>
+        <link refid="entier_8h"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>vector</label>
+      </node>
+      <node id="71">
+        <label>stack</label>
+      </node>
+      <node id="75">
+        <label>complexe.h</label>
+        <link refid="complexe_8h_source"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>iostream</label>
+      </node>
+      <node id="77">
+        <label>rationnel.h</label>
+        <link refid="rationnel_8h_source"/>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>constante.h</label>
+        <link refid="constante_8h"/>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h</label>
+        <link refid="calculatrice.h"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>QtGui</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_calculatrice" prot="public">Calculatrice</innerclass>
+    <briefdescription>
+<para><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref> en polonais inversé. Singleton de la calculatrice. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Aurélien DUMAINE </para><simplesectsep/><para>Simon LANCELOT </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+<simplesect kind="date"><para>juin 2012</para></simplesect>
+Licence : GNU/GPL version 3 (<ulink url="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</ulink>) </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="13"><highlight class="preprocessor">#ifndef<sp/>CALCULATRICE_H</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CALCULATRICE_H</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pile.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="constante_8h" kindref="compound" tooltip="Calculatrice en polonais inversé. Classe de la GUI QT-MainWindow.">constante.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mainwindow.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_calculatrice" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref>*<sp/>instance;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>MesureAngle<sp/>_modAngle;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Type<sp/>_modConstante;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_modComplexe;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pile" kindref="compound">Pile</ref><sp/>_pileStockage;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pile" kindref="compound">Pile</ref><sp/>_pileAffichage;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pile" kindref="compound">Pile</ref>*<sp/>getPileStockage()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;_pileStockage;}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pile" kindref="compound">Pile</ref>*<sp/>getPileAffichage()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;_pileAffichage;}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>MesureAngle<sp/>getMesureAngle()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_modAngle;}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Type<sp/>getModConstante()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_modConstante;}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>getModComplexe()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_modComplexe;}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setModConstante(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Type<sp/>t){_modConstante<sp/>=<sp/>t;}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setMesureAngle(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>MesureAngle<sp/>a){_modAngle<sp/>=<sp/>a;}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setModComplexe(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>c){_modComplexe<sp/>=<sp/>c;}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>saveToFile();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>loadFromFile();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref>();<sp/><sp/></highlight><highlight class="comment">//<sp/>à<sp/>mettre<sp/>dans<sp/>la<sp/>partie<sp/>privée<sp/>pour<sp/>en<sp/>interdire<sp/>l&apos;utilisationv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref>&amp;);<sp/><sp/></highlight><highlight class="comment">//<sp/>non<sp/>défini<sp/>mais<sp/>à<sp/>mettre<sp/>dans<sp/>la<sp/>partie<sp/>privée<sp/>pour<sp/>en<sp/>interdire<sp/>l&apos;utilisation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_calculatrice" kindref="compound">Calculatrice</ref>();<sp/></highlight><highlight class="comment">//<sp/>à<sp/>mettre<sp/>dans<sp/>la<sp/>partie<sp/>privée<sp/>pour<sp/>en<sp/>interdire<sp/>l&apos;utilisationv</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref><sp/>&amp;);<sp/><sp/></highlight><highlight class="comment">//<sp/>non<sp/>défini<sp/>mais<sp/>à<sp/>mettre<sp/>dans<sp/>la<sp/>partie<sp/>privée<sp/>pour<sp/>en<sp/>interdire<sp/>l&apos;utilisation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref>&amp;<sp/>getInstance();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>libereInstance();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CALCULATRICE_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h"/>
+  </compounddef>
+</doxygen>

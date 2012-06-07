@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_frabrique_complexe" kind="class" prot="public">
+    <compoundname>FrabriqueComplexe</compoundname>
+    <basecompoundref refid="class_complexe" prot="public" virt="non-virtual">Complexe</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_frabrique_complexe_1a924fc64934dea36a9841144704cb4696" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_complexe" kindref="compound">Complexe</ref></type>
+        <definition>Complexe FrabriqueComplexe::fabriquer</definition>
+        <argsstring>()</argsstring>
+        <name>fabriquer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="78">
+        <label>Complexe</label>
+        <link refid="class_complexe"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>Constante</label>
+        <link refid="class_constante"/>
+      </node>
+      <node id="77">
+        <label>FrabriqueComplexe</label>
+        <link refid="class_frabrique_complexe"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="81">
+        <label>Complexe</label>
+        <link refid="class_complexe"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>Constante</label>
+        <link refid="class_constante"/>
+      </node>
+      <node id="80">
+        <label>FrabriqueComplexe</label>
+        <link refid="class_frabrique_complexe"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="36" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="36" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" prot="public" virt="virtual"><scope>FrabriqueComplexe</scope><name>addition</name></member>
+      <member refid="class_complexe_1a5141b5b092f78c06f60013e911ba4440" prot="public" virt="virtual"><scope>FrabriqueComplexe</scope><name>afficher</name></member>
+      <member refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" prot="public" virt="non-virtual"><scope>FrabriqueComplexe</scope><name>Complexe</name></member>
+      <member refid="class_complexe_1ae19286bc2c8f360e3fbc0d65526564d3" prot="public" virt="non-virtual"><scope>FrabriqueComplexe</scope><name>Complexe</name></member>
+      <member refid="class_complexe_1ac00d0b5ba1dea7d67c43d257e48fd7b5" prot="public" virt="non-virtual"><scope>FrabriqueComplexe</scope><name>Complexe</name></member>
+      <member refid="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8" prot="public" virt="virtual"><scope>FrabriqueComplexe</scope><name>division</name></member>
+      <member refid="class_frabrique_complexe_1a924fc64934dea36a9841144704cb4696" prot="public" virt="non-virtual"><scope>FrabriqueComplexe</scope><name>fabriquer</name></member>
+      <member refid="class_complexe_1a0b0532339249783cee39f28670bb7504" prot="public" virt="virtual"><scope>FrabriqueComplexe</scope><name>fact</name></member>
+      <member refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" prot="public" virt="non-virtual"><scope>FrabriqueComplexe</scope><name>getPartieImaginaire</name></member>
+      <member refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" prot="public" virt="non-virtual"><scope>FrabriqueComplexe</scope><name>getPartieReelle</name></member>
+      <member refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" prot="public" virt="virtual"><scope>FrabriqueComplexe</scope><name>inv</name></member>
+      <member refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" prot="public" virt="virtual"><scope>FrabriqueComplexe</scope><name>produit</name></member>
+      <member refid="class_constante_1ac6fb071229429f82cf489f8313461efa" prot="public" virt="non-virtual"><scope>FrabriqueComplexe</scope><name>recopie</name></member>
+      <member refid="class_complexe_1a2335ce4c53e2b11d4fa4bcbef45415ba" prot="public" virt="non-virtual"><scope>FrabriqueComplexe</scope><name>setImaginaire</name></member>
+      <member refid="class_complexe_1a7e57ea7cf760e132c80a148e2c344cce" prot="public" virt="non-virtual"><scope>FrabriqueComplexe</scope><name>setReelle</name></member>
+      <member refid="class_complexe_1a97bb77958c4012ed113c54f895f91e85" prot="public" virt="virtual"><scope>FrabriqueComplexe</scope><name>signe</name></member>
+      <member refid="class_complexe_1ab4fdc60272bd80f1df8f8c1c29c11813" prot="public" virt="virtual"><scope>FrabriqueComplexe</scope><name>sinus</name></member>
+      <member refid="class_complexe_1a07d706446560190792339549752f9ea3" prot="public" virt="virtual"><scope>FrabriqueComplexe</scope><name>soustraction</name></member>
+      <member refid="class_constante_1af747f270ad3d50813786a1b013bac959" prot="public" virt="virtual"><scope>FrabriqueComplexe</scope><name>~Constante</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

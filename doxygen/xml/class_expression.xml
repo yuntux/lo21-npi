@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_expression" kind="class" prot="public">
+    <compoundname>Expression</compoundname>
+    <basecompoundref refid="class_constante" prot="public" virt="non-virtual">Constante</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_expression_1a7912641ff6edb9737f3381e211bf818f" prot="private" static="no" mutable="no">
+        <type>QString</type>
+        <definition>QString Expression::_expr</definition>
+        <argsstring></argsstring>
+        <name>_expr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" line="7" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_expression_1ac25fb301ae3947c964a4da9a95883e72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Expression::Expression</definition>
+        <argsstring>(QString s)</argsstring>
+        <name>Expression</name>
+        <param>
+          <type>QString</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" line="9" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_expression_1a0fd562e8402f205c6b01018913da01a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Expression::addition</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>addition</name>
+        <reimplements refid="class_constante_1a580f4535e16d4c9331da85750be6e5ad">addition</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" line="10" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="class_expression_1aaad77013f0b8f7841d0b6edd1a729189" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Expression::produit</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>produit</name>
+        <reimplements refid="class_constante_1ad805854dd4e53f0ef5b2d482398b682a">produit</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" line="11" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.cpp" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_expression_1a499a6c6b51a2d08916069177b79c388f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Expression::division</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>division</name>
+        <reimplements refid="class_constante_1ab9b969ad6ad0d8463d44a1273667ee79">division</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" line="12" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.cpp" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_expression_1a4859e1a0fcfe29969705e215536c4142" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Expression::signe</definition>
+        <argsstring>()</argsstring>
+        <name>signe</name>
+        <reimplements refid="class_constante_1a1c6f79dbc7623529ee4fd5ae9c556b45">signe</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" line="13" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_expression_1a61f33ec42c2bf4e74a462a55558f7c9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Expression::soustraction</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>soustraction</name>
+        <reimplements refid="class_constante_1ad1df4970f093fdb4235d4945ec2dbf12">soustraction</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" line="14" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.cpp" bodystart="28" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_expression_1a70d49ad794bda7db5a9d2c39a70406bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Expression::inv</definition>
+        <argsstring>()</argsstring>
+        <name>inv</name>
+        <reimplements refid="class_constante_1a63d03e59594b74aa2fbc35f559b0ad46">inv</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" line="15" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_expression_1a66aaf0f480995508469b7ef6ed2edda6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Expression::fact</definition>
+        <argsstring>()</argsstring>
+        <name>fact</name>
+        <reimplements refid="class_constante_1a57dafd18c718935af9f97dcbb8de9ad9">fact</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" line="16" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.cpp" bodystart="38" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_expression_1aa9a4937398cd9da2e1b4d79616c54f1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Expression::sinus</definition>
+        <argsstring>()</argsstring>
+        <name>sinus</name>
+        <reimplements refid="class_constante_1ad1a0ed2f6f6e9c3e7fc3f0c4ffaeaa76">sinus</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" line="17" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_expression_1a7325926b23a9d2f936524043e68a95e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QString</type>
+        <definition>QString Expression::afficher</definition>
+        <argsstring>() const </argsstring>
+        <name>afficher</name>
+        <reimplements refid="class_constante_1a78b5d9ee6a7e70349db6641a08f77479">afficher</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" line="18" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.cpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="73">
+        <label>Expression</label>
+        <link refid="class_expression"/>
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>Constante</label>
+        <link refid="class_constante"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="75">
+        <label>Expression</label>
+        <link refid="class_expression"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>Constante</label>
+        <link refid="class_constante"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" line="6" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h" bodystart="5" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_expression_1a7912641ff6edb9737f3381e211bf818f" prot="private" virt="non-virtual"><scope>Expression</scope><name>_expr</name></member>
+      <member refid="class_expression_1a0fd562e8402f205c6b01018913da01a2" prot="public" virt="virtual"><scope>Expression</scope><name>addition</name></member>
+      <member refid="class_expression_1a7325926b23a9d2f936524043e68a95e8" prot="public" virt="virtual"><scope>Expression</scope><name>afficher</name></member>
+      <member refid="class_expression_1a499a6c6b51a2d08916069177b79c388f" prot="public" virt="virtual"><scope>Expression</scope><name>division</name></member>
+      <member refid="class_expression_1ac25fb301ae3947c964a4da9a95883e72" prot="public" virt="non-virtual"><scope>Expression</scope><name>Expression</name></member>
+      <member refid="class_expression_1a66aaf0f480995508469b7ef6ed2edda6" prot="public" virt="virtual"><scope>Expression</scope><name>fact</name></member>
+      <member refid="class_expression_1a70d49ad794bda7db5a9d2c39a70406bc" prot="public" virt="virtual"><scope>Expression</scope><name>inv</name></member>
+      <member refid="class_expression_1aaad77013f0b8f7841d0b6edd1a729189" prot="public" virt="virtual"><scope>Expression</scope><name>produit</name></member>
+      <member refid="class_constante_1ac6fb071229429f82cf489f8313461efa" prot="public" virt="non-virtual"><scope>Expression</scope><name>recopie</name></member>
+      <member refid="class_expression_1a4859e1a0fcfe29969705e215536c4142" prot="public" virt="virtual"><scope>Expression</scope><name>signe</name></member>
+      <member refid="class_expression_1aa9a4937398cd9da2e1b4d79616c54f1d" prot="public" virt="virtual"><scope>Expression</scope><name>sinus</name></member>
+      <member refid="class_expression_1a61f33ec42c2bf4e74a462a55558f7c9a" prot="public" virt="virtual"><scope>Expression</scope><name>soustraction</name></member>
+      <member refid="class_constante_1af747f270ad3d50813786a1b013bac959" prot="public" virt="virtual"><scope>Expression</scope><name>~Constante</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

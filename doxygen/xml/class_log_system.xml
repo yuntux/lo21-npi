@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_log_system" kind="class" prot="public">
+    <compoundname>LogSystem</compoundname>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_log_system_1a26650fa1e4d9792106e4c3ddd727aaa9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LogSystem::ajouterFichierLog</definition>
+        <argsstring>(LogMessage m)</argsstring>
+        <name>ajouterFichierLog</name>
+        <param>
+          <type><ref refid="class_log_message" kindref="compound">LogMessage</ref></type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h" line="7" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.cpp" bodystart="10" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_log_system_1ad18f58f1ad0e8f23dc524c2f55d3e8fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LogSystem::ajouterConsoleLog</definition>
+        <argsstring>(LogMessage m)</argsstring>
+        <name>ajouterConsoleLog</name>
+        <param>
+          <type><ref refid="class_log_message" kindref="compound">LogMessage</ref></type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h" line="8" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.cpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_log_system_1ac891dbbf0efb28b572555ee797b56998" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LogSystem::LogSystem</definition>
+        <argsstring>()</argsstring>
+        <name>LogSystem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h" line="10" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h" line="6" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h" bodystart="5" bodyend="11"/>
+    <listofallmembers>
+      <member refid="class_log_system_1ad18f58f1ad0e8f23dc524c2f55d3e8fc" prot="private" virt="non-virtual"><scope>LogSystem</scope><name>ajouterConsoleLog</name></member>
+      <member refid="class_log_system_1a26650fa1e4d9792106e4c3ddd727aaa9" prot="private" virt="non-virtual"><scope>LogSystem</scope><name>ajouterFichierLog</name></member>
+      <member refid="class_log_system_1ac891dbbf0efb28b572555ee797b56998" prot="public" virt="non-virtual"><scope>LogSystem</scope><name>LogSystem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

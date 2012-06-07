@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_complexe.html" title="Complexe" alt="" coords="32,83,112,112"/>
+<area shape="rect" id="node7" href="$class_entier.html" title="Entier" alt="" coords="136,83,192,112"/>
+<area shape="rect" id="node9" href="$class_expression.html" title="Expression" alt="" coords="216,83,301,112"/>
+<area shape="rect" id="node11" href="$class_rationnel.html" title="Rationnel" alt="" coords="325,83,403,112"/>
+<area shape="rect" id="node13" href="$class_reel.html" title="Reel" alt="" coords="427,83,475,112"/>
+<area shape="rect" id="node5" href="$class_frabrique_complexe.html" title="FrabriqueComplexe" alt="" coords="5,160,139,189"/>
+</map>

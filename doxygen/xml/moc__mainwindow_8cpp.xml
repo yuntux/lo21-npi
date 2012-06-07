@@ -1,0 +1,414 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="moc__mainwindow_8cpp" kind="file">
+    <compoundname>moc_mainwindow.cpp</compoundname>
+    <includes refid="mainwindow_8h" local="yes">mainwindow.h</includes>
+    <incdepgraph>
+      <node id="304">
+        <label>pile.h</label>
+        <link refid="pile_8h_source"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>QStack</label>
+      </node>
+      <node id="313">
+        <label>logmessage.h</label>
+        <link refid="logmessage_8h_source"/>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>QMainWindow</label>
+      </node>
+      <node id="301">
+        <label>mainwindow.h</label>
+        <link refid="mainwindow_8h_source"/>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>exception</label>
+      </node>
+      <node id="311">
+        <label>entier.h</label>
+        <link refid="entier_8h"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+      </node>
+      <node id="307">
+        <label>vector</label>
+      </node>
+      <node id="306">
+        <label>stack</label>
+      </node>
+      <node id="310">
+        <label>complexe.h</label>
+        <link refid="complexe_8h_source"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>iostream</label>
+      </node>
+      <node id="312">
+        <label>rationnel.h</label>
+        <link refid="rationnel_8h_source"/>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>constante.h</label>
+        <link refid="constante_8h"/>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>QtGui</label>
+      </node>
+      <node id="300">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/moc_mainwindow.cpp</label>
+        <link refid="moc_mainwindow.cpp"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="moc__mainwindow_8cpp_1a1dd2e133e39a5ebf8d05650bb3b3741a" prot="public" static="yes" mutable="no">
+        <type>QT_BEGIN_MOC_NAMESPACE const uint</type>
+        <definition>QT_BEGIN_MOC_NAMESPACE const uint qt_meta_data_MainWindow[]</definition>
+        <argsstring>[]</argsstring>
+        <name>qt_meta_data_MainWindow</name>
+        <initializer> {
+
+ 
+       5,       
+       0,       
+       0,    0, 
+      46,   14, 
+       0,    0, 
+       0,    0, 
+       0,    0, 
+       0,       
+       0,       
+
+ 
+      12,   11,   11,   11, 0x0a,
+      25,   11,   11,   11, 0x0a,
+      38,   11,   11,   11, 0x0a,
+      51,   11,   11,   11, 0x0a,
+      64,   11,   11,   11, 0x0a,
+      78,   11,   11,   11, 0x0a,
+      92,   11,   11,   11, 0x0a,
+     106,   11,   11,   11, 0x0a,
+     119,   11,   11,   11, 0x0a,
+     133,   11,   11,   11, 0x0a,
+     145,   11,   11,   11, 0x0a,
+     158,   11,   11,   11, 0x0a,
+     171,   11,   11,   11, 0x0a,
+     184,   11,   11,   11, 0x0a,
+     198,   11,   11,   11, 0x0a,
+     212,   11,   11,   11, 0x0a,
+     227,   11,   11,   11, 0x0a,
+     238,   11,   11,   11, 0x0a,
+     250,   11,   11,   11, 0x0a,
+     266,   11,   11,   11, 0x0a,
+     280,   11,   11,   11, 0x0a,
+     294,   11,   11,   11, 0x0a,
+     308,   11,   11,   11, 0x0a,
+     322,   11,   11,   11, 0x0a,
+     336,   11,   11,   11, 0x0a,
+     350,   11,   11,   11, 0x0a,
+     364,   11,   11,   11, 0x0a,
+     378,   11,   11,   11, 0x0a,
+     392,   11,   11,   11, 0x0a,
+     406,   11,   11,   11, 0x0a,
+     421,   11,   11,   11, 0x0a,
+     437,   11,   11,   11, 0x0a,
+     456,   11,   11,   11, 0x0a,
+     477,   11,   11,   11, 0x0a,
+     497,   11,   11,   11, 0x0a,
+     517,   11,   11,   11, 0x0a,
+     534,   11,   11,   11, 0x0a,
+     564,   11,   11,   11, 0x0a,
+     595,   11,   11,   11, 0x0a,
+     623,   11,   11,   11, 0x0a,
+     652,   11,   11,   11, 0x0a,
+     677,   11,   11,   11, 0x0a,
+     701,   11,   11,   11, 0x0a,
+     716,   11,   11,   11, 0x0a,
+     736,   11,   11,   11, 0x0a,
+     753,   11,   11,   11, 0x0a,
+
+       0        
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/moc_mainwindow.cpp" line="82" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/moc_mainwindow.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="moc__mainwindow_8cpp_1a82fbcdc12b3520fb6616a53cc8e70274" prot="public" static="yes" mutable="no">
+        <type>const char</type>
+        <definition>const char qt_meta_stringdata_MainWindow[]</definition>
+        <argsstring>[]</argsstring>
+        <name>qt_meta_stringdata_MainWindow</name>
+        <initializer> {
+    &quot;MainWindow\0\0POWClicked()\0SINClicked()\0&quot;
+    &quot;COSClicked()\0TANClicked()\0SINHClicked()\0&quot;
+    &quot;COSHClicked()\0TANHClicked()\0MODClicked()\0&quot;
+    &quot;SIGNClicked()\0LNClicked()\0LOGClicked()\0&quot;
+    &quot;INVClicked()\0SQRClicked()\0SQRTClicked()\0&quot;
+    &quot;CUBEClicked()\0QUOTEClicked()\0CClicked()\0&quot;
+    &quot;CEClicked()\0DOLLARClicked()\0num0Clicked()\0&quot;
+    &quot;num1Clicked()\0num2Clicked()\0num3Clicked()\0&quot;
+    &quot;num4Clicked()\0num5Clicked()\0num6Clicked()\0&quot;
+    &quot;num7Clicked()\0num8Clicked()\0num9Clicked()\0&quot;
+    &quot;POINTClicked()\0ESPACEClicked()\0&quot;
+    &quot;FACTORIELClicked()\0ADDITIONNERClicked()\0&quot;
+    &quot;SOUSTRAIREClicked()\0MULTIPLIERClicked()\0&quot;
+    &quot;DIVISERClicked()\0_clavierBasicStateChange(int)\0&quot;
+    &quot;_clavierAvanceStateChange(int)\0&quot;
+    &quot;_modComplexeONClicked(bool)\0&quot;
+    &quot;_modComplexeOFFClicked(bool)\0&quot;
+    &quot;_modRadiansToggled(bool)\0&quot;
+    &quot;_modDegresToggled(bool)\0_modReel(bool)\0&quot;
+    &quot;_modRationnel(bool)\0_modEntier(bool)\0&quot;
+    &quot;ENTERClicked()\0&quot;
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/moc_mainwindow.cpp" line="106" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/moc_mainwindow.cpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/****************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>Meta<sp/>object<sp/>code<sp/>from<sp/>reading<sp/>C++<sp/>file<sp/>&apos;mainwindow.h&apos;</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Created:<sp/>Thu<sp/>Jun<sp/>7<sp/>02:40:32<sp/>2012</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/>by:<sp/>The<sp/>Qt<sp/>Meta<sp/>Object<sp/>Compiler<sp/>version<sp/>62<sp/>(Qt<sp/>4.7.4)</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>WARNING!<sp/>All<sp/>changes<sp/>made<sp/>in<sp/>this<sp/>file<sp/>will<sp/>be<sp/>lost!</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">*****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mainwindow.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(Q_MOC_OUTPUT_REVISION)</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;The<sp/>header<sp/>file<sp/>&apos;mainwindow.h&apos;<sp/>doesn&apos;t<sp/>include<sp/>&lt;QObject&gt;.&quot;</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#elif<sp/>Q_MOC_OUTPUT_REVISION<sp/>!=<sp/>62</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;This<sp/>file<sp/>was<sp/>generated<sp/>using<sp/>the<sp/>moc<sp/>from<sp/>4.7.4.<sp/>It&quot;</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;cannot<sp/>be<sp/>used<sp/>with<sp/>the<sp/>include<sp/>files<sp/>from<sp/>this<sp/>version<sp/>of<sp/>Qt.&quot;</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#error<sp/>&quot;(The<sp/>moc<sp/>has<sp/>changed<sp/>too<sp/>much.)&quot;</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">QT_BEGIN_MOC_NAMESPACE</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>qt_meta_data_MainWindow[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>content:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>revision</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>classname</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/>0,<sp/></highlight><highlight class="comment">//<sp/>classinfo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>46,<sp/><sp/><sp/>14,<sp/></highlight><highlight class="comment">//<sp/>methods</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/>0,<sp/></highlight><highlight class="comment">//<sp/>properties</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/>0,<sp/></highlight><highlight class="comment">//<sp/>enums/sets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/>0,<sp/></highlight><highlight class="comment">//<sp/>constructors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signalCount</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>slots:<sp/>signature,<sp/>parameters,<sp/>type,<sp/>tag,<sp/>flags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>12,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>25,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>38,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>51,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>64,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>78,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>92,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>106,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>119,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>133,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>145,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>158,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>171,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>184,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>198,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>212,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>227,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>238,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>250,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>266,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>280,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>294,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>308,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>322,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>336,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>350,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>364,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>378,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>392,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>406,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>421,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>437,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>456,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>477,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>497,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>517,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>534,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>564,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>595,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>623,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>652,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>677,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>701,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>716,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>736,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>753,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/><sp/><sp/>11,<sp/>0x0a,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>eod</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>qt_meta_stringdata_MainWindow[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MainWindow\0\0POWClicked()\0SINClicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;COSClicked()\0TANClicked()\0SINHClicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;COSHClicked()\0TANHClicked()\0MODClicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SIGNClicked()\0LNClicked()\0LOGClicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;INVClicked()\0SQRClicked()\0SQRTClicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CUBEClicked()\0QUOTEClicked()\0CClicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CEClicked()\0DOLLARClicked()\0num0Clicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;num1Clicked()\0num2Clicked()\0num3Clicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;num4Clicked()\0num5Clicked()\0num6Clicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;num7Clicked()\0num8Clicked()\0num9Clicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;POINTClicked()\0ESPACEClicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;FACTORIELClicked()\0ADDITIONNERClicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;SOUSTRAIREClicked()\0MULTIPLIERClicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;DIVISERClicked()\0_clavierBasicStateChange(int)\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;_clavierAvanceStateChange(int)\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;_modComplexeONClicked(bool)\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;_modComplexeOFFClicked(bool)\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;_modRadiansToggled(bool)\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;_modDegresToggled(bool)\0_modReel(bool)\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;_modRationnel(bool)\0_modEntier(bool)\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;ENTERClicked()\0&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QMetaObject<sp/>MainWindow::staticMetaObject<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/>&amp;QMainWindow::staticMetaObject,<sp/>qt_meta_stringdata_MainWindow,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>qt_meta_data_MainWindow,<sp/>0<sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>Q_NO_DATA_RELOCATION</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QMetaObject<sp/>&amp;MainWindow::getStaticMetaObject()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>staticMetaObject;<sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//Q_NO_DATA_RELOCATION</highlight></codeline>
+<codeline lineno="116"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QMetaObject<sp/>*MainWindow::metaObject()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="118"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QObject::d_ptr-&gt;metaObject<sp/>?<sp/>QObject::d_ptr-&gt;metaObject<sp/>:<sp/>&amp;staticMetaObject;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*MainWindow::qt_metacast(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*_clname)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_clname)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!strcmp(_clname,<sp/>qt_meta_stringdata_MainWindow))</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal"><sp/><ref refid="class_main_window" kindref="compound">MainWindow</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(</highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QMainWindow::qt_metacast(_clname);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MainWindow::qt_metacall(QMetaObject::Call<sp/>_c,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_id,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>**_a)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>_id<sp/>=<sp/>QMainWindow::qt_metacall(_c,<sp/>_id,<sp/>_a);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_id<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_id;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_c<sp/>==<sp/>QMetaObject::InvokeMetaMethod)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(_id)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:<sp/>POWClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:<sp/>SINClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:<sp/>COSClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:<sp/>TANClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:<sp/>SINHClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:<sp/>COSHClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>6:<sp/>TANHClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>7:<sp/>MODClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>8:<sp/>SIGNClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>9:<sp/>LNClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>10:<sp/>LOGClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>11:<sp/>INVClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>12:<sp/>SQRClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>13:<sp/>SQRTClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>14:<sp/>CUBEClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>15:<sp/>QUOTEClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>16:<sp/>CClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>17:<sp/>CEClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>18:<sp/>DOLLARClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>19:<sp/>num0Clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>20:<sp/>num1Clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>21:<sp/>num2Clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>22:<sp/>num3Clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>23:<sp/>num4Clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>24:<sp/>num5Clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>25:<sp/>num6Clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>26:<sp/>num7Clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>27:<sp/>num8Clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>28:<sp/>num9Clicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>29:<sp/>POINTClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>30:<sp/>ESPACEClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>31:<sp/>FACTORIELClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>32:<sp/>ADDITIONNERClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>33:<sp/>SOUSTRAIREClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>34:<sp/>MULTIPLIERClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>35:<sp/>DIVISERClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>36:<sp/>_clavierBasicStateChange((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>37:<sp/>_clavierAvanceStateChange((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>38:<sp/>_modComplexeONClicked((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>39:<sp/>_modComplexeOFFClicked((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>40:<sp/>_modRadiansToggled((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>41:<sp/>_modDegresToggled((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>42:<sp/>_modReel((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>43:<sp/>_modRationnel((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>44:<sp/>_modEntier((*</highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">(*)</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(_a[1])));<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>45:<sp/>ENTERClicked();<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_id<sp/>-=<sp/>46;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_id;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">QT_END_MOC_NAMESPACE</highlight></codeline>
+    </programlisting>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/moc_mainwindow.cpp"/>
+  </compounddef>
+</doxygen>

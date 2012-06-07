@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_log_message" kind="class" prot="public">
+    <compoundname>LogMessage</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_log_message_1a0fdfa76fd0ba15d8bab5567a58b3724f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LogMessage::m_numero</definition>
+        <argsstring></argsstring>
+        <name>m_numero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="11" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_log_message_1a8db6d79f38965e96c25dfd07ebd33871" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string LogMessage::m_phrase</definition>
+        <argsstring></argsstring>
+        <name>m_phrase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="12" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_log_message_1aa771201c9bd2ef0d369c877fa44b9d80" prot="private" static="no" mutable="no">
+        <type>enum niveau</type>
+        <definition>enum niveau LogMessage::_level</definition>
+        <argsstring></argsstring>
+        <name>_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="13" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_log_message_1aab5078209d6e258af2664286ab5b36f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LogMessage::LogMessage</definition>
+        <argsstring>(int numero=0, string const &amp;phrase=&quot;&quot;, enum niveau lev=faible)</argsstring>
+        <name>LogMessage</name>
+        <param>
+          <type>int</type>
+          <declname>numero</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>string const &amp;</type>
+          <declname>phrase</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <param>
+          <type>enum niveau</type>
+          <declname>lev</declname>
+          <defval>faible</defval>
+        </param>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="16" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_log_message_1a2c6798fafd31aa115d18bd348da69e25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* LogMessage::what</definition>
+        <argsstring>() const </argsstring>
+        <name>what</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="18" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_log_message_1a433d0d6bdef1d3ec814fa08aec76e8ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* LogMessage::getNiveau</definition>
+        <argsstring>() const </argsstring>
+        <name>getNiveau</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="21" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="20" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_log_message_1aa54fe583838d18c0f5bf6ce8d274b6f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual LogMessage::~LogMessage</definition>
+        <argsstring>()</argsstring>
+        <name>~LogMessage</name>
+        <exceptions> throw ()</exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="28" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="10" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="9" bodyend="29"/>
+    <listofallmembers>
+      <member refid="class_log_message_1aa771201c9bd2ef0d369c877fa44b9d80" prot="private" virt="non-virtual"><scope>LogMessage</scope><name>_level</name></member>
+      <member refid="class_log_message_1a433d0d6bdef1d3ec814fa08aec76e8ca" prot="public" virt="virtual"><scope>LogMessage</scope><name>getNiveau</name></member>
+      <member refid="class_log_message_1aab5078209d6e258af2664286ab5b36f1" prot="public" virt="non-virtual"><scope>LogMessage</scope><name>LogMessage</name></member>
+      <member refid="class_log_message_1a0fdfa76fd0ba15d8bab5567a58b3724f" prot="private" virt="non-virtual"><scope>LogMessage</scope><name>m_numero</name></member>
+      <member refid="class_log_message_1a8db6d79f38965e96c25dfd07ebd33871" prot="private" virt="non-virtual"><scope>LogMessage</scope><name>m_phrase</name></member>
+      <member refid="class_log_message_1a2c6798fafd31aa115d18bd348da69e25" prot="public" virt="virtual"><scope>LogMessage</scope><name>what</name></member>
+      <member refid="class_log_message_1aa54fe583838d18c0f5bf6ce8d274b6f7" prot="public" virt="virtual"><scope>LogMessage</scope><name>~LogMessage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

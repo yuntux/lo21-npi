@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_constante" kind="class" prot="public">
+    <compoundname>Constante</compoundname>
+    <derivedcompoundref refid="class_complexe" prot="public" virt="non-virtual">Complexe</derivedcompoundref>
+    <derivedcompoundref refid="class_entier" prot="public" virt="non-virtual">Entier</derivedcompoundref>
+    <derivedcompoundref refid="class_expression" prot="public" virt="non-virtual">Expression</derivedcompoundref>
+    <derivedcompoundref refid="class_rationnel" prot="public" virt="non-virtual">Rationnel</derivedcompoundref>
+    <derivedcompoundref refid="class_reel" prot="public" virt="non-virtual">Reel</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_constante_1af747f270ad3d50813786a1b013bac959" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Constante::~Constante</definition>
+        <argsstring>()</argsstring>
+        <name>~Constante</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" line="19" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constante_1a78b5d9ee6a7e70349db6641a08f77479" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>QString</type>
+        <definition>virtual QString Constante::afficher</definition>
+        <argsstring>() const =0</argsstring>
+        <name>afficher</name>
+        <reimplementedby refid="class_reel_1a01af7b4e76fb88a85796a41f63b00420">afficher</reimplementedby>
+        <reimplementedby refid="class_rationnel_1aef5b4fb13f34b03cdf9132c272b5144f">afficher</reimplementedby>
+        <reimplementedby refid="class_complexe_1a5141b5b092f78c06f60013e911ba4440">afficher</reimplementedby>
+        <reimplementedby refid="class_expression_1a7325926b23a9d2f936524043e68a95e8">afficher</reimplementedby>
+        <reimplementedby refid="class_entier_1adc0a7554faa45a68eb7432798b6892cc">afficher</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" line="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constante_1a580f4535e16d4c9331da85750be6e5ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>virtual Constante* Constante::addition</definition>
+        <argsstring>(Constante *c)=0</argsstring>
+        <name>addition</name>
+        <reimplementedby refid="class_expression_1a0fd562e8402f205c6b01018913da01a2">addition</reimplementedby>
+        <reimplementedby refid="class_reel_1a916d41fd6be293e13db43ef0a7866f40">addition</reimplementedby>
+        <reimplementedby refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003">addition</reimplementedby>
+        <reimplementedby refid="class_entier_1ab093dd3f0aa7777c4300362f7ba78ff4">addition</reimplementedby>
+        <reimplementedby refid="class_rationnel_1a4dc6b238834ace05451e69ea2bb6d02a">addition</reimplementedby>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" line="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constante_1ad805854dd4e53f0ef5b2d482398b682a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>virtual Constante* Constante::produit</definition>
+        <argsstring>(Constante *c)=0</argsstring>
+        <name>produit</name>
+        <reimplementedby refid="class_expression_1aaad77013f0b8f7841d0b6edd1a729189">produit</reimplementedby>
+        <reimplementedby refid="class_reel_1ad87571a6e4d315eef54b55e6ded1f8f5">produit</reimplementedby>
+        <reimplementedby refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10">produit</reimplementedby>
+        <reimplementedby refid="class_entier_1aa83349a1b984adbd53766ebac2614faf">produit</reimplementedby>
+        <reimplementedby refid="class_rationnel_1aa1a21dae65f5fb48c56a376aea420bd6">produit</reimplementedby>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" line="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constante_1ab9b969ad6ad0d8463d44a1273667ee79" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>virtual Constante* Constante::division</definition>
+        <argsstring>(Constante *c)=0</argsstring>
+        <name>division</name>
+        <reimplementedby refid="class_expression_1a499a6c6b51a2d08916069177b79c388f">division</reimplementedby>
+        <reimplementedby refid="class_reel_1af82effc61166bcc5f2ed9d0a2c97bee1">division</reimplementedby>
+        <reimplementedby refid="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8">division</reimplementedby>
+        <reimplementedby refid="class_entier_1afc338f1f177942411a3c8e0e19fce6ce">division</reimplementedby>
+        <reimplementedby refid="class_rationnel_1acf6c7167cfd8005ac723ce11feae2845">division</reimplementedby>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" line="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constante_1a1c6f79dbc7623529ee4fd5ae9c556b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>virtual Constante* Constante::signe</definition>
+        <argsstring>()=0</argsstring>
+        <name>signe</name>
+        <reimplementedby refid="class_expression_1a4859e1a0fcfe29969705e215536c4142">signe</reimplementedby>
+        <reimplementedby refid="class_reel_1aec5959f07be6fdce8e87d58c1fa97a59">signe</reimplementedby>
+        <reimplementedby refid="class_complexe_1a97bb77958c4012ed113c54f895f91e85">signe</reimplementedby>
+        <reimplementedby refid="class_entier_1a36ce54a35fc9ab69bef2cffebee01c69">signe</reimplementedby>
+        <reimplementedby refid="class_rationnel_1a12ba8bcf6c200e85c4d260ee0bbb78b6">signe</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" line="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constante_1ac6fb071229429f82cf489f8313461efa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Constante::recopie</definition>
+        <argsstring>()</argsstring>
+        <name>recopie</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" line="25" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.cpp" bodystart="8" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constante_1ad1df4970f093fdb4235d4945ec2dbf12" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>virtual Constante* Constante::soustraction</definition>
+        <argsstring>(Constante *c)=0</argsstring>
+        <name>soustraction</name>
+        <reimplementedby refid="class_expression_1a61f33ec42c2bf4e74a462a55558f7c9a">soustraction</reimplementedby>
+        <reimplementedby refid="class_reel_1a3c53208d46d2139790598fc5a7f29b7d">soustraction</reimplementedby>
+        <reimplementedby refid="class_complexe_1a07d706446560190792339549752f9ea3">soustraction</reimplementedby>
+        <reimplementedby refid="class_entier_1a880936c128f077144cd266199cd27585">soustraction</reimplementedby>
+        <reimplementedby refid="class_rationnel_1a268c0a861cdacea0593774b50a346a98">soustraction</reimplementedby>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" line="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constante_1a63d03e59594b74aa2fbc35f559b0ad46" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>virtual Constante* Constante::inv</definition>
+        <argsstring>()=0</argsstring>
+        <name>inv</name>
+        <reimplementedby refid="class_expression_1a70d49ad794bda7db5a9d2c39a70406bc">inv</reimplementedby>
+        <reimplementedby refid="class_reel_1ac2388aae44a03e17a80efaf322583784">inv</reimplementedby>
+        <reimplementedby refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621">inv</reimplementedby>
+        <reimplementedby refid="class_entier_1a5e4a3ab5cc280d0e082300207712d5d8">inv</reimplementedby>
+        <reimplementedby refid="class_rationnel_1a45dd892e3366ff9be810fde32739b899">inv</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" line="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constante_1a57dafd18c718935af9f97dcbb8de9ad9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>virtual Constante* Constante::fact</definition>
+        <argsstring>()=0</argsstring>
+        <name>fact</name>
+        <reimplementedby refid="class_expression_1a66aaf0f480995508469b7ef6ed2edda6">fact</reimplementedby>
+        <reimplementedby refid="class_reel_1a93cccda34883afa19ea08f9e84a6d22e">fact</reimplementedby>
+        <reimplementedby refid="class_complexe_1a0b0532339249783cee39f28670bb7504">fact</reimplementedby>
+        <reimplementedby refid="class_entier_1a094c16293e7853eafa646d1613db3034">fact</reimplementedby>
+        <reimplementedby refid="class_rationnel_1a68ab5e97a92bb2a08d667861eb920052">fact</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" line="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_constante_1ad1a0ed2f6f6e9c3e7fc3f0c4ffaeaa76" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>virtual Constante* Constante::sinus</definition>
+        <argsstring>()=0</argsstring>
+        <name>sinus</name>
+        <reimplementedby refid="class_expression_1aa9a4937398cd9da2e1b4d79616c54f1d">sinus</reimplementedby>
+        <reimplementedby refid="class_reel_1a8e943954e7d3c46031b3e2e59b2f1717">sinus</reimplementedby>
+        <reimplementedby refid="class_complexe_1ab4fdc60272bd80f1df8f8c1c29c11813">sinus</reimplementedby>
+        <reimplementedby refid="class_entier_1a081a93591a1095f0fe0715f14b5b4248">sinus</reimplementedby>
+        <reimplementedby refid="class_rationnel_1a4082f9cbebb6d96c496552b93b106c99">sinus</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" line="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="65">
+        <label>Expression</label>
+        <link refid="class_expression"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>Complexe</label>
+        <link refid="class_complexe"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>Rationnel</label>
+        <link refid="class_rationnel"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>Reel</label>
+        <link refid="class_reel"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>Entier</label>
+        <link refid="class_entier"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>Constante</label>
+        <link refid="class_constante"/>
+      </node>
+      <node id="63">
+        <label>FrabriqueComplexe</label>
+        <link refid="class_frabrique_complexe"/>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" line="17" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" bodystart="16" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_constante_1a580f4535e16d4c9331da85750be6e5ad" prot="public" virt="pure-virtual"><scope>Constante</scope><name>addition</name></member>
+      <member refid="class_constante_1a78b5d9ee6a7e70349db6641a08f77479" prot="public" virt="pure-virtual"><scope>Constante</scope><name>afficher</name></member>
+      <member refid="class_constante_1ab9b969ad6ad0d8463d44a1273667ee79" prot="public" virt="pure-virtual"><scope>Constante</scope><name>division</name></member>
+      <member refid="class_constante_1a57dafd18c718935af9f97dcbb8de9ad9" prot="public" virt="pure-virtual"><scope>Constante</scope><name>fact</name></member>
+      <member refid="class_constante_1a63d03e59594b74aa2fbc35f559b0ad46" prot="public" virt="pure-virtual"><scope>Constante</scope><name>inv</name></member>
+      <member refid="class_constante_1ad805854dd4e53f0ef5b2d482398b682a" prot="public" virt="pure-virtual"><scope>Constante</scope><name>produit</name></member>
+      <member refid="class_constante_1ac6fb071229429f82cf489f8313461efa" prot="public" virt="non-virtual"><scope>Constante</scope><name>recopie</name></member>
+      <member refid="class_constante_1a1c6f79dbc7623529ee4fd5ae9c556b45" prot="public" virt="pure-virtual"><scope>Constante</scope><name>signe</name></member>
+      <member refid="class_constante_1ad1a0ed2f6f6e9c3e7fc3f0c4ffaeaa76" prot="public" virt="pure-virtual"><scope>Constante</scope><name>sinus</name></member>
+      <member refid="class_constante_1ad1df4970f093fdb4235d4945ec2dbf12" prot="public" virt="pure-virtual"><scope>Constante</scope><name>soustraction</name></member>
+      <member refid="class_constante_1af747f270ad3d50813786a1b013bac959" prot="public" virt="virtual"><scope>Constante</scope><name>~Constante</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

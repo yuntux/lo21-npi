@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="namespace_ui" kind="namespace">
+    <compoundname>Ui</compoundname>
+    <innerclass refid="class_ui_1_1_main_window" prot="public">Ui::MainWindow</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="24"/>
+  </compounddef>
+</doxygen>

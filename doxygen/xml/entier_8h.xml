@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="entier_8h" kind="file">
+    <compoundname>entier.h</compoundname>
+    <includes refid="constante_8h" local="yes">constante.h</includes>
+    <includedby refid="complexe_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h</includedby>
+    <includedby refid="complexe_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp</includedby>
+    <includedby refid="constante_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.cpp</includedby>
+    <includedby refid="entier_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/main.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp</includedby>
+    <includedby refid="rationnel_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp</includedby>
+    <includedby refid="reel_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.cpp</includedby>
+    <incdepgraph>
+      <node id="144">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h</label>
+        <link refid="entier.h"/>
+        <childnode refid="145" relation="include">
+        </childnode>
+      </node>
+      <node id="146">
+        <label>iostream</label>
+      </node>
+      <node id="145">
+        <label>constante.h</label>
+        <link refid="constante_8h"/>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>QtGui</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="150">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h</label>
+        <link refid="pile_8h_source"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+      </node>
+      <node id="152">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h</label>
+        <link refid="mainwindow_8h_source"/>
+        <childnode refid="151" relation="include">
+        </childnode>
+      </node>
+      <node id="153">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/fonctions.h</label>
+        <link refid="fonctions_8h"/>
+      </node>
+      <node id="148">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h</label>
+        <link refid="entier.h"/>
+        <childnode refid="149" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h</label>
+        <link refid="complexe_8h_source"/>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="153" relation="include">
+        </childnode>
+      </node>
+      <node id="151">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h</label>
+        <link refid="calculatrice_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_entier" prot="public">Entier</innerclass>
+    <briefdescription>
+<para><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref> en polonais inversé. Classe <ref refid="class_entier" kindref="compound">Entier</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Aurélien DUMAINE </para><simplesectsep/><para>Simon LANCELOT </para></simplesect>
+<simplesect kind="version"><para>0.1 </para></simplesect>
+<simplesect kind="date"><para>juin 2012</para></simplesect>
+Licence : GNU/GPL version 3 (<ulink url="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</ulink>) </para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="12"><highlight class="preprocessor">#ifndef<sp/>ENTIER_H</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>ENTIER_H</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="constante_8h" kindref="compound" tooltip="Calculatrice en polonais inversé. Classe de la GUI QT-MainWindow.">constante.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_entier" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_entier" kindref="compound">Entier</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_valeur;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_entier" kindref="compound">Entier</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>e):_valeur(e){}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_entier" kindref="compound">Entier</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QString<sp/>afficher()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QString::number(_valeur);}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//virtual<sp/>QString<sp/>afficher()<sp/>const{<sp/>std::cout&lt;&lt;_valeur;<sp/>return<sp/>&quot;a&quot;;}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getValeur()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_valeur;}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setValeur(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v){_valeur=v;}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>addition(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>produit(<ref refid="class_constante" kindref="compound">Constante</ref><sp/>*c);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>signe();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>division(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>soustraction(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mod(<ref refid="class_entier" kindref="compound">Entier</ref><sp/>*c);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>inv();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>fact();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>sinus();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ENTIER_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h"/>
+  </compounddef>
+</doxygen>

@@ -1,3 +1,16 @@
+/**
+ * \file fonctions.h
+ * \brief Calculatrice en polonais inversé. Fonctions outils diverses.
+ * \author Aurélien DUMAINE
+ * \author Simon LANCELOT
+ * \version 0.1
+ * \date juin 2012
+ *
+ * Licence : GNU/GPL version 3 (http://www.gnu.org/copyleft/gpl.html)
+ *
+ */
+
+
 #ifndef FONCTIONS_H
 #define FONCTIONS_H
 #include <QStack>

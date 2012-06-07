@@ -1,0 +1,936 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_main_window" kind="class" prot="public">
+    <compoundname>MainWindow</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_main_window_1a7b6885be3b8c6d0222aafa77748b852d" prot="private" static="no" mutable="no">
+        <type>enum MesureAngle</type>
+        <definition>enum MesureAngle MainWindow::_modAngle</definition>
+        <argsstring></argsstring>
+        <name>_modAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a2fab64d84959d8048ae0c7e47a7c3fd7" prot="private" static="no" mutable="no">
+        <type>enum Type</type>
+        <definition>enum Type MainWindow::_modConstante</definition>
+        <argsstring></argsstring>
+        <name>_modConstante</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="34" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a1d3d51f25fd1414069631111de1c1c24" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool MainWindow::_modComplexe</definition>
+        <argsstring></argsstring>
+        <name>_modComplexe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="35" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1ab55da16dd118ff5a3718e25b3e4f0476" prot="private" static="no" mutable="no">
+        <type><ref refid="class_pile" kindref="compound">Pile</ref></type>
+        <definition>Pile MainWindow::_pileStockage</definition>
+        <argsstring></argsstring>
+        <name>_pileStockage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="38" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a0e09dbed6be4c5b1bbfaa9fa852b7aef" prot="private" static="no" mutable="no">
+        <type>QStack&lt; QString &gt;</type>
+        <definition>QStack&lt;QString&gt; MainWindow::_pileAffichage</definition>
+        <argsstring></argsstring>
+        <name>_pileAffichage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="39" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1add21502d1d68dd52ef18375379f57ff8" prot="private" static="no" mutable="no">
+        <type>QStack&lt; float &gt;</type>
+        <definition>QStack&lt;float&gt; MainWindow::_pileStockageReelle</definition>
+        <argsstring></argsstring>
+        <name>_pileStockageReelle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="40" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a211bdf68e726481ddd5ced4626189c4b" prot="private" static="no" mutable="no">
+        <type>QStack&lt; <ref refid="class_complexe" kindref="compound">Complexe</ref> &gt;</type>
+        <definition>QStack&lt;Complexe&gt; MainWindow::_pileStockageComplexe</definition>
+        <argsstring></argsstring>
+        <name>_pileStockageComplexe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="41" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_ui_1_1_main_window" kindref="compound">Ui::MainWindow</ref> *</type>
+        <definition>Ui::MainWindow* MainWindow::ui</definition>
+        <argsstring></argsstring>
+        <name>ui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="102" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_main_window_1a810709db5f60967d9ac69169ce4cbecc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::afficheur_pile</definition>
+        <argsstring>(Pile p)</argsstring>
+        <name>afficheur_pile</name>
+        <param>
+          <type><ref refid="class_pile" kindref="compound">Pile</ref></type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="37" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="97" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1a80381181e476064c086666abb2cfa2ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::saveToFile</definition>
+        <argsstring>()</argsstring>
+        <name>saveToFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="43" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="104" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1a233bee15277ba8e4eebbb121bd547839" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::loadFromFile</definition>
+        <argsstring>()</argsstring>
+        <name>loadFromFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="44" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="145" bodyend="214"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::MainWindow</definition>
+        <argsstring>(QWidget *parent=0)</argsstring>
+        <name>MainWindow</name>
+        <param>
+          <type>QWidget *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="47" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="14" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1a2a1ee33b84e16a22e7656bc43220483d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::traitement_expr</definition>
+        <argsstring>(int i, int j, QStringList list)</argsstring>
+        <name>traitement_expr</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>QStringList</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="48" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="1089" bodyend="1104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MainWindow::~MainWindow</definition>
+        <argsstring>()</argsstring>
+        <name>~MainWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="49" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="1078" bodyend="1081"/>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1a71be435db24c12ee4c320a16a0b33ef6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::empiler</definition>
+        <argsstring>(float r)</argsstring>
+        <name>empiler</name>
+        <param>
+          <type>float</type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="50" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="1083" bodyend="1086"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-slot">
+      <memberdef kind="slot" id="class_main_window_1ab623e042d0384fce67ee67b86aa092ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::POWClicked</definition>
+        <argsstring>()</argsstring>
+        <name>POWClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="53" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="400" bodyend="402"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a694058b9993bdad7bf4c96b7bae1af37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::SINClicked</definition>
+        <argsstring>()</argsstring>
+        <name>SINClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="54" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="404" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1acc7b69effe16bf3936be897b1e9697a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::COSClicked</definition>
+        <argsstring>()</argsstring>
+        <name>COSClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="55" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="408" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1abd6beb62d32cc0922fd78819e3c4a9cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::TANClicked</definition>
+        <argsstring>()</argsstring>
+        <name>TANClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="56" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="412" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ae18b7a59154a29d9166dae53a02da0cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::SINHClicked</definition>
+        <argsstring>()</argsstring>
+        <name>SINHClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="57" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="416" bodyend="418"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ae0cb839c1a84f68cfe7d55d75679bf32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::COSHClicked</definition>
+        <argsstring>()</argsstring>
+        <name>COSHClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="58" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="420" bodyend="422"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a9674367d1b35c2b7fcb37547982c7142" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::TANHClicked</definition>
+        <argsstring>()</argsstring>
+        <name>TANHClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="59" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="424" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a4edf9a5fcb637c43e2d4d4e107fd0c62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::MODClicked</definition>
+        <argsstring>()</argsstring>
+        <name>MODClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="60" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="428" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1aada810f5e314c0180e159729f1af13f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::SIGNClicked</definition>
+        <argsstring>()</argsstring>
+        <name>SIGNClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="61" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="432" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a16e852b776efdec4876c32f0fb56a5b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::LNClicked</definition>
+        <argsstring>()</argsstring>
+        <name>LNClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="62" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="448" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a0e9e909347465ac2945668a5229c4688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::LOGClicked</definition>
+        <argsstring>()</argsstring>
+        <name>LOGClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="63" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="452" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a254c2a0ab491f878157d6abb8d4a8381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::INVClicked</definition>
+        <argsstring>()</argsstring>
+        <name>INVClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="64" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="456" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ad6048a7bb41b1e0ac37bb1f05e458cc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::SQRClicked</definition>
+        <argsstring>()</argsstring>
+        <name>SQRClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="65" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="436" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a40ff97255a9f62068bf20312468060dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::SQRTClicked</definition>
+        <argsstring>()</argsstring>
+        <name>SQRTClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="66" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="440" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a7e0ee20d8b3f6c4638ddced7d894c595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::CUBEClicked</definition>
+        <argsstring>()</argsstring>
+        <name>CUBEClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="67" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="444" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1aa3cc15e4ab21e8d1d02b2c908f7ed955" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::QUOTEClicked</definition>
+        <argsstring>()</argsstring>
+        <name>QUOTEClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="68" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="464" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1acd5bbd32604f72b223e69a58088ddabd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::CClicked</definition>
+        <argsstring>()</argsstring>
+        <name>CClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="69" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="472" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a1a093a266d6f67c63e27b410de323e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::CEClicked</definition>
+        <argsstring>()</argsstring>
+        <name>CEClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="70" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="468" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1adc9d3f1638131c5d291c54380fda801f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::DOLLARClicked</definition>
+        <argsstring>()</argsstring>
+        <name>DOLLARClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="71" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="460" bodyend="462"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ab408f985cff16c7d939d48cfa3d5f0b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::num0Clicked</definition>
+        <argsstring>()</argsstring>
+        <name>num0Clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="72" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="328" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a538b702a2feed14f756f9fff0a53d2f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::num1Clicked</definition>
+        <argsstring>()</argsstring>
+        <name>num1Clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="73" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="333" bodyend="335"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a857a81084ff261633c9896f24bdd6fb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::num2Clicked</definition>
+        <argsstring>()</argsstring>
+        <name>num2Clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="74" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="337" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1aaf2e8e4cdcabb0c9cd2496e662038b64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::num3Clicked</definition>
+        <argsstring>()</argsstring>
+        <name>num3Clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="75" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="341" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a6d79c0dc7b05f66d0dd2d5eb57d870a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::num4Clicked</definition>
+        <argsstring>()</argsstring>
+        <name>num4Clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="76" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="346" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a9dfa9a2ba4c04d27047f1b6cf50eb309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::num5Clicked</definition>
+        <argsstring>()</argsstring>
+        <name>num5Clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="77" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="350" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ae581f160bb58ff7b92fb10488dad1cb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::num6Clicked</definition>
+        <argsstring>()</argsstring>
+        <name>num6Clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="78" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="354" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ae34dccd3c4bdff6452250ec4807977e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::num7Clicked</definition>
+        <argsstring>()</argsstring>
+        <name>num7Clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="79" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="358" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ab86f29d78da5c85373b2126cdbfadf78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::num8Clicked</definition>
+        <argsstring>()</argsstring>
+        <name>num8Clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="80" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="362" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a48cd898abe91cf0b7784dfce7258b8f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::num9Clicked</definition>
+        <argsstring>()</argsstring>
+        <name>num9Clicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="81" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="366" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a96f5509a262bda1ee40ceaddb081bff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::POINTClicked</definition>
+        <argsstring>()</argsstring>
+        <name>POINTClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="82" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="371" bodyend="373"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a4f3a33c651ac011d7a4ee62f70c88e44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::ESPACEClicked</definition>
+        <argsstring>()</argsstring>
+        <name>ESPACEClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="83" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="376" bodyend="378"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a97ac3886016cc9dc1cc7ae1be4abac65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::FACTORIELClicked</definition>
+        <argsstring>()</argsstring>
+        <name>FACTORIELClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="84" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="380" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a7babfc70d1010ea3e7efe67b788e0ec5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::ADDITIONNERClicked</definition>
+        <argsstring>()</argsstring>
+        <name>ADDITIONNERClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="85" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="384" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1aef8aa8858f4a280f6da4ef6f6b4cf208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::SOUSTRAIREClicked</definition>
+        <argsstring>()</argsstring>
+        <name>SOUSTRAIREClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="86" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="388" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a0fe4c051d0deac4c5eec64a6cd3d3682" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::MULTIPLIERClicked</definition>
+        <argsstring>()</argsstring>
+        <name>MULTIPLIERClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="87" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="392" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a785abff91c01b674c3b795dc289ae629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::DIVISERClicked</definition>
+        <argsstring>()</argsstring>
+        <name>DIVISERClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="88" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="396" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a0056914c89217bbef8879ccae4466e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::_clavierBasicStateChange</definition>
+        <argsstring>(int)</argsstring>
+        <name>_clavierBasicStateChange</name>
+        <param>
+          <type>int</type>
+          <defname>cochee</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="89" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="266" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a9200740951f715069c9f2bc7809f6e07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::_clavierAvanceStateChange</definition>
+        <argsstring>(int)</argsstring>
+        <name>_clavierAvanceStateChange</name>
+        <param>
+          <type>int</type>
+          <defname>cochee</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="90" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="279" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a6febb02daee1abb1c9c0d0f9d190b25c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::_modComplexeONClicked</definition>
+        <argsstring>(bool)</argsstring>
+        <name>_modComplexeONClicked</name>
+        <param>
+          <type>bool</type>
+          <defname>b</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="91" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="238" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a85b97292e1728650fc34d989170a0886" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::_modComplexeOFFClicked</definition>
+        <argsstring>(bool)</argsstring>
+        <name>_modComplexeOFFClicked</name>
+        <param>
+          <type>bool</type>
+          <defname>b</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="92" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="252" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ae1cb8b4b1f79083accb25c66e6847abc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::_modRadiansToggled</definition>
+        <argsstring>(bool)</argsstring>
+        <name>_modRadiansToggled</name>
+        <param>
+          <type>bool</type>
+          <defname>b</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="93" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="227" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1aa181a30bc86fd676299a828b6806fff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::_modDegresToggled</definition>
+        <argsstring>(bool)</argsstring>
+        <name>_modDegresToggled</name>
+        <param>
+          <type>bool</type>
+          <defname>b</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="94" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="216" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a29e8205bc963cebba7a96f94f4d3c40f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::_modReel</definition>
+        <argsstring>(bool)</argsstring>
+        <name>_modReel</name>
+        <param>
+          <type>bool</type>
+          <defname>b</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="95" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="289" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::_modRationnel</definition>
+        <argsstring>(bool)</argsstring>
+        <name>_modRationnel</name>
+        <param>
+          <type>bool</type>
+          <defname>b</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="96" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="302" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a05cfdc8bf99fa145e67ce4d9eed03f20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::_modEntier</definition>
+        <argsstring>(bool)</argsstring>
+        <name>_modEntier</name>
+        <param>
+          <type>bool</type>
+          <defname>b</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="97" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="315" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::ENTERClicked</definition>
+        <argsstring>()</argsstring>
+        <name>ENTERClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="99" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="478" bodyend="1076"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="29" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="28" bodyend="103"/>
+    <listofallmembers>
+      <member refid="class_main_window_1a9200740951f715069c9f2bc7809f6e07" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_clavierAvanceStateChange</name></member>
+      <member refid="class_main_window_1a0056914c89217bbef8879ccae4466e28" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_clavierBasicStateChange</name></member>
+      <member refid="class_main_window_1a7b6885be3b8c6d0222aafa77748b852d" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_modAngle</name></member>
+      <member refid="class_main_window_1a1d3d51f25fd1414069631111de1c1c24" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_modComplexe</name></member>
+      <member refid="class_main_window_1a85b97292e1728650fc34d989170a0886" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modComplexeOFFClicked</name></member>
+      <member refid="class_main_window_1a6febb02daee1abb1c9c0d0f9d190b25c" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modComplexeONClicked</name></member>
+      <member refid="class_main_window_1a2fab64d84959d8048ae0c7e47a7c3fd7" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_modConstante</name></member>
+      <member refid="class_main_window_1aa181a30bc86fd676299a828b6806fff7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modDegresToggled</name></member>
+      <member refid="class_main_window_1a05cfdc8bf99fa145e67ce4d9eed03f20" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modEntier</name></member>
+      <member refid="class_main_window_1ae1cb8b4b1f79083accb25c66e6847abc" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modRadiansToggled</name></member>
+      <member refid="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modRationnel</name></member>
+      <member refid="class_main_window_1a29e8205bc963cebba7a96f94f4d3c40f" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modReel</name></member>
+      <member refid="class_main_window_1a0e09dbed6be4c5b1bbfaa9fa852b7aef" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_pileAffichage</name></member>
+      <member refid="class_main_window_1ab55da16dd118ff5a3718e25b3e4f0476" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_pileStockage</name></member>
+      <member refid="class_main_window_1a211bdf68e726481ddd5ced4626189c4b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_pileStockageComplexe</name></member>
+      <member refid="class_main_window_1add21502d1d68dd52ef18375379f57ff8" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_pileStockageReelle</name></member>
+      <member refid="class_main_window_1a7babfc70d1010ea3e7efe67b788e0ec5" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ADDITIONNERClicked</name></member>
+      <member refid="class_main_window_1a810709db5f60967d9ac69169ce4cbecc" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>afficheur_pile</name></member>
+      <member refid="class_main_window_1acd5bbd32604f72b223e69a58088ddabd" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>CClicked</name></member>
+      <member refid="class_main_window_1a1a093a266d6f67c63e27b410de323e3f" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>CEClicked</name></member>
+      <member refid="class_main_window_1acc7b69effe16bf3936be897b1e9697a2" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>COSClicked</name></member>
+      <member refid="class_main_window_1ae0cb839c1a84f68cfe7d55d75679bf32" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>COSHClicked</name></member>
+      <member refid="class_main_window_1a7e0ee20d8b3f6c4638ddced7d894c595" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>CUBEClicked</name></member>
+      <member refid="class_main_window_1a785abff91c01b674c3b795dc289ae629" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>DIVISERClicked</name></member>
+      <member refid="class_main_window_1adc9d3f1638131c5d291c54380fda801f" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>DOLLARClicked</name></member>
+      <member refid="class_main_window_1a71be435db24c12ee4c320a16a0b33ef6" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>empiler</name></member>
+      <member refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ENTERClicked</name></member>
+      <member refid="class_main_window_1a4f3a33c651ac011d7a4ee62f70c88e44" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ESPACEClicked</name></member>
+      <member refid="class_main_window_1a97ac3886016cc9dc1cc7ae1be4abac65" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>FACTORIELClicked</name></member>
+      <member refid="class_main_window_1a254c2a0ab491f878157d6abb8d4a8381" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>INVClicked</name></member>
+      <member refid="class_main_window_1a16e852b776efdec4876c32f0fb56a5b0" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>LNClicked</name></member>
+      <member refid="class_main_window_1a233bee15277ba8e4eebbb121bd547839" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>loadFromFile</name></member>
+      <member refid="class_main_window_1a0e9e909347465ac2945668a5229c4688" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>LOGClicked</name></member>
+      <member refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MainWindow</name></member>
+      <member refid="class_main_window_1a4edf9a5fcb637c43e2d4d4e107fd0c62" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MODClicked</name></member>
+      <member refid="class_main_window_1a0fe4c051d0deac4c5eec64a6cd3d3682" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>MULTIPLIERClicked</name></member>
+      <member refid="class_main_window_1ab408f985cff16c7d939d48cfa3d5f0b1" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>num0Clicked</name></member>
+      <member refid="class_main_window_1a538b702a2feed14f756f9fff0a53d2f5" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>num1Clicked</name></member>
+      <member refid="class_main_window_1a857a81084ff261633c9896f24bdd6fb5" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>num2Clicked</name></member>
+      <member refid="class_main_window_1aaf2e8e4cdcabb0c9cd2496e662038b64" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>num3Clicked</name></member>
+      <member refid="class_main_window_1a6d79c0dc7b05f66d0dd2d5eb57d870a2" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>num4Clicked</name></member>
+      <member refid="class_main_window_1a9dfa9a2ba4c04d27047f1b6cf50eb309" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>num5Clicked</name></member>
+      <member refid="class_main_window_1ae581f160bb58ff7b92fb10488dad1cb7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>num6Clicked</name></member>
+      <member refid="class_main_window_1ae34dccd3c4bdff6452250ec4807977e4" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>num7Clicked</name></member>
+      <member refid="class_main_window_1ab86f29d78da5c85373b2126cdbfadf78" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>num8Clicked</name></member>
+      <member refid="class_main_window_1a48cd898abe91cf0b7784dfce7258b8f6" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>num9Clicked</name></member>
+      <member refid="class_main_window_1a96f5509a262bda1ee40ceaddb081bff6" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>POINTClicked</name></member>
+      <member refid="class_main_window_1ab623e042d0384fce67ee67b86aa092ab" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>POWClicked</name></member>
+      <member refid="class_main_window_1aa3cc15e4ab21e8d1d02b2c908f7ed955" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>QUOTEClicked</name></member>
+      <member refid="class_main_window_1a80381181e476064c086666abb2cfa2ce" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>saveToFile</name></member>
+      <member refid="class_main_window_1aada810f5e314c0180e159729f1af13f5" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>SIGNClicked</name></member>
+      <member refid="class_main_window_1a694058b9993bdad7bf4c96b7bae1af37" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>SINClicked</name></member>
+      <member refid="class_main_window_1ae18b7a59154a29d9166dae53a02da0cd" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>SINHClicked</name></member>
+      <member refid="class_main_window_1aef8aa8858f4a280f6da4ef6f6b4cf208" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>SOUSTRAIREClicked</name></member>
+      <member refid="class_main_window_1ad6048a7bb41b1e0ac37bb1f05e458cc8" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>SQRClicked</name></member>
+      <member refid="class_main_window_1a40ff97255a9f62068bf20312468060dd" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>SQRTClicked</name></member>
+      <member refid="class_main_window_1abd6beb62d32cc0922fd78819e3c4a9cd" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>TANClicked</name></member>
+      <member refid="class_main_window_1a9674367d1b35c2b7fcb37547982c7142" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>TANHClicked</name></member>
+      <member refid="class_main_window_1a2a1ee33b84e16a22e7656bc43220483d" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>traitement_expr</name></member>
+      <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>ui</name></member>
+      <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

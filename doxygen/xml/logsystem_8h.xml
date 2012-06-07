@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="logsystem_8h" kind="file">
+    <compoundname>logsystem.h</compoundname>
+    <includes refid="logmessage_8h" local="yes">logmessage.h</includes>
+    <includedby refid="logsystem_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/main.cpp</includedby>
+    <incdepgraph>
+      <node id="215">
+        <label>logmessage.h</label>
+        <link refid="logmessage_8h_source"/>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>exception</label>
+      </node>
+      <node id="214">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h</label>
+        <link refid="logsystem.h"/>
+        <childnode refid="215" relation="include">
+        </childnode>
+      </node>
+      <node id="216">
+        <label>QtGui</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_log_system" prot="public">LogSystem</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LOGSYSTEM_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LOGSYSTEM_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;logmessage.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_log_system" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_log_system" kindref="compound">LogSystem</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ajouterFichierLog(<ref refid="class_log_message" kindref="compound">LogMessage</ref><sp/>m);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ajouterConsoleLog(<ref refid="class_log_message" kindref="compound">LogMessage</ref><sp/>m);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_log_system" kindref="compound">LogSystem</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LOGSYSTEM_H</highlight></codeline>
+    </programlisting>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h"/>
+  </compounddef>
+</doxygen>

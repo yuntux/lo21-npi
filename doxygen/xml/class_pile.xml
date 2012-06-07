@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_pile" kind="class" prot="public">
+    <compoundname>Pile</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_pile_1a8935afea23bb7e075c286fe1fa6e6a2f" prot="private" static="no" mutable="no">
+        <type>QList&lt; <ref refid="class_constante" kindref="compound">Constante</ref> * &gt;</type>
+        <definition>QList&lt;Constante*&gt; Pile::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="17" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_pile_1a2bbdc329f485cd017f8cbf88456ae68a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Pile::pop</definition>
+        <argsstring>()</argsstring>
+        <name>pop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="20" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="46" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1a25c322d47a76d758565bdf9df2253411" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante* Pile::top</definition>
+        <argsstring>()</argsstring>
+        <name>top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="21" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1a18a4d9a9b8013b36a5423817f9fb9049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pile::push</definition>
+        <argsstring>(Constante *ptr)</argsstring>
+        <name>push</name>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="22" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="5" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1ae45e55f151180284728643cb9cfe4095" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Pile::isEmpty</definition>
+        <argsstring>() const </argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="23" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1aaae1107e877f7094bdbd97839c731634" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Pile::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="24" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1a07d95a908492bd45d1ac105aa78f9dcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Pile::Pile</definition>
+        <argsstring>(QObject *parent=0)</argsstring>
+        <name>Pile</name>
+        <param>
+          <type>QObject *</type>
+          <declname>parent</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="25" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1ab2d1398d675586ff34994e2b109df152" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Pile::~Pile</definition>
+        <argsstring>()</argsstring>
+        <name>~Pile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="26" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1a91875101e0976f054d1db8869a00b11d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Pile::sum</definition>
+        <argsstring>(unsigned int x=2)</argsstring>
+        <name>sum</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>x</declname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="27" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="63" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1a4964563804a254503d6413e5ba83d3c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QString</type>
+        <definition>QString Pile::afficher</definition>
+        <argsstring>() const </argsstring>
+        <name>afficher</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="35" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1a44545327a8d02ad9775a2c918ea5cdfc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Pile::rowCount</definition>
+        <argsstring>(const QModelIndex &amp;parent) const </argsstring>
+        <name>rowCount</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="32" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1ac9d6e388d3a98eb57a786f9bbec30952" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>QVariant</type>
+        <definition>QVariant Pile::data</definition>
+        <argsstring>(const QModelIndex &amp;index, int role) const </argsstring>
+        <name>data</name>
+        <param>
+          <type>const QModelIndex &amp;</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>role</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="13" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_pile_1a8d34708706c113ec9864f7c37c9083a2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pile::operator=</definition>
+        <argsstring>(const Pile &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_pile" kindref="compound">Pile</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="11" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" bodystart="10" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_pile_1a4964563804a254503d6413e5ba83d3c5" prot="public" virt="non-virtual"><scope>Pile</scope><name>afficher</name></member>
+      <member refid="class_pile_1ac9d6e388d3a98eb57a786f9bbec30952" prot="public" virt="non-virtual"><scope>Pile</scope><name>data</name></member>
+      <member refid="class_pile_1ae45e55f151180284728643cb9cfe4095" prot="public" virt="non-virtual"><scope>Pile</scope><name>isEmpty</name></member>
+      <member refid="class_pile_1a8d34708706c113ec9864f7c37c9083a2" prot="protected" virt="non-virtual"><scope>Pile</scope><name>operator=</name></member>
+      <member refid="class_pile_1a8935afea23bb7e075c286fe1fa6e6a2f" prot="private" virt="non-virtual"><scope>Pile</scope><name>p</name></member>
+      <member refid="class_pile_1a07d95a908492bd45d1ac105aa78f9dcd" prot="public" virt="non-virtual"><scope>Pile</scope><name>Pile</name></member>
+      <member refid="class_pile_1a2bbdc329f485cd017f8cbf88456ae68a" prot="public" virt="non-virtual"><scope>Pile</scope><name>pop</name></member>
+      <member refid="class_pile_1a18a4d9a9b8013b36a5423817f9fb9049" prot="public" virt="non-virtual"><scope>Pile</scope><name>push</name></member>
+      <member refid="class_pile_1a44545327a8d02ad9775a2c918ea5cdfc" prot="public" virt="non-virtual"><scope>Pile</scope><name>rowCount</name></member>
+      <member refid="class_pile_1aaae1107e877f7094bdbd97839c731634" prot="public" virt="non-virtual"><scope>Pile</scope><name>size</name></member>
+      <member refid="class_pile_1a91875101e0976f054d1db8869a00b11d" prot="public" virt="non-virtual"><scope>Pile</scope><name>sum</name></member>
+      <member refid="class_pile_1a25c322d47a76d758565bdf9df2253411" prot="public" virt="non-virtual"><scope>Pile</scope><name>top</name></member>
+      <member refid="class_pile_1ab2d1398d675586ff34994e2b109df152" prot="public" virt="virtual"><scope>Pile</scope><name>~Pile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

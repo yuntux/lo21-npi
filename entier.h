@@ -1,3 +1,14 @@
+/**
+ * \file entier.h
+ * \brief Calculatrice en polonais inversé. Classe Entier.
+ * \author Aurélien DUMAINE
+ * \author Simon LANCELOT
+ * \version 0.1
+ * \date juin 2012
+ *
+ * Licence : GNU/GPL version 3 (http://www.gnu.org/copyleft/gpl.html)
+ *
+ */
 #ifndef ENTIER_H
 #define ENTIER_H
 

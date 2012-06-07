@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_entier" kind="class" prot="public">
+    <compoundname>Entier</compoundname>
+    <basecompoundref refid="class_constante" prot="public" virt="non-virtual">Constante</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_entier_1ab499000d2140a03fd8c2be8cc97cf410" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Entier::_valeur</definition>
+        <argsstring></argsstring>
+        <name>_valeur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="18" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_entier_1a35115c0f47f2d94e1697e20624a1c4d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Entier::Entier</definition>
+        <argsstring>(int e)</argsstring>
+        <name>Entier</name>
+        <param>
+          <type>int</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="21" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entier_1a94158ae6fbad4c9a74815716f5f0f629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Entier::Entier</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>Entier</name>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="22" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.cpp" bodystart="8" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entier_1adc0a7554faa45a68eb7432798b6892cc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>QString</type>
+        <definition>virtual QString Entier::afficher</definition>
+        <argsstring>() const </argsstring>
+        <name>afficher</name>
+        <reimplements refid="class_constante_1a78b5d9ee6a7e70349db6641a08f77479">afficher</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="23" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entier_1afe38ee7f81afc3c88a2c774ff0af2bcd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Entier::getValeur</definition>
+        <argsstring>() const </argsstring>
+        <name>getValeur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="25" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entier_1a22e1c5d0ecf304cd6033e6bf453cc0c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Entier::setValeur</definition>
+        <argsstring>(int v)</argsstring>
+        <name>setValeur</name>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="26" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entier_1ab093dd3f0aa7777c4300362f7ba78ff4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Entier::addition</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>addition</name>
+        <reimplements refid="class_constante_1a580f4535e16d4c9331da85750be6e5ad">addition</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.cpp" bodystart="22" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entier_1aa83349a1b984adbd53766ebac2614faf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Entier::produit</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>produit</name>
+        <reimplements refid="class_constante_1ad805854dd4e53f0ef5b2d482398b682a">produit</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="29" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.cpp" bodystart="42" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entier_1a36ce54a35fc9ab69bef2cffebee01c69" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Entier::signe</definition>
+        <argsstring>()</argsstring>
+        <name>signe</name>
+        <reimplements refid="class_constante_1a1c6f79dbc7623529ee4fd5ae9c556b45">signe</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="30" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.cpp" bodystart="93" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entier_1afc338f1f177942411a3c8e0e19fce6ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Entier::division</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>division</name>
+        <reimplements refid="class_constante_1ab9b969ad6ad0d8463d44a1273667ee79">division</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="31" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.cpp" bodystart="66" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entier_1a880936c128f077144cd266199cd27585" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Entier::soustraction</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>soustraction</name>
+        <reimplements refid="class_constante_1ad1df4970f093fdb4235d4945ec2dbf12">soustraction</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="32" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.cpp" bodystart="97" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entier_1a29ebe7b4a2b8e8135736389977339330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Entier::mod</definition>
+        <argsstring>(Entier *c)</argsstring>
+        <name>mod</name>
+        <param>
+          <type><ref refid="class_entier" kindref="compound">Entier</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.cpp" bodystart="137" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entier_1a5e4a3ab5cc280d0e082300207712d5d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Entier::inv</definition>
+        <argsstring>()</argsstring>
+        <name>inv</name>
+        <reimplements refid="class_constante_1a63d03e59594b74aa2fbc35f559b0ad46">inv</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="34" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.cpp" bodystart="145" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entier_1a094c16293e7853eafa646d1613db3034" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Entier::fact</definition>
+        <argsstring>()</argsstring>
+        <name>fact</name>
+        <reimplements refid="class_constante_1a57dafd18c718935af9f97dcbb8de9ad9">fact</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="35" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.cpp" bodystart="115" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_entier_1a081a93591a1095f0fe0715f14b5b4248" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Entier::sinus</definition>
+        <argsstring>()</argsstring>
+        <name>sinus</name>
+        <reimplements refid="class_constante_1ad1a0ed2f6f6e9c3e7fc3f0c4ffaeaa76">sinus</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="36" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.cpp" bodystart="130" bodyend="135"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="69">
+        <label>Entier</label>
+        <link refid="class_entier"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>Constante</label>
+        <link refid="class_constante"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="71">
+        <label>Entier</label>
+        <link refid="class_entier"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>Constante</label>
+        <link refid="class_constante"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" line="17" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h" bodystart="17" bodyend="37"/>
+    <listofallmembers>
+      <member refid="class_entier_1ab499000d2140a03fd8c2be8cc97cf410" prot="private" virt="non-virtual"><scope>Entier</scope><name>_valeur</name></member>
+      <member refid="class_entier_1ab093dd3f0aa7777c4300362f7ba78ff4" prot="public" virt="virtual"><scope>Entier</scope><name>addition</name></member>
+      <member refid="class_entier_1adc0a7554faa45a68eb7432798b6892cc" prot="public" virt="virtual"><scope>Entier</scope><name>afficher</name></member>
+      <member refid="class_entier_1afc338f1f177942411a3c8e0e19fce6ce" prot="public" virt="virtual"><scope>Entier</scope><name>division</name></member>
+      <member refid="class_entier_1a35115c0f47f2d94e1697e20624a1c4d1" prot="public" virt="non-virtual"><scope>Entier</scope><name>Entier</name></member>
+      <member refid="class_entier_1a94158ae6fbad4c9a74815716f5f0f629" prot="public" virt="non-virtual"><scope>Entier</scope><name>Entier</name></member>
+      <member refid="class_entier_1a094c16293e7853eafa646d1613db3034" prot="public" virt="virtual"><scope>Entier</scope><name>fact</name></member>
+      <member refid="class_entier_1afe38ee7f81afc3c88a2c774ff0af2bcd" prot="public" virt="non-virtual"><scope>Entier</scope><name>getValeur</name></member>
+      <member refid="class_entier_1a5e4a3ab5cc280d0e082300207712d5d8" prot="public" virt="virtual"><scope>Entier</scope><name>inv</name></member>
+      <member refid="class_entier_1a29ebe7b4a2b8e8135736389977339330" prot="public" virt="non-virtual"><scope>Entier</scope><name>mod</name></member>
+      <member refid="class_entier_1aa83349a1b984adbd53766ebac2614faf" prot="public" virt="virtual"><scope>Entier</scope><name>produit</name></member>
+      <member refid="class_constante_1ac6fb071229429f82cf489f8313461efa" prot="public" virt="non-virtual"><scope>Entier</scope><name>recopie</name></member>
+      <member refid="class_entier_1a22e1c5d0ecf304cd6033e6bf453cc0c1" prot="public" virt="non-virtual"><scope>Entier</scope><name>setValeur</name></member>
+      <member refid="class_entier_1a36ce54a35fc9ab69bef2cffebee01c69" prot="public" virt="virtual"><scope>Entier</scope><name>signe</name></member>
+      <member refid="class_entier_1a081a93591a1095f0fe0715f14b5b4248" prot="public" virt="virtual"><scope>Entier</scope><name>sinus</name></member>
+      <member refid="class_entier_1a880936c128f077144cd266199cd27585" prot="public" virt="virtual"><scope>Entier</scope><name>soustraction</name></member>
+      <member refid="class_constante_1af747f270ad3d50813786a1b013bac959" prot="public" virt="virtual"><scope>Entier</scope><name>~Constante</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

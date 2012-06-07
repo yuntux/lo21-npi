@@ -1,0 +1,348 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
+  <compounddef id="class_complexe" kind="class" prot="public">
+    <compoundname>Complexe</compoundname>
+    <basecompoundref refid="class_constante" prot="public" virt="non-virtual">Constante</basecompoundref>
+    <derivedcompoundref refid="class_frabrique_complexe" prot="public" virt="non-virtual">FrabriqueComplexe</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_complexe_1ace5b7bcc0e61764510a46e3ae84a098d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante* Complexe::_reelle</definition>
+        <argsstring></argsstring>
+        <name>_reelle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="9" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_complexe_1a355a9945817c7654ba2e435c4c68bf5d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante* Complexe::_imaginaire</definition>
+        <argsstring></argsstring>
+        <name>_imaginaire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="10" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Complexe::Complexe</definition>
+        <argsstring>()</argsstring>
+        <name>Complexe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="13" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1ae19286bc2c8f360e3fbc0d65526564d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Complexe::Complexe</definition>
+        <argsstring>(Constante *r, Constante *i)</argsstring>
+        <name>Complexe</name>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="14" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="7" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a5141b5b092f78c06f60013e911ba4440" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>QString</type>
+        <definition>QString Complexe::afficher</definition>
+        <argsstring>() const </argsstring>
+        <name>afficher</name>
+        <reimplements refid="class_constante_1a78b5d9ee6a7e70349db6641a08f77479">afficher</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="15" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="37" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante* Complexe::getPartieReelle</definition>
+        <argsstring>() const </argsstring>
+        <name>getPartieReelle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="16" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante* Complexe::getPartieImaginaire</definition>
+        <argsstring>() const </argsstring>
+        <name>getPartieImaginaire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="17" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a7e57ea7cf760e132c80a148e2c344cce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Complexe::setReelle</definition>
+        <argsstring>(Constante *re)</argsstring>
+        <name>setReelle</name>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>re</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="18" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a2335ce4c53e2b11d4fa4bcbef45415ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Complexe::setImaginaire</definition>
+        <argsstring>(Constante *im)</argsstring>
+        <name>setImaginaire</name>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="19" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1ac00d0b5ba1dea7d67c43d257e48fd7b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Complexe::Complexe</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>Complexe</name>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="21" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="17" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::addition</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>addition</name>
+        <reimplements refid="class_constante_1a580f4535e16d4c9331da85750be6e5ad">addition</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="26" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="54" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::produit</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>produit</name>
+        <reimplements refid="class_constante_1ad805854dd4e53f0ef5b2d482398b682a">produit</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="27" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="67" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::division</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>division</name>
+        <reimplements refid="class_constante_1ab9b969ad6ad0d8463d44a1273667ee79">division</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="79" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a97bb77958c4012ed113c54f895f91e85" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::signe</definition>
+        <argsstring>()</argsstring>
+        <name>signe</name>
+        <reimplements refid="class_constante_1a1c6f79dbc7623529ee4fd5ae9c556b45">signe</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="29" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="101" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a07d706446560190792339549752f9ea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::soustraction</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>soustraction</name>
+        <reimplements refid="class_constante_1ad1df4970f093fdb4235d4945ec2dbf12">soustraction</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="30" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="112" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::inv</definition>
+        <argsstring>()</argsstring>
+        <name>inv</name>
+        <reimplements refid="class_constante_1a63d03e59594b74aa2fbc35f559b0ad46">inv</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="31" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="138" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a0b0532339249783cee39f28670bb7504" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::fact</definition>
+        <argsstring>()</argsstring>
+        <name>fact</name>
+        <reimplements refid="class_constante_1a57dafd18c718935af9f97dcbb8de9ad9">fact</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="32" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="126" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1ab4fdc60272bd80f1df8f8c1c29c11813" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::sinus</definition>
+        <argsstring>()</argsstring>
+        <name>sinus</name>
+        <reimplements refid="class_constante_1ad1a0ed2f6f6e9c3e7fc3f0c4ffaeaa76">sinus</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="132" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="56">
+        <label>Complexe</label>
+        <link refid="class_complexe"/>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>Constante</label>
+        <link refid="class_constante"/>
+      </node>
+      <node id="58">
+        <label>FrabriqueComplexe</label>
+        <link refid="class_frabrique_complexe"/>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="59">
+        <label>Complexe</label>
+        <link refid="class_complexe"/>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>Constante</label>
+        <link refid="class_constante"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="7" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="7" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_complexe_1a355a9945817c7654ba2e435c4c68bf5d" prot="private" virt="non-virtual"><scope>Complexe</scope><name>_imaginaire</name></member>
+      <member refid="class_complexe_1ace5b7bcc0e61764510a46e3ae84a098d" prot="private" virt="non-virtual"><scope>Complexe</scope><name>_reelle</name></member>
+      <member refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" prot="public" virt="virtual"><scope>Complexe</scope><name>addition</name></member>
+      <member refid="class_complexe_1a5141b5b092f78c06f60013e911ba4440" prot="public" virt="virtual"><scope>Complexe</scope><name>afficher</name></member>
+      <member refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" prot="public" virt="non-virtual"><scope>Complexe</scope><name>Complexe</name></member>
+      <member refid="class_complexe_1ae19286bc2c8f360e3fbc0d65526564d3" prot="public" virt="non-virtual"><scope>Complexe</scope><name>Complexe</name></member>
+      <member refid="class_complexe_1ac00d0b5ba1dea7d67c43d257e48fd7b5" prot="public" virt="non-virtual"><scope>Complexe</scope><name>Complexe</name></member>
+      <member refid="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8" prot="public" virt="virtual"><scope>Complexe</scope><name>division</name></member>
+      <member refid="class_complexe_1a0b0532339249783cee39f28670bb7504" prot="public" virt="virtual"><scope>Complexe</scope><name>fact</name></member>
+      <member refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" prot="public" virt="non-virtual"><scope>Complexe</scope><name>getPartieImaginaire</name></member>
+      <member refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" prot="public" virt="non-virtual"><scope>Complexe</scope><name>getPartieReelle</name></member>
+      <member refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" prot="public" virt="virtual"><scope>Complexe</scope><name>inv</name></member>
+      <member refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" prot="public" virt="virtual"><scope>Complexe</scope><name>produit</name></member>
+      <member refid="class_constante_1ac6fb071229429f82cf489f8313461efa" prot="public" virt="non-virtual"><scope>Complexe</scope><name>recopie</name></member>
+      <member refid="class_complexe_1a2335ce4c53e2b11d4fa4bcbef45415ba" prot="public" virt="non-virtual"><scope>Complexe</scope><name>setImaginaire</name></member>
+      <member refid="class_complexe_1a7e57ea7cf760e132c80a148e2c344cce" prot="public" virt="non-virtual"><scope>Complexe</scope><name>setReelle</name></member>
+      <member refid="class_complexe_1a97bb77958c4012ed113c54f895f91e85" prot="public" virt="virtual"><scope>Complexe</scope><name>signe</name></member>
+      <member refid="class_complexe_1ab4fdc60272bd80f1df8f8c1c29c11813" prot="public" virt="virtual"><scope>Complexe</scope><name>sinus</name></member>
+      <member refid="class_complexe_1a07d706446560190792339549752f9ea3" prot="public" virt="virtual"><scope>Complexe</scope><name>soustraction</name></member>
+      <member refid="class_constante_1af747f270ad3d50813786a1b013bac959" prot="public" virt="virtual"><scope>Complexe</scope><name>~Constante</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,3 +1,16 @@
+/**
+ * \file constante.h
+ * \brief Calculatrice en polonais inversé. Classe de la GUI QT-MainWindow
+ * \author Aurélien DUMAINE
+ * \author Simon LANCELOT
+ * \version 0.1
+ * \date juin 2012
+ *
+ * Licence : GNU/GPL version 3 (http://www.gnu.org/copyleft/gpl.html)
+ * Dépot Git : http://code.google.com/p/lo21-npi/
+ *
+ */
+
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
