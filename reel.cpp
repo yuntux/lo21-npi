@@ -44,6 +44,7 @@ Constante* Reel::addition(Constante* c){
         Reel* tmp = new Reel(c_reel->getValeur()+_valeur);
         return new Complexe(tmp);
     }
+    throw LogMessage(3,"Type de constante non prévu dans la fonction Constante* Reel::addition(Constante *c).", important);
 }
 
 Constante* Reel::produit(Constante *c)
@@ -62,8 +63,8 @@ Constante* Reel::produit(Constante *c)
     else if (typeid(*c)==typeid(Complexe)) {
              Complexe *c_complexe=dynamic_cast<Complexe *>(c);
              return c_complexe->produit(this);
-
      }
+    throw LogMessage(3,"Type de constante non prévu dans la fonction Constante* Reel::produit(Constante *c).", important);
 }
 
 
@@ -90,6 +91,7 @@ Constante* Reel::division(Constante *c)
        return reel_complexe.division(c_complexe);
 
     }
+   throw LogMessage(3,"Type de constante non prévu dans la fonction Constante* Reel::division(Constante *c).", important);
 }
 
 Constante* Reel::signe(){
@@ -110,6 +112,7 @@ Constante* Reel::soustraction(Constante* c){
         Reel *c_reel=dynamic_cast<Reel *>(c);
         return new Complexe(this->addition(c_reel->signe()));
     }
+    throw LogMessage(3,"Type de constante non prévu dans la fonction Constante* Reel::soustraction(Constante* c).", important);
 }
 
 Constante *Reel::inv()

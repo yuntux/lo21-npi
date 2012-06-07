@@ -16,6 +16,7 @@ enum Type {
 class Constante
 {
 public:
+    virtual ~Constante(){};
     virtual QString afficher() const = 0;
     virtual Constante* addition(Constante* c)=0;
     virtual Constante* produit(Constante* c)=0;

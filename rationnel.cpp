@@ -21,13 +21,14 @@ Rationnel::Rationnel(Constante* c) {
     } else if (typeid(*c)==typeid(Reel)) {
         //FIXME : impossible de construire un rationnel Ã  partir d'un rÃ©el SAUF si la partie décimale est nulle
     }
+    throw LogMessage(3,"Type de constante non prévu dans la fonction Rationnel::Rationnel(Constante* c).", important);
 }
 
 Rationnel::Rationnel(int num, int den):_numerateur(num), _denominateur(den)
 {
     if (_denominateur==0)
     {
-    //FIXME : lever une exeption -> dénminateur nul illégal
+    throw LogMessage(1,"Division par zéro", important);
     }
     this->simplification();
 }
@@ -65,6 +66,7 @@ Constante* Rationnel::addition(Constante* c){
     } else if (typeid(*c)==typeid(Reel)) {
         //FIXME : doit lever une exeption car perte de précesion
     }
+    throw LogMessage(3,"Type de constante non prévu dans la fonction Constante* Rationnel::addition(Constante* c).", important);
 }
 
 Constante* Rationnel::produit(Constante *c)
@@ -84,8 +86,8 @@ Constante* Rationnel::produit(Constante *c)
     else if (typeid(*c)==typeid(Complexe)) {
              Complexe *c_complexe=dynamic_cast<Complexe *>(c);
              return c_complexe->produit(this);
-
      }
+    throw LogMessage(3,"Type de constante non prévu dans la fonction Constante* Rationnel::produit(Constante* c).", important);
 }
 
 Constante* Rationnel::division(Constante *c)
@@ -112,6 +114,7 @@ Constante* Rationnel::division(Constante *c)
        Complexe rationnel_complexe(this);
        return rationnel_complexe.division(c_complexe);
     }
+   throw LogMessage(3,"Type de constante non prévu dans la fonction Constante* Rationnel::division(Constante* c).", important);
 }
 
 Constante* Rationnel::signe(){
@@ -134,6 +137,7 @@ Constante* Rationnel::soustraction(Constante* c){
         Reel *c_reel=dynamic_cast<Reel *>(c);
         return new Complexe(this->addition(c_reel->signe()));
     }
+    throw LogMessage(3,"Type de constante non prévu dans la fonction Constante* Rationnel::soustraction(Constante* c).", important);
 }
 
 Constante* Rationnel::fact()
@@ -144,14 +148,8 @@ Constante* Rationnel::fact()
 
 Constante* Rationnel::sinus()
 {
-
-    float num = _numerateur;
-    float den = _denominateur;
-    float res=num/den;
-
-    Rationnel *r = new Rationnel(sin(res),1);
+    Rationnel *r = new Rationnel(sin(_numerateur/_denominateur),1);
     return new Complexe(r);
-
 }
 
 Constante *Rationnel::inv()
