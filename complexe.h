@@ -46,6 +46,8 @@ public:
     virtual Constante* fact();
     virtual Constante* sinus(bool angle);
     virtual Constante* cosinus(bool angle);
+    virtual Constante* sinush(bool angle);
+    virtual Constante* cosinush(bool angle);
 };
 
 class FrabriqueComplexe : public Complexe{

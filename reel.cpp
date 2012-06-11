@@ -140,6 +140,23 @@ Constante* Reel::cosinus(bool angle)
     return new Complexe(e);
 }
 
+Constante* Reel::cosinush(bool angle)
+{
+    float res = _valeur;
+    if(angle)
+        res=res*PI/180;
+    Reel *e = new Reel(cosh(res));
+    return new Complexe(e);
+}
+
+Constante* Reel::sinush(bool angle)
+{
+    float res = _valeur;
+    if(angle)
+        res=res*PI/180;
+    Reel *e = new Reel(sinh(res));
+    return new Complexe(e);
+}
 Constante* Reel::fact()
 {
     throw LogMessage(2,"La fonction factorielle n'est pas implémentée pour les réels.", moyen);

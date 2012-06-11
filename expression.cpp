@@ -50,6 +50,16 @@ Constante* Expression::cosinus(bool angle)
     return this;
 }
 
+Constante* Expression::sinush(bool angle)
+{
+    return this;
+}
+
+Constante* Expression::cosinush(bool angle)
+{
+    return this;
+}
+
 QString Expression::afficher() const
 {
     return _expr;

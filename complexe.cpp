@@ -141,6 +141,19 @@ Constante* Complexe::cosinus(bool angle)
     return this;
 }
 
+Constante* Complexe::sinush(bool angle)
+{
+    throw LogMessage(2,"La fonction SINH n'est pas implémentée pour les complexes.", moyen);
+    return this;
+}
+
+Constante* Complexe::cosinush(bool angle)
+{
+    throw LogMessage(2,"La fonction COSH n'est pas implémentée pour les complexes.", moyen);
+    return this;
+}
+
+
 Constante* Complexe::inv()
 {
     //FIXME : pas d'inverse pour les complexes

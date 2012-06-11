@@ -146,7 +146,23 @@ Constante* Entier::cosinus(bool angle)
     return new Complexe(e);
 }
 
+Constante* Entier::sinush(bool angle)
+{
+    float res = _valeur;
+    if(angle==true)
+        res=res*PI/180;
+    Entier *e = new Entier(sinh(res));
+    return new Complexe(e);
+}
 
+Constante* Entier::cosinush(bool angle)
+{
+    float res = _valeur;
+    if(angle==true)
+        res=res*PI/180;
+    Entier *e = new Entier(cosh(res));
+    return new Complexe(e);
+}
 Constante *Entier::inv()
 {
     //FIXME : pas d'inverse pour les entiers sans perte de précision

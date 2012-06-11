@@ -39,14 +39,14 @@ int main(int argc, char *argv[])
 
     /* DEBUG */
 
-    Entier e1(5);
+    Entier e1(0);
     Entier e2(2);
     Entier e3(3);
     Rationnel ra1(2,5);
     Rationnel ra2(5,6);
     Rationnel ra3(2,3);
-    Reel re1(3.1);
-    Reel re2(3.2);
+    Reel re1(3.14159265/2);
+    Reel re2(90.0);
     Reel re3(3.3);
     Complexe c11(&e1, &e2);
     Complexe c12(&e3, &e1);
@@ -57,7 +57,9 @@ int main(int argc, char *argv[])
     Complexe c31(&re1, &re2);
     Complexe c32(&re1, &ra3);
     Complexe c33(&re1, &e3);
-
+    qDebug() << re1.cosinus(false)->afficher(); //on passe false en param des fonctions trigo lorsque l'on est en mod rad
+    qDebug() << re2.cosinus(true)->afficher();
+    qDebug() << e1.cosinus(true)->afficher(); //on passe false en param des fonctions trigo lorsque l'on est en mod degres
     try {
         ra1.setDenominateur(0);
     }

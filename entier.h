@@ -21,8 +21,8 @@ class Entier : public Constante{
 public:
     Entier(int e):_valeur(e){}
     Entier(Constante* c);
+    virtual ~Entier(){}
     virtual QString afficher() const{ return QString::number(_valeur);}
-    //virtual QString afficher() const{ std::cout<<_valeur; return "a";}
     int getValeur() const {return _valeur;}
     void setValeur(int v){_valeur=v;}
 
@@ -36,7 +36,9 @@ public:
     virtual Constante* inv();
     virtual Constante* sinus(bool angle);
     virtual Constante* cosinus(bool angle);
-    virtual ~Entier(){}
+    virtual Constante* sinush(bool angle);
+    virtual Constante* cosinush(bool angle);
+
 };
 
 #endif // ENTIER_H
