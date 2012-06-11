@@ -36,6 +36,7 @@ public:
     virtual Constante* inv();
     virtual Constante* sinus(bool angle);
     virtual Constante* cosinus(bool angle);
+    virtual ~Entier(){}
 };
 
 #endif // ENTIER_H

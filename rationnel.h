@@ -28,7 +28,7 @@ public:
     Rationnel(Constante* c);
     Rationnel(int num=0, int den=1);
     void simplification();
-
+    virtual ~Rationnel() {}
     virtual Constante* addition(Constante* c);
     virtual Constante* produit(Constante *c);
     virtual Constante* division(Constante* c);

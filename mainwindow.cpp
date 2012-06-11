@@ -1149,3 +1149,26 @@ bool MainWindow::verifInput(QString s)
     }*/
     return false;
 }
+
+void traiter_contenu_inputLine (QString s){
+    bool dans_une_exp = false;
+    QString chaine;
+    for (int i=0; i<s.length();i++){
+        if(s.at(i) == '\''){
+            if (dans_une_exp){
+                //on était déjà dans une epxression donc on est sur le quote de sortie
+//                ajout_pile_affichage(chaine); //cette fonction doit concat avec la chaine d'avant ?
+                dans_une_exp = false;
+                chaine = "";
+            } else {
+                //on rencontre le quote d'ouverture d'une chaine, ce qui était avant doit etre empilé/calculé
+//              fonction_calcul(chaine);
+                dans_une_exp = true;
+                chaine = "";
+            }
+        } else {
+            //qu'on soit ou non dans une chaine on ajoute ce caractère à la sous-chaine en cours
+            chaine = chaine + s.at(i);
+        }
+    }
+}
