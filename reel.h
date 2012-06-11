@@ -26,7 +26,8 @@ public:
     virtual Constante* soustraction(Constante* c);
     virtual Constante* inv();
     virtual Constante* fact();
-    virtual Constante* sinus();
+    virtual Constante* sinus(bool angle);
+    virtual Constante* cosinus(bool angle);
 };
 
 #endif // REEL_H

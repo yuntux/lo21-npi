@@ -7,6 +7,7 @@
  * \date juin 2012
  *
  * Licence : GNU/GPL version 3 (http://www.gnu.org/copyleft/gpl.html)
+ * Dépot Git : http://code.google.com/p/lo21-npi/
  *
  */
 

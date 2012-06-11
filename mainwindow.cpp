@@ -1,16 +1,16 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QtGui>
-#include <iostream>
-#include "mainwindow.h"
 #include "fonctions.h"
-#include "complexe.h"
-#include "entier.h"
-#include "rationnel.h"
-#include "pile.h"
-#include "reel.h"
-#include <typeinfo>
+#include <iostream>
 #include <cmath>
+#include "pile.h"
+#include "entier.h"
+#include "reel.h"
+#include "rationnel.h"
+#include "entier.h"
+#include "expression.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -20,6 +20,26 @@ MainWindow::MainWindow(QWidget *parent) :
     _modAngle = degre;
     _modConstante = entier;
     _modComplexe = false;
+
+    //FIXME : comment lier la pile d'affichage Ã  la QListveiw Ã©tant donnÃ© que QStack n'hÃ©rite pas de QAstractmodelitem ?
+    //ui->listView_2->setModel(_pileAffichage);
+    _pileStockageReelle.append(3.14);
+    _pileStockageReelle.append(3.14);
+    _pileStockageReelle.append(3.14);
+
+    /*Complexe c1(2,3);
+    Complexe c2(4,5);
+    Complexe c3(6,7);
+    _pileStockageComplexe.append(c1);
+    _pileStockageComplexe.append(c2);
+    _pileStockageComplexe.append(c3);
+*/
+    _pileAffichage.append("premier Ã©lement de la pile affichage");
+    _pileAffichage.append("deuxiÃ?me Ã©lement de la pile affichage");
+    _pileAffichage.append("troisiÃ?me Ã©lement de la pile affichage");
+
+
+
 
     ui->setupUi(this);
     //CONNEXIONS CLAVIER BASIC
@@ -79,25 +99,28 @@ MainWindow::MainWindow(QWidget *parent) :
     //this->saveToFile();
     this->loadFromFile();
 
-    Pile Stockage;
-    QString tmp0 = "100";
-    Stockage.push(new Entier(tmp0.toInt()));
-    QString tmp1 = "30"; //on detecte que c'est un entier
-    Stockage.push(new Entier(tmp1.toInt()));
-    QString tmp2 = "2.3"; //on detecte que c'est un réel
-    Stockage.push(new Reel(tmp2.toFloat()));
-    ui->listView->setModel(&Stockage);
-    Stockage.push(new Reel(2.3));
-    Stockage.push(new Reel(2.4));
-    Stockage.push(new Reel(2.5));
-
+    /*Complexe c(1,3);
+    Complexe d(2,8);
+    Complexe e(3,8);
+    Complexe f(4,8);
+    Complexe g(5,8);
+    Complexe h(6,8);
+    _pileStockage.append(&c);
+    _pileStockage.append(&c);
+    _pileStockage.append(&d);
+    _pileStockage.append(&e);
+    _pileStockage.append(&f);
+    _pileStockage.append(&g);
+    _pileStockage.append(&h);
+    this->afficheur_pile(_pileStockage);
+    */
 }
 
 
 void MainWindow::afficheur_pile(Pile p){
     //on copie la liste en local pour l'itérer en la détr
-    //ui->listWidget->reset();
-
+    //for (int i=0; i<p.size(); i++)
+      //  ui->listWidget->addItem(p.pop()->afficher());
 }
 
 
@@ -153,7 +176,7 @@ void MainWindow::loadFromFile(){
 
     QTextStream in(&file);
     QString line;
-    //la premiÃ¨re ligne contient _modAngle
+    //la premiÃ?re ligne contient _modAngle
     line = in.readLine();
     if (line=="degre") {
         _modAngle=degre;
@@ -162,7 +185,7 @@ void MainWindow::loadFromFile(){
         _modAngle=radian;
         ui->_modRadians->setChecked(true);
     }
-    //la deuxiÃ¨me ligne contient _mdoComplexe
+    //la deuxiÃ?me ligne contient _mdoComplexe
     line = in.readLine();
     if (line=="complexeOFF") {
         _modComplexe=false;
@@ -171,7 +194,7 @@ void MainWindow::loadFromFile(){
         _modComplexe=true;
         ui->_modComplexeON->setChecked(true);
     }
-    //la deuxiÃ¨me ligne contient _modConstante
+    //la deuxiÃ?me ligne contient _modConstante
     line = in.readLine();
     if (line=="entier") {
         _modConstante=entier;
@@ -476,8 +499,23 @@ void MainWindow::CClicked(){
 }
 
 void MainWindow::ENTERClicked(){
-    QStringList list = ui->inputLine->text().split(" ");
-    ui->inputLine->setText("");
+
+    bool expr = verifInput(ui->inputLine->text());
+    if(expr==true)
+    {
+
+        Expression* ex1 = new Expression(ui->inputLine->text());
+        traitement_expr(ex1->getExpr());
+        /*_pileStockage.push(ex1);
+        Constante* ex2 = _pileStockage.top();
+        qDebug()<<"\nexpression : "<<ex2->afficher();*/
+        ui->inputLine->setText("");
+    }
+   else
+    {
+        QStringList list = ui->inputLine->text().split(" ");
+        ui->inputLine->setText("");
+
 
 float res=0;
 float res2;
@@ -623,50 +661,46 @@ if(!_modComplexe)
         {
             if(_modConstante==entier || _modConstante==reel || _modConstante==rationnel)
             {
+                if(_modAngle==degre)
+                {
                 Constante *e = _pileStockage.pop();
-                _pileStockage.push(e->sinus());
+                _pileStockage.push(e->sinus(true));
+                Constante *ra3 = _pileStockage.top();
+                qDebug()<<ra3->afficher();
+                }
+                else
+                {
+                Constante *e = _pileStockage.pop();
+                _pileStockage.push(e->sinus(false));
+                Constante *ra3 = _pileStockage.top();
+                qDebug()<<ra3->afficher();
+                }
+
+            }
+        }
+
+        else if(temp=="COS")
+        {
+            if(_modConstante==entier || _modConstante==reel || _modConstante==rationnel)
+            {
+                Constante *e = _pileStockage.pop();
+                _pileStockage.push(e->cosinus(true));
                 Constante *ra3 = _pileStockage.top();
                 qDebug()<<ra3->afficher();
             }
-
-         /*   if(_modAngle==degre)
-            {
-                val=_pileStockageReelle.pop();
-                val=val*PI/180;
-                s=sin(val);
-                empiler(s);
-                qDebug()<<_pileStockageReelle.top();
-            }
-            else
-            {
-                s=sin(_pileStockageReelle.pop());
-                empiler(s);
-                qDebug()<<_pileStockageReelle.top();
-           }*/
-        }
-/*
-        else if(temp=="COS")
-        {
-            float c,val;
-            if(_modAngle==degre)
-            {
-                val=_pileStockageReelle.pop();
-                val=val*PI/180;
-                c=cos(val);
-                empiler(c);
-                qDebug()<<_pileStockageReelle.top();
-            }
-            else
-            {
-            c=cos(_pileStockageReelle.pop());
-            empiler(c);
-            qDebug()<<_pileStockageReelle.top();
-            }
         }
 
-        else if(temp=="TAN")
+     /*   else if(temp=="TAN")
         {
-            float t,val;
+            if(_modConstante==entier || _modConstante==reel || _modConstante==rationnel)
+            {
+                Constante *e = _pileStockage.pop();
+                _pileStockage.push(e->tangente());
+                Constante *ra3 = _pileStockage.top();
+                qDebug()<<ra3->afficher();
+            }
+        }*/
+            /*float t,val;
             if(_modAngle==degre)
             {
                 val=_pileStockageReelle.pop();
@@ -794,7 +828,7 @@ if(!_modComplexe)
 
         else if(temp.at(0)=='\'')
         {
-
+            QString s1;
             while(list.at(i).at(0)!='\'')
             {
                 i++;
@@ -816,7 +850,7 @@ if(!_modComplexe)
                 //qDebug()<<_pileAffichage.top();
         }
 
-        else if(temp.at(0)=='-' && temp.at(1)>='0' && temp.at(1)<='9')
+         else if(temp.at(0)=='-' && temp.at(1)>='0' && temp.at(1)<='9')
         {
             QString s;
             for(int i=1;i<temp.size();i++)
@@ -885,7 +919,7 @@ if(!_modComplexe)
         }
 
     }
-}
+}}}
 /*
 else
 {
@@ -1073,7 +1107,6 @@ else
 }
 */
 //qDebug()<<"\nj = "<<j;
-}
 
 MainWindow::~MainWindow()
 {
@@ -1086,19 +1119,33 @@ void MainWindow::empiler(float r)
 }
 
 
-void MainWindow::traitement_expr(int i,int j, QStringList list)
+void MainWindow::traitement_expr(QString s)
 {
-    int it=i;
-    QString s1;
-    qDebug()<<"\ntest traitement d'expression"<<list.at(i+1);
-    while (it!=j)
-    {
-        s1=s1+list.at(it)+" ";
-        it++;
-    }
-    qDebug()<<"\n test s1 : "<<s1;
+    QString s2;
 
-   /* QStringList expr = s1.split('\'');
-    foreach (QString temp2,expr)
-        qDebug()<<"\ntest expr : "<<temp2;*/
+    QStringList list = s.split('\'');
+    foreach(QString temp, list)
+    {
+        qDebug()<<"\n"<<temp;
+        if(temp!=NULL && temp!=" ")
+        {
+            Expression* expr = new Expression(temp);
+            _pileStockage.push(expr);
+            Constante* ex2 = _pileStockage.top();
+            qDebug()<<"\nexpression : "<<ex2->afficher();
+        }
+    }
+
+}
+
+bool MainWindow::verifInput(QString s)
+{
+    int i = 0;
+/*    while (s[i] != NULL)
+    {
+        if(s[i]=='\'')
+            return true;
+        i++;
+    }*/
+    return false;
 }

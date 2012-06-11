@@ -1,3 +1,16 @@
+/**
+ * \file complexe.h
+ * \brief Calculatrice en polonais inversé. Classe composite de gestion des complexes.
+ * \author Aurélien DUMAINE
+ * \author Simon LANCELOT
+ * \version 0.1
+ * \date juin 2012
+ *
+ * Licence : GNU/GPL version 3 (http://www.gnu.org/copyleft/gpl.html)
+  * Dépot Git : http://code.google.com/p/lo21-npi/
+ *
+ */
+
 #ifndef COMPLEXE_H
 #define COMPLEXE_H
 
@@ -30,7 +43,8 @@ public:
     virtual Constante* soustraction(Constante* c);
     virtual Constante* inv();
     virtual Constante* fact();
-    virtual Constante* sinus();
+    virtual Constante* sinus(bool angle);
+    virtual Constante* cosinus(bool angle);
 };
 
 class FrabriqueComplexe : public Complexe{

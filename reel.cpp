@@ -5,6 +5,7 @@
 #include <typeinfo>
 #include <QString>
 #include <iostream>
+#define PI 3.14
 
 Rationnel Reel::toRationnel() const {
     //DANS LE BUT DE NE PAS PERDRE DE PRÉCISION LORS DES DIVISIONS ON A BESOIN DE TRANSFORMER LES RÉELS EN RATIONNELS
@@ -120,9 +121,22 @@ Constante *Reel::inv()
     return new Reel(1/this->getValeur());
 }
 
-Constante* Reel::sinus()
+Constante* Reel::sinus(bool angle)
 {
-    Reel *e = new Reel(sin(_valeur));
+    float res = _valeur;
+    if(angle)
+        res=res*PI/180;
+    Reel *e = new Reel(sin(res));
+    return new Complexe(e);
+
+}
+
+Constante* Reel::cosinus(bool angle)
+{
+    float res = _valeur;
+    if(angle)
+        res=res*PI/180;
+    Reel *e = new Reel(cos(res));
     return new Complexe(e);
 }
 

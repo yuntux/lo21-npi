@@ -7,6 +7,7 @@
  * \date juin 2012
  *
  * Licence : GNU/GPL version 3 (http://www.gnu.org/copyleft/gpl.html)
+ * Dépot Git : http://code.google.com/p/lo21-npi/
  *
  */
 #ifndef ENTIER_H
@@ -31,9 +32,10 @@ public:
     virtual Constante* division(Constante* c);
     virtual Constante* soustraction(Constante* c);
     int mod(Entier *c);
-    virtual Constante* inv();
     virtual Constante* fact();
-    virtual Constante* sinus();
+    virtual Constante* inv();
+    virtual Constante* sinus(bool angle);
+    virtual Constante* cosinus(bool angle);
 };
 
 #endif // ENTIER_H

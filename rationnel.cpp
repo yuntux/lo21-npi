@@ -4,6 +4,7 @@
 #include "reel.h"
 #include <typeinfo>
 #include "fonctions.h"
+#define PI 3.14
 
 Rationnel::Rationnel(Constante* c) {
     if (typeid(*c)==typeid(Complexe)){
@@ -146,9 +147,21 @@ Constante* Rationnel::fact()
     return this;
 }
 
-Constante* Rationnel::sinus()
+Constante* Rationnel::sinus(bool angle)
 {
-    Rationnel *r = new Rationnel(sin(_numerateur/_denominateur),1);
+    float res= _numerateur/_denominateur;
+    if(angle==true)
+        res=res*PI/180;
+    Rationnel *r = new Rationnel(sin(res),1);
+    return new Complexe(r);
+}
+
+Constante* Rationnel::cosinus(bool angle)
+{
+    float res= _numerateur/_denominateur;
+    if(angle==true)
+        res=res*PI/180;
+    Rationnel *r = new Rationnel(cos(res),1);
     return new Complexe(r);
 }
 

@@ -4,6 +4,7 @@
 #include "reel.h"
 #include <typeinfo>
 #include <cmath>
+#define PI 3.14
 
 Entier::Entier(Constante* c) {
     if (Entier *c_entier=dynamic_cast<Entier *>(c)){
@@ -127,18 +128,22 @@ Constante* Entier::fact()
     return new Complexe(e);
 }
 
-Constante* Entier::sinus()
+Constante* Entier::sinus(bool angle)
 {
     float res = _valeur;
+    if(angle==true)
+        res=res*PI/180;
     Entier *e = new Entier(sin(res));
     return new Complexe(e);
 }
 
-int Entier::mod(Entier* c)
+Constante* Entier::cosinus(bool angle)
 {
-    int res;
-    res=_valeur%c->getValeur();
-    return res;
+    float res = _valeur;
+    if(angle==true)
+        res=res*PI/180;
+    Entier *e = new Entier(cos(res));
+    return new Complexe(e);
 }
 
 

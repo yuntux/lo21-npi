@@ -40,19 +40,17 @@ Constante* Expression::fact()
     return this;
 }
 
-Constante* Expression::sinus()
+Constante* Expression::sinus(bool angle)
+{
+    return this;
+}
+
+Constante* Expression::cosinus(bool angle)
 {
     return this;
 }
 
 QString Expression::afficher() const
 {
-    return "oops";
+    return _expr;
 }
-
-
-
-
-
-
-

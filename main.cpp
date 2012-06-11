@@ -18,7 +18,7 @@
 //DocDOXYGEN
 //Rapport et modélisation UML(diag de class et diag de séquence)
 
-//QListview
+//http://doc.qt.nokia.com/4.7-snapshot/demos-undo.html
 
 //Annuller rétablir doit prendre un int en paramètre
 //dans la pile de calcul : on stocke 5,4,+,20

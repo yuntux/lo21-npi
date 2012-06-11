@@ -129,9 +129,15 @@ Constante* Complexe::fact()
     return this;
 }
 
-Constante* Complexe::sinus()
+Constante* Complexe::sinus(bool angle)
 {
     throw LogMessage(2,"La fonction SIN n'est pas implémentée pour les complexes.", moyen);
+    return this;
+}
+
+Constante* Complexe::cosinus(bool angle)
+{
+    throw LogMessage(2,"La fonction COS n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
 

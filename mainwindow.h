@@ -17,7 +17,7 @@
 #include <QMainWindow>
 #include <QStack>
 #include "pile.h"
-
+#define PI 3.14
 
 enum MesureAngle { degre, radian};
 //enum TypeConstante { entier, reel, rationnel};
@@ -45,9 +45,11 @@ private:
 
 public:
     explicit MainWindow(QWidget *parent = 0);
-    void traitement_expr(int i,int j, QStringList list);
+    void traitement_expr(QString s);
     ~MainWindow();
     void empiler(float r);
+    MesureAngle getAngle(){return _modAngle;}
+    bool verifInput(QString s);
 
 public slots:
    void POWClicked();

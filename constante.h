@@ -1,3 +1,16 @@
+/**
+ * \file constante.h
+ * \brief Calculatrice en polonais inversé. Classe composite de gestion des constantes.
+ * \author Aurélien DUMAINE
+ * \author Simon LANCELOT
+ * \version 0.1
+ * \date juin 2012
+ *
+ * Licence : GNU/GPL version 3 (http://www.gnu.org/copyleft/gpl.html)
+ * Dépot Git : http://code.google.com/p/lo21-npi/
+ *
+ */
+
 #ifndef CONSTANTE_H
 #define CONSTANTE_H
 
@@ -26,7 +39,8 @@ public:
     virtual Constante* soustraction(Constante* c)=0;
     virtual Constante* inv()=0;
     virtual Constante* fact()=0;
-    virtual Constante* sinus()=0;
+    virtual Constante* sinus(bool angle)=0;
+    virtual Constante* cosinus(bool angle)=0;
 };
 
 class FrabriqueConstante{
