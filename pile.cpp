@@ -62,15 +62,38 @@ Constante* Pile::pop()
 
 Constante* Pile::sum(unsigned int x)
 {
-    /*
-    Constante* res= new Complexe;
-    res = 0;
+    Constante* res = new Complexe(0);
+
     for(int i=0;i<x;i++)
     {
-        res=res->addition(top());
-        this->pop();
+        res=res->addition(this->pop());
     }
     this->push(res);
     return res;
-    */
+}
+
+Constante* Pile::mean(unsigned int x)
+{
+    Constante* tmp = this->sum(x);
+    Entier e(x);
+    return new Complexe(tmp->division(&e));
+}
+
+void Pile::clear(){
+    for(int i=0; i<this->size(); i++){
+        Constante* tmp = this->pop();
+        delete(tmp);
+    }
+}
+
+void Pile::dup(){
+    Constante* tmp = this->pop();
+    Constante* tmp2 = tmp->recopie();
+    this->push(tmp);
+    this->push(tmp2);
+}
+
+void Pile::drop(){
+    Constante* tmp = this->pop();
+    delete(tmp);
 }

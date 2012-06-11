@@ -25,6 +25,10 @@ public:
     Pile(QObject *parent = 0):QAbstractListModel(parent){};
     virtual ~Pile();
     Constante* sum(unsigned int x=2);
+    Constante* mean(unsigned int x=2);
+    void clear();
+    void dup();
+    void drop();
     QString afficher() const;
 
     //surcharge des fonctions virtuelles pures de QAbstractItemModel
