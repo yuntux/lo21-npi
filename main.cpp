@@ -57,9 +57,9 @@ int main(int argc, char *argv[])
     Complexe c31(&re1, &re2);
     Complexe c32(&re1, &ra3);
     Complexe c33(&re1, &e3);
-    qDebug() << re1.cosinus(false)->afficher(); //on passe false en param des fonctions trigo lorsque l'on est en mod rad
-    qDebug() << re2.cosinus(true)->afficher();
-    qDebug() << e1.cosinus(true)->afficher(); //on passe false en param des fonctions trigo lorsque l'on est en mod degres
+    //qDebug() << re1.cosinus(false)->afficher(); //on passe false en param des fonctions trigo lorsque l'on est en mod rad
+    //qDebug() << re2.cosinus(true)->afficher();
+    //qDebug() << e1.cosinus(true)->afficher(); //on passe false en param des fonctions trigo lorsque l'on est en mod degres
     try {
         ra1.setDenominateur(0);
     }
@@ -68,7 +68,15 @@ int main(int argc, char *argv[])
         // FIXME : interagir avec logsystem
         cerr << "ERREUR : " << e.what() << endl;
     }
-    //Pile Stockage;
+    Pile Stockage;
+    Stockage.push(&e1);
+    Stockage.push(&re1);
+    Stockage.push(&ra1);
+    Stockage.push(&c11);
+    qDebug() << Stockage.afficher();
+    Stockage.swap(1,3);
+    qDebug() << Stockage.afficher();
+
     //qDebug() << e1.division(&c11)->afficher();
     //qDebug() << ra1.division(&c11)->afficher();
     //qDebug() << re1.division(&c11)->afficher();

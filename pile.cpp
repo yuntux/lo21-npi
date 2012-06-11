@@ -97,3 +97,10 @@ void Pile::drop(){
     Constante* tmp = this->pop();
     delete(tmp);
 }
+
+void Pile::swap(unsigned int x, unsigned int y){
+    Constante* tmp1 = p.at(x);
+    Constante* tmp2 = p.at(y);
+    p[x] = tmp2;
+    p[y] = tmp1;
+}

@@ -29,6 +29,7 @@ public:
     void clear();
     void dup();
     void drop();
+    void swap(unsigned int x, unsigned int y);
     QString afficher() const;
 
     //surcharge des fonctions virtuelles pures de QAbstractItemModel
