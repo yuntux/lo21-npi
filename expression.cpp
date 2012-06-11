@@ -60,6 +60,16 @@ Constante* Expression::cosinush(bool angle)
     return this;
 }
 
+Constante* Expression::tangente(bool angle)
+{
+    return this;
+}
+
+Constante* Expression::tangenteh(bool angle)
+{
+    return this;
+}
+
 QString Expression::afficher() const
 {
     return _expr;

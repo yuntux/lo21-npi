@@ -43,6 +43,8 @@ public:
     virtual Constante* cosinus(bool angle)=0;
     virtual Constante* sinush(bool angle)=0;
     virtual Constante* cosinush(bool angle)=0;
+    virtual Constante* tangente(bool angle){};
+    virtual Constante* tangenteh(bool angle){};
 };
 
 class FrabriqueConstante{

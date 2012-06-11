@@ -163,6 +163,28 @@ Constante* Entier::cosinush(bool angle)
     Entier *e = new Entier(cosh(res));
     return new Complexe(e);
 }
+
+
+Constante* Entier::tangente(bool angle)
+{
+    float res = _valeur;
+    if(angle==true)
+        res=res*PI/180;
+    Entier *e = new Entier(tan(res));
+    return new Complexe(e);
+
+}
+
+Constante* Entier::tangenteh(bool angle)
+{
+    float res = _valeur;
+    if(angle==true)
+        res=res*PI/180;
+    Entier *e = new Entier(tanh(res));
+    return new Complexe(e);
+
+}
+
 Constante *Entier::inv()
 {
     //FIXME : pas d'inverse pour les entiers sans perte de précision

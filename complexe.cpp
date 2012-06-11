@@ -153,6 +153,18 @@ Constante* Complexe::cosinush(bool angle)
     return this;
 }
 
+Constante* Complexe::tangente(bool angle)
+{
+    throw LogMessage(2,"La fonction TAN n'est pas implémentée pour les complexes.", moyen);
+    return this;
+}
+
+Constante* Complexe::tangenteh(bool angle)
+{
+    throw LogMessage(2,"La fonction TANH n'est pas implémentée pour les complexes.", moyen);
+    return this;
+}
+
 
 Constante* Complexe::inv()
 {

@@ -149,6 +149,25 @@ Constante* Reel::cosinush(bool angle)
     return new Complexe(e);
 }
 
+
+Constante* Reel::tangente(bool angle)
+{
+    float res = _valeur;
+    if(angle)
+        res=res*PI/180;
+    Reel *e = new Reel(tan(res));
+    return new Complexe(e);
+}
+
+Constante* Reel::tangenteh(bool angle)
+{
+    float res = _valeur;
+    if(angle)
+        res=res*PI/180;
+    Reel *e = new Reel(tanh(res));
+    return new Complexe(e);
+}
+
 Constante* Reel::sinush(bool angle)
 {
     float res = _valeur;

@@ -40,6 +40,8 @@ public:
     virtual Constante* cosinus(bool angle);
     virtual Constante* sinush(bool angle);
     virtual Constante* cosinush(bool angle);
+    virtual Constante* tangente(bool angle);
+    virtual Constante* tangenteh(bool angle);
 
 
 };

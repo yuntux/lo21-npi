@@ -183,6 +183,25 @@ Constante* Rationnel::cosinush(bool angle)
     return new Complexe(r);
 }
 
+
+Constante* Rationnel::tangente(bool angle)
+{
+    float res= _numerateur/_denominateur;
+    if(angle==true)
+        res=res*PI/180;
+    Rationnel *r = new Rationnel(tan(res),1);
+    return new Complexe(r);
+}
+
+Constante* Rationnel::tangenteh(bool angle)
+{
+    float res= _numerateur/_denominateur;
+    if(angle==true)
+        res=res*PI/180;
+    Rationnel *r = new Rationnel(tanh(res),1);
+    return new Complexe(r);
+}
+
 Constante *Rationnel::inv()
 {
     Rationnel* tmp = new Rationnel(this->getDenominateur(),this->getNumerateur());
