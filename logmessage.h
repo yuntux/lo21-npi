@@ -21,7 +21,13 @@ class LogMessage: public exception
     enum niveau _level;               // Niveau de l'erreur.
 
 public:
-    LogMessage(int numero=0, string const& phrase="", enum niveau lev=faible) throw() : m_numero(numero),m_phrase(phrase),_level(lev){}
+    LogMessage(int numero=0, string const &phrase="", enum niveau lev=faible) throw() : m_numero(numero),m_phrase(phrase),_level(lev){
+        QMessageBox msgBox;
+        QString contenu(this->what());
+        contenu.toUtf8();
+        msgBox.setText(contenu);
+        msgBox.exec();
+    }
 
      virtual const char* what() const throw()     { return m_phrase.c_str(); }
 

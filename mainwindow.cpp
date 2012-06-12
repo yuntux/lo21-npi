@@ -1162,34 +1162,42 @@ bool MainWindow::verifInput(QString s)
 
 
 void MainWindow::ENTERClicked(){
-    QString s = ui->inputLine->text();
-    ui->inputLine->setText("");
+    try {
+        QString s = ui->inputLine->text();
+        ui->inputLine->setText("");
 
-    bool dans_une_exp = false; //interrupteur qui permet de savoir si on est entre deux quotes
-    QString chaine; //bloc qui est soit une expression soit un bloc à calculer
-    for (int i=0; i<s.length();i++){
-        if(s.at(i) == '\''){
-            if (dans_une_exp){
-                //on était déjà dans une epxression donc on est sur le quote de sortie
-                traiter_bloc_expression(chaine); //cette fonction doit concat avec le dernier element de la pile si c'est une expr?
-                dans_une_exp = false;
-                chaine = "";
+        bool dans_une_exp = false; //interrupteur qui permet de savoir si on est entre deux quotes
+        QString chaine; //bloc qui est soit une expression soit un bloc à calculer
+        for (int i=0; i<s.length();i++){
+            if(s.at(i) == '\''){
+                if (dans_une_exp){
+                    //on était déjà dans une epxression donc on est sur le quote de sortie
+                    traiter_bloc_expression(chaine); //cette fonction doit concat avec le dernier element de la pile si c'est une expr?
+                    dans_une_exp = false;
+                    chaine = "";
+                } else {
+                    //on rencontre le quote d'ouverture d'une chaine, ce qui était avant doit etre empilé/calculé
+                    traiter_bloc_calcul(chaine);
+                    dans_une_exp = true;
+                    chaine = "";
+                }
             } else {
-                //on rencontre le quote d'ouverture d'une chaine, ce qui était avant doit etre empilé/calculé
-                traiter_bloc_calcul(chaine);
-                dans_une_exp = true;
-                chaine = "";
+                //qu'on soit ou non dans une chaine on ajoute ce caractère à la sous-chaine en cours
+                chaine = chaine + s.at(i);
             }
-        } else {
-            //qu'on soit ou non dans une chaine on ajoute ce caractère à la sous-chaine en cours
-            chaine = chaine + s.at(i);
         }
+        //une fois à la fin de l'expression
+            if (dans_une_exp)
+                throw("Erreur, nombre de quote impaire");
+            else
+                 traiter_bloc_calcul(chaine);
     }
-    //une fois à la fin de l'expression
-        if (dans_une_exp)
-            throw("Erreur, nombre de quote impaire");
-        else
-             traiter_bloc_calcul(chaine);
+    catch(std::exception const& e)
+    {
+        // FIXME : interagir avec logsystem
+        cerr << "ERREUR : " << e.what() << endl;
+    }
+    qDebug() << Calculatrice::getInstance().getPileStockage()->afficher();
 }
 
 void MainWindow::traiter_bloc_calcul(QString s){
