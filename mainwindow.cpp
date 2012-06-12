@@ -1115,7 +1115,7 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-
+/*
 void MainWindow::empiler(float r)
 {
     _pileStockageReelle.push(r);
@@ -1139,7 +1139,7 @@ void MainWindow::traitement_expr(QString s)
         }
     }
 
-}
+}*/
 
 bool MainWindow::verifInput(QString s)
 {
@@ -1188,7 +1188,7 @@ void MainWindow::ENTERClicked(){
         }
         //une fois à la fin de l'expression
             if (dans_une_exp)
-                throw("Erreur, nombre de quote impaire");
+                throw("Erreur, nombre de quote(s) impaire");
             else
                  traiter_bloc_calcul(chaine);
     }
