@@ -7,7 +7,7 @@ class Expression : public Constante
     QString _expr;
 public:
     Expression(QString s);
-    virtual ~Expression(){}
+    //virtual ~Expression(){}
     QString getExpr() const {return _expr;}
     void setExpr(QString e){ _expr = e;}
     virtual Constante* addition(Constante* c);

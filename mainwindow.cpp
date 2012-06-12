@@ -10,6 +10,7 @@
 #include "rationnel.h"
 #include "entier.h"
 #include "expression.h"
+#include "calculatrice.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -1150,19 +1151,30 @@ bool MainWindow::verifInput(QString s)
     return false;
 }
 
-void traiter_contenu_inputLine (QString s){
-    bool dans_une_exp = false;
-    QString chaine;
+
+
+
+/**************************************************/
+/*             TRAITEMENT AUREL                   */
+/**************************************************/
+
+/*
+void MainWindow::ENTERClickedAurel(){
+    QString s = ui->inputLine->text();
+    ui->inputLine->setText("");
+
+    bool dans_une_exp = false; //interrupteur qui permet de savoir si on est entre deux quotes
+    QString chaine; //bloc qui est soit une expression soit un bloc à calculer
     for (int i=0; i<s.length();i++){
         if(s.at(i) == '\''){
             if (dans_une_exp){
                 //on était déjà dans une epxression donc on est sur le quote de sortie
-//                ajout_pile_affichage(chaine); //cette fonction doit concat avec la chaine d'avant ?
+                traiter_bloc_expression(chaine); //cette fonction doit concat avec le dernier element de la pile si c'est une expr?
                 dans_une_exp = false;
                 chaine = "";
             } else {
                 //on rencontre le quote d'ouverture d'une chaine, ce qui était avant doit etre empilé/calculé
-//              fonction_calcul(chaine);
+                traiter_bloc_calcul(chaine);
                 dans_une_exp = true;
                 chaine = "";
             }
@@ -1171,4 +1183,86 @@ void traiter_contenu_inputLine (QString s){
             chaine = chaine + s.at(i);
         }
     }
+    //une fois à la fin de l'expression
+        if (dans_une_exp)
+            throw("Erreur, nombre de quote impaire");
+        else
+             traiter_bloc_calcul(chaine);
 }
+
+void traiter_bloc_calcul(QString s){
+    QStringList list = s.split(" ");
+
+    //la vérification du _modConstante n'intervient que lorsque l'on tente d'insérer une constante dans la pile de stockage et à l'affichage
+    //la vérification du _modAngle n'intervient que lors du calcul d'une fonction trigo
+    bool type_angle = false;
+    if(getInstance().getModAngle==degre)
+        type_angle = true;
+    //la vérification du _modComplexe n'intervient que lorsque l'on tente d'insérer un complexe dans la pile de stockage
+    foreach(QString temp, list)
+    {
+        //si c'est un opérateur on a besoin d'au moins un opérande pour faire un calcul
+        if(temp=="+" || temp=="*" || temp=="-" || temp=="/" || temp=="!" || temp=="SIN" || temp=="SINH"  || temp=="COS" || temp=="COSH" || temp=="TAN" || temp=="TANH" || temp=="INV" || temp=="SIGN")
+            Constante* operande1 = getInstance().getPileStockage().pop();
+        //si c'est un operateur binaire on a besoin de deux opérandes
+        if(temp=="+" || temp=="*" || temp=="-" || temp=="/")
+            Constante* operande2 = getInstance().getPileStockage().pop();
+
+
+        if(temp=="+")
+            getInstance().getPileStockage().push(operande1->addition(operande2));
+        else if(temp=="*")
+            getInstance().getPileStockage().push(operande1->produit(operande2));
+        else if(temp=="/")
+            getInstance().getPileStockage().push(operande1->diviser(operande2));
+        else if(temp=="-")
+            getInstance().getPileStockage().push(operande1->soustraction(operande2));
+        else if(temp=="!")
+            getInstance().getPileStockage().push(operande1->fact());
+        else if(temp=="SIN")
+            getInstance().getPileStockage().push(operande1->sinus(type_angle));
+        else if(temp=="SINH")
+            getInstance().getPileStockage().push(operande1->sinush(type_angle));
+        else if(temp=="COS")
+            getInstance().getPileStockage().push(operande1->cosinus(type_angle));
+        else if(temp=="COSH")
+            getInstance().getPileStockage().push(operande1->cosinush(type_angle));
+        else if(temp=="TAN")
+            getInstance().getPileStockage().push(operande1->tangente(type_angle));
+        else if(temp=="TANH")
+            getInstance().getPileStockage().push(operande1->tangenteh(type_angle));
+        else if(temp=="INV")
+            getInstance().getPileStockage().push(operande1->inv());
+        else if(temp=="SIGN")
+            getInstance().getPileStockage().push(operande1->signe());
+        else {
+            // UTILISER LES BLOCS TRY/CATCH  POUR ESSAYER DE CONVERTIR ?
+            // PREVOIR UNE FABRIQUE DE CONSTANTES ?
+            //on essaye de voir si c'est convertible en une constante
+                //on essaye de voir si c'est convertible en un int temp.toInt();
+                        //getInstance().getPileStockage().push(new Entier(temp.toInt()));
+                //on essaye de voir si c'est convertible en un double temp.toDouble();
+                        //getInstance().getPileStockage().push(new Reel(temp.toDouble()));
+                //on essaye de voir s'il obéit à la regexp d'un rationnel du genre ([0-9])/([0-9])
+                        //numerateur = split partie à gauche du /
+                        //denominateur = split partie à droite du /
+                        //getInstance().getPileStockage().push(new Rationnel(numerateur.toInt(), denominateur.toInt()));
+                //on essaye de voir s'il obéit à la regexp d'un complexe du genre ???
+                        //imaginaire = split partie à gauche du $
+                        //reel = split partie à droite du $
+                        //ATTENTION : traitement visiblement imcomplet pour la construction des complexes
+                        //im =
+                        //re =
+                        //getInstance().getPileStockage().push(new Complexe(im,re));
+                        //ATTENTION : traitement visiblement imcomplet pour la construction des complexes
+            //sinon c'est une constante de type inconnue
+                //on lève une exception
+        }
+    }
+}
+
+void traiter_bloc_expression(QString s){
+        //ajouter à la pile d'affichage
+        //concater à la ligned'avant si c'est aussi une expression
+}
+*/
