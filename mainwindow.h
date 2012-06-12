@@ -43,6 +43,7 @@ private:
     void saveToFile();
     void loadFromFile();
 
+
 public:
     explicit MainWindow(QWidget *parent = 0);
     void traitement_expr(QString s);
@@ -50,6 +51,9 @@ public:
     void empiler(float r);
     MesureAngle getAngle(){return _modAngle;}
     bool verifInput(QString s);
+    void traiter_bloc_expression(QString s);
+    void traiter_bloc_calcul(QString s);
+    Constante* stringToConstante(QString s);
 
 public slots:
    void POWClicked();

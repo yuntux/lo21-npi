@@ -3,6 +3,14 @@
 #include <QtGui>
 #include <exception>
 
+/*********CODES ERREUR
+1,"Division par zéro", important
+2,"La fonction X n'est pas implémentée pour les Y.", moyen
+3,"Type de constante non prévu dans la fonction Constante* Reel::soustraction(Constante* c).", important
+5,"Nombre d'opérandes  dans la pile insuffisant.", moyen
+6,"La chaine saisie est invalide", moyen
+**********/
+
 enum niveau {faible, moyen, important};
 using namespace std;
 

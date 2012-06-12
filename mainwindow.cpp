@@ -499,6 +499,7 @@ void MainWindow::CClicked(){
     ui->inputLine->setText(newstring);
 }
 
+/*
 void MainWindow::ENTERClicked(){
 
     bool expr = verifInput(ui->inputLine->text());
@@ -507,9 +508,9 @@ void MainWindow::ENTERClicked(){
 
         Expression* ex1 = new Expression(ui->inputLine->text());
         traitement_expr(ex1->getExpr());
-        /*_pileStockage.push(ex1);
+        _pileStockage.push(ex1);
         Constante* ex2 = _pileStockage.top();
-        qDebug()<<"\nexpression : "<<ex2->afficher();*/
+        qDebug()<<"\nexpression : "<<ex2->afficher();
         ui->inputLine->setText("");
     }
    else
@@ -863,6 +864,7 @@ if(!_modComplexe)
             qDebug()<<"\n"<<_pileStockageReelle.top();
         }
 */
+        /*
         else if(temp[0]>='0' && temp[0]<='9')
         {
             if(_modConstante==rationnel)
@@ -1159,7 +1161,7 @@ bool MainWindow::verifInput(QString s)
 /**************************************************/
 
 
-void MainWindow::ENTERClickedAurelien(){
+void MainWindow::ENTERClicked(){
     QString s = ui->inputLine->text();
     ui->inputLine->setText("");
 
@@ -1190,7 +1192,8 @@ void MainWindow::ENTERClickedAurelien(){
              traiter_bloc_calcul(chaine);
 }
 
-void traiter_bloc_calcul(QString s){
+void MainWindow::traiter_bloc_calcul(QString s){
+    s.simplified();
     QStringList list = s.split(" ");
     Calculatrice& calc = Calculatrice::getInstance();
 
@@ -1206,10 +1209,17 @@ void traiter_bloc_calcul(QString s){
         Constante* operande2;
         //si c'est un opérateur on a besoin d'au moins un opérande pour faire un calcul
         if(temp=="+" || temp=="*" || temp=="-" || temp=="/" || temp=="!" || temp=="SIN" || temp=="SINH"  || temp=="COS" || temp=="COSH" || temp=="TAN" || temp=="TANH" || temp=="INV" || temp=="SIGN")
-            operande1 = calc.getPileStockage()->pop();
-        //si c'est un operateur binaire on a besoin de deux opérandes
+            if (!calc.getPileStockage()->isEmpty())
+                operande1 = calc.getPileStockage()->pop();
+            else
+                throw LogMessage(5,"Nombre d'opérandes insuffisants dans la pile.", moyen);
+
+        //si c'est un operateur binaire on a besoin d'un second opérandes
         if(temp=="+" || temp=="*" || temp=="-" || temp=="/")
-            operande2 = calc.getPileStockage()->pop();
+            if (!calc.getPileStockage()->isEmpty())
+                operande2 = calc.getPileStockage()->pop();
+            else
+                throw LogMessage(5,"Nombre d'opérandes dans la pile insuffisant.", moyen);
 
         if(temp=="+")
             calc.getPileStockage()->push(operande1->addition(operande2));
@@ -1238,32 +1248,45 @@ void traiter_bloc_calcul(QString s){
         else if(temp=="SIGN")
             calc.getPileStockage()->push(operande1->signe());
         else {
-            // UTILISER LES BLOCS TRY/CATCH  POUR ESSAYER DE CONVERTIR ?
-            // PREVOIR UNE FABRIQUE DE CONSTANTES ?
-            //on essaye de voir si c'est convertible en une constante
-                //on essaye de voir si c'est convertible en un int temp.toInt();
-                        //calc.getPileStockage()->push(new Entier(temp.toInt()));
-                //on essaye de voir si c'est convertible en un double temp.toDouble();
-                        //calc.getPileStockage()->push(new Reel(temp.toDouble()));
-                //on essaye de voir s'il obéit à la regexp d'un rationnel du genre ([0-9])/([0-9])
-                        //numerateur = split partie à gauche du /
-                        //denominateur = split partie à droite du /
-                        //calc.getPileStockage()->push(new Rationnel(numerateur.toInt(), denominateur.toInt()));
-                //on essaye de voir s'il obéit à la regexp d'un complexe du genre ???
-                        //imaginaire = split partie à gauche du $
-                        //reel = split partie à droite du $
-                        //ATTENTION : traitement visiblement imcomplet pour la construction des complexes
-                        //im =
-                        //re =
-                        //calc.getPileStockage()->push(new Complexe(im,re));
-                        //ATTENTION : traitement visiblement imcomplet pour la construction des complexes
-            //sinon c'est une constante de type inconnue
-                //on lève une exception
+            //on essaye de convertir la chaine en constante
+            Constante* nouvelle_constante = stringToConstante(temp);
+            //si c'est convertible, on l'empile
+            if (nouvelle_constante)
+                    calc.getPileStockage()->push(nouvelle_constante);
+            else
+                throw LogMessage(6,"La chaine saisie est invalide", moyen);
         }
     }
 }
 
-void traiter_bloc_expression(QString s){
+Constante* MainWindow::stringToConstante(QString temp){
+//on essaye de voir si c'est convertible en un int temp.toInt();
+        QRegExp regexpEntier("^[\\d]*$");
+        if (regexpEntier.exactMatch(temp))
+            return new Entier(temp.toInt());
+//on essaye de voir si c'est convertible en un double temp.toDouble();
+        QRegExp regexpReel("^[\\d]*.[\\d]$");
+        if (regexpReel.exactMatch(temp))
+            return new Reel(temp.toDouble());
+//on essaye de voir s'il obéit à la regexp d'un rationnel du genre ([0-9])/([0-9])
+        QRegExp regexpRationnel("^[\\d]*/[\\d]*$");
+        if (regexpRationnel.exactMatch(temp)) {
+            QStringList r = temp.split("/");
+            return new Rationnel(r.at(0).toInt(), r.at(1).toInt());
+        }
+//on essaye de voir si on peut construire un complexe à partir de temp
+        //si temp contient exactement un dollar
+        if (temp.count(QRegExp("$"))==1) {
+            QStringList c = temp.split("\$");
+            Constante* re = stringToConstante(c.at(0));
+            Constante* im = stringToConstante(c.at(1));
+            return new Complexe(re, im);
+        }
+        //non convertible en une constante
+        return NULL;
+}
+
+void MainWindow::traiter_bloc_expression(QString s){
         //ajouter à la bonne pile
         //concater à la ligned'avant si c'est aussi une expression
 }

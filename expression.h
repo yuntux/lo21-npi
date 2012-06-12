@@ -2,6 +2,8 @@
 #define EXPRESSION_H
 #include "constante.h"
 
+
+
 class Expression : public Constante
 {
     QString _expr;
