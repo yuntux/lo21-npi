@@ -29,14 +29,6 @@ class Calculatrice
     Pile _pileStockage;
     Pile _pileAffichage;
 
-    Pile* getPileStockage() {return &_pileStockage;}
-    Pile* getPileAffichage() {return &_pileAffichage;}
-    enum MesureAngle getMesureAngle() const {return _modAngle;}
-    enum Type getModConstante() const {return _modConstante;}
-    bool getModComplexe() const {return _modComplexe;}
-    void setModConstante(enum Type t){_modConstante = t;}
-    void setMesureAngle(enum MesureAngle a){_modAngle = a;}
-    void setModComplexe(bool c){_modComplexe = c;}
     //void saveToFile();
     //void loadFromFile();
 
@@ -48,6 +40,15 @@ protected:
 public:
     static Calculatrice& getInstance();
     static void libereInstance();
+
+    Pile* getPileStockage() {return &_pileStockage;}
+    Pile* getPileAffichage() {return &_pileAffichage;}
+    enum MesureAngle getMesureAngle() const {return _modAngle;}
+    enum Type getModConstante() const {return _modConstante;}
+    bool getModComplexe() const {return _modComplexe;}
+    void setModConstante(enum Type t){_modConstante = t;}
+    void setMesureAngle(enum MesureAngle a){_modAngle = a;}
+    void setModComplexe(bool c){_modComplexe = c;}
 };
 
 #endif // CALCULATRICE_H

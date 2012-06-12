@@ -1158,8 +1158,8 @@ bool MainWindow::verifInput(QString s)
 /*             TRAITEMENT AUREL                   */
 /**************************************************/
 
-/*
-void MainWindow::ENTERClickedAurel(){
+
+void MainWindow::ENTERClickedAurelien(){
     QString s = ui->inputLine->text();
     ui->inputLine->setText("");
 
@@ -1192,68 +1192,70 @@ void MainWindow::ENTERClickedAurel(){
 
 void traiter_bloc_calcul(QString s){
     QStringList list = s.split(" ");
+    Calculatrice& calc = Calculatrice::getInstance();
 
     //la vérification du _modConstante n'intervient que lorsque l'on tente d'insérer une constante dans la pile de stockage et à l'affichage
     //la vérification du _modAngle n'intervient que lors du calcul d'une fonction trigo
     bool type_angle = false;
-    if(getInstance().getModAngle==degre)
+    if(calc.getMesureAngle()==degre)
         type_angle = true;
     //la vérification du _modComplexe n'intervient que lorsque l'on tente d'insérer un complexe dans la pile de stockage
     foreach(QString temp, list)
     {
+        Constante* operande1;
+        Constante* operande2;
         //si c'est un opérateur on a besoin d'au moins un opérande pour faire un calcul
         if(temp=="+" || temp=="*" || temp=="-" || temp=="/" || temp=="!" || temp=="SIN" || temp=="SINH"  || temp=="COS" || temp=="COSH" || temp=="TAN" || temp=="TANH" || temp=="INV" || temp=="SIGN")
-            Constante* operande1 = getInstance().getPileStockage().pop();
+            operande1 = calc.getPileStockage()->pop();
         //si c'est un operateur binaire on a besoin de deux opérandes
         if(temp=="+" || temp=="*" || temp=="-" || temp=="/")
-            Constante* operande2 = getInstance().getPileStockage().pop();
-
+            operande2 = calc.getPileStockage()->pop();
 
         if(temp=="+")
-            getInstance().getPileStockage().push(operande1->addition(operande2));
+            calc.getPileStockage()->push(operande1->addition(operande2));
         else if(temp=="*")
-            getInstance().getPileStockage().push(operande1->produit(operande2));
+            calc.getPileStockage()->push(operande1->produit(operande2));
         else if(temp=="/")
-            getInstance().getPileStockage().push(operande1->diviser(operande2));
+            calc.getPileStockage()->push(operande1->division(operande2));
         else if(temp=="-")
-            getInstance().getPileStockage().push(operande1->soustraction(operande2));
+            calc.getPileStockage()->push(operande1->soustraction(operande2));
         else if(temp=="!")
-            getInstance().getPileStockage().push(operande1->fact());
+            calc.getPileStockage()->push(operande1->fact());
         else if(temp=="SIN")
-            getInstance().getPileStockage().push(operande1->sinus(type_angle));
+            calc.getPileStockage()->push(operande1->sinus(type_angle));
         else if(temp=="SINH")
-            getInstance().getPileStockage().push(operande1->sinush(type_angle));
+            calc.getPileStockage()->push(operande1->sinush(type_angle));
         else if(temp=="COS")
-            getInstance().getPileStockage().push(operande1->cosinus(type_angle));
+            calc.getPileStockage()->push(operande1->cosinus(type_angle));
         else if(temp=="COSH")
-            getInstance().getPileStockage().push(operande1->cosinush(type_angle));
+            calc.getPileStockage()->push(operande1->cosinush(type_angle));
         else if(temp=="TAN")
-            getInstance().getPileStockage().push(operande1->tangente(type_angle));
+            calc.getPileStockage()->push(operande1->tangente(type_angle));
         else if(temp=="TANH")
-            getInstance().getPileStockage().push(operande1->tangenteh(type_angle));
+            calc.getPileStockage()->push(operande1->tangenteh(type_angle));
         else if(temp=="INV")
-            getInstance().getPileStockage().push(operande1->inv());
+            calc.getPileStockage()->push(operande1->inv());
         else if(temp=="SIGN")
-            getInstance().getPileStockage().push(operande1->signe());
+            calc.getPileStockage()->push(operande1->signe());
         else {
             // UTILISER LES BLOCS TRY/CATCH  POUR ESSAYER DE CONVERTIR ?
             // PREVOIR UNE FABRIQUE DE CONSTANTES ?
             //on essaye de voir si c'est convertible en une constante
                 //on essaye de voir si c'est convertible en un int temp.toInt();
-                        //getInstance().getPileStockage().push(new Entier(temp.toInt()));
+                        //calc.getPileStockage()->push(new Entier(temp.toInt()));
                 //on essaye de voir si c'est convertible en un double temp.toDouble();
-                        //getInstance().getPileStockage().push(new Reel(temp.toDouble()));
+                        //calc.getPileStockage()->push(new Reel(temp.toDouble()));
                 //on essaye de voir s'il obéit à la regexp d'un rationnel du genre ([0-9])/([0-9])
                         //numerateur = split partie à gauche du /
                         //denominateur = split partie à droite du /
-                        //getInstance().getPileStockage().push(new Rationnel(numerateur.toInt(), denominateur.toInt()));
+                        //calc.getPileStockage()->push(new Rationnel(numerateur.toInt(), denominateur.toInt()));
                 //on essaye de voir s'il obéit à la regexp d'un complexe du genre ???
                         //imaginaire = split partie à gauche du $
                         //reel = split partie à droite du $
                         //ATTENTION : traitement visiblement imcomplet pour la construction des complexes
                         //im =
                         //re =
-                        //getInstance().getPileStockage().push(new Complexe(im,re));
+                        //calc.getPileStockage()->push(new Complexe(im,re));
                         //ATTENTION : traitement visiblement imcomplet pour la construction des complexes
             //sinon c'est une constante de type inconnue
                 //on lève une exception
@@ -1262,7 +1264,7 @@ void traiter_bloc_calcul(QString s){
 }
 
 void traiter_bloc_expression(QString s){
-        //ajouter à la pile d'affichage
+        //ajouter à la bonne pile
         //concater à la ligned'avant si c'est aussi une expression
 }
-*/
+
