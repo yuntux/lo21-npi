@@ -17,6 +17,7 @@
 #include "pile.h"
 #include "constante.h"
 #include "mainwindow.h"
+#include <QtGui>
 
 class Calculatrice
 {
@@ -28,13 +29,14 @@ class Calculatrice
 
     Pile _pileStockage;
     Pile _pileAffichage;
+    QSettings* context;
 
     //void saveToFile();
     //void loadFromFile();
 
 protected:
     Calculatrice();  // à mettre dans la partie privée pour en interdire l'utilisationv
-    Calculatrice(const Calculatrice&);  // non défini mais à mettre dans la partie privée pour en interdire l'utilisation
+    Calculatrice(const Calculatrice&){}
     virtual ~Calculatrice(); // à mettre dans la partie privée pour en interdire l'utilisationv
     void operator=(const Calculatrice &);  // non défini mais à mettre dans la partie privée pour en interdire l'utilisation
 public:
@@ -46,7 +48,8 @@ public:
     enum MesureAngle getMesureAngle() const {return _modAngle;}
     enum Type getModConstante() const {return _modConstante;}
     bool getModComplexe() const {return _modComplexe;}
-    void setModConstante(enum Type t){_modConstante = t;}
+    QSettings* getContext() const {return context;}
+    void setModConstante(enum Type t){_modConstante = t; context->setValue("ModeConstante", _modConstante);}
     void setMesureAngle(enum MesureAngle a){_modAngle = a;}
     void setModComplexe(bool c){_modComplexe = c;}
 };
