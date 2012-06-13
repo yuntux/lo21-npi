@@ -45,6 +45,12 @@ public:
     virtual Constante* cosinush(bool angle)=0;
     virtual Constante* tangente(bool angle){};
     virtual Constante* tangenteh(bool angle){};
+    virtual Constante* logN()=0;
+    virtual Constante* log1()=0;
+    virtual Constante* puissance(Constante* c)=0;
+    virtual Constante* carre()=0;
+    virtual Constante* cube()=0;
+    virtual Constante* racine()=0;
 };
 
 class FrabriqueConstante{

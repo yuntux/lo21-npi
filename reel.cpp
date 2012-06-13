@@ -181,3 +181,56 @@ Constante* Reel::fact()
     throw LogMessage(2,"La fonction factorielle n'est pas implémentée pour les réels.", moyen);
     return this;
 }
+
+
+Constante* Reel::logN()
+{
+    float res = log(_valeur);
+    Reel *re = new Reel(res);
+    return new Complexe(re);
+}
+
+Constante* Reel::log1()
+{
+    float res = log10(_valeur);
+    Reel *re = new Reel(res);
+    return new Complexe(re);
+}
+
+Constante* Reel::puissance(Constante *c)
+{
+    if (typeid(*c)==typeid(Reel)) {
+            //transtypage en entier
+            Reel *c_reel=dynamic_cast<Reel *>(c);
+            int value;
+            value = c_reel->getValeur();
+    float res;
+    float res2 = _valeur;
+    res = pow(res2,value);
+
+    Reel *re = new Reel(res);
+    return new Complexe(re);
+}
+}
+
+Constante* Reel::carre()
+{
+    float res = _valeur*_valeur;
+    Reel *re = new Reel(res);
+    return new Complexe(re);
+}
+
+Constante* Reel::cube()
+{
+    float res = _valeur*_valeur*_valeur;
+    Reel *re = new Reel(res);
+    return new Complexe(re);
+}
+
+Constante* Reel::racine()
+{
+    float res = sqrt(_valeur);
+    Reel *re = new Reel(res);
+    return new Complexe(re);
+}
+

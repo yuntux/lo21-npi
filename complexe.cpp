@@ -172,3 +172,39 @@ Constante* Complexe::inv()
     throw LogMessage(2,"La fonction INV n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
+
+Constante* Complexe::carre()
+{
+    //FIXME : pas de fact pour les complexes
+    return this;
+}
+
+Constante* Complexe::cube()
+{
+    //FIXME : pas de fact pour les complexes
+    return this;
+}
+
+Constante* Complexe::racine()
+{
+    //FIXME : pas de fact pour les complexes
+    return this;
+}
+
+Constante* Complexe::puissance(Constante *c)
+{
+    //FIXME : pas de fact pour les complexes
+    return this;
+}
+
+Constante* Complexe::logN()
+{
+    //FIXME : pas de fact pour les complexes
+    return this;
+}
+
+Constante* Complexe::log1()
+{
+    //FIXME : pas de fact pour les complexes
+    return this;
+}

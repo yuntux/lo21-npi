@@ -219,3 +219,60 @@ void Rationnel::simplification(){
                 _numerateur=-_numerateur;
         }
 }
+
+Constante* Rationnel::logN()
+{
+    float res = _numerateur/_denominateur;
+    float l = log(res);
+    Rationnel *r = new Rationnel(l,1);
+    return new Complexe(r);
+}
+
+Constante* Rationnel::log1()
+{
+    float res = _numerateur/_denominateur;
+    float l = log10(res);
+    Rationnel *r = new Rationnel(l,1);
+    return new Complexe(r);
+}
+
+Constante* Rationnel::puissance(Constante *c)
+{
+    float num = _numerateur;
+    float den = _denominateur;
+    if (typeid(*c)==typeid(Rationnel)) {
+            Rationnel *c_rationnel=dynamic_cast<Rationnel *>(c);
+    int res = c_rationnel->getNumerateur();
+
+    int num1 = pow(num,res);
+    int den1 = pow(den,res);
+    Rationnel *r = new Rationnel(num1,den1);
+    return new Complexe(r);
+}
+}
+
+Constante* Rationnel::carre()
+{
+    int num = _numerateur*_numerateur;
+    int den = _denominateur*_denominateur;
+    Rationnel *r = new Rationnel(num,den);
+    return new Complexe(r);
+}
+
+Constante* Rationnel::cube()
+{
+    int num = _numerateur*_numerateur*_numerateur;
+    int den = _denominateur*_denominateur*_denominateur;
+    Rationnel *r = new Rationnel(num,den);
+    return new Complexe(r);
+}
+
+Constante* Rationnel::racine()
+{
+    float num = _numerateur;
+    float den = _denominateur;
+    int res1 = sqrt(num);
+    int res2 = sqrt(den);
+    Rationnel *r = new Rationnel(res1,res2);
+    return new Complexe(r);
+}

@@ -4,8 +4,6 @@ using namespace std;
 
 void Pile::push(Constante* ptr) {
     p.push_front(ptr);
-    //emit dataChanged(index(0), index(p.size()));
-    //emit beginResetModel();
 }
 
 int Pile::rowCount(const QModelIndex &parent) const { return p.size();}

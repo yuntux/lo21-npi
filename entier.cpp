@@ -190,3 +190,57 @@ Constante *Entier::inv()
     //FIXME : pas d'inverse pour les entiers sans perte de précision
     return new Rationnel(1, this->getValeur());
 }
+
+Constante* Entier::logN()
+{
+    float res = _valeur;
+    int l = log(res);
+    Entier* e = new Entier(l);
+    return new Complexe(e);
+}
+
+Constante* Entier::log1()
+{
+    float res = _valeur;
+    int l = log10(res);
+    Entier* e = new Entier(l);
+    return new Complexe(e);
+}
+
+Constante* Entier::puissance(Constante* c)
+{
+    if (typeid(*c)==typeid(Entier)) {
+            //transtypage en entier
+            Entier *c_entier=dynamic_cast<Entier *>(c);
+            int value;
+            value = c_entier->getValeur();
+    int res;
+    float res2 = _valeur;
+    res = pow(res2,value);
+
+    Entier *e = new Entier(res);
+    return new Complexe(e);
+}
+}
+
+Constante* Entier::carre()
+{
+    int res = _valeur*_valeur;
+    Entier *e = new Entier(res);
+    return new Complexe(e);
+}
+
+Constante* Entier::cube()
+{
+    int res = _valeur*_valeur*_valeur;
+    Entier *e = new Entier(res);
+    return new Complexe(e);
+}
+
+Constante* Entier::racine()
+{
+    float res = _valeur;
+    int res2 = sqrt(res);
+    Entier *e = new Entier(res2);
+    return new Complexe(e);
+}

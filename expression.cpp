@@ -74,3 +74,33 @@ QString Expression::afficher() const
 {
     return _expr;
 }
+
+Constante* Expression::logN()
+{
+    return this;
+}
+
+Constante* Expression::carre()
+{
+    return this;
+}
+
+Constante* Expression::cube()
+{
+    return this;
+}
+
+Constante* Expression::racine()
+{
+    return this;
+}
+
+Constante* Expression::puissance(Constante *c)
+{
+    return this;
+}
+
+Constante* Expression::log1()
+{
+    return this;
+}

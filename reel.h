@@ -31,6 +31,12 @@ public:
     virtual Constante* cosinush(bool angle);
     virtual Constante* tangente(bool angle);
     virtual Constante* tangenteh(bool angle);
+    virtual Constante* logN();
+    virtual Constante* log1();
+    virtual Constante* puissance(Constante *c);
+    virtual Constante* carre();
+    virtual Constante* cube();
+    virtual Constante* racine();
 };
 
 #endif // REEL_H

@@ -495,12 +495,14 @@ void MainWindow::QUOTEClicked(){
 
 void MainWindow::CEClicked(){
     ui->inputLine->setText("");
+    ui->listView->reset();
 }
 
 void MainWindow::CClicked(){
     //on retire le dernier cractère entré : celui le plus à gauche
     QString newstring = ui->inputLine->text().remove(ui->inputLine->text().size()-1, 1);
     ui->inputLine->setText(newstring);
+    ui->listView->reset();
 }
 
 MainWindow::~MainWindow()
