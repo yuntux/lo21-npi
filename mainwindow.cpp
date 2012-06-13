@@ -569,6 +569,7 @@ void MainWindow::traiter_bloc_calcul(QString s){
         //si c'est un opérateur on a besoin d'au moins un opérande pour faire un calcul
         if(temp=="+" || temp=="*" || temp=="-" || temp=="/" || temp=="!" || temp=="SIN" || temp=="SINH"  || temp=="COS" || temp=="COSH" || temp=="TAN" || temp=="TANH" || temp=="INV" || temp=="SIGN")
             if (!calc.getPileStockage()->isEmpty())
+
                 operande1 = calc.getPileStockage()->pop();
             else
                 throw LogMessage(5,"Nombre d'opérandes insuffisants dans la pile.", moyen);
@@ -606,6 +607,16 @@ void MainWindow::traiter_bloc_calcul(QString s){
             calc.getPileStockage()->push(operande1->inv());
         else if(temp=="SIGN")
             calc.getPileStockage()->push(operande1->signe());
+        else if(temp=="SQR")
+            calc.getPileStockage()->push(operande1->carre());
+        else if(temp=="SQRT")
+            calc.getPileStockage()->push(operande1->racine());
+        else if(temp=="CUBE")
+            calc.getPileStockage()->push(operande1->cube());
+        else if(temp=="LN")
+            calc.getPileStockage()->push(operande1->logN());
+        else if(temp=="LOG")
+            calc.getPileStockage()->push(operande1->log1());
         else {
             //on essaye de convertir la chaine en constante
             Constante* nouvelle_constante = stringToConstante(temp);
