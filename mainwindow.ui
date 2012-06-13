@@ -19,372 +19,372 @@
      <layout class="QGridLayout" name="gridLayout">
       <item row="3" column="0">
        <widget class="QWidget" name="widget_clavierBasic" native="true">
-        <widget class="QWidget" name="layoutWidget">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>0</y>
-           <width>787</width>
-           <height>211</height>
-          </rect>
-         </property>
-         <layout class="QGridLayout" name="_clavierBasicLayout">
-          <item row="1" column="1">
-           <widget class="QPushButton" name="num8">
-            <property name="text">
-             <string>8</string>
-            </property>
-            <property name="shortcut">
-             <string>8</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QPushButton" name="num4">
-            <property name="text">
-             <string>4</string>
-            </property>
-            <property name="shortcut">
-             <string>4</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QPushButton" name="num5">
-            <property name="text">
-             <string>5</string>
-            </property>
-            <property name="shortcut">
-             <string>5</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2">
-           <widget class="QPushButton" name="num9">
-            <property name="text">
-             <string>9</string>
-            </property>
-            <property name="shortcut">
-             <string>9</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="2">
-           <widget class="QPushButton" name="num6">
-            <property name="text">
-             <string>6</string>
-            </property>
-            <property name="shortcut">
-             <string>6</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="1">
-           <widget class="QPushButton" name="num2">
-            <property name="text">
-             <string>2</string>
-            </property>
-            <property name="shortcut">
-             <string>2</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="0">
-           <widget class="QPushButton" name="num1">
-            <property name="text">
-             <string>1</string>
-            </property>
-            <property name="shortcut">
-             <string>1</string>
-            </property>
-           </widget>
-          </item>
-          <item row="3" column="2">
-           <widget class="QPushButton" name="num3">
-            <property name="text">
-             <string>3</string>
-            </property>
-            <property name="shortcut">
-             <string>3</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QPushButton" name="num0">
-            <property name="text">
-             <string>0</string>
-            </property>
-            <property name="shortcut">
-             <string>0</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <widget class="QPushButton" name="POINT">
-            <property name="text">
-             <string>.</string>
-            </property>
-            <property name="shortcut">
-             <string>.</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="1">
-           <widget class="QPushButton" name="EVAL">
-            <property name="text">
-             <string>EVAL</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="2">
-           <widget class="QPushButton" name="ESPACE">
-            <property name="text">
-             <string>_</string>
-            </property>
-            <property name="shortcut">
-             <string>Space</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="0">
-           <widget class="QPushButton" name="ENTER">
-            <property name="text">
-             <string>ENTRER</string>
-            </property>
-            <property name="shortcut">
-             <string>Enter</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QPushButton" name="num7">
-            <property name="text">
-             <string>7</string>
-            </property>
-            <property name="shortcut">
-             <string>7</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="1">
-           <widget class="QPushButton" name="C">
-            <property name="text">
-             <string>C</string>
-            </property>
-            <property name="shortcut">
-             <string>Backspace</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="2">
-           <widget class="QPushButton" name="CE">
-            <property name="text">
-             <string>CE</string>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="0">
-           <widget class="QPushButton" name="QUOTE">
-            <property name="text">
-             <string>'</string>
-            </property>
-            <property name="shortcut">
-             <string>'</string>
-            </property>
-           </widget>
-          </item>
-          <item row="5" column="2">
-           <widget class="QPushButton" name="DOLLAR">
-            <property name="text">
-             <string>$</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <layout class="QGridLayout" name="_clavierBasicLayout">
+           <item row="1" column="0">
+            <widget class="QPushButton" name="num7">
+             <property name="text">
+              <string>7</string>
+             </property>
+             <property name="shortcut">
+              <string>7</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="num8">
+             <property name="text">
+              <string>8</string>
+             </property>
+             <property name="shortcut">
+              <string>8</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QPushButton" name="num9">
+             <property name="text">
+              <string>9</string>
+             </property>
+             <property name="shortcut">
+              <string>9</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="num4">
+             <property name="text">
+              <string>4</string>
+             </property>
+             <property name="shortcut">
+              <string>4</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="num5">
+             <property name="text">
+              <string>5</string>
+             </property>
+             <property name="shortcut">
+              <string>5</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QPushButton" name="num6">
+             <property name="text">
+              <string>6</string>
+             </property>
+             <property name="shortcut">
+              <string>6</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="num1">
+             <property name="text">
+              <string>1</string>
+             </property>
+             <property name="shortcut">
+              <string>1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="num2">
+             <property name="text">
+              <string>2</string>
+             </property>
+             <property name="shortcut">
+              <string>2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QPushButton" name="num3">
+             <property name="text">
+              <string>3</string>
+             </property>
+             <property name="shortcut">
+              <string>3</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="num0">
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="shortcut">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QPushButton" name="POINT">
+             <property name="text">
+              <string>.</string>
+             </property>
+             <property name="shortcut">
+              <string>.</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QPushButton" name="ESPACE">
+             <property name="text">
+              <string>_</string>
+             </property>
+             <property name="shortcut">
+              <string>Space</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QPushButton" name="ENTER">
+             <property name="text">
+              <string>ENTRER</string>
+             </property>
+             <property name="shortcut">
+              <string>Enter</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QPushButton" name="EVAL">
+             <property name="text">
+              <string>EVAL</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2">
+            <widget class="QPushButton" name="DOLLAR">
+             <property name="text">
+              <string>$</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QPushButton" name="QUOTE">
+             <property name="text">
+              <string>'</string>
+             </property>
+             <property name="shortcut">
+              <string>'</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QPushButton" name="C">
+             <property name="text">
+              <string>C</string>
+             </property>
+             <property name="shortcut">
+              <string>Backspace</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="2">
+            <widget class="QPushButton" name="CE">
+             <property name="text">
+              <string>CE</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
        </widget>
       </item>
       <item row="2" column="0">
        <widget class="QWidget" name="widget_clavierAvance" native="true">
-        <widget class="QWidget" name="layoutWidget">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>0</y>
-           <width>787</width>
-           <height>202</height>
-          </rect>
-         </property>
-         <layout class="QGridLayout" name="_clavierAvanceLayout">
-          <item row="1" column="0">
-           <widget class="QPushButton" name="MOD">
-            <property name="text">
-             <string>MOD</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="4">
-           <widget class="QPushButton" name="SQR">
-            <property name="text">
-             <string>SQR</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="2">
-           <widget class="QPushButton" name="COSH">
-            <property name="text">
-             <string>COSH</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="2">
-           <widget class="QPushButton" name="SINH">
-            <property name="text">
-             <string>SINH</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="3">
-           <widget class="QPushButton" name="LN">
-            <property name="text">
-             <string>LN</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="3">
-           <widget class="QPushButton" name="LOG">
-            <property name="text">
-             <string>LOG</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QPushButton" name="SIN">
-            <property name="text">
-             <string>SIN</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QPushButton" name="COS">
-            <property name="text">
-             <string>COS</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QPushButton" name="SIGN">
-            <property name="text">
-             <string>SIGN</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QPushButton" name="TAN">
-            <property name="text">
-             <string>TAN</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="2">
-           <widget class="QPushButton" name="TANH">
-            <property name="text">
-             <string>TANH</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="3">
-           <widget class="QPushButton" name="INV">
-            <property name="text">
-             <string>INV</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="0">
-           <widget class="QPushButton" name="FACTORIEL">
-            <property name="text">
-             <string>!</string>
-            </property>
-            <property name="shortcut">
-             <string>!</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="2">
-           <widget class="QPushButton" name="DIVISER">
-            <property name="text">
-             <string>/</string>
-            </property>
-            <property name="shortcut">
-             <string>/</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <widget class="QPushButton" name="MULTIPLIER">
-            <property name="text">
-             <string>*</string>
-            </property>
-            <property name="shortcut">
-             <string>*</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="3">
-           <widget class="QPushButton" name="SOUSTRAIRE">
-            <property name="text">
-             <string>-</string>
-            </property>
-            <property name="shortcut">
-             <string>-</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="4">
-           <widget class="QPushButton" name="ADDITIONNER">
-            <property name="text">
-             <string>+</string>
-            </property>
-            <property name="shortcut">
-             <string>+</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="4">
-           <widget class="QPushButton" name="SQRT">
-            <property name="text">
-             <string>SQRT</string>
-            </property>
-            <property name="autoExclusive">
-             <bool>false</bool>
-            </property>
-            <property name="autoDefault">
-             <bool>false</bool>
-            </property>
-            <property name="default">
-             <bool>false</bool>
-            </property>
-            <property name="flat">
-             <bool>false</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="4">
-           <widget class="QPushButton" name="CUBE">
-            <property name="text">
-             <string>CUBE</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="0">
-           <widget class="QPushButton" name="POW">
-            <property name="text">
-             <string>POW</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <layout class="QGridLayout" name="_clavierAvanceLayout">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="POW">
+             <property name="text">
+              <string>POW</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="SIN">
+             <property name="text">
+              <string>SIN</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QPushButton" name="SINH">
+             <property name="text">
+              <string>SINH</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QPushButton" name="LN">
+             <property name="text">
+              <string>LN</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QPushButton" name="SQRT">
+             <property name="text">
+              <string>SQRT</string>
+             </property>
+             <property name="autoExclusive">
+              <bool>false</bool>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QPushButton" name="MOD">
+             <property name="text">
+              <string>MOD</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="COS">
+             <property name="text">
+              <string>COS</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QPushButton" name="COSH">
+             <property name="text">
+              <string>COSH</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QPushButton" name="LOG">
+             <property name="text">
+              <string>LOG</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QPushButton" name="SQR">
+             <property name="text">
+              <string>SQR</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="SIGN">
+             <property name="text">
+              <string>SIGN</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="TAN">
+             <property name="text">
+              <string>TAN</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QPushButton" name="TANH">
+             <property name="text">
+              <string>TANH</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QPushButton" name="INV">
+             <property name="text">
+              <string>INV</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <widget class="QPushButton" name="CUBE">
+             <property name="text">
+              <string>CUBE</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="FACTORIEL">
+             <property name="text">
+              <string>!</string>
+             </property>
+             <property name="shortcut">
+              <string>!</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QPushButton" name="MULTIPLIER">
+             <property name="text">
+              <string>*</string>
+             </property>
+             <property name="shortcut">
+              <string>*</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QPushButton" name="DIVISER">
+             <property name="text">
+              <string>/</string>
+             </property>
+             <property name="shortcut">
+              <string>/</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="3">
+            <widget class="QPushButton" name="SOUSTRAIRE">
+             <property name="text">
+              <string>-</string>
+             </property>
+             <property name="shortcut">
+              <string>-</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="4">
+            <widget class="QPushButton" name="ADDITIONNER">
+             <property name="text">
+              <string>+</string>
+             </property>
+             <property name="shortcut">
+              <string>+</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
        </widget>
       </item>
       <item row="1" column="0">
