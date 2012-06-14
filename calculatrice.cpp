@@ -28,7 +28,6 @@ void Calculatrice::saisie_nouvelle_pile(Pile* nouvelle){
     //on ajoute le nouvel état en tête
     Historique.prepend(nouvelle);
     indice_pile_actuelle = 0;
-
 }
 
 void Calculatrice::annuler(){

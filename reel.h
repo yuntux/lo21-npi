@@ -16,7 +16,7 @@ public:
     double getValeur() const {return _valeur;}
     void setValeur(int v){_valeur=v;}
 
-    Rationnel toRationnel() const;
+    //Rationnel toRationnel() const;
 
     virtual Constante* addition(Constante* c);
     virtual Constante* produit(Constante *c);

@@ -24,8 +24,9 @@ Complexe::Complexe(Constante* c) {
         _reelle = c_entier;
         _imaginaire = new Entier(0);
     } else if (typeid(*c)==typeid(Rationnel)) {
-        Rationnel *c_rationnel= new Rationnel(dynamic_cast<Rationnel *>(c));
-        _reelle = c_rationnel;
+        Rationnel *r=dynamic_cast<Rationnel *>(c);
+        Constante* r_copie = r->recopie();
+        _reelle = r_copie;
         _imaginaire = new Rationnel(0);
     } else if (typeid(*c)==typeid(Reel)) {
         Reel *c_reel= new Reel(dynamic_cast<Reel *>(c));

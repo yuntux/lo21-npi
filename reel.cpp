@@ -7,14 +7,16 @@
 #include <iostream>
 #define PI 3.14159265
 
+/*
 Rationnel Reel::toRationnel() const {
     //DANS LE BUT DE NE PAS PERDRE DE PRÉCISION LORS DES DIVISIONS ON A BESOIN DE TRANSFORMER LES RÉELS EN RATIONNELS
-/*    int partie_entiere = floor(this->getValeur());
+    int partie_entiere = floor(this->getValeur());
     float partie_decimale = this->getValeur()-partie_entiere;
     std::cout<<partie_decimale;
-*/
+
     //NUL => ETANT DONNE LA MEMORISATION DU FLOAT (virgule flottante) CA SERVIRA A RIEN
 }
+*/
 
 Reel::Reel(Constante* c) {
     if (Entier *c_entier=dynamic_cast<Entier *>(c)){

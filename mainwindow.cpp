@@ -565,8 +565,6 @@ void MainWindow::ENTERClicked(){
             else
                  traiter_bloc_calcul(chaine);
 
-        //qDebug() << "Nombre de piles dans l'historique : " << Calculatrice::getInstance().taille_pile_hitorique();
-        //Calculatrice::getInstance().afficher_toutes_piles_hitorique();
         ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
     }
 
