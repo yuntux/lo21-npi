@@ -10,6 +10,7 @@ Calculatrice::Calculatrice() : context( new QSettings("context.ini", QSettings::
 {
     Historique.prepend(new Pile);
     indice_pile_actuelle = 0;
+    _modComplexe = true;
 
     context->setValue("ModeAngle", _modAngle);
     context->setValue("ModeConstante", _modConstante);
@@ -22,30 +23,19 @@ Calculatrice::Calculatrice() : context( new QSettings("context.ini", QSettings::
 }
 
 void Calculatrice::saisie_nouvelle_pile(Pile* nouvelle){
-
     //on enlève tous les potentiels redo
     for(unsigned int i=0; i<indice_pile_actuelle; i++)
         Historique.removeAt(0); // ATTENTION : c'est bien zéro !
-
     //on ajoute le nouvel état en tête
     Historique.prepend(nouvelle);
-    //l'itératerude pile actuelle devient le premier élément de la pile
     indice_pile_actuelle = 0;
-    //qDebug() << "Historique.begin()" << Historique[0]->afficher();
-    //qDebug() << "Historique.end()" << Historique[Historique.size()-1]->afficher();
 
 }
 
 void Calculatrice::annuler(){
-
-    //qDebug() << "PILE AVANT ANNULATION\n" << this->getInstance().getPileStockage()->afficher();
     if (indice_pile_actuelle != Historique.size()-1){
-        //qDebug() << "it_pile_actuelle != Historique.end()";
         indice_pile_actuelle++;
-        //qDebug() << "incrémentation de l'itérateur";
     }
-    //qDebug() << "PILE APRES ANNULATION\n" << this->getInstance().getPileStockage()->afficher();
-
 }
 
 void Calculatrice::retablir(){
@@ -54,7 +44,7 @@ void Calculatrice::retablir(){
 }
 
 void Calculatrice::afficher_toutes_piles_hitorique(){
-    qDebug() << "PILE HISTORIQUE\n";
+    qDebug() << "PILES HISTORIQUES\n";
     for(int i=0; i<Historique.size(); i++)
         qDebug() << "PILE " << i << "\n" << Historique.at(i)->afficher();
 }

@@ -9,6 +9,7 @@
 3,"Type de constante non prévu dans la fonction Constante* Reel::soustraction(Constante* c).", important
 5,"Nombre d'opérandes  dans la pile insuffisant.", moyen
 6,"La chaine saisie est invalide", moyen
+6,"Action impossible dans ce mode", moyen
 **********/
 
 enum niveau {faible, moyen, important};

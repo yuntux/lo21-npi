@@ -659,24 +659,31 @@ Constante* MainWindow::stringToConstante(QString temp){
         if (regexpEntier.exactMatch(temp))
             return new Entier(temp.toInt());
 //on essaye de voir si c'est convertible en un double temp.toDouble();
-        QRegExp regexpReel("^[\\d]*.[\\d]$");
-        if (regexpReel.exactMatch(temp))
-            return new Reel(temp.toDouble());
+        QRegExp regexpReel("^/^[0-9]+(\.[0-9]+)?$/$");
+        if (regexpReel.exactMatch(temp)){
+            qDebug() << "REEL";
+            return new Reel(temp.toDouble());}
 //on essaye de voir s'il obéit à la regexp d'un rationnel du genre ([0-9])/([0-9])
         QRegExp regexpRationnel("^[\\d]*/[\\d]*$");
         if (regexpRationnel.exactMatch(temp)) {
+            qDebug() << "RATIONNEL";
             QStringList r = temp.split("/");
             return new Rationnel(r.at(0).toInt(), r.at(1).toInt());
         }
 //on essaye de voir si on peut construire un complexe à partir de temp
         //si temp contient exactement un dollar
         if (temp.count(QRegExp("$"))==1) {
-            QStringList c = temp.split("\$");
-            Constante* re = stringToConstante(c.at(0));
-            Constante* im = stringToConstante(c.at(1));
-            return new Complexe(re, im);
+            qDebug() << "COMPPPPPLLLLLLLLLLEXXXXXXXX";
+            if (Calculatrice::getInstance().getModComplexe()) {
+                QStringList c = temp.split("\$");
+                Constante* re = stringToConstante(c.at(0));
+                Constante* im = stringToConstante(c.at(1));
+                return new Complexe(re, im);
+            }
+            throw LogMessage(7,"Complexes désactivés : impossible", moyen);
         }
         //non convertible en une constante
+        //FIXME : lever une exeption
         return NULL;
 }
 
