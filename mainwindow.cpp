@@ -110,6 +110,12 @@ MainWindow::MainWindow(QWidget *parent) :
     Calculatrice::getInstance().getPileStockage(); // NE PAS SUPPRIMER, ON CONSTRUIT LE SINGLETON
     ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
 
+    //RACOURCIS CLAVIER
+    QShortcut* ctrlz = new QShortcut(QKeySequence(tr("Ctrl+Z", "Annuler")), this, SLOT(annulerClicked()), SLOT(annulerClicked()));
+    QShortcut* ctrlr = new QShortcut(QKeySequence(tr("Ctrl+R", "Rétablir")), this, SLOT(retablirClicked()), SLOT(retablirClicked()));
+    QShortcut* ctrlc = new QShortcut(QKeySequence(tr("Ctrl+C", "Rétablir")), this, SLOT(vider_pileClicked()), SLOT(vider_pileClicked()));
+    QShortcut* enter = new QShortcut(QKeySequence(Qt::Key_Enter), this, SLOT(ENTERClicked()), SLOT(ENTERClicked()));
+    QShortcut* retour = new QShortcut(QKeySequence(Qt::Key_Return), this, SLOT(ENTERClicked()), SLOT(ENTERClicked()));
 }
 
 void MainWindow::vider_pileClicked(){

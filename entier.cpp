@@ -4,7 +4,7 @@
 #include "reel.h"
 #include <typeinfo>
 #include <cmath>
-#define PI 3.14
+#define PI 3.14159265
 
 Entier::Entier(Constante* c) {
     if (Entier *c_entier=dynamic_cast<Entier *>(c)){

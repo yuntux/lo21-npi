@@ -3,7 +3,7 @@
 #include "rationnel.h"
 #include "reel.h"
 #include <typeinfo>
-#define PI 3.14
+#define PI 3.14159265
 
 int pgcd(int a, int b) {
         if (a==0||b==0) return 0;

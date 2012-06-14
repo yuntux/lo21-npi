@@ -5,7 +5,7 @@
 #include <typeinfo>
 #include <QString>
 #include <iostream>
-#define PI 3.14
+#define PI 3.14159265
 
 Rationnel Reel::toRationnel() const {
     //DANS LE BUT DE NE PAS PERDRE DE PRÉCISION LORS DES DIVISIONS ON A BESOIN DE TRANSFORMER LES RÉELS EN RATIONNELS

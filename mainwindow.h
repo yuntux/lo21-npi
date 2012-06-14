@@ -17,7 +17,7 @@
 #include <QMainWindow>
 #include <QStack>
 #include "pile.h"
-#define PI 3.14
+#define PI 3.14159265
 
 enum MesureAngle { degre, radian};
 //enum TypeConstante { entier, reel, rationnel};
