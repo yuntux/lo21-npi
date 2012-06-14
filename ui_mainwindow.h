@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Wed Jun 13 14:10:43 2012
+** Created: Wed Jun 13 23:59:40 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -100,8 +100,10 @@ public:
     QGroupBox *groupBox_3;
     QCheckBox *_clavierBasic;
     QCheckBox *_clavierAvance;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
+    QPushButton *annuler;
+    QPushButton *retablir;
+    QPushButton *vider_pile;
+    QPushButton *supprimer_tete_pile_2;
     QMenuBar *menuBar;
     QMenu *menuFichier;
     QMenu *menu;
@@ -428,15 +430,25 @@ public:
 
         verticalLayout_2->addWidget(groupBox_3);
 
-        pushButton = new QPushButton(centralWidget);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        annuler = new QPushButton(centralWidget);
+        annuler->setObjectName(QString::fromUtf8("annuler"));
 
-        verticalLayout_2->addWidget(pushButton);
+        verticalLayout_2->addWidget(annuler);
 
-        pushButton_2 = new QPushButton(centralWidget);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        retablir = new QPushButton(centralWidget);
+        retablir->setObjectName(QString::fromUtf8("retablir"));
 
-        verticalLayout_2->addWidget(pushButton_2);
+        verticalLayout_2->addWidget(retablir);
+
+        vider_pile = new QPushButton(centralWidget);
+        vider_pile->setObjectName(QString::fromUtf8("vider_pile"));
+
+        verticalLayout_2->addWidget(vider_pile);
+
+        supprimer_tete_pile_2 = new QPushButton(centralWidget);
+        supprimer_tete_pile_2->setObjectName(QString::fromUtf8("supprimer_tete_pile_2"));
+
+        verticalLayout_2->addWidget(supprimer_tete_pile_2);
 
 
         horizontalLayout->addLayout(verticalLayout_2);
@@ -541,8 +553,10 @@ public:
         groupBox_3->setTitle(QApplication::translate("MainWindow", "Affichage claviers", 0, QApplication::UnicodeUTF8));
         _clavierBasic->setText(QApplication::translate("MainWindow", "&Basic", 0, QApplication::UnicodeUTF8));
         _clavierAvance->setText(QApplication::translate("MainWindow", "&Avanc\303\251", 0, QApplication::UnicodeUTF8));
-        pushButton->setText(QApplication::translate("MainWindow", "Vider Pile", 0, QApplication::UnicodeUTF8));
-        pushButton_2->setText(QApplication::translate("MainWindow", "Supprimer un \303\251l\303\251ment", 0, QApplication::UnicodeUTF8));
+        annuler->setText(QApplication::translate("MainWindow", "Annuler", 0, QApplication::UnicodeUTF8));
+        retablir->setText(QApplication::translate("MainWindow", "R\303\251tablir", 0, QApplication::UnicodeUTF8));
+        vider_pile->setText(QApplication::translate("MainWindow", "Vider Pile", 0, QApplication::UnicodeUTF8));
+        supprimer_tete_pile_2->setText(QApplication::translate("MainWindow", "Supprimer la t\303\252te", 0, QApplication::UnicodeUTF8));
         menuFichier->setTitle(QApplication::translate("MainWindow", "Fichier", 0, QApplication::UnicodeUTF8));
         menu->setTitle(QApplication::translate("MainWindow", "?", 0, QApplication::UnicodeUTF8));
     } // retranslateUi

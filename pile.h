@@ -31,6 +31,7 @@ public:
     void drop();
     void swap(unsigned int x, unsigned int y);
     QString afficher() const;
+    Pile* copier_pile();
 
     //surcharge des fonctions virtuelles pures de QAbstractItemModel
 

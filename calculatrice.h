@@ -29,6 +29,10 @@ class Calculatrice
 
     Pile _pileStockage;
     Pile _pileAffichage;
+    QList<Pile*> Historique;
+    unsigned int indice_pile_actuelle;
+    //QList<Pile*>::iterator it_pile_actuelle;
+
     QSettings* context;
 
     //void saveToFile();
@@ -43,7 +47,15 @@ public:
     static Calculatrice& getInstance();
     static void libereInstance();
 
-    Pile* getPileStockage() {return &_pileStockage;}
+    void annuler();
+    void retablir();
+    Pile* getPileStockage() {return Historique[indice_pile_actuelle];}
+    int taille_pile_hitorique() {return Historique.size();}
+    void afficher_toutes_piles_hitorique();
+
+    void saisie_nouvelle_pile(Pile* nouvelle);
+
+    //Pile* getPileStockage() {return &_pileStockage;} //anvant l'itérateur
     Pile* getPileAffichage() {return &_pileAffichage;}
     enum MesureAngle getMesureAngle() const {return _modAngle;}
     enum Type getModConstante() const {return _modConstante;}

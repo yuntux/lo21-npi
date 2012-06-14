@@ -70,16 +70,17 @@ int main(int argc, char *argv[])
         cerr << "ERREUR : " << e.what() << endl;
     }
     */
-    /*
+/*
     Pile Stockage;
     Stockage.push(&e1);
     Stockage.push(&re1);
     Stockage.push(&ra1);
     Stockage.push(&c11);
+    Stockage.dup();
     qDebug() << Stockage.afficher();
-    Stockage.swap(1,3);
-    qDebug() << Stockage.afficher();
-    */
+    Pile c=Stockage;
+    qDebug() << c.afficher();
+*/
     //qDebug() << e1.division(&c11)->afficher();
     //qDebug() << ra1.division(&c11)->afficher();
     //qDebug() << re1.division(&c11)->afficher();

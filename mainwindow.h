@@ -102,6 +102,8 @@ public slots:
    void _modRationnel(bool);
    void _modEntier(bool);
 
+   void retablirClicked();
+   void annulerClicked();
    void ENTERClicked();
 
 private:

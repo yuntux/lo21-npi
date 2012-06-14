@@ -578,16 +578,30 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="annuler">
+        <property name="text">
+         <string>Annuler</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="retablir">
+        <property name="text">
+         <string>Rétablir</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="vider_pile">
         <property name="text">
          <string>Vider Pile</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="supprimer_tete_pile_2">
         <property name="text">
-         <string>Supprimer un élément</string>
+         <string>Supprimer la tête</string>
         </property>
        </widget>
       </item>

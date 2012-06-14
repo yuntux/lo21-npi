@@ -87,6 +87,10 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->SQRT, SIGNAL(clicked()), this, SLOT(SQRTClicked()));
     connect(ui->CUBE, SIGNAL(clicked()), this, SLOT(CUBEClicked()));
 
+    //CONNEXIONS OPERATIONS SUR PILES
+    connect(ui->annuler, SIGNAL(clicked()), this, SLOT(annulerClicked()));
+    connect(ui->retablir, SIGNAL(clicked()), this, SLOT(retablirClicked()));
+
 
     //CONNEXIONS POUR CHANGEMENT DE MOD
     connect(ui->_clavierBasic, SIGNAL(stateChanged(int)), this, SLOT(_clavierBasicStateChange(int)));
@@ -117,6 +121,8 @@ MainWindow::MainWindow(QWidget *parent) :
     this->afficheur_pile(_pileStockage);
     */
 
+    //Calculatrice::getInstance(); // NE PAS SUPPRIMER, ON CONSTRUIT LE SINGLETON
+    Calculatrice::getInstance().getPileStockage();
     ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
 
 }
@@ -510,10 +516,21 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::annulerClicked(){
+    Calculatrice::getInstance().annuler();
+    ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
+}
+void MainWindow::retablirClicked(){
+    Calculatrice::getInstance().retablir();
+    ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
+}
 void MainWindow::ENTERClicked(){
     try {
         QString s = ui->inputLine->text();
         ui->inputLine->setText("");
+
+        Pile* nouvel_etat = Calculatrice::getInstance().getPileStockage()->copier_pile();
+        Calculatrice::getInstance().saisie_nouvelle_pile(nouvel_etat);
 
         bool dans_une_exp = false; //interrupteur qui permet de savoir si on est entre deux quotes
         QString chaine; //bloc qui est soit une expression soit un bloc à calculer
@@ -540,14 +557,21 @@ void MainWindow::ENTERClicked(){
                 throw("Erreur, nombre de quote(s) impaire");
             else
                  traiter_bloc_calcul(chaine);
-        ui->listView->reset();
+
+        //on sauvegarge ce nouvel état que l'on ajoute à la pile historique
+
+        qDebug() << "Nombre de piles dans l'historique : " << Calculatrice::getInstance().taille_pile_hitorique();
+        Calculatrice::getInstance().afficher_toutes_piles_hitorique();
+        ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
     }
+
     catch(std::exception const& e)
     {
         // FIXME : interagir avec logsystem + regroupement avec QMessagBox
         cerr << "ERREUR : " << e.what() << endl;
     }
-    qDebug() << Calculatrice::getInstance().getPileStockage()->afficher();
+    //qDebug() << "PILE COURANTE \n" << Calculatrice::getInstance().getPileStockage()->afficher();
+    //Calculatrice::getInstance().afficher_toutes_piles_hitorique();
 
 }
 

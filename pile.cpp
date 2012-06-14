@@ -86,10 +86,17 @@ void Pile::clear(){
 }
 
 void Pile::dup(){
-    Constante* tmp = this->pop();
-    Constante* tmp2 = tmp->recopie();
+    Constante* tmp = this->p.at(0)->recopie();
     this->push(tmp);
-    this->push(tmp2);
+}
+
+Pile* Pile::copier_pile(){
+    Pile* nouv = new Pile();
+    for(int i =0; i<p.size(); i++){
+        Constante* tmp = p.at(i)->recopie();
+        nouv->p.push_back(tmp);
+    }
+    return nouv;
 }
 
 void Pile::drop(){
