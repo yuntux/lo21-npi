@@ -539,6 +539,8 @@ void MainWindow::ENTERClicked(){
         Pile* nouvel_etat = Calculatrice::getInstance().getPileStockage()->copier_pile();
         Calculatrice::getInstance().saisie_nouvelle_pile(nouvel_etat);
 
+        qDebug() << "PILE AU DEBUT DU ENTERClicked()" << Calculatrice::getInstance().getPileStockage()->afficher();
+
         bool dans_une_exp = false; //interrupteur qui permet de savoir si on est entre deux quotes
         QString chaine; //bloc qui est soit une expression soit un bloc à calculer
         for (int i=0; i<s.length();i++){
@@ -623,7 +625,8 @@ void MainWindow::traiter_bloc_calcul(QString s){
         else if(temp=="*")
             calc.getPileStockage()->push(operande2->produit(operande1));
         else if(temp=="/")
-            calc.getPileStockage()->push(operande2->division(operande1));
+            //FIXME : la méthode division plante si on enchaine deux divisions
+            calc.getPileStockage()->push(operande2->produit(operande1->inv()));
         else if(temp=="-")
             calc.getPileStockage()->push(operande2->soustraction(operande1));
         else if(temp=="!")
@@ -711,7 +714,23 @@ void MainWindow::traiter_bloc_expression(QString s){
 }
 
 void MainWindow::EVALClicked(){
+    if (!Calculatrice::getInstance().getPileStockage()->isEmpty()){
+        Constante* dernier_element_pop = Calculatrice::getInstance().getPileStockage()->pop();
 
+        if (Expression *tmp=dynamic_cast<Expression *>(dernier_element_pop)){
+            QString c(tmp->getExpr());
+            c.replace("'","");
+            ui->inputLine->setText(c);
+            MainWindow::ENTERClicked();
+        } else {
+            //FIXME : lever exception
+            //on remet le dernier élément puisque ce n'est pas un exceptation
+            Calculatrice::getInstance().getPileStockage()->push(dernier_element_pop);
+        }
+
+    }else{
+        //FIXME : lever exception
+    }
 }
 
 
