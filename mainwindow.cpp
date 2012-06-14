@@ -63,7 +63,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->C, SIGNAL(clicked()), this, SLOT(CClicked()));
 
     connect(ui->ENTER, SIGNAL(clicked()), this, SLOT(ENTERClicked()));
-    //connect(ui->EVAL, SIGNAL(clicked()), this, SLOT(EVALClicked()));
+    connect(ui->EVAL, SIGNAL(clicked()), this, SLOT(EVALClicked()));
 
     //CONNEXIONS CLAVIER AVANCE
     connect(ui->FACTORIEL, SIGNAL(clicked()), this, SLOT(FACTORIELClicked()));
@@ -90,6 +90,9 @@ MainWindow::MainWindow(QWidget *parent) :
     //CONNEXIONS OPERATIONS SUR PILES
     connect(ui->annuler, SIGNAL(clicked()), this, SLOT(annulerClicked()));
     connect(ui->retablir, SIGNAL(clicked()), this, SLOT(retablirClicked()));
+    connect(ui->vider_pile, SIGNAL(clicked()), this, SLOT(vider_pileClicked()));
+    connect(ui->supprimer_tete_pile, SIGNAL(clicked()), this, SLOT(supprimer_tete_pileClicked()));
+    connect(ui->dupliquer_tete_pile, SIGNAL(clicked()), this, SLOT(dupliquer_tete_pileClicked()));
 
 
     //CONNEXIONS POUR CHANGEMENT DE MOD
@@ -105,33 +108,30 @@ MainWindow::MainWindow(QWidget *parent) :
     //this->saveToFile();
     this->loadFromFile();
 
-    /*Complexe c(1,3);
-    Complexe d(2,8);
-    Complexe e(3,8);
-    Complexe f(4,8);
-    Complexe g(5,8);
-    Complexe h(6,8);
-    _pileStockage.append(&c);
-    _pileStockage.append(&c);
-    _pileStockage.append(&d);
-    _pileStockage.append(&e);
-    _pileStockage.append(&f);
-    _pileStockage.append(&g);
-    _pileStockage.append(&h);
-    this->afficheur_pile(_pileStockage);
-    */
-
-    //Calculatrice::getInstance(); // NE PAS SUPPRIMER, ON CONSTRUIT LE SINGLETON
-    Calculatrice::getInstance().getPileStockage();
+    Calculatrice::getInstance().getPileStockage(); // NE PAS SUPPRIMER, ON CONSTRUIT LE SINGLETON
     ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
 
 }
 
+void MainWindow::vider_pileClicked(){
+    Pile* nouvel_etat = new Pile(); //on crée une pile vide
+    Calculatrice::getInstance().saisie_nouvelle_pile(nouvel_etat);
+    ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
+}
 
-void MainWindow::afficheur_pile(Pile p){
-    //on copie la liste en local pour l'itérer en la détr
-    //for (int i=0; i<p.size(); i++)
-      //  ui->listWidget->addItem(p.pop()->afficher());
+void MainWindow::supprimer_tete_pileClicked(){
+    Pile* nouvel_etat = Calculatrice::getInstance().getPileStockage()->copier_pile();
+    Calculatrice::getInstance().saisie_nouvelle_pile(nouvel_etat);
+    Calculatrice::getInstance().getPileStockage()->drop();
+    ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
+}
+
+void MainWindow::dupliquer_tete_pileClicked(){
+    Pile* nouvel_etat = Calculatrice::getInstance().getPileStockage()->copier_pile();
+    Calculatrice::getInstance().saisie_nouvelle_pile(nouvel_etat);
+    Calculatrice::getInstance().getPileStockage()->dup();
+    ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
+
 }
 
 
@@ -412,19 +412,19 @@ void MainWindow::ESPACEClicked(){
 }
 
 void MainWindow::FACTORIELClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"!");
+    ui->inputLine->setText(ui->inputLine->text()+" ! ");
 }
 
 void MainWindow::ADDITIONNERClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"+");
+    ui->inputLine->setText(ui->inputLine->text()+" + ");
 }
 
 void MainWindow::SOUSTRAIREClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"-");
+    ui->inputLine->setText(ui->inputLine->text()+" - ");
 }
 
 void MainWindow::MULTIPLIERClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"*");
+    ui->inputLine->setText(ui->inputLine->text()+" * ");
 }
 
 void MainWindow::DIVISERClicked(){
@@ -432,63 +432,63 @@ void MainWindow::DIVISERClicked(){
 }
 
 void MainWindow::POWClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"POW");
+    ui->inputLine->setText(ui->inputLine->text()+" POW ");
 }
 
 void MainWindow::SINClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"SIN");
+    ui->inputLine->setText(ui->inputLine->text()+" SIN ");
 }
 
 void MainWindow::COSClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"COS");
+    ui->inputLine->setText(ui->inputLine->text()+" COS ");
 }
 
 void MainWindow::TANClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"TAN");
+    ui->inputLine->setText(ui->inputLine->text()+" TAN ");
 }
 
 void MainWindow::SINHClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"SINH");
+    ui->inputLine->setText(ui->inputLine->text()+" SINH ");
 }
 
 void MainWindow::COSHClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"COSH");
+    ui->inputLine->setText(ui->inputLine->text()+" COSH ");
 }
 
 void MainWindow::TANHClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"TANH");
+    ui->inputLine->setText(ui->inputLine->text()+" TANH ");
 }
 
 void MainWindow::MODClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"MOD");
+    ui->inputLine->setText(ui->inputLine->text()+" MOD ");
 }
 
 void MainWindow::SIGNClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"SIGN");
+    ui->inputLine->setText(ui->inputLine->text()+" SIGN ");
 }
 
 void MainWindow::SQRClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"SQR");
+    ui->inputLine->setText(ui->inputLine->text()+" SQR ");
 }
 
 void MainWindow::SQRTClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"SQRT");
+    ui->inputLine->setText(ui->inputLine->text()+" SQRT ");
 }
 
 void MainWindow::CUBEClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"CUBE");
+    ui->inputLine->setText(ui->inputLine->text()+" CUBE ");
 }
 
 void MainWindow::LNClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"LN");
+    ui->inputLine->setText(ui->inputLine->text()+" LN ");
 }
 
 void MainWindow::LOGClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"LOG");
+    ui->inputLine->setText(ui->inputLine->text()+" LOG ");
 }
 
 void MainWindow::INVClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"INV");
+    ui->inputLine->setText(ui->inputLine->text()+" INV ");
 }
 
 void MainWindow::DOLLARClicked(){
@@ -496,7 +496,7 @@ void MainWindow::DOLLARClicked(){
 }
 
 void MainWindow::QUOTEClicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"'");
+    ui->inputLine->setText(ui->inputLine->text()+" ' ");
 }
 
 void MainWindow::CEClicked(){
@@ -525,6 +525,7 @@ void MainWindow::retablirClicked(){
     ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
 }
 void MainWindow::ENTERClicked(){
+    //FIXME => UN ESPACE APRES UN OPERATEUR FAIT RENTRER UN ZÉRO !!!
     try {
         QString s = ui->inputLine->text();
         ui->inputLine->setText("");
@@ -577,21 +578,22 @@ void MainWindow::ENTERClicked(){
 
 void MainWindow::traiter_bloc_calcul(QString s){
     s.simplified();
-    QStringList list = s.split(" ");
+
+    QStringList list = s.split(QRegExp("\\s+"), QString::SkipEmptyParts);
     Calculatrice& calc = Calculatrice::getInstance();
 
     //la vérification du _modConstante n'intervient que lorsque l'on tente d'insérer une constante dans la pile de stockage et à l'affichage
-    //la vérification du _modAngle n'intervient que lors du calcul d'une fonction trigo
     bool type_angle = false;
     if(calc.getMesureAngle()==degre)
         type_angle = true;
     //la vérification du _modComplexe n'intervient que lorsque l'on tente d'insérer un complexe dans la pile de stockage
     foreach(QString temp, list)
     {
+        //FIXME : on ne dépile par pareil si c'est une epxpression qui précède
         Constante* operande1;
         Constante* operande2;
         //si c'est un opérateur on a besoin d'au moins un opérande pour faire un calcul
-        if(temp=="+" || temp=="*" || temp=="-" || temp=="/" || temp=="!" || temp=="SIN" || temp=="SINH"  || temp=="COS" || temp=="COSH" || temp=="TAN" || temp=="TANH" || temp=="INV" || temp=="SIGN")
+        if(temp=="+" || temp=="*" || temp=="-" || temp=="/" || temp=="!" || temp=="SIN" || temp=="SINH"  || temp=="COS" || temp=="COSH" || temp=="TAN" || temp=="TANH" || temp=="INV" || temp=="SIGN" || temp=="LOG" || temp=="LN" || temp=="CUBE" || temp=="SQR" || temp=="SQRT")
             if (!calc.getPileStockage()->isEmpty())
 
                 operande1 = calc.getPileStockage()->pop();
@@ -660,13 +662,11 @@ Constante* MainWindow::stringToConstante(QString temp){
             return new Entier(temp.toInt());
 //on essaye de voir si c'est convertible en un double temp.toDouble();
         QRegExp regexpReel("^/^[0-9]+(\.[0-9]+)?$/$");
-        if (regexpReel.exactMatch(temp)){
-            qDebug() << "REEL";
-            return new Reel(temp.toDouble());}
+        if (regexpReel.exactMatch(temp))
+            return new Reel(temp.toDouble());
 //on essaye de voir s'il obéit à la regexp d'un rationnel du genre ([0-9])/([0-9])
         QRegExp regexpRationnel("^[\\d]*/[\\d]*$");
         if (regexpRationnel.exactMatch(temp)) {
-            qDebug() << "RATIONNEL";
             QStringList r = temp.split("/");
             return new Rationnel(r.at(0).toInt(), r.at(1).toInt());
         }
@@ -692,3 +692,6 @@ void MainWindow::traiter_bloc_expression(QString s){
         //concater à la ligned'avant si c'est aussi une expression
 }
 
+void MainWindow::EVALClicked(){
+
+}

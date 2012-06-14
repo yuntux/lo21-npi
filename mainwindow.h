@@ -34,7 +34,6 @@ private:
     enum Type _modConstante;
     bool _modComplexe;
 
-    void afficheur_pile(Pile p);
     Pile _pileStockage;
     QStack<QString> _pileAffichage;
     QStack<float> _pileStockageReelle;
@@ -105,6 +104,10 @@ public slots:
    void retablirClicked();
    void annulerClicked();
    void ENTERClicked();
+   void EVALClicked();
+   void vider_pileClicked();
+   void supprimer_tete_pileClicked();
+   void dupliquer_tete_pileClicked();
 
 private:
     Ui::MainWindow *ui;

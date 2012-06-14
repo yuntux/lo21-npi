@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Wed Jun 13 23:59:40 2012
+** Created: Thu Jun 14 05:26:57 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -103,7 +103,8 @@ public:
     QPushButton *annuler;
     QPushButton *retablir;
     QPushButton *vider_pile;
-    QPushButton *supprimer_tete_pile_2;
+    QPushButton *supprimer_tete_pile;
+    QPushButton *dupliquer_tete_pile;
     QMenuBar *menuBar;
     QMenu *menuFichier;
     QMenu *menu;
@@ -445,10 +446,15 @@ public:
 
         verticalLayout_2->addWidget(vider_pile);
 
-        supprimer_tete_pile_2 = new QPushButton(centralWidget);
-        supprimer_tete_pile_2->setObjectName(QString::fromUtf8("supprimer_tete_pile_2"));
+        supprimer_tete_pile = new QPushButton(centralWidget);
+        supprimer_tete_pile->setObjectName(QString::fromUtf8("supprimer_tete_pile"));
 
-        verticalLayout_2->addWidget(supprimer_tete_pile_2);
+        verticalLayout_2->addWidget(supprimer_tete_pile);
+
+        dupliquer_tete_pile = new QPushButton(centralWidget);
+        dupliquer_tete_pile->setObjectName(QString::fromUtf8("dupliquer_tete_pile"));
+
+        verticalLayout_2->addWidget(dupliquer_tete_pile);
 
 
         horizontalLayout->addLayout(verticalLayout_2);
@@ -510,6 +516,7 @@ public:
         ENTER->setShortcut(QApplication::translate("MainWindow", "Enter", 0, QApplication::UnicodeUTF8));
         EVAL->setText(QApplication::translate("MainWindow", "EVAL", 0, QApplication::UnicodeUTF8));
         DOLLAR->setText(QApplication::translate("MainWindow", "$", 0, QApplication::UnicodeUTF8));
+        DOLLAR->setShortcut(QApplication::translate("MainWindow", "$", 0, QApplication::UnicodeUTF8));
         QUOTE->setText(QApplication::translate("MainWindow", "'", 0, QApplication::UnicodeUTF8));
         QUOTE->setShortcut(QApplication::translate("MainWindow", "'", 0, QApplication::UnicodeUTF8));
         C->setText(QApplication::translate("MainWindow", "C", 0, QApplication::UnicodeUTF8));
@@ -556,7 +563,8 @@ public:
         annuler->setText(QApplication::translate("MainWindow", "Annuler", 0, QApplication::UnicodeUTF8));
         retablir->setText(QApplication::translate("MainWindow", "R\303\251tablir", 0, QApplication::UnicodeUTF8));
         vider_pile->setText(QApplication::translate("MainWindow", "Vider Pile", 0, QApplication::UnicodeUTF8));
-        supprimer_tete_pile_2->setText(QApplication::translate("MainWindow", "Supprimer la t\303\252te", 0, QApplication::UnicodeUTF8));
+        supprimer_tete_pile->setText(QApplication::translate("MainWindow", "Supprimer la t\303\252te", 0, QApplication::UnicodeUTF8));
+        dupliquer_tete_pile->setText(QApplication::translate("MainWindow", "Dupliquer la t\303\252te", 0, QApplication::UnicodeUTF8));
         menuFichier->setTitle(QApplication::translate("MainWindow", "Fichier", 0, QApplication::UnicodeUTF8));
         menu->setTitle(QApplication::translate("MainWindow", "?", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
