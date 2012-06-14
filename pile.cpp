@@ -26,9 +26,12 @@ QVariant Pile::data(const QModelIndex &index, int role) const
 
 Pile::~Pile()
 {
-    for(int i=0; i<this->size(); i++){
-        delete(p.at(0));
+    qDebug() << "Feu la pile que je vais détruire : " << this->afficher();
+    for(int i=0; i<=this->size(); i++){
+        Constante* tmp = this->pop();
+        delete(tmp);
     }
+    qDebug() << "Après destruction : " << this->afficher();
 }
 
 QString Pile::afficher() const {

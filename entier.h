@@ -21,7 +21,7 @@ class Entier : public Constante{
 public:
     Entier(int e):_valeur(e){}
     Entier(Constante* c);
-    //virtual ~Entier(){}
+    virtual ~Entier(){}
     virtual QString afficher() const{ return QString::number(_valeur);}
     int getValeur() const {return _valeur;}
     void setValeur(int v){_valeur=v;}

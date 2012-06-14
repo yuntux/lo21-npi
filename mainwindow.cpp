@@ -539,8 +539,6 @@ void MainWindow::ENTERClicked(){
         Pile* nouvel_etat = Calculatrice::getInstance().getPileStockage()->copier_pile();
         Calculatrice::getInstance().saisie_nouvelle_pile(nouvel_etat);
 
-        qDebug() << "PILE AU DEBUT DU ENTERClicked()" << Calculatrice::getInstance().getPileStockage()->afficher();
-
         bool dans_une_exp = false; //interrupteur qui permet de savoir si on est entre deux quotes
         QString chaine; //bloc qui est soit une expression soit un bloc à calculer
         for (int i=0; i<s.length();i++){

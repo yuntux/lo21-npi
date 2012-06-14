@@ -11,7 +11,7 @@ class Reel: public Constante{
 public:
     Reel(double e):_valeur(e){}
     Reel(Constante* c);
-    //virtual ~Reel() {}
+    virtual ~Reel() {}
     virtual QString afficher() const{ return QString::number(_valeur);}
     double getValeur() const {return _valeur;}
     void setValeur(int v){_valeur=v;}

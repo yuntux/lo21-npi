@@ -127,42 +127,56 @@ Constante* Complexe::soustraction(Constante* c){
 
 Constante* Complexe::fact()
 {
+    if (this->reel_pur())
+        return this->getPartieReelle()->fact();
     throw LogMessage(2,"La fonction factorielle n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
 
 Constante* Complexe::sinus(bool angle)
 {
+    if (this->reel_pur())
+        return this->getPartieReelle()->sinus(angle);
     throw LogMessage(2,"La fonction SIN n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
 
 Constante* Complexe::cosinus(bool angle)
 {
+    if (this->reel_pur())
+        return this->getPartieReelle()->cosinus(angle);
     throw LogMessage(2,"La fonction COS n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
 
 Constante* Complexe::sinush(bool angle)
 {
+    if (this->reel_pur())
+        return this->getPartieReelle()->sinush(angle);
     throw LogMessage(2,"La fonction SINH n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
 
 Constante* Complexe::cosinush(bool angle)
 {
+    if (this->reel_pur())
+        return this->getPartieReelle()->cosinush(angle);
     throw LogMessage(2,"La fonction COSH n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
 
 Constante* Complexe::tangente(bool angle)
 {
+    if (this->reel_pur())
+        return this->getPartieReelle()->tangente(angle);
     throw LogMessage(2,"La fonction TAN n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
 
 Constante* Complexe::tangenteh(bool angle)
 {
+    if (this->reel_pur())
+        return this->getPartieReelle()->tangenteh(angle);
     throw LogMessage(2,"La fonction TANH n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
@@ -171,6 +185,8 @@ Constante* Complexe::tangenteh(bool angle)
 Constante* Complexe::inv()
 {
     //FIXME : pas d'inverse pour les complexes
+    if (this->reel_pur())
+        return this->getPartieReelle()->inv();
     throw LogMessage(2,"La fonction INV n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
@@ -190,23 +206,53 @@ Constante* Complexe::cube()
 Constante* Complexe::racine()
 {
     //FIXME : pas de fact pour les complexes
+    if (this->reel_pur())
+        return this->getPartieReelle()->racine();
+    throw LogMessage(2,"La fonction RACINE n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
 
 Constante* Complexe::puissance(Constante *c)
 {
     //FIXME : pas de fact pour les complexes
+    if (this->reel_pur())
+        return this->getPartieReelle()->puissance(c);
+    throw LogMessage(2,"La fonction PUISSANCE n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
 
 Constante* Complexe::logN()
 {
     //FIXME : pas de fact pour les complexes
+    if (this->reel_pur())
+        return this->getPartieReelle()->logN();
+    throw LogMessage(2,"La fonction LN n'est pas implémentée pour les complexes.", moyen);
     return this;
 }
 
 Constante* Complexe::log1()
 {
     //FIXME : pas de fact pour les complexes
+    if (this->reel_pur())
+        return this->getPartieReelle()->log1();
+    throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);
     return this;
+}
+
+bool Complexe::reel_pur() const{
+
+    if (typeid(*getPartieImaginaire())==typeid(Entier)) {
+        Entier *im_entier=dynamic_cast<Entier *>(this->getPartieImaginaire());
+        if (im_entier->getValeur()==0)
+            return true;
+    } else if (typeid(*getPartieImaginaire())==typeid(Rationnel)) {
+        Rationnel *im_rationnel=dynamic_cast<Rationnel *>(this->getPartieImaginaire());
+        if (im_rationnel->getNumerateur()==0)
+            return true;
+    } else if (typeid(*getPartieImaginaire())==typeid(Reel)) {
+       Reel *im_reel=dynamic_cast<Reel *>(this->getPartieImaginaire());
+       if (im_reel->getValeur()==0)
+           return true;
+   }
+    return false;
 }

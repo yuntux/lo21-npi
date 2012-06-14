@@ -23,8 +23,11 @@ Calculatrice::Calculatrice() : context( new QSettings("context.ini", QSettings::
 
 void Calculatrice::saisie_nouvelle_pile(Pile* nouvelle){
     //on enlève tous les potentiels redo
-    for(unsigned int i=0; i<indice_pile_actuelle; i++)
+    for(unsigned int i=0; i<indice_pile_actuelle; i++){
+        Pile* tmp = Historique.at(0);
         Historique.removeAt(0); // ATTENTION : c'est bien zéro !
+        delete(tmp);
+    }
     //on ajoute le nouvel état en tête
     Historique.prepend(nouvelle);
     indice_pile_actuelle = 0;

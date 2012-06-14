@@ -33,6 +33,7 @@ public:
     void setImaginaire(Constante* im){_imaginaire=im;}
 
     Complexe(Constante* c);
+    bool reel_pur() const;
     //Complexe* conjugue(Complexe* c);
     //Constante* module(Complexe* c);
     //Constante* argument(Complexe* c);
