@@ -10,6 +10,7 @@
 5,"Nombre d'opérandes  dans la pile insuffisant.", moyen
 6,"La chaine saisie est invalide", moyen
 6,"Action impossible dans ce mode", moyen
+8,"Saisie invalide", moyen
 **********/
 
 enum niveau {faible, moyen, important};

@@ -44,8 +44,7 @@ Rationnel::Rationnel(Constante* c) {
     } else if (typeid(*c)==typeid(Reel)) {
         //FIXME : impossible de construire un rationnel Ã  partir d'un rÃ©el SAUF si la partie décimale est nulle
     }
-
-    throw LogMessage(3,"Type de constante non prévu dans la fonction Rationnel::Rationnel(Constante* c).", important);
+    throw LogMessage(7,"Type de constante non prévu dans la fonction Rationnel::Rationnel(Constante* c).", important);
 }
 
 Rationnel::Rationnel(int num, int den):_numerateur(num), _denominateur(den)

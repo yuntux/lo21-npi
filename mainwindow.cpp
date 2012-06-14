@@ -654,9 +654,6 @@ void MainWindow::traiter_bloc_calcul(QString s){
         else if(temp=="LOG")
             calc.getPileStockage()->push(operande1->log1());
 
-        //FIXME => POW CRASH
-/*        else if(temp=="POW")
-            calc.getPileStockage()->push(operande1->puissance(operande2)); */
         else {
             //on essaye de convertir la chaine en constante
             Constante* nouvelle_constante = stringToConstante(temp);
@@ -701,7 +698,8 @@ Constante* MainWindow::stringToConstante(QString temp){
         }
         //non convertible en une constante
         //FIXME : lever une exeption
-        return NULL;
+         throw LogMessage(8,"La chaine saisie est invalide", moyen);
+         return NULL;
 }
 
 void MainWindow::traiter_bloc_expression(QString s){

@@ -177,14 +177,14 @@ Constante* Complexe::inv()
 
 Constante* Complexe::carre()
 {
-    //FIXME : pas de fact pour les complexes
-    return this;
+    Complexe *c_complexe = new Complexe(this);
+    return c_complexe->produit(this);
 }
 
 Constante* Complexe::cube()
 {
-    //FIXME : pas de fact pour les complexes
-    return this;
+    Complexe *c_complexe = new Complexe(this);
+    return c_complexe->produit(this->produit(this));
 }
 
 Constante* Complexe::racine()
