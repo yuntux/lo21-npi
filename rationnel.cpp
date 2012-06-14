@@ -3,7 +3,6 @@
 #include "rationnel.h"
 #include "reel.h"
 #include <typeinfo>
-#include "fonctions.h"
 #define PI 3.14
 
 int pgcd(int a, int b) {

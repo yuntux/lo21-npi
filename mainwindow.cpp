@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QtGui>
-#include "fonctions.h"
 #include <iostream>
 #include <cmath>
 #include "pile.h"
@@ -559,10 +558,8 @@ void MainWindow::ENTERClicked(){
             else
                  traiter_bloc_calcul(chaine);
 
-        //on sauvegarge ce nouvel état que l'on ajoute à la pile historique
-
-        qDebug() << "Nombre de piles dans l'historique : " << Calculatrice::getInstance().taille_pile_hitorique();
-        Calculatrice::getInstance().afficher_toutes_piles_hitorique();
+        //qDebug() << "Nombre de piles dans l'historique : " << Calculatrice::getInstance().taille_pile_hitorique();
+        //Calculatrice::getInstance().afficher_toutes_piles_hitorique();
         ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
     }
 

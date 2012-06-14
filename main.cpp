@@ -1,6 +1,5 @@
 #include <QtGui/QApplication>
 #include "mainwindow.h"
-#include "fonctions.h"
 #include "complexe.h"
 #include "entier.h"
 #include "rationnel.h"

@@ -35,19 +35,23 @@ Complexe::Complexe(Constante* c) {
 }
 
 QString Complexe::afficher() const{
-    if (typeid(this->getPartieImaginaire())==typeid(Entier)) {
+    qDebug() << "partei Re :" << this->getPartieReelle()->afficher();
+    qDebug() << "partei Im :" << this->getPartieImaginaire()->afficher();
+    if (typeid(*getPartieImaginaire())==typeid(Entier)) {
+        qDebug() << "AFFICAHGE COMPLEXE EN ENTIER";
         Entier *im_entier=dynamic_cast<Entier *>(this->getPartieImaginaire());
         if (im_entier->getValeur()==0)
             return _reelle->afficher();
-    } else if (typeid(this->getPartieImaginaire())==typeid(Rationnel)) {
+    } else if (typeid(*getPartieImaginaire())==typeid(Rationnel)) {
         Rationnel *im_rationnel=dynamic_cast<Rationnel *>(this->getPartieImaginaire());
         if (im_rationnel->getNumerateur()==0)
             return _reelle->afficher();
-    } else if (typeid(this->getPartieImaginaire())==typeid(Reel)) {
+    } else if (typeid(*getPartieImaginaire())==typeid(Reel)) {
        Reel *im_reel=dynamic_cast<Reel *>(this->getPartieImaginaire());
        if (im_reel->getValeur()==0)
            return _reelle->afficher();
    }
+    qDebug() << "AFFICAHGE COMPLEXE STANDARD";
     return _reelle->afficher()+"$"+_imaginaire->afficher();
 }
 
