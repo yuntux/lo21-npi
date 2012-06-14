@@ -27,7 +27,8 @@ QVariant Pile::data(const QModelIndex &index, int role) const
 Pile::~Pile()
 {
     qDebug() << "Feu la pile que je vais détruire : " << this->afficher();
-    for(int i=0; i<=this->size(); i++){
+    int s = this->size(); //ATTENTION : il faut bien fixer la taille avant !
+    for(int i=0; i<s; i++){
         Constante* tmp = this->pop();
         delete(tmp);
     }
