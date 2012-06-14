@@ -3,11 +3,14 @@
 #include "entier.h"
 #include "rationnel.h"
 #include "reel.h"
+#include "expression.h"
 #include <typeinfo>
 
 Constante* Constante::recopie(){
     if (Entier *c_entier=dynamic_cast<Entier *>(this)){
         return new Entier(c_entier->getValeur());
+    } else if (Expression *c_expression=dynamic_cast<Expression *>(this)){
+        return new Expression(c_expression->getExpr());
     } else if (Reel *c_reel=dynamic_cast<Reel *>(this)){
         return new Reel(c_reel->getValeur());
     } else if (Rationnel *c_rationnel=dynamic_cast<Rationnel *>(this)){

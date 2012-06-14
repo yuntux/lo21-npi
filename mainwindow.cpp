@@ -550,9 +550,31 @@ void MainWindow::ENTERClicked(){
                     chaine = "";
                 } else {
                     //on rencontre le quote d'ouverture d'une chaine, ce qui était avant doit etre empilé/calculé
-                    traiter_bloc_calcul(chaine);
-                    dans_une_exp = true;
-                    chaine = "";
+
+                    /*
+                    if (!Calculatrice::getInstance().getPileStockage()->isEmpty()){
+                          qDebug() << "TEST";
+                        //on elève le premier élément de la pile
+                        Constante* dernier_element_pop = Calculatrice::getInstance().getPileStockage()->pop();
+
+                        if (Expression *tmp=dynamic_cast<Expression *>(dernier_element_pop)){ //si le dernier élément est une expression
+                            //on conctatène cette expression avec chaine
+                            QString dernier_element = tmp->getExpr();
+                            dernier_element.replace("'","");
+                            //on l'envoie à traiter_bloc_expression
+                            qDebug() << "AVANT ENVOIE A traiter_bloc_expression";
+                            traiter_bloc_expression(dernier_element+" "+chaine);
+                            //delete dernier_element_pop
+                            return;
+                        }else{
+                            Calculatrice::getInstance().getPileStockage()->push(dernier_element_pop);
+                            traiter_bloc_calcul(chaine);
+                        }
+                    }else{ */
+                        traiter_bloc_calcul(chaine);
+                        dans_une_exp = true;
+                        chaine = "";
+                    //}
                 }
             } else {
                 //qu'on soit ou non dans une chaine on ajoute ce caractère à la sous-chaine en cours
@@ -579,6 +601,7 @@ void MainWindow::ENTERClicked(){
 }
 
 void MainWindow::traiter_bloc_calcul(QString s){
+    qDebug()<< "ENTRER BLOC CALCUL";
     s.simplified();
 
     QStringList list = s.split(QRegExp("\\s+"), QString::SkipEmptyParts);
@@ -596,12 +619,11 @@ void MainWindow::traiter_bloc_calcul(QString s){
         Constante* operande2;
         //si c'est un opérateur on a besoin d'au moins un opérande pour faire un calcul
         if(temp=="+" || temp=="*" || temp=="-" || temp=="/" || temp=="!" || temp=="SIN" || temp=="SINH"  || temp=="COS" || temp=="COSH" || temp=="TAN" || temp=="TANH" || temp=="INV" || temp=="SIGN" || temp=="LOG" || temp=="LN" || temp=="CUBE" || temp=="SQR" || temp=="SQRT" || temp=="POW")
-            if (!calc.getPileStockage()->isEmpty())
-
+            if (!calc.getPileStockage()->isEmpty()){
                 operande1 = calc.getPileStockage()->pop();
-            else
+            } else {
                 throw LogMessage(5,"Nombre d'opérandes insuffisants dans la pile.", moyen);
-
+            }
         //si c'est un operateur binaire on a besoin d'un second opérandes
         if(temp=="+" || temp=="*" || temp=="-" || temp=="/" || temp=="POW")
             if (!calc.getPileStockage()->isEmpty())
@@ -672,7 +694,7 @@ Constante* MainWindow::stringToConstante(QString temp){
         if (regexpEntier.exactMatch(temp))
             return new Entier(temp.toInt());
 //on essaye de voir si c'est convertible en un double temp.toDouble();
-        QRegExp regexpReel("^/^[0-9]+(\.[0-9]+)?$/$");
+        QRegExp regexpReel("^([0-9]+)?\\.([0-9]+)?$");
         if (regexpReel.exactMatch(temp))
             return new Reel(temp.toDouble());
 //on essaye de voir s'il obéit à la regexp d'un rationnel du genre ([0-9])/([0-9])
@@ -703,8 +725,9 @@ Constante* MainWindow::stringToConstante(QString temp){
 }
 
 void MainWindow::traiter_bloc_expression(QString s){
-        //ajouter à la bonne pile
-        //concater à la ligned'avant si c'est aussi une expression
+    qDebug()<< "ENTRER BLOC EXPRESSION";
+    Constante* exp = new Expression("'"+s+"'");
+    Calculatrice::getInstance().getPileStockage()->push(exp);
 }
 
 void MainWindow::EVALClicked(){

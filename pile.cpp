@@ -27,7 +27,7 @@ QVariant Pile::data(const QModelIndex &index, int role) const
 Pile::~Pile()
 {
     for(int i=0; i<this->size(); i++){
-        delete(p.at(i));
+        delete(p.at(0));
     }
 }
 
