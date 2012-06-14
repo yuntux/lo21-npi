@@ -25,7 +25,8 @@ void Calculatrice::saisie_nouvelle_pile(Pile* nouvelle){
 
     //on enlève tous les potentiels redo
     for(unsigned int i=0; i<indice_pile_actuelle; i++)
-        Historique.removeAt(i);
+        Historique.removeAt(0); // ATTENTION : c'est bien zéro !
+
     //on ajoute le nouvel état en tête
     Historique.prepend(nouvelle);
     //l'itératerude pile actuelle devient le premier élément de la pile
