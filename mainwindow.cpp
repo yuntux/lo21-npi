@@ -545,47 +545,29 @@ void MainWindow::ENTERClicked(){
             if(s.at(i) == '\''){
                 if (dans_une_exp){
                     //on était déjà dans une epxression donc on est sur le quote de sortie
-                    traiter_bloc_expression(chaine); //cette fonction doit concat avec le dernier element de la pile si c'est une expr?
+                    if (!dernier_element_expression(chaine))
+                        traiter_bloc_expression(chaine); //cette fonction doit concat avec le dernier element de la pile si c'est une expr?
                     dans_une_exp = false;
                     chaine = "";
                 } else {
                     //on rencontre le quote d'ouverture d'une chaine, ce qui était avant doit etre empilé/calculé
-
-                    /*
-                    if (!Calculatrice::getInstance().getPileStockage()->isEmpty()){
-                          qDebug() << "TEST";
-                        //on elève le premier élément de la pile
-                        Constante* dernier_element_pop = Calculatrice::getInstance().getPileStockage()->pop();
-
-                        if (Expression *tmp=dynamic_cast<Expression *>(dernier_element_pop)){ //si le dernier élément est une expression
-                            //on conctatène cette expression avec chaine
-                            QString dernier_element = tmp->getExpr();
-                            dernier_element.replace("'","");
-                            //on l'envoie à traiter_bloc_expression
-                            qDebug() << "AVANT ENVOIE A traiter_bloc_expression";
-                            traiter_bloc_expression(dernier_element+" "+chaine);
-                            //delete dernier_element_pop
-                            return;
-                        }else{
-                            Calculatrice::getInstance().getPileStockage()->push(dernier_element_pop);
+                        if (!dernier_element_expression(chaine))
                             traiter_bloc_calcul(chaine);
-                        }
-                    }else{ */
-                        traiter_bloc_calcul(chaine);
                         dans_une_exp = true;
                         chaine = "";
-                    //}
                 }
             } else {
                 //qu'on soit ou non dans une chaine on ajoute ce caractère à la sous-chaine en cours
                 chaine = chaine + s.at(i);
             }
         }
-        //une fois à la fin de l'expression
-            if (dans_une_exp)
+        //une fois à la fin du QLineEdit
+            if (dans_une_exp) {
                 throw("Erreur, nombre de quote(s) impaire");
-            else
-                 traiter_bloc_calcul(chaine);
+            } else {
+                 if (!dernier_element_expression(chaine))
+                    traiter_bloc_calcul(chaine);
+             }
 
         ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
     }
@@ -601,7 +583,6 @@ void MainWindow::ENTERClicked(){
 }
 
 void MainWindow::traiter_bloc_calcul(QString s){
-    qDebug()<< "ENTRER BLOC CALCUL";
     s.simplified();
 
     QStringList list = s.split(QRegExp("\\s+"), QString::SkipEmptyParts);
@@ -725,11 +706,34 @@ Constante* MainWindow::stringToConstante(QString temp){
 }
 
 void MainWindow::traiter_bloc_expression(QString s){
-    qDebug()<< "ENTRER BLOC EXPRESSION";
     Constante* exp = new Expression("'"+s+"'");
     Calculatrice::getInstance().getPileStockage()->push(exp);
 }
 
 void MainWindow::EVALClicked(){
 
+}
+
+
+bool MainWindow::dernier_element_expression(QString chaine) {
+    if (!Calculatrice::getInstance().getPileStockage()->isEmpty()){
+        //on elève le premier élément de la pile
+        Constante* dernier_element_pop = Calculatrice::getInstance().getPileStockage()->pop();
+
+        if (Expression *tmp=dynamic_cast<Expression *>(dernier_element_pop)){ //si le dernier élément est une expression
+            //on conctatène cette expression avec chaine
+            QString dernier_element = tmp->getExpr();
+            dernier_element.replace("'","");
+            //on l'envoie à traiter_bloc_expression
+            traiter_bloc_expression(dernier_element+" "+chaine);
+            //delete dernier_element_pop
+            return true;
+        }else{
+            //Comme ce n'est pas une expression on doit remettre l'élément popé au départ dans la liste
+            Calculatrice::getInstance().getPileStockage()->push(dernier_element_pop);
+            return false;
+        }
+    } else {
+        return false;
+    }
 }

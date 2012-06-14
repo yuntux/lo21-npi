@@ -46,6 +46,7 @@ private:
 public:
     explicit MainWindow(QWidget *parent = 0);
     void traitement_expr(QString s);
+    bool dernier_element_expression(QString chaine);
     ~MainWindow();
     void empiler(float r);
     MesureAngle getAngle(){return _modAngle;}
