@@ -6,6 +6,10 @@
 #include "logmessage.h"
 #include "exception"
 
+//Fonctions outils pour les simplifications de fractions
+int pgcd(int a, int b);
+int ppcm(int X,int Y);
+
 class Rationnel : public Constante{
     int _numerateur;
     int _denominateur;
@@ -48,8 +52,6 @@ public:
     virtual Constante* carre();
     virtual Constante* cube();
     virtual Constante* racine();
-
-
 };
 
 #endif // RATIONNEL_H

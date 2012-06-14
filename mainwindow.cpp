@@ -601,7 +601,7 @@ void MainWindow::traiter_bloc_calcul(QString s){
                 throw LogMessage(5,"Nombre d'opérandes insuffisants dans la pile.", moyen);
 
         //si c'est un operateur binaire on a besoin d'un second opérandes
-        if(temp=="+" || temp=="*" || temp=="-" || temp=="/")
+        if(temp=="+" || temp=="*" || temp=="-" || temp=="/" || temp=="POW")
             if (!calc.getPileStockage()->isEmpty())
                 operande2 = calc.getPileStockage()->pop();
             else
@@ -643,6 +643,10 @@ void MainWindow::traiter_bloc_calcul(QString s){
             calc.getPileStockage()->push(operande1->logN());
         else if(temp=="LOG")
             calc.getPileStockage()->push(operande1->log1());
+
+        //FIXME => POW CRASH
+/*        else if(temp=="POW")
+            calc.getPileStockage()->push(operande1->puissance(operande2)); */
         else {
             //on essaye de convertir la chaine en constante
             Constante* nouvelle_constante = stringToConstante(temp);

@@ -6,6 +6,28 @@
 #include "fonctions.h"
 #define PI 3.14
 
+int pgcd(int a, int b) {
+        if (a==0||b==0) return 0;
+        if (a<0) a=-a;
+        if (b<0) b=-b;
+        while(a!=b){
+                if (a>b) a=a-b; else b=b-a;
+        }
+        return a;
+}
+
+int ppcm(int X,int Y)
+{
+  int A=X;
+  int B=Y;
+  while (A!=B)
+  {
+    while (A>B) B=B+Y;
+    while (A<B) A=A+X;
+  }
+  return A;
+}
+
 Rationnel::Rationnel(Constante* c) {
     if (typeid(*c)==typeid(Complexe)){
         //FIXME : impossible de renvoyer un rationnel Ã  partir d'un complexe

@@ -9,7 +9,6 @@ SOURCES += mainwindow.cpp \
     main.cpp \
     logsystem.cpp \
     logmessage.cpp \
-    fonctions.cpp \
     constante.cpp \
     complexe.cpp \
     rationnel.cpp \
@@ -21,7 +20,6 @@ SOURCES += mainwindow.cpp \
 HEADERS += mainwindow.h \
     logsystem.h \
     logmessage.h \
-    fonctions.h \
     constante.h \
     complexe.h \
     rationnel.h \
