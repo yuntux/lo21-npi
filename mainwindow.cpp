@@ -9,6 +9,7 @@
 #include "rationnel.h"
 #include "entier.h"
 #include "expression.h"
+#include <typeinfo>
 #include "calculatrice.h"
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -596,7 +597,7 @@ void MainWindow::traiter_bloc_calcul(QString s){
         Constante* operande1;
         Constante* operande2;
         //si c'est un opérateur on a besoin d'au moins un opérande pour faire un calcul
-        if(temp=="+" || temp=="*" || temp=="-" || temp=="/" || temp=="!" || temp=="SIN" || temp=="SINH"  || temp=="COS" || temp=="COSH" || temp=="TAN" || temp=="TANH" || temp=="INV" || temp=="SIGN" || temp=="LOG" || temp=="LN" || temp=="CUBE" || temp=="SQR" || temp=="SQRT")
+        if(temp=="+" || temp=="*" || temp=="-" || temp=="/" || temp=="!" || temp=="SIN" || temp=="SINH"  || temp=="COS" || temp=="COSH" || temp=="TAN" || temp=="TANH" || temp=="INV" || temp=="SIGN" || temp=="LOG" || temp=="LN" || temp=="CUBE" || temp=="SQR" || temp=="SQRT" || temp=="POW")
             if (!calc.getPileStockage()->isEmpty())
 
                 operande1 = calc.getPileStockage()->pop();
@@ -610,14 +611,20 @@ void MainWindow::traiter_bloc_calcul(QString s){
             else
                 throw LogMessage(5,"Nombre d'opérandes dans la pile insuffisant.", moyen);
 
-        if(temp=="+")
-            calc.getPileStockage()->push(operande1->addition(operande2));
+        if(temp=="+"){
+            qDebug() << "OP1 " << operande1->afficher() << "OP2 " << operande2->afficher();
+            if (typeid(*operande1)==typeid(Rationnel))
+                    qDebug() << "OP1 est RATIONNEL";
+            if (typeid(*operande2)==typeid(Rationnel))
+                    qDebug() << "OP2 est RATIONNEL";
+            calc.getPileStockage()->push(operande2->addition(operande1));
+        }
         else if(temp=="*")
-            calc.getPileStockage()->push(operande1->produit(operande2));
+            calc.getPileStockage()->push(operande2->produit(operande1));
         else if(temp=="/")
-            calc.getPileStockage()->push(operande1->division(operande2));
+            calc.getPileStockage()->push(operande2->division(operande1));
         else if(temp=="-")
-            calc.getPileStockage()->push(operande1->soustraction(operande2));
+            calc.getPileStockage()->push(operande2->soustraction(operande1));
         else if(temp=="!")
             calc.getPileStockage()->push(operande1->fact());
         else if(temp=="SIN")
@@ -644,6 +651,8 @@ void MainWindow::traiter_bloc_calcul(QString s){
             calc.getPileStockage()->push(operande1->cube());
         else if(temp=="LN")
             calc.getPileStockage()->push(operande1->logN());
+        else if(temp=="POW")
+            calc.getPileStockage()->push(operande2->puissance(operande1));
         else if(temp=="LOG")
             calc.getPileStockage()->push(operande1->log1());
 
@@ -675,12 +684,15 @@ Constante* MainWindow::stringToConstante(QString temp){
         QRegExp regexpRationnel("^[\\d]*/[\\d]*$");
         if (regexpRationnel.exactMatch(temp)) {
             QStringList r = temp.split("/");
-            return new Rationnel(r.at(0).toInt(), r.at(1).toInt());
+            //qDebug() << "Num : " << r.at(0).toInt() << " Denom : " << r.at(1).toInt();
+            int num = r.at(0).toInt();
+            int denom = r.at(1).toInt();
+            Constante* tmp = new Rationnel(num, denom);
+            return tmp;
         }
 //on essaye de voir si on peut construire un complexe à partir de temp
         //si temp contient exactement un dollar
         if (temp.count(QRegExp("$"))==1) {
-            qDebug() << "COMPPPPPLLLLLLLLLLEXXXXXXXX";
             if (Calculatrice::getInstance().getModComplexe()) {
                 QStringList c = temp.split("\$");
                 Constante* re = stringToConstante(c.at(0));

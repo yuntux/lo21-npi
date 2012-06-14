@@ -28,6 +28,7 @@ int ppcm(int X,int Y)
 }
 
 Rationnel::Rationnel(Constante* c) {
+    qDebug() << "CNOSTRUCTEUR DE RATIONEL DEPUIS UNE CONSTANTE";
     if (typeid(*c)==typeid(Complexe)){
         //FIXME : impossible de renvoyer un rationnel Ã  partir d'un complexe
             //SAUF si la partie imaginaire est nulle et que la partie réelle est castable (entier ou rationnel ou réel avec partie décimale nulle)
@@ -43,6 +44,7 @@ Rationnel::Rationnel(Constante* c) {
     } else if (typeid(*c)==typeid(Reel)) {
         //FIXME : impossible de construire un rationnel Ã  partir d'un rÃ©el SAUF si la partie décimale est nulle
     }
+
     throw LogMessage(3,"Type de constante non prévu dans la fonction Rationnel::Rationnel(Constante* c).", important);
 }
 
@@ -72,19 +74,12 @@ Constante* Rationnel::addition(Constante* c){
         return c_complexe->addition(this);
     } else if (typeid(*c)==typeid(Rationnel)) {
         Rationnel *c_rationnel=dynamic_cast<Rationnel *>(c);
-        if(c_rationnel->getDenominateur()==_denominateur)
-        {
-            Rationnel* tmp  = new Rationnel(c_rationnel->getNumerateur()+_numerateur, c_rationnel->getDenominateur());
-            return new Complexe(tmp);
-        }
-        else
-        {
-            int p=ppcm(c_rationnel->getDenominateur(), _denominateur);
-            int new_num1=(p/_denominateur*_numerateur);
-            int new_num2=(p/c_rationnel->getDenominateur()*c_rationnel->getNumerateur());
-            Rationnel* tmp = new Rationnel(new_num1+new_num2,p);
-            return new Complexe(tmp);
-        }
+        int denom = this->getDenominateur() * c_rationnel->getDenominateur();
+        int num = (this->getNumerateur() * c_rationnel->getDenominateur()) + (c_rationnel->getNumerateur() * this->getDenominateur());
+        Rationnel* tmp = new Rationnel(num, denom);
+        tmp->simplification();
+        qDebug() << tmp->afficher();
+        return new Complexe(tmp);
     } else if (typeid(*c)==typeid(Reel)) {
         //FIXME : doit lever une exeption car perte de précesion
     }

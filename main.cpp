@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 {
 
     /* DEBUG */
-
+/*
     Entier e1(0);
     Entier e2(2);
     Entier e3(3);
@@ -56,6 +56,7 @@ int main(int argc, char *argv[])
     Complexe c31(&re1, &re2);
     Complexe c32(&re1, &ra3);
     Complexe c33(&re1, &e3);
+    */
     //qDebug() << re1.cosinus(false)->afficher(); //on passe false en param des fonctions trigo lorsque l'on est en mod rad
     //qDebug() << re2.cosinus(true)->afficher();
     //qDebug() << e1.cosinus(true)->afficher(); //on passe false en param des fonctions trigo lorsque l'on est en mod degres
