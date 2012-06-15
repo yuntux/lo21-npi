@@ -47,8 +47,17 @@ void LogSystem::ajouterFichierLog(LogMessage m){
     out<< m.what();
     out<<" \n";
     file.close();
+    /**
+      * \brief Ajouter Fichier Log
+      * \details On parcourt le fichier pour ajouter à la fin
+      * \param m Un LogMessage
+      */
 }
 
 void LogSystem::ajouterConsoleLog(LogMessage m){
     cerr << "MESSAGE DE LOG : " << m.what() << endl;
+    /**
+      * \brief Ajouter Console Log
+      * \details On affiche le message sur la sotir standard d'erreur.
+      */
 }

@@ -41,38 +41,21 @@ int main(int argc, char *argv[])
     Complexe c31(&re1, &re2);
     Complexe c32(&re1, &ra3);
     Complexe c33(&re1, &e3);
-    */
-    /*
-    try {
-        ra1.setDenominateur(0);
-    }
-    catch(std::exception const& e)
-    {
-        // FIXME : interagir avec logsystem
-        cerr << "ERREUR : " << e.what() << endl;
-    }
-    */
-    //return 0;
-/*
-    QApplication a(argc, argv);
-    try {
 
-        MainWindow w;
-        w.show();
-    }
-    catch(std::exception const& e)
-    {
-        // FIXME : interagir avec logsystem
-        cerr << "ERREUR : " << e.what() << endl;
-    }
-    return a.exec();
+    return 0;
     */
+
 
 
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
     return a.exec();
+
+    /**
+      * \brief Fonction Main
+      * \details On lance l'application correspondant à la calculatrice
+      */
 
 
 }

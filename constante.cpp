@@ -41,4 +41,9 @@ Constante* Constante::recopie(){
         }
         return tmp;
     }
+    /**
+      * \brief Recopie d'une constante
+      * \details Suivant le type de Constante, on va faire un dynamic cast.
+      * \return Une \e Constante reprenant les mêmes attributs que celle copiée.
+      */
 }

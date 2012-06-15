@@ -4,8 +4,15 @@
 #include "logsystem.h"
 
 Calculatrice* Calculatrice::instance=0;
+/**
+ * \brief Dans un Singleton, nécessité d'avoir une instante de type static
+
+  */
 
 Calculatrice::~Calculatrice(){
+    /**
+     * \brief Le destructeur de la classe
+      */
 }
 
 Calculatrice::Calculatrice() : context(new QSettings("context.ini", QSettings::IniFormat))
@@ -67,9 +74,16 @@ void Calculatrice::afficher_toutes_piles_hitorique(){
 Calculatrice& Calculatrice::getInstance(){
     if (!instance) instance= new Calculatrice();
     return *instance;
+    /**
+    * \brief Récupération de l'instance
+    * \details Permet de ne pas instancier plus d'une fois la classe
+    */
 }
 
 void Calculatrice::libereInstance(){
     delete instance;
+    /**
+      * \brief destruction de l'instance
+      */
 }
 

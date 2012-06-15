@@ -46,6 +46,12 @@ Rationnel::Rationnel(Constante* c) {
         //FIXME : impossible de construire un rationnel Ã  partir d'un rÃ©el SAUF si la partie décimale est nulle
     }
     throw LogMessage(7,"Type de constante non prévu dans la fonction Rationnel::Rationnel(Constante* c).", important);
+    /**
+      * \brief Constructeur Rationnel
+      * \details Dans certains cas, selon le type du paramètre (Entier, Rationnel), on
+      *          effectue un dynamic cast sur le paramètre, et on affecte les valeurs aux attributs _numerateur et _denominateur
+      * \param c Une \e Constante, donc soit un Entier, soit un Réel, soit un Rationnel, soit un Complexe
+      */
 }
 
 Rationnel::Rationnel(int num, int den):_numerateur(num), _denominateur(den)
@@ -55,6 +61,13 @@ Rationnel::Rationnel(int num, int den):_numerateur(num), _denominateur(den)
     throw LogMessage(1,"Division par zéro", important);
     }
     this->simplification();
+    /**
+      * \brief Constructeur surchargé
+      * \details Passage d'un numérateur et d'un dénominateur en paramètres et affectation des attributs.
+      *          On lève une exception si le dénominateur est 0
+      * \param num Entier correspondant au numérateur
+      * \param den Entier correspondant au dénominateur
+      */
 }
 
 QString Rationnel::afficher() const{
@@ -68,6 +81,11 @@ QString Rationnel::afficher() const{
          else
             return QString::number(_numerateur)+"/"+QString::number(_denominateur);
     }
+    /**
+      * \brief Affichage Rationnel
+      * \details Affichage d'un Rationnel, en affichant uniquement le numérateur si le dénominateur est égal à 1
+      * \return Une \e QString correspondant à l'affichage du rationnel
+      */
 }
 
 Constante* Rationnel::addition(Constante* c){
@@ -89,6 +107,14 @@ Constante* Rationnel::addition(Constante* c){
         //FIXME : doit lever une exeption car perte de précesion
     }
     throw LogMessage(3,"Type de constante non prévu dans la fonction Constante* Rationnel::addition(Constante* c).", important);
+    /**
+      * \brief Somme de 2 rationnels
+      * \details On vérifie le type du paramètre, et on crée une nouvelle instance de ce type en fonction, dont le
+      *          ou les attributs seront en fait la somme des 2 rationnels dont l'on veut calculer l'addition.Cependant, si on
+      *          est en mode Rationnel, on ne doit pas avoir les autres types de constante.
+      * \param c Une constante
+      * \return Un \e Complexe, car on utilisera toujours les formes complexes pour les calculs
+      */
 }
 
 Constante* Rationnel::produit(Constante *c)
@@ -110,6 +136,13 @@ Constante* Rationnel::produit(Constante *c)
              return c_complexe->produit(this);
      }
     throw LogMessage(3,"Type de constante non prévu dans la fonction Constante* Rationnel::produit(Constante* c).", important);
+    /**
+      * \brief Produit de deux rationnels
+      * \details Comme pour la somme, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra
+      *          le produit demandé. Cependant, normalement en mode Rationnel, on ne doit avoir que des rationnels.
+      * \param c Une Constante
+      * \return Un \e Complexe contenant le produit
+      */
 }
 
 Constante* Rationnel::division(Constante *c)
@@ -137,10 +170,22 @@ Constante* Rationnel::division(Constante *c)
        return rationnel_complexe.division(c_complexe);
     }
    throw LogMessage(3,"Type de constante non prévu dans la fonction Constante* Rationnel::division(Constante* c).", important);
+   /**
+     * \brief Division de rationnels
+     * \details Comme pour la somme et le produit, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra
+     *          le quotient demandé. Cependant, normalement en mode Rationnel, on ne doit avoir que des rationnels.
+     * \param c Une Constante
+     * \return Un \e Complexe contenant le quotient
+     */
 }
 
 Constante* Rationnel::signe(){
     return new Rationnel(-_numerateur, _denominateur);
+    /**
+      * \brief Inversion du signe
+      * \details Il ne faut inverser le signe que d'un des deux attributs. On fait ici le choix du numérateur
+      * \return Un nouveau \e Rationnel avec numérateur opposé
+      */
 }
 
 
@@ -160,12 +205,23 @@ Constante* Rationnel::soustraction(Constante* c){
         return new Complexe(this->addition(c_reel->signe()));
     }
     throw LogMessage(3,"Type de constante non prévu dans la fonction Constante* Rationnel::soustraction(Constante* c).", important);
+    /**
+      * \brief Différence de rationnels
+      * \details Comme pour les autres opérations, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra
+      *          la différence voulue. Cependant, normalement en mode Rationnel, on ne doit avoir que des rationnels.
+      * \param c Une Constante
+      * \return Un \e Complexe contenant la différence
+      */
 }
 
 Constante* Rationnel::fact()
 {
     throw LogMessage(2,"La fonction factorielle n'est pas implémentée pour les rationnels.", moyen);
     return this;
+    /**
+      * \brief Factoriel Rationnel
+      * \details Cette fonction n'est pas implémentée pour les rationnels, donc on lance un message pour prévenir l'utilisateur
+      */
 }
 
 Constante* Rationnel::sinus(bool angle)
@@ -175,6 +231,14 @@ Constante* Rationnel::sinus(bool angle)
         res=res*PI/180;
     Rationnel *r = new Rationnel(sin(res),1);
     return new Complexe(r);
+    /**
+      * \brief Sinus Rationnel
+      * \details La fonction \e sin de cmath étant implémentée pour un \e float, on fait le rapport du numérateur sur le
+      *          dénominateur pour commencer. Ensuite, on teste si on est en degré. Si c'est le cas, on multiplie le résultat
+      *          par PI/180 car \e sin est définie en radians. On calcule ensuite le sinus.
+      * \param angle Booléen, permet de savoir si l'on est en mode degré
+      * \return Un nouveau \e Complexe construit à partir du Rationnel contenant le résultat
+      */
 }
 
 Constante* Rationnel::cosinus(bool angle)
@@ -184,6 +248,14 @@ Constante* Rationnel::cosinus(bool angle)
         res=res*PI/180;
     Rationnel *r = new Rationnel(cos(res),1);
     return new Complexe(r);
+    /**
+      * \brief Cosinus Rationnel
+      * \details La fonction \e cos de cmath étant implémentée pour un \e float, on fait le rapport du numérateur sur le
+      *          dénominateur pour commencer. Ensuite, on teste si on est en degré. Si c'est le cas, on multiplie le résultat
+      *          par PI/180 car \e cos est définie en radians. On calcule ensuite le cosinus.
+      * \param angle Booléen, permet de savoir si l'on est en mode degré
+      * \return Un nouveau \e Complexe construit à partir du Rationnel contenant le résultat
+      */
 }
 
 Constante* Rationnel::sinush(bool angle)
@@ -193,6 +265,14 @@ Constante* Rationnel::sinush(bool angle)
         res=res*PI/180;
     Rationnel *r = new Rationnel(sinh(res),1);
     return new Complexe(r);
+    /**
+      * \brief Sinus Hyperbolique Rationnel
+      * \details La fonction \e sinh de cmath étant implémentée pour un \e float, on fait le rapport du numérateur sur le
+      *          dénominateur pour commencer. Ensuite, on teste si on est en degré. Si c'est le cas, on multiplie le résultat
+      *          par PI/180 car \e sinh est définie en radians. On calcule ensuite le sinus hyperbolique.
+      * \param angle Booléen, permet de savoir si l'on est en mode degré
+      * \return Un nouveau \e Complexe construit à partir du Rationnel contenant le résultat
+      */
 }
 
 Constante* Rationnel::cosinush(bool angle)
@@ -202,6 +282,14 @@ Constante* Rationnel::cosinush(bool angle)
         res=res*PI/180;
     Rationnel *r = new Rationnel(cosh(res),1);
     return new Complexe(r);
+    /**
+      * \brief Cosinus Hyperbolique Rationnel
+      * \details La fonction \e cosh de cmath étant implémentée pour un \e float, on fait le rapport du numérateur sur le
+      *          dénominateur pour commencer. Ensuite, on teste si on est en degré. Si c'est le cas, on multiplie le résultat
+      *          par PI/180 car \e cosh est définie en radians. On calcule ensuite le cosinus hyperbolique.
+      * \param angle Booléen, permet de savoir si l'on est en mode degré
+      * \return Un nouveau \e Complexe construit à partir du Rationnel contenant le résultat
+      */
 }
 
 
@@ -212,6 +300,14 @@ Constante* Rationnel::tangente(bool angle)
         res=res*PI/180;
     Rationnel *r = new Rationnel(tan(res),1);
     return new Complexe(r);
+    /**
+      * \brief Tangente Rationnel
+      * \details La fonction \e tan de cmath étant implémentée pour un \e float, on fait le rapport du numérateur sur le
+      *          dénominateur pour commencer. Ensuite, on teste si on est en degré. Si c'est le cas, on multiplie le résultat
+      *          par PI/180 car \e tan est définie en radians. On calcule ensuite la tangente.
+      * \param angle Booléen, permet de savoir si l'on est en mode degré
+      * \return Un nouveau \e Complexe construit à partir du Rationnel contenant le résultat
+      */
 }
 
 Constante* Rationnel::tangenteh(bool angle)
@@ -221,12 +317,25 @@ Constante* Rationnel::tangenteh(bool angle)
         res=res*PI/180;
     Rationnel *r = new Rationnel(tanh(res),1);
     return new Complexe(r);
+    /**
+      * \brief Tangente Hyperbolique Rationnel
+      * \details La fonction \e tanh de cmath étant implémentée pour un \e float, on fait le rapport du numérateur sur le
+      *          dénominateur pour commencer. Ensuite, on teste si on est en degré. Si c'est le cas, on multiplie le résultat
+      *          par PI/180 car \e tanh est définie en radians. On calcule ensuite la tangente hyperbolique.
+      * \param angle Booléen, permet de savoir si l'on est en mode degré
+      * \return Un nouveau \e Complexe construit à partir du Rationnel contenant le résultat
+      */
 }
 
 Constante *Rationnel::inv()
 {
     Rationnel* tmp = new Rationnel(this->getDenominateur(),this->getNumerateur());
     return tmp;
+    /**
+      * \brief Inverse Rationnel
+      * \details Pour inverser une fraction, il suffit d'échanger le numérateur et le dénominateur
+      * \return Un nouveau \e Rationnel contenant l'inverse de la fraction
+      */
 }
 
 void Rationnel::simplification(){
@@ -239,6 +348,10 @@ void Rationnel::simplification(){
                 _denominateur=-_denominateur;
                 _numerateur=-_numerateur;
         }
+        /**
+          * \brief Simplifier fraction
+          * \details Permet de simplifier un nombre Rationnel
+          */
 }
 
 Constante* Rationnel::logN()

@@ -168,6 +168,11 @@ void MainWindow::loadFromFile(){
     }
     LogMessage msg(0, "Chargement du context.", tracabilite);
     LogSystem::getInstance().ajouterFcihierEtConsole(msg);
+    /**
+      * \brief Chargement du contexte
+      * \details Cette fonction sert à charger le contexte qui a été sauvegardé dans la fonction saveToFile. Pour cela on regarde les
+      *          paramètres stockés et on modifie les paramètres de MainWindow en fonction
+      */
 }
 
 void MainWindow::_modDegresToggled(bool b){
@@ -177,6 +182,11 @@ void MainWindow::_modDegresToggled(bool b){
     } else {
         this->_modRadiansToggled(true);
     }
+    /**
+      * \brief Mode Degré
+      * \details Passage en mode degré
+      * \param b Booléen permettant de déterminer le mode
+      */
 }
 
 void MainWindow::_modRadiansToggled(bool b){
@@ -186,6 +196,11 @@ void MainWindow::_modRadiansToggled(bool b){
     } else {
         this->_modDegresToggled(true);
     }
+    /**
+      * \brief Mode Radian
+      * \details Passage en mode radian
+      * \param b Booléen permettant de déterminer le mode
+      */
 }
 
 void MainWindow::_modComplexeONClicked(bool b){
@@ -196,6 +211,11 @@ void MainWindow::_modComplexeONClicked(bool b){
     } else {
         this->_modComplexeOFFClicked(true);
     }
+    /**
+      * \brief Mode Complexe actif
+      * \details Passage en mode complexe
+      * \param b Booléen permettant de déterminer si le mode est activé
+      */
 }
 
 void MainWindow::_modComplexeOFFClicked(bool b){
@@ -206,6 +226,11 @@ void MainWindow::_modComplexeOFFClicked(bool b){
     } else {
         this->_modComplexeONClicked(true);
     }
+    /**
+      * \brief Mode Complexe inactif
+      * \details Passage en mode complexe
+      * \param b Booléen permettant de déterminer si le mode est désactivé
+      */
 }
 
 void MainWindow::_clavierBasicStateChange(int cochee){
@@ -220,6 +245,11 @@ void MainWindow::_clavierBasicStateChange(int cochee){
         Calculatrice::getInstance().getContext()->setValue("ClavierBasic", true);
         ui->inputLine->setEnabled(false);
     }
+    /**
+      * \brief Clavier basique
+      * \details Permet de montrer ou de cacher le clavier basique, selon la valeur du paramètre
+      * \param cochee Entier permettant de savoir si on cache ou non le clavier basique
+      */
 }
 
 void MainWindow::_clavierAvanceStateChange(int cochee){
@@ -230,6 +260,11 @@ void MainWindow::_clavierAvanceStateChange(int cochee){
         ui->widget_clavierAvance->show();
         Calculatrice::getInstance().getContext()->setValue("ClavierAvance", true);
     }
+    /**
+      * \brief Clavier avancé
+      * \details Permet de montrer ou de cacher le clavier avancé, selon la valeur du paramètre
+      * \param cochee Entier permettant de savoir si on cache ou non le clavier avancé
+      */
 }
 
 void MainWindow::_modReel(bool b)
@@ -240,6 +275,12 @@ void MainWindow::_modReel(bool b)
     } else {
         this->_modRationnel(true);
     }
+    /**
+      * \brief Mode réel
+      * \details Permet le passage du mode constante en réel, en fonction de la valeur du paramètre,
+      *          puis sauvegarder dans un fichier
+      * \param b Booléen permettant le passage dans ce mode
+      */
 }
 
 
@@ -251,6 +292,12 @@ void MainWindow::_modRationnel(bool b)
     } else {
         this->_modReel(true);
     }
+    /**
+      * \brief Mode rationnel
+      * \details Permet le passage du mode constante en rationnel, en fonction de la valeur du paramètre,
+      *          puis sauvegarder dans un fichier
+      * \param b Booléen permettant le passage dans ce mode
+      */
 }
 
 
@@ -262,152 +309,300 @@ void MainWindow::_modEntier(bool b)
     } else {
         this->_modRationnel(true);
     }
+    /**
+      * \brief Mode rationnel
+      * \details Permet le passage du mode constante en rationnel, en fonction de la valeur du paramètre,
+      *          puis sauvegarder dans un fichier
+      * \param b Booléen permettant le passage dans ce mode
+      */
 }
 
 
 void MainWindow::num0Clicked(){
     ui->inputLine->setText(ui->inputLine->text()+"0");
+    /**
+      * \brief Clic sur le bouton 0
+      * \details Lorsque l'on clique sur le bouton 0, on ajoute 0 sur la inputline
+      */
 
 }
 
 void MainWindow::num1Clicked(){
     ui->inputLine->setText(ui->inputLine->text()+"1");
+    ui->inputLine->setText(ui->inputLine->text()+"1");
+    /**
+      * \brief Clic sur le bouton 1
+      * \details Lorsque l'on clique sur le bouton 1, on ajoute 1 sur la inputline
+      */
 }
 
 void MainWindow::num2Clicked(){
     ui->inputLine->setText(ui->inputLine->text()+"2");
+    /**
+      * \brief Clic sur le bouton 2
+      * \details Lorsque l'on clique sur le bouton 2, on ajoute 2 sur la inputline
+      */
 }
 
 void MainWindow::num3Clicked(){
     ui->inputLine->setText(ui->inputLine->text()+"3");
+    /**
+      * \brief Clic sur le bouton 3
+      * \details Lorsque l'on clique sur le bouton 3, on ajoute 3 sur la inputline
+      */
 }
 
 
 void MainWindow::num4Clicked(){
     ui->inputLine->setText(ui->inputLine->text()+"4");
+    /**
+      * \brief Clic sur le bouton 4
+      * \details Lorsque l'on clique sur le bouton 4, on ajoute 4 sur la inputline
+      */
 }
 
 void MainWindow::num5Clicked(){
     ui->inputLine->setText(ui->inputLine->text()+"5");
+    /**
+      * \brief Clic sur le bouton 5
+      * \details Lorsque l'on clique sur le bouton 5, on ajoute 5 sur la inputline
+      */
 }
 
 void MainWindow::num6Clicked(){
     ui->inputLine->setText(ui->inputLine->text()+"6");
+    /**
+      * \brief Clic sur le bouton 6
+      * \details Lorsque l'on clique sur le bouton 6, on ajoute 6 sur la inputline
+      */
 }
 
 void MainWindow::num7Clicked(){
     ui->inputLine->setText(ui->inputLine->text()+"7");
+    /**
+      * \brief Clic sur le bouton 7
+      * \details Lorsque l'on clique sur le bouton 7, on ajoute 7 sur la inputline
+      */
 }
 
 void MainWindow::num8Clicked(){
     ui->inputLine->setText(ui->inputLine->text()+"8");
+    /**
+      * \brief Clic sur le bouton 8
+      * \details Lorsque l'on clique sur le bouton 8, on ajoute 8 sur la inputline
+      */
 }
 
 void MainWindow::num9Clicked(){
     ui->inputLine->setText(ui->inputLine->text()+"9");
+    /**
+      * \brief Clic sur le bouton 9
+      * \details Lorsque l'on clique sur le bouton 9, on ajoute 8 sur la inputline
+      */
 }
 
 
 void MainWindow::POINTClicked(){
     ui->inputLine->setText(ui->inputLine->text()+".");
+    /**
+      * \brief Clic sur le bouton "."
+      * \details Lorsque l'on clique sur le bouton ".", on ajoute un point sur la inputline
+      */
 }
 
 
 void MainWindow::ESPACEClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" ");
+    /**
+      * \brief Clic sur le bouton espace
+      * \details Lorsque l'on clique sur le bouton "_", on ajoute un espace sur la inputline
+      */
 }
 
 void MainWindow::FACTORIELClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" ! ");
+    /**
+      * \brief Clic sur le bouton !
+      * \details Lorsque l'on clique sur le bouton !, on ajoute ! sur la inputline
+      */
 }
 
 void MainWindow::ADDITIONNERClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" + ");
+    /**
+      * \brief Clic sur le bouton +
+      * \details Lorsque l'on clique sur le bouton +, on ajoute + sur la inputline
+      */
 }
 
 void MainWindow::SOUSTRAIREClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" - ");
+    /**
+      * \brief Clic sur le bouton -
+      * \details Lorsque l'on clique sur le bouton -, on ajoute - sur la inputline
+      */
 }
 
 void MainWindow::MULTIPLIERClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" * ");
+    /**
+      * \brief Clic sur le bouton *
+      * \details Lorsque l'on clique sur le bouton *, on ajoute * sur la inputline
+      */
 }
 
 void MainWindow::DIVISERClicked(){
     ui->inputLine->setText(ui->inputLine->text()+"/");
+    /**
+      * \brief Clic sur le bouton /
+      * \details Lorsque l'on clique sur le bouton /, on ajoute / sur la inputline
+      */
 }
 
 void MainWindow::POWClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" POW ");
+    /**
+      * \brief Clic sur le bouton POW
+      * \details Lorsque l'on clique sur le bouton POW, on ajoute POW sur la inputline
+      */
 }
 
 void MainWindow::SINClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" SIN ");
+    /**
+      * \brief Clic sur le bouton SIN
+      * \details Lorsque l'on clique sur le bouton SIN, on ajoute SIN sur la inputline
+      */
 }
 
 void MainWindow::COSClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" COS ");
+    /**
+      * \brief Clic sur le bouton COS
+      * \details Lorsque l'on clique sur le bouton COS, on ajoute COS sur la inputline
+      */
 }
 
 void MainWindow::TANClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" TAN ");
+    /**
+      * \brief Clic sur le bouton TAN
+      * \details Lorsque l'on clique sur le bouton TAN, on ajoute TAN sur la inputline
+      */
 }
 
 void MainWindow::SINHClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" SINH ");
+    /**
+      * \brief Clic sur le bouton SINH
+      * \details Lorsque l'on clique sur le bouton SINH, on ajoute SINH sur la inputline
+      */
 }
 
 void MainWindow::COSHClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" COSH ");
+    /**
+      * \brief Clic sur le bouton COSH
+      * \details Lorsque l'on clique sur le bouton COSH, on ajoute COSH sur la inputline
+      */
 }
 
 void MainWindow::TANHClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" TANH ");
+    /**
+      * \brief Clic sur le bouton TANH
+      * \details Lorsque l'on clique sur le bouton TANH, on ajoute TANH sur la inputline
+      */
 }
 
 void MainWindow::MODClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" MOD ");
+    /**
+      * \brief Clic sur le bouton MOD
+      * \details Lorsque l'on clique sur le bouton MOD, on ajoute MOD sur la inputline
+      */
 }
 
 void MainWindow::SIGNClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" SIGN ");
+    /**
+      * \brief Clic sur le bouton SIGN
+      * \details Lorsque l'on clique sur le bouton SIGN, on ajoute SIGN sur la inputline
+      */
 }
 
 void MainWindow::SQRClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" SQR ");
+    /**
+      * \brief Clic sur le bouton SQR
+      * \details Lorsque l'on clique sur le bouton SQR, on ajoute SQR sur la inputline
+      */
 }
 
 void MainWindow::SQRTClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" SQRT ");
+    /**
+      * \brief Clic sur le bouton SQRT
+      * \details Lorsque l'on clique sur le bouton SQRT, on ajoute SQRT sur la inputline
+      */
 }
 
 void MainWindow::CUBEClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" CUBE ");
+    /**
+      * \brief Clic sur le bouton CUBE
+      * \details Lorsque l'on clique sur le bouton CUBE, on ajoute CUBE sur la inputline
+      */
 }
 
 void MainWindow::LNClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" LN ");
+    /**
+      * \brief Clic sur le bouton LN
+      * \details Lorsque l'on clique sur le bouton LN, on ajoute LN sur la inputline
+      */
 }
 
 void MainWindow::LOGClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" LOG ");
+    /**
+      * \brief Clic sur le bouton LOG
+      * \details Lorsque l'on clique sur le bouton LOG, on ajoute LOG sur la inputline
+      */
 }
 
 void MainWindow::INVClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" INV ");
+    /**
+      * \brief Clic sur le bouton INV
+      * \details Lorsque l'on clique sur le bouton INV, on ajoute INV sur la inputline
+      */
 }
 
 void MainWindow::DOLLARClicked(){
     ui->inputLine->setText(ui->inputLine->text()+"$");
+    /**
+      * \brief Clic sur le bouton $
+      * \details Lorsque l'on clique sur le bouton $, on ajoute $ sur la inputline
+      */
 }
 
 void MainWindow::QUOTEClicked(){
     ui->inputLine->setText(ui->inputLine->text()+" ' ");
+    /**
+      * \brief Clic sur le bouton '
+      * \details Lorsque l'on clique sur le bouton ', on ajoute ' sur la inputline
+      */
 }
 
 void MainWindow::CEClicked(){
     ui->inputLine->setText("");
     ui->listView->reset();
+    /**
+      * \brief Clic sur le bouton CE
+      * \details Lorsque l'on clique sur le bouton CE, on retire tout ce qu'il y a sur la inputline, et on
+      *          reset la listview
+      */
 }
 
 void MainWindow::CClicked(){
@@ -415,11 +610,19 @@ void MainWindow::CClicked(){
     QString newstring = ui->inputLine->text().remove(ui->inputLine->text().size()-1, 1);
     ui->inputLine->setText(newstring);
     ui->listView->reset();
+    /**
+      * \brief Clic sur le bouton C
+      * \details Lorsque l'on clique sur le bouton C, on retire le dernier caractère entré sur la inputline
+      */
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+    /**
+      * \brief Destructeur de MainWindow
+      * \details Destruction de ui
+      */
 }
 
 void MainWindow::annulerClicked(){
@@ -481,7 +684,12 @@ void MainWindow::ENTERClicked(){
     }
     //qDebug() << "PILE COURANTE \n" << Calculatrice::getInstance().getPileStockage()->afficher();
     //Calculatrice::getInstance().afficher_toutes_piles_hitorique();
-
+    /**
+      * \brief Clic sur le bouton ENTER
+      * \details Récupération de la inputline sous forme de QString et traitement de plusieurs cas. En fonction
+      *          de l'interrupteur booléen \e dans_une_exp, on va déterminer si l'on se trouve ou non dans une expression.
+      *          En fonction de cela, on enverra soit la fonction \e traiter_bloc_expression, soit la fonction \e traiter_bloc_calcul
+      */
 }
 
 void MainWindow::traiter_bloc_calcul(QString s){
@@ -570,6 +778,12 @@ void MainWindow::traiter_bloc_calcul(QString s){
                 throw LogMessage(6,"La chaine saisie est invalide", moyen);
         }
     }
+    /**
+      * \brief Traitement d'un bloc calcul
+      * \details Permet de traiter un bloc de calcul. Effectue un split en fonction de l'espace, puis regarde pour chaque membre
+      *          de la liste si c'est un opérateur. Si c'est le cas, on dépile un premier opérande. Si, de plus, c'est un opérateur
+      *          binaire, alors on dépile un deuxième opérande. On effectue ensuite le calcul puis on empile le résultat
+      */
 }
 
 Constante* stringToConstante(QString temp, bool essayer_construire_complexe){
@@ -607,6 +821,12 @@ Constante* stringToConstante(QString temp, bool essayer_construire_complexe){
         //FIXME : lever une exeption
          throw LogMessage(8,"La chaine saisie est invalide", moyen);
          return NULL;
+         /**
+           * \brief Conversion string vers Constante
+           * \details En maniant les RegExp, on vérifie si l'on peut convertir en l'un des types de constante.
+           *          Si c'est possible, on crée une nouvelle constante du type dans lequel on peut convertir
+           * \return Une \e Constante du type dans lequel il est possible de convertir la chaine
+           */
 }
 
 void MainWindow::traiter_bloc_expression(QString s){

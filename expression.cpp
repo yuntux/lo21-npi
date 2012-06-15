@@ -2,6 +2,11 @@
 
 Expression::Expression(QString s):_expr(s)
 {
+    /**
+      * \brief Constructeur d'Expression
+      * \details On affecte à l'attribut \e _expr la valeur passée en paramètre
+      * \param s Une QString
+      */
 }
 
 

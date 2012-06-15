@@ -18,6 +18,14 @@ Complexe::Complexe(Constante* r, Constante* i){
         _reelle = r->recopie();;
         _imaginaire= i->recopie();
     }
+    /**
+      * \brief Constructeur surchargé de complexe
+      * \details On vérifie le type des 2 constantes, et on lève une exception
+      *          si ce sont des complexes, car un complexe ne peut pas être composé
+      *          lui même de complexes
+      * \param r la partie réelle est une Constante
+      * \param i la partie imaginaire est une Constante aussi
+      */
 }
 
 Complexe::Complexe(Constante* c) {
@@ -39,6 +47,12 @@ Complexe::Complexe(Constante* c) {
         _reelle = c_reel;
         _imaginaire = new Reel(0.0);
     }
+    /**
+      * \brief Constructeur surchargé à un paramètre
+      * \details On vérifie les types, et on crée un complexe
+      *          qui n'aura qu'une partie réelle
+      * \param c seul paramètre, qui est une Constante
+      */
 }
 
 QString Complexe::afficher() const{
@@ -57,6 +71,13 @@ QString Complexe::afficher() const{
            return _reelle->afficher();
    }
     return _reelle->afficher()+"$"+_imaginaire->afficher();
+    /**
+      * \brief Méthode d'affichae d'un Complexe
+      * \details On vérifie le type de la partie imaginaire, et on crée une nouvelle constante de ce type.
+      *          Si la partie imaginaire est nule, on affiche la partie réelle, sinon on affiche la partie réelle,
+      *          un $ et la partie imaginaire.
+      * \return  Une \e QString permettant l'affichage
+      */
 }
 
 Constante* Complexe::addition(Constante* c){
@@ -71,6 +92,13 @@ Constante* Complexe::addition(Constante* c){
     //delete(re);
     //delete(im);
     return c_complexe;
+    /**
+      * \brief Addition de 2 complexes
+      * \details On crée 3 complexes : \a c_entier, construit à partir du paramètre,
+      *          \a re, qui est l'addition des 2 parties réelles et
+      *          \a im, qui est l'addition des 2 parties imaginaires
+      * \return  Une \e Constante, qui est en fait un \e Complexe, dont la partie imaginaire est \a re et la partie imaginaire \a im.
+      */
 }
 
 Constante* Complexe::produit(Constante *c)
@@ -83,6 +111,12 @@ Constante* Complexe::produit(Constante *c)
     //delete(re);
     //delete(im);
     return c_complexe;
+    /**
+      * \brief Produit de 2 complexes
+      * \details Comme pour l'addition, on crée trois complexes. Cette fois, \a re est le produit des parties réelles,
+      *          de la forme a*c - b*d, et \a im est le produit des parties imaginaires, de la forme a*d + c*b.
+      * \return  Un \e Complexe comme pour l'addition
+      */
 }
 
 Constante* Complexe::division(Constante *c)
@@ -105,6 +139,12 @@ Constante* Complexe::division(Constante *c)
     //delete(re_num);
     //delete(im_num);
     return res;
+    /**
+      * \brief Division de 2 complexes
+      * \details  On utilise la multiplication par le conjuguÃ© du diviseur au numÃ©rateur et au dÃ©nominateur
+      *      a+ib / c+id = (a+ib)*(c-id) / (c+id)*(c-id) = ... = [(ac+bd)/(cÂ²+dÂ²)] + i[(cb-ad)/(cÂ²+dÂ²)]
+      * \return Un \e Complexe comme pour les autres opérations
+      */
 }
 
 Constante* Complexe::signe(){
@@ -116,6 +156,13 @@ Constante* Complexe::signe(){
     Complexe tmp2(tmp->getPartieReelle()->produit(&e));
     tmp->setReelle(tmp2.getPartieReelle());
     return tmp;
+    /**
+      * \brief Changement de signe
+      * \details On recopie tout d'abord la constante, qu'on caste ensuite en complexe. On crée un entier de valeur -1
+      *          qu'on va multiplier avec les parties réelles et imaginaires de 2 nouveaux complexes qui servent temporairement
+      *          pour ensuite modifier la valeur du complexe initial
+      * \return Le nouveau \e Complexe
+      */
 }
 
 Constante* Complexe::soustraction(Constante* c){
@@ -129,6 +176,12 @@ Constante* Complexe::soustraction(Constante* c){
     //delete(re);
     //delete(im);
     return c_complexe;
+    /**
+      * \brief Différence de deux complexes
+      * \details De la même façon, cette fois \a re va être la différence des 2 parties réelles, et \a im la différence des
+      *          parties imaginaires.
+      * \return  Un \e Complexe dont la partie réelle est \a re et la partie imaginaire est \a im.
+      */
 }
 
 
