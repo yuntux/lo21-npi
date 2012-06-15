@@ -60,6 +60,8 @@ Constante* Pile::pop()
     } else {
         return NULL;
     }
+    LogMessage msg(0, "Depilement.", tracabilite);
+    LogSystem::getInstance().ajouterFcihierEtConsole(msg);
 }
 
 /*Constante* Pile::top()
@@ -85,6 +87,8 @@ Constante* Pile::mean(unsigned int x)
     Constante* tmp = this->sum(x);
     Entier e(x);
     return new Complexe(tmp->division(&e));
+//    LogMessage msg(0, "Calcul de la moyenne de la pile.", tracabilite);
+ //   LogSystem::getInstance().ajouterFcihierEtConsole(msg);
 }
 
 void Pile::clear(){
@@ -92,11 +96,15 @@ void Pile::clear(){
         Constante* tmp = this->pop();
         delete(tmp);
     }
+    LogMessage msg(0, "Suppression de tous les éléments de la liste.", tracabilite);
+    LogSystem::getInstance().ajouterFcihierEtConsole(msg);
 }
 
 void Pile::dup(){
     Constante* tmp = this->p.at(0)->recopie();
     this->push(tmp);
+    LogMessage msg(0, "Duplication de la tete de pile.", tracabilite);
+    LogSystem::getInstance().ajouterFcihierEtConsole(msg);
 }
 
 Pile* Pile::copier_pile(){
@@ -112,7 +120,7 @@ void Pile::drop(){
     Constante* tmp = this->pop();
     delete(tmp);
     LogMessage msg(0, "Suppression tete de pile.", tracabilite);
-    LogSystem::getInstance().ajouterConsoleEtFichierLog(msg);
+    LogSystem::getInstance().ajouterFcihierEtConsole(msg);
 }
 
 void Pile::swap(unsigned int x, unsigned int y){
@@ -120,6 +128,8 @@ void Pile::swap(unsigned int x, unsigned int y){
     Constante* tmp2 = p.at(y);
     p[x] = tmp2;
     p[y] = tmp1;
+//    LogMessage msg(0, "Inversion des éléments "+x+" et "+y+" de la pile.", tracabilite);
+//    LogSystem::getInstance().ajouterFcihierEtConsole(msg);
 }
 
 
@@ -129,6 +139,6 @@ void Pile::sauv_pile_context(){
         QString libelle("PileStockage/Element"+QString::number(i));
         Calculatrice::getInstance().getContext()->setValue(libelle, p.at(i)->afficher());
     }
-    //LogMessage msg(0, "Sauvegarde de la pile dans le fichier ini.", faible);
-    //LogSystem::getInstance().ajouterConsoleEtFichierLog(msg);
+    LogMessage msg(0, "Sauvegarde de la pile dans le fichier ini.", tracabilite);
+    LogSystem::getInstance().ajouterFcihierEtConsole(msg);
 }

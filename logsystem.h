@@ -1,6 +1,7 @@
 #ifndef LOGSYSTEM_H
 #define LOGSYSTEM_H
 #include "logmessage.h"
+#include <iostream>
 
 class LogSystem
 {
@@ -12,7 +13,8 @@ public:
     static void libereInstance();
     void ajouterFichierLog(LogMessage m);
     void ajouterConsoleLog(LogMessage m);
-    void ajouterConsoleEtFichierLog(LogMessage m);
+    void ajouterFcihierEtConsole(LogMessage m);
+    //void ConstruireLog_ajouterConsoleEtFichierLog(int numero=0, string const &phrase="", enum niveau);
 protected:
     LogSystem(const LogSystem&){}
     void operator=(const LogSystem &);

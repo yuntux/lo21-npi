@@ -11,6 +11,7 @@
 #include "expression.h"
 #include <typeinfo>
 #include "calculatrice.h"
+#include "logsystem.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -165,6 +166,8 @@ void MainWindow::loadFromFile(){
         ui->widget_clavierAvance->hide();
         ui->_clavierAvance->setCheckState(Qt::Unchecked);
     }
+    LogMessage msg(0, "Chargement du context.", tracabilite);
+    LogSystem::getInstance().ajouterFcihierEtConsole(msg);
 }
 
 void MainWindow::_modDegresToggled(bool b){
@@ -620,6 +623,8 @@ void MainWindow::EVALClicked(){
             c.replace("'","");
             ui->inputLine->setText(c);
             MainWindow::ENTERClicked();
+            LogMessage msg(0, "Evaluation de l'expression en tete de pile.", tracabilite);
+            LogSystem::getInstance().ajouterFcihierEtConsole(msg);
         } else {
             //FIXME : lever exception
             //on remet le dernier élément puisque ce n'est pas un exceptation

@@ -1,5 +1,7 @@
 #include "calculatrice.h"
 #include <QtGui>
+#include "logmessage.h"
+#include "logsystem.h"
 
 Calculatrice* Calculatrice::instance=0;
 
@@ -24,6 +26,9 @@ Calculatrice::Calculatrice() : context(new QSettings("context.ini", QSettings::I
           context->remove(keys.at(i));
       }
      context->endGroup();
+
+     LogMessage msg(0, "Chargement de la pile.", tracabilite);
+     LogSystem::getInstance().ajouterFcihierEtConsole(msg);
 }
 
 void Calculatrice::saisie_nouvelle_pile(Pile* nouvelle){
@@ -42,11 +47,15 @@ void Calculatrice::annuler(){
     if (indice_pile_actuelle != Historique.size()-1){
         indice_pile_actuelle++;
     }
+    LogMessage msg(0, "Annulation.", tracabilite);
+    LogSystem::getInstance().ajouterFcihierEtConsole(msg);
 }
 
 void Calculatrice::retablir(){
     if (indice_pile_actuelle != 0)
         indice_pile_actuelle--;
+    LogMessage msg(0, "Retablissement.", tracabilite);
+    LogSystem::getInstance().ajouterFcihierEtConsole(msg);
 }
 
 void Calculatrice::afficher_toutes_piles_hitorique(){

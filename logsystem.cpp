@@ -18,7 +18,14 @@ LogSystem::LogSystem()
 {
 }
 
-void LogSystem::ajouterConsoleEtFichierLog(LogMessage m){
+/*
+void LogSystem::ConstruireLog_ajouterConsoleEtFichierLog(int numero=0, string const &phrase="", enum niveau lev=faible){
+    LogMessage* m = new LogMessage(numero, phrase, niveau);
+    this->ajouterConsoleLog(*m);
+    this->ajouterFichierLog(*m);
+}
+*/
+void LogSystem::ajouterFcihierEtConsole(LogMessage m){
     this->ajouterConsoleLog(m);
     this->ajouterFichierLog(m);
 }
@@ -43,7 +50,5 @@ void LogSystem::ajouterFichierLog(LogMessage m){
 }
 
 void LogSystem::ajouterConsoleLog(LogMessage m){
-    //qDebug() << m.what();
-    //std::cout << m.what();
     cerr << "MESSAGE DE LOG : " << m.what() << endl;
 }
