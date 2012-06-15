@@ -34,9 +34,6 @@ class Calculatrice
 
     QSettings* context;
 
-    //void saveToFile();
-    //void loadFromFile();
-
 protected:
     Calculatrice();  // à mettre dans la partie privée pour en interdire l'utilisationv
     Calculatrice(const Calculatrice&){}

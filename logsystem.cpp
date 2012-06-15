@@ -3,6 +3,17 @@
 #include <iostream>
 #include "iostream"
 
+LogSystem* LogSystem::instance=0;
+
+LogSystem& LogSystem::getInstance(){
+    if (!instance) instance= new LogSystem();
+    return *instance;
+}
+
+void LogSystem::libereInstance(){
+    delete instance;
+}
+
 LogSystem::LogSystem()
 {
 }

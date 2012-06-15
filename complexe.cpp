@@ -6,7 +6,6 @@
 
 
 Complexe::~Complexe(){
-    qDebug() << "DESTRUCTEUR DE COMPLEXES";
     delete(_reelle);
     delete(_imaginaire);
 }
@@ -232,7 +231,6 @@ Constante* Complexe::cube()
 
 Constante* Complexe::racine()
 {
-    //FIXME : pas de fact pour les complexes
     if (this->reel_pur())
         return this->getPartieReelle()->racine();
     throw LogMessage(2,"La fonction RACINE n'est pas implémentée pour les complexes.", moyen);
@@ -241,7 +239,6 @@ Constante* Complexe::racine()
 
 Constante* Complexe::puissance(Constante *c)
 {
-    //FIXME : pas de fact pour les complexes
     if (this->reel_pur())
         return this->getPartieReelle()->puissance(c);
     throw LogMessage(2,"La fonction PUISSANCE n'est pas implémentée pour les complexes.", moyen);
@@ -250,7 +247,6 @@ Constante* Complexe::puissance(Constante *c)
 
 Constante* Complexe::logN()
 {
-    //FIXME : pas de fact pour les complexes
     if (this->reel_pur())
         return this->getPartieReelle()->logN();
     throw LogMessage(2,"La fonction LN n'est pas implémentée pour les complexes.", moyen);
@@ -259,7 +255,6 @@ Constante* Complexe::logN()
 
 Constante* Complexe::log1()
 {
-    //FIXME : pas de fact pour les complexes
     if (this->reel_pur())
         return this->getPartieReelle()->log1();
     throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);
