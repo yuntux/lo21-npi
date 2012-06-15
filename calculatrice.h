@@ -27,18 +27,16 @@ class Calculatrice
     enum Type _modConstante;
     bool _modComplexe;
 
-    Pile _pileStockage;
-    Pile _pileAffichage;
     QList<Pile*> Historique;
     unsigned int indice_pile_actuelle;
 
     QSettings* context;
 
 protected:
-    Calculatrice();  // à mettre dans la partie privée pour en interdire l'utilisationv
+    Calculatrice();  // à mettre dans la partie protected pour en interdire l'utilisationv
     Calculatrice(const Calculatrice&){}
-    virtual ~Calculatrice(); // à mettre dans la partie privée pour en interdire l'utilisationv
-    void operator=(const Calculatrice &);  // non défini mais à mettre dans la partie privée pour en interdire l'utilisation
+    virtual ~Calculatrice(); // à mettre dans la partie protected pour en interdire l'utilisationv
+    void operator=(const Calculatrice &);  // non défini mais à mettre dans la partie protected pour en interdire l'utilisation
 public:
     static Calculatrice& getInstance();
     static void libereInstance();
@@ -51,8 +49,6 @@ public:
 
     void saisie_nouvelle_pile(Pile* nouvelle);
 
-
-    Pile* getPileAffichage() {return &_pileAffichage;}
     enum MesureAngle getMesureAngle() const {return _modAngle;}
     enum Type getModConstante() const {return _modConstante;}
     bool getModComplexe() const {return _modComplexe;}

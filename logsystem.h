@@ -8,7 +8,7 @@ class LogSystem
     static LogSystem* instance;
 
 public:
-    LogSystem();
+
     static LogSystem& getInstance();
     static void libereInstance();
     void ajouterFichierLog(LogMessage m);
@@ -17,6 +17,8 @@ public:
     //void ConstruireLog_ajouterConsoleEtFichierLog(int numero=0, string const &phrase="", enum niveau);
 protected:
     LogSystem(const LogSystem&){}
+    LogSystem();
+    //virtual ~LogSystem();
     void operator=(const LogSystem &);
 };
 

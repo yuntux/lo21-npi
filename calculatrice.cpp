@@ -19,7 +19,7 @@ Calculatrice::Calculatrice() : context(new QSettings("context.ini", QSettings::I
       QStringList keys = context->allKeys();
       int taille = keys.size();
       for (int i=taille-1; i>=0; i--){
-          Constante* tmp = stringToConstante(context->value(keys.at(i)).toString());
+          Constante* tmp = stringToConstante(context->value(keys.at(i)).toString(), true);
           this->getPileStockage()->push(tmp);
       }
       for (int i=0; i<taille; i++){

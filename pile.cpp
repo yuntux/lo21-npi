@@ -138,7 +138,7 @@ void Pile::sauv_pile_context(){
     for (int i=0; i<s; i++){
         QString libelle("PileStockage/Element"+QString::number(i));
         if (p.at(i)->afficher().count("$")==0)
-            //FIXME bug des complexe dans le .ini => boucle infinie
+            //FIXME : bug des complexe dans le .ini => boucle infinie
             Calculatrice::getInstance().getContext()->setValue(libelle, p.at(i)->afficher());
         else
             Calculatrice::getInstance().getContext()->setValue(libelle, "0");

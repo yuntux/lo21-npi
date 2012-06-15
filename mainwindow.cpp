@@ -562,7 +562,7 @@ void MainWindow::traiter_bloc_calcul(QString s){
 
         else {
             //on essaye de convertir la chaine en constante
-            Constante* nouvelle_constante = stringToConstante(temp);
+            Constante* nouvelle_constante = stringToConstante(temp, true);
             //si c'est convertible, on l'empile
             if (nouvelle_constante)
                     calc.getPileStockage()->push(nouvelle_constante);
@@ -572,7 +572,7 @@ void MainWindow::traiter_bloc_calcul(QString s){
     }
 }
 
-Constante* stringToConstante(QString temp){
+Constante* stringToConstante(QString temp, bool essayer_construire_complexe){
     qDebug() << "ENTREE DANS STRINGTOCONSTNATE" << temp;
 //on essaye de voir si c'est convertible en un int temp.toInt();
         QRegExp regexpEntier("^[\\d]*$");
@@ -594,11 +594,11 @@ Constante* stringToConstante(QString temp){
         }
 //on essaye de voir si on peut construire un complexe à partir de temp
         //si temp contient exactement un dollar
-        if (temp.count(QRegExp("$"))==1) {
+        if (temp.count(QRegExp("$"))==1 && essayer_construire_complexe) {
             if (Calculatrice::getInstance().getModComplexe()) {
                 QStringList c = temp.split("\$");
-                Constante* re = stringToConstante(c.at(0));
-                Constante* im = stringToConstante(c.at(1));
+                Constante* re = stringToConstante(c.at(0), false);
+                Constante* im = stringToConstante(c.at(1), false);
                 return new Complexe(re, im);
             }
             throw LogMessage(7,"Complexes désactivés : impossible", moyen);

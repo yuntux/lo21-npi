@@ -25,7 +25,7 @@ namespace Ui {
     class MainWindow;
 }
 
-    Constante* stringToConstante(QString s);
+Constante* stringToConstante(QString s, bool essayer_construire_complexe);
 
 class MainWindow : public QMainWindow
 {
