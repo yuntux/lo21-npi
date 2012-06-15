@@ -17,11 +17,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
 
-    //Initialisation de la calculatrice
-    _modAngle = degre;
-    _modConstante = entier;
-    _modComplexe = false;
-
+    //Initialisation de l'interface
     ui->setupUi(this);
 
     //CONNEXIONS CLAVIER BASIC

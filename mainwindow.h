@@ -34,26 +34,12 @@ class MainWindow : public QMainWindow
 protected:
     void closeEvent(QCloseEvent *event);
 private:
-    enum MesureAngle _modAngle;
-    enum Type _modConstante;
-    bool _modComplexe;
-
-    Pile _pileStockage;
-    QStack<QString> _pileAffichage;
-    QStack<float> _pileStockageReelle;
-    QStack<Complexe> _pileStockageComplexe; //ATTENTION : vider la pile float lors du passage en  mode complexes
-
     void loadFromFile();
-
 
 public:
     explicit MainWindow(QWidget *parent = 0);
-    void traitement_expr(QString s);
     bool dernier_element_expression(QString chaine);
     ~MainWindow();
-    void empiler(float r);
-    MesureAngle getAngle(){return _modAngle;}
-    bool verifInput(QString s);
     void traiter_bloc_expression(QString s);
     void traiter_bloc_calcul(QString s);
 
