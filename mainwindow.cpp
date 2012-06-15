@@ -85,11 +85,12 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->_modEntiers, SIGNAL(toggled(bool)), this, SLOT(_modEntier(bool)));
     connect(ui->_modRationnels, SIGNAL(toggled(bool)), this, SLOT(_modRationnel(bool)));
     connect(ui->_modReels, SIGNAL(toggled(bool)), this, SLOT(_modReel(bool)));
-    //this->saveToFile();
-    //this->loadFromFile();
+
 
     Calculatrice::getInstance().getPileStockage(); // NE PAS SUPPRIMER, ON CONSTRUIT LE SINGLETON
     ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
+    //Restauration du context
+    this->loadFromFile();
 
     //RACOURCIS CLAVIER
     QShortcut* ctrlz = new QShortcut(QKeySequence(tr("Ctrl+Z", "Annuler")), this, SLOT(annulerClicked()), SLOT(annulerClicked()));
@@ -120,117 +121,54 @@ void MainWindow::dupliquer_tete_pileClicked(){
 
 }
 
-
-void MainWindow::saveToFile(){
-    QFile file("context");
-    if (!file.open(QIODevice::WriteOnly)) {
-        QMessageBox::information(this, tr("Impossible d'ouvrir le fichier."),
-            file.errorString());
-        return;
-    }
-
-    QTextStream out(&file);
-
-    if (_modAngle==degre) out<< "degre\n";
-    if (_modAngle==radian) out<< "radian\n";
-
-    if (_modComplexe) {out<< "complexeON\n";} else {out<< "complexeOFF\n";}
-    if (_modConstante==entier) {out<< "entier\n";} else if (_modConstante==reel) {out<< "reel\n";} else if (_modConstante==rationnel) {out<<"rationnel\n";}
-
-    if (ui->_clavierBasic->isChecked()) {out<<"clavierBasicON\n";} else {out<<"clavierBasicOFF\n";}
-    if (ui->_clavierAvance->isChecked()) {out<<"clavierAvanceON\n";} else {out<<"clavierAvanceOFF\n";}
-
-
-    while (!_pileAffichage.empty())
-    {
-        QString temp = _pileAffichage.pop();
-        out << temp <<"\n";
-    }
-    out<<"\n"; // on a fini la pile => une ligne vide
-
-    while (!_pileStockageReelle.empty())
-        out << _pileStockageReelle.pop()<<"\n";
-    out<<"\n"; // on a fini la pile => une ligne vide
-
-    while (!_pileStockageComplexe.empty())
-    {
-        Complexe temp = _pileStockageComplexe.pop();
-        out << temp.getPartieReelle()<<"$"<<temp.getPartieImaginaire()<<"\n";
-    }
-    out<<"\n"; // on a fini la pile => une ligne vide
-
-}
-
-
 void MainWindow::loadFromFile(){
-    QFile file("context");
 
-    if (!file.open(QIODevice::ReadOnly)) {
-        QMessageBox::information(this, tr("Impossible d'ouvrir le fichier."),
-            file.errorString());
-        return;
-    }
-
-    QTextStream in(&file);
-    QString line;
-    //la premiÃ?re ligne contient _modAngle
-    line = in.readLine();
-    if (line=="degre") {
-        _modAngle=degre;
+    QString angle_ini = Calculatrice::getInstance().getContext()->value("ModAngle").toString();
+    if (angle_ini=="degre") {
+        Calculatrice::getInstance().setMesureAngle(degre);
         ui->_modDegres->setChecked(true);
-    } else if (line=="radian") {
-        _modAngle=radian;
+    } else if (angle_ini=="radian") {
+        Calculatrice::getInstance().setMesureAngle(radian);
         ui->_modRadians->setChecked(true);
     }
-    //la deuxiÃ?me ligne contient _mdoComplexe
-    line = in.readLine();
-    if (line=="complexeOFF") {
-        _modComplexe=false;
+    bool complexe_ini = Calculatrice::getInstance().getContext()->value("ModComplexe").toBool();
+    if (!complexe_ini) {
+        Calculatrice::getInstance().setModComplexe(false);
         ui->_modComplexeOFF->setChecked(true);
-    } else if (line=="complexeON") {
-        _modComplexe=true;
+    } else if (complexe_ini) {
+        Calculatrice::getInstance().setModComplexe(true);
         ui->_modComplexeON->setChecked(true);
     }
-    //la deuxiÃ?me ligne contient _modConstante
-    line = in.readLine();
-    if (line=="entier") {
-        _modConstante=entier;
+    QString constante_ini = Calculatrice::getInstance().getContext()->value("ModConstante").toString();
+    if (constante_ini=="entier") {
+        Calculatrice::getInstance().setModConstante(entier);
         ui->_modEntiers->setChecked(true);
-    } else if (line=="rationnel") {
-        _modConstante=rationnel;
+    } else if (constante_ini=="rationnel") {
+        Calculatrice::getInstance().setModConstante(rationnel);
         ui->_modRationnels->setChecked(true);
-    } else if (line=="reel") {
+    } else if (constante_ini=="reel") {
+        Calculatrice::getInstance().setModConstante(reel);
         ui->_modReels->setChecked(true);
-        //propager dans l'interface
     }
-    //affichage du clavier basic
-    line = in.readLine();
-    if (line=="clavierBasicON") {
+    bool clavierBasic_ini = Calculatrice::getInstance().getContext()->value("ClavierBasic").toBool();
+    if (clavierBasic_ini) {
         ui->widget_clavierBasic->show();
         ui->_clavierBasic->setCheckState(Qt::Checked);
         ui->inputLine->setEnabled(false);
     } else {
         ui->widget_clavierBasic->hide();
         ui->_clavierBasic->setCheckState(Qt::Unchecked);
-        ui->inputLine->setEnabled(true);
+        ui->inputLine->setEnabled(false);
+        ui->inputLine->setFocus(); //FIXME : le focus n'est pas mis
     }
-    //affichage du clavier avance
-    line = in.readLine();
-    if (line=="clavierAvanceON") {
+    bool clavierAvance_ini = Calculatrice::getInstance().getContext()->value("ClavierAvance").toBool();
+    if (clavierAvance_ini) {
         ui->widget_clavierAvance->show();
         ui->_clavierAvance->setCheckState(Qt::Checked);
     } else {
         ui->widget_clavierAvance->hide();
         ui->_clavierAvance->setCheckState(Qt::Unchecked);
     }
-    //pile d'affichage
-/*    do {
-        line = in.readLine();
-    } while (!line.isNull());
-    //pile reels
-    //pile complexe
-*/
-//ui->inputLine->setText("FIN");
 }
 
 void MainWindow::_modDegresToggled(bool b){
@@ -239,7 +177,6 @@ void MainWindow::_modDegresToggled(bool b){
         Calculatrice::getInstance().getContext()->setValue("ModAngle", "degre");
     } else {
         this->_modRadiansToggled(true);
-        saveToFile();
     }
 }
 
@@ -249,7 +186,6 @@ void MainWindow::_modRadiansToggled(bool b){
         Calculatrice::getInstance().getContext()->setValue("ModAngle", "radian");
     } else {
         this->_modDegresToggled(true);
-        saveToFile();
     }
 }
 
@@ -257,7 +193,7 @@ void MainWindow::_modComplexeONClicked(bool b){
     if(b){
         Calculatrice::getInstance().setModComplexe(true);
         ui->DOLLAR->show();
-        Calculatrice::getInstance().getContext()->setValue("ModeComplexe", true);
+        Calculatrice::getInstance().getContext()->setValue("ModComplexe", true);
     } else {
         this->_modComplexeOFFClicked(true);
     }
@@ -267,7 +203,7 @@ void MainWindow::_modComplexeOFFClicked(bool b){
     if(b){
         Calculatrice::getInstance().setModComplexe(false);
         ui->DOLLAR->hide();
-        Calculatrice::getInstance().getContext()->setValue("ModeComplexe", false);
+        Calculatrice::getInstance().getContext()->setValue("ModComplexe", false);
     } else {
         this->_modComplexeONClicked(true);
     }
@@ -326,7 +262,6 @@ void MainWindow::_modEntier(bool b)
         Calculatrice::getInstance().getContext()->setValue("ModConstante", "entier");
     } else {
         this->_modRationnel(true);
-        saveToFile();
     }
 }
 

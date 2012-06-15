@@ -43,7 +43,6 @@ private:
     QStack<float> _pileStockageReelle;
     QStack<Complexe> _pileStockageComplexe; //ATTENTION : vider la pile float lors du passage en  mode complexes
 
-    void saveToFile();
     void loadFromFile();
 
 

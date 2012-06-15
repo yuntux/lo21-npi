@@ -452,7 +452,7 @@
         <widget class="QRadioButton" name="_modDegres">
          <property name="geometry">
           <rect>
-           <x>0</x>
+           <x>10</x>
            <y>10</y>
            <width>161</width>
            <height>20</height>
@@ -468,7 +468,7 @@
         <widget class="QRadioButton" name="_modRadians">
          <property name="geometry">
           <rect>
-           <x>0</x>
+           <x>10</x>
            <y>30</y>
            <width>161</width>
            <height>20</height>
@@ -497,7 +497,7 @@
         <widget class="QRadioButton" name="_modEntiers">
          <property name="geometry">
           <rect>
-           <x>0</x>
+           <x>10</x>
            <y>20</y>
            <width>143</width>
            <height>20</height>
@@ -513,7 +513,7 @@
         <widget class="QRadioButton" name="_modRationnels">
          <property name="geometry">
           <rect>
-           <x>0</x>
+           <x>10</x>
            <y>40</y>
            <width>143</width>
            <height>20</height>
@@ -526,7 +526,7 @@
         <widget class="QRadioButton" name="_modReels">
          <property name="geometry">
           <rect>
-           <x>0</x>
+           <x>10</x>
            <y>60</y>
            <width>143</width>
            <height>20</height>

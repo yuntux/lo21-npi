@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Thu Jun 14 14:12:55 2012
+** Created: Fri Jun 15 13:04:02 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -392,11 +392,11 @@ public:
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
         _modDegres = new QRadioButton(groupBox);
         _modDegres->setObjectName(QString::fromUtf8("_modDegres"));
-        _modDegres->setGeometry(QRect(0, 10, 161, 20));
+        _modDegres->setGeometry(QRect(10, 10, 161, 20));
         _modDegres->setChecked(true);
         _modRadians = new QRadioButton(groupBox);
         _modRadians->setObjectName(QString::fromUtf8("_modRadians"));
-        _modRadians->setGeometry(QRect(0, 30, 161, 20));
+        _modRadians->setGeometry(QRect(10, 30, 161, 20));
 
         verticalLayout_2->addWidget(groupBox);
 
@@ -407,14 +407,14 @@ public:
         groupBox_2->setCheckable(false);
         _modEntiers = new QRadioButton(groupBox_2);
         _modEntiers->setObjectName(QString::fromUtf8("_modEntiers"));
-        _modEntiers->setGeometry(QRect(0, 20, 143, 20));
+        _modEntiers->setGeometry(QRect(10, 20, 143, 20));
         _modEntiers->setChecked(true);
         _modRationnels = new QRadioButton(groupBox_2);
         _modRationnels->setObjectName(QString::fromUtf8("_modRationnels"));
-        _modRationnels->setGeometry(QRect(0, 40, 143, 20));
+        _modRationnels->setGeometry(QRect(10, 40, 143, 20));
         _modReels = new QRadioButton(groupBox_2);
         _modReels->setObjectName(QString::fromUtf8("_modReels"));
-        _modReels->setGeometry(QRect(0, 60, 143, 20));
+        _modReels->setGeometry(QRect(10, 60, 143, 20));
 
         verticalLayout_2->addWidget(groupBox_2);
 

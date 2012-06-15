@@ -12,11 +12,7 @@ Calculatrice::Calculatrice() : context(new QSettings("context.ini", QSettings::I
     indice_pile_actuelle = 0;
     _modComplexe = true;
 
-    //qDebug() << context->value("ModeComplexe").value<bool>();
- //   qDebug() << context->value("ModeAngle").value<enum MesureAngle>();
-        //context->setValue("PileAffichage", _pileAffichage);
-//      context->setValue("PileStockage", _pileStockage);
-
+    //CHARGEMENT DE LA PILE
      context->beginGroup("PileStockage");
       QStringList keys = context->allKeys();
       int taille = keys.size();
