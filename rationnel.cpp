@@ -3,6 +3,7 @@
 #include "rationnel.h"
 #include "reel.h"
 #include <typeinfo>
+#include "calculatrice.h"
 #define PI 3.14159265
 
 int pgcd(int a, int b) {
@@ -60,7 +61,12 @@ QString Rationnel::afficher() const{
     if (this->getDenominateur()==1) {
         return QString::number(_numerateur);
     } else {
-         return QString::number(_numerateur)+"/"+QString::number(_denominateur);
+        if (Calculatrice::getInstance().getModConstante()==entier)
+            return QString::number(_numerateur/_denominateur);
+         else if (Calculatrice::getInstance().getModConstante()==reel)
+            return QString::number(float(_numerateur)/float(_denominateur));
+         else
+            return QString::number(_numerateur)+"/"+QString::number(_denominateur);
     }
 }
 
@@ -263,7 +269,7 @@ Constante* Rationnel::puissance(Constante *c)
     int den1 = pow(den,res);
     Rationnel *r = new Rationnel(num1,den1);
     return new Complexe(r);
-}
+    }
 }
 
 Constante* Rationnel::carre()
