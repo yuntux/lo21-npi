@@ -31,7 +31,6 @@ class Calculatrice
     Pile _pileAffichage;
     QList<Pile*> Historique;
     unsigned int indice_pile_actuelle;
-    //QList<Pile*>::iterator it_pile_actuelle;
 
     QSettings* context;
 
@@ -55,13 +54,13 @@ public:
 
     void saisie_nouvelle_pile(Pile* nouvelle);
 
-    //Pile* getPileStockage() {return &_pileStockage;} //anvant l'itérateur
+
     Pile* getPileAffichage() {return &_pileAffichage;}
     enum MesureAngle getMesureAngle() const {return _modAngle;}
     enum Type getModConstante() const {return _modConstante;}
     bool getModComplexe() const {return _modComplexe;}
-    QSettings* getContext() const {return context;}
-    void setModConstante(enum Type t){_modConstante = t; context->setValue("ModeConstante", _modConstante);}
+    QSettings* getContext() {return context;}
+    void setModConstante(enum Type t){_modConstante = t;}
     void setMesureAngle(enum MesureAngle a){_modAngle = a;}
     void setModComplexe(bool c){_modComplexe = c;}
 };

@@ -22,28 +22,8 @@ MainWindow::MainWindow(QWidget *parent) :
     _modConstante = entier;
     _modComplexe = false;
 
-    //FIXME : comment lier la pile d'affichage �  la QListveiw étant donné que QStack n'hérite pas de QAstractmodelitem ?
-    //ui->listView_2->setModel(_pileAffichage);
-
-/*    _pileStockageReelle.append(3.14);
-    _pileStockageReelle.append(3.14);
-    _pileStockageReelle.append(3.14);
-*/
-    /*Complexe c1(2,3);
-    Complexe c2(4,5);
-    Complexe c3(6,7);
-    _pileStockageComplexe.append(c1);
-    _pileStockageComplexe.append(c2);
-    _pileStockageComplexe.append(c3);
-*/
-    _pileAffichage.append("premier élement de la pile affichage");
-    _pileAffichage.append("deuxi�?me élement de la pile affichage");
-    _pileAffichage.append("troisi�?me élement de la pile affichage");
-
-
-
-
     ui->setupUi(this);
+
     //CONNEXIONS CLAVIER BASIC
     connect(ui->num0, SIGNAL(clicked()), this, SLOT(num0Clicked()));
     connect(ui->num1, SIGNAL(clicked()), this, SLOT(num1Clicked()));
@@ -255,9 +235,8 @@ void MainWindow::loadFromFile(){
 
 void MainWindow::_modDegresToggled(bool b){
     if(b){
-        _modAngle=degre;
-    //    ui->inputLine->setText("DegresON");
-        saveToFile();
+        Calculatrice::getInstance().setMesureAngle(degre);
+        Calculatrice::getInstance().getContext()->setValue("ModAngle", "degre");
     } else {
         this->_modRadiansToggled(true);
         saveToFile();
@@ -266,9 +245,8 @@ void MainWindow::_modDegresToggled(bool b){
 
 void MainWindow::_modRadiansToggled(bool b){
     if(b){
-        _modAngle=radian;
-      //  ui->inputLine->setText("RadiansON");
-        saveToFile();
+        Calculatrice::getInstance().setMesureAngle(radian);
+        Calculatrice::getInstance().getContext()->setValue("ModAngle", "radian");
     } else {
         this->_modDegresToggled(true);
         saveToFile();
@@ -277,64 +255,55 @@ void MainWindow::_modRadiansToggled(bool b){
 
 void MainWindow::_modComplexeONClicked(bool b){
     if(b){
-        _modComplexe = true;
-        this->_pileStockageComplexe.clear();
-        this->_pileStockageReelle.clear();
-        this->_pileAffichage.clear();
-        //ui->inputLine->setText("ComplexeON");
-        saveToFile();
+        Calculatrice::getInstance().setModComplexe(true);
+        ui->DOLLAR->show();
+        Calculatrice::getInstance().getContext()->setValue("ModeComplexe", true);
     } else {
         this->_modComplexeOFFClicked(true);
-        saveToFile();
     }
 }
 
 void MainWindow::_modComplexeOFFClicked(bool b){
     if(b){
-        _modComplexe = false;
-        this->_pileStockageComplexe.clear();
-        this->_pileStockageReelle.clear();
-        this->_pileAffichage.clear();
-        //ui->inputLine->setText("ComplexeOFF");
-        saveToFile();
+        Calculatrice::getInstance().setModComplexe(false);
+        ui->DOLLAR->hide();
+        Calculatrice::getInstance().getContext()->setValue("ModeComplexe", false);
     } else {
         this->_modComplexeONClicked(true);
-        saveToFile();
     }
 }
 
 void MainWindow::_clavierBasicStateChange(int cochee){
     if(cochee==0){ //a été décochée
         ui->widget_clavierBasic->hide();
+        Calculatrice::getInstance().getContext()->setValue("ClavierBasic", false);
         //FIXME :quand le clavier est caché on ne peut plus rien saisir !
         ui->inputLine->setEnabled(true);
-        saveToFile();
+        ui->inputLine->setFocus();
     } else if (cochee==2) { //a été cochée
         ui->widget_clavierBasic->show();
+        Calculatrice::getInstance().getContext()->setValue("ClavierBasic", true);
         ui->inputLine->setEnabled(false);
-        saveToFile();
     }
 }
 
 void MainWindow::_clavierAvanceStateChange(int cochee){
     if(cochee==0){ //a été décochée
         ui->widget_clavierAvance->hide();
-        saveToFile();
+        Calculatrice::getInstance().getContext()->setValue("ClavierAvance", false);
     } else if (cochee==2) { //a été cochée
         ui->widget_clavierAvance->show();
-        saveToFile();
+        Calculatrice::getInstance().getContext()->setValue("ClavierAvance", true);
     }
 }
 
 void MainWindow::_modReel(bool b)
 {
     if(b){
-        _modConstante=reel;
-        //ui->inputLine->setText("R�els");
-        saveToFile();
+        Calculatrice::getInstance().setModConstante(reel);
+        Calculatrice::getInstance().getContext()->setValue("ModConstante", "reel");
     } else {
         this->_modRationnel(true);
-        saveToFile();
     }
 }
 
@@ -342,12 +311,10 @@ void MainWindow::_modReel(bool b)
 void MainWindow::_modRationnel(bool b)
 {
     if(b){
-        _modConstante=rationnel;
-       // ui->inputLine->setText("Rationnel");
-        saveToFile();
+        Calculatrice::getInstance().setModConstante(rationnel);
+        Calculatrice::getInstance().getContext()->setValue("ModConstante", "rationnel");
     } else {
         this->_modReel(true);
-        saveToFile();
     }
 }
 
@@ -355,9 +322,8 @@ void MainWindow::_modRationnel(bool b)
 void MainWindow::_modEntier(bool b)
 {
     if(b){
-        _modConstante=entier;
-        ui->inputLine->setText("Entier");
-        saveToFile();
+        Calculatrice::getInstance().setModConstante(entier);
+        Calculatrice::getInstance().getContext()->setValue("ModConstante", "entier");
     } else {
         this->_modRationnel(true);
         saveToFile();
@@ -571,6 +537,7 @@ void MainWindow::ENTERClicked(){
         qDebug() << Calculatrice::getInstance().getPileStockage()->afficher();
         ui->listView->reset();
         ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
+        Calculatrice::getInstance().getPileStockage()->sauv_pile_context();
     }
 
     catch(std::exception const& e)

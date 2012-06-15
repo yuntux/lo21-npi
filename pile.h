@@ -32,6 +32,7 @@ public:
     void swap(unsigned int x, unsigned int y);
     QString afficher() const;
     Pile* copier_pile();
+    void sauv_pile_context();
 
     //surcharge des fonctions virtuelles pures de QAbstractItemModel
 

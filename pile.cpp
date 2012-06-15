@@ -1,4 +1,5 @@
 #include "pile.h"
+#include "calculatrice.h"
 
 using namespace std;
 
@@ -115,4 +116,14 @@ void Pile::swap(unsigned int x, unsigned int y){
     Constante* tmp2 = p.at(y);
     p[x] = tmp2;
     p[y] = tmp1;
+}
+
+
+void Pile::sauv_pile_context(){
+    int s = this->size();
+    for (int i=0; i<s; i++){
+        QString libelle("PileStockage/");
+        //libelle=+i;
+        Calculatrice::getInstance().getContext()->setValue(libelle, p.at(i)->afficher());
+    }
 }

@@ -12,9 +12,6 @@ Calculatrice::Calculatrice() : context( new QSettings("context.ini", QSettings::
     indice_pile_actuelle = 0;
     _modComplexe = true;
 
-    context->setValue("ModeAngle", _modAngle);
-    context->setValue("ModeConstante", _modConstante);
-    context->setValue("ModeComplexe", _modComplexe);
     //qDebug() << context->value("ModeComplexe").value<bool>();
  //   qDebug() << context->value("ModeAngle").value<enum MesureAngle>();
         //context->setValue("PileAffichage", _pileAffichage);
@@ -58,3 +55,4 @@ Calculatrice& Calculatrice::getInstance(){
 void Calculatrice::libereInstance(){
     delete instance;
 }
+
