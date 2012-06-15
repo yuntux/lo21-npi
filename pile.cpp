@@ -137,7 +137,11 @@ void Pile::sauv_pile_context(){
     int s = this->size();
     for (int i=0; i<s; i++){
         QString libelle("PileStockage/Element"+QString::number(i));
-        Calculatrice::getInstance().getContext()->setValue(libelle, p.at(i)->afficher());
+        if (p.at(i)->afficher().count("$")==0)
+            //FIXME bug des complexe dans le .ini => boucle infinie
+            Calculatrice::getInstance().getContext()->setValue(libelle, p.at(i)->afficher());
+        else
+            Calculatrice::getInstance().getContext()->setValue(libelle, "0");
     }
     LogMessage msg(0, "Sauvegarde de la pile dans le fichier ini.", tracabilite);
     LogSystem::getInstance().ajouterFcihierEtConsole(msg);
