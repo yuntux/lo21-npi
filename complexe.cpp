@@ -4,6 +4,13 @@
 #include "reel.h"
 #include <typeinfo>
 
+
+Complexe::~Complexe(){
+    qDebug() << "DESTRUCTEUR DE COMPLEXES";
+    delete(_reelle);
+    delete(_imaginaire);
+}
+
 Complexe::Complexe(Constante* r, Constante* i){
     if (typeid(*r)==typeid(Complexe) || typeid(*r)==typeid(Complexe)) {
         //FIXME : lève une exeption (éviter les boucles de récursion infinies)
@@ -61,8 +68,9 @@ Constante* Complexe::addition(Constante* c){
     Complexe* im = new Complexe(c_complexe->getPartieImaginaire()->addition(this->getPartieImaginaire()));
     c_complexe->setImaginaire(im->getPartieReelle());
     c_complexe->setReelle(re->getPartieReelle());
-    delete(re);
-    delete(im);
+    //NE PAS DECOMMENTER
+    //delete(re);
+    //delete(im);
     return c_complexe;
 }
 
@@ -73,8 +81,8 @@ Constante* Complexe::produit(Constante *c)
     Complexe* im = new Complexe(c_complexe->getPartieImaginaire()->produit(_reelle)->addition(c_complexe->getPartieReelle()->produit(_imaginaire)));
     c_complexe->setImaginaire(im->getPartieReelle());
     c_complexe->setReelle(re->getPartieReelle());
-    delete(re);
-    delete(im);
+    //delete(re);
+    //delete(im);
     return c_complexe;
 }
 
@@ -94,9 +102,9 @@ Constante* Complexe::division(Constante *c)
     Complexe* im = new Complexe(im_num->getPartieReelle()->division(denom->getPartieReelle()));
 
     Complexe* res = new Complexe(re->getPartieReelle(), im->getPartieReelle());
-    delete(denom);
-    delete(re_num);
-    delete(im_num);
+    //delete(denom);
+    //delete(re_num);
+    //delete(im_num);
     return res;
 }
 
@@ -119,8 +127,8 @@ Constante* Complexe::soustraction(Constante* c){
     Complexe* im = new Complexe(this->getPartieImaginaire()->soustraction(c_complexe->getPartieImaginaire()));
     c_complexe->setImaginaire(im->getPartieReelle());
     c_complexe->setReelle(re->getPartieReelle());
-    delete(re);
-    delete(im);
+    //delete(re);
+    //delete(im);
     return c_complexe;
 }
 
@@ -183,12 +191,31 @@ Constante* Complexe::tangenteh(bool angle)
 
 
 Constante* Complexe::inv()
-{
-    //FIXME : pas d'inverse pour les complexes
+{    
+    Complexe *diviseur = this;
+    Entier *e1 = new Entier(1);
+    Entier *e0 = new Entier(0);
+    Complexe *dividende= new Complexe(e1, e0);
+
+    Complexe* denom = new Complexe(diviseur->getPartieReelle()->produit(diviseur->getPartieReelle())->addition(diviseur->getPartieImaginaire()->produit(diviseur->getPartieImaginaire())));
+
+    Complexe* re_num = new Complexe(dividende->getPartieReelle()->produit(diviseur->getPartieReelle())->addition(dividende->getPartieImaginaire()->produit(diviseur->getPartieImaginaire())));
+    Complexe* re = new Complexe(re_num->getPartieReelle()->division(denom->getPartieReelle()));
+
+    Complexe* im_num = new Complexe(diviseur->getPartieReelle()->produit(dividende->getPartieImaginaire())->soustraction(dividende->getPartieReelle()->produit(diviseur->getPartieImaginaire())));
+    Complexe* im = new Complexe(im_num->getPartieReelle()->division(denom->getPartieReelle()));
+
+    Complexe* res = new Complexe(re->getPartieReelle(), im->getPartieReelle());
+    //delete(denom);
+    //delete(re_num);
+    //delete(im_num);
+    return res;
+    /*
     if (this->reel_pur())
         return this->getPartieReelle()->inv();
     throw LogMessage(2,"La fonction INV n'est pas implémentée pour les complexes.", moyen);
     return this;
+    */
 }
 
 Constante* Complexe::carre()

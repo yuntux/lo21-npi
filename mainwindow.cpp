@@ -106,7 +106,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->_modRationnels, SIGNAL(toggled(bool)), this, SLOT(_modRationnel(bool)));
     connect(ui->_modReels, SIGNAL(toggled(bool)), this, SLOT(_modReel(bool)));
     //this->saveToFile();
-    this->loadFromFile();
+    //this->loadFromFile();
 
     Calculatrice::getInstance().getPileStockage(); // NE PAS SUPPRIMER, ON CONSTRUIT LE SINGLETON
     ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
@@ -568,7 +568,8 @@ void MainWindow::ENTERClicked(){
                  if (!dernier_element_expression(chaine))
                     traiter_bloc_calcul(chaine);
              }
-
+        qDebug() << Calculatrice::getInstance().getPileStockage()->afficher();
+        ui->listView->reset();
         ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
     }
 

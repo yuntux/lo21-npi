@@ -14,10 +14,12 @@ QVariant Pile::data(const QModelIndex &index, int role) const
     if (!index.isValid())
         return QVariant();
 
-    if (index.row() >=  p.size())
+    if (index.row() >= this->size())
         return QVariant();
 
     if (role == Qt::DisplayRole)
+        //if (p.at(index.row()))
+            //return p.at(index.row())->afficher();
         return p.at(index.row())->afficher(); //renvoyer un QStrigng
     else
         return QVariant();
@@ -26,13 +28,13 @@ QVariant Pile::data(const QModelIndex &index, int role) const
 
 Pile::~Pile()
 {
-    qDebug() << "Feu la pile que je vais détruire : " << this->afficher();
+    //qDebug() << "Feu la pile que je vais détruire : " << this->afficher();
     int s = this->size(); //ATTENTION : il faut bien fixer la taille avant !
     for(int i=0; i<s; i++){
         Constante* tmp = this->pop();
         delete(tmp);
     }
-    qDebug() << "Après destruction : " << this->afficher();
+    //qDebug() << "Après destruction : " << this->afficher();
 }
 
 QString Pile::afficher() const {
