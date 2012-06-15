@@ -122,8 +122,7 @@ void Pile::swap(unsigned int x, unsigned int y){
 void Pile::sauv_pile_context(){
     int s = this->size();
     for (int i=0; i<s; i++){
-        QString libelle("PileStockage/");
-        //libelle=+i;
+        QString libelle("PileStockage/Element"+QString::number(i));
         Calculatrice::getInstance().getContext()->setValue(libelle, p.at(i)->afficher());
     }
 }

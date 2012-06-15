@@ -6,7 +6,7 @@ Calculatrice* Calculatrice::instance=0;
 Calculatrice::~Calculatrice(){
 }
 
-Calculatrice::Calculatrice() : context( new QSettings("context.ini", QSettings::IniFormat))
+Calculatrice::Calculatrice() : context(new QSettings("context.ini", QSettings::IniFormat))
 {
     Historique.prepend(new Pile);
     indice_pile_actuelle = 0;
@@ -16,6 +16,18 @@ Calculatrice::Calculatrice() : context( new QSettings("context.ini", QSettings::
  //   qDebug() << context->value("ModeAngle").value<enum MesureAngle>();
         //context->setValue("PileAffichage", _pileAffichage);
 //      context->setValue("PileStockage", _pileStockage);
+
+     context->beginGroup("PileStockage");
+      QStringList keys = context->allKeys();
+      int taille = keys.size();
+      for (int i=taille-1; i>=0; i--){
+          Constante* tmp = stringToConstante(context->value(keys.at(i)).toString());
+          this->getPileStockage()->push(tmp);
+      }
+      for (int i=0; i<taille; i++){
+          context->remove(keys.at(i));
+      }
+     context->endGroup();
 }
 
 void Calculatrice::saisie_nouvelle_pile(Pile* nouvelle){

@@ -537,7 +537,7 @@ void MainWindow::ENTERClicked(){
         qDebug() << Calculatrice::getInstance().getPileStockage()->afficher();
         ui->listView->reset();
         ui->listView->setModel(Calculatrice::getInstance().getPileStockage());
-        Calculatrice::getInstance().getPileStockage()->sauv_pile_context();
+        //Calculatrice::getInstance().getPileStockage()->sauv_pile_context();
     }
 
     catch(std::exception const& e)
@@ -638,7 +638,8 @@ void MainWindow::traiter_bloc_calcul(QString s){
     }
 }
 
-Constante* MainWindow::stringToConstante(QString temp){
+Constante* stringToConstante(QString temp){
+    qDebug() << "ENTREE DANS STRINGTOCONSTNATE" << temp;
 //on essaye de voir si c'est convertible en un int temp.toInt();
         QRegExp regexpEntier("^[\\d]*$");
         if (regexpEntier.exactMatch(temp))
@@ -721,4 +722,9 @@ bool MainWindow::dernier_element_expression(QString chaine) {
     } else {
         return false;
     }
+}
+
+void MainWindow::closeEvent(QCloseEvent *event){
+     Calculatrice::getInstance().getPileStockage()->sauv_pile_context();
+     event->accept();
 }

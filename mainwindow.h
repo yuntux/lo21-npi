@@ -25,10 +25,14 @@ namespace Ui {
     class MainWindow;
 }
 
+    Constante* stringToConstante(QString s);
+
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
+protected:
+    void closeEvent(QCloseEvent *event);
 private:
     enum MesureAngle _modAngle;
     enum Type _modConstante;
@@ -53,7 +57,7 @@ public:
     bool verifInput(QString s);
     void traiter_bloc_expression(QString s);
     void traiter_bloc_calcul(QString s);
-    Constante* stringToConstante(QString s);
+
 
 public slots:
    void POWClicked();
