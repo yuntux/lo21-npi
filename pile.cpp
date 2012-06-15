@@ -1,5 +1,7 @@
 #include "pile.h"
 #include "calculatrice.h"
+#include "logsystem.h"
+#include "logmessage.h"
 
 using namespace std;
 
@@ -109,6 +111,8 @@ Pile* Pile::copier_pile(){
 void Pile::drop(){
     Constante* tmp = this->pop();
     delete(tmp);
+    LogMessage msg(0, "Suppression tete de pile.", tracabilite);
+    LogSystem::getInstance().ajouterConsoleEtFichierLog(msg);
 }
 
 void Pile::swap(unsigned int x, unsigned int y){
@@ -125,4 +129,6 @@ void Pile::sauv_pile_context(){
         QString libelle("PileStockage/Element"+QString::number(i));
         Calculatrice::getInstance().getContext()->setValue(libelle, p.at(i)->afficher());
     }
+    //LogMessage msg(0, "Sauvegarde de la pile dans le fichier ini.", faible);
+    //LogSystem::getInstance().ajouterConsoleEtFichierLog(msg);
 }

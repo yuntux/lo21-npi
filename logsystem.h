@@ -5,12 +5,14 @@
 class LogSystem
 {
     static LogSystem* instance;
-    void ajouterFichierLog(LogMessage m);
-    void ajouterConsoleLog(LogMessage m);
+
 public:
     LogSystem();
     static LogSystem& getInstance();
     static void libereInstance();
+    void ajouterFichierLog(LogMessage m);
+    void ajouterConsoleLog(LogMessage m);
+    void ajouterConsoleEtFichierLog(LogMessage m);
 protected:
     LogSystem(const LogSystem&){}
     void operator=(const LogSystem &);

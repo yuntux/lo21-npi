@@ -4,6 +4,7 @@
 #include <exception>
 
 /*********CODES ERREUR
+0.Log simple pour avoir la trace
 1,"Division par zéro", important
 2,"La fonction X n'est pas implémentée pour les Y.", moyen
 3,"Type de constante non prévu dans la fonction Constante* Reel::soustraction(Constante* c).", important
@@ -13,7 +14,7 @@
 8,"Saisie invalide", moyen
 **********/
 
-enum niveau {faible, moyen, important};
+enum niveau {faible, moyen, important, tracabilite};
 using namespace std;
 
 class LogMessage: public exception
@@ -24,11 +25,13 @@ class LogMessage: public exception
 
 public:
     LogMessage(int numero=0, string const &phrase="", enum niveau lev=faible) throw() : m_numero(numero),m_phrase(phrase),_level(lev){
-        QMessageBox msgBox;
-        QString contenu(this->what());
-        contenu.toUtf8();
-        msgBox.setText(contenu);
-        msgBox.exec();
+        if (lev!=tracabilite){
+            QMessageBox msgBox;
+            QString contenu(this->what());
+            contenu.toUtf8();
+            msgBox.setText(contenu);
+            msgBox.exec();
+        }
     }
 
      virtual const char* what() const throw()     { return m_phrase.c_str(); }
@@ -38,6 +41,7 @@ public:
          if (_level==faible) return "Faible";
          if (_level==moyen) return "Moyen";
          if (_level==important) return "Important";
+         if (_level==tracabilite) return "tracabilite";
          return "Niveau inconnu";
      }
 
