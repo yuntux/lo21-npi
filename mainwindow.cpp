@@ -41,6 +41,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     connect(ui->ENTER, SIGNAL(clicked()), this, SLOT(ENTERClicked()));
     connect(ui->EVAL, SIGNAL(clicked()), this, SLOT(EVALClicked()));
+    connect(ui->PIBOUTON, SIGNAL(clicked()), this, SLOT(PIBOUTONClicked()));
 
     //CONNEXIONS CLAVIER AVANCE
     connect(ui->FACTORIEL, SIGNAL(clicked()), this, SLOT(FACTORIELClicked()));
@@ -317,6 +318,14 @@ void MainWindow::_modEntier(bool b)
       */
 }
 
+void MainWindow::PIBOUTONClicked(){
+    ui->inputLine->setText(ui->inputLine->text()+" 3.14159265 ");
+    /**
+      * \brief Clic sur le bouton PI
+      * \details Lorsque l'on clique sur le bouton 0, on ajoute une valeur approchée de PI sur la inputline
+      */
+
+}
 
 void MainWindow::num0Clicked(){
     ui->inputLine->setText(ui->inputLine->text()+"0");
@@ -328,7 +337,6 @@ void MainWindow::num0Clicked(){
 }
 
 void MainWindow::num1Clicked(){
-    ui->inputLine->setText(ui->inputLine->text()+"1");
     ui->inputLine->setText(ui->inputLine->text()+"1");
     /**
       * \brief Clic sur le bouton 1
@@ -722,21 +730,15 @@ void MainWindow::traiter_bloc_calcul(QString s){
             else
                 throw LogMessage(5,"Nombre d'opérandes dans la pile insuffisant.", moyen);
 
-        if(temp=="+"){
-            qDebug() << "OP1 " << operande1->afficher() << "OP2 " << operande2->afficher();
-            if (typeid(*operande1)==typeid(Rationnel))
-                    qDebug() << "OP1 est RATIONNEL";
-            if (typeid(*operande2)==typeid(Rationnel))
-                    qDebug() << "OP2 est RATIONNEL";
+        if(temp=="+")
             calc.getPileStockage()->push(operande2->addition(operande1));
-        }
         else if(temp=="*")
             calc.getPileStockage()->push(operande2->produit(operande1));
         else if(temp=="/")
             //FIXME : la méthode division plante si on enchaine deux divisions
             calc.getPileStockage()->push(operande2->produit(operande1->inv()));
         else if(temp=="-")
-            calc.getPileStockage()->push(operande2->soustraction(operande1));
+            calc.getPileStockage()->push(operande2->addition(operande1->signe()));
         else if(temp=="!")
             calc.getPileStockage()->push(operande1->fact());
         else if(temp=="SIN")

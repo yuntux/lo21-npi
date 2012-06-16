@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Fri Jun 15 13:04:02 2012
+** Created: Sat Jun 16 15:38:08 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -66,6 +66,7 @@ public:
     QPushButton *POINT;
     QPushButton *QUOTE;
     QPushButton *EVAL;
+    QPushButton *PIBOUTON;
     QWidget *widget_clavierAvance;
     QHBoxLayout *horizontalLayout_3;
     QGridLayout *_clavierAvanceLayout;
@@ -184,7 +185,7 @@ public:
         num0 = new QPushButton(widget_clavierBasic);
         num0->setObjectName(QString::fromUtf8("num0"));
 
-        _clavierBasicLayout->addWidget(num0, 5, 0, 1, 2);
+        _clavierBasicLayout->addWidget(num0, 5, 0, 1, 1);
 
         ENTER = new QPushButton(widget_clavierBasic);
         ENTER->setObjectName(QString::fromUtf8("ENTER"));
@@ -250,6 +251,11 @@ public:
         EVAL->setObjectName(QString::fromUtf8("EVAL"));
 
         _clavierBasicLayout->addWidget(EVAL, 8, 0, 1, 1);
+
+        PIBOUTON = new QPushButton(widget_clavierBasic);
+        PIBOUTON->setObjectName(QString::fromUtf8("PI"));
+
+        _clavierBasicLayout->addWidget(PIBOUTON, 5, 1, 1, 1);
 
 
         horizontalLayout_2->addLayout(_clavierBasicLayout);
@@ -531,6 +537,7 @@ public:
         QUOTE->setText(QApplication::translate("MainWindow", "'", 0, QApplication::UnicodeUTF8));
         QUOTE->setShortcut(QApplication::translate("MainWindow", "'", 0, QApplication::UnicodeUTF8));
         EVAL->setText(QApplication::translate("MainWindow", "EVAL", 0, QApplication::UnicodeUTF8));
+        PIBOUTON->setText(QApplication::translate("MainWindow", "PI", 0, QApplication::UnicodeUTF8));
         POW->setText(QApplication::translate("MainWindow", "POW", 0, QApplication::UnicodeUTF8));
         SIN->setText(QApplication::translate("MainWindow", "SIN", 0, QApplication::UnicodeUTF8));
         SINH->setText(QApplication::translate("MainWindow", "SINH", 0, QApplication::UnicodeUTF8));

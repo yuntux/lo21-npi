@@ -227,9 +227,12 @@ Constante* Rationnel::fact()
 Constante* Rationnel::sinus(bool angle)
 {
     float res= _numerateur/_denominateur;
-    if(angle==true)
+    qDebug() << "FONCTION SINUS RATIONENNELS";
+    if(angle==true){
+        qDebug() << "RADIANS";
         res=res*PI/180;
-    Rationnel *r = new Rationnel(sin(res),1);
+    }
+    Constante *r = new Rationnel(sin(res),1);
     return new Complexe(r);
     /**
       * \brief Sinus Rationnel

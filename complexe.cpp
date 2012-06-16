@@ -155,7 +155,7 @@ Constante* Complexe::signe(){
     tmp->setImaginaire(tmp1.getPartieReelle());
     Complexe tmp2(tmp->getPartieReelle()->produit(&e));
     tmp->setReelle(tmp2.getPartieReelle());
-    return tmp;
+    return c;
     /**
       * \brief Changement de signe
       * \details On recopie tout d'abord la constante, qu'on caste ensuite en complexe. On crée un entier de valeur -1

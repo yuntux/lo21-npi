@@ -27,6 +27,8 @@ Entier::Entier(Constante* c) {
 }
 
 Constante* Entier::addition(Constante* c){
+    qDebug() << "entrée dans l'addition" ;
+    qDebug() << "OPERANDE 1.SIgn()) "<< c->afficher();
     if (Entier *c_entier=dynamic_cast<Entier *>(c)){
         Entier* tmp = new Entier(c_entier->getValeur()+_valeur);
         return new Complexe(tmp);
@@ -120,7 +122,8 @@ Constante* Entier::division(Constante *c)
 }
 
 Constante* Entier::signe(){
-    return new Entier(-_valeur);
+    Constante* tmp = new Entier(-_valeur);
+    return new Complexe(tmp);
     /**
       * \brief Inversion de signe d'un entier
       * \details On crée un nouvel entier dont la valeur est l'opposée de celle initiale

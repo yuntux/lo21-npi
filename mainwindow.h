@@ -74,6 +74,7 @@ public slots:
    void num7Clicked();
    void num8Clicked();
    void num9Clicked();
+   void PIBOUTONClicked();
    void POINTClicked();
    void ESPACEClicked();
    void FACTORIELClicked();
