@@ -5,34 +5,42 @@
     <member refid="class_calculatrice_1aae4b0775ebfcbfbd1fdfb254a77d10da" kind="variable"><name>_modAngle</name></member>
     <member refid="class_calculatrice_1a0f33449073788fd8dc3875ce3a995345" kind="variable"><name>_modConstante</name></member>
     <member refid="class_calculatrice_1a2ad1b63edaa3e381bb0fc1a8b9772270" kind="variable"><name>_modComplexe</name></member>
-    <member refid="class_calculatrice_1a6253c64f9b3f3b666b399541c0404db0" kind="variable"><name>_pileStockage</name></member>
-    <member refid="class_calculatrice_1a50ac48e6a2393482f42727364ff32a91" kind="variable"><name>_pileAffichage</name></member>
-    <member refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" kind="function"><name>getPileStockage</name></member>
-    <member refid="class_calculatrice_1a5fdd4414f03aa9210343c9ab03706b7e" kind="function"><name>getPileAffichage</name></member>
-    <member refid="class_calculatrice_1af2b58ecc00a772e959e166645c802cf2" kind="function"><name>getMesureAngle</name></member>
-    <member refid="class_calculatrice_1a72d29725e5fdc334caf6b27d1b81221a" kind="function"><name>getModConstante</name></member>
-    <member refid="class_calculatrice_1ad5a63f289cc5df7ccc7677ada5ca92b8" kind="function"><name>getModComplexe</name></member>
-    <member refid="class_calculatrice_1a349cc6b05ea447fb0bde7221b560dab0" kind="function"><name>setModConstante</name></member>
-    <member refid="class_calculatrice_1a51db82ce20ffafc4a6188b9f13b27fe1" kind="function"><name>setMesureAngle</name></member>
-    <member refid="class_calculatrice_1ab5ad75216e44c3ca263c2706083def2b" kind="function"><name>setModComplexe</name></member>
+    <member refid="class_calculatrice_1a3f842c8a82f035ab3cd8cbb459580639" kind="variable"><name>Historique</name></member>
+    <member refid="class_calculatrice_1a33717fefce73e7d2be5dfe98888d7b0e" kind="variable"><name>indice_pile_actuelle</name></member>
+    <member refid="class_calculatrice_1a8a04ff729193401b24e4af0598a4c89a" kind="variable"><name>context</name></member>
     <member refid="class_calculatrice_1a01b91f69f7ac10d737af66b3fa968db9" kind="function"><name>Calculatrice</name></member>
     <member refid="class_calculatrice_1a2761ae6e08c02c2268ba5e499a013724" kind="function"><name>Calculatrice</name></member>
     <member refid="class_calculatrice_1acb4b6278eb955ce932e16df29276be52" kind="function"><name>~Calculatrice</name></member>
     <member refid="class_calculatrice_1ad03d57208ee06d8ebef905efbbfec7b6" kind="function"><name>operator=</name></member>
     <member refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" kind="function"><name>getInstance</name></member>
     <member refid="class_calculatrice_1aa974f5b58c583ef3aaee055eac238466" kind="function"><name>libereInstance</name></member>
+    <member refid="class_calculatrice_1ae04068faaa66847c3f318c018824a277" kind="function"><name>annuler</name></member>
+    <member refid="class_calculatrice_1ac9fea1beaab60d0c73c017a5d225a56c" kind="function"><name>retablir</name></member>
+    <member refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" kind="function"><name>getPileStockage</name></member>
+    <member refid="class_calculatrice_1a45ec794c15d65a56fb8101dd9ca4812b" kind="function"><name>taille_pile_hitorique</name></member>
+    <member refid="class_calculatrice_1a3558f924d00e69cbfbfd7b1ee6b088a3" kind="function"><name>afficher_toutes_piles_hitorique</name></member>
+    <member refid="class_calculatrice_1acc6b301035c21041dbd4ffb7f6f5645e" kind="function"><name>saisie_nouvelle_pile</name></member>
+    <member refid="class_calculatrice_1af2b58ecc00a772e959e166645c802cf2" kind="function"><name>getMesureAngle</name></member>
+    <member refid="class_calculatrice_1a72d29725e5fdc334caf6b27d1b81221a" kind="function"><name>getModConstante</name></member>
+    <member refid="class_calculatrice_1ad5a63f289cc5df7ccc7677ada5ca92b8" kind="function"><name>getModComplexe</name></member>
+    <member refid="class_calculatrice_1ac1fd3f178488afb8bc25dae790a9756d" kind="function"><name>getContext</name></member>
+    <member refid="class_calculatrice_1a349cc6b05ea447fb0bde7221b560dab0" kind="function"><name>setModConstante</name></member>
+    <member refid="class_calculatrice_1a51db82ce20ffafc4a6188b9f13b27fe1" kind="function"><name>setMesureAngle</name></member>
+    <member refid="class_calculatrice_1ab5ad75216e44c3ca263c2706083def2b" kind="function"><name>setModComplexe</name></member>
   </compound>
   <compound refid="class_complexe" kind="class"><name>Complexe</name>
     <member refid="class_complexe_1ace5b7bcc0e61764510a46e3ae84a098d" kind="variable"><name>_reelle</name></member>
     <member refid="class_complexe_1a355a9945817c7654ba2e435c4c68bf5d" kind="variable"><name>_imaginaire</name></member>
     <member refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" kind="function"><name>Complexe</name></member>
     <member refid="class_complexe_1ae19286bc2c8f360e3fbc0d65526564d3" kind="function"><name>Complexe</name></member>
+    <member refid="class_complexe_1ac92996231047d39d40e11384bb9311b6" kind="function"><name>~Complexe</name></member>
     <member refid="class_complexe_1a5141b5b092f78c06f60013e911ba4440" kind="function"><name>afficher</name></member>
     <member refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kind="function"><name>getPartieReelle</name></member>
     <member refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kind="function"><name>getPartieImaginaire</name></member>
     <member refid="class_complexe_1a7e57ea7cf760e132c80a148e2c344cce" kind="function"><name>setReelle</name></member>
     <member refid="class_complexe_1a2335ce4c53e2b11d4fa4bcbef45415ba" kind="function"><name>setImaginaire</name></member>
     <member refid="class_complexe_1ac00d0b5ba1dea7d67c43d257e48fd7b5" kind="function"><name>Complexe</name></member>
+    <member refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kind="function"><name>reel_pur</name></member>
     <member refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" kind="function"><name>addition</name></member>
     <member refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" kind="function"><name>produit</name></member>
     <member refid="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8" kind="function"><name>division</name></member>
@@ -40,25 +48,48 @@
     <member refid="class_complexe_1a07d706446560190792339549752f9ea3" kind="function"><name>soustraction</name></member>
     <member refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" kind="function"><name>inv</name></member>
     <member refid="class_complexe_1a0b0532339249783cee39f28670bb7504" kind="function"><name>fact</name></member>
-    <member refid="class_complexe_1ab4fdc60272bd80f1df8f8c1c29c11813" kind="function"><name>sinus</name></member>
+    <member refid="class_complexe_1a58574399ad50181f94c8f167916b9db9" kind="function"><name>sinus</name></member>
+    <member refid="class_complexe_1a5b659cad17efee687fb8a889aef5da09" kind="function"><name>cosinus</name></member>
+    <member refid="class_complexe_1a221161f63e9176b49eb74de70ef73d78" kind="function"><name>sinush</name></member>
+    <member refid="class_complexe_1a356e44404acabb3e6bd8228f746fc3f5" kind="function"><name>cosinush</name></member>
+    <member refid="class_complexe_1a7602a9b9ca6e17445207b3632ceba643" kind="function"><name>tangente</name></member>
+    <member refid="class_complexe_1a649a2ad523bfe715950e2e0f3b28213d" kind="function"><name>tangenteh</name></member>
+    <member refid="class_complexe_1a8adb5d883810b1fdbcfa230f32100408" kind="function"><name>logN</name></member>
+    <member refid="class_complexe_1ada2cd39fae72dcf78fac8b361072b4e1" kind="function"><name>log1</name></member>
+    <member refid="class_complexe_1aaebd8e53e61cdea5504fc8f9fa5d2523" kind="function"><name>puissance</name></member>
+    <member refid="class_complexe_1a7bbaa8c8695253acb93eb91eb1bd51c0" kind="function"><name>carre</name></member>
+    <member refid="class_complexe_1a7026e226db2bb64a1ca5c014fa8b6f43" kind="function"><name>cube</name></member>
+    <member refid="class_complexe_1ab7d41a46e8467b819afa76f658a12c01" kind="function"><name>racine</name></member>
   </compound>
   <compound refid="class_constante" kind="class"><name>Constante</name>
     <member refid="class_constante_1af747f270ad3d50813786a1b013bac959" kind="function"><name>~Constante</name></member>
     <member refid="class_constante_1a78b5d9ee6a7e70349db6641a08f77479" kind="function"><name>afficher</name></member>
-    <member refid="class_constante_1a580f4535e16d4c9331da85750be6e5ad" kind="function"><name>addition</name></member>
-    <member refid="class_constante_1ad805854dd4e53f0ef5b2d482398b682a" kind="function"><name>produit</name></member>
-    <member refid="class_constante_1ab9b969ad6ad0d8463d44a1273667ee79" kind="function"><name>division</name></member>
-    <member refid="class_constante_1a1c6f79dbc7623529ee4fd5ae9c556b45" kind="function"><name>signe</name></member>
+    <member refid="class_constante_1a243b6eabd1fd476af827c5b523cddfac" kind="function"><name>addition</name></member>
+    <member refid="class_constante_1a650e88b74d2f8a052e6a11363b3ec816" kind="function"><name>produit</name></member>
+    <member refid="class_constante_1ac41fa56ac5ebdfbcc886b8d249fb876d" kind="function"><name>division</name></member>
+    <member refid="class_constante_1a59fcc22949ea02eb02244dad693696aa" kind="function"><name>signe</name></member>
     <member refid="class_constante_1ac6fb071229429f82cf489f8313461efa" kind="function"><name>recopie</name></member>
-    <member refid="class_constante_1ad1df4970f093fdb4235d4945ec2dbf12" kind="function"><name>soustraction</name></member>
-    <member refid="class_constante_1a63d03e59594b74aa2fbc35f559b0ad46" kind="function"><name>inv</name></member>
-    <member refid="class_constante_1a57dafd18c718935af9f97dcbb8de9ad9" kind="function"><name>fact</name></member>
-    <member refid="class_constante_1ad1a0ed2f6f6e9c3e7fc3f0c4ffaeaa76" kind="function"><name>sinus</name></member>
+    <member refid="class_constante_1a3f3e5ad91d9e4eef33a5e6955fe91cb5" kind="function"><name>soustraction</name></member>
+    <member refid="class_constante_1a5ea6dd472ce568576961fa78b3b674b5" kind="function"><name>inv</name></member>
+    <member refid="class_constante_1a96e23d33bd45f79589f8911473ef2e32" kind="function"><name>fact</name></member>
+    <member refid="class_constante_1a3b6827eba7936c4ce61f64da9dd826b4" kind="function"><name>sinus</name></member>
+    <member refid="class_constante_1af6784ed749b7f2be92d6017628e5b935" kind="function"><name>cosinus</name></member>
+    <member refid="class_constante_1a101b4506f71295a23c764d34b7f7ecfb" kind="function"><name>sinush</name></member>
+    <member refid="class_constante_1a0b1cbba53e1112aa65a081ae6231acb5" kind="function"><name>cosinush</name></member>
+    <member refid="class_constante_1a51bffad2fa33a397de6ed422a621b1a1" kind="function"><name>tangente</name></member>
+    <member refid="class_constante_1a6f5f971e61ac831355f1182289c3952f" kind="function"><name>tangenteh</name></member>
+    <member refid="class_constante_1aa28e3269159806101c2ac0d09c036c2c" kind="function"><name>logN</name></member>
+    <member refid="class_constante_1aad178503c937682acd3c9f19aec37dc6" kind="function"><name>log1</name></member>
+    <member refid="class_constante_1a2ed5e0a77fb7766fbce6abb4ebd0b01e" kind="function"><name>puissance</name></member>
+    <member refid="class_constante_1af8029cf3c52e8fdadeb21647ee9591f3" kind="function"><name>carre</name></member>
+    <member refid="class_constante_1a4590414eecfb9e739194a321a73c7931" kind="function"><name>cube</name></member>
+    <member refid="class_constante_1a57604347a44e29f6aa7e36a045b4df1c" kind="function"><name>racine</name></member>
   </compound>
   <compound refid="class_entier" kind="class"><name>Entier</name>
     <member refid="class_entier_1ab499000d2140a03fd8c2be8cc97cf410" kind="variable"><name>_valeur</name></member>
     <member refid="class_entier_1a35115c0f47f2d94e1697e20624a1c4d1" kind="function"><name>Entier</name></member>
     <member refid="class_entier_1a94158ae6fbad4c9a74815716f5f0f629" kind="function"><name>Entier</name></member>
+    <member refid="class_entier_1ab44549f9d4abf2fd4425f8e3374cdc08" kind="function"><name>~Entier</name></member>
     <member refid="class_entier_1adc0a7554faa45a68eb7432798b6892cc" kind="function"><name>afficher</name></member>
     <member refid="class_entier_1afe38ee7f81afc3c88a2c774ff0af2bcd" kind="function"><name>getValeur</name></member>
     <member refid="class_entier_1a22e1c5d0ecf304cd6033e6bf453cc0c1" kind="function"><name>setValeur</name></member>
@@ -68,27 +99,28 @@
     <member refid="class_entier_1afc338f1f177942411a3c8e0e19fce6ce" kind="function"><name>division</name></member>
     <member refid="class_entier_1a880936c128f077144cd266199cd27585" kind="function"><name>soustraction</name></member>
     <member refid="class_entier_1a29ebe7b4a2b8e8135736389977339330" kind="function"><name>mod</name></member>
-    <member refid="class_entier_1a5e4a3ab5cc280d0e082300207712d5d8" kind="function"><name>inv</name></member>
     <member refid="class_entier_1a094c16293e7853eafa646d1613db3034" kind="function"><name>fact</name></member>
-    <member refid="class_entier_1a081a93591a1095f0fe0715f14b5b4248" kind="function"><name>sinus</name></member>
+    <member refid="class_entier_1a5e4a3ab5cc280d0e082300207712d5d8" kind="function"><name>inv</name></member>
+    <member refid="class_entier_1a1c4613f03f0c7818d1a092714b9077bd" kind="function"><name>sinus</name></member>
+    <member refid="class_entier_1a77e37975ae8575ac9a41d4e41688429a" kind="function"><name>cosinus</name></member>
+    <member refid="class_entier_1a1b87da533d3a1a7c75c327526f3492c0" kind="function"><name>sinush</name></member>
+    <member refid="class_entier_1ae7fbbe73ca85a3bad129d2285f7485aa" kind="function"><name>cosinush</name></member>
+    <member refid="class_entier_1ae07a386db45cb20dddbb3dc8738a4115" kind="function"><name>tangente</name></member>
+    <member refid="class_entier_1aa8d0a9958c7f7eaf38c60922e2716601" kind="function"><name>tangenteh</name></member>
+    <member refid="class_entier_1a4bc40041f47a027ef00d3e71869fdaf9" kind="function"><name>logN</name></member>
+    <member refid="class_entier_1abe28b3a25a9b179d36c35c7081638ab3" kind="function"><name>log1</name></member>
+    <member refid="class_entier_1ae789623eeda06e02ba54c14dab64c399" kind="function"><name>puissance</name></member>
+    <member refid="class_entier_1ac93c2be5a977a38c560ee01eae5b9381" kind="function"><name>carre</name></member>
+    <member refid="class_entier_1ac4aa9142ca284291935f5e2880c3b612" kind="function"><name>cube</name></member>
+    <member refid="class_entier_1ae5459f97866c5240e8a1417f425b5a05" kind="function"><name>racine</name></member>
   </compound>
   <compound refid="class_expression" kind="class"><name>Expression</name>
     <member refid="class_expression_1a7912641ff6edb9737f3381e211bf818f" kind="variable"><name>_expr</name></member>
     <member refid="class_expression_1ac25fb301ae3947c964a4da9a95883e72" kind="function"><name>Expression</name></member>
-    <member refid="class_expression_1a0fd562e8402f205c6b01018913da01a2" kind="function"><name>addition</name></member>
-    <member refid="class_expression_1aaad77013f0b8f7841d0b6edd1a729189" kind="function"><name>produit</name></member>
-    <member refid="class_expression_1a499a6c6b51a2d08916069177b79c388f" kind="function"><name>division</name></member>
-    <member refid="class_expression_1a4859e1a0fcfe29969705e215536c4142" kind="function"><name>signe</name></member>
-    <member refid="class_expression_1a61f33ec42c2bf4e74a462a55558f7c9a" kind="function"><name>soustraction</name></member>
-    <member refid="class_expression_1a70d49ad794bda7db5a9d2c39a70406bc" kind="function"><name>inv</name></member>
-    <member refid="class_expression_1a66aaf0f480995508469b7ef6ed2edda6" kind="function"><name>fact</name></member>
-    <member refid="class_expression_1aa9a4937398cd9da2e1b4d79616c54f1d" kind="function"><name>sinus</name></member>
-    <member refid="class_expression_1a7325926b23a9d2f936524043e68a95e8" kind="function"><name>afficher</name></member>
-  </compound>
-  <compound refid="class_frabrique_complexe" kind="class"><name>FrabriqueComplexe</name>
-    <member refid="class_frabrique_complexe_1a924fc64934dea36a9841144704cb4696" kind="function"><name>fabriquer</name></member>
-  </compound>
-  <compound refid="class_frabrique_constante" kind="class"><name>FrabriqueConstante</name>
+    <member refid="class_expression_1a2f6cee3469dea6cbc3e5af93587f7c25" kind="function"><name>~Expression</name></member>
+    <member refid="class_expression_1adecc12cf329336d20c1891d46e31bd51" kind="function"><name>getExpr</name></member>
+    <member refid="class_expression_1ad724f94577826207bb12a09822e57acc" kind="function"><name>setExpr</name></member>
+    <member refid="class_expression_1ac251603d59d6f4924320586131f1dec6" kind="function"><name>afficher</name></member>
   </compound>
   <compound refid="class_log_message" kind="class"><name>LogMessage</name>
     <member refid="class_log_message_1a0fdfa76fd0ba15d8bab5567a58b3724f" kind="variable"><name>m_numero</name></member>
@@ -100,28 +132,27 @@
     <member refid="class_log_message_1aa54fe583838d18c0f5bf6ce8d274b6f7" kind="function"><name>~LogMessage</name></member>
   </compound>
   <compound refid="class_log_system" kind="class"><name>LogSystem</name>
+    <member refid="class_log_system_1a40ad34c4008678ea9d44d36376ae7df7" kind="variable"><name>instance</name></member>
+    <member refid="class_log_system_1ab5b398fac784d6c20576829056a364a2" kind="function"><name>getInstance</name></member>
+    <member refid="class_log_system_1a96ec47ba20361122fb990ef8e9729b82" kind="function"><name>libereInstance</name></member>
     <member refid="class_log_system_1a26650fa1e4d9792106e4c3ddd727aaa9" kind="function"><name>ajouterFichierLog</name></member>
     <member refid="class_log_system_1ad18f58f1ad0e8f23dc524c2f55d3e8fc" kind="function"><name>ajouterConsoleLog</name></member>
+    <member refid="class_log_system_1a29ba53a9628ac2c2c517bf751cb84a9a" kind="function"><name>ajouterFcihierEtConsole</name></member>
+    <member refid="class_log_system_1adc3513336bc3959e888b343ce6304922" kind="function"><name>LogSystem</name></member>
     <member refid="class_log_system_1ac891dbbf0efb28b572555ee797b56998" kind="function"><name>LogSystem</name></member>
+    <member refid="class_log_system_1a259a97306f0a436f4d8b767b3b0ab8b2" kind="function"><name>operator=</name></member>
   </compound>
   <compound refid="class_ui_1_1_main_window" kind="class"><name>Ui::MainWindow</name>
   </compound>
   <compound refid="class_main_window" kind="class"><name>MainWindow</name>
-    <member refid="class_main_window_1a7b6885be3b8c6d0222aafa77748b852d" kind="variable"><name>_modAngle</name></member>
-    <member refid="class_main_window_1a2fab64d84959d8048ae0c7e47a7c3fd7" kind="variable"><name>_modConstante</name></member>
-    <member refid="class_main_window_1a1d3d51f25fd1414069631111de1c1c24" kind="variable"><name>_modComplexe</name></member>
-    <member refid="class_main_window_1ab55da16dd118ff5a3718e25b3e4f0476" kind="variable"><name>_pileStockage</name></member>
-    <member refid="class_main_window_1a0e09dbed6be4c5b1bbfaa9fa852b7aef" kind="variable"><name>_pileAffichage</name></member>
-    <member refid="class_main_window_1add21502d1d68dd52ef18375379f57ff8" kind="variable"><name>_pileStockageReelle</name></member>
-    <member refid="class_main_window_1a211bdf68e726481ddd5ced4626189c4b" kind="variable"><name>_pileStockageComplexe</name></member>
     <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" kind="variable"><name>ui</name></member>
-    <member refid="class_main_window_1a810709db5f60967d9ac69169ce4cbecc" kind="function"><name>afficheur_pile</name></member>
-    <member refid="class_main_window_1a80381181e476064c086666abb2cfa2ce" kind="function"><name>saveToFile</name></member>
+    <member refid="class_main_window_1a4e20a4a065fbb0e4d3532a45a0a91425" kind="function"><name>closeEvent</name></member>
     <member refid="class_main_window_1a233bee15277ba8e4eebbb121bd547839" kind="function"><name>loadFromFile</name></member>
     <member refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" kind="function"><name>MainWindow</name></member>
-    <member refid="class_main_window_1a2a1ee33b84e16a22e7656bc43220483d" kind="function"><name>traitement_expr</name></member>
+    <member refid="class_main_window_1aa9bae53abcb888f5e8cda8aa654e50e5" kind="function"><name>dernier_element_expression</name></member>
     <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kind="function"><name>~MainWindow</name></member>
-    <member refid="class_main_window_1a71be435db24c12ee4c320a16a0b33ef6" kind="function"><name>empiler</name></member>
+    <member refid="class_main_window_1a5820c5fa916142942adc9984c434793e" kind="function"><name>traiter_bloc_expression</name></member>
+    <member refid="class_main_window_1a1ccb4aa361ba5710af1ee09263a994fe" kind="function"><name>traiter_bloc_calcul</name></member>
     <member refid="class_main_window_1ab623e042d0384fce67ee67b86aa092ab" kind="slot"><name>POWClicked</name></member>
     <member refid="class_main_window_1a694058b9993bdad7bf4c96b7bae1af37" kind="slot"><name>SINClicked</name></member>
     <member refid="class_main_window_1acc7b69effe16bf3936be897b1e9697a2" kind="slot"><name>COSClicked</name></member>
@@ -151,6 +182,7 @@
     <member refid="class_main_window_1ae34dccd3c4bdff6452250ec4807977e4" kind="slot"><name>num7Clicked</name></member>
     <member refid="class_main_window_1ab86f29d78da5c85373b2126cdbfadf78" kind="slot"><name>num8Clicked</name></member>
     <member refid="class_main_window_1a48cd898abe91cf0b7784dfce7258b8f6" kind="slot"><name>num9Clicked</name></member>
+    <member refid="class_main_window_1a5c1743c01e8cf19b5b0e678a09734363" kind="slot"><name>PIBOUTONClicked</name></member>
     <member refid="class_main_window_1a96f5509a262bda1ee40ceaddb081bff6" kind="slot"><name>POINTClicked</name></member>
     <member refid="class_main_window_1a4f3a33c651ac011d7a4ee62f70c88e44" kind="slot"><name>ESPACEClicked</name></member>
     <member refid="class_main_window_1a97ac3886016cc9dc1cc7ae1be4abac65" kind="slot"><name>FACTORIELClicked</name></member>
@@ -167,7 +199,13 @@
     <member refid="class_main_window_1a29e8205bc963cebba7a96f94f4d3c40f" kind="slot"><name>_modReel</name></member>
     <member refid="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" kind="slot"><name>_modRationnel</name></member>
     <member refid="class_main_window_1a05cfdc8bf99fa145e67ce4d9eed03f20" kind="slot"><name>_modEntier</name></member>
+    <member refid="class_main_window_1abc93f16a699c5df5e5aedd67e1ad7e92" kind="slot"><name>retablirClicked</name></member>
+    <member refid="class_main_window_1ad796f3d5c13e4ed2ea90e17aa0a3d7a8" kind="slot"><name>annulerClicked</name></member>
     <member refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" kind="slot"><name>ENTERClicked</name></member>
+    <member refid="class_main_window_1a2472c42b862ef1dc38b75c4111a28590" kind="slot"><name>EVALClicked</name></member>
+    <member refid="class_main_window_1a164eb394f8581e1f80fba559bcc3d2e5" kind="slot"><name>vider_pileClicked</name></member>
+    <member refid="class_main_window_1a10bc645984994b33d7176946fc06eff2" kind="slot"><name>supprimer_tete_pileClicked</name></member>
+    <member refid="class_main_window_1a4d771b6ac11d2280aa5e45e4d47a2011" kind="slot"><name>dupliquer_tete_pileClicked</name></member>
   </compound>
   <compound refid="class_pile" kind="class"><name>Pile</name>
     <member refid="class_pile_1a8935afea23bb7e075c286fe1fa6e6a2f" kind="variable"><name>p</name></member>
@@ -179,7 +217,14 @@
     <member refid="class_pile_1a07d95a908492bd45d1ac105aa78f9dcd" kind="function"><name>Pile</name></member>
     <member refid="class_pile_1ab2d1398d675586ff34994e2b109df152" kind="function"><name>~Pile</name></member>
     <member refid="class_pile_1a91875101e0976f054d1db8869a00b11d" kind="function"><name>sum</name></member>
+    <member refid="class_pile_1a312bdfd2e167615c8d7f11adb2e639ed" kind="function"><name>mean</name></member>
+    <member refid="class_pile_1aa3991438f190580607d7bbbd50ecc0c3" kind="function"><name>clear</name></member>
+    <member refid="class_pile_1a081f7843d01cae1f0f7be7d92e46d5d2" kind="function"><name>dup</name></member>
+    <member refid="class_pile_1a7488ed257c6ceb16ed57a9fffb0726d5" kind="function"><name>drop</name></member>
+    <member refid="class_pile_1ab6c3f9840427e2be87e0d76c8697fff5" kind="function"><name>swap</name></member>
     <member refid="class_pile_1a4964563804a254503d6413e5ba83d3c5" kind="function"><name>afficher</name></member>
+    <member refid="class_pile_1a4be384a2c00fff0afed507231a2974dc" kind="function"><name>copier_pile</name></member>
+    <member refid="class_pile_1a380c3a467b58c175aef4f2cdc0f7a2c7" kind="function"><name>sauv_pile_context</name></member>
     <member refid="class_pile_1a44545327a8d02ad9775a2c918ea5cdfc" kind="function"><name>rowCount</name></member>
     <member refid="class_pile_1ac9d6e388d3a98eb57a786f9bbec30952" kind="function"><name>data</name></member>
     <member refid="class_pile_1a8d34708706c113ec9864f7c37c9083a2" kind="function"><name>operator=</name></member>
@@ -195,6 +240,7 @@
     <member refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" kind="function"><name>Rationnel</name></member>
     <member refid="class_rationnel_1abfbb081364b14280bd0dad5c446078d5" kind="function"><name>Rationnel</name></member>
     <member refid="class_rationnel_1a90d440a5d909748f5fda471e027e3a85" kind="function"><name>simplification</name></member>
+    <member refid="class_rationnel_1a6710cf28d22bb53fda5474059877c2cd" kind="function"><name>~Rationnel</name></member>
     <member refid="class_rationnel_1a4dc6b238834ace05451e69ea2bb6d02a" kind="function"><name>addition</name></member>
     <member refid="class_rationnel_1aa1a21dae65f5fb48c56a376aea420bd6" kind="function"><name>produit</name></member>
     <member refid="class_rationnel_1acf6c7167cfd8005ac723ce11feae2845" kind="function"><name>division</name></member>
@@ -202,16 +248,27 @@
     <member refid="class_rationnel_1a268c0a861cdacea0593774b50a346a98" kind="function"><name>soustraction</name></member>
     <member refid="class_rationnel_1a45dd892e3366ff9be810fde32739b899" kind="function"><name>inv</name></member>
     <member refid="class_rationnel_1a68ab5e97a92bb2a08d667861eb920052" kind="function"><name>fact</name></member>
-    <member refid="class_rationnel_1a4082f9cbebb6d96c496552b93b106c99" kind="function"><name>sinus</name></member>
+    <member refid="class_rationnel_1a5845bc3ef6eff4f427668fd3892e0f5f" kind="function"><name>sinus</name></member>
+    <member refid="class_rationnel_1a2740232bc9f557bc4a896e2347312dc8" kind="function"><name>cosinus</name></member>
+    <member refid="class_rationnel_1a48c54830a508d28a80d4b2be6762c9ae" kind="function"><name>sinush</name></member>
+    <member refid="class_rationnel_1af52bac0dacd387a802b08fa09e899e22" kind="function"><name>cosinush</name></member>
+    <member refid="class_rationnel_1af8e760a8cca5eea97ae2f7446074eb89" kind="function"><name>tangente</name></member>
+    <member refid="class_rationnel_1ac6f49836dd9d00e79965d247a4d9daee" kind="function"><name>tangenteh</name></member>
+    <member refid="class_rationnel_1a5d671bc8d584725f11a130b91332400e" kind="function"><name>logN</name></member>
+    <member refid="class_rationnel_1a93eea5c6c08ad840340743182231454f" kind="function"><name>log1</name></member>
+    <member refid="class_rationnel_1af437497d370b037d563a96fd6184b37f" kind="function"><name>puissance</name></member>
+    <member refid="class_rationnel_1aa191437241e88bb3a6f8953822489ac0" kind="function"><name>carre</name></member>
+    <member refid="class_rationnel_1a48edd766bd572445e3bc31926e6c24e1" kind="function"><name>cube</name></member>
+    <member refid="class_rationnel_1a3be00da71666a64e42dcf3737c5c153a" kind="function"><name>racine</name></member>
   </compound>
   <compound refid="class_reel" kind="class"><name>Reel</name>
     <member refid="class_reel_1a8f6ba4bf0a56375d423b2be6c4522155" kind="variable"><name>_valeur</name></member>
     <member refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" kind="function"><name>Reel</name></member>
     <member refid="class_reel_1a02f5d2d30d048ae139b1d8112f6c6f9a" kind="function"><name>Reel</name></member>
+    <member refid="class_reel_1ac86835592eeeb54a8d4ce31fae3be10e" kind="function"><name>~Reel</name></member>
     <member refid="class_reel_1a01af7b4e76fb88a85796a41f63b00420" kind="function"><name>afficher</name></member>
     <member refid="class_reel_1a6412ad4d84dcd302c1fae1f7ec3ede46" kind="function"><name>getValeur</name></member>
     <member refid="class_reel_1ae2ce4ae994a0fb3762eea2eb854af5cd" kind="function"><name>setValeur</name></member>
-    <member refid="class_reel_1acd01be68d30b8eec1e411903f3051672" kind="function"><name>toRationnel</name></member>
     <member refid="class_reel_1a916d41fd6be293e13db43ef0a7866f40" kind="function"><name>addition</name></member>
     <member refid="class_reel_1ad87571a6e4d315eef54b55e6ded1f8f5" kind="function"><name>produit</name></member>
     <member refid="class_reel_1af82effc61166bcc5f2ed9d0a2c97bee1" kind="function"><name>division</name></member>
@@ -219,7 +276,18 @@
     <member refid="class_reel_1a3c53208d46d2139790598fc5a7f29b7d" kind="function"><name>soustraction</name></member>
     <member refid="class_reel_1ac2388aae44a03e17a80efaf322583784" kind="function"><name>inv</name></member>
     <member refid="class_reel_1a93cccda34883afa19ea08f9e84a6d22e" kind="function"><name>fact</name></member>
-    <member refid="class_reel_1a8e943954e7d3c46031b3e2e59b2f1717" kind="function"><name>sinus</name></member>
+    <member refid="class_reel_1a189184ab88846b6d48e660a4308269cd" kind="function"><name>sinus</name></member>
+    <member refid="class_reel_1a2ac819db4ede5a6ee712c33ae6a454ae" kind="function"><name>cosinus</name></member>
+    <member refid="class_reel_1a9bffd052bb8d163e1f0b7c1f86b27c1a" kind="function"><name>sinush</name></member>
+    <member refid="class_reel_1a355737e3925c2352f4e7fdfe16755f05" kind="function"><name>cosinush</name></member>
+    <member refid="class_reel_1acaeed5fe69edf50145bb355a88ebf372" kind="function"><name>tangente</name></member>
+    <member refid="class_reel_1a9184526f7eefa9a83f5394393ce86911" kind="function"><name>tangenteh</name></member>
+    <member refid="class_reel_1ad793874a4f9bf2f12889a085f705ab3b" kind="function"><name>logN</name></member>
+    <member refid="class_reel_1ae006122aff6f67f662affe4ac7686962" kind="function"><name>log1</name></member>
+    <member refid="class_reel_1af88c9ab592354cfdcfe821f35e1d56af" kind="function"><name>puissance</name></member>
+    <member refid="class_reel_1ad658ce7744a0b152c7f42ffd3c79baaf" kind="function"><name>carre</name></member>
+    <member refid="class_reel_1af8c335c6e20697e9adb9fbb4e5f4577b" kind="function"><name>cube</name></member>
+    <member refid="class_reel_1a164e9b499ff9c5521d59a5f6e607c409" kind="function"><name>racine</name></member>
   </compound>
   <compound refid="class_ui___main_window" kind="class"><name>Ui_MainWindow</name>
     <member refid="class_ui___main_window_1ab5925c132a26c5f1b68712db69a43955" kind="variable"><name>action_propos</name></member>
@@ -227,49 +295,50 @@
     <member refid="class_ui___main_window_1acd6fdc9ebacc4b25b834162380d75ce8" kind="variable"><name>horizontalLayout</name></member>
     <member refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" kind="variable"><name>gridLayout</name></member>
     <member refid="class_ui___main_window_1a4684b35f7b6ce7e3b2372b2b01037ea2" kind="variable"><name>widget_clavierBasic</name></member>
-    <member refid="class_ui___main_window_1ab96ab0f0578098521fa69a75aa5cdde8" kind="variable"><name>layoutWidget</name></member>
+    <member refid="class_ui___main_window_1a80867018070156432923d0266cc9fe25" kind="variable"><name>horizontalLayout_2</name></member>
     <member refid="class_ui___main_window_1a7ccbf939ae6d5a0f57068259787f0f9f" kind="variable"><name>_clavierBasicLayout</name></member>
+    <member refid="class_ui___main_window_1a6b99070e2ed530d98b26f79ce1b5ecdf" kind="variable"><name>num7</name></member>
     <member refid="class_ui___main_window_1aeca50b654eb96a8bb380a34405c0e8a6" kind="variable"><name>num8</name></member>
+    <member refid="class_ui___main_window_1a2a726c1956d35bdc8131b967f8a6d152" kind="variable"><name>num9</name></member>
     <member refid="class_ui___main_window_1acec9d7e0484591592b5b5aebe17c4d4c" kind="variable"><name>num4</name></member>
     <member refid="class_ui___main_window_1ae2cb73580dc5ebe9ff8bfdeb0be7fa4d" kind="variable"><name>num5</name></member>
-    <member refid="class_ui___main_window_1a2a726c1956d35bdc8131b967f8a6d152" kind="variable"><name>num9</name></member>
     <member refid="class_ui___main_window_1a45c01137210fb27261aaa19e878b2771" kind="variable"><name>num6</name></member>
-    <member refid="class_ui___main_window_1a42840810d6ba204b30a10316437fbac8" kind="variable"><name>num2</name></member>
     <member refid="class_ui___main_window_1a06046b98ba8522d7866ff59b214208d4" kind="variable"><name>num1</name></member>
+    <member refid="class_ui___main_window_1a42840810d6ba204b30a10316437fbac8" kind="variable"><name>num2</name></member>
     <member refid="class_ui___main_window_1a1cba0408985417af8b8f84ecf490f251" kind="variable"><name>num3</name></member>
     <member refid="class_ui___main_window_1ad451216d14bbfb46a45e691f81bd5697" kind="variable"><name>num0</name></member>
-    <member refid="class_ui___main_window_1afea79b7d0abfd420abade70c22e611e9" kind="variable"><name>POINT</name></member>
-    <member refid="class_ui___main_window_1aafa19488033af699d2e20192f189de49" kind="variable"><name>EVAL</name></member>
-    <member refid="class_ui___main_window_1a2857c52a8366fe68798acdc44afa0fed" kind="variable"><name>ESPACE</name></member>
     <member refid="class_ui___main_window_1a7d4645de7ef62f35bd4f0d0ff78a7611" kind="variable"><name>ENTER</name></member>
-    <member refid="class_ui___main_window_1a6b99070e2ed530d98b26f79ce1b5ecdf" kind="variable"><name>num7</name></member>
+    <member refid="class_ui___main_window_1a56acbb096ec7433f9afe533b440d8123" kind="variable"><name>DOLLAR</name></member>
     <member refid="class_ui___main_window_1ab159e22a78929113617dcf7d4af66b7e" kind="variable"><name>C</name></member>
     <member refid="class_ui___main_window_1a416e9c24bb7c8e85be227044461177ec" kind="variable"><name>CE</name></member>
+    <member refid="class_ui___main_window_1ac0e681bd2bc1ee327deede20741b33c7" kind="variable"><name>SOUSTRAIRE</name></member>
+    <member refid="class_ui___main_window_1a5881999c31ff45cbe8bdb517a8884e3f" kind="variable"><name>ADDITIONNER</name></member>
+    <member refid="class_ui___main_window_1aa03160fab513dd8c4942725310a79bbb" kind="variable"><name>DIVISER</name></member>
+    <member refid="class_ui___main_window_1a0093863cdee1f0a9f32f80a145eb9d74" kind="variable"><name>MULTIPLIER</name></member>
+    <member refid="class_ui___main_window_1a3b9631153562751675ef6fe58d72fe68" kind="variable"><name>FACTORIEL</name></member>
+    <member refid="class_ui___main_window_1a2857c52a8366fe68798acdc44afa0fed" kind="variable"><name>ESPACE</name></member>
+    <member refid="class_ui___main_window_1afea79b7d0abfd420abade70c22e611e9" kind="variable"><name>POINT</name></member>
     <member refid="class_ui___main_window_1a1e4151d33099f88be6126ffa57e3a6a8" kind="variable"><name>QUOTE</name></member>
-    <member refid="class_ui___main_window_1a56acbb096ec7433f9afe533b440d8123" kind="variable"><name>DOLLAR</name></member>
+    <member refid="class_ui___main_window_1aafa19488033af699d2e20192f189de49" kind="variable"><name>EVAL</name></member>
+    <member refid="class_ui___main_window_1a10499cba7898eb6c0827b13d2b2e09e4" kind="variable"><name>PIBOUTON</name></member>
     <member refid="class_ui___main_window_1afc376b376159bf114d26ad55b43e87b0" kind="variable"><name>widget_clavierAvance</name></member>
-    <member refid="class_ui___main_window_1aab31b3dec8d767525dea6f163e029e48" kind="variable"><name>layoutWidget1</name></member>
+    <member refid="class_ui___main_window_1a03ce63974cc69b067c91bbf285cceca8" kind="variable"><name>horizontalLayout_3</name></member>
     <member refid="class_ui___main_window_1ab1a8b1e5dea7cdd088cef57264356e0b" kind="variable"><name>_clavierAvanceLayout</name></member>
-    <member refid="class_ui___main_window_1a8340a7d6e9beca550e886c360dbc7afb" kind="variable"><name>MOD</name></member>
-    <member refid="class_ui___main_window_1a6259c463080f8ffe0be91053e874780b" kind="variable"><name>SQR</name></member>
-    <member refid="class_ui___main_window_1ab6f966dfd75b5b8164555868f5331ada" kind="variable"><name>COSH</name></member>
+    <member refid="class_ui___main_window_1a02bdc78125dfec5dfb5653ce0776eeb3" kind="variable"><name>POW</name></member>
+    <member refid="class_ui___main_window_1ac1caf33332e6d63e4ec1a9071713493b" kind="variable"><name>SIN</name></member>
     <member refid="class_ui___main_window_1a22cb4dc418e7679c26754c84c1529a29" kind="variable"><name>SINH</name></member>
     <member refid="class_ui___main_window_1a62e9dca715645175577d6143bc93fd9f" kind="variable"><name>LN</name></member>
-    <member refid="class_ui___main_window_1a47f156cd397be49d22f6f7fe15b0fde4" kind="variable"><name>LOG</name></member>
-    <member refid="class_ui___main_window_1ac1caf33332e6d63e4ec1a9071713493b" kind="variable"><name>SIN</name></member>
+    <member refid="class_ui___main_window_1a6e35980b83db49bf01e02faf128a8ba4" kind="variable"><name>SQRT</name></member>
+    <member refid="class_ui___main_window_1a8340a7d6e9beca550e886c360dbc7afb" kind="variable"><name>MOD</name></member>
     <member refid="class_ui___main_window_1acba7c9022bfdd86ca0513771138d1f79" kind="variable"><name>COS</name></member>
+    <member refid="class_ui___main_window_1ab6f966dfd75b5b8164555868f5331ada" kind="variable"><name>COSH</name></member>
+    <member refid="class_ui___main_window_1a47f156cd397be49d22f6f7fe15b0fde4" kind="variable"><name>LOG</name></member>
+    <member refid="class_ui___main_window_1a6259c463080f8ffe0be91053e874780b" kind="variable"><name>SQR</name></member>
     <member refid="class_ui___main_window_1a5a851ab1cd3ae5dac5d8cf6b6e22e956" kind="variable"><name>SIGN</name></member>
     <member refid="class_ui___main_window_1a17184ec702aa5040677142c4a143e5f2" kind="variable"><name>TAN</name></member>
     <member refid="class_ui___main_window_1aa0b74bbccda6715c999c78240332fda0" kind="variable"><name>TANH</name></member>
     <member refid="class_ui___main_window_1a8f44a583b70486ec7584db651ddc3fa6" kind="variable"><name>INV</name></member>
-    <member refid="class_ui___main_window_1a3b9631153562751675ef6fe58d72fe68" kind="variable"><name>FACTORIEL</name></member>
-    <member refid="class_ui___main_window_1aa03160fab513dd8c4942725310a79bbb" kind="variable"><name>DIVISER</name></member>
-    <member refid="class_ui___main_window_1a0093863cdee1f0a9f32f80a145eb9d74" kind="variable"><name>MULTIPLIER</name></member>
-    <member refid="class_ui___main_window_1ac0e681bd2bc1ee327deede20741b33c7" kind="variable"><name>SOUSTRAIRE</name></member>
-    <member refid="class_ui___main_window_1a5881999c31ff45cbe8bdb517a8884e3f" kind="variable"><name>ADDITIONNER</name></member>
-    <member refid="class_ui___main_window_1a6e35980b83db49bf01e02faf128a8ba4" kind="variable"><name>SQRT</name></member>
     <member refid="class_ui___main_window_1a6808a4c8810a4b54cdcfc0def3b69e4c" kind="variable"><name>CUBE</name></member>
-    <member refid="class_ui___main_window_1a02bdc78125dfec5dfb5653ce0776eeb3" kind="variable"><name>POW</name></member>
     <member refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" kind="variable"><name>inputLine</name></member>
     <member refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" kind="variable"><name>listView</name></member>
     <member refid="class_ui___main_window_1a0c01bad60d9f422a1258e710635a2f65" kind="variable"><name>verticalLayout_2</name></member>
@@ -286,13 +355,11 @@
     <member refid="class_ui___main_window_1a320d3d7ba1cb8fff7b7b95923ed10f5e" kind="variable"><name>groupBox_3</name></member>
     <member refid="class_ui___main_window_1aface0fc9ed198a25292a75ce279e02c8" kind="variable"><name>_clavierBasic</name></member>
     <member refid="class_ui___main_window_1a322846c1c07376202f7e18ce4b80e81a" kind="variable"><name>_clavierAvance</name></member>
-    <member refid="class_ui___main_window_1ad332d93084584930878f1daf5f84cdbf" kind="variable"><name>pushButton</name></member>
-    <member refid="class_ui___main_window_1a59a7d8124bce933d63f53f2153d447b4" kind="variable"><name>pushButton_2</name></member>
-    <member refid="class_ui___main_window_1a2be1c24ec9adfca18e1dcc951931457f" kind="variable"><name>menuBar</name></member>
-    <member refid="class_ui___main_window_1a7d7b4b19240d3d65b39fbfb5ee49538a" kind="variable"><name>menuFichier</name></member>
-    <member refid="class_ui___main_window_1abe2eb1a23c01639b2a6ba0e562c28c4d" kind="variable"><name>menu</name></member>
-    <member refid="class_ui___main_window_1a5172877001c8c7b4e0f6de50421867d1" kind="variable"><name>mainToolBar</name></member>
-    <member refid="class_ui___main_window_1a50fa481337604bcc8bf68de18ab16ecd" kind="variable"><name>statusBar</name></member>
+    <member refid="class_ui___main_window_1afcd80e9772c362343c8b1343fe9cc46f" kind="variable"><name>annuler</name></member>
+    <member refid="class_ui___main_window_1a63ba859b403fa2f74b1e5f3b3f258575" kind="variable"><name>retablir</name></member>
+    <member refid="class_ui___main_window_1a48b51edf0d95abf4e0da82b6846d7c3d" kind="variable"><name>vider_pile</name></member>
+    <member refid="class_ui___main_window_1a6b4a0425c46ea6e3c9c530196d69b695" kind="variable"><name>supprimer_tete_pile</name></member>
+    <member refid="class_ui___main_window_1af9616decd222a39cd79adc405991d373" kind="variable"><name>dupliquer_tete_pile</name></member>
     <member refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" kind="function"><name>setupUi</name></member>
     <member refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" kind="function"><name>retranslateUi</name></member>
   </compound>
@@ -319,32 +386,13 @@
     <member refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7ac810bbb61792a076f46cad2c89d87e1d" kind="enumvalue"><name>expression</name></member>
   </compound>
   <compound refid="entier_8cpp" kind="file"><name>entier.cpp</name>
+    <member refid="entier_8cpp_1a598a3330b3c21701223ee0ca14316eca" kind="define"><name>PI</name></member>
   </compound>
   <compound refid="entier_8h" kind="file"><name>entier.h</name>
   </compound>
   <compound refid="expression_8cpp" kind="file"><name>expression.cpp</name>
   </compound>
   <compound refid="expression_8h" kind="file"><name>expression.h</name>
-  </compound>
-  <compound refid="fonctions_8cpp" kind="file"><name>fonctions.cpp</name>
-    <member refid="fonctions_8cpp_1a7a18f1d2b66a88b6fce563c918d62198" kind="function"><name>pgcd</name></member>
-    <member refid="fonctions_8cpp_1a27cab872c8e16edd012a1b1a4c707dc3" kind="function"><name>ppcm</name></member>
-    <member refid="fonctions_8cpp_1acf49ead148faa4b4d065d41a9d0f9161" kind="function"><name>sinus</name></member>
-    <member refid="fonctions_8cpp_1a370e75158c669314981f7019630970d6" kind="function"><name>cosinus</name></member>
-    <member refid="fonctions_8cpp_1af208ac54c972ad4f354c13ecebd88b5b" kind="function"><name>tangente</name></member>
-    <member refid="fonctions_8cpp_1aa48b58c71fa7053a5b1af1d8f98e601b" kind="function"><name>sinush</name></member>
-    <member refid="fonctions_8cpp_1aeae1e784bc1656c24e4adb1d4f49cdc2" kind="function"><name>cosinush</name></member>
-    <member refid="fonctions_8cpp_1adec07ed9e2078ea8ebadb34e8f6f5ed8" kind="function"><name>tangenteh</name></member>
-    <member refid="fonctions_8cpp_1a0666e07279ceca5aee7cab394b4d33a0" kind="function"><name>fact</name></member>
-  </compound>
-  <compound refid="fonctions_8h" kind="file"><name>fonctions.h</name>
-    <member refid="fonctions_8h_1a7a18f1d2b66a88b6fce563c918d62198" kind="function"><name>pgcd</name></member>
-    <member refid="fonctions_8h_1a27cab872c8e16edd012a1b1a4c707dc3" kind="function"><name>ppcm</name></member>
-    <member refid="fonctions_8h_1acf49ead148faa4b4d065d41a9d0f9161" kind="function"><name>sinus</name></member>
-    <member refid="fonctions_8h_1a370e75158c669314981f7019630970d6" kind="function"><name>cosinus</name></member>
-    <member refid="fonctions_8h_1af208ac54c972ad4f354c13ecebd88b5b" kind="function"><name>tangente</name></member>
-    <member refid="fonctions_8h_1aa48b58c71fa7053a5b1af1d8f98e601b" kind="function"><name>sinush</name></member>
-    <member refid="fonctions_8h_1aeae1e784bc1656c24e4adb1d4f49cdc2" kind="function"><name>cosinush</name></member>
   </compound>
   <compound refid="logmessage_8cpp" kind="file"><name>logmessage.cpp</name>
   </compound>
@@ -353,6 +401,7 @@
     <member refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71a8c5b883bce87e721f1fab27140beffa9" kind="enumvalue"><name>faible</name></member>
     <member refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kind="enumvalue"><name>moyen</name></member>
     <member refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" kind="enumvalue"><name>important</name></member>
+    <member refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" kind="enumvalue"><name>tracabilite</name></member>
   </compound>
   <compound refid="logsystem_8cpp" kind="file"><name>logsystem.cpp</name>
   </compound>
@@ -362,11 +411,14 @@
     <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
   </compound>
   <compound refid="mainwindow_8cpp" kind="file"><name>mainwindow.cpp</name>
+    <member refid="mainwindow_8cpp_1a108d15359aba86f26b1bb30e7d0fd505" kind="function"><name>stringToConstante</name></member>
   </compound>
   <compound refid="mainwindow_8h" kind="file"><name>mainwindow.h</name>
+    <member refid="mainwindow_8h_1a598a3330b3c21701223ee0ca14316eca" kind="define"><name>PI</name></member>
     <member refid="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6a" kind="enum"><name>MesureAngle</name></member>
     <member refid="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6aaaaea1ab3c48044ff4c241e60aa12973e" kind="enumvalue"><name>degre</name></member>
     <member refid="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6aae016078d0a68a6325ab6c0a3e53969b0" kind="enumvalue"><name>radian</name></member>
+    <member refid="mainwindow_8h_1a5381fbfe5e9fcfad0c41b48f45ea8640" kind="function"><name>stringToConstante</name></member>
   </compound>
   <compound refid="moc__mainwindow_8cpp" kind="file"><name>moc_mainwindow.cpp</name>
     <member refid="moc__mainwindow_8cpp_1a1dd2e133e39a5ebf8d05650bb3b3741a" kind="variable"><name>qt_meta_data_MainWindow</name></member>
@@ -381,10 +433,16 @@
   <compound refid="pile_8h" kind="file"><name>pile.h</name>
   </compound>
   <compound refid="rationnel_8cpp" kind="file"><name>rationnel.cpp</name>
+    <member refid="rationnel_8cpp_1a598a3330b3c21701223ee0ca14316eca" kind="define"><name>PI</name></member>
+    <member refid="rationnel_8cpp_1a7a18f1d2b66a88b6fce563c918d62198" kind="function"><name>pgcd</name></member>
+    <member refid="rationnel_8cpp_1a27cab872c8e16edd012a1b1a4c707dc3" kind="function"><name>ppcm</name></member>
   </compound>
   <compound refid="rationnel_8h" kind="file"><name>rationnel.h</name>
+    <member refid="rationnel_8h_1a7a18f1d2b66a88b6fce563c918d62198" kind="function"><name>pgcd</name></member>
+    <member refid="rationnel_8h_1a27cab872c8e16edd012a1b1a4c707dc3" kind="function"><name>ppcm</name></member>
   </compound>
   <compound refid="reel_8cpp" kind="file"><name>reel.cpp</name>
+    <member refid="reel_8cpp_1a598a3330b3c21701223ee0ca14316eca" kind="define"><name>PI</name></member>
   </compound>
   <compound refid="reel_8h" kind="file"><name>reel.h</name>
   </compound>

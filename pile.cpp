@@ -89,11 +89,6 @@ Constante* Pile::pop()
       */
 }
 
-/*Constante* Pile::top()
-{
-    return p.top;
-
-}*/
 
 Constante* Pile::sum(unsigned int x)
 {
@@ -119,8 +114,6 @@ Constante* Pile::mean(unsigned int x)
     Constante* tmp = this->sum(x);
     Entier e(x);
     return new Complexe(tmp->division(&e));
-//    LogMessage msg(0, "Calcul de la moyenne de la pile.", tracabilite);
- //   LogSystem::getInstance().ajouterFcihierEtConsole(msg);
     /**
       * \brief Moyenne sur la pile
       * \details Effectue la moyenne sur les \a x premiers éléments de la pile, en fonction du paramètre.
@@ -199,10 +192,8 @@ void Pile::sauv_pile_context(){
     for (int i=0; i<s; i++){
         QString libelle("PileStockage/Element"+QString::number(i));
         if (p.at(i)->afficher().count("$")==0)
-            //FIXME : bug des complexe dans le .ini => boucle infinie
+            //FIXME : bug des complexes lors du chargement du .ini => boucle infinie => on ne les sauvegarde pas.
             Calculatrice::getInstance().getContext()->setValue(libelle, p.at(i)->afficher());
-        else
-            Calculatrice::getInstance().getContext()->setValue(libelle, "0");
     }
     LogMessage msg(0, "Sauvegarde de la pile dans le fichier ini.", tracabilite);
     LogSystem::getInstance().ajouterFcihierEtConsole(msg);

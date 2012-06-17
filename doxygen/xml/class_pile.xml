@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="class_pile" kind="class" prot="public">
     <compoundname>Pile</compoundname>
+    <includes refid="pile_8h" local="no">pile.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_pile_1a8935afea23bb7e075c286fe1fa6e6a2f" prot="private" static="no" mutable="no">
         <type>QList&lt; <ref refid="class_constante" kindref="compound">Constante</ref> * &gt;</type>
@@ -14,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="17" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" bodystart="17" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="15" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" bodystart="15" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -28,8 +29,15 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="20" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="46" bodyend="55"/>
+<para>Dépiler</para><para>Tester d&apos;abord si la pile n&apos;est pas vide. Si c&apos;est bon, alors on dépile le premier élément, oorrespondant au dernier ajouté <simplesect kind="return"><para>Une <emphasis><ref refid="class_constante" kindref="compound">Constante</ref></emphasis> correspondant au dernier élément, ou NULL</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="18" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="74" bodyend="90"/>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" compoundref="logmessage_8h" startline="17">tracabilite</references>
+        <references refid="class_log_system_1ab5b398fac784d6c20576829056a364a2" compoundref="logsystem_8cpp" startline="8" endline="11">LogSystem::getInstance</references>
+        <references refid="class_log_system_1a29ba53a9628ac2c2c517bf751cb84a9a" compoundref="logsystem_8cpp" startline="21" endline="24">LogSystem::ajouterFcihierEtConsole</references>
+        <referencedby refid="class_main_window_1a1ccb4aa361ba5710af1ee09263a994fe" compoundref="mainwindow_8cpp" startline="708" endline="793">MainWindow::traiter_bloc_calcul</referencedby>
+        <referencedby refid="class_main_window_1a2472c42b862ef1dc38b75c4111a28590" compoundref="mainwindow_8cpp" startline="848" endline="882">MainWindow::EVALClicked</referencedby>
+        <referencedby refid="class_main_window_1aa9bae53abcb888f5e8cda8aa654e50e5" compoundref="mainwindow_8cpp" startline="885" endline="906">MainWindow::dernier_element_expression</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_pile_1a25c322d47a76d758565bdf9df2253411" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
@@ -42,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="21" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" bodystart="21" bodyend="21"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="19" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" bodystart="19" bodyend="19"/>
       </memberdef>
       <memberdef kind="function" id="class_pile_1a18a4d9a9b8013b36a5423817f9fb9049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -58,8 +66,21 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="22" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="5" bodyend="8"/>
+<para>Empiler</para><para>Permet d&apos;empiler la <ref refid="class_constante" kindref="compound">Constante</ref> entrée en paramètre dans la pile <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un pointeur de <ref refid="class_constante" kindref="compound">Constante</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="20" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="8" bodyend="15"/>
+        <referencedby refid="class_calculatrice_1a01b91f69f7ac10d737af66b3fa968db9" compoundref="calculatrice_8cpp" startline="46" endline="71">Calculatrice::Calculatrice</referencedby>
+        <referencedby refid="class_main_window_1a1ccb4aa361ba5710af1ee09263a994fe" compoundref="mainwindow_8cpp" startline="708" endline="793">MainWindow::traiter_bloc_calcul</referencedby>
+        <referencedby refid="class_main_window_1a5820c5fa916142942adc9984c434793e" compoundref="mainwindow_8cpp" startline="838" endline="846">MainWindow::traiter_bloc_expression</referencedby>
+        <referencedby refid="class_main_window_1a2472c42b862ef1dc38b75c4111a28590" compoundref="mainwindow_8cpp" startline="848" endline="882">MainWindow::EVALClicked</referencedby>
+        <referencedby refid="class_main_window_1aa9bae53abcb888f5e8cda8aa654e50e5" compoundref="mainwindow_8cpp" startline="885" endline="906">MainWindow::dernier_element_expression</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_pile_1ae45e55f151180284728643cb9cfe4095" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -72,7 +93,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="23" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" bodystart="23" bodyend="23"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="21" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" bodystart="21" bodyend="21"/>
+        <referencedby refid="class_main_window_1a1ccb4aa361ba5710af1ee09263a994fe" compoundref="mainwindow_8cpp" startline="708" endline="793">MainWindow::traiter_bloc_calcul</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_pile_1aaae1107e877f7094bdbd97839c731634" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -85,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="24" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" bodystart="24" bodyend="24"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="22" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" bodystart="22" bodyend="22"/>
       </memberdef>
       <memberdef kind="function" id="class_pile_1a07d95a908492bd45d1ac105aa78f9dcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -103,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="25" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" bodystart="25" bodyend="25"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="23" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" bodystart="23" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="class_pile_1ab2d1398d675586ff34994e2b109df152" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -115,8 +137,8 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="26" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="28" bodyend="33"/>
+<para>Destructeur de pile</para><para>Destruction de la pile et de chaque membre de cette pile</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="24" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="45" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="class_pile_1a91875101e0976f054d1db8869a00b11d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
@@ -133,8 +155,133 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="27" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="63" bodyend="76"/>
+<para>Somme sur la pile</para><para>Effectue la somme sur les <emphasis>x</emphasis> premiers éléments de la pile, en fonction du paramètre. Pour cela, on ajoute au résultat (qui est un <ref refid="class_complexe" kindref="compound">Complexe</ref>) la valeur de l&apos;élément dépilé. On empile ensuite le résultat <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_entier" kindref="compound">Entier</ref> correspondant au nombre d&apos;éléments à sommer </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Une <emphasis><ref refid="class_constante" kindref="compound">Constante</ref></emphasis> contenant le résultat de la somme</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="25" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="98" bodyend="115"/>
+        <references refid="class_constante_1a243b6eabd1fd476af827c5b523cddfac" compoundref="constante_8h" startline="35" endline="35">Constante::addition</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1a312bdfd2e167615c8d7f11adb2e639ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Pile::mean</definition>
+        <argsstring>(unsigned int x=2)</argsstring>
+        <name>mean</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>x</declname>
+          <defval>2</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Moyenne sur la pile</para><para>Effectue la moyenne sur les <emphasis>x</emphasis> premiers éléments de la pile, en fonction du paramètre. Pour cela, on appelle la fonction <emphasis>sum</emphasis>, puis on divise en fonction du paramètre x <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_entier" kindref="compound">Entier</ref> correspondant au nombre d&apos;éléments pour la moyenne </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Une <emphasis><ref refid="class_constante" kindref="compound">Constante</ref></emphasis> contenant le résultat de la moyenne</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="26" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="117" bodyend="129"/>
+        <references refid="class_constante_1ac41fa56ac5ebdfbcc886b8d249fb876d" compoundref="constante_8h" startline="37" endline="37">Constante::division</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1aa3991438f190580607d7bbbd50ecc0c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pile::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Vider la pile</para><para>On dépile chaque élément de la pile, en faisant appel à la fonction <emphasis>pop</emphasis> </para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="27" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="131" bodyend="142"/>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" compoundref="logmessage_8h" startline="17">tracabilite</references>
+        <references refid="class_log_system_1ab5b398fac784d6c20576829056a364a2" compoundref="logsystem_8cpp" startline="8" endline="11">LogSystem::getInstance</references>
+        <references refid="class_log_system_1a29ba53a9628ac2c2c517bf751cb84a9a" compoundref="logsystem_8cpp" startline="21" endline="24">LogSystem::ajouterFcihierEtConsole</references>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1a081f7843d01cae1f0f7be7d92e46d5d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pile::dup</definition>
+        <argsstring>()</argsstring>
+        <name>dup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Duplication</para><para>Duplication du premier élément de la pile</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="144" bodyend="153"/>
+        <references refid="class_constante_1ac6fb071229429f82cf489f8313461efa" compoundref="constante_8cpp" startline="9" endline="49">Constante::recopie</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" compoundref="logmessage_8h" startline="17">tracabilite</references>
+        <references refid="class_log_system_1ab5b398fac784d6c20576829056a364a2" compoundref="logsystem_8cpp" startline="8" endline="11">LogSystem::getInstance</references>
+        <references refid="class_log_system_1a29ba53a9628ac2c2c517bf751cb84a9a" compoundref="logsystem_8cpp" startline="21" endline="24">LogSystem::ajouterFcihierEtConsole</references>
+        <referencedby refid="class_main_window_1a4d771b6ac11d2280aa5e45e4d47a2011" compoundref="mainwindow_8cpp" startline="114" endline="120">MainWindow::dupliquer_tete_pileClicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1a7488ed257c6ceb16ed57a9fffb0726d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pile::drop</definition>
+        <argsstring>()</argsstring>
+        <name>drop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Suppression premier élément</para><para>Supprimer le premier élément de la pile</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="29" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="168" bodyend="177"/>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" compoundref="logmessage_8h" startline="17">tracabilite</references>
+        <references refid="class_log_system_1ab5b398fac784d6c20576829056a364a2" compoundref="logsystem_8cpp" startline="8" endline="11">LogSystem::getInstance</references>
+        <references refid="class_log_system_1a29ba53a9628ac2c2c517bf751cb84a9a" compoundref="logsystem_8cpp" startline="21" endline="24">LogSystem::ajouterFcihierEtConsole</references>
+        <referencedby refid="class_main_window_1a10bc645984994b33d7176946fc06eff2" compoundref="mainwindow_8cpp" startline="107" endline="112">MainWindow::supprimer_tete_pileClicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1ab6c3f9840427e2be87e0d76c8697fff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pile::swap</definition>
+        <argsstring>(unsigned int x, unsigned int y)</argsstring>
+        <name>swap</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Échange</para><para>Échange des deux éléments dont les positions sont passées en paramètres <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_entier" kindref="compound">Entier</ref>, position du premier élément </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_entier" kindref="compound">Entier</ref>, position du second élément</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="30" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="179" bodyend="192"/>
       </memberdef>
       <memberdef kind="function" id="class_pile_1a4964563804a254503d6413e5ba83d3c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QString</type>
@@ -146,8 +293,45 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="35" bodyend="44"/>
+<para>Affichage pile</para><para>On affiche chaque élément de la pile en concaténant dans une QString <simplesect kind="return"><para>Une <emphasis>QString</emphasis> correspondant à ce qui se trouve dans la pile</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="31" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="58" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1a4be384a2c00fff0afed507231a2974dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_pile" kindref="compound">Pile</ref> *</type>
+        <definition>Pile * Pile::copier_pile</definition>
+        <argsstring>()</argsstring>
+        <name>copier_pile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Copier la pile</para><para>Copie la pile et les éléments qu&apos;elle contient</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="32" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="155" bodyend="166"/>
+        <references refid="class_constante_1ac6fb071229429f82cf489f8313461efa" compoundref="constante_8cpp" startline="9" endline="49">Constante::recopie</references>
+        <referencedby refid="class_main_window_1a10bc645984994b33d7176946fc06eff2" compoundref="mainwindow_8cpp" startline="107" endline="112">MainWindow::supprimer_tete_pileClicked</referencedby>
+        <referencedby refid="class_main_window_1a4d771b6ac11d2280aa5e45e4d47a2011" compoundref="mainwindow_8cpp" startline="114" endline="120">MainWindow::dupliquer_tete_pileClicked</referencedby>
+        <referencedby refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" compoundref="mainwindow_8cpp" startline="649" endline="706">MainWindow::ENTERClicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_pile_1a380c3a467b58c175aef4f2cdc0f7a2c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Pile::sauv_pile_context</definition>
+        <argsstring>()</argsstring>
+        <name>sauv_pile_context</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Sauvegarde de la pile</para><para>Sauvegarde la pile dans le fichier ini</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="195" bodyend="209"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1ac1fd3f178488afb8bc25dae790a9756d" compoundref="calculatrice_8h" startline="55" endline="55">Calculatrice::getContext</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" compoundref="logmessage_8h" startline="17">tracabilite</references>
+        <references refid="class_log_system_1ab5b398fac784d6c20576829056a364a2" compoundref="logsystem_8cpp" startline="8" endline="11">LogSystem::getInstance</references>
+        <references refid="class_log_system_1a29ba53a9628ac2c2c517bf751cb84a9a" compoundref="logsystem_8cpp" startline="21" endline="24">LogSystem::ajouterFcihierEtConsole</references>
+        <referencedby refid="class_main_window_1a4e20a4a065fbb0e4d3532a45a0a91425" compoundref="mainwindow_8cpp" startline="908" endline="916">MainWindow::closeEvent</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_pile_1a44545327a8d02ad9775a2c918ea5cdfc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -163,8 +347,17 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="32" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="10" bodyend="10"/>
+<para>Compteur Taille</para><para>Permet de connaître la taille d&apos;une pile <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un QModelIndex </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un entier correspondant à la taille de la pile</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="36" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="17" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="class_pile_1ac9d6e388d3a98eb57a786f9bbec30952" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>QVariant</type>
@@ -185,7 +378,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp" bodystart="13" bodyend="25"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="37" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" bodystart="28" bodyend="42"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -203,26 +396,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="37"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="41"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" line="11" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h" bodystart="10" bodyend="38"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" line="11" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" bodystart="10" bodyend="42"/>
     <listofallmembers>
       <member refid="class_pile_1a4964563804a254503d6413e5ba83d3c5" prot="public" virt="non-virtual"><scope>Pile</scope><name>afficher</name></member>
+      <member refid="class_pile_1aa3991438f190580607d7bbbd50ecc0c3" prot="public" virt="non-virtual"><scope>Pile</scope><name>clear</name></member>
+      <member refid="class_pile_1a4be384a2c00fff0afed507231a2974dc" prot="public" virt="non-virtual"><scope>Pile</scope><name>copier_pile</name></member>
       <member refid="class_pile_1ac9d6e388d3a98eb57a786f9bbec30952" prot="public" virt="non-virtual"><scope>Pile</scope><name>data</name></member>
+      <member refid="class_pile_1a7488ed257c6ceb16ed57a9fffb0726d5" prot="public" virt="non-virtual"><scope>Pile</scope><name>drop</name></member>
+      <member refid="class_pile_1a081f7843d01cae1f0f7be7d92e46d5d2" prot="public" virt="non-virtual"><scope>Pile</scope><name>dup</name></member>
       <member refid="class_pile_1ae45e55f151180284728643cb9cfe4095" prot="public" virt="non-virtual"><scope>Pile</scope><name>isEmpty</name></member>
+      <member refid="class_pile_1a312bdfd2e167615c8d7f11adb2e639ed" prot="public" virt="non-virtual"><scope>Pile</scope><name>mean</name></member>
       <member refid="class_pile_1a8d34708706c113ec9864f7c37c9083a2" prot="protected" virt="non-virtual"><scope>Pile</scope><name>operator=</name></member>
       <member refid="class_pile_1a8935afea23bb7e075c286fe1fa6e6a2f" prot="private" virt="non-virtual"><scope>Pile</scope><name>p</name></member>
       <member refid="class_pile_1a07d95a908492bd45d1ac105aa78f9dcd" prot="public" virt="non-virtual"><scope>Pile</scope><name>Pile</name></member>
       <member refid="class_pile_1a2bbdc329f485cd017f8cbf88456ae68a" prot="public" virt="non-virtual"><scope>Pile</scope><name>pop</name></member>
       <member refid="class_pile_1a18a4d9a9b8013b36a5423817f9fb9049" prot="public" virt="non-virtual"><scope>Pile</scope><name>push</name></member>
       <member refid="class_pile_1a44545327a8d02ad9775a2c918ea5cdfc" prot="public" virt="non-virtual"><scope>Pile</scope><name>rowCount</name></member>
+      <member refid="class_pile_1a380c3a467b58c175aef4f2cdc0f7a2c7" prot="public" virt="non-virtual"><scope>Pile</scope><name>sauv_pile_context</name></member>
       <member refid="class_pile_1aaae1107e877f7094bdbd97839c731634" prot="public" virt="non-virtual"><scope>Pile</scope><name>size</name></member>
       <member refid="class_pile_1a91875101e0976f054d1db8869a00b11d" prot="public" virt="non-virtual"><scope>Pile</scope><name>sum</name></member>
+      <member refid="class_pile_1ab6c3f9840427e2be87e0d76c8697fff5" prot="public" virt="non-virtual"><scope>Pile</scope><name>swap</name></member>
       <member refid="class_pile_1a25c322d47a76d758565bdf9df2253411" prot="public" virt="non-virtual"><scope>Pile</scope><name>top</name></member>
       <member refid="class_pile_1ab2d1398d675586ff34994e2b109df152" prot="public" virt="virtual"><scope>Pile</scope><name>~Pile</name></member>
     </listofallmembers>

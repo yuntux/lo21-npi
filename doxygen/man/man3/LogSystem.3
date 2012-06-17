@@ -1,4 +1,4 @@
-.TH "LogSystem" 3 "Thu Jun 7 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
+.TH "LogSystem" 3 "Samedi Juin 16 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,8 +6,85 @@ LogSystem \-
 .SH SYNOPSIS
 .br
 .PP
+.PP
+\fC#include <logsystem\&.h>\fP
+.SS "Fonctions membres publiques"
 
+.in +1c
+.ti -1c
+.RI "void \fBajouterFichierLog\fP (\fBLogMessage\fP m)"
+.br
+.ti -1c
+.RI "void \fBajouterConsoleLog\fP (\fBLogMessage\fP m)"
+.br
+.ti -1c
+.RI "void \fBajouterFcihierEtConsole\fP (\fBLogMessage\fP m)"
+.br
+.in -1c
+.SS "Fonctions membres publiques statiques"
 
-.SH "Author"
+.in +1c
+.ti -1c
+.RI "static \fBLogSystem\fP & \fBgetInstance\fP ()"
+.br
+.ti -1c
+.RI "static void \fBlibereInstance\fP ()"
+.br
+.in -1c
+.SS "Fonctions membres protégées"
+
+.in +1c
+.ti -1c
+.RI "\fBLogSystem\fP (const \fBLogSystem\fP &)"
+.br
+.ti -1c
+.RI "\fBLogSystem\fP ()"
+.br
+.ti -1c
+.RI "void \fBoperator=\fP (const \fBLogSystem\fP &)"
+.br
+.in -1c
+.SH "Description détaillée"
 .PP 
-Generated automatically by Doxygen for Calculatrice polonais inversé LO21 from the source code\&.
+Définition à la ligne 6 du fichier logsystem\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBLogSystem::LogSystem\fP (const \fBLogSystem\fP &)\fC [inline, protected]\fP"
+.PP
+Définition à la ligne 19 du fichier logsystem\&.h\&.
+.SS "\fBLogSystem::LogSystem\fP ()\fC [protected]\fP"
+.PP
+Définition à la ligne 17 du fichier logsystem\&.cpp\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBLogSystem::ajouterConsoleLog\fP (\fBLogMessage\fPm)"Ajouter Console Log
+.PP
+On affiche le message sur la sotir standard d'erreur\&.
+.PP
+Définition à la ligne 50 du fichier logsystem\&.cpp\&.
+.SS "void \fBLogSystem::ajouterFcihierEtConsole\fP (\fBLogMessage\fPm)"
+.PP
+Définition à la ligne 21 du fichier logsystem\&.cpp\&.
+.SS "void \fBLogSystem::ajouterFichierLog\fP (\fBLogMessage\fPm)"Ajouter Fichier Log
+.PP
+On parcourt le fichier pour ajouter à la fin 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIm\fP Un \fBLogMessage\fP
+.RE
+.PP
+
+.PP
+Définition à la ligne 26 du fichier logsystem\&.cpp\&.
+.SS "\fBLogSystem\fP & \fBLogSystem::getInstance\fP ()\fC [static]\fP"
+.PP
+Définition à la ligne 8 du fichier logsystem\&.cpp\&.
+.SS "void \fBLogSystem::libereInstance\fP ()\fC [static]\fP"
+.PP
+Définition à la ligne 13 du fichier logsystem\&.cpp\&.
+.SS "void LogSystem::operator= (const \fBLogSystem\fP &)\fC [protected]\fP"
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Calculatrice polonais inversé LO21 à partir du code source\&.

@@ -1,3 +1,5 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$constante_8h.html" title="Calculatrice en polonais inversé. Classe de la GUI QT&#45;MainWindow." alt="" coords="131,83,221,112"/>
+<area shape="rect" id="node3" href="$constante_8h.html" title="Calculatrice en polonais inversé. Classe composite de gestion des constantes." alt="" coords="141,83,232,112"/>
+<area shape="rect" id="node9" href="$logmessage_8h.html" title="logmessage.h" alt="" coords="228,237,329,267"/>
+<area shape="rect" id="node14" href="$logsystem_8h.html" title="logsystem.h" alt="" coords="183,160,276,189"/>
 </map>

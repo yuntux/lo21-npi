@@ -16,6 +16,8 @@
 
 #include <iostream>
 #include <QtGui>
+#include "logmessage.h"
+#include "logsystem.h"
 
 enum Type {
        entier,
@@ -23,39 +25,33 @@ enum Type {
        reel,
        complexe,
        expression,
-       //erreur
     };
 
 class Constante
 {
 public:
     virtual ~Constante(){};
-    virtual QString afficher() const = 0;
-    virtual Constante* addition(Constante* c)=0;
-    virtual Constante* produit(Constante* c)=0;
-    virtual Constante* division(Constante* c)=0;
-    virtual Constante* signe()=0;
+    virtual QString afficher() const = 0; //afficher est virtuelle pure donc la classe est abstraite
+    virtual Constante* addition(Constante* c){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* produit(Constante* c){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* division(Constante* c){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* signe(){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
     Constante* recopie();
-    virtual Constante* soustraction(Constante* c)=0;
-    virtual Constante* inv()=0;
-    virtual Constante* fact()=0;
-    virtual Constante* sinus(bool angle)=0;
-    virtual Constante* cosinus(bool angle)=0;
-    virtual Constante* sinush(bool angle)=0;
-    virtual Constante* cosinush(bool angle)=0;
-    virtual Constante* tangente(bool angle){};
-    virtual Constante* tangenteh(bool angle){};
-    virtual Constante* logN()=0;
-    virtual Constante* log1()=0;
-    virtual Constante* puissance(Constante* c)=0;
-    virtual Constante* carre()=0;
-    virtual Constante* cube()=0;
-    virtual Constante* racine()=0;
-};
-
-class FrabriqueConstante{
-public:
-    //virtual Constante frabriquer()=0;
+    virtual Constante* soustraction(Constante* c){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* inv(){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* fact(){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* sinus(bool angle){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* cosinus(bool angle){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* sinush(bool angle){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* cosinush(bool angle){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* tangente(bool angle){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* tangenteh(bool angle){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* logN(){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* log1(){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* puissance(Constante* c){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* carre(){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* cube(){throw LogMessage(2,"La fonction LOG n'est pas implémentée pour les complexes.", moyen);}
+    virtual Constante* racine(){throw LogMessage(2,"L'opérateur demandé n'est pas implémenté pour ce type d'opérande.", moyen);}
 };
 
 #endif // CONSTANTE_H

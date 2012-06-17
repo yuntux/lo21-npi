@@ -14,11 +14,11 @@ public:
     void ajouterFichierLog(LogMessage m);
     void ajouterConsoleLog(LogMessage m);
     void ajouterFcihierEtConsole(LogMessage m);
-    //void ConstruireLog_ajouterConsoleEtFichierLog(int numero=0, string const &phrase="", enum niveau);
+
 protected:
     LogSystem(const LogSystem&){}
     LogSystem();
-    //virtual ~LogSystem();
+    //virtual ~LogSystem(){}
     void operator=(const LogSystem &);
 };
 

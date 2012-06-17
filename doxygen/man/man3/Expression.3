@@ -1,4 +1,4 @@
-.TH "Expression" 3 "Thu Jun 7 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
+.TH "Expression" 3 "Samedi Juin 16 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -7,42 +7,53 @@ Expression \-
 .br
 .PP
 .PP
-Inherits \fBConstante\fP\&.
-.SS "Public Member Functions"
+\fC#include <expression\&.h>\fP
+.PP
+Est dérivée de \fBConstante\fP\&.
+.SS "Fonctions membres publiques"
 
 .in +1c
 .ti -1c
 .RI "\fBExpression\fP (QString s)"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBaddition\fP (\fBConstante\fP *c)"
+.RI "virtual \fB~Expression\fP ()"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBproduit\fP (\fBConstante\fP *c)"
+.RI "QString \fBgetExpr\fP () const "
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBdivision\fP (\fBConstante\fP *c)"
-.br
-.ti -1c
-.RI "virtual \fBConstante\fP * \fBsigne\fP ()"
-.br
-.ti -1c
-.RI "virtual \fBConstante\fP * \fBsoustraction\fP (\fBConstante\fP *c)"
-.br
-.ti -1c
-.RI "virtual \fBConstante\fP * \fBinv\fP ()"
-.br
-.ti -1c
-.RI "virtual \fBConstante\fP * \fBfact\fP ()"
-.br
-.ti -1c
-.RI "virtual \fBConstante\fP * \fBsinus\fP ()"
+.RI "void \fBsetExpr\fP (QString e)"
 .br
 .ti -1c
 .RI "virtual QString \fBafficher\fP () const "
 .br
 .in -1c
-
-.SH "Author"
+.SH "Description détaillée"
 .PP 
-Generated automatically by Doxygen for Calculatrice polonais inversé LO21 from the source code\&.
+Définition à la ligne 7 du fichier expression\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBExpression::Expression\fP (QStrings)\fC [inline]\fP"
+.PP
+Définition à la ligne 11 du fichier expression\&.h\&.
+.SS "virtual \fBExpression::~Expression\fP ()\fC [inline, virtual]\fP"
+.PP
+Définition à la ligne 12 du fichier expression\&.h\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "virtual QString \fBExpression::afficher\fP () const\fC [inline, virtual]\fP"
+.PP
+Implémente \fBConstante\fP\&.
+.PP
+Définition à la ligne 15 du fichier expression\&.h\&.
+.SS "QString \fBExpression::getExpr\fP () const\fC [inline]\fP"
+.PP
+Définition à la ligne 13 du fichier expression\&.h\&.
+.SS "void \fBExpression::setExpr\fP (QStringe)\fC [inline]\fP"
+.PP
+Définition à la ligne 14 du fichier expression\&.h\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Calculatrice polonais inversé LO21 à partir du code source\&.

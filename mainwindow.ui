@@ -244,7 +244,7 @@
             </widget>
            </item>
            <item row="5" column="1">
-            <widget class="QPushButton" name="PI">
+            <widget class="QPushButton" name="PIBOUTON">
              <property name="text">
               <string>PI</string>
              </property>
@@ -623,38 +623,6 @@
     </item>
    </layout>
   </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>958</width>
-     <height>22</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuFichier">
-    <property name="title">
-     <string>Fichier</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menu">
-    <property name="title">
-     <string>?</string>
-    </property>
-    <addaction name="action_propos"/>
-   </widget>
-   <addaction name="menuFichier"/>
-   <addaction name="menu"/>
-  </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-  </widget>
-  <widget class="QStatusBar" name="statusBar"/>
   <action name="action_propos">
    <property name="text">
     <string>À propos</string>

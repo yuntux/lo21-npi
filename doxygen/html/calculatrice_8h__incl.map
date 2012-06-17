@@ -1,9 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$pile_8h_source.html" title="pile.h" alt="" coords="167,160,220,189"/>
-<area shape="rect" id="node11" href="$constante_8h.html" title="Calculatrice en polonais inversé. Classe de la GUI QT&#45;MainWindow." alt="" coords="235,392,325,421"/>
-<area shape="rect" id="node33" href="$mainwindow_8h_source.html" title="mainwindow.h" alt="" coords="237,83,341,112"/>
-<area shape="rect" id="node16" href="$complexe_8h_source.html" title="complexe.h" alt="" coords="247,237,335,267"/>
-<area shape="rect" id="node22" href="$rationnel_8h_source.html" title="rationnel.h" alt="" coords="409,315,492,344"/>
-<area shape="rect" id="node19" href="$entier_8h.html" title="Calculatrice en polonais inversé. Classe Entier." alt="" coords="205,315,269,344"/>
-<area shape="rect" id="node26" href="$logmessage_8h_source.html" title="logmessage.h" alt="" coords="400,392,501,421"/>
+<area shape="rect" id="node3" href="$pile_8h.html" title="pile.h" alt="" coords="340,160,393,189"/>
+<area shape="rect" id="node11" href="$constante_8h.html" title="Calculatrice en polonais inversé. Classe composite de gestion des constantes." alt="" coords="273,392,364,421"/>
+<area shape="rect" id="node38" href="$mainwindow_8h.html" title="mainwindow.h" alt="" coords="356,83,460,112"/>
+<area shape="rect" id="node25" href="$complexe_8h.html" title="Calculatrice en polonais inversé. Classe composite de gestion des complexes." alt="" coords="209,237,297,267"/>
+<area shape="rect" id="node31" href="$rationnel_8h.html" title="rationnel.h" alt="" coords="575,315,657,344"/>
+<area shape="rect" id="node16" href="$logmessage_8h.html" title="logmessage.h" alt="" coords="352,547,453,576"/>
+<area shape="rect" id="node21" href="$logsystem_8h.html" title="logsystem.h" alt="" coords="356,469,449,499"/>
+<area shape="rect" id="node28" href="$entier_8h.html" title="Calculatrice en polonais inversé. Classe Entier." alt="" coords="209,315,273,344"/>
 </map>

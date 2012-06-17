@@ -6,7 +6,7 @@
 #include "logmessage.h"
 #include "exception"
 
-//Fonctions outils pour les simplifications de fractions
+//Fonctions outils pour les simplifications de fractions : hors classe
 int pgcd(int a, int b);
 int ppcm(int X,int Y);
 

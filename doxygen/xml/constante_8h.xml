@@ -4,110 +4,254 @@
     <compoundname>constante.h</compoundname>
     <includes local="no">iostream</includes>
     <includes local="no">QtGui</includes>
-    <includedby refid="pile_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h</includedby>
-    <includedby refid="complexe_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h</includedby>
-    <includedby refid="entier_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h</includedby>
-    <includedby refid="rationnel_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h</includedby>
-    <includedby refid="calculatrice_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h</includedby>
-    <includedby refid="reel_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h</includedby>
-    <includedby refid="constante_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.cpp</includedby>
-    <includedby refid="expression_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h</includedby>
-    <includedby refid="fonctions_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/fonctions.h</includedby>
-    <includedby refid="fonctions_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/fonctions.cpp</includedby>
+    <includes refid="logmessage_8h" local="yes">logmessage.h</includes>
+    <includes refid="logsystem_8h" local="yes">logsystem.h</includes>
+    <includedby refid="pile_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h</includedby>
+    <includedby refid="complexe_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h</includedby>
+    <includedby refid="entier_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/entier.h</includedby>
+    <includedby refid="rationnel_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h</includedby>
+    <includedby refid="calculatrice_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h</includedby>
+    <includedby refid="reel_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h</includedby>
+    <includedby refid="constante_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.cpp</includedby>
+    <includedby refid="expression_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.h</includedby>
     <incdepgraph>
-      <node id="119">
+      <node id="579">
+        <label>logmessage.h</label>
+        <link refid="logmessage_8h"/>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="580" relation="include">
+        </childnode>
+      </node>
+      <node id="580">
+        <label>exception</label>
+      </node>
+      <node id="581">
+        <label>logsystem.h</label>
+        <link refid="logsystem_8h"/>
+        <childnode refid="579" relation="include">
+        </childnode>
+        <childnode refid="577" relation="include">
+        </childnode>
+      </node>
+      <node id="577">
         <label>iostream</label>
       </node>
-      <node id="118">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h</label>
-        <link refid="constante.h"/>
-        <childnode refid="119" relation="include">
-        </childnode>
-        <childnode refid="120" relation="include">
-        </childnode>
-      </node>
-      <node id="120">
+      <node id="578">
         <label>QtGui</label>
+      </node>
+      <node id="576">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.h</label>
+        <link refid="constante.h"/>
+        <childnode refid="577" relation="include">
+        </childnode>
+        <childnode refid="578" relation="include">
+        </childnode>
+        <childnode refid="579" relation="include">
+        </childnode>
+        <childnode refid="581" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="122">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h</label>
-        <link refid="pile_8h_source"/>
-        <childnode refid="123" relation="include">
+      <node id="589">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="584" relation="include">
         </childnode>
-        <childnode refid="124" relation="include">
+        <childnode refid="590" relation="include">
         </childnode>
-      </node>
-      <node id="124">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h</label>
-        <link refid="mainwindow_8h_source"/>
-        <childnode refid="123" relation="include">
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="591" relation="include">
         </childnode>
       </node>
-      <node id="126">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/fonctions.h</label>
-        <link refid="fonctions_8h"/>
-      </node>
-      <node id="127">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.h</label>
-        <link refid="entier_8h"/>
-        <childnode refid="125" relation="include">
+      <node id="599">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h</label>
+        <link refid="rationnel_8h"/>
+        <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="596" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
         </childnode>
       </node>
-      <node id="129">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h</label>
-        <link refid="reel_8h_source"/>
-      </node>
-      <node id="125">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h</label>
-        <link refid="complexe_8h_source"/>
-        <childnode refid="122" relation="include">
+      <node id="600">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h</label>
+        <link refid="reel_8h"/>
+        <childnode refid="594" relation="include">
         </childnode>
-        <childnode refid="126" relation="include">
+        <childnode refid="595" relation="include">
         </childnode>
-      </node>
-      <node id="128">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h</label>
-        <link refid="rationnel_8h_source"/>
-        <childnode refid="122" relation="include">
+        <childnode refid="596" relation="include">
         </childnode>
-        <childnode refid="129" relation="include">
+        <childnode refid="590" relation="include">
         </childnode>
-        <childnode refid="126" relation="include">
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
         </childnode>
       </node>
-      <node id="121">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h</label>
-        <link refid="constante.h"/>
-        <childnode refid="122" relation="include">
-        </childnode>
-        <childnode refid="125" relation="include">
-        </childnode>
-        <childnode refid="127" relation="include">
-        </childnode>
-        <childnode refid="128" relation="include">
-        </childnode>
-        <childnode refid="123" relation="include">
-        </childnode>
-        <childnode refid="129" relation="include">
-        </childnode>
-        <childnode refid="130" relation="include">
-        </childnode>
-        <childnode refid="126" relation="include">
-        </childnode>
+      <node id="586">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
       </node>
-      <node id="123">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h</label>
+      <node id="584">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h</label>
         <link refid="calculatrice_8h"/>
+        <childnode refid="585" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
       </node>
-      <node id="130">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h</label>
-        <link refid="expression_8h_source"/>
+      <node id="588">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp</label>
+        <link refid="rationnel_8cpp"/>
+      </node>
+      <node id="583">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h</label>
+        <link refid="pile_8h"/>
+        <childnode refid="584" relation="include">
+        </childnode>
+        <childnode refid="589" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
+        </childnode>
+      </node>
+      <node id="591">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/moc_mainwindow.cpp</label>
+        <link refid="moc__mainwindow_8cpp"/>
+      </node>
+      <node id="602">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.cpp</label>
+        <link refid="expression_8cpp"/>
+      </node>
+      <node id="596">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/entier.cpp</label>
+        <link refid="entier_8cpp"/>
+      </node>
+      <node id="587">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp</label>
+        <link refid="pile_8cpp"/>
+      </node>
+      <node id="601">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.h</label>
+        <link refid="expression_8h"/>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="602" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+      </node>
+      <node id="590">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="594">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp</label>
+        <link refid="complexe_8cpp"/>
+      </node>
+      <node id="593">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h</label>
+        <link refid="complexe_8h"/>
+        <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="596" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+      </node>
+      <node id="585">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp</label>
+        <link refid="calculatrice_8cpp"/>
+      </node>
+      <node id="592">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/moc_pile.cpp</label>
+        <link refid="moc__pile_8cpp"/>
+      </node>
+      <node id="595">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.cpp</label>
+        <link refid="constante_8cpp"/>
+      </node>
+      <node id="597">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp</label>
+        <link refid="reel_8cpp"/>
+      </node>
+      <node id="598">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/entier.h</label>
+        <link refid="entier_8h"/>
+        <childnode refid="593" relation="include">
+        </childnode>
+        <childnode refid="594" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="596" relation="include">
+        </childnode>
+        <childnode refid="590" relation="include">
+        </childnode>
+        <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="588" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+      </node>
+      <node id="582">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.h</label>
+        <link refid="constante.h"/>
+        <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+        <childnode refid="598" relation="include">
+        </childnode>
+        <childnode refid="599" relation="include">
+        </childnode>
+        <childnode refid="584" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+        <childnode refid="595" relation="include">
+        </childnode>
+        <childnode refid="601" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="class_constante" prot="public">Constante</innerclass>
-    <innerclass refid="class_frabrique_constante" prot="public">FrabriqueConstante</innerclass>
       <sectiondef kind="enum">
       <memberdef kind="enum" id="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7" prot="public" static="no">
         <name>Type</name>
@@ -152,55 +296,63 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" line="7" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" bodystart="7" bodyend="14"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.h" line="22" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.h" bodystart="22" bodyend="28"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref> en polonais inversé. Classe de la GUI QT-MainWindow. </para>    </briefdescription>
+<para><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref> en polonais inversé. Classe composite de gestion des constantes. </para>    </briefdescription>
     <detaileddescription>
-<para><simplesect kind="author"><para>Aurélien DUMAINE </para><simplesectsep/><para>Simon LANCELOT </para></simplesect>
+<para><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref> en polonais inversé. Classe de la GUI QT-MainWindow.</para><para><simplesect kind="author"><para>Aurélien DUMAINE </para><simplesectsep/><para>Simon LANCELOT </para></simplesect>
 <simplesect kind="version"><para>0.1 </para></simplesect>
 <simplesect kind="date"><para>juin 2012</para></simplesect>
 Licence : GNU/GPL version 3 (<ulink url="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</ulink>) Dépot Git : <ulink url="http://code.google.com/p/lo21-npi/">http://code.google.com/p/lo21-npi/</ulink> </para>    </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CONSTANTE_H</highlight></codeline>
-<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CONSTANTE_H</highlight></codeline>
-<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Type<sp/>{</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entier,</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rationnel,</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reel,</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>complexe,</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>expression,</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//erreur</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16" refid="class_constante" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref></highlight></codeline>
-<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_constante" kindref="compound">Constante</ref>(){};</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QString<sp/>afficher()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>addition(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c)=0;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>produit(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c)=0;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>division(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c)=0;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>signe()=0;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>recopie();</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>soustraction(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c)=0;</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>inv()=0;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>fact()=0;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>sinus()=0;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32" refid="class_frabrique_constante" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_frabrique_constante" kindref="compound">FrabriqueConstante</ref>{</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//virtual<sp/>Constante<sp/>frabriquer()=0;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CONSTANTE_H</highlight></codeline>
+<codeline lineno="1"></codeline>
+<codeline lineno="14"><highlight class="preprocessor">#ifndef<sp/>CONSTANTE_H</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>CONSTANTE_H</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logmessage_8h" kindref="compound">logmessage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logsystem_8h" kindref="compound">logsystem.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">Type</ref><sp/>{</highlight></codeline>
+<codeline lineno="23" refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7a310a841612cf153caf2103c7d7136070" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7a310a841612cf153caf2103c7d7136070" kindref="member">entier</ref>,</highlight></codeline>
+<codeline lineno="24" refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7a0ec75e38f86c720d5b37dac4e7efbeb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7a0ec75e38f86c720d5b37dac4e7efbeb5" kindref="member">rationnel</ref>,</highlight></codeline>
+<codeline lineno="25" refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7ab76fc0da4fc267a87fce3e239e9b0290" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7ab76fc0da4fc267a87fce3e239e9b0290" kindref="member">reel</ref>,</highlight></codeline>
+<codeline lineno="26" refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7ab5b3a46d90ce465f0ad4c9f7a51b1102" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7ab5b3a46d90ce465f0ad4c9f7a51b1102" kindref="member">complexe</ref>,</highlight></codeline>
+<codeline lineno="27" refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7ac810bbb61792a076f46cad2c89d87e1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7ac810bbb61792a076f46cad2c89d87e1d" kindref="member">expression</ref>,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_constante" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="33" refid="class_constante_1af747f270ad3d50813786a1b013bac959" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante_1af747f270ad3d50813786a1b013bac959" kindref="member">~Constante</ref>(){};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QString<sp/><ref refid="class_constante_1a78b5d9ee6a7e70349db6641a08f77479" kindref="member">afficher</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//afficher<sp/>est<sp/>virtuelle<sp/>pure<sp/>donc<sp/>la<sp/>classe<sp/>est<sp/>abstraite</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_constante_1a243b6eabd1fd476af827c5b523cddfac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a243b6eabd1fd476af827c5b523cddfac" kindref="member">addition</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="36" refid="class_constante_1a650e88b74d2f8a052e6a11363b3ec816" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a650e88b74d2f8a052e6a11363b3ec816" kindref="member">produit</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="37" refid="class_constante_1ac41fa56ac5ebdfbcc886b8d249fb876d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1ac41fa56ac5ebdfbcc886b8d249fb876d" kindref="member">division</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="38" refid="class_constante_1a59fcc22949ea02eb02244dad693696aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a59fcc22949ea02eb02244dad693696aa" kindref="member">signe</ref>(){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1ac6fb071229429f82cf489f8313461efa" kindref="member">recopie</ref>();</highlight></codeline>
+<codeline lineno="40" refid="class_constante_1a3f3e5ad91d9e4eef33a5e6955fe91cb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a3f3e5ad91d9e4eef33a5e6955fe91cb5" kindref="member">soustraction</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="41" refid="class_constante_1a5ea6dd472ce568576961fa78b3b674b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a5ea6dd472ce568576961fa78b3b674b5" kindref="member">inv</ref>(){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="42" refid="class_constante_1a96e23d33bd45f79589f8911473ef2e32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a96e23d33bd45f79589f8911473ef2e32" kindref="member">fact</ref>(){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="43" refid="class_constante_1a3b6827eba7936c4ce61f64da9dd826b4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a3b6827eba7936c4ce61f64da9dd826b4" kindref="member">sinus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="44" refid="class_constante_1af6784ed749b7f2be92d6017628e5b935" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1af6784ed749b7f2be92d6017628e5b935" kindref="member">cosinus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="45" refid="class_constante_1a101b4506f71295a23c764d34b7f7ecfb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a101b4506f71295a23c764d34b7f7ecfb" kindref="member">sinush</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="46" refid="class_constante_1a0b1cbba53e1112aa65a081ae6231acb5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a0b1cbba53e1112aa65a081ae6231acb5" kindref="member">cosinush</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="47" refid="class_constante_1a51bffad2fa33a397de6ed422a621b1a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a51bffad2fa33a397de6ed422a621b1a1" kindref="member">tangente</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="48" refid="class_constante_1a6f5f971e61ac831355f1182289c3952f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a6f5f971e61ac831355f1182289c3952f" kindref="member">tangenteh</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="49" refid="class_constante_1aa28e3269159806101c2ac0d09c036c2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1aa28e3269159806101c2ac0d09c036c2c" kindref="member">logN</ref>(){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="50" refid="class_constante_1aad178503c937682acd3c9f19aec37dc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1aad178503c937682acd3c9f19aec37dc6" kindref="member">log1</ref>(){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="51" refid="class_constante_1a2ed5e0a77fb7766fbce6abb4ebd0b01e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a2ed5e0a77fb7766fbce6abb4ebd0b01e" kindref="member">puissance</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="52" refid="class_constante_1af8029cf3c52e8fdadeb21647ee9591f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1af8029cf3c52e8fdadeb21647ee9591f3" kindref="member">carre</ref>(){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="53" refid="class_constante_1a4590414eecfb9e739194a321a73c7931" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a4590414eecfb9e739194a321a73c7931" kindref="member">cube</ref>(){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="54" refid="class_constante_1a57604347a44e29f6aa7e36a045b4df1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_constante_1a57604347a44e29f6aa7e36a045b4df1c" kindref="member">racine</ref>(){</highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;L&apos;opérateur<sp/>demandé<sp/>n&apos;est<sp/>pas<sp/>implémenté<sp/>pour<sp/>ce<sp/>type<sp/>d&apos;opérande.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>CONSTANTE_H</highlight></codeline>
     </programlisting>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.h"/>
   </compounddef>
 </doxygen>

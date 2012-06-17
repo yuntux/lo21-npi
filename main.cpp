@@ -10,18 +10,10 @@
 #include "logmessage.h"
 #include "logsystem.h"
 
-
-
-//RAPOPRT : on gère les rationnel sans touche supplémentaire. On considère que le slash est l'opréateur de division que s'il est précédé d'un esdpace
-//quid des concepts centraux de LO21 : surcharge, héritage, polymorphisme, designPattern, dynamicCast...
-
-//RAPPORT : Étant donné que dans un ordi un réel non rationnel est stocké comme une approcx (PI, RACINE_2 sont des approx dans un float)
-//      On aurait pu représenter les parties imaginaire et réélles d'un complexe par des rationnels et toutes les constantes par des complexes
-
 int main(int argc, char *argv[])
 {
 
-    /* DEBUG */
+    /* CONSTANTES DE TESTS */
 /*
     Entier e1(0);
     Entier e2(2);

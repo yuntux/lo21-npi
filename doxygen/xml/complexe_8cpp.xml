@@ -8,81 +8,93 @@
     <includes refid="reel_8h" local="yes">reel.h</includes>
     <includes local="no">typeinfo</includes>
     <incdepgraph>
-      <node id="91">
-        <label>logmessage.h</label>
-        <link refid="logmessage_8h_source"/>
-        <childnode refid="88" relation="include">
+      <node id="535">
+        <label>rationnel.h</label>
+        <link refid="rationnel_8h"/>
+        <childnode refid="528" relation="include">
         </childnode>
-        <childnode refid="92" relation="include">
+        <childnode refid="529" relation="include">
+        </childnode>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
         </childnode>
       </node>
-      <node id="92">
+      <node id="536">
+        <label>reel.h</label>
+        <link refid="reel_8h"/>
+        <childnode refid="528" relation="include">
+        </childnode>
+        <childnode refid="535" relation="include">
+        </childnode>
+      </node>
+      <node id="531">
+        <label>logmessage.h</label>
+        <link refid="logmessage_8h"/>
+        <childnode refid="530" relation="include">
+        </childnode>
+        <childnode refid="532" relation="include">
+        </childnode>
+      </node>
+      <node id="532">
         <label>exception</label>
       </node>
-      <node id="94">
+      <node id="526">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp</label>
+        <link refid="complexe.cpp"/>
+        <childnode refid="527" relation="include">
+        </childnode>
+        <childnode refid="534" relation="include">
+        </childnode>
+        <childnode refid="535" relation="include">
+        </childnode>
+        <childnode refid="536" relation="include">
+        </childnode>
+        <childnode refid="537" relation="include">
+        </childnode>
+      </node>
+      <node id="537">
         <label>typeinfo</label>
       </node>
-      <node id="89">
-        <label>entier.h</label>
-        <link refid="entier_8h"/>
-        <childnode refid="86" relation="include">
-        </childnode>
-      </node>
-      <node id="84">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp</label>
-        <link refid="complexe.cpp"/>
-        <childnode refid="85" relation="include">
-        </childnode>
-        <childnode refid="89" relation="include">
-        </childnode>
-        <childnode refid="90" relation="include">
-        </childnode>
-        <childnode refid="93" relation="include">
-        </childnode>
-        <childnode refid="94" relation="include">
-        </childnode>
-      </node>
-      <node id="93">
-        <label>reel.h</label>
-        <link refid="reel_8h_source"/>
-        <childnode refid="86" relation="include">
-        </childnode>
-        <childnode refid="90" relation="include">
-        </childnode>
-      </node>
-      <node id="85">
+      <node id="527">
         <label>complexe.h</label>
-        <link refid="complexe_8h_source"/>
-        <childnode refid="86" relation="include">
+        <link refid="complexe_8h"/>
+        <childnode refid="528" relation="include">
         </childnode>
-        <childnode refid="89" relation="include">
+        <childnode refid="534" relation="include">
         </childnode>
       </node>
-      <node id="87">
+      <node id="533">
+        <label>logsystem.h</label>
+        <link refid="logsystem_8h"/>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="529" relation="include">
+        </childnode>
+      </node>
+      <node id="529">
         <label>iostream</label>
       </node>
-      <node id="90">
-        <label>rationnel.h</label>
-        <link refid="rationnel_8h_source"/>
-        <childnode refid="86" relation="include">
-        </childnode>
-        <childnode refid="87" relation="include">
-        </childnode>
-        <childnode refid="91" relation="include">
-        </childnode>
-        <childnode refid="92" relation="include">
+      <node id="530">
+        <label>QtGui</label>
+      </node>
+      <node id="534">
+        <label>entier.h</label>
+        <link refid="entier_8h"/>
+        <childnode refid="528" relation="include">
         </childnode>
       </node>
-      <node id="86">
+      <node id="528">
         <label>constante.h</label>
         <link refid="constante_8h"/>
-        <childnode refid="87" relation="include">
+        <childnode refid="529" relation="include">
         </childnode>
-        <childnode refid="88" relation="include">
+        <childnode refid="530" relation="include">
         </childnode>
-      </node>
-      <node id="88">
-        <label>QtGui</label>
+        <childnode refid="531" relation="include">
+        </childnode>
+        <childnode refid="533" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <briefdescription>
@@ -90,150 +102,214 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;complexe.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="complexe_8h" kindref="compound" tooltip="Calculatrice en polonais inversé. Classe composite de gestion des complexes.">complexe.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="entier_8h" kindref="compound" tooltip="Calculatrice en polonais inversé. Classe Entier.">entier.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rationnel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;reel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rationnel_8h" kindref="compound">rationnel.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="reel_8h" kindref="compound">reel.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;typeinfo&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal">Complexe::Complexe(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>r,<sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>i){</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*r)==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_complexe" kindref="compound">Complexe</ref>)<sp/>||<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*r)==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_complexe" kindref="compound">Complexe</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//FIXME<sp/>:<sp/>lève<sp/>une<sp/>exeption<sp/>(éviter<sp/>les<sp/>boucles<sp/>de<sp/>récursion<sp/>infinies)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//plutot<sp/>copier<sp/>les<sp/>composantes<sp/>?</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_reelle<sp/>=<sp/>r-&gt;recopie();;</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_imaginaire=<sp/>i-&gt;recopie();</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_complexe_1ac92996231047d39d40e11384bb9311b6" refkind="member"><highlight class="normal"><ref refid="class_complexe_1ac92996231047d39d40e11384bb9311b6" kindref="member">Complexe::~Complexe</ref>(){</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(_reelle);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(_imaginaire);</highlight></codeline>
 <codeline lineno="15"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal">Complexe::Complexe(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c)<sp/>{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//FIXME<sp/>:<sp/>on<sp/>réalloue<sp/>pour<sp/>Reel(0,0)<sp/>et<sp/>Rationnel(0)<sp/>mais<sp/>on<sp/>ne<sp/>recopie<sp/>pas<sp/>le<sp/>reste<sp/>???</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>*c_complexe=dynamic_cast&lt;Complexe<sp/>*&gt;(c)){</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_reelle<sp/>=<sp/>c_complexe-&gt;getPartieReelle();</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_imaginaire<sp/>=<sp/>c_complexe-&gt;getPartieImaginaire();</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*c)==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_entier" kindref="compound">Entier</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_entier" kindref="compound">Entier</ref><sp/>*c_entier=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_entier" kindref="compound">Entier</ref><sp/>(dynamic_cast&lt;Entier<sp/>*&gt;(c));</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_reelle<sp/>=<sp/>c_entier;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_imaginaire<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_entier" kindref="compound">Entier</ref>(0);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*c)==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_rationnel" kindref="compound">Rationnel</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_rationnel" kindref="compound">Rationnel</ref><sp/>*c_rationnel=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_rationnel" kindref="compound">Rationnel</ref>(dynamic_cast&lt;Rationnel<sp/>*&gt;(c));</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_reelle<sp/>=<sp/>c_rationnel;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_imaginaire<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_rationnel" kindref="compound">Rationnel</ref>(0);</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*c)==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_reel" kindref="compound">Reel</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_reel" kindref="compound">Reel</ref><sp/>*c_reel=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_reel" kindref="compound">Reel</ref>(dynamic_cast&lt;Reel<sp/>*&gt;(c));</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_reelle<sp/>=<sp/>c_reel;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_imaginaire<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_reel" kindref="compound">Reel</ref>(0.0);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal">QString<sp/>Complexe::afficher()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(this-&gt;getPartieImaginaire())==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_entier" kindref="compound">Entier</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_entier" kindref="compound">Entier</ref><sp/>*im_entier=</highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_entier" kindref="compound">Entier</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(this-&gt;getPartieImaginaire());</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(im_entier-&gt;getValeur()==0)</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_reelle-&gt;afficher();</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(this-&gt;getPartieImaginaire())==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_rationnel" kindref="compound">Rationnel</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_rationnel" kindref="compound">Rationnel</ref><sp/>*im_rationnel=</highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_rationnel" kindref="compound">Rationnel</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(this-&gt;getPartieImaginaire());</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(im_rationnel-&gt;getNumerateur()==0)</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_reelle-&gt;afficher();</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(this-&gt;getPartieImaginaire())==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_reel" kindref="compound">Reel</ref>))<sp/>{</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_reel" kindref="compound">Reel</ref><sp/>*im_reel=</highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_reel" kindref="compound">Reel</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(this-&gt;getPartieImaginaire());</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(im_reel-&gt;getValeur()==0)</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_reelle-&gt;afficher();</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_reelle-&gt;afficher()+</highlight><highlight class="stringliteral">&quot;$&quot;</highlight><highlight class="normal">+_imaginaire-&gt;afficher();</highlight></codeline>
-<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Complexe::addition(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c){</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>*c_complexe<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(c);</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//les<sp/>parties<sp/>imaginaires<sp/>sont<sp/>des<sp/>reels/rationnels/entiers<sp/>donc<sp/>leur<sp/>somme<sp/>renvoie<sp/>un<sp/>complexe<sp/>donc<sp/>l&apos;im<sp/>est<sp/>nulle</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>*<sp/>re<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(c_complexe-&gt;getPartieReelle()-&gt;addition(this-&gt;getPartieReelle()));</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//les<sp/>parties<sp/>réelles<sp/>sont<sp/>des<sp/>reels/rationnels/entiers<sp/>donc<sp/>leur<sp/>somme<sp/>renvoie<sp/>un<sp/>complexe<sp/>donc<sp/>l&apos;im<sp/>est<sp/>nulle</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>*<sp/>im<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(c_complexe-&gt;getPartieImaginaire()-&gt;addition(this-&gt;getPartieImaginaire()));</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>c_complexe-&gt;setImaginaire(im-&gt;getPartieReelle());</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>c_complexe-&gt;setReelle(re-&gt;getPartieReelle());</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(re);</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(im);</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c_complexe;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Complexe::produit(<ref refid="class_constante" kindref="compound">Constante</ref><sp/>*c)</highlight></codeline>
-<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>*c_complexe<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(c);</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>*<sp/>re<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(c_complexe-&gt;getPartieReelle()-&gt;produit(_reelle)-&gt;soustraction(c_complexe-&gt;getPartieImaginaire()-&gt;produit(_imaginaire)));</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>*<sp/>im<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(c_complexe-&gt;getPartieImaginaire()-&gt;produit(_reelle)-&gt;addition(c_complexe-&gt;getPartieReelle()-&gt;produit(_imaginaire)));</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>c_complexe-&gt;setImaginaire(im-&gt;getPartieReelle());</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>c_complexe-&gt;setReelle(re-&gt;getPartieReelle());</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(re);</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(im);</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c_complexe;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Complexe::division(<ref refid="class_constante" kindref="compound">Constante</ref><sp/>*c)</highlight></codeline>
-<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>On<sp/>utilise<sp/>la<sp/>multiplication<sp/>par<sp/>le<sp/>conjugué<sp/>du<sp/>diviseur<sp/>au<sp/>numérateur<sp/>et<sp/>au<sp/>dénominateur</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>a+ib<sp/>/<sp/>c+id<sp/>=<sp/>(a+ib)*(c-id)<sp/>/<sp/>(c+id)*(c-id)<sp/>=<sp/>...<sp/>=<sp/>[(ac+bd)/(c²+d²)]<sp/>+<sp/>i[(cb-ad)/(c²+d²)]</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>*dividende<sp/>=<sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>*diviseur=</highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(c);</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>*<sp/>denom<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(diviseur-&gt;getPartieReelle()-&gt;produit(diviseur-&gt;getPartieReelle())-&gt;addition(diviseur-&gt;getPartieImaginaire()-&gt;produit(diviseur-&gt;getPartieImaginaire())));</highlight></codeline>
+<codeline lineno="17" refid="class_complexe_1ae19286bc2c8f360e3fbc0d65526564d3" refkind="member"><highlight class="normal"><ref refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" kindref="member">Complexe::Complexe</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>r,<sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>i){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*r)==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_complexe" kindref="compound">Complexe</ref>)<sp/>||<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*r)==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_complexe" kindref="compound">Complexe</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;Les<sp/>parties<sp/>réeelles<sp/>et<sp/>complexes<sp/>doivent<sp/>être<sp/>des<sp/>constantes<sp/>non<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" kindref="member">important</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_reelle<sp/>=<sp/>r-&gt;<ref refid="class_constante_1ac6fb071229429f82cf489f8313461efa" kindref="member">recopie</ref>();;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_imaginaire=<sp/>i-&gt;<ref refid="class_constante_1ac6fb071229429f82cf489f8313461efa" kindref="member">recopie</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_complexe_1ac00d0b5ba1dea7d67c43d257e48fd7b5" refkind="member"><highlight class="normal"><ref refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" kindref="member">Complexe::Complexe</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>*c_complexe=dynamic_cast&lt;Complexe<sp/>*&gt;(c)){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_reelle<sp/>=<sp/>c_complexe-&gt;getPartieReelle()-&gt;<ref refid="class_constante_1ac6fb071229429f82cf489f8313461efa" kindref="member">recopie</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_imaginaire<sp/>=<sp/>c_complexe-&gt;getPartieImaginaire()-&gt;<ref refid="class_constante_1ac6fb071229429f82cf489f8313461efa" kindref="member">recopie</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*c)==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_entier" kindref="compound">Entier</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_entier" kindref="compound">Entier</ref><sp/>*c_entier=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_entier" kindref="compound">Entier</ref><sp/>(dynamic_cast&lt;Entier<sp/>*&gt;(c));</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_reelle<sp/>=<sp/>c_entier-&gt;<ref refid="class_constante_1ac6fb071229429f82cf489f8313461efa" kindref="member">recopie</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_imaginaire<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_entier" kindref="compound">Entier</ref>(0);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*c)==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_rationnel" kindref="compound">Rationnel</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_rationnel" kindref="compound">Rationnel</ref><sp/>*r=</highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_rationnel" kindref="compound">Rationnel</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(c);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_reelle<sp/>=<sp/>r-&gt;<ref refid="class_constante_1ac6fb071229429f82cf489f8313461efa" kindref="member">recopie</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_imaginaire<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_rationnel" kindref="compound">Rationnel</ref>(0);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*c)==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_reel" kindref="compound">Reel</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_reel" kindref="compound">Reel</ref><sp/>*c_reel=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_reel" kindref="compound">Reel</ref>(dynamic_cast&lt;Reel<sp/>*&gt;(c));</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_reelle<sp/>=<sp/>c_reel-&gt;<ref refid="class_constante_1ac6fb071229429f82cf489f8313461efa" kindref="member">recopie</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_imaginaire<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_reel" kindref="compound">Reel</ref>(0.0);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_complexe_1a5141b5b092f78c06f60013e911ba4440" refkind="member"><highlight class="normal">QString<sp/><ref refid="class_complexe_1a5141b5b092f78c06f60013e911ba4440" kindref="member">Complexe::afficher</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kindref="member">reel_pur</ref>())</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_reelle-&gt;<ref refid="class_constante_1a78b5d9ee6a7e70349db6641a08f77479" kindref="member">afficher</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_reelle-&gt;<ref refid="class_constante_1a78b5d9ee6a7e70349db6641a08f77479" kindref="member">afficher</ref>()+</highlight><highlight class="stringliteral">&quot;$&quot;</highlight><highlight class="normal">+_imaginaire-&gt;<ref refid="class_constante_1a78b5d9ee6a7e70349db6641a08f77479" kindref="member">afficher</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" kindref="member">Complexe::addition</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>tmp(c);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" kindref="member">Complexe</ref>(</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" kindref="member">addition</ref>(tmp.<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()),</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>()-&gt;<ref refid="class_constante_1a243b6eabd1fd476af827c5b523cddfac" kindref="member">addition</ref>(tmp.<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>())</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>*<sp/>re_num<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(dividende-&gt;getPartieReelle()-&gt;produit(diviseur-&gt;getPartieReelle())-&gt;addition(dividende-&gt;getPartieImaginaire()-&gt;produit(diviseur-&gt;getPartieImaginaire())));</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>*<sp/>re<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(re_num-&gt;getPartieReelle()-&gt;division(denom-&gt;getPartieReelle()));</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>*<sp/>im_num<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(diviseur-&gt;getPartieReelle()-&gt;produit(dividende-&gt;getPartieImaginaire())-&gt;soustraction(dividende-&gt;getPartieReelle()-&gt;produit(diviseur-&gt;getPartieImaginaire())));</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>*<sp/>im<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(im_num-&gt;getPartieReelle()-&gt;division(denom-&gt;getPartieReelle()));</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>*<sp/>res<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(re-&gt;getPartieReelle(),<sp/>im-&gt;getPartieReelle());</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(denom);</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(re_num);</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(im_num);</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
-<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Complexe::signe(){</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_constante" kindref="compound">Constante</ref><sp/>*c<sp/>=<sp/>this-&gt;recopie();</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>*tmp<sp/>=<sp/></highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(c);</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_entier" kindref="compound">Entier</ref><sp/>e(-1);</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>tmp1(tmp-&gt;getPartieImaginaire()-&gt;produit(&amp;e));</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp-&gt;setImaginaire(tmp1.getPartieReelle());</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>tmp2(tmp-&gt;getPartieReelle()-&gt;produit(&amp;e));</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp-&gt;setReelle(tmp2.getPartieReelle());</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tmp;</highlight></codeline>
-<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Complexe::soustraction(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c){</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>*c_complexe<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(c);</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//les<sp/>parties<sp/>imaginaires<sp/>sont<sp/>des<sp/>reels/rationnels/entiers<sp/>donc<sp/>leur<sp/>somme<sp/>renvoie<sp/>un<sp/>complexe<sp/>donc<sp/>l&apos;im<sp/>est<sp/>nulle</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>*<sp/>re<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(this-&gt;getPartieReelle()-&gt;soustraction(c_complexe-&gt;getPartieReelle()));</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//les<sp/>parties<sp/>réelles<sp/>sont<sp/>des<sp/>reels/rationnels/entiers<sp/>donc<sp/>leur<sp/>somme<sp/>renvoie<sp/>un<sp/>complexe<sp/>donc<sp/>l&apos;im<sp/>est<sp/>nulle</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>*<sp/>im<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref>(this-&gt;getPartieImaginaire()-&gt;soustraction(c_complexe-&gt;getPartieImaginaire()));</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>c_complexe-&gt;setImaginaire(im-&gt;getPartieReelle());</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>c_complexe-&gt;setReelle(re-&gt;getPartieReelle());</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(re);</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(im);</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c_complexe;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Complexe::fact()</highlight></codeline>
-<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>factorielle<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/>moyen);</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Complexe::sinus()</highlight></codeline>
-<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>SIN<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/>moyen);</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88" refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" kindref="member">Complexe::produit</ref>(<ref refid="class_constante" kindref="compound">Constante</ref><sp/>*c)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>tmp(c);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" kindref="member">Complexe</ref>(</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" kindref="member">produit</ref>(tmp.<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>())-&gt;<ref refid="class_complexe_1a07d706446560190792339549752f9ea3" kindref="member">soustraction</ref>(this-&gt;<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>()-&gt;<ref refid="class_constante_1a650e88b74d2f8a052e6a11363b3ec816" kindref="member">produit</ref>(tmp.<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>())),</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_constante_1a650e88b74d2f8a052e6a11363b3ec816" kindref="member">produit</ref>(tmp.<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>())-&gt;<ref refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" kindref="member">addition</ref>(tmp.<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_constante_1a650e88b74d2f8a052e6a11363b3ec816" kindref="member">produit</ref>(this-&gt;<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>()))</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8" kindref="member">Complexe::division</ref>(<ref refid="class_constante" kindref="compound">Constante</ref><sp/>*c)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>tmp(c);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" kindref="member">produit</ref>(tmp.<ref refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" kindref="member">inv</ref>());</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="class_complexe_1a97bb77958c4012ed113c54f895f91e85" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a97bb77958c4012ed113c54f895f91e85" kindref="member">Complexe::signe</ref>(){</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>e<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_entier" kindref="compound">Entier</ref>(-1);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" kindref="member">Complexe</ref>(this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" kindref="member">produit</ref>(e),<sp/>this-&gt;<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>()-&gt;<ref refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" kindref="member">produit</ref>(e));</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="class_complexe_1a07d706446560190792339549752f9ea3" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a07d706446560190792339549752f9ea3" kindref="member">Complexe::soustraction</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>tmp(c);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" kindref="member">addition</ref>(tmp.<ref refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" kindref="member">inv</ref>());</highlight></codeline>
 <codeline lineno="136"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Complexe::inv()</highlight></codeline>
-<codeline lineno="139"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//FIXME<sp/>:<sp/>pas<sp/>d&apos;inverse<sp/>pour<sp/>les<sp/>complexes</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>INV<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/>moyen);</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="class_complexe_1a0b0532339249783cee39f28670bb7504" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a0b0532339249783cee39f28670bb7504" kindref="member">Complexe::fact</ref>()</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kindref="member">reel_pur</ref>())</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_constante_1a96e23d33bd45f79589f8911473ef2e32" kindref="member">fact</ref>();</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>factorielle<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147" refid="class_complexe_1a58574399ad50181f94c8f167916b9db9" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a58574399ad50181f94c8f167916b9db9" kindref="member">Complexe::sinus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle)</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kindref="member">reel_pur</ref>())</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_constante_1a3b6827eba7936c4ce61f64da9dd826b4" kindref="member">sinus</ref>(angle);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>SIN<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="class_complexe_1a5b659cad17efee687fb8a889aef5da09" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a5b659cad17efee687fb8a889aef5da09" kindref="member">Complexe::cosinus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kindref="member">reel_pur</ref>())</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_constante_1af6784ed749b7f2be92d6017628e5b935" kindref="member">cosinus</ref>(angle);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>COS<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="class_complexe_1a221161f63e9176b49eb74de70ef73d78" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a221161f63e9176b49eb74de70ef73d78" kindref="member">Complexe::sinush</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kindref="member">reel_pur</ref>())</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_constante_1a101b4506f71295a23c764d34b7f7ecfb" kindref="member">sinush</ref>(angle);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>SINH<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="class_complexe_1a356e44404acabb3e6bd8228f746fc3f5" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a356e44404acabb3e6bd8228f746fc3f5" kindref="member">Complexe::cosinush</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kindref="member">reel_pur</ref>())</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_constante_1a0b1cbba53e1112aa65a081ae6231acb5" kindref="member">cosinush</ref>(angle);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>COSH<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="class_complexe_1a7602a9b9ca6e17445207b3632ceba643" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a7602a9b9ca6e17445207b3632ceba643" kindref="member">Complexe::tangente</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kindref="member">reel_pur</ref>())</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_constante_1a51bffad2fa33a397de6ed422a621b1a1" kindref="member">tangente</ref>(angle);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>TAN<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187" refid="class_complexe_1a649a2ad523bfe715950e2e0f3b28213d" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a649a2ad523bfe715950e2e0f3b28213d" kindref="member">Complexe::tangenteh</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kindref="member">reel_pur</ref>())</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_constante_1a6f5f971e61ac831355f1182289c3952f" kindref="member">tangenteh</ref>(angle);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>TANH<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196" refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" kindref="member">Complexe::inv</ref>()</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" kindref="member">Complexe</ref>(</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8" kindref="member">division</ref>(this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_complexe_1a7bbaa8c8695253acb93eb91eb1bd51c0" kindref="member">carre</ref>()-&gt;<ref refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" kindref="member">addition</ref>(this-&gt;<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>()-&gt;<ref refid="class_complexe_1a7bbaa8c8695253acb93eb91eb1bd51c0" kindref="member">carre</ref>())),</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>()-&gt;<ref refid="class_complexe_1a97bb77958c4012ed113c54f895f91e85" kindref="member">signe</ref>()-&gt;<ref refid="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8" kindref="member">division</ref>(this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_complexe_1a7bbaa8c8695253acb93eb91eb1bd51c0" kindref="member">carre</ref>()-&gt;<ref refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" kindref="member">addition</ref>(this-&gt;<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>()-&gt;<ref refid="class_complexe_1a7bbaa8c8695253acb93eb91eb1bd51c0" kindref="member">carre</ref>()))</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="class_complexe_1a7bbaa8c8695253acb93eb91eb1bd51c0" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a7bbaa8c8695253acb93eb91eb1bd51c0" kindref="member">Complexe::carre</ref>()</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>*c_complexe<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" kindref="member">Complexe</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c_complexe-&gt;<ref refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" kindref="member">produit</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="class_complexe_1a7026e226db2bb64a1ca5c014fa8b6f43" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a7026e226db2bb64a1ca5c014fa8b6f43" kindref="member">Complexe::cube</ref>()</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_complexe" kindref="compound">Complexe</ref><sp/>*c_complexe<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" kindref="member">Complexe</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c_complexe-&gt;<ref refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" kindref="member">produit</ref>(this-&gt;<ref refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" kindref="member">produit</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216" refid="class_complexe_1ab7d41a46e8467b819afa76f658a12c01" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1ab7d41a46e8467b819afa76f658a12c01" kindref="member">Complexe::racine</ref>()</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kindref="member">reel_pur</ref>())</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_constante_1a57604347a44e29f6aa7e36a045b4df1c" kindref="member">racine</ref>();</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>RACINE<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="class_complexe_1aaebd8e53e61cdea5504fc8f9fa5d2523" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1aaebd8e53e61cdea5504fc8f9fa5d2523" kindref="member">Complexe::puissance</ref>(<ref refid="class_constante" kindref="compound">Constante</ref><sp/>*c)</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kindref="member">reel_pur</ref>())</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_constante_1a2ed5e0a77fb7766fbce6abb4ebd0b01e" kindref="member">puissance</ref>(c);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>PUISSANCE<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="class_complexe_1a8adb5d883810b1fdbcfa230f32100408" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1a8adb5d883810b1fdbcfa230f32100408" kindref="member">Complexe::logN</ref>()</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kindref="member">reel_pur</ref>())</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_constante_1aa28e3269159806101c2ac0d09c036c2c" kindref="member">logN</ref>();</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LN<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240" refid="class_complexe_1ada2cd39fae72dcf78fac8b361072b4e1" refkind="member"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_complexe_1ada2cd39fae72dcf78fac8b361072b4e1" kindref="member">Complexe::log1</ref>()</highlight></codeline>
+<codeline lineno="241"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;<ref refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kindref="member">reel_pur</ref>())</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" kindref="member">getPartieReelle</ref>()-&gt;<ref refid="class_constante_1aad178503c937682acd3c9f19aec37dc6" kindref="member">log1</ref>();</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(2,</highlight><highlight class="stringliteral">&quot;La<sp/>fonction<sp/>LOG<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>complexes.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248" refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" kindref="member">Complexe::reel_pur</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>())==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_entier" kindref="compound">Entier</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_entier" kindref="compound">Entier</ref><sp/>*im_entier=</highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_entier" kindref="compound">Entier</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(this-&gt;<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>());</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(im_entier-&gt;<ref refid="class_entier_1afe38ee7f81afc3c88a2c774ff0af2bcd" kindref="member">getValeur</ref>()==0)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>())==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_rationnel" kindref="compound">Rationnel</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_rationnel" kindref="compound">Rationnel</ref><sp/>*im_rationnel=</highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_rationnel" kindref="compound">Rationnel</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(this-&gt;<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>());</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(im_rationnel-&gt;<ref refid="class_rationnel_1a5802a9dda12b8af3ffef1eae3ee23d4a" kindref="member">getNumerateur</ref>()==0)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(*<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>())==</highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(<ref refid="class_reel" kindref="compound">Reel</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_reel" kindref="compound">Reel</ref><sp/>*im_reel=</highlight><highlight class="keyword">dynamic_cast&lt;</highlight><highlight class="normal"><ref refid="class_reel" kindref="compound">Reel</ref><sp/>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(this-&gt;<ref refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" kindref="member">getPartieImaginaire</ref>());</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(im_reel-&gt;<ref refid="class_reel_1a6412ad4d84dcd302c1fae1f7ec3ede46" kindref="member">getValeur</ref>()==0)</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp"/>
   </compounddef>
 </doxygen>

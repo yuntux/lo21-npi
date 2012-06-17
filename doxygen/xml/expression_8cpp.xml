@@ -4,30 +4,53 @@
     <compoundname>expression.cpp</compoundname>
     <includes refid="expression_8h" local="yes">expression.h</includes>
     <incdepgraph>
-      <node id="154">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.cpp</label>
-        <link refid="expression.cpp"/>
-        <childnode refid="155" relation="include">
+      <node id="645">
+        <label>logmessage.h</label>
+        <link refid="logmessage_8h"/>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="646" relation="include">
         </childnode>
       </node>
-      <node id="157">
+      <node id="646">
+        <label>exception</label>
+      </node>
+      <node id="640">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.cpp</label>
+        <link refid="expression.cpp"/>
+        <childnode refid="641" relation="include">
+        </childnode>
+      </node>
+      <node id="641">
+        <label>expression.h</label>
+        <link refid="expression_8h"/>
+        <childnode refid="642" relation="include">
+        </childnode>
+      </node>
+      <node id="647">
+        <label>logsystem.h</label>
+        <link refid="logsystem_8h"/>
+        <childnode refid="645" relation="include">
+        </childnode>
+        <childnode refid="643" relation="include">
+        </childnode>
+      </node>
+      <node id="643">
         <label>iostream</label>
       </node>
-      <node id="156">
-        <label>constante.h</label>
-        <link refid="constante_8h"/>
-        <childnode refid="157" relation="include">
-        </childnode>
-        <childnode refid="158" relation="include">
-        </childnode>
-      </node>
-      <node id="158">
+      <node id="644">
         <label>QtGui</label>
       </node>
-      <node id="155">
-        <label>expression.h</label>
-        <link refid="expression_8h_source"/>
-        <childnode refid="156" relation="include">
+      <node id="642">
+        <label>constante.h</label>
+        <link refid="constante_8h"/>
+        <childnode refid="643" relation="include">
+        </childnode>
+        <childnode refid="644" relation="include">
+        </childnode>
+        <childnode refid="645" relation="include">
+        </childnode>
+        <childnode refid="647" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -36,65 +59,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;expression.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal">Expression::Expression(QString<sp/>s):_expr(s)</highlight></codeline>
-<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="5"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Expression::addition(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c)</highlight></codeline>
-<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
-<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Expression::produit(<ref refid="class_constante" kindref="compound">Constante</ref><sp/>*c)</highlight></codeline>
-<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Expression::division(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c)</highlight></codeline>
-<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
-<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Expression::signe()</highlight></codeline>
-<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Expression::soustraction(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c)</highlight></codeline>
-<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Expression::inv()</highlight></codeline>
-<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Expression::fact()</highlight></codeline>
-<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>Expression::sinus()</highlight></codeline>
-<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal">QString<sp/>Expression::afficher()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="49"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;oops&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="expression_8h" kindref="compound">expression.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.cpp"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.cpp"/>
   </compounddef>
 </doxygen>

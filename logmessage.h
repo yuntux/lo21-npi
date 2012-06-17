@@ -10,7 +10,7 @@
 3,"Type de constante non prévu dans la fonction Constante* Reel::soustraction(Constante* c).", important
 5,"Nombre d'opérandes  dans la pile insuffisant.", moyen
 6,"La chaine saisie est invalide", moyen
-6,"Action impossible dans ce mode", moyen
+7,"Action impossible dans ce mode", moyen
 8,"Saisie invalide", moyen
 **********/
 

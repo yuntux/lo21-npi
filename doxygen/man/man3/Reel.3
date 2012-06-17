@@ -1,4 +1,4 @@
-.TH "Reel" 3 "Thu Jun 7 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
+.TH "Reel" 3 "Samedi Juin 16 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -7,16 +7,20 @@ Reel \-
 .br
 .PP
 .PP
-Inherits \fBConstante\fP\&.
-.SS "Public Member Functions"
+\fC#include <reel\&.h>\fP
+.PP
+Est dérivée de \fBConstante\fP\&.
+.SS "Fonctions membres publiques"
 
 .in +1c
 .ti -1c
 .RI "\fBReel\fP (double e)"
 .br
-.RI "\fIReel(float e):_valeur(e){}\&. \fP"
 .ti -1c
 .RI "\fBReel\fP (\fBConstante\fP *c)"
+.br
+.ti -1c
+.RI "virtual \fB~Reel\fP ()"
 .br
 .ti -1c
 .RI "virtual QString \fBafficher\fP () const "
@@ -26,9 +30,6 @@ Inherits \fBConstante\fP\&.
 .br
 .ti -1c
 .RI "void \fBsetValeur\fP (int v)"
-.br
-.ti -1c
-.RI "\fBRationnel\fP \fBtoRationnel\fP () const "
 .br
 .ti -1c
 .RI "virtual \fBConstante\fP * \fBaddition\fP (\fBConstante\fP *c)"
@@ -52,10 +53,391 @@ Inherits \fBConstante\fP\&.
 .RI "virtual \fBConstante\fP * \fBfact\fP ()"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBsinus\fP ()"
+.RI "virtual \fBConstante\fP * \fBsinus\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcosinus\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBsinush\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcosinush\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBtangente\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBtangenteh\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBlogN\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBlog1\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBpuissance\fP (\fBConstante\fP *c)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcarre\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcube\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBracine\fP ()"
 .br
 .in -1c
-
-.SH "Author"
+.SH "Description détaillée"
 .PP 
-Generated automatically by Doxygen for Calculatrice polonais inversé LO21 from the source code\&.
+Définition à la ligne 7 du fichier reel\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBReel::Reel\fP (doublee)\fC [inline]\fP"
+.PP
+Définition à la ligne 12 du fichier reel\&.h\&.
+.SS "\fBReel::Reel\fP (\fBConstante\fP *c)"Constructeur de réel
+.PP
+On vérifie le type de la constante passée en paramètre, et si c'est un réel, on recopie sa valeur dans le nouvel entier, sinon on lève une exception\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une constante, donc entier, réel, rationnel ou complexe
+.RE
+.PP
+
+.PP
+Définition à la ligne 21 du fichier reel\&.cpp\&.
+.SS "virtual \fBReel::~Reel\fP ()\fC [inline, virtual]\fP"
+.PP
+Définition à la ligne 14 du fichier reel\&.h\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "\fBConstante\fP * \fBReel::addition\fP (\fBConstante\fP *c)\fC [virtual]\fP"Somme de 2 réels
+.PP
+On vérifie le type du paramètre, et on crée une nouvelle instance de ce type en fonction, dont le ou les attributs seront en fait la somme des 2 réels dont l'on veut calculer l'addition\&.Cependant, si on est en mode Réel, on ne doit pas avoir les autres types de constante\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une constante 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit, car on utilisera toujours les formes complexes pour les calculs
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 52 du fichier reel\&.cpp\&.
+.SS "virtual QString \fBReel::afficher\fP () const\fC [inline, virtual]\fP"
+.PP
+Implémente \fBConstante\fP\&.
+.PP
+Définition à la ligne 15 du fichier reel\&.h\&.
+.SS "\fBConstante\fP * \fBReel::carre\fP ()\fC [virtual]\fP"Fonction carré
+.PP
+On crée un nouveau Réel dont la valeur est le résultat du carré 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit à partir du résultat de la fonction
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 287 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::cosinus\fP (boolangle)\fC [virtual]\fP"Calcul du Cosinus
+.PP
+Si le paramètre est vrai, on se situe en mode Degré\&. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction \fIcos\fP de cmath est définie en radians\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Sert à savoir si l'on est en mode Degré ou non 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit construit à partir d'un entier contenant la valeur du cosinus
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 161 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::cosinush\fP (boolangle)\fC [virtual]\fP"Calcul du Cosinus Hyperbolique
+.PP
+Si le paramètre est vrai, on se situe en mode Degré\&. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction \fIcosh\fP de cmath est définie en radians\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Sert à savoir si l'on est en mode Degré ou non 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit construit à partir d'un entier contenant la valeur du cosinus hyperbolique
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 176 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::cube\fP ()\fC [virtual]\fP"Fonction cube
+.PP
+On crée un nouveau Réel dont la valeur est le résultat du cube 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit à partir du résultat de la fonction
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 298 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::division\fP (\fBConstante\fP *c)\fC [virtual]\fP"Division de réels
+.PP
+Comme pour la somme et le produit, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra le quotient demandé\&. Cependant, normalement en mode Réel, on ne doit avoir que des réels\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une \fBConstante\fP 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit contenant le quotient
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 104 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::fact\fP ()\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 236 du fichier reel\&.cpp\&.
+.SS "double \fBReel::getValeur\fP () const\fC [inline]\fP"
+.PP
+Définition à la ligne 16 du fichier reel\&.h\&.
+.SS "\fBConstante\fP * \fBReel::inv\fP ()\fC [virtual]\fP"Inversion d'un réel
+.PP
+Pour un réel, on peut créer un nouveau réel contenant l'inverse de celui que l'on veut 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fIRéel\fP contenant le résultat
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 136 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::log1\fP ()\fC [virtual]\fP"Logarithme décimal
+.PP
+On crée un nouveau Réel dont la valeur est celle du logarithme décimal du réel initial\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit avec ce réel
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 254 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::logN\fP ()\fC [virtual]\fP"Logarithme népérien
+.PP
+On crée un nouveau Réel dont la valeur est celle du logarithme népérien du réel initial\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit avec ce réel
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 243 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::produit\fP (\fBConstante\fP *c)\fC [virtual]\fP"Produit de deux réels
+.PP
+Comme pour la somme, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra le produit demandé\&. Cependant, normalement en mode Réel, on ne doit avoir que des réels\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une \fBConstante\fP 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit contenant le produit
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 77 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::puissance\fP (\fBConstante\fP *c)\fC [virtual]\fP"Puissance de deux réels
+.PP
+On effectue un transtypage en réel afin de récupérer l'exposant sous forme réelle\&. On calcule ensuite grâce à la fonction \fIpow\fP de la bibliothèque \fIcmath\fP\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une \fI\fBConstante\fP\fP qui sera l'exposant 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit à partir du résultat
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 265 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::racine\fP ()\fC [virtual]\fP"Fonction racine carrée
+.PP
+On crée un nouveau Réel dont la valeur est le résultat de la racine carrée 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit à partir du résultat de la fonction
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 309 du fichier reel\&.cpp\&.
+.SS "void \fBReel::setValeur\fP (intv)\fC [inline]\fP"
+.PP
+Définition à la ligne 17 du fichier reel\&.h\&.
+.SS "\fBConstante\fP * \fBReel::signe\fP ()\fC [virtual]\fP"Inversion de signe d'un réel
+.PP
+On crée un nouvel entier dont la valeur est l'opposée de celle initiale 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fIRéel\fP, de valeur opposée
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 116 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::sinus\fP (boolangle)\fC [virtual]\fP"Calcul du Sinus
+.PP
+Si le paramètre est vrai, on se situe en mode Degré\&. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction \fIsin\fP de cmath est définie en radians\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Sert à savoir si l'on est en mode Degré ou non 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit construit à partir d'un entier contenant la valeur du sinus
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 146 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::sinush\fP (boolangle)\fC [virtual]\fP"Sinus Hyperbolique Réel
+.PP
+Si le paramètre est vrai, on se situe en mode Degré\&. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction \fItanh\fP de cmath est définie en radians\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Booléen, permet de savoir si l'on est en mode degré 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un nouveau \fI\fBReel\fP\fP construit à partir du \fBReel\fP contenant le résultat
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 222 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::soustraction\fP (\fBConstante\fP *c)\fC [virtual]\fP"Différence de réels
+.PP
+Comme pour les autres opérations, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra la différence voulue\&. Cependant, normalement en mode Réel, on ne doit avoir que des réels\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une \fBConstante\fP 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit contenant la différence
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 125 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::tangente\fP (boolangle)\fC [virtual]\fP"Calcul de la Tangente
+.PP
+Si le paramètre est vrai, on se situe en mode Degré\&. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction \fItan\fP de cmath est définie en radians\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Sert à savoir si l'on est en mode Degré ou non 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP construit construit à partir d'un entier contenant la valeur de la tangente
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 192 du fichier reel\&.cpp\&.
+.SS "\fBConstante\fP * \fBReel::tangenteh\fP (boolangle)\fC [virtual]\fP"Calcul de la Tangente Hyperbolique
+.PP
+Si le paramètre est vrai, on se situe en mode Degré\&. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction \fItanh\fP de cmath est définie en radians\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Sert à savoir si l'on est en mode Degré ou non 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBReel\fP\fP la valeur de la tangente hyperbolique
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 207 du fichier reel\&.cpp\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Calculatrice polonais inversé LO21 à partir du code source\&.

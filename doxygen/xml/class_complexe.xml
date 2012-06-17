@@ -3,7 +3,7 @@
   <compounddef id="class_complexe" kind="class" prot="public">
     <compoundname>Complexe</compoundname>
     <basecompoundref refid="class_constante" prot="public" virt="non-virtual">Constante</basecompoundref>
-    <derivedcompoundref refid="class_frabrique_complexe" prot="public" virt="non-virtual">FrabriqueComplexe</derivedcompoundref>
+    <includes refid="complexe_8h" local="no">complexe.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_complexe_1ace5b7bcc0e61764510a46e3ae84a098d" prot="private" static="no" mutable="no">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="9" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="9" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="22" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_complexe_1a355a9945817c7654ba2e435c4c68bf5d" prot="private" static="no" mutable="no">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="10" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="10" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="23" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -44,7 +44,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="13" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="13" bodyend="13"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="26" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" bodystart="26" bodyend="26"/>
+        <referencedby refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" compoundref="complexe_8cpp" startline="73" endline="86">addition</referencedby>
+        <referencedby refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" compoundref="complexe_8cpp" startline="88" endline="101">produit</referencedby>
+        <referencedby refid="class_complexe_1a97bb77958c4012ed113c54f895f91e85" compoundref="complexe_8cpp" startline="115" endline="125">signe</referencedby>
+        <referencedby refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" compoundref="complexe_8cpp" startline="196" endline="202">inv</referencedby>
+        <referencedby refid="class_complexe_1a7bbaa8c8695253acb93eb91eb1bd51c0" compoundref="complexe_8cpp" startline="204" endline="208">carre</referencedby>
+        <referencedby refid="class_complexe_1a7026e226db2bb64a1ca5c014fa8b6f43" compoundref="complexe_8cpp" startline="210" endline="214">cube</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_complexe_1ae19286bc2c8f360e3fbc0d65526564d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -64,8 +70,38 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="14" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="7" bodyend="15"/>
+<para>Constructeur surchargé de complexe</para><para>On vérifie le type des 2 constantes, et on lève une exception si ce sont des complexes, car un complexe ne peut pas être composé lui même de complexes <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la partie réelle est une <ref refid="class_constante" kindref="compound">Constante</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>la partie imaginaire est une <ref refid="class_constante" kindref="compound">Constante</ref> aussi</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="27" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="17" bodyend="32"/>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" compoundref="logmessage_8h" startline="17">important</references>
+        <references refid="class_constante_1ac6fb071229429f82cf489f8313461efa" compoundref="constante_8cpp" startline="9" endline="49">Constante::recopie</references>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1ac92996231047d39d40e11384bb9311b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Complexe::~Complexe</definition>
+        <argsstring>()</argsstring>
+        <name>~Complexe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Destructeru de complexe</para><para>Rétabli le dernier état annulé de la pile Historique.</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="8" bodyend="15"/>
       </memberdef>
       <memberdef kind="function" id="class_complexe_1a5141b5b092f78c06f60013e911ba4440" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
         <type>QString</type>
@@ -78,8 +114,11 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="15" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="37" bodyend="52"/>
+<para>Méthode d&apos;affichae d&apos;un <ref refid="class_complexe" kindref="compound">Complexe</ref></para><para>On vérifie le type de la partie imaginaire, et on crée une nouvelle constante de ce type. Si la partie imaginaire est nule, on affiche la partie réelle, sinon on affiche la partie réelle, un $ et la partie imaginaire. <simplesect kind="return"><para>Une <emphasis>QString</emphasis> permettant l&apos;affichage</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="29" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="59" bodyend="71"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">reel_pur</references>
+        <references refid="class_constante_1a78b5d9ee6a7e70349db6641a08f77479">Constante::afficher</references>
       </memberdef>
       <memberdef kind="function" id="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
@@ -92,7 +131,25 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="16" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="16" bodyend="16"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="30" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" bodystart="30" bodyend="30"/>
+        <referencedby refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" compoundref="complexe_8cpp" startline="73" endline="86">addition</referencedby>
+        <referencedby refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" compoundref="complexe_8cpp" startline="88" endline="101">produit</referencedby>
+        <referencedby refid="class_complexe_1a97bb77958c4012ed113c54f895f91e85" compoundref="complexe_8cpp" startline="115" endline="125">signe</referencedby>
+        <referencedby refid="class_complexe_1a0b0532339249783cee39f28670bb7504" compoundref="complexe_8cpp" startline="139" endline="145">fact</referencedby>
+        <referencedby refid="class_complexe_1a58574399ad50181f94c8f167916b9db9" compoundref="complexe_8cpp" startline="147" endline="153">sinus</referencedby>
+        <referencedby refid="class_complexe_1a5b659cad17efee687fb8a889aef5da09" compoundref="complexe_8cpp" startline="155" endline="161">cosinus</referencedby>
+        <referencedby refid="class_complexe_1a221161f63e9176b49eb74de70ef73d78" compoundref="complexe_8cpp" startline="163" endline="169">sinush</referencedby>
+        <referencedby refid="class_complexe_1a356e44404acabb3e6bd8228f746fc3f5" compoundref="complexe_8cpp" startline="171" endline="177">cosinush</referencedby>
+        <referencedby refid="class_complexe_1a7602a9b9ca6e17445207b3632ceba643" compoundref="complexe_8cpp" startline="179" endline="185">tangente</referencedby>
+        <referencedby refid="class_complexe_1a649a2ad523bfe715950e2e0f3b28213d" compoundref="complexe_8cpp" startline="187" endline="193">tangenteh</referencedby>
+        <referencedby refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" compoundref="complexe_8cpp" startline="196" endline="202">inv</referencedby>
+        <referencedby refid="class_complexe_1ab7d41a46e8467b819afa76f658a12c01" compoundref="complexe_8cpp" startline="216" endline="222">racine</referencedby>
+        <referencedby refid="class_complexe_1aaebd8e53e61cdea5504fc8f9fa5d2523" compoundref="complexe_8cpp" startline="224" endline="230">puissance</referencedby>
+        <referencedby refid="class_complexe_1a8adb5d883810b1fdbcfa230f32100408" compoundref="complexe_8cpp" startline="232" endline="238">logN</referencedby>
+        <referencedby refid="class_complexe_1ada2cd39fae72dcf78fac8b361072b4e1" compoundref="complexe_8cpp" startline="240" endline="246">log1</referencedby>
+        <referencedby refid="class_entier_1a94158ae6fbad4c9a74815716f5f0f629" compoundref="entier_8cpp" startline="9" endline="38">Entier::Entier</referencedby>
+        <referencedby refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel::Rationnel</referencedby>
+        <referencedby refid="class_reel_1a02f5d2d30d048ae139b1d8112f6c6f9a" compoundref="reel_8cpp" startline="21" endline="50">Reel::Reel</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
@@ -105,7 +162,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="17" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="17" bodyend="17"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="31" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" bodystart="31" bodyend="31"/>
+        <referencedby refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" compoundref="complexe_8cpp" startline="73" endline="86">addition</referencedby>
+        <referencedby refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" compoundref="complexe_8cpp" startline="88" endline="101">produit</referencedby>
+        <referencedby refid="class_complexe_1a97bb77958c4012ed113c54f895f91e85" compoundref="complexe_8cpp" startline="115" endline="125">signe</referencedby>
+        <referencedby refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" compoundref="complexe_8cpp" startline="196" endline="202">inv</referencedby>
+        <referencedby refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">reel_pur</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_complexe_1a7e57ea7cf760e132c80a148e2c344cce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -122,7 +184,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="18" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="18" bodyend="18"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="32" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" bodystart="32" bodyend="32"/>
+        <referencedby refid="class_constante_1ac6fb071229429f82cf489f8313461efa" compoundref="constante_8cpp" startline="9" endline="49">Constante::recopie</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_complexe_1a2335ce4c53e2b11d4fa4bcbef45415ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -139,7 +202,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="19" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="19" bodyend="19"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" bodystart="33" bodyend="33"/>
+        <referencedby refid="class_constante_1ac6fb071229429f82cf489f8313461efa" compoundref="constante_8cpp" startline="9" endline="49">Constante::recopie</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_complexe_1ac00d0b5ba1dea7d67c43d257e48fd7b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -155,15 +219,56 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
+<para>Constructeur surchargé à un paramètre</para><para>On vérifie les types, et on crée un complexe qui n&apos;aura qu&apos;une partie réelle <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>seul paramètre, qui est une <ref refid="class_constante" kindref="compound">Constante</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="35" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="34" bodyend="57"/>
+        <references refid="class_constante_1ac6fb071229429f82cf489f8313461efa" compoundref="constante_8cpp" startline="9" endline="49">Constante::recopie</references>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Complexe::reel_pur</definition>
+        <argsstring>() const </argsstring>
+        <name>reel_pur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="21" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="17" bodyend="35"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="36" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="248" bodyend="264"/>
+        <references refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" compoundref="complexe_8h" startline="31" endline="31">getPartieImaginaire</references>
+        <references refid="class_entier_1afe38ee7f81afc3c88a2c774ff0af2bcd" compoundref="entier_8h" startline="26" endline="26">Entier::getValeur</references>
+        <references refid="class_rationnel_1a5802a9dda12b8af3ffef1eae3ee23d4a" compoundref="rationnel_8h" startline="20" endline="20">Rationnel::getNumerateur</references>
+        <references refid="class_reel_1a6412ad4d84dcd302c1fae1f7ec3ede46" compoundref="reel_8h" startline="16" endline="16">Reel::getValeur</references>
+        <referencedby refid="class_complexe_1a5141b5b092f78c06f60013e911ba4440" compoundref="complexe_8cpp" startline="59" endline="71">afficher</referencedby>
+        <referencedby refid="class_complexe_1a0b0532339249783cee39f28670bb7504" compoundref="complexe_8cpp" startline="139" endline="145">fact</referencedby>
+        <referencedby refid="class_complexe_1a58574399ad50181f94c8f167916b9db9" compoundref="complexe_8cpp" startline="147" endline="153">sinus</referencedby>
+        <referencedby refid="class_complexe_1a5b659cad17efee687fb8a889aef5da09" compoundref="complexe_8cpp" startline="155" endline="161">cosinus</referencedby>
+        <referencedby refid="class_complexe_1a221161f63e9176b49eb74de70ef73d78" compoundref="complexe_8cpp" startline="163" endline="169">sinush</referencedby>
+        <referencedby refid="class_complexe_1a356e44404acabb3e6bd8228f746fc3f5" compoundref="complexe_8cpp" startline="171" endline="177">cosinush</referencedby>
+        <referencedby refid="class_complexe_1a7602a9b9ca6e17445207b3632ceba643" compoundref="complexe_8cpp" startline="179" endline="185">tangente</referencedby>
+        <referencedby refid="class_complexe_1a649a2ad523bfe715950e2e0f3b28213d" compoundref="complexe_8cpp" startline="187" endline="193">tangenteh</referencedby>
+        <referencedby refid="class_complexe_1ab7d41a46e8467b819afa76f658a12c01" compoundref="complexe_8cpp" startline="216" endline="222">racine</referencedby>
+        <referencedby refid="class_complexe_1aaebd8e53e61cdea5504fc8f9fa5d2523" compoundref="complexe_8cpp" startline="224" endline="230">puissance</referencedby>
+        <referencedby refid="class_complexe_1a8adb5d883810b1fdbcfa230f32100408" compoundref="complexe_8cpp" startline="232" endline="238">logN</referencedby>
+        <referencedby refid="class_complexe_1ada2cd39fae72dcf78fac8b361072b4e1" compoundref="complexe_8cpp" startline="240" endline="246">log1</referencedby>
+        <referencedby refid="class_entier_1a94158ae6fbad4c9a74815716f5f0f629" compoundref="entier_8cpp" startline="9" endline="38">Entier::Entier</referencedby>
+        <referencedby refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel::Rationnel</referencedby>
+        <referencedby refid="class_reel_1a02f5d2d30d048ae139b1d8112f6c6f9a" compoundref="reel_8cpp" startline="21" endline="50">Reel::Reel</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Complexe::addition</definition>
         <argsstring>(Constante *c)</argsstring>
         <name>addition</name>
-        <reimplements refid="class_constante_1a580f4535e16d4c9331da85750be6e5ad">addition</reimplements>
+        <reimplements refid="class_constante_1a243b6eabd1fd476af827c5b523cddfac">addition</reimplements>
         <param>
           <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
           <declname>c</declname>
@@ -173,15 +278,26 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="26" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="54" bodyend="65"/>
+<para>Addition de 2 complexes</para><para>On crée 3 complexes : <emphasis>c_entier</emphasis>, construit à partir du paramètre, <emphasis>re</emphasis>, qui est l&apos;addition des 2 parties réelles et <emphasis>im</emphasis>, qui est l&apos;addition des 2 parties imaginaires <simplesect kind="return"><para>Une <emphasis><ref refid="class_constante" kindref="compound">Constante</ref></emphasis>, qui est en fait un <emphasis><ref refid="class_complexe" kindref="compound">Complexe</ref></emphasis>, dont la partie imaginaire est <emphasis>re</emphasis> et la partie imaginaire <emphasis>im</emphasis>.</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="41" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="73" bodyend="86"/>
+        <references refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" compoundref="complexe_8h" startline="26" endline="26">Complexe</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" compoundref="complexe_8h" startline="31" endline="31">getPartieImaginaire</references>
+        <references refid="class_constante_1a243b6eabd1fd476af827c5b523cddfac" compoundref="constante_8h" startline="35" endline="35">Constante::addition</references>
+        <referencedby refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" compoundref="complexe_8cpp" startline="88" endline="101">produit</referencedby>
+        <referencedby refid="class_complexe_1a07d706446560190792339549752f9ea3" compoundref="complexe_8cpp" startline="127" endline="136">soustraction</referencedby>
+        <referencedby refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" compoundref="complexe_8cpp" startline="196" endline="202">inv</referencedby>
+        <referencedby refid="class_entier_1ab093dd3f0aa7777c4300362f7ba78ff4" compoundref="entier_8cpp" startline="40" endline="63">Entier::addition</referencedby>
+        <referencedby refid="class_rationnel_1a4dc6b238834ace05451e69ea2bb6d02a" compoundref="rationnel_8cpp" startline="112" endline="138">Rationnel::addition</referencedby>
+        <referencedby refid="class_reel_1a916d41fd6be293e13db43ef0a7866f40" compoundref="reel_8cpp" startline="52" endline="75">Reel::addition</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Complexe::produit</definition>
         <argsstring>(Constante *c)</argsstring>
         <name>produit</name>
-        <reimplements refid="class_constante_1ad805854dd4e53f0ef5b2d482398b682a">produit</reimplements>
+        <reimplements refid="class_constante_1a650e88b74d2f8a052e6a11363b3ec816">produit</reimplements>
         <param>
           <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
           <declname>c</declname>
@@ -191,15 +307,29 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="27" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="67" bodyend="77"/>
+<para>Produit de 2 complexes</para><para>Comme pour l&apos;addition, on crée trois complexes. Cette fois, <emphasis>re</emphasis> est le produit des parties réelles, de la forme a*c - b*d, et <emphasis>im</emphasis> est le produit des parties imaginaires, de la forme a*d + c*b. <simplesect kind="return"><para>Un <emphasis><ref refid="class_complexe" kindref="compound">Complexe</ref></emphasis> comme pour l&apos;addition</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="42" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="88" bodyend="101"/>
+        <references refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" compoundref="complexe_8h" startline="26" endline="26">Complexe</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_complexe_1a07d706446560190792339549752f9ea3" compoundref="complexe_8cpp" startline="127" endline="136">soustraction</references>
+        <references refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" compoundref="complexe_8h" startline="31" endline="31">getPartieImaginaire</references>
+        <references refid="class_constante_1a650e88b74d2f8a052e6a11363b3ec816" compoundref="constante_8h" startline="36" endline="36">Constante::produit</references>
+        <references refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" compoundref="complexe_8cpp" startline="73" endline="86">addition</references>
+        <referencedby refid="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8" compoundref="complexe_8cpp" startline="103" endline="113">division</referencedby>
+        <referencedby refid="class_complexe_1a97bb77958c4012ed113c54f895f91e85" compoundref="complexe_8cpp" startline="115" endline="125">signe</referencedby>
+        <referencedby refid="class_complexe_1a7bbaa8c8695253acb93eb91eb1bd51c0" compoundref="complexe_8cpp" startline="204" endline="208">carre</referencedby>
+        <referencedby refid="class_complexe_1a7026e226db2bb64a1ca5c014fa8b6f43" compoundref="complexe_8cpp" startline="210" endline="214">cube</referencedby>
+        <referencedby refid="class_entier_1aa83349a1b984adbd53766ebac2614faf" compoundref="entier_8cpp" startline="65" endline="91">Entier::produit</referencedby>
+        <referencedby refid="class_rationnel_1aa1a21dae65f5fb48c56a376aea420bd6" compoundref="rationnel_8cpp" startline="140" endline="164">Rationnel::produit</referencedby>
+        <referencedby refid="class_reel_1ad87571a6e4d315eef54b55e6ded1f8f5" compoundref="reel_8cpp" startline="77" endline="101">Reel::produit</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Complexe::division</definition>
         <argsstring>(Constante *c)</argsstring>
         <name>division</name>
-        <reimplements refid="class_constante_1ab9b969ad6ad0d8463d44a1273667ee79">division</reimplements>
+        <reimplements refid="class_constante_1ac41fa56ac5ebdfbcc886b8d249fb876d">division</reimplements>
         <param>
           <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
           <declname>c</declname>
@@ -209,29 +339,270 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="79" bodyend="99"/>
+<para>Division de 2 complexes</para><para>On utilise la multiplication par le conjuguÃ© du diviseur au numÃ©rateur et au dÃ©nominateur a+ib / c+id = (a+ib)*(c-id) / (c+id)*(c-id) = ... = [(ac+bd)/(cÂ²+dÂ²)] + i[(cb-ad)/(cÂ²+dÂ²)] <simplesect kind="return"><para>Un <emphasis><ref refid="class_complexe" kindref="compound">Complexe</ref></emphasis> comme pour les autres opérations</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="43" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="103" bodyend="113"/>
+        <references refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" compoundref="complexe_8cpp" startline="88" endline="101">produit</references>
+        <references refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" compoundref="complexe_8cpp" startline="196" endline="202">inv</references>
+        <referencedby refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" compoundref="complexe_8cpp" startline="196" endline="202">inv</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_complexe_1a97bb77958c4012ed113c54f895f91e85" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Complexe::signe</definition>
         <argsstring>()</argsstring>
         <name>signe</name>
-        <reimplements refid="class_constante_1a1c6f79dbc7623529ee4fd5ae9c556b45">signe</reimplements>
+        <reimplements refid="class_constante_1a59fcc22949ea02eb02244dad693696aa">signe</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="29" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="101" bodyend="110"/>
+<para>Changement de signe</para><para>On recopie tout d&apos;abord la constante, qu&apos;on caste ensuite en complexe. On crée un entier de valeur -1 qu&apos;on va multiplier avec les parties réelles et imaginaires de 2 nouveaux complexes qui servent temporairement pour ensuite modifier la valeur du complexe initial <simplesect kind="return"><para>Le nouveau <emphasis><ref refid="class_complexe" kindref="compound">Complexe</ref></emphasis> </para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="44" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="115" bodyend="125"/>
+        <references refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" compoundref="complexe_8h" startline="26" endline="26">Complexe</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" compoundref="complexe_8cpp" startline="88" endline="101">produit</references>
+        <references refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" compoundref="complexe_8h" startline="31" endline="31">getPartieImaginaire</references>
+        <referencedby refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" compoundref="complexe_8cpp" startline="196" endline="202">inv</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_complexe_1a07d706446560190792339549752f9ea3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Complexe::soustraction</definition>
         <argsstring>(Constante *c)</argsstring>
         <name>soustraction</name>
-        <reimplements refid="class_constante_1ad1df4970f093fdb4235d4945ec2dbf12">soustraction</reimplements>
+        <reimplements refid="class_constante_1a3f3e5ad91d9e4eef33a5e6955fe91cb5">soustraction</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Différence de deux complexes</para><para>De la même façon, cette fois <emphasis>re</emphasis> va être la différence des 2 parties réelles, et <emphasis>im</emphasis> la différence des parties imaginaires. <simplesect kind="return"><para>Un <emphasis><ref refid="class_complexe" kindref="compound">Complexe</ref></emphasis> dont la partie réelle est <emphasis>re</emphasis> et la partie imaginaire est <emphasis>im</emphasis>.</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="45" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="127" bodyend="136"/>
+        <references refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" compoundref="complexe_8cpp" startline="73" endline="86">addition</references>
+        <references refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" compoundref="complexe_8cpp" startline="196" endline="202">inv</references>
+        <referencedby refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" compoundref="complexe_8cpp" startline="88" endline="101">produit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::inv</definition>
+        <argsstring>()</argsstring>
+        <name>inv</name>
+        <reimplements refid="class_constante_1a5ea6dd472ce568576961fa78b3b674b5">inv</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="46" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="196" bodyend="202"/>
+        <references refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" compoundref="complexe_8h" startline="26" endline="26">Complexe</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8" compoundref="complexe_8cpp" startline="103" endline="113">division</references>
+        <references refid="class_complexe_1a7bbaa8c8695253acb93eb91eb1bd51c0" compoundref="complexe_8cpp" startline="204" endline="208">carre</references>
+        <references refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" compoundref="complexe_8cpp" startline="73" endline="86">addition</references>
+        <references refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" compoundref="complexe_8h" startline="31" endline="31">getPartieImaginaire</references>
+        <references refid="class_complexe_1a97bb77958c4012ed113c54f895f91e85" compoundref="complexe_8cpp" startline="115" endline="125">signe</references>
+        <referencedby refid="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8" compoundref="complexe_8cpp" startline="103" endline="113">division</referencedby>
+        <referencedby refid="class_complexe_1a07d706446560190792339549752f9ea3" compoundref="complexe_8cpp" startline="127" endline="136">soustraction</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a0b0532339249783cee39f28670bb7504" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::fact</definition>
+        <argsstring>()</argsstring>
+        <name>fact</name>
+        <reimplements refid="class_constante_1a96e23d33bd45f79589f8911473ef2e32">fact</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="47" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="139" bodyend="145"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">reel_pur</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_constante_1a96e23d33bd45f79589f8911473ef2e32" compoundref="constante_8h" startline="42" endline="42">Constante::fact</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a58574399ad50181f94c8f167916b9db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::sinus</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>sinus</name>
+        <reimplements refid="class_constante_1a3b6827eba7936c4ce61f64da9dd826b4">sinus</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="48" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="147" bodyend="153"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">reel_pur</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_constante_1a3b6827eba7936c4ce61f64da9dd826b4" compoundref="constante_8h" startline="43" endline="43">Constante::sinus</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a5b659cad17efee687fb8a889aef5da09" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::cosinus</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>cosinus</name>
+        <reimplements refid="class_constante_1af6784ed749b7f2be92d6017628e5b935">cosinus</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="49" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="155" bodyend="161"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">reel_pur</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_constante_1af6784ed749b7f2be92d6017628e5b935" compoundref="constante_8h" startline="44" endline="44">Constante::cosinus</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a221161f63e9176b49eb74de70ef73d78" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::sinush</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>sinush</name>
+        <reimplements refid="class_constante_1a101b4506f71295a23c764d34b7f7ecfb">sinush</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="50" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="163" bodyend="169"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">reel_pur</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_constante_1a101b4506f71295a23c764d34b7f7ecfb" compoundref="constante_8h" startline="45" endline="45">Constante::sinush</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a356e44404acabb3e6bd8228f746fc3f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::cosinush</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>cosinush</name>
+        <reimplements refid="class_constante_1a0b1cbba53e1112aa65a081ae6231acb5">cosinush</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="51" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="171" bodyend="177"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">reel_pur</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_constante_1a0b1cbba53e1112aa65a081ae6231acb5" compoundref="constante_8h" startline="46" endline="46">Constante::cosinush</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a7602a9b9ca6e17445207b3632ceba643" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::tangente</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>tangente</name>
+        <reimplements refid="class_constante_1a51bffad2fa33a397de6ed422a621b1a1">tangente</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="52" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="179" bodyend="185"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">reel_pur</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_constante_1a51bffad2fa33a397de6ed422a621b1a1" compoundref="constante_8h" startline="47" endline="47">Constante::tangente</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a649a2ad523bfe715950e2e0f3b28213d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::tangenteh</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>tangenteh</name>
+        <reimplements refid="class_constante_1a6f5f971e61ac831355f1182289c3952f">tangenteh</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="53" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="187" bodyend="193"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">reel_pur</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_constante_1a6f5f971e61ac831355f1182289c3952f" compoundref="constante_8h" startline="48" endline="48">Constante::tangenteh</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1a8adb5d883810b1fdbcfa230f32100408" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::logN</definition>
+        <argsstring>()</argsstring>
+        <name>logN</name>
+        <reimplements refid="class_constante_1aa28e3269159806101c2ac0d09c036c2c">logN</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="54" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="232" bodyend="238"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">reel_pur</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_constante_1aa28e3269159806101c2ac0d09c036c2c" compoundref="constante_8h" startline="49" endline="49">Constante::logN</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1ada2cd39fae72dcf78fac8b361072b4e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::log1</definition>
+        <argsstring>()</argsstring>
+        <name>log1</name>
+        <reimplements refid="class_constante_1aad178503c937682acd3c9f19aec37dc6">log1</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="55" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="240" bodyend="246"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">reel_pur</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_constante_1aad178503c937682acd3c9f19aec37dc6" compoundref="constante_8h" startline="50" endline="50">Constante::log1</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_complexe_1aaebd8e53e61cdea5504fc8f9fa5d2523" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Complexe::puissance</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>puissance</name>
+        <reimplements refid="class_constante_1a2ed5e0a77fb7766fbce6abb4ebd0b01e">puissance</reimplements>
         <param>
           <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
           <declname>c</declname>
@@ -242,49 +613,62 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="30" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="112" bodyend="123"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="56" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="224" bodyend="230"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">reel_pur</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_constante_1a2ed5e0a77fb7766fbce6abb4ebd0b01e" compoundref="constante_8h" startline="51" endline="51">Constante::puissance</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
       </memberdef>
-      <memberdef kind="function" id="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="class_complexe_1a7bbaa8c8695253acb93eb91eb1bd51c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
-        <definition>Constante * Complexe::inv</definition>
+        <definition>Constante * Complexe::carre</definition>
         <argsstring>()</argsstring>
-        <name>inv</name>
-        <reimplements refid="class_constante_1a63d03e59594b74aa2fbc35f559b0ad46">inv</reimplements>
+        <name>carre</name>
+        <reimplements refid="class_constante_1af8029cf3c52e8fdadeb21647ee9591f3">carre</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="31" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="138" bodyend="143"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="57" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="204" bodyend="208"/>
+        <references refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" compoundref="complexe_8h" startline="26" endline="26">Complexe</references>
+        <references refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" compoundref="complexe_8cpp" startline="88" endline="101">produit</references>
+        <referencedby refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" compoundref="complexe_8cpp" startline="196" endline="202">inv</referencedby>
       </memberdef>
-      <memberdef kind="function" id="class_complexe_1a0b0532339249783cee39f28670bb7504" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="class_complexe_1a7026e226db2bb64a1ca5c014fa8b6f43" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
-        <definition>Constante * Complexe::fact</definition>
+        <definition>Constante * Complexe::cube</definition>
         <argsstring>()</argsstring>
-        <name>fact</name>
-        <reimplements refid="class_constante_1a57dafd18c718935af9f97dcbb8de9ad9">fact</reimplements>
+        <name>cube</name>
+        <reimplements refid="class_constante_1a4590414eecfb9e739194a321a73c7931">cube</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="32" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="126" bodyend="130"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="58" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="210" bodyend="214"/>
+        <references refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" compoundref="complexe_8h" startline="26" endline="26">Complexe</references>
+        <references refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" compoundref="complexe_8cpp" startline="88" endline="101">produit</references>
       </memberdef>
-      <memberdef kind="function" id="class_complexe_1ab4fdc60272bd80f1df8f8c1c29c11813" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="class_complexe_1ab7d41a46e8467b819afa76f658a12c01" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
-        <definition>Constante * Complexe::sinus</definition>
+        <definition>Constante * Complexe::racine</definition>
         <argsstring>()</argsstring>
-        <name>sinus</name>
-        <reimplements refid="class_constante_1ad1a0ed2f6f6e9c3e7fc3f0c4ffaeaa76">sinus</reimplements>
+        <name>racine</name>
+        <reimplements refid="class_constante_1a57604347a44e29f6aa7e36a045b4df1c">racine</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp" bodystart="132" bodyend="136"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="59" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" bodystart="216" bodyend="222"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">reel_pur</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">getPartieReelle</references>
+        <references refid="class_constante_1a57604347a44e29f6aa7e36a045b4df1c" compoundref="constante_8h" startline="54" endline="54">Constante::racine</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -292,56 +676,63 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="56">
+      <node id="46">
         <label>Complexe</label>
         <link refid="class_complexe"/>
-        <childnode refid="57" relation="public-inheritance">
+        <childnode refid="47" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="57">
+      <node id="47">
         <label>Constante</label>
         <link refid="class_constante"/>
       </node>
-      <node id="58">
-        <label>FrabriqueComplexe</label>
-        <link refid="class_frabrique_complexe"/>
-        <childnode refid="56" relation="public-inheritance">
-        </childnode>
-      </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="59">
+      <node id="48">
         <label>Complexe</label>
         <link refid="class_complexe"/>
-        <childnode refid="60" relation="public-inheritance">
+        <childnode refid="49" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="60">
+      <node id="49">
         <label>Constante</label>
         <link refid="class_constante"/>
       </node>
     </collaborationgraph>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" line="7" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.h" bodystart="7" bodyend="34"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" line="20" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h" bodystart="20" bodyend="60"/>
     <listofallmembers>
       <member refid="class_complexe_1a355a9945817c7654ba2e435c4c68bf5d" prot="private" virt="non-virtual"><scope>Complexe</scope><name>_imaginaire</name></member>
       <member refid="class_complexe_1ace5b7bcc0e61764510a46e3ae84a098d" prot="private" virt="non-virtual"><scope>Complexe</scope><name>_reelle</name></member>
       <member refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" prot="public" virt="virtual"><scope>Complexe</scope><name>addition</name></member>
       <member refid="class_complexe_1a5141b5b092f78c06f60013e911ba4440" prot="public" virt="virtual"><scope>Complexe</scope><name>afficher</name></member>
+      <member refid="class_complexe_1a7bbaa8c8695253acb93eb91eb1bd51c0" prot="public" virt="virtual"><scope>Complexe</scope><name>carre</name></member>
       <member refid="class_complexe_1af2cec56db6fdf59ed5ec761ffd4e1608" prot="public" virt="non-virtual"><scope>Complexe</scope><name>Complexe</name></member>
       <member refid="class_complexe_1ae19286bc2c8f360e3fbc0d65526564d3" prot="public" virt="non-virtual"><scope>Complexe</scope><name>Complexe</name></member>
       <member refid="class_complexe_1ac00d0b5ba1dea7d67c43d257e48fd7b5" prot="public" virt="non-virtual"><scope>Complexe</scope><name>Complexe</name></member>
+      <member refid="class_complexe_1a5b659cad17efee687fb8a889aef5da09" prot="public" virt="virtual"><scope>Complexe</scope><name>cosinus</name></member>
+      <member refid="class_complexe_1a356e44404acabb3e6bd8228f746fc3f5" prot="public" virt="virtual"><scope>Complexe</scope><name>cosinush</name></member>
+      <member refid="class_complexe_1a7026e226db2bb64a1ca5c014fa8b6f43" prot="public" virt="virtual"><scope>Complexe</scope><name>cube</name></member>
       <member refid="class_complexe_1a1a2f7b85999d542ebff0a9c0d082c1c8" prot="public" virt="virtual"><scope>Complexe</scope><name>division</name></member>
       <member refid="class_complexe_1a0b0532339249783cee39f28670bb7504" prot="public" virt="virtual"><scope>Complexe</scope><name>fact</name></member>
       <member refid="class_complexe_1a9e3e38b5362dd83812da9235594d1fcc" prot="public" virt="non-virtual"><scope>Complexe</scope><name>getPartieImaginaire</name></member>
       <member refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" prot="public" virt="non-virtual"><scope>Complexe</scope><name>getPartieReelle</name></member>
       <member refid="class_complexe_1afb48ef33e0289c8f05a959f83d9ec621" prot="public" virt="virtual"><scope>Complexe</scope><name>inv</name></member>
+      <member refid="class_complexe_1ada2cd39fae72dcf78fac8b361072b4e1" prot="public" virt="virtual"><scope>Complexe</scope><name>log1</name></member>
+      <member refid="class_complexe_1a8adb5d883810b1fdbcfa230f32100408" prot="public" virt="virtual"><scope>Complexe</scope><name>logN</name></member>
       <member refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" prot="public" virt="virtual"><scope>Complexe</scope><name>produit</name></member>
+      <member refid="class_complexe_1aaebd8e53e61cdea5504fc8f9fa5d2523" prot="public" virt="virtual"><scope>Complexe</scope><name>puissance</name></member>
+      <member refid="class_complexe_1ab7d41a46e8467b819afa76f658a12c01" prot="public" virt="virtual"><scope>Complexe</scope><name>racine</name></member>
       <member refid="class_constante_1ac6fb071229429f82cf489f8313461efa" prot="public" virt="non-virtual"><scope>Complexe</scope><name>recopie</name></member>
+      <member refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" prot="public" virt="non-virtual"><scope>Complexe</scope><name>reel_pur</name></member>
       <member refid="class_complexe_1a2335ce4c53e2b11d4fa4bcbef45415ba" prot="public" virt="non-virtual"><scope>Complexe</scope><name>setImaginaire</name></member>
       <member refid="class_complexe_1a7e57ea7cf760e132c80a148e2c344cce" prot="public" virt="non-virtual"><scope>Complexe</scope><name>setReelle</name></member>
       <member refid="class_complexe_1a97bb77958c4012ed113c54f895f91e85" prot="public" virt="virtual"><scope>Complexe</scope><name>signe</name></member>
-      <member refid="class_complexe_1ab4fdc60272bd80f1df8f8c1c29c11813" prot="public" virt="virtual"><scope>Complexe</scope><name>sinus</name></member>
+      <member refid="class_complexe_1a58574399ad50181f94c8f167916b9db9" prot="public" virt="virtual"><scope>Complexe</scope><name>sinus</name></member>
+      <member refid="class_complexe_1a221161f63e9176b49eb74de70ef73d78" prot="public" virt="virtual"><scope>Complexe</scope><name>sinush</name></member>
       <member refid="class_complexe_1a07d706446560190792339549752f9ea3" prot="public" virt="virtual"><scope>Complexe</scope><name>soustraction</name></member>
+      <member refid="class_complexe_1a7602a9b9ca6e17445207b3632ceba643" prot="public" virt="virtual"><scope>Complexe</scope><name>tangente</name></member>
+      <member refid="class_complexe_1a649a2ad523bfe715950e2e0f3b28213d" prot="public" virt="virtual"><scope>Complexe</scope><name>tangenteh</name></member>
+      <member refid="class_complexe_1ac92996231047d39d40e11384bb9311b6" prot="public" virt="virtual"><scope>Complexe</scope><name>~Complexe</name></member>
       <member refid="class_constante_1af747f270ad3d50813786a1b013bac959" prot="public" virt="virtual"><scope>Complexe</scope><name>~Constante</name></member>
     </listofallmembers>
   </compounddef>

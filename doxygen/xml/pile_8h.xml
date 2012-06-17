@@ -8,105 +8,167 @@
     <includes refid="constante_8h" local="yes">constante.h</includes>
     <includes refid="complexe_8h" local="yes">complexe.h</includes>
     <includes refid="rationnel_8h" local="yes">rationnel.h</includes>
-    <includedby refid="calculatrice_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h</includedby>
-    <includedby refid="mainwindow_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h</includedby>
-    <includedby refid="main_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/main.cpp</includedby>
-    <includedby refid="mainwindow_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp</includedby>
-    <includedby refid="moc__pile_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/moc_pile.cpp</includedby>
-    <includedby refid="pile_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.cpp</includedby>
+    <includedby refid="calculatrice_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h</includedby>
+    <includedby refid="mainwindow_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/main.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp</includedby>
+    <includedby refid="moc__pile_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/moc_pile.cpp</includedby>
+    <includedby refid="pile_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp</includedby>
     <incdepgraph>
-      <node id="342">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h</label>
+      <node id="871">
+        <label>rationnel.h</label>
+        <link refid="rationnel_8h"/>
+        <childnode refid="864" relation="include">
+        </childnode>
+        <childnode refid="861" relation="include">
+        </childnode>
+        <childnode refid="866" relation="include">
+        </childnode>
+        <childnode refid="867" relation="include">
+        </childnode>
+      </node>
+      <node id="860">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h</label>
         <link refid="pile.h"/>
-        <childnode refid="343" relation="include">
+        <childnode refid="861" relation="include">
         </childnode>
-        <childnode refid="344" relation="include">
+        <childnode refid="862" relation="include">
         </childnode>
-        <childnode refid="345" relation="include">
+        <childnode refid="863" relation="include">
         </childnode>
-        <childnode refid="346" relation="include">
+        <childnode refid="864" relation="include">
         </childnode>
-        <childnode refid="348" relation="include">
+        <childnode refid="869" relation="include">
         </childnode>
-        <childnode refid="350" relation="include">
+        <childnode refid="871" relation="include">
         </childnode>
       </node>
-      <node id="351">
+      <node id="866">
         <label>logmessage.h</label>
-        <link refid="logmessage_8h_source"/>
-        <childnode refid="347" relation="include">
+        <link refid="logmessage_8h"/>
+        <childnode refid="865" relation="include">
         </childnode>
-        <childnode refid="352" relation="include">
+        <childnode refid="867" relation="include">
         </childnode>
       </node>
-      <node id="352">
+      <node id="867">
         <label>exception</label>
       </node>
-      <node id="349">
-        <label>entier.h</label>
-        <link refid="entier_8h"/>
-        <childnode refid="346" relation="include">
-        </childnode>
-      </node>
-      <node id="345">
+      <node id="863">
         <label>vector</label>
       </node>
-      <node id="344">
+      <node id="862">
         <label>stack</label>
       </node>
-      <node id="348">
+      <node id="869">
         <label>complexe.h</label>
-        <link refid="complexe_8h_source"/>
-        <childnode refid="346" relation="include">
+        <link refid="complexe_8h"/>
+        <childnode refid="864" relation="include">
         </childnode>
-        <childnode refid="349" relation="include">
+        <childnode refid="870" relation="include">
         </childnode>
       </node>
-      <node id="343">
+      <node id="868">
+        <label>logsystem.h</label>
+        <link refid="logsystem_8h"/>
+        <childnode refid="866" relation="include">
+        </childnode>
+        <childnode refid="861" relation="include">
+        </childnode>
+      </node>
+      <node id="861">
         <label>iostream</label>
       </node>
-      <node id="350">
-        <label>rationnel.h</label>
-        <link refid="rationnel_8h_source"/>
-        <childnode refid="346" relation="include">
-        </childnode>
-        <childnode refid="343" relation="include">
-        </childnode>
-        <childnode refid="351" relation="include">
-        </childnode>
-        <childnode refid="352" relation="include">
+      <node id="865">
+        <label>QtGui</label>
+      </node>
+      <node id="870">
+        <label>entier.h</label>
+        <link refid="entier_8h"/>
+        <childnode refid="864" relation="include">
         </childnode>
       </node>
-      <node id="346">
+      <node id="864">
         <label>constante.h</label>
         <link refid="constante_8h"/>
-        <childnode refid="343" relation="include">
+        <childnode refid="861" relation="include">
         </childnode>
-        <childnode refid="347" relation="include">
+        <childnode refid="865" relation="include">
         </childnode>
-      </node>
-      <node id="347">
-        <label>QtGui</label>
+        <childnode refid="866" relation="include">
+        </childnode>
+        <childnode refid="868" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="353">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h</label>
-        <link refid="pile.h"/>
-        <childnode refid="354" relation="include">
+      <node id="878">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="873" relation="include">
         </childnode>
-        <childnode refid="355" relation="include">
+        <childnode refid="879" relation="include">
         </childnode>
-      </node>
-      <node id="355">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h</label>
-        <link refid="mainwindow_8h_source"/>
-        <childnode refid="354" relation="include">
+        <childnode refid="875" relation="include">
+        </childnode>
+        <childnode refid="880" relation="include">
         </childnode>
       </node>
-      <node id="354">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h</label>
+      <node id="875">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="873">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h</label>
         <link refid="calculatrice_8h"/>
+        <childnode refid="874" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+        <childnode refid="876" relation="include">
+        </childnode>
+        <childnode refid="877" relation="include">
+        </childnode>
+      </node>
+      <node id="877">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp</label>
+        <link refid="rationnel_8cpp"/>
+      </node>
+      <node id="872">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h</label>
+        <link refid="pile.h"/>
+        <childnode refid="873" relation="include">
+        </childnode>
+        <childnode refid="878" relation="include">
+        </childnode>
+        <childnode refid="879" relation="include">
+        </childnode>
+        <childnode refid="875" relation="include">
+        </childnode>
+        <childnode refid="881" relation="include">
+        </childnode>
+        <childnode refid="876" relation="include">
+        </childnode>
+      </node>
+      <node id="880">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/moc_mainwindow.cpp</label>
+        <link refid="moc__mainwindow_8cpp"/>
+      </node>
+      <node id="876">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp</label>
+        <link refid="pile_8cpp"/>
+      </node>
+      <node id="879">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="874">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp</label>
+        <link refid="calculatrice_8cpp"/>
+      </node>
+      <node id="881">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/moc_pile.cpp</label>
+        <link refid="moc__pile_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_pile" prot="public">Pile</innerclass>
@@ -120,42 +182,46 @@
 <codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stack&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="constante_8h" kindref="compound" tooltip="Calculatrice en polonais inversé. Classe de la GUI QT-MainWindow.">constante.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;complexe.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rationnel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="constante_8h" kindref="compound" tooltip="Calculatrice en polonais inversé. Classe composite de gestion des constantes.">constante.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="complexe_8h" kindref="compound" tooltip="Calculatrice en polonais inversé. Classe composite de gestion des complexes.">complexe.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rationnel_8h" kindref="compound">rationnel.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10" refid="class_pile" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_pile" kindref="compound">Pile</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QAbstractListModel</highlight></codeline>
 <codeline lineno="11"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//http://www.java2s.com/Code/Cpp/Qt/stringlistmodelexample.htm</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//http://www.developpez.net/forums/d414542/c-cpp/bibliotheques/qt/qabstractitemmodel-qlistview/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;Constante*&gt;<sp/>p;</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>pop();</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>top(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p.at(0);}</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>push(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>ptr);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isEmpty()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p.isEmpty();}</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p.size();}</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pile" kindref="compound">Pile</ref>(QObject<sp/>*parent<sp/>=<sp/>0):QAbstractListModel(parent){};</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_pile" kindref="compound">Pile</ref>();</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>sum(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x=2);</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>afficher()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//surcharge<sp/>des<sp/>fonctions<sp/>virtuelles<sp/>pures<sp/>de<sp/>QAbstractItemModel</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rowCount(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex<sp/>&amp;parent)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariant<sp/>data(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex<sp/>&amp;index,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>role)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>QList&lt;Constante*&gt;<sp/>p;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_pile_1a2bbdc329f485cd017f8cbf88456ae68a" kindref="member">pop</ref>();</highlight></codeline>
+<codeline lineno="19" refid="class_pile_1a25c322d47a76d758565bdf9df2253411" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_pile_1a25c322d47a76d758565bdf9df2253411" kindref="member">top</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p.at(0);}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pile_1a18a4d9a9b8013b36a5423817f9fb9049" kindref="member">push</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>ptr);</highlight></codeline>
+<codeline lineno="21" refid="class_pile_1ae45e55f151180284728643cb9cfe4095" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_pile_1ae45e55f151180284728643cb9cfe4095" kindref="member">isEmpty</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p.isEmpty();}</highlight></codeline>
+<codeline lineno="22" refid="class_pile_1aaae1107e877f7094bdbd97839c731634" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_pile_1aaae1107e877f7094bdbd97839c731634" kindref="member">size</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p.size();}</highlight></codeline>
+<codeline lineno="23" refid="class_pile_1a07d95a908492bd45d1ac105aa78f9dcd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pile_1a07d95a908492bd45d1ac105aa78f9dcd" kindref="member">Pile</ref>(QObject<sp/>*parent<sp/>=<sp/>0):QAbstractListModel(parent){};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_pile_1ab2d1398d675586ff34994e2b109df152" kindref="member">~Pile</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_pile_1a91875101e0976f054d1db8869a00b11d" kindref="member">sum</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x=2);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_pile_1a312bdfd2e167615c8d7f11adb2e639ed" kindref="member">mean</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x=2);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pile_1aa3991438f190580607d7bbbd50ecc0c3" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pile_1a081f7843d01cae1f0f7be7d92e46d5d2" kindref="member">dup</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pile_1a7488ed257c6ceb16ed57a9fffb0726d5" kindref="member">drop</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pile_1ab6c3f9840427e2be87e0d76c8697fff5" kindref="member">swap</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="class_pile_1a4964563804a254503d6413e5ba83d3c5" kindref="member">afficher</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pile" kindref="compound">Pile</ref>*<sp/><ref refid="class_pile_1a4be384a2c00fff0afed507231a2974dc" kindref="member">copier_pile</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pile_1a380c3a467b58c175aef4f2cdc0f7a2c7" kindref="member">sauv_pile_context</ref>();</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_pile" kindref="compound">Pile</ref>&amp;);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>PILE_H</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//surcharge<sp/>des<sp/>fonctions<sp/>virtuelles<sp/>pures<sp/>de<sp/>QAbstractItemModel<sp/>pour<sp/>la<sp/>MAJ<sp/>du<sp/>QListView</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_pile_1a44545327a8d02ad9775a2c918ea5cdfc" kindref="member">rowCount</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex<sp/>&amp;parent)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>QVariant<sp/><ref refid="class_pile_1ac9d6e388d3a98eb57a786f9bbec30952" kindref="member">data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>QModelIndex<sp/>&amp;index,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>role)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_pile_1a8d34708706c113ec9864f7c37c9083a2" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_pile" kindref="compound">Pile</ref>&amp;);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>PILE_H</highlight></codeline>
     </programlisting>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h"/>
   </compounddef>
 </doxygen>

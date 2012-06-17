@@ -3,111 +3,134 @@
   <compounddef id="calculatrice_8cpp" kind="file">
     <compoundname>calculatrice.cpp</compoundname>
     <includes refid="calculatrice_8h" local="yes">calculatrice.h</includes>
+    <includes local="no">QtGui</includes>
+    <includes refid="logmessage_8h" local="yes">logmessage.h</includes>
+    <includes refid="logsystem_8h" local="yes">logsystem.h</includes>
     <incdepgraph>
-      <node id="51">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.cpp</label>
-        <link refid="calculatrice.cpp"/>
-        <childnode refid="52" relation="include">
-        </childnode>
-      </node>
-      <node id="53">
-        <label>pile.h</label>
-        <link refid="pile_8h_source"/>
-        <childnode refid="54" relation="include">
-        </childnode>
-        <childnode refid="55" relation="include">
-        </childnode>
-        <childnode refid="56" relation="include">
-        </childnode>
-        <childnode refid="57" relation="include">
-        </childnode>
-        <childnode refid="59" relation="include">
-        </childnode>
-        <childnode refid="61" relation="include">
-        </childnode>
-      </node>
-      <node id="66">
-        <label>QStack</label>
-      </node>
-      <node id="62">
-        <label>logmessage.h</label>
-        <link refid="logmessage_8h_source"/>
-        <childnode refid="58" relation="include">
-        </childnode>
-        <childnode refid="63" relation="include">
-        </childnode>
-      </node>
-      <node id="65">
-        <label>QMainWindow</label>
-      </node>
-      <node id="64">
+      <node id="501">
         <label>mainwindow.h</label>
-        <link refid="mainwindow_8h_source"/>
-        <childnode refid="65" relation="include">
+        <link refid="mainwindow_8h"/>
+        <childnode refid="502" relation="include">
         </childnode>
-        <childnode refid="66" relation="include">
+        <childnode refid="503" relation="include">
         </childnode>
-        <childnode refid="53" relation="include">
-        </childnode>
-      </node>
-      <node id="63">
-        <label>exception</label>
-      </node>
-      <node id="60">
-        <label>entier.h</label>
-        <link refid="entier_8h"/>
-        <childnode refid="57" relation="include">
+        <childnode refid="489" relation="include">
         </childnode>
       </node>
-      <node id="56">
-        <label>vector</label>
-      </node>
-      <node id="55">
-        <label>stack</label>
-      </node>
-      <node id="59">
-        <label>complexe.h</label>
-        <link refid="complexe_8h_source"/>
-        <childnode refid="57" relation="include">
-        </childnode>
-        <childnode refid="60" relation="include">
-        </childnode>
-      </node>
-      <node id="54">
-        <label>iostream</label>
-      </node>
-      <node id="61">
+      <node id="500">
         <label>rationnel.h</label>
-        <link refid="rationnel_8h_source"/>
-        <childnode refid="57" relation="include">
+        <link refid="rationnel_8h"/>
+        <childnode refid="493" relation="include">
         </childnode>
-        <childnode refid="54" relation="include">
+        <childnode refid="490" relation="include">
         </childnode>
-        <childnode refid="62" relation="include">
+        <childnode refid="495" relation="include">
         </childnode>
-        <childnode refid="63" relation="include">
-        </childnode>
-      </node>
-      <node id="57">
-        <label>constante.h</label>
-        <link refid="constante_8h"/>
-        <childnode refid="54" relation="include">
-        </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="496" relation="include">
         </childnode>
       </node>
-      <node id="52">
+      <node id="488">
         <label>calculatrice.h</label>
         <link refid="calculatrice_8h"/>
-        <childnode refid="53" relation="include">
+        <childnode refid="489" relation="include">
         </childnode>
-        <childnode refid="57" relation="include">
+        <childnode refid="493" relation="include">
         </childnode>
-        <childnode refid="64" relation="include">
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="494" relation="include">
         </childnode>
       </node>
-      <node id="58">
+      <node id="503">
+        <label>QStack</label>
+      </node>
+      <node id="502">
+        <label>QMainWindow</label>
+      </node>
+      <node id="489">
+        <label>pile.h</label>
+        <link refid="pile_8h"/>
+        <childnode refid="490" relation="include">
+        </childnode>
+        <childnode refid="491" relation="include">
+        </childnode>
+        <childnode refid="492" relation="include">
+        </childnode>
+        <childnode refid="493" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+      </node>
+      <node id="495">
+        <label>logmessage.h</label>
+        <link refid="logmessage_8h"/>
+        <childnode refid="494" relation="include">
+        </childnode>
+        <childnode refid="496" relation="include">
+        </childnode>
+      </node>
+      <node id="496">
+        <label>exception</label>
+      </node>
+      <node id="492">
+        <label>vector</label>
+      </node>
+      <node id="491">
+        <label>stack</label>
+      </node>
+      <node id="498">
+        <label>complexe.h</label>
+        <link refid="complexe_8h"/>
+        <childnode refid="493" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+      </node>
+      <node id="487">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp</label>
+        <link refid="calculatrice.cpp"/>
+        <childnode refid="488" relation="include">
+        </childnode>
+        <childnode refid="494" relation="include">
+        </childnode>
+        <childnode refid="495" relation="include">
+        </childnode>
+        <childnode refid="497" relation="include">
+        </childnode>
+      </node>
+      <node id="497">
+        <label>logsystem.h</label>
+        <link refid="logsystem_8h"/>
+        <childnode refid="495" relation="include">
+        </childnode>
+        <childnode refid="490" relation="include">
+        </childnode>
+      </node>
+      <node id="490">
+        <label>iostream</label>
+      </node>
+      <node id="494">
         <label>QtGui</label>
+      </node>
+      <node id="499">
+        <label>entier.h</label>
+        <link refid="entier_8h"/>
+        <childnode refid="493" relation="include">
+        </childnode>
+      </node>
+      <node id="493">
+        <label>constante.h</label>
+        <link refid="constante_8h"/>
+        <childnode refid="490" relation="include">
+        </childnode>
+        <childnode refid="494" relation="include">
+        </childnode>
+        <childnode refid="495" relation="include">
+        </childnode>
+        <childnode refid="497" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <briefdescription>
@@ -116,23 +139,103 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="calculatrice_8h" kindref="compound" tooltip="Calculatrice en polonais inversé. Singleton de la calculatrice.">calculatrice.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref>*<sp/>Calculatrice::instance=0;</highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal">Calculatrice::~Calculatrice(){</highlight></codeline>
-<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal">Calculatrice::Calculatrice(){}</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref>&amp;<sp/>Calculatrice::getInstance(){</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!instance)<sp/>instance=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref>();</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*instance;</highlight></codeline>
-<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Calculatrice::libereInstance(){</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>instance;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logmessage_8h" kindref="compound">logmessage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logsystem_8h" kindref="compound">logsystem.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref>*<sp/>Calculatrice::instance=0;</highlight></codeline>
+<codeline lineno="12" refid="class_calculatrice_1acb4b6278eb955ce932e16df29276be52" refkind="member"><highlight class="normal"><ref refid="class_calculatrice_1acb4b6278eb955ce932e16df29276be52" kindref="member" tooltip="Dans un Singleton, nécessité d&amp;#39;avoir une instante de type static.">Calculatrice::~Calculatrice</ref>(){</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">Calculatrice::Calculatrice()<sp/>:<sp/>context(new<sp/>QSettings(&quot;context.ini&quot;,<sp/>QSettings::IniFormat))</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">{</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/><sp/><sp/>Historique.prepend(new<sp/>Pile);</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/><sp/><sp/>indice_pile_actuelle<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/>//CHARGEMENT<sp/>DE<sp/>LA<sp/>PILE</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>context-&gt;beginGroup(&quot;PileStockage&quot;);</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>QStringList<sp/>keys<sp/>=<sp/>context-&gt;allKeys();</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>taille<sp/>=<sp/>keys.size();</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(int<sp/>i=taille-1;<sp/>i&gt;=0;<sp/>i--){</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Constante*<sp/>tmp<sp/>=<sp/>stringToConstante(context-&gt;value(keys.at(i)).toString(),<sp/>true);</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;getPileStockage()-&gt;push(tmp);</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>for<sp/>(int<sp/>i=0;<sp/>i&lt;taille;<sp/>i++){</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>context-&gt;remove(keys.at(i));</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>context-&gt;endGroup();</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"></highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>LogMessage<sp/>msg(0,<sp/>&quot;Chargement<sp/>de<sp/>la<sp/>pile.&quot;,<sp/>tracabilite);</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>LogSystem::getInstance().ajouterFcihierEtConsole(msg);</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"></highlight></codeline>
+<codeline lineno="39"><highlight class="comment">}</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">*/</highlight></codeline>
+<codeline lineno="46" refid="class_calculatrice_1a01b91f69f7ac10d737af66b3fa968db9" refkind="member"><highlight class="normal"><ref refid="class_calculatrice_1a01b91f69f7ac10d737af66b3fa968db9" kindref="member" tooltip="Constructeur de la calculatrice.">Calculatrice::Calculatrice</ref>()<sp/>:<sp/>context(new<sp/>QSettings(</highlight><highlight class="stringliteral">&quot;context.ini&quot;</highlight><highlight class="normal">,<sp/>QSettings::IniFormat))</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>Historique.prepend(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_pile" kindref="compound">Pile</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>indice_pile_actuelle<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>_modComplexe<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//CHARGEMENT<sp/>DE<sp/>LA<sp/>PILE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>context-&gt;beginGroup(</highlight><highlight class="stringliteral">&quot;PileStockage&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>QStringList<sp/>keys<sp/>=<sp/>context-&gt;allKeys();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>taille<sp/>=<sp/>keys.size();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=taille-1;<sp/>i&gt;=0;<sp/>i--){</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>tmp<sp/>=<sp/><ref refid="mainwindow_8cpp_1a108d15359aba86f26b1bb30e7d0fd505" kindref="member">stringToConstante</ref>(context-&gt;value(keys.at(i)).toString(),<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" kindref="member">getPileStockage</ref>()-&gt;<ref refid="class_pile_1a18a4d9a9b8013b36a5423817f9fb9049" kindref="member">push</ref>(tmp);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;taille;<sp/>i++){</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>context-&gt;remove(keys.at(i));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>context-&gt;endGroup();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref><sp/>msg(0,<sp/></highlight><highlight class="stringliteral">&quot;Chargement<sp/>de<sp/>la<sp/>pile.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" kindref="member">tracabilite</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" kindref="member">LogSystem::getInstance</ref>().ajouterFcihierEtConsole(msg);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_calculatrice_1acc6b301035c21041dbd4ffb7f6f5645e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_calculatrice_1acc6b301035c21041dbd4ffb7f6f5645e" kindref="member">Calculatrice::saisie_nouvelle_pile</ref>(<ref refid="class_pile" kindref="compound">Pile</ref>*<sp/>nouvelle){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//on<sp/>enlève<sp/>tous<sp/>les<sp/>potentiels<sp/>redo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;indice_pile_actuelle;<sp/>i++){</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_pile" kindref="compound">Pile</ref>*<sp/>tmp<sp/>=<sp/>Historique.at(0);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Historique.removeAt(0);<sp/></highlight><highlight class="comment">//<sp/>ATTENTION<sp/>:<sp/>c&apos;est<sp/>bien<sp/>zéro<sp/>!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">(tmp);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//on<sp/>ajoute<sp/>le<sp/>nouvel<sp/>état<sp/>en<sp/>tête</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>Historique.prepend(nouvelle);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>indice_pile_actuelle<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_calculatrice_1ae04068faaa66847c3f318c018824a277" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_calculatrice_1ae04068faaa66847c3f318c018824a277" kindref="member">Calculatrice::annuler</ref>(){</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indice_pile_actuelle<sp/>!=<sp/>Historique.size()-1){</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indice_pile_actuelle++;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref><sp/>msg(0,<sp/></highlight><highlight class="stringliteral">&quot;Annulation.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" kindref="member">tracabilite</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" kindref="member">LogSystem::getInstance</ref>().ajouterFcihierEtConsole(msg);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="class_calculatrice_1ac9fea1beaab60d0c73c017a5d225a56c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_calculatrice_1ac9fea1beaab60d0c73c017a5d225a56c" kindref="member">Calculatrice::retablir</ref>(){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(indice_pile_actuelle<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>indice_pile_actuelle--;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref><sp/>msg(0,<sp/></highlight><highlight class="stringliteral">&quot;Retablissement.&quot;</highlight><highlight class="normal">,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" kindref="member">tracabilite</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" kindref="member">LogSystem::getInstance</ref>().ajouterFcihierEtConsole(msg);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="class_calculatrice_1a3558f924d00e69cbfbfd7b1ee6b088a3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_calculatrice_1a3558f924d00e69cbfbfd7b1ee6b088a3" kindref="member">Calculatrice::afficher_toutes_piles_hitorique</ref>(){</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;PILES<sp/>HISTORIQUES\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;Historique.size();<sp/>i++)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>qDebug()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;PILE<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>i<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>Historique.at(i)-&gt;afficher();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" refkind="member"><highlight class="normal"><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref>&amp;<sp/><ref refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" kindref="member">Calculatrice::getInstance</ref>(){</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!instance)<sp/>instance=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_calculatrice_1a01b91f69f7ac10d737af66b3fa968db9" kindref="member" tooltip="Constructeur de la calculatrice.">Calculatrice</ref>();</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*instance;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="class_calculatrice_1aa974f5b58c583ef3aaee055eac238466" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_calculatrice_1aa974f5b58c583ef3aaee055eac238466" kindref="member">Calculatrice::libereInstance</ref>(){</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>instance;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.cpp"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp"/>
   </compounddef>
 </doxygen>

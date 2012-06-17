@@ -1,11 +1,22 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$pile_8h_source.html" title="/home/yuntux/UTC/GI02/LO21/projet/lo21&#45;npi.2/pile.h" alt="" coords="90,237,421,267"/>
-<area shape="rect" id="node5" href="$calculatrice_8h.html" title="Calculatrice en polonais inversé. Singleton de la calculatrice." alt="" coords="46,392,422,421"/>
-<area shape="rect" id="node10" href="$complexe_8h_source.html" title="/home/yuntux/UTC/GI02/LO21/projet/lo21&#45;npi.2/complexe.h" alt="" coords="96,160,461,189"/>
-<area shape="rect" id="node13" href="$fonctions_8h.html" title="Calculatrice en polonais inversé. Fonctions outils diverses." alt="" coords="445,237,808,267"/>
-<area shape="rect" id="node15" href="$entier_8h.html" title="Calculatrice en polonais inversé. Classe Entier." alt="" coords="145,83,486,112"/>
-<area shape="rect" id="node18" href="$rationnel_8h_source.html" title="/home/yuntux/UTC/GI02/LO21/projet/lo21&#45;npi.2/rationnel.h" alt="" coords="510,83,870,112"/>
-<area shape="rect" id="node21" href="$reel_8h_source.html" title="/home/yuntux/UTC/GI02/LO21/projet/lo21&#45;npi.2/reel.h" alt="" coords="590,160,921,189"/>
-<area shape="rect" id="node26" href="$expression_8h_source.html" title="/home/yuntux/UTC/GI02/LO21/projet/lo21&#45;npi.2/expression.h" alt="" coords="996,83,1369,112"/>
-<area shape="rect" id="node7" href="$mainwindow_8h_source.html" title="/home/yuntux/UTC/GI02/LO21/projet/lo21&#45;npi.2/mainwindow.h" alt="" coords="44,315,425,344"/>
+<area shape="rect" id="node3" href="$pile_8h.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h" alt="" coords="899,237,1248,267"/>
+<area shape="rect" id="node5" href="$calculatrice_8h.html" title="Calculatrice en polonais inversé. Singleton de la calculatrice." alt="" coords="229,392,624,421"/>
+<area shape="rect" id="node28" href="$complexe_8h.html" title="Calculatrice en polonais inversé. Classe composite de gestion des complexes." alt="" coords="2335,160,2721,189"/>
+<area shape="rect" id="node33" href="$constante_8cpp.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.cpp" alt="" coords="2891,237,3291,267"/>
+<area shape="rect" id="node41" href="$entier_8h.html" title="Calculatrice en polonais inversé. Classe Entier." alt="" coords="2628,83,2991,112"/>
+<area shape="rect" id="node51" href="$rationnel_8h.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" alt="" coords="1600,83,1979,112"/>
+<area shape="rect" id="node55" href="$reel_8h.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" alt="" coords="1721,160,2071,189"/>
+<area shape="rect" id="node73" href="$expression_8h.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.h" alt="" coords="3416,160,3808,189"/>
+<area shape="rect" id="node9" href="$mainwindow_8cpp.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" alt="" coords="1472,469,1888,499"/>
+<area shape="rect" id="node11" href="$pile_8cpp.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp" alt="" coords="5,469,368,499"/>
+<area shape="rect" id="node15" href="$mainwindow_8h.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" alt="" coords="744,315,1147,344"/>
+<area shape="rect" id="node18" href="$main_8cpp.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/main.cpp" alt="" coords="1272,392,1643,421"/>
+<area shape="rect" id="node25" href="$moc__pile_8cpp.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/moc_pile.cpp" alt="" coords="325,315,720,344"/>
+<area shape="rect" id="node7" href="$calculatrice_8cpp.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp" alt="" coords="392,469,803,499"/>
+<area shape="rect" id="node13" href="$rationnel_8cpp.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" alt="" coords="2737,469,3129,499"/>
+<area shape="rect" id="node21" href="$moc__mainwindow_8cpp.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/moc_mainwindow.cpp" alt="" coords="648,392,1096,421"/>
+<area shape="rect" id="node31" href="$complexe_8cpp.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp" alt="" coords="2365,237,2765,267"/>
+<area shape="rect" id="node35" href="$entier_8cpp.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/entier.cpp" alt="" coords="1576,237,1952,267"/>
+<area shape="rect" id="node39" href="$reel_8cpp.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" alt="" coords="1976,237,2341,267"/>
+<area shape="rect" id="node76" href="$expression_8cpp.html" title="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.cpp" alt="" coords="3467,237,3872,267"/>
 </map>

@@ -3,6 +3,7 @@
   <compounddef id="class_ui___main_window" kind="class" prot="public">
     <compoundname>Ui_MainWindow</compoundname>
     <derivedcompoundref refid="class_ui_1_1_main_window" prot="public" virt="non-virtual">Ui::MainWindow</derivedcompoundref>
+    <includes refid="ui__mainwindow_8h" local="no">ui_mainwindow.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="class_ui___main_window_1ab5925c132a26c5f1b68712db69a43955" prot="public" static="no" mutable="no">
         <type>QAction *</type>
@@ -15,7 +16,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="39" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="39" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="35" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a30075506c2116c3ed4ff25e07ae75f81" prot="public" static="no" mutable="no">
         <type>QWidget *</type>
@@ -28,7 +31,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="40" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="40" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="36" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1acd6fdc9ebacc4b25b834162380d75ce8" prot="public" static="no" mutable="no">
         <type>QHBoxLayout *</type>
@@ -41,7 +45,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="41" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="41" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="37" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" prot="public" static="no" mutable="no">
         <type>QGridLayout *</type>
@@ -54,7 +59,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="42" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="42" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="38" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a4684b35f7b6ce7e3b2372b2b01037ea2" prot="public" static="no" mutable="no">
         <type>QWidget *</type>
@@ -67,20 +73,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="43" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="43" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="39" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a0056914c89217bbef8879ccae4466e28" compoundref="mainwindow_8cpp" startline="237" endline="253">MainWindow::_clavierBasicStateChange</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1ab96ab0f0578098521fa69a75aa5cdde8" prot="public" static="no" mutable="no">
-        <type>QWidget *</type>
-        <definition>QWidget* Ui_MainWindow::layoutWidget</definition>
+      <memberdef kind="variable" id="class_ui___main_window_1a80867018070156432923d0266cc9fe25" prot="public" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* Ui_MainWindow::horizontalLayout_2</definition>
         <argsstring></argsstring>
-        <name>layoutWidget</name>
+        <name>horizontalLayout_2</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="44" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="44" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="40" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a7ccbf939ae6d5a0f57068259787f0f9f" prot="public" static="no" mutable="no">
         <type>QGridLayout *</type>
@@ -93,176 +102,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="45" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="45" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1aeca50b654eb96a8bb380a34405c0e8a6" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::num8</definition>
-        <argsstring></argsstring>
-        <name>num8</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="46" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="46" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1acec9d7e0484591592b5b5aebe17c4d4c" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::num4</definition>
-        <argsstring></argsstring>
-        <name>num4</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="47" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="47" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1ae2cb73580dc5ebe9ff8bfdeb0be7fa4d" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::num5</definition>
-        <argsstring></argsstring>
-        <name>num5</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="48" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="48" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a2a726c1956d35bdc8131b967f8a6d152" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::num9</definition>
-        <argsstring></argsstring>
-        <name>num9</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="49" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="49" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a45c01137210fb27261aaa19e878b2771" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::num6</definition>
-        <argsstring></argsstring>
-        <name>num6</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="50" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="50" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a42840810d6ba204b30a10316437fbac8" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::num2</definition>
-        <argsstring></argsstring>
-        <name>num2</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="51" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="51" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a06046b98ba8522d7866ff59b214208d4" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::num1</definition>
-        <argsstring></argsstring>
-        <name>num1</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="52" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="52" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a1cba0408985417af8b8f84ecf490f251" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::num3</definition>
-        <argsstring></argsstring>
-        <name>num3</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="53" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="53" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1ad451216d14bbfb46a45e691f81bd5697" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::num0</definition>
-        <argsstring></argsstring>
-        <name>num0</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="54" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="54" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1afea79b7d0abfd420abade70c22e611e9" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::POINT</definition>
-        <argsstring></argsstring>
-        <name>POINT</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="55" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="55" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1aafa19488033af699d2e20192f189de49" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::EVAL</definition>
-        <argsstring></argsstring>
-        <name>EVAL</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="56" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="56" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a2857c52a8366fe68798acdc44afa0fed" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::ESPACE</definition>
-        <argsstring></argsstring>
-        <name>ESPACE</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="57" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="57" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a7d4645de7ef62f35bd4f0d0ff78a7611" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::ENTER</definition>
-        <argsstring></argsstring>
-        <name>ENTER</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="58" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="58" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="41" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a6b99070e2ed530d98b26f79ce1b5ecdf" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
@@ -275,46 +116,170 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="59" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="59" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="42" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1ab159e22a78929113617dcf7d4af66b7e" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="class_ui___main_window_1aeca50b654eb96a8bb380a34405c0e8a6" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::C</definition>
+        <definition>QPushButton* Ui_MainWindow::num8</definition>
         <argsstring></argsstring>
-        <name>C</name>
+        <name>num8</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="60" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="60" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="43" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a416e9c24bb7c8e85be227044461177ec" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="class_ui___main_window_1a2a726c1956d35bdc8131b967f8a6d152" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::CE</definition>
+        <definition>QPushButton* Ui_MainWindow::num9</definition>
         <argsstring></argsstring>
-        <name>CE</name>
+        <name>num9</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="61" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="61" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="44" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a1e4151d33099f88be6126ffa57e3a6a8" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="class_ui___main_window_1acec9d7e0484591592b5b5aebe17c4d4c" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::QUOTE</definition>
+        <definition>QPushButton* Ui_MainWindow::num4</definition>
         <argsstring></argsstring>
-        <name>QUOTE</name>
+        <name>num4</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="62" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="62" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="45" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1ae2cb73580dc5ebe9ff8bfdeb0be7fa4d" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::num5</definition>
+        <argsstring></argsstring>
+        <name>num5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="46" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a45c01137210fb27261aaa19e878b2771" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::num6</definition>
+        <argsstring></argsstring>
+        <name>num6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="47" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a06046b98ba8522d7866ff59b214208d4" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::num1</definition>
+        <argsstring></argsstring>
+        <name>num1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="48" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a42840810d6ba204b30a10316437fbac8" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::num2</definition>
+        <argsstring></argsstring>
+        <name>num2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="49" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a1cba0408985417af8b8f84ecf490f251" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::num3</definition>
+        <argsstring></argsstring>
+        <name>num3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="50" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1ad451216d14bbfb46a45e691f81bd5697" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::num0</definition>
+        <argsstring></argsstring>
+        <name>num0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="51" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a7d4645de7ef62f35bd4f0d0ff78a7611" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::ENTER</definition>
+        <argsstring></argsstring>
+        <name>ENTER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="52" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="52" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a56acbb096ec7433f9afe533b440d8123" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
@@ -327,241 +292,44 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="63" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="63" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="53" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_main_window_1a6febb02daee1abb1c9c0d0f9d190b25c" compoundref="mainwindow_8cpp" startline="207" endline="220">MainWindow::_modComplexeONClicked</referencedby>
+        <referencedby refid="class_main_window_1a85b97292e1728650fc34d989170a0886" compoundref="mainwindow_8cpp" startline="222" endline="235">MainWindow::_modComplexeOFFClicked</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1afc376b376159bf114d26ad55b43e87b0" prot="public" static="no" mutable="no">
-        <type>QWidget *</type>
-        <definition>QWidget* Ui_MainWindow::widget_clavierAvance</definition>
-        <argsstring></argsstring>
-        <name>widget_clavierAvance</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="64" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="64" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1aab31b3dec8d767525dea6f163e029e48" prot="public" static="no" mutable="no">
-        <type>QWidget *</type>
-        <definition>QWidget* Ui_MainWindow::layoutWidget1</definition>
-        <argsstring></argsstring>
-        <name>layoutWidget1</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="65" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="65" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1ab1a8b1e5dea7cdd088cef57264356e0b" prot="public" static="no" mutable="no">
-        <type>QGridLayout *</type>
-        <definition>QGridLayout* Ui_MainWindow::_clavierAvanceLayout</definition>
-        <argsstring></argsstring>
-        <name>_clavierAvanceLayout</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="66" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="66" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a8340a7d6e9beca550e886c360dbc7afb" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="class_ui___main_window_1ab159e22a78929113617dcf7d4af66b7e" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::MOD</definition>
+        <definition>QPushButton* Ui_MainWindow::C</definition>
         <argsstring></argsstring>
-        <name>MOD</name>
+        <name>C</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="67" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="67" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="54" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a6259c463080f8ffe0be91053e874780b" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="class_ui___main_window_1a416e9c24bb7c8e85be227044461177ec" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::SQR</definition>
+        <definition>QPushButton* Ui_MainWindow::CE</definition>
         <argsstring></argsstring>
-        <name>SQR</name>
+        <name>CE</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="68" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="68" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1ab6f966dfd75b5b8164555868f5331ada" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::COSH</definition>
-        <argsstring></argsstring>
-        <name>COSH</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="69" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="69" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a22cb4dc418e7679c26754c84c1529a29" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::SINH</definition>
-        <argsstring></argsstring>
-        <name>SINH</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="70" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="70" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a62e9dca715645175577d6143bc93fd9f" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::LN</definition>
-        <argsstring></argsstring>
-        <name>LN</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="71" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="71" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a47f156cd397be49d22f6f7fe15b0fde4" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::LOG</definition>
-        <argsstring></argsstring>
-        <name>LOG</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="72" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="72" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1ac1caf33332e6d63e4ec1a9071713493b" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::SIN</definition>
-        <argsstring></argsstring>
-        <name>SIN</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="73" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="73" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1acba7c9022bfdd86ca0513771138d1f79" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::COS</definition>
-        <argsstring></argsstring>
-        <name>COS</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="74" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="74" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a5a851ab1cd3ae5dac5d8cf6b6e22e956" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::SIGN</definition>
-        <argsstring></argsstring>
-        <name>SIGN</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="75" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="75" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a17184ec702aa5040677142c4a143e5f2" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::TAN</definition>
-        <argsstring></argsstring>
-        <name>TAN</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="76" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="76" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1aa0b74bbccda6715c999c78240332fda0" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::TANH</definition>
-        <argsstring></argsstring>
-        <name>TANH</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="77" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="77" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a8f44a583b70486ec7584db651ddc3fa6" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::INV</definition>
-        <argsstring></argsstring>
-        <name>INV</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="78" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="78" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a3b9631153562751675ef6fe58d72fe68" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::FACTORIEL</definition>
-        <argsstring></argsstring>
-        <name>FACTORIEL</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="79" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="79" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1aa03160fab513dd8c4942725310a79bbb" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::DIVISER</definition>
-        <argsstring></argsstring>
-        <name>DIVISER</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="80" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="80" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a0093863cdee1f0a9f32f80a145eb9d74" prot="public" static="no" mutable="no">
-        <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::MULTIPLIER</definition>
-        <argsstring></argsstring>
-        <name>MULTIPLIER</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="81" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="81" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="55" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1ac0e681bd2bc1ee327deede20741b33c7" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
@@ -574,7 +342,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="82" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="82" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="56" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a5881999c31ff45cbe8bdb517a8884e3f" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
@@ -587,33 +358,181 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="83" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="83" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="57" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a6e35980b83db49bf01e02faf128a8ba4" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="class_ui___main_window_1aa03160fab513dd8c4942725310a79bbb" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::SQRT</definition>
+        <definition>QPushButton* Ui_MainWindow::DIVISER</definition>
         <argsstring></argsstring>
-        <name>SQRT</name>
+        <name>DIVISER</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="84" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="84" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="58" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a6808a4c8810a4b54cdcfc0def3b69e4c" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="class_ui___main_window_1a0093863cdee1f0a9f32f80a145eb9d74" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::CUBE</definition>
+        <definition>QPushButton* Ui_MainWindow::MULTIPLIER</definition>
         <argsstring></argsstring>
-        <name>CUBE</name>
+        <name>MULTIPLIER</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="85" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="85" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="59" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a3b9631153562751675ef6fe58d72fe68" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::FACTORIEL</definition>
+        <argsstring></argsstring>
+        <name>FACTORIEL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="60" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a2857c52a8366fe68798acdc44afa0fed" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::ESPACE</definition>
+        <argsstring></argsstring>
+        <name>ESPACE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="61" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1afea79b7d0abfd420abade70c22e611e9" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::POINT</definition>
+        <argsstring></argsstring>
+        <name>POINT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="62" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a1e4151d33099f88be6126ffa57e3a6a8" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::QUOTE</definition>
+        <argsstring></argsstring>
+        <name>QUOTE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="63" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1aafa19488033af699d2e20192f189de49" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::EVAL</definition>
+        <argsstring></argsstring>
+        <name>EVAL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="64" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a10499cba7898eb6c0827b13d2b2e09e4" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::PIBOUTON</definition>
+        <argsstring></argsstring>
+        <name>PIBOUTON</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="65" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1afc376b376159bf114d26ad55b43e87b0" prot="public" static="no" mutable="no">
+        <type>QWidget *</type>
+        <definition>QWidget* Ui_MainWindow::widget_clavierAvance</definition>
+        <argsstring></argsstring>
+        <name>widget_clavierAvance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="66" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a9200740951f715069c9f2bc7809f6e07" compoundref="mainwindow_8cpp" startline="255" endline="268">MainWindow::_clavierAvanceStateChange</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a03ce63974cc69b067c91bbf285cceca8" prot="public" static="no" mutable="no">
+        <type>QHBoxLayout *</type>
+        <definition>QHBoxLayout* Ui_MainWindow::horizontalLayout_3</definition>
+        <argsstring></argsstring>
+        <name>horizontalLayout_3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="67" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1ab1a8b1e5dea7cdd088cef57264356e0b" prot="public" static="no" mutable="no">
+        <type>QGridLayout *</type>
+        <definition>QGridLayout* Ui_MainWindow::_clavierAvanceLayout</definition>
+        <argsstring></argsstring>
+        <name>_clavierAvanceLayout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="68" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a02bdc78125dfec5dfb5653ce0776eeb3" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
@@ -626,7 +545,234 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="86" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="86" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="69" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1ac1caf33332e6d63e4ec1a9071713493b" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::SIN</definition>
+        <argsstring></argsstring>
+        <name>SIN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="70" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a22cb4dc418e7679c26754c84c1529a29" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::SINH</definition>
+        <argsstring></argsstring>
+        <name>SINH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="71" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a62e9dca715645175577d6143bc93fd9f" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::LN</definition>
+        <argsstring></argsstring>
+        <name>LN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="72" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a6e35980b83db49bf01e02faf128a8ba4" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::SQRT</definition>
+        <argsstring></argsstring>
+        <name>SQRT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="73" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a8340a7d6e9beca550e886c360dbc7afb" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::MOD</definition>
+        <argsstring></argsstring>
+        <name>MOD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="74" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1acba7c9022bfdd86ca0513771138d1f79" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::COS</definition>
+        <argsstring></argsstring>
+        <name>COS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="75" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1ab6f966dfd75b5b8164555868f5331ada" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::COSH</definition>
+        <argsstring></argsstring>
+        <name>COSH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="76" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a47f156cd397be49d22f6f7fe15b0fde4" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::LOG</definition>
+        <argsstring></argsstring>
+        <name>LOG</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="77" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a6259c463080f8ffe0be91053e874780b" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::SQR</definition>
+        <argsstring></argsstring>
+        <name>SQR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="78" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a5a851ab1cd3ae5dac5d8cf6b6e22e956" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::SIGN</definition>
+        <argsstring></argsstring>
+        <name>SIGN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="79" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a17184ec702aa5040677142c4a143e5f2" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::TAN</definition>
+        <argsstring></argsstring>
+        <name>TAN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="80" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1aa0b74bbccda6715c999c78240332fda0" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::TANH</definition>
+        <argsstring></argsstring>
+        <name>TANH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="81" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="81" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a8f44a583b70486ec7584db651ddc3fa6" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::INV</definition>
+        <argsstring></argsstring>
+        <name>INV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="82" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ui___main_window_1a6808a4c8810a4b54cdcfc0def3b69e4c" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::CUBE</definition>
+        <argsstring></argsstring>
+        <name>CUBE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="83" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" prot="public" static="no" mutable="no">
         <type>QLineEdit *</type>
@@ -639,7 +785,48 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="87" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="87" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="84" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a0056914c89217bbef8879ccae4466e28" compoundref="mainwindow_8cpp" startline="237" endline="253">MainWindow::_clavierBasicStateChange</referencedby>
+        <referencedby refid="class_main_window_1a5c1743c01e8cf19b5b0e678a09734363" compoundref="mainwindow_8cpp" startline="326" endline="333">MainWindow::PIBOUTONClicked</referencedby>
+        <referencedby refid="class_main_window_1ab408f985cff16c7d939d48cfa3d5f0b1" compoundref="mainwindow_8cpp" startline="335" endline="342">MainWindow::num0Clicked</referencedby>
+        <referencedby refid="class_main_window_1a538b702a2feed14f756f9fff0a53d2f5" compoundref="mainwindow_8cpp" startline="344" endline="350">MainWindow::num1Clicked</referencedby>
+        <referencedby refid="class_main_window_1a857a81084ff261633c9896f24bdd6fb5" compoundref="mainwindow_8cpp" startline="352" endline="358">MainWindow::num2Clicked</referencedby>
+        <referencedby refid="class_main_window_1aaf2e8e4cdcabb0c9cd2496e662038b64" compoundref="mainwindow_8cpp" startline="360" endline="366">MainWindow::num3Clicked</referencedby>
+        <referencedby refid="class_main_window_1a6d79c0dc7b05f66d0dd2d5eb57d870a2" compoundref="mainwindow_8cpp" startline="369" endline="375">MainWindow::num4Clicked</referencedby>
+        <referencedby refid="class_main_window_1a9dfa9a2ba4c04d27047f1b6cf50eb309" compoundref="mainwindow_8cpp" startline="377" endline="383">MainWindow::num5Clicked</referencedby>
+        <referencedby refid="class_main_window_1ae581f160bb58ff7b92fb10488dad1cb7" compoundref="mainwindow_8cpp" startline="385" endline="391">MainWindow::num6Clicked</referencedby>
+        <referencedby refid="class_main_window_1ae34dccd3c4bdff6452250ec4807977e4" compoundref="mainwindow_8cpp" startline="393" endline="399">MainWindow::num7Clicked</referencedby>
+        <referencedby refid="class_main_window_1ab86f29d78da5c85373b2126cdbfadf78" compoundref="mainwindow_8cpp" startline="401" endline="407">MainWindow::num8Clicked</referencedby>
+        <referencedby refid="class_main_window_1a48cd898abe91cf0b7784dfce7258b8f6" compoundref="mainwindow_8cpp" startline="409" endline="415">MainWindow::num9Clicked</referencedby>
+        <referencedby refid="class_main_window_1a96f5509a262bda1ee40ceaddb081bff6" compoundref="mainwindow_8cpp" startline="418" endline="424">MainWindow::POINTClicked</referencedby>
+        <referencedby refid="class_main_window_1a4f3a33c651ac011d7a4ee62f70c88e44" compoundref="mainwindow_8cpp" startline="427" endline="433">MainWindow::ESPACEClicked</referencedby>
+        <referencedby refid="class_main_window_1a97ac3886016cc9dc1cc7ae1be4abac65" compoundref="mainwindow_8cpp" startline="435" endline="441">MainWindow::FACTORIELClicked</referencedby>
+        <referencedby refid="class_main_window_1a7babfc70d1010ea3e7efe67b788e0ec5" compoundref="mainwindow_8cpp" startline="443" endline="449">MainWindow::ADDITIONNERClicked</referencedby>
+        <referencedby refid="class_main_window_1aef8aa8858f4a280f6da4ef6f6b4cf208" compoundref="mainwindow_8cpp" startline="451" endline="457">MainWindow::SOUSTRAIREClicked</referencedby>
+        <referencedby refid="class_main_window_1a0fe4c051d0deac4c5eec64a6cd3d3682" compoundref="mainwindow_8cpp" startline="459" endline="465">MainWindow::MULTIPLIERClicked</referencedby>
+        <referencedby refid="class_main_window_1a785abff91c01b674c3b795dc289ae629" compoundref="mainwindow_8cpp" startline="467" endline="473">MainWindow::DIVISERClicked</referencedby>
+        <referencedby refid="class_main_window_1ab623e042d0384fce67ee67b86aa092ab" compoundref="mainwindow_8cpp" startline="475" endline="481">MainWindow::POWClicked</referencedby>
+        <referencedby refid="class_main_window_1a694058b9993bdad7bf4c96b7bae1af37" compoundref="mainwindow_8cpp" startline="483" endline="489">MainWindow::SINClicked</referencedby>
+        <referencedby refid="class_main_window_1acc7b69effe16bf3936be897b1e9697a2" compoundref="mainwindow_8cpp" startline="491" endline="497">MainWindow::COSClicked</referencedby>
+        <referencedby refid="class_main_window_1abd6beb62d32cc0922fd78819e3c4a9cd" compoundref="mainwindow_8cpp" startline="499" endline="505">MainWindow::TANClicked</referencedby>
+        <referencedby refid="class_main_window_1ae18b7a59154a29d9166dae53a02da0cd" compoundref="mainwindow_8cpp" startline="507" endline="513">MainWindow::SINHClicked</referencedby>
+        <referencedby refid="class_main_window_1ae0cb839c1a84f68cfe7d55d75679bf32" compoundref="mainwindow_8cpp" startline="515" endline="521">MainWindow::COSHClicked</referencedby>
+        <referencedby refid="class_main_window_1a9674367d1b35c2b7fcb37547982c7142" compoundref="mainwindow_8cpp" startline="523" endline="529">MainWindow::TANHClicked</referencedby>
+        <referencedby refid="class_main_window_1a4edf9a5fcb637c43e2d4d4e107fd0c62" compoundref="mainwindow_8cpp" startline="531" endline="537">MainWindow::MODClicked</referencedby>
+        <referencedby refid="class_main_window_1aada810f5e314c0180e159729f1af13f5" compoundref="mainwindow_8cpp" startline="539" endline="545">MainWindow::SIGNClicked</referencedby>
+        <referencedby refid="class_main_window_1ad6048a7bb41b1e0ac37bb1f05e458cc8" compoundref="mainwindow_8cpp" startline="547" endline="553">MainWindow::SQRClicked</referencedby>
+        <referencedby refid="class_main_window_1a40ff97255a9f62068bf20312468060dd" compoundref="mainwindow_8cpp" startline="555" endline="561">MainWindow::SQRTClicked</referencedby>
+        <referencedby refid="class_main_window_1a7e0ee20d8b3f6c4638ddced7d894c595" compoundref="mainwindow_8cpp" startline="563" endline="569">MainWindow::CUBEClicked</referencedby>
+        <referencedby refid="class_main_window_1a16e852b776efdec4876c32f0fb56a5b0" compoundref="mainwindow_8cpp" startline="571" endline="577">MainWindow::LNClicked</referencedby>
+        <referencedby refid="class_main_window_1a0e9e909347465ac2945668a5229c4688" compoundref="mainwindow_8cpp" startline="579" endline="585">MainWindow::LOGClicked</referencedby>
+        <referencedby refid="class_main_window_1a254c2a0ab491f878157d6abb8d4a8381" compoundref="mainwindow_8cpp" startline="587" endline="593">MainWindow::INVClicked</referencedby>
+        <referencedby refid="class_main_window_1adc9d3f1638131c5d291c54380fda801f" compoundref="mainwindow_8cpp" startline="595" endline="601">MainWindow::DOLLARClicked</referencedby>
+        <referencedby refid="class_main_window_1aa3cc15e4ab21e8d1d02b2c908f7ed955" compoundref="mainwindow_8cpp" startline="603" endline="609">MainWindow::QUOTEClicked</referencedby>
+        <referencedby refid="class_main_window_1a1a093a266d6f67c63e27b410de323e3f" compoundref="mainwindow_8cpp" startline="611" endline="619">MainWindow::CEClicked</referencedby>
+        <referencedby refid="class_main_window_1acd5bbd32604f72b223e69a58088ddabd" compoundref="mainwindow_8cpp" startline="621" endline="630">MainWindow::CClicked</referencedby>
+        <referencedby refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" compoundref="mainwindow_8cpp" startline="649" endline="706">MainWindow::ENTERClicked</referencedby>
+        <referencedby refid="class_main_window_1a2472c42b862ef1dc38b75c4111a28590" compoundref="mainwindow_8cpp" startline="848" endline="882">MainWindow::EVALClicked</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" prot="public" static="no" mutable="no">
         <type>QListView *</type>
@@ -652,7 +839,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="88" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="88" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="85" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_main_window_1a164eb394f8581e1f80fba559bcc3d2e5" compoundref="mainwindow_8cpp" startline="101" endline="105">MainWindow::vider_pileClicked</referencedby>
+        <referencedby refid="class_main_window_1a10bc645984994b33d7176946fc06eff2" compoundref="mainwindow_8cpp" startline="107" endline="112">MainWindow::supprimer_tete_pileClicked</referencedby>
+        <referencedby refid="class_main_window_1a4d771b6ac11d2280aa5e45e4d47a2011" compoundref="mainwindow_8cpp" startline="114" endline="120">MainWindow::dupliquer_tete_pileClicked</referencedby>
+        <referencedby refid="class_main_window_1a29e8205bc963cebba7a96f94f4d3c40f" compoundref="mainwindow_8cpp" startline="270" endline="286">MainWindow::_modReel</referencedby>
+        <referencedby refid="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" compoundref="mainwindow_8cpp" startline="289" endline="305">MainWindow::_modRationnel</referencedby>
+        <referencedby refid="class_main_window_1a05cfdc8bf99fa145e67ce4d9eed03f20" compoundref="mainwindow_8cpp" startline="308" endline="324">MainWindow::_modEntier</referencedby>
+        <referencedby refid="class_main_window_1a1a093a266d6f67c63e27b410de323e3f" compoundref="mainwindow_8cpp" startline="611" endline="619">MainWindow::CEClicked</referencedby>
+        <referencedby refid="class_main_window_1acd5bbd32604f72b223e69a58088ddabd" compoundref="mainwindow_8cpp" startline="621" endline="630">MainWindow::CClicked</referencedby>
+        <referencedby refid="class_main_window_1ad796f3d5c13e4ed2ea90e17aa0a3d7a8" compoundref="mainwindow_8cpp" startline="641" endline="644">MainWindow::annulerClicked</referencedby>
+        <referencedby refid="class_main_window_1abc93f16a699c5df5e5aedd67e1ad7e92" compoundref="mainwindow_8cpp" startline="645" endline="648">MainWindow::retablirClicked</referencedby>
+        <referencedby refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" compoundref="mainwindow_8cpp" startline="649" endline="706">MainWindow::ENTERClicked</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a0c01bad60d9f422a1258e710635a2f65" prot="public" static="no" mutable="no">
         <type>QVBoxLayout *</type>
@@ -665,7 +865,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="89" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="89" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="86" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="86" bodyend="-1"/>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1ad8a919e5634add9c41bfc319cb9fd338" prot="public" static="no" mutable="no">
         <type>QGroupBox *</type>
@@ -678,7 +879,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="90" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="90" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="87" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a905fbcb76b7a5accc476b5c1c9391ea5" prot="public" static="no" mutable="no">
         <type>QRadioButton *</type>
@@ -691,7 +894,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="91" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="91" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="88" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a1da65de8d4c3c8d5bbf78b0e7796cacf" prot="public" static="no" mutable="no">
         <type>QRadioButton *</type>
@@ -704,7 +910,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="92" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="92" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="89" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1aef7cb3be8cecfc9aaf98f036a98781ce" prot="public" static="no" mutable="no">
         <type>QGroupBox *</type>
@@ -717,7 +926,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="93" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="93" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="90" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a8d6879ed9b5c3d2cf3b9adda602ff3f2" prot="public" static="no" mutable="no">
         <type>QRadioButton *</type>
@@ -730,7 +941,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="94" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="94" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="91" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a55f174647d09c0bd1a532524444d79ee" prot="public" static="no" mutable="no">
         <type>QRadioButton *</type>
@@ -743,7 +957,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="95" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="95" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="92" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="92" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1abb28acde35ffce4d0e6152579df2cbc3" prot="public" static="no" mutable="no">
         <type>QGroupBox *</type>
@@ -756,7 +973,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="96" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="96" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="93" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="93" bodyend="-1"/>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a86335a0c2e9f36f7c9b8cd195b25a1c0" prot="public" static="no" mutable="no">
         <type>QRadioButton *</type>
@@ -769,7 +988,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="97" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="97" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="94" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a533df173469e3e35768e358b00758ae4" prot="public" static="no" mutable="no">
         <type>QRadioButton *</type>
@@ -782,7 +1004,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="98" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="98" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="95" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="95" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a4b3a8bd75eb6ad2a9be60867badc9a41" prot="public" static="no" mutable="no">
         <type>QRadioButton *</type>
@@ -795,7 +1020,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="99" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="99" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="96" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a320d3d7ba1cb8fff7b7b95923ed10f5e" prot="public" static="no" mutable="no">
         <type>QGroupBox *</type>
@@ -808,7 +1036,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="100" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="100" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="97" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1aface0fc9ed198a25292a75ce279e02c8" prot="public" static="no" mutable="no">
         <type>QCheckBox *</type>
@@ -821,7 +1051,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="101" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="101" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="98" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="98" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       <memberdef kind="variable" id="class_ui___main_window_1a322846c1c07376202f7e18ce4b80e81a" prot="public" static="no" mutable="no">
         <type>QCheckBox *</type>
@@ -834,98 +1067,90 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="102" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="102" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="99" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1ad332d93084584930878f1daf5f84cdbf" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="class_ui___main_window_1afcd80e9772c362343c8b1343fe9cc46f" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::pushButton</definition>
+        <definition>QPushButton* Ui_MainWindow::annuler</definition>
         <argsstring></argsstring>
-        <name>pushButton</name>
+        <name>annuler</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="103" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="103" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="100" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a59a7d8124bce933d63f53f2153d447b4" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="class_ui___main_window_1a63ba859b403fa2f74b1e5f3b3f258575" prot="public" static="no" mutable="no">
         <type>QPushButton *</type>
-        <definition>QPushButton* Ui_MainWindow::pushButton_2</definition>
+        <definition>QPushButton* Ui_MainWindow::retablir</definition>
         <argsstring></argsstring>
-        <name>pushButton_2</name>
+        <name>retablir</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="104" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="104" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="101" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a2be1c24ec9adfca18e1dcc951931457f" prot="public" static="no" mutable="no">
-        <type>QMenuBar *</type>
-        <definition>QMenuBar* Ui_MainWindow::menuBar</definition>
+      <memberdef kind="variable" id="class_ui___main_window_1a48b51edf0d95abf4e0da82b6846d7c3d" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::vider_pile</definition>
         <argsstring></argsstring>
-        <name>menuBar</name>
+        <name>vider_pile</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="105" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="105" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="102" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a7d7b4b19240d3d65b39fbfb5ee49538a" prot="public" static="no" mutable="no">
-        <type>QMenu *</type>
-        <definition>QMenu* Ui_MainWindow::menuFichier</definition>
+      <memberdef kind="variable" id="class_ui___main_window_1a6b4a0425c46ea6e3c9c530196d69b695" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::supprimer_tete_pile</definition>
         <argsstring></argsstring>
-        <name>menuFichier</name>
+        <name>supprimer_tete_pile</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="106" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="106" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="103" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1abe2eb1a23c01639b2a6ba0e562c28c4d" prot="public" static="no" mutable="no">
-        <type>QMenu *</type>
-        <definition>QMenu* Ui_MainWindow::menu</definition>
+      <memberdef kind="variable" id="class_ui___main_window_1af9616decd222a39cd79adc405991d373" prot="public" static="no" mutable="no">
+        <type>QPushButton *</type>
+        <definition>QPushButton* Ui_MainWindow::dupliquer_tete_pile</definition>
         <argsstring></argsstring>
-        <name>menu</name>
+        <name>dupliquer_tete_pile</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="107" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="107" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a5172877001c8c7b4e0f6de50421867d1" prot="public" static="no" mutable="no">
-        <type>QToolBar *</type>
-        <definition>QToolBar* Ui_MainWindow::mainToolBar</definition>
-        <argsstring></argsstring>
-        <name>mainToolBar</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="108" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="108" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_ui___main_window_1a50fa481337604bcc8bf68de18ab16ecd" prot="public" static="no" mutable="no">
-        <type>QStatusBar *</type>
-        <definition>QStatusBar* Ui_MainWindow::statusBar</definition>
-        <argsstring></argsstring>
-        <name>statusBar</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="109" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="109" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="104" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
+        <referencedby refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -944,7 +1169,79 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="112" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="111" bodyend="460"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="107" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="106" bodyend="464"/>
+        <references refid="class_ui___main_window_1ab5925c132a26c5f1b68712db69a43955" compoundref="ui__mainwindow_8h" startline="35">action_propos</references>
+        <references refid="class_ui___main_window_1a30075506c2116c3ed4ff25e07ae75f81" compoundref="ui__mainwindow_8h" startline="36">centralWidget</references>
+        <references refid="class_ui___main_window_1acd6fdc9ebacc4b25b834162380d75ce8" compoundref="ui__mainwindow_8h" startline="37">horizontalLayout</references>
+        <references refid="class_ui___main_window_1a525ed3c5fe0784ac502ee222fba4e205" compoundref="ui__mainwindow_8h" startline="38">gridLayout</references>
+        <references refid="class_ui___main_window_1a4684b35f7b6ce7e3b2372b2b01037ea2" compoundref="ui__mainwindow_8h" startline="39">widget_clavierBasic</references>
+        <references refid="class_ui___main_window_1a80867018070156432923d0266cc9fe25" compoundref="ui__mainwindow_8h" startline="40">horizontalLayout_2</references>
+        <references refid="class_ui___main_window_1a7ccbf939ae6d5a0f57068259787f0f9f" compoundref="ui__mainwindow_8h" startline="41">_clavierBasicLayout</references>
+        <references refid="class_ui___main_window_1a6b99070e2ed530d98b26f79ce1b5ecdf" compoundref="ui__mainwindow_8h" startline="42">num7</references>
+        <references refid="class_ui___main_window_1aeca50b654eb96a8bb380a34405c0e8a6" compoundref="ui__mainwindow_8h" startline="43">num8</references>
+        <references refid="class_ui___main_window_1a2a726c1956d35bdc8131b967f8a6d152" compoundref="ui__mainwindow_8h" startline="44">num9</references>
+        <references refid="class_ui___main_window_1acec9d7e0484591592b5b5aebe17c4d4c" compoundref="ui__mainwindow_8h" startline="45">num4</references>
+        <references refid="class_ui___main_window_1ae2cb73580dc5ebe9ff8bfdeb0be7fa4d" compoundref="ui__mainwindow_8h" startline="46">num5</references>
+        <references refid="class_ui___main_window_1a45c01137210fb27261aaa19e878b2771" compoundref="ui__mainwindow_8h" startline="47">num6</references>
+        <references refid="class_ui___main_window_1a06046b98ba8522d7866ff59b214208d4" compoundref="ui__mainwindow_8h" startline="48">num1</references>
+        <references refid="class_ui___main_window_1a42840810d6ba204b30a10316437fbac8" compoundref="ui__mainwindow_8h" startline="49">num2</references>
+        <references refid="class_ui___main_window_1a1cba0408985417af8b8f84ecf490f251" compoundref="ui__mainwindow_8h" startline="50">num3</references>
+        <references refid="class_ui___main_window_1ad451216d14bbfb46a45e691f81bd5697" compoundref="ui__mainwindow_8h" startline="51">num0</references>
+        <references refid="class_ui___main_window_1a7d4645de7ef62f35bd4f0d0ff78a7611" compoundref="ui__mainwindow_8h" startline="52">ENTER</references>
+        <references refid="class_ui___main_window_1a56acbb096ec7433f9afe533b440d8123" compoundref="ui__mainwindow_8h" startline="53">DOLLAR</references>
+        <references refid="class_ui___main_window_1ab159e22a78929113617dcf7d4af66b7e" compoundref="ui__mainwindow_8h" startline="54">C</references>
+        <references refid="class_ui___main_window_1a416e9c24bb7c8e85be227044461177ec" compoundref="ui__mainwindow_8h" startline="55">CE</references>
+        <references refid="class_ui___main_window_1ac0e681bd2bc1ee327deede20741b33c7" compoundref="ui__mainwindow_8h" startline="56">SOUSTRAIRE</references>
+        <references refid="class_ui___main_window_1a5881999c31ff45cbe8bdb517a8884e3f" compoundref="ui__mainwindow_8h" startline="57">ADDITIONNER</references>
+        <references refid="class_ui___main_window_1aa03160fab513dd8c4942725310a79bbb" compoundref="ui__mainwindow_8h" startline="58">DIVISER</references>
+        <references refid="class_ui___main_window_1a0093863cdee1f0a9f32f80a145eb9d74" compoundref="ui__mainwindow_8h" startline="59">MULTIPLIER</references>
+        <references refid="class_ui___main_window_1a3b9631153562751675ef6fe58d72fe68" compoundref="ui__mainwindow_8h" startline="60">FACTORIEL</references>
+        <references refid="class_ui___main_window_1a2857c52a8366fe68798acdc44afa0fed" compoundref="ui__mainwindow_8h" startline="61">ESPACE</references>
+        <references refid="class_ui___main_window_1afea79b7d0abfd420abade70c22e611e9" compoundref="ui__mainwindow_8h" startline="62">POINT</references>
+        <references refid="class_ui___main_window_1a1e4151d33099f88be6126ffa57e3a6a8" compoundref="ui__mainwindow_8h" startline="63">QUOTE</references>
+        <references refid="class_ui___main_window_1aafa19488033af699d2e20192f189de49" compoundref="ui__mainwindow_8h" startline="64">EVAL</references>
+        <references refid="class_ui___main_window_1a10499cba7898eb6c0827b13d2b2e09e4" compoundref="ui__mainwindow_8h" startline="65">PIBOUTON</references>
+        <references refid="class_ui___main_window_1afc376b376159bf114d26ad55b43e87b0" compoundref="ui__mainwindow_8h" startline="66">widget_clavierAvance</references>
+        <references refid="class_ui___main_window_1a03ce63974cc69b067c91bbf285cceca8" compoundref="ui__mainwindow_8h" startline="67">horizontalLayout_3</references>
+        <references refid="class_ui___main_window_1ab1a8b1e5dea7cdd088cef57264356e0b" compoundref="ui__mainwindow_8h" startline="68">_clavierAvanceLayout</references>
+        <references refid="class_ui___main_window_1a02bdc78125dfec5dfb5653ce0776eeb3" compoundref="ui__mainwindow_8h" startline="69">POW</references>
+        <references refid="class_ui___main_window_1ac1caf33332e6d63e4ec1a9071713493b" compoundref="ui__mainwindow_8h" startline="70">SIN</references>
+        <references refid="class_ui___main_window_1a22cb4dc418e7679c26754c84c1529a29" compoundref="ui__mainwindow_8h" startline="71">SINH</references>
+        <references refid="class_ui___main_window_1a62e9dca715645175577d6143bc93fd9f" compoundref="ui__mainwindow_8h" startline="72">LN</references>
+        <references refid="class_ui___main_window_1a6e35980b83db49bf01e02faf128a8ba4" compoundref="ui__mainwindow_8h" startline="73">SQRT</references>
+        <references refid="class_ui___main_window_1a8340a7d6e9beca550e886c360dbc7afb" compoundref="ui__mainwindow_8h" startline="74">MOD</references>
+        <references refid="class_ui___main_window_1acba7c9022bfdd86ca0513771138d1f79" compoundref="ui__mainwindow_8h" startline="75">COS</references>
+        <references refid="class_ui___main_window_1ab6f966dfd75b5b8164555868f5331ada" compoundref="ui__mainwindow_8h" startline="76">COSH</references>
+        <references refid="class_ui___main_window_1a47f156cd397be49d22f6f7fe15b0fde4" compoundref="ui__mainwindow_8h" startline="77">LOG</references>
+        <references refid="class_ui___main_window_1a6259c463080f8ffe0be91053e874780b" compoundref="ui__mainwindow_8h" startline="78">SQR</references>
+        <references refid="class_ui___main_window_1a5a851ab1cd3ae5dac5d8cf6b6e22e956" compoundref="ui__mainwindow_8h" startline="79">SIGN</references>
+        <references refid="class_ui___main_window_1a17184ec702aa5040677142c4a143e5f2" compoundref="ui__mainwindow_8h" startline="80">TAN</references>
+        <references refid="class_ui___main_window_1aa0b74bbccda6715c999c78240332fda0" compoundref="ui__mainwindow_8h" startline="81">TANH</references>
+        <references refid="class_ui___main_window_1a8f44a583b70486ec7584db651ddc3fa6" compoundref="ui__mainwindow_8h" startline="82">INV</references>
+        <references refid="class_ui___main_window_1a6808a4c8810a4b54cdcfc0def3b69e4c" compoundref="ui__mainwindow_8h" startline="83">CUBE</references>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">inputLine</references>
+        <references refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" compoundref="ui__mainwindow_8h" startline="85">listView</references>
+        <references refid="class_ui___main_window_1a0c01bad60d9f422a1258e710635a2f65" compoundref="ui__mainwindow_8h" startline="86">verticalLayout_2</references>
+        <references refid="class_ui___main_window_1ad8a919e5634add9c41bfc319cb9fd338" compoundref="ui__mainwindow_8h" startline="87">groupBox_4</references>
+        <references refid="class_ui___main_window_1a905fbcb76b7a5accc476b5c1c9391ea5" compoundref="ui__mainwindow_8h" startline="88">_modComplexeON</references>
+        <references refid="class_ui___main_window_1a1da65de8d4c3c8d5bbf78b0e7796cacf" compoundref="ui__mainwindow_8h" startline="89">_modComplexeOFF</references>
+        <references refid="class_ui___main_window_1aef7cb3be8cecfc9aaf98f036a98781ce" compoundref="ui__mainwindow_8h" startline="90">groupBox</references>
+        <references refid="class_ui___main_window_1a8d6879ed9b5c3d2cf3b9adda602ff3f2" compoundref="ui__mainwindow_8h" startline="91">_modDegres</references>
+        <references refid="class_ui___main_window_1a55f174647d09c0bd1a532524444d79ee" compoundref="ui__mainwindow_8h" startline="92">_modRadians</references>
+        <references refid="class_ui___main_window_1abb28acde35ffce4d0e6152579df2cbc3" compoundref="ui__mainwindow_8h" startline="93">groupBox_2</references>
+        <references refid="class_ui___main_window_1a86335a0c2e9f36f7c9b8cd195b25a1c0" compoundref="ui__mainwindow_8h" startline="94">_modEntiers</references>
+        <references refid="class_ui___main_window_1a533df173469e3e35768e358b00758ae4" compoundref="ui__mainwindow_8h" startline="95">_modRationnels</references>
+        <references refid="class_ui___main_window_1a4b3a8bd75eb6ad2a9be60867badc9a41" compoundref="ui__mainwindow_8h" startline="96">_modReels</references>
+        <references refid="class_ui___main_window_1a320d3d7ba1cb8fff7b7b95923ed10f5e" compoundref="ui__mainwindow_8h" startline="97">groupBox_3</references>
+        <references refid="class_ui___main_window_1aface0fc9ed198a25292a75ce279e02c8" compoundref="ui__mainwindow_8h" startline="98">_clavierBasic</references>
+        <references refid="class_ui___main_window_1a322846c1c07376202f7e18ce4b80e81a" compoundref="ui__mainwindow_8h" startline="99">_clavierAvance</references>
+        <references refid="class_ui___main_window_1afcd80e9772c362343c8b1343fe9cc46f" compoundref="ui__mainwindow_8h" startline="100">annuler</references>
+        <references refid="class_ui___main_window_1a63ba859b403fa2f74b1e5f3b3f258575" compoundref="ui__mainwindow_8h" startline="101">retablir</references>
+        <references refid="class_ui___main_window_1a48b51edf0d95abf4e0da82b6846d7c3d" compoundref="ui__mainwindow_8h" startline="102">vider_pile</references>
+        <references refid="class_ui___main_window_1a6b4a0425c46ea6e3c9c530196d69b695" compoundref="ui__mainwindow_8h" startline="103">supprimer_tete_pile</references>
+        <references refid="class_ui___main_window_1af9616decd222a39cd79adc405991d373" compoundref="ui__mainwindow_8h" startline="104">dupliquer_tete_pile</references>
+        <references refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" compoundref="ui__mainwindow_8h" startline="466" endline="547">retranslateUi</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_ui___main_window_1a097dd160c3534a204904cb374412c618" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -961,7 +1258,66 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="463" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="462" bodyend="541"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="467" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="466" bodyend="547"/>
+        <references refid="class_ui___main_window_1ab5925c132a26c5f1b68712db69a43955" compoundref="ui__mainwindow_8h" startline="35">action_propos</references>
+        <references refid="class_ui___main_window_1a6b99070e2ed530d98b26f79ce1b5ecdf" compoundref="ui__mainwindow_8h" startline="42">num7</references>
+        <references refid="class_ui___main_window_1aeca50b654eb96a8bb380a34405c0e8a6" compoundref="ui__mainwindow_8h" startline="43">num8</references>
+        <references refid="class_ui___main_window_1a2a726c1956d35bdc8131b967f8a6d152" compoundref="ui__mainwindow_8h" startline="44">num9</references>
+        <references refid="class_ui___main_window_1acec9d7e0484591592b5b5aebe17c4d4c" compoundref="ui__mainwindow_8h" startline="45">num4</references>
+        <references refid="class_ui___main_window_1ae2cb73580dc5ebe9ff8bfdeb0be7fa4d" compoundref="ui__mainwindow_8h" startline="46">num5</references>
+        <references refid="class_ui___main_window_1a45c01137210fb27261aaa19e878b2771" compoundref="ui__mainwindow_8h" startline="47">num6</references>
+        <references refid="class_ui___main_window_1a06046b98ba8522d7866ff59b214208d4" compoundref="ui__mainwindow_8h" startline="48">num1</references>
+        <references refid="class_ui___main_window_1a42840810d6ba204b30a10316437fbac8" compoundref="ui__mainwindow_8h" startline="49">num2</references>
+        <references refid="class_ui___main_window_1a1cba0408985417af8b8f84ecf490f251" compoundref="ui__mainwindow_8h" startline="50">num3</references>
+        <references refid="class_ui___main_window_1ad451216d14bbfb46a45e691f81bd5697" compoundref="ui__mainwindow_8h" startline="51">num0</references>
+        <references refid="class_ui___main_window_1a7d4645de7ef62f35bd4f0d0ff78a7611" compoundref="ui__mainwindow_8h" startline="52">ENTER</references>
+        <references refid="class_ui___main_window_1a56acbb096ec7433f9afe533b440d8123" compoundref="ui__mainwindow_8h" startline="53">DOLLAR</references>
+        <references refid="class_ui___main_window_1ab159e22a78929113617dcf7d4af66b7e" compoundref="ui__mainwindow_8h" startline="54">C</references>
+        <references refid="class_ui___main_window_1a416e9c24bb7c8e85be227044461177ec" compoundref="ui__mainwindow_8h" startline="55">CE</references>
+        <references refid="class_ui___main_window_1ac0e681bd2bc1ee327deede20741b33c7" compoundref="ui__mainwindow_8h" startline="56">SOUSTRAIRE</references>
+        <references refid="class_ui___main_window_1a5881999c31ff45cbe8bdb517a8884e3f" compoundref="ui__mainwindow_8h" startline="57">ADDITIONNER</references>
+        <references refid="class_ui___main_window_1aa03160fab513dd8c4942725310a79bbb" compoundref="ui__mainwindow_8h" startline="58">DIVISER</references>
+        <references refid="class_ui___main_window_1a0093863cdee1f0a9f32f80a145eb9d74" compoundref="ui__mainwindow_8h" startline="59">MULTIPLIER</references>
+        <references refid="class_ui___main_window_1a3b9631153562751675ef6fe58d72fe68" compoundref="ui__mainwindow_8h" startline="60">FACTORIEL</references>
+        <references refid="class_ui___main_window_1a2857c52a8366fe68798acdc44afa0fed" compoundref="ui__mainwindow_8h" startline="61">ESPACE</references>
+        <references refid="class_ui___main_window_1afea79b7d0abfd420abade70c22e611e9" compoundref="ui__mainwindow_8h" startline="62">POINT</references>
+        <references refid="class_ui___main_window_1a1e4151d33099f88be6126ffa57e3a6a8" compoundref="ui__mainwindow_8h" startline="63">QUOTE</references>
+        <references refid="class_ui___main_window_1aafa19488033af699d2e20192f189de49" compoundref="ui__mainwindow_8h" startline="64">EVAL</references>
+        <references refid="class_ui___main_window_1a10499cba7898eb6c0827b13d2b2e09e4" compoundref="ui__mainwindow_8h" startline="65">PIBOUTON</references>
+        <references refid="class_ui___main_window_1a02bdc78125dfec5dfb5653ce0776eeb3" compoundref="ui__mainwindow_8h" startline="69">POW</references>
+        <references refid="class_ui___main_window_1ac1caf33332e6d63e4ec1a9071713493b" compoundref="ui__mainwindow_8h" startline="70">SIN</references>
+        <references refid="class_ui___main_window_1a22cb4dc418e7679c26754c84c1529a29" compoundref="ui__mainwindow_8h" startline="71">SINH</references>
+        <references refid="class_ui___main_window_1a62e9dca715645175577d6143bc93fd9f" compoundref="ui__mainwindow_8h" startline="72">LN</references>
+        <references refid="class_ui___main_window_1a6e35980b83db49bf01e02faf128a8ba4" compoundref="ui__mainwindow_8h" startline="73">SQRT</references>
+        <references refid="class_ui___main_window_1a8340a7d6e9beca550e886c360dbc7afb" compoundref="ui__mainwindow_8h" startline="74">MOD</references>
+        <references refid="class_ui___main_window_1acba7c9022bfdd86ca0513771138d1f79" compoundref="ui__mainwindow_8h" startline="75">COS</references>
+        <references refid="class_ui___main_window_1ab6f966dfd75b5b8164555868f5331ada" compoundref="ui__mainwindow_8h" startline="76">COSH</references>
+        <references refid="class_ui___main_window_1a47f156cd397be49d22f6f7fe15b0fde4" compoundref="ui__mainwindow_8h" startline="77">LOG</references>
+        <references refid="class_ui___main_window_1a6259c463080f8ffe0be91053e874780b" compoundref="ui__mainwindow_8h" startline="78">SQR</references>
+        <references refid="class_ui___main_window_1a5a851ab1cd3ae5dac5d8cf6b6e22e956" compoundref="ui__mainwindow_8h" startline="79">SIGN</references>
+        <references refid="class_ui___main_window_1a17184ec702aa5040677142c4a143e5f2" compoundref="ui__mainwindow_8h" startline="80">TAN</references>
+        <references refid="class_ui___main_window_1aa0b74bbccda6715c999c78240332fda0" compoundref="ui__mainwindow_8h" startline="81">TANH</references>
+        <references refid="class_ui___main_window_1a8f44a583b70486ec7584db651ddc3fa6" compoundref="ui__mainwindow_8h" startline="82">INV</references>
+        <references refid="class_ui___main_window_1a6808a4c8810a4b54cdcfc0def3b69e4c" compoundref="ui__mainwindow_8h" startline="83">CUBE</references>
+        <references refid="class_ui___main_window_1ad8a919e5634add9c41bfc319cb9fd338" compoundref="ui__mainwindow_8h" startline="87">groupBox_4</references>
+        <references refid="class_ui___main_window_1a905fbcb76b7a5accc476b5c1c9391ea5" compoundref="ui__mainwindow_8h" startline="88">_modComplexeON</references>
+        <references refid="class_ui___main_window_1a1da65de8d4c3c8d5bbf78b0e7796cacf" compoundref="ui__mainwindow_8h" startline="89">_modComplexeOFF</references>
+        <references refid="class_ui___main_window_1aef7cb3be8cecfc9aaf98f036a98781ce" compoundref="ui__mainwindow_8h" startline="90">groupBox</references>
+        <references refid="class_ui___main_window_1a8d6879ed9b5c3d2cf3b9adda602ff3f2" compoundref="ui__mainwindow_8h" startline="91">_modDegres</references>
+        <references refid="class_ui___main_window_1a55f174647d09c0bd1a532524444d79ee" compoundref="ui__mainwindow_8h" startline="92">_modRadians</references>
+        <references refid="class_ui___main_window_1abb28acde35ffce4d0e6152579df2cbc3" compoundref="ui__mainwindow_8h" startline="93">groupBox_2</references>
+        <references refid="class_ui___main_window_1a86335a0c2e9f36f7c9b8cd195b25a1c0" compoundref="ui__mainwindow_8h" startline="94">_modEntiers</references>
+        <references refid="class_ui___main_window_1a533df173469e3e35768e358b00758ae4" compoundref="ui__mainwindow_8h" startline="95">_modRationnels</references>
+        <references refid="class_ui___main_window_1a4b3a8bd75eb6ad2a9be60867badc9a41" compoundref="ui__mainwindow_8h" startline="96">_modReels</references>
+        <references refid="class_ui___main_window_1a320d3d7ba1cb8fff7b7b95923ed10f5e" compoundref="ui__mainwindow_8h" startline="97">groupBox_3</references>
+        <references refid="class_ui___main_window_1aface0fc9ed198a25292a75ce279e02c8" compoundref="ui__mainwindow_8h" startline="98">_clavierBasic</references>
+        <references refid="class_ui___main_window_1a322846c1c07376202f7e18ce4b80e81a" compoundref="ui__mainwindow_8h" startline="99">_clavierAvance</references>
+        <references refid="class_ui___main_window_1afcd80e9772c362343c8b1343fe9cc46f" compoundref="ui__mainwindow_8h" startline="100">annuler</references>
+        <references refid="class_ui___main_window_1a63ba859b403fa2f74b1e5f3b3f258575" compoundref="ui__mainwindow_8h" startline="101">retablir</references>
+        <references refid="class_ui___main_window_1a48b51edf0d95abf4e0da82b6846d7c3d" compoundref="ui__mainwindow_8h" startline="102">vider_pile</references>
+        <references refid="class_ui___main_window_1a6b4a0425c46ea6e3c9c530196d69b695" compoundref="ui__mainwindow_8h" startline="103">supprimer_tete_pile</references>
+        <references refid="class_ui___main_window_1af9616decd222a39cd79adc405991d373" compoundref="ui__mainwindow_8h" startline="104">dupliquer_tete_pile</references>
+        <referencedby refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">setupUi</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -969,18 +1325,18 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="106">
+      <node id="86">
         <label>Ui::MainWindow</label>
         <link refid="class_ui_1_1_main_window"/>
-        <childnode refid="105" relation="public-inheritance">
+        <childnode refid="85" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="105">
+      <node id="85">
         <label>Ui_MainWindow</label>
         <link refid="class_ui___main_window"/>
       </node>
     </inheritancegraph>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" line="37" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/ui_mainwindow.h" bodystart="36" bodyend="543"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/ui_mainwindow.h" bodystart="32" bodyend="549"/>
     <listofallmembers>
       <member refid="class_ui___main_window_1a322846c1c07376202f7e18ce4b80e81a" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>_clavierAvance</name></member>
       <member refid="class_ui___main_window_1ab1a8b1e5dea7cdd088cef57264356e0b" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>_clavierAvanceLayout</name></member>
@@ -995,6 +1351,7 @@
       <member refid="class_ui___main_window_1a4b3a8bd75eb6ad2a9be60867badc9a41" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>_modReels</name></member>
       <member refid="class_ui___main_window_1ab5925c132a26c5f1b68712db69a43955" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>action_propos</name></member>
       <member refid="class_ui___main_window_1a5881999c31ff45cbe8bdb517a8884e3f" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>ADDITIONNER</name></member>
+      <member refid="class_ui___main_window_1afcd80e9772c362343c8b1343fe9cc46f" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>annuler</name></member>
       <member refid="class_ui___main_window_1ab159e22a78929113617dcf7d4af66b7e" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>C</name></member>
       <member refid="class_ui___main_window_1a416e9c24bb7c8e85be227044461177ec" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>CE</name></member>
       <member refid="class_ui___main_window_1a30075506c2116c3ed4ff25e07ae75f81" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>centralWidget</name></member>
@@ -1003,6 +1360,7 @@
       <member refid="class_ui___main_window_1a6808a4c8810a4b54cdcfc0def3b69e4c" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>CUBE</name></member>
       <member refid="class_ui___main_window_1aa03160fab513dd8c4942725310a79bbb" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>DIVISER</name></member>
       <member refid="class_ui___main_window_1a56acbb096ec7433f9afe533b440d8123" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>DOLLAR</name></member>
+      <member refid="class_ui___main_window_1af9616decd222a39cd79adc405991d373" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>dupliquer_tete_pile</name></member>
       <member refid="class_ui___main_window_1a7d4645de7ef62f35bd4f0d0ff78a7611" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>ENTER</name></member>
       <member refid="class_ui___main_window_1a2857c52a8366fe68798acdc44afa0fed" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>ESPACE</name></member>
       <member refid="class_ui___main_window_1aafa19488033af699d2e20192f189de49" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>EVAL</name></member>
@@ -1013,17 +1371,13 @@
       <member refid="class_ui___main_window_1a320d3d7ba1cb8fff7b7b95923ed10f5e" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>groupBox_3</name></member>
       <member refid="class_ui___main_window_1ad8a919e5634add9c41bfc319cb9fd338" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>groupBox_4</name></member>
       <member refid="class_ui___main_window_1acd6fdc9ebacc4b25b834162380d75ce8" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>horizontalLayout</name></member>
+      <member refid="class_ui___main_window_1a80867018070156432923d0266cc9fe25" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>horizontalLayout_2</name></member>
+      <member refid="class_ui___main_window_1a03ce63974cc69b067c91bbf285cceca8" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>horizontalLayout_3</name></member>
       <member refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>inputLine</name></member>
       <member refid="class_ui___main_window_1a8f44a583b70486ec7584db651ddc3fa6" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>INV</name></member>
-      <member refid="class_ui___main_window_1ab96ab0f0578098521fa69a75aa5cdde8" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>layoutWidget</name></member>
-      <member refid="class_ui___main_window_1aab31b3dec8d767525dea6f163e029e48" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>layoutWidget1</name></member>
       <member refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>listView</name></member>
       <member refid="class_ui___main_window_1a62e9dca715645175577d6143bc93fd9f" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>LN</name></member>
       <member refid="class_ui___main_window_1a47f156cd397be49d22f6f7fe15b0fde4" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>LOG</name></member>
-      <member refid="class_ui___main_window_1a5172877001c8c7b4e0f6de50421867d1" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>mainToolBar</name></member>
-      <member refid="class_ui___main_window_1abe2eb1a23c01639b2a6ba0e562c28c4d" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>menu</name></member>
-      <member refid="class_ui___main_window_1a2be1c24ec9adfca18e1dcc951931457f" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>menuBar</name></member>
-      <member refid="class_ui___main_window_1a7d7b4b19240d3d65b39fbfb5ee49538a" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>menuFichier</name></member>
       <member refid="class_ui___main_window_1a8340a7d6e9beca550e886c360dbc7afb" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>MOD</name></member>
       <member refid="class_ui___main_window_1a0093863cdee1f0a9f32f80a145eb9d74" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>MULTIPLIER</name></member>
       <member refid="class_ui___main_window_1ad451216d14bbfb46a45e691f81bd5697" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>num0</name></member>
@@ -1036,11 +1390,11 @@
       <member refid="class_ui___main_window_1a6b99070e2ed530d98b26f79ce1b5ecdf" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>num7</name></member>
       <member refid="class_ui___main_window_1aeca50b654eb96a8bb380a34405c0e8a6" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>num8</name></member>
       <member refid="class_ui___main_window_1a2a726c1956d35bdc8131b967f8a6d152" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>num9</name></member>
+      <member refid="class_ui___main_window_1a10499cba7898eb6c0827b13d2b2e09e4" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>PIBOUTON</name></member>
       <member refid="class_ui___main_window_1afea79b7d0abfd420abade70c22e611e9" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>POINT</name></member>
       <member refid="class_ui___main_window_1a02bdc78125dfec5dfb5653ce0776eeb3" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>POW</name></member>
-      <member refid="class_ui___main_window_1ad332d93084584930878f1daf5f84cdbf" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>pushButton</name></member>
-      <member refid="class_ui___main_window_1a59a7d8124bce933d63f53f2153d447b4" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>pushButton_2</name></member>
       <member refid="class_ui___main_window_1a1e4151d33099f88be6126ffa57e3a6a8" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>QUOTE</name></member>
+      <member refid="class_ui___main_window_1a63ba859b403fa2f74b1e5f3b3f258575" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>retablir</name></member>
       <member refid="class_ui___main_window_1a097dd160c3534a204904cb374412c618" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>retranslateUi</name></member>
       <member refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>setupUi</name></member>
       <member refid="class_ui___main_window_1a5a851ab1cd3ae5dac5d8cf6b6e22e956" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>SIGN</name></member>
@@ -1049,10 +1403,11 @@
       <member refid="class_ui___main_window_1ac0e681bd2bc1ee327deede20741b33c7" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>SOUSTRAIRE</name></member>
       <member refid="class_ui___main_window_1a6259c463080f8ffe0be91053e874780b" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>SQR</name></member>
       <member refid="class_ui___main_window_1a6e35980b83db49bf01e02faf128a8ba4" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>SQRT</name></member>
-      <member refid="class_ui___main_window_1a50fa481337604bcc8bf68de18ab16ecd" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>statusBar</name></member>
+      <member refid="class_ui___main_window_1a6b4a0425c46ea6e3c9c530196d69b695" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>supprimer_tete_pile</name></member>
       <member refid="class_ui___main_window_1a17184ec702aa5040677142c4a143e5f2" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>TAN</name></member>
       <member refid="class_ui___main_window_1aa0b74bbccda6715c999c78240332fda0" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>TANH</name></member>
       <member refid="class_ui___main_window_1a0c01bad60d9f422a1258e710635a2f65" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>verticalLayout_2</name></member>
+      <member refid="class_ui___main_window_1a48b51edf0d95abf4e0da82b6846d7c3d" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>vider_pile</name></member>
       <member refid="class_ui___main_window_1afc376b376159bf114d26ad55b43e87b0" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>widget_clavierAvance</name></member>
       <member refid="class_ui___main_window_1a4684b35f7b6ce7e3b2372b2b01037ea2" prot="public" virt="non-virtual"><scope>Ui_MainWindow</scope><name>widget_clavierBasic</name></member>
     </listofallmembers>

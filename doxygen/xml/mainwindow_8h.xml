@@ -5,115 +5,178 @@
     <includes local="no">QMainWindow</includes>
     <includes local="no">QStack</includes>
     <includes refid="pile_8h" local="yes">pile.h</includes>
-    <includedby refid="calculatrice_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h</includedby>
-    <includedby refid="main_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/main.cpp</includedby>
-    <includedby refid="mainwindow_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp</includedby>
-    <includedby refid="moc__mainwindow_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/moc_mainwindow.cpp</includedby>
+    <includedby refid="calculatrice_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/main.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp</includedby>
+    <includedby refid="moc__mainwindow_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/moc_mainwindow.cpp</includedby>
     <incdepgraph>
-      <node id="287">
-        <label>pile.h</label>
-        <link refid="pile_8h_source"/>
-        <childnode refid="288" relation="include">
+      <node id="788">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h</label>
+        <link refid="mainwindow.h"/>
+        <childnode refid="789" relation="include">
         </childnode>
-        <childnode refid="289" relation="include">
+        <childnode refid="790" relation="include">
         </childnode>
-        <childnode refid="290" relation="include">
-        </childnode>
-        <childnode refid="291" relation="include">
-        </childnode>
-        <childnode refid="293" relation="include">
-        </childnode>
-        <childnode refid="295" relation="include">
+        <childnode refid="791" relation="include">
         </childnode>
       </node>
-      <node id="286">
+      <node id="802">
+        <label>rationnel.h</label>
+        <link refid="rationnel_8h"/>
+        <childnode refid="795" relation="include">
+        </childnode>
+        <childnode refid="792" relation="include">
+        </childnode>
+        <childnode refid="797" relation="include">
+        </childnode>
+        <childnode refid="798" relation="include">
+        </childnode>
+      </node>
+      <node id="790">
         <label>QStack</label>
       </node>
-      <node id="296">
-        <label>logmessage.h</label>
-        <link refid="logmessage_8h_source"/>
-        <childnode refid="292" relation="include">
-        </childnode>
-        <childnode refid="297" relation="include">
-        </childnode>
-      </node>
-      <node id="285">
+      <node id="789">
         <label>QMainWindow</label>
       </node>
-      <node id="284">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h</label>
-        <link refid="mainwindow.h"/>
-        <childnode refid="285" relation="include">
+      <node id="791">
+        <label>pile.h</label>
+        <link refid="pile_8h"/>
+        <childnode refid="792" relation="include">
         </childnode>
-        <childnode refid="286" relation="include">
+        <childnode refid="793" relation="include">
         </childnode>
-        <childnode refid="287" relation="include">
+        <childnode refid="794" relation="include">
+        </childnode>
+        <childnode refid="795" relation="include">
+        </childnode>
+        <childnode refid="800" relation="include">
+        </childnode>
+        <childnode refid="802" relation="include">
         </childnode>
       </node>
-      <node id="297">
+      <node id="797">
+        <label>logmessage.h</label>
+        <link refid="logmessage_8h"/>
+        <childnode refid="796" relation="include">
+        </childnode>
+        <childnode refid="798" relation="include">
+        </childnode>
+      </node>
+      <node id="798">
         <label>exception</label>
       </node>
-      <node id="294">
-        <label>entier.h</label>
-        <link refid="entier_8h"/>
-        <childnode refid="291" relation="include">
-        </childnode>
-      </node>
-      <node id="290">
+      <node id="794">
         <label>vector</label>
       </node>
-      <node id="289">
+      <node id="793">
         <label>stack</label>
       </node>
-      <node id="293">
+      <node id="800">
         <label>complexe.h</label>
-        <link refid="complexe_8h_source"/>
-        <childnode refid="291" relation="include">
+        <link refid="complexe_8h"/>
+        <childnode refid="795" relation="include">
         </childnode>
-        <childnode refid="294" relation="include">
+        <childnode refid="801" relation="include">
         </childnode>
       </node>
-      <node id="288">
+      <node id="799">
+        <label>logsystem.h</label>
+        <link refid="logsystem_8h"/>
+        <childnode refid="797" relation="include">
+        </childnode>
+        <childnode refid="792" relation="include">
+        </childnode>
+      </node>
+      <node id="792">
         <label>iostream</label>
       </node>
-      <node id="295">
-        <label>rationnel.h</label>
-        <link refid="rationnel_8h_source"/>
-        <childnode refid="291" relation="include">
-        </childnode>
-        <childnode refid="288" relation="include">
-        </childnode>
-        <childnode refid="296" relation="include">
-        </childnode>
-        <childnode refid="297" relation="include">
+      <node id="796">
+        <label>QtGui</label>
+      </node>
+      <node id="801">
+        <label>entier.h</label>
+        <link refid="entier_8h"/>
+        <childnode refid="795" relation="include">
         </childnode>
       </node>
-      <node id="291">
+      <node id="795">
         <label>constante.h</label>
         <link refid="constante_8h"/>
-        <childnode refid="288" relation="include">
+        <childnode refid="792" relation="include">
         </childnode>
-        <childnode refid="292" relation="include">
+        <childnode refid="796" relation="include">
         </childnode>
-      </node>
-      <node id="292">
-        <label>QtGui</label>
+        <childnode refid="797" relation="include">
+        </childnode>
+        <childnode refid="799" relation="include">
+        </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="298">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h</label>
+      <node id="803">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h</label>
         <link refid="mainwindow.h"/>
-        <childnode refid="299" relation="include">
+        <childnode refid="804" relation="include">
+        </childnode>
+        <childnode refid="809" relation="include">
+        </childnode>
+        <childnode refid="806" relation="include">
+        </childnode>
+        <childnode refid="810" relation="include">
         </childnode>
       </node>
-      <node id="299">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h</label>
+      <node id="806">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="804">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h</label>
         <link refid="calculatrice_8h"/>
+        <childnode refid="805" relation="include">
+        </childnode>
+        <childnode refid="806" relation="include">
+        </childnode>
+        <childnode refid="807" relation="include">
+        </childnode>
+        <childnode refid="808" relation="include">
+        </childnode>
+      </node>
+      <node id="808">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp</label>
+        <link refid="rationnel_8cpp"/>
+      </node>
+      <node id="810">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/moc_mainwindow.cpp</label>
+        <link refid="moc__mainwindow_8cpp"/>
+      </node>
+      <node id="807">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp</label>
+        <link refid="pile_8cpp"/>
+      </node>
+      <node id="809">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="805">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp</label>
+        <link refid="calculatrice_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="class_main_window" prot="public">MainWindow</innerclass>
     <innernamespace refid="namespace_ui">Ui</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mainwindow_8h_1a598a3330b3c21701223ee0ca14316eca" prot="public" static="no">
+        <name>PI</name>
+        <initializer>3.14159265</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="20" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="enum">
       <memberdef kind="enum" id="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6a" prot="public" static="no">
         <name>MesureAngle</name>
@@ -137,7 +200,46 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="22" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="22" bodyend="22"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="22" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="mainwindow_8h_1a5381fbfe5e9fcfad0c41b48f45ea8640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante* stringToConstante</definition>
+        <argsstring>(QString s, bool essayer_construire_complexe)</argsstring>
+        <name>stringToConstante</name>
+        <param>
+          <type>QString</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>essayer_construire_complexe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Conversion string vers <ref refid="class_constante" kindref="compound">Constante</ref></para><para>En maniant les RegExp, on vérifie si l&apos;on peut convertir en l&apos;un des types de constante. Si c&apos;est possible, on crée une nouvelle constante du type dans lequel on peut convertir. Essayer_construire_complexe évite les boucle infinies lorsque l&apos;on rentre n&apos;importe quoi dans la QTextLine lorsque le clavier basic est désactivé ! <simplesect kind="return"><para>Une <emphasis><ref refid="class_constante" kindref="compound">Constante</ref></emphasis> du type dans lequel il est possible de convertir la chaine </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>temp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une QString, essayer_construire_complexe Un booléen</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="795" bodyend="836"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1ad5a63f289cc5df7ccc7677ada5ca92b8" compoundref="calculatrice_8h" startline="54" endline="54">Calculatrice::getModComplexe</references>
+        <references refid="mainwindow_8cpp_1a108d15359aba86f26b1bb30e7d0fd505" compoundref="mainwindow_8cpp" startline="795" endline="836">stringToConstante</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
+        <referencedby refid="class_calculatrice_1a01b91f69f7ac10d737af66b3fa968db9" compoundref="calculatrice_8cpp" startline="46" endline="71">Calculatrice::Calculatrice</referencedby>
+        <referencedby refid="class_main_window_1a1ccb4aa361ba5710af1ee09263a994fe" compoundref="mainwindow_8cpp" startline="708" endline="793">MainWindow::traiter_bloc_calcul</referencedby>
+        <referencedby refid="mainwindow_8h_1a5381fbfe5e9fcfad0c41b48f45ea8640" compoundref="mainwindow_8cpp" startline="795" endline="836">stringToConstante</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -151,94 +253,96 @@
 <codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QMainWindow&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;QStack&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;pile.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>MesureAngle<sp/>{<sp/>degre,<sp/>radian};</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//enum<sp/>TypeConstante<sp/>{<sp/>entier,<sp/>reel,<sp/>rationnel};</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_main_window" kindref="compound">MainWindow</ref>;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28" refid="class_main_window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_main_window" kindref="compound">MainWindow</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QMainWindow</highlight></codeline>
-<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>MesureAngle<sp/>_modAngle;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>Type<sp/>_modConstante;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_modComplexe;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>afficheur_pile(<ref refid="class_pile" kindref="compound">Pile</ref><sp/>p);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_pile" kindref="compound">Pile</ref><sp/>_pileStockage;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>QStack&lt;QString&gt;<sp/>_pileAffichage;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>QStack&lt;float&gt;<sp/>_pileStockageReelle;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>QStack&lt;Complexe&gt;<sp/>_pileStockageComplexe;<sp/></highlight><highlight class="comment">//ATTENTION<sp/>:<sp/>vider<sp/>la<sp/>pile<sp/>float<sp/>lors<sp/>du<sp/>passage<sp/>en<sp/><sp/>mode<sp/>complexes</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>saveToFile();</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadFromFile();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pile_8h" kindref="compound">pile.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="mainwindow_8h_1a598a3330b3c21701223ee0ca14316eca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PI<sp/>3.14159265</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6aae016078d0a68a6325ab6c0a3e53969b0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6a" kindref="member">MesureAngle</ref><sp/>{<sp/><ref refid="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6aaaaea1ab3c48044ff4c241e60aa12973e" kindref="member">degre</ref>,<sp/><ref refid="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6aae016078d0a68a6325ab6c0a3e53969b0" kindref="member">radian</ref>};</highlight></codeline>
+<codeline lineno="23" refid="namespace_ui" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Ui<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ui_1_1_main_window" kindref="compound">MainWindow</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//Fonction<sp/>outil<sp/>=&gt;<sp/>hors<sp/>classe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="mainwindow_8cpp_1a108d15359aba86f26b1bb30e7d0fd505" kindref="member">stringToConstante</ref>(QString<sp/>s,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>essayer_construire_complexe);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_main_window" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_main_window" kindref="compound">MainWindow</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>QMainWindow</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>Q_OBJECT</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a4e20a4a065fbb0e4d3532a45a0a91425" kindref="member">closeEvent</ref>(QCloseEvent<sp/>*event);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>loadFromFile();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" kindref="member">MainWindow</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1aa9bae53abcb888f5e8cda8aa654e50e5" kindref="member">dernier_element_expression</ref>(QString<sp/>chaine);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" kindref="member">~MainWindow</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a5820c5fa916142942adc9984c434793e" kindref="member">traiter_bloc_expression</ref>(QString<sp/>s);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a1ccb4aa361ba5710af1ee09263a994fe" kindref="member">traiter_bloc_calcul</ref>(QString<sp/>s);</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="class_main_window" kindref="compound">MainWindow</ref>(QWidget<sp/>*parent<sp/>=<sp/>0);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>traitement_expr(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>QStringList<sp/>list);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>~<ref refid="class_main_window" kindref="compound">MainWindow</ref>();</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>empiler(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>r);</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>POWClicked();</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SINClicked();</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>COSClicked();</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>TANClicked();</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SINHClicked();</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>COSHClicked();</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>TANHClicked();</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MODClicked();</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SIGNClicked();</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LNClicked();</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LOGClicked();</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>INVClicked();</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SQRClicked();</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SQRTClicked();</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CUBEClicked();</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>QUOTEClicked();</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CClicked();</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>CEClicked();</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DOLLARClicked();</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>num0Clicked();</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>num1Clicked();</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>num2Clicked();</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>num3Clicked();</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>num4Clicked();</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>num5Clicked();</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>num6Clicked();</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>num7Clicked();</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>num8Clicked();</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>num9Clicked();</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>POINTClicked();</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ESPACEClicked();</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>FACTORIELClicked();</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ADDITIONNERClicked();</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SOUSTRAIREClicked();</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>MULTIPLIERClicked();</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DIVISERClicked();</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_clavierBasicStateChange(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_clavierAvanceStateChange(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_modComplexeONClicked(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_modComplexeOFFClicked(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_modRadiansToggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_modDegresToggled(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_modReel(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_modRationnel(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>_modEntier(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ENTERClicked();</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_ui_1_1_main_window" kindref="compound">Ui::MainWindow</ref><sp/>*ui;</highlight></codeline>
-<codeline lineno="103"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MAINWINDOW_H</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>slots:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ab623e042d0384fce67ee67b86aa092ab" kindref="member">POWClicked</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a694058b9993bdad7bf4c96b7bae1af37" kindref="member">SINClicked</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1acc7b69effe16bf3936be897b1e9697a2" kindref="member">COSClicked</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1abd6beb62d32cc0922fd78819e3c4a9cd" kindref="member">TANClicked</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ae18b7a59154a29d9166dae53a02da0cd" kindref="member">SINHClicked</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ae0cb839c1a84f68cfe7d55d75679bf32" kindref="member">COSHClicked</ref>();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a9674367d1b35c2b7fcb37547982c7142" kindref="member">TANHClicked</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a4edf9a5fcb637c43e2d4d4e107fd0c62" kindref="member">MODClicked</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1aada810f5e314c0180e159729f1af13f5" kindref="member">SIGNClicked</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a16e852b776efdec4876c32f0fb56a5b0" kindref="member">LNClicked</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a0e9e909347465ac2945668a5229c4688" kindref="member">LOGClicked</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a254c2a0ab491f878157d6abb8d4a8381" kindref="member">INVClicked</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ad6048a7bb41b1e0ac37bb1f05e458cc8" kindref="member">SQRClicked</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a40ff97255a9f62068bf20312468060dd" kindref="member">SQRTClicked</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a7e0ee20d8b3f6c4638ddced7d894c595" kindref="member">CUBEClicked</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1aa3cc15e4ab21e8d1d02b2c908f7ed955" kindref="member">QUOTEClicked</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1acd5bbd32604f72b223e69a58088ddabd" kindref="member">CClicked</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a1a093a266d6f67c63e27b410de323e3f" kindref="member">CEClicked</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1adc9d3f1638131c5d291c54380fda801f" kindref="member">DOLLARClicked</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ab408f985cff16c7d939d48cfa3d5f0b1" kindref="member">num0Clicked</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a538b702a2feed14f756f9fff0a53d2f5" kindref="member">num1Clicked</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a857a81084ff261633c9896f24bdd6fb5" kindref="member">num2Clicked</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1aaf2e8e4cdcabb0c9cd2496e662038b64" kindref="member">num3Clicked</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a6d79c0dc7b05f66d0dd2d5eb57d870a2" kindref="member">num4Clicked</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a9dfa9a2ba4c04d27047f1b6cf50eb309" kindref="member">num5Clicked</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ae581f160bb58ff7b92fb10488dad1cb7" kindref="member">num6Clicked</ref>();</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ae34dccd3c4bdff6452250ec4807977e4" kindref="member">num7Clicked</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ab86f29d78da5c85373b2126cdbfadf78" kindref="member">num8Clicked</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a48cd898abe91cf0b7784dfce7258b8f6" kindref="member">num9Clicked</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a5c1743c01e8cf19b5b0e678a09734363" kindref="member">PIBOUTONClicked</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a96f5509a262bda1ee40ceaddb081bff6" kindref="member">POINTClicked</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a4f3a33c651ac011d7a4ee62f70c88e44" kindref="member">ESPACEClicked</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a97ac3886016cc9dc1cc7ae1be4abac65" kindref="member">FACTORIELClicked</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a7babfc70d1010ea3e7efe67b788e0ec5" kindref="member">ADDITIONNERClicked</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1aef8aa8858f4a280f6da4ef6f6b4cf208" kindref="member">SOUSTRAIREClicked</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a0fe4c051d0deac4c5eec64a6cd3d3682" kindref="member">MULTIPLIERClicked</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a785abff91c01b674c3b795dc289ae629" kindref="member">DIVISERClicked</ref>();</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a0056914c89217bbef8879ccae4466e28" kindref="member">_clavierBasicStateChange</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a9200740951f715069c9f2bc7809f6e07" kindref="member">_clavierAvanceStateChange</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a6febb02daee1abb1c9c0d0f9d190b25c" kindref="member">_modComplexeONClicked</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a85b97292e1728650fc34d989170a0886" kindref="member">_modComplexeOFFClicked</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ae1cb8b4b1f79083accb25c66e6847abc" kindref="member">_modRadiansToggled</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1aa181a30bc86fd676299a828b6806fff7" kindref="member">_modDegresToggled</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a29e8205bc963cebba7a96f94f4d3c40f" kindref="member">_modReel</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" kindref="member">_modRationnel</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a05cfdc8bf99fa145e67ce4d9eed03f20" kindref="member">_modEntier</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1abc93f16a699c5df5e5aedd67e1ad7e92" kindref="member">retablirClicked</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1ad796f3d5c13e4ed2ea90e17aa0a3d7a8" kindref="member">annulerClicked</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" kindref="member">ENTERClicked</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a2472c42b862ef1dc38b75c4111a28590" kindref="member">EVALClicked</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a164eb394f8581e1f80fba559bcc3d2e5" kindref="member">vider_pileClicked</ref>();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a10bc645984994b33d7176946fc06eff2" kindref="member">supprimer_tete_pileClicked</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_main_window_1a4d771b6ac11d2280aa5e45e4d47a2011" kindref="member">dupliquer_tete_pileClicked</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_ui_1_1_main_window" kindref="compound">Ui::MainWindow</ref><sp/>*ui;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>MAINWINDOW_H</highlight></codeline>
     </programlisting>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h"/>
   </compounddef>
 </doxygen>

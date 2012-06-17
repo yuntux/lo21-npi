@@ -20,11 +20,11 @@
 #define PI 3.14159265
 
 enum MesureAngle { degre, radian};
-//enum TypeConstante { entier, reel, rationnel};
 namespace Ui {
     class MainWindow;
 }
 
+//Fonction outil => hors classe
 Constante* stringToConstante(QString s, bool essayer_construire_complexe);
 
 class MainWindow : public QMainWindow

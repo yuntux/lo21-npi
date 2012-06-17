@@ -3,30 +3,258 @@
   <compounddef id="logsystem_8h" kind="file">
     <compoundname>logsystem.h</compoundname>
     <includes refid="logmessage_8h" local="yes">logmessage.h</includes>
-    <includedby refid="logsystem_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.cpp</includedby>
-    <includedby refid="main_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/main.cpp</includedby>
+    <includes local="no">iostream</includes>
+    <includedby refid="constante_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.h</includedby>
+    <includedby refid="calculatrice_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp</includedby>
+    <includedby refid="logsystem_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/main.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp</includedby>
+    <includedby refid="pile_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp</includedby>
     <incdepgraph>
-      <node id="215">
+      <node id="701">
         <label>logmessage.h</label>
-        <link refid="logmessage_8h_source"/>
-        <childnode refid="216" relation="include">
+        <link refid="logmessage_8h"/>
+        <childnode refid="702" relation="include">
         </childnode>
-        <childnode refid="217" relation="include">
+        <childnode refid="703" relation="include">
         </childnode>
       </node>
-      <node id="217">
+      <node id="703">
         <label>exception</label>
       </node>
-      <node id="214">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h</label>
+      <node id="700">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h</label>
         <link refid="logsystem.h"/>
-        <childnode refid="215" relation="include">
+        <childnode refid="701" relation="include">
+        </childnode>
+        <childnode refid="704" relation="include">
         </childnode>
       </node>
-      <node id="216">
+      <node id="704">
+        <label>iostream</label>
+      </node>
+      <node id="702">
         <label>QtGui</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="713">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="708" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="715" relation="include">
+        </childnode>
+      </node>
+      <node id="723">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h</label>
+        <link refid="rationnel_8h"/>
+        <childnode refid="707" relation="include">
+        </childnode>
+        <childnode refid="718" relation="include">
+        </childnode>
+        <childnode refid="724" relation="include">
+        </childnode>
+        <childnode refid="719" relation="include">
+        </childnode>
+        <childnode refid="720" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="712" relation="include">
+        </childnode>
+        <childnode refid="721" relation="include">
+        </childnode>
+      </node>
+      <node id="724">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h</label>
+        <link refid="reel_8h"/>
+        <childnode refid="718" relation="include">
+        </childnode>
+        <childnode refid="719" relation="include">
+        </childnode>
+        <childnode refid="720" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="712" relation="include">
+        </childnode>
+        <childnode refid="721" relation="include">
+        </childnode>
+      </node>
+      <node id="710">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="708">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h</label>
+        <link refid="calculatrice_8h"/>
+        <childnode refid="709" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="711" relation="include">
+        </childnode>
+        <childnode refid="712" relation="include">
+        </childnode>
+      </node>
+      <node id="712">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp</label>
+        <link refid="rationnel_8cpp"/>
+      </node>
+      <node id="707">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h</label>
+        <link refid="pile_8h"/>
+        <childnode refid="708" relation="include">
+        </childnode>
+        <childnode refid="713" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="716" relation="include">
+        </childnode>
+        <childnode refid="711" relation="include">
+        </childnode>
+      </node>
+      <node id="715">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/moc_mainwindow.cpp</label>
+        <link refid="moc__mainwindow_8cpp"/>
+      </node>
+      <node id="726">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.cpp</label>
+        <link refid="expression_8cpp"/>
+      </node>
+      <node id="720">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/entier.cpp</label>
+        <link refid="entier_8cpp"/>
+      </node>
+      <node id="711">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp</label>
+        <link refid="pile_8cpp"/>
+      </node>
+      <node id="727">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.cpp</label>
+        <link refid="logsystem_8cpp"/>
+      </node>
+      <node id="725">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.h</label>
+        <link refid="expression_8h"/>
+        <childnode refid="719" relation="include">
+        </childnode>
+        <childnode refid="726" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+      </node>
+      <node id="714">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="718">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp</label>
+        <link refid="complexe_8cpp"/>
+      </node>
+      <node id="717">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h</label>
+        <link refid="complexe_8h"/>
+        <childnode refid="707" relation="include">
+        </childnode>
+        <childnode refid="718" relation="include">
+        </childnode>
+        <childnode refid="719" relation="include">
+        </childnode>
+        <childnode refid="720" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="712" relation="include">
+        </childnode>
+        <childnode refid="721" relation="include">
+        </childnode>
+      </node>
+      <node id="709">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp</label>
+        <link refid="calculatrice_8cpp"/>
+      </node>
+      <node id="705">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h</label>
+        <link refid="logsystem.h"/>
+        <childnode refid="706" relation="include">
+        </childnode>
+        <childnode refid="709" relation="include">
+        </childnode>
+        <childnode refid="727" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="711" relation="include">
+        </childnode>
+      </node>
+      <node id="716">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/moc_pile.cpp</label>
+        <link refid="moc__pile_8cpp"/>
+      </node>
+      <node id="719">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.cpp</label>
+        <link refid="constante_8cpp"/>
+      </node>
+      <node id="721">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp</label>
+        <link refid="reel_8cpp"/>
+      </node>
+      <node id="722">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/entier.h</label>
+        <link refid="entier_8h"/>
+        <childnode refid="717" relation="include">
+        </childnode>
+        <childnode refid="718" relation="include">
+        </childnode>
+        <childnode refid="719" relation="include">
+        </childnode>
+        <childnode refid="720" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="712" relation="include">
+        </childnode>
+        <childnode refid="721" relation="include">
+        </childnode>
+      </node>
+      <node id="706">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.h</label>
+        <link refid="constante_8h"/>
+        <childnode refid="707" relation="include">
+        </childnode>
+        <childnode refid="717" relation="include">
+        </childnode>
+        <childnode refid="722" relation="include">
+        </childnode>
+        <childnode refid="723" relation="include">
+        </childnode>
+        <childnode refid="708" relation="include">
+        </childnode>
+        <childnode refid="724" relation="include">
+        </childnode>
+        <childnode refid="719" relation="include">
+        </childnode>
+        <childnode refid="725" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
     <innerclass refid="class_log_system" prot="public">LogSystem</innerclass>
     <briefdescription>
     </briefdescription>
@@ -35,18 +263,30 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LOGSYSTEM_H</highlight></codeline>
 <codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LOGSYSTEM_H</highlight></codeline>
-<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;logmessage.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5" refid="class_log_system" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_log_system" kindref="compound">LogSystem</ref></highlight></codeline>
-<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ajouterFichierLog(<ref refid="class_log_message" kindref="compound">LogMessage</ref><sp/>m);</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ajouterConsoleLog(<ref refid="class_log_message" kindref="compound">LogMessage</ref><sp/>m);</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_log_system" kindref="compound">LogSystem</ref>();</highlight></codeline>
-<codeline lineno="11"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LOGSYSTEM_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="logmessage_8h" kindref="compound">logmessage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_log_system" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_log_system" kindref="compound">LogSystem</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_log_system" kindref="compound">LogSystem</ref>*<sp/>instance;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_log_system" kindref="compound">LogSystem</ref>&amp;<sp/><ref refid="class_log_system_1ab5b398fac784d6c20576829056a364a2" kindref="member">getInstance</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_log_system_1a96ec47ba20361122fb990ef8e9729b82" kindref="member">libereInstance</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_log_system_1a26650fa1e4d9792106e4c3ddd727aaa9" kindref="member">ajouterFichierLog</ref>(<ref refid="class_log_message" kindref="compound">LogMessage</ref><sp/>m);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_log_system_1ad18f58f1ad0e8f23dc524c2f55d3e8fc" kindref="member">ajouterConsoleLog</ref>(<ref refid="class_log_message" kindref="compound">LogMessage</ref><sp/>m);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_log_system_1a29ba53a9628ac2c2c517bf751cb84a9a" kindref="member">ajouterFcihierEtConsole</ref>(<ref refid="class_log_message" kindref="compound">LogMessage</ref><sp/>m);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="class_log_system_1adc3513336bc3959e888b343ce6304922" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_log_system_1adc3513336bc3959e888b343ce6304922" kindref="member">LogSystem</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_log_system" kindref="compound">LogSystem</ref>&amp;){}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_log_system_1ac891dbbf0efb28b572555ee797b56998" kindref="member">LogSystem</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//virtual<sp/>~LogSystem(){}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_log_system_1a259a97306f0a436f4d8b767b3b0ab8b2" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_log_system" kindref="compound">LogSystem</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LOGSYSTEM_H</highlight></codeline>
     </programlisting>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h"/>
   </compounddef>
 </doxygen>

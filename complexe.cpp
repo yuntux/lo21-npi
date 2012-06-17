@@ -8,13 +8,16 @@
 Complexe::~Complexe(){
     delete(_reelle);
     delete(_imaginaire);
+    /**
+    * \brief Destructeru de complexe
+    * \details Rétabli le dernier état annulé de la pile Historique.
+    */
 }
 
 Complexe::Complexe(Constante* r, Constante* i){
     if (typeid(*r)==typeid(Complexe) || typeid(*r)==typeid(Complexe)) {
-        //FIXME : lève une exeption (éviter les boucles de récursion infinies)
+        throw LogMessage(2,"Les parties réeelles et complexes doivent être des constantes non complexes.", important);
     } else {
-        //plutot copier les composantes ?
         _reelle = r->recopie();;
         _imaginaire= i->recopie();
     }
@@ -29,22 +32,20 @@ Complexe::Complexe(Constante* r, Constante* i){
 }
 
 Complexe::Complexe(Constante* c) {
-    //FIXME : on réalloue pour Reel(0,0) et Rationnel(0) mais on ne recopie pas le reste ???
     if (Complexe *c_complexe=dynamic_cast<Complexe *>(c)){
-        _reelle = c_complexe->getPartieReelle();
-        _imaginaire = c_complexe->getPartieImaginaire();
+        _reelle = c_complexe->getPartieReelle()->recopie();
+        _imaginaire = c_complexe->getPartieImaginaire()->recopie();
     } else if (typeid(*c)==typeid(Entier)) {
         Entier *c_entier= new Entier (dynamic_cast<Entier *>(c));
-        _reelle = c_entier;
+        _reelle = c_entier->recopie();
         _imaginaire = new Entier(0);
     } else if (typeid(*c)==typeid(Rationnel)) {
         Rationnel *r=dynamic_cast<Rationnel *>(c);
-        Constante* r_copie = r->recopie();
-        _reelle = r_copie;
+        _reelle = r->recopie();
         _imaginaire = new Rationnel(0);
     } else if (typeid(*c)==typeid(Reel)) {
         Reel *c_reel= new Reel(dynamic_cast<Reel *>(c));
-        _reelle = c_reel;
+        _reelle = c_reel->recopie();
         _imaginaire = new Reel(0.0);
     }
     /**
@@ -56,20 +57,9 @@ Complexe::Complexe(Constante* c) {
 }
 
 QString Complexe::afficher() const{
+    if (this->reel_pur())
+        return _reelle->afficher();
 
-    if (typeid(*getPartieImaginaire())==typeid(Entier)) {
-        Entier *im_entier=dynamic_cast<Entier *>(this->getPartieImaginaire());
-        if (im_entier->getValeur()==0)
-            return _reelle->afficher();
-    } else if (typeid(*getPartieImaginaire())==typeid(Rationnel)) {
-        Rationnel *im_rationnel=dynamic_cast<Rationnel *>(this->getPartieImaginaire());
-        if (im_rationnel->getNumerateur()==0)
-            return _reelle->afficher();
-    } else if (typeid(*getPartieImaginaire())==typeid(Reel)) {
-       Reel *im_reel=dynamic_cast<Reel *>(this->getPartieImaginaire());
-       if (im_reel->getValeur()==0)
-           return _reelle->afficher();
-   }
     return _reelle->afficher()+"$"+_imaginaire->afficher();
     /**
       * \brief Méthode d'affichae d'un Complexe
@@ -81,17 +71,11 @@ QString Complexe::afficher() const{
 }
 
 Constante* Complexe::addition(Constante* c){
-    Complexe *c_complexe = new Complexe(c);
-    //les parties imaginaires sont des reels/rationnels/entiers donc leur somme renvoie un complexe donc l'im est nulle
-    Complexe* re = new Complexe(c_complexe->getPartieReelle()->addition(this->getPartieReelle()));
-    //les parties réelles sont des reels/rationnels/entiers donc leur somme renvoie un complexe donc l'im est nulle
-    Complexe* im = new Complexe(c_complexe->getPartieImaginaire()->addition(this->getPartieImaginaire()));
-    c_complexe->setImaginaire(im->getPartieReelle());
-    c_complexe->setReelle(re->getPartieReelle());
-    //NE PAS DECOMMENTER
-    //delete(re);
-    //delete(im);
-    return c_complexe;
+    Complexe tmp(c);
+    return new Complexe(
+            this->getPartieReelle()->addition(tmp.getPartieReelle()),
+            this->getPartieImaginaire()->addition(tmp.getPartieImaginaire())
+            );
     /**
       * \brief Addition de 2 complexes
       * \details On crée 3 complexes : \a c_entier, construit à partir du paramètre,
@@ -103,14 +87,11 @@ Constante* Complexe::addition(Constante* c){
 
 Constante* Complexe::produit(Constante *c)
 {
-    Complexe *c_complexe = new Complexe(c);
-    Complexe* re = new Complexe(c_complexe->getPartieReelle()->produit(_reelle)->soustraction(c_complexe->getPartieImaginaire()->produit(_imaginaire)));
-    Complexe* im = new Complexe(c_complexe->getPartieImaginaire()->produit(_reelle)->addition(c_complexe->getPartieReelle()->produit(_imaginaire)));
-    c_complexe->setImaginaire(im->getPartieReelle());
-    c_complexe->setReelle(re->getPartieReelle());
-    //delete(re);
-    //delete(im);
-    return c_complexe;
+    Complexe tmp(c);
+    return new Complexe(
+            this->getPartieReelle()->produit(tmp.getPartieReelle())->soustraction(this->getPartieImaginaire()->produit(tmp.getPartieImaginaire())),
+            this->getPartieReelle()->produit(tmp.getPartieImaginaire())->addition(tmp.getPartieReelle()->produit(this->getPartieImaginaire()))
+            );
     /**
       * \brief Produit de 2 complexes
       * \details Comme pour l'addition, on crée trois complexes. Cette fois, \a re est le produit des parties réelles,
@@ -121,24 +102,8 @@ Constante* Complexe::produit(Constante *c)
 
 Constante* Complexe::division(Constante *c)
 {
-    // On utilise la multiplication par le conjugué du diviseur au numérateur et au dénominateur
-    //    a+ib / c+id = (a+ib)*(c-id) / (c+id)*(c-id) = ... = [(ac+bd)/(c²+d²)] + i[(cb-ad)/(c²+d²)]
-    Complexe *dividende = this;
-    Complexe *diviseur=dynamic_cast<Complexe *>(c);
-
-    Complexe* denom = new Complexe(diviseur->getPartieReelle()->produit(diviseur->getPartieReelle())->addition(diviseur->getPartieImaginaire()->produit(diviseur->getPartieImaginaire())));
-
-    Complexe* re_num = new Complexe(dividende->getPartieReelle()->produit(diviseur->getPartieReelle())->addition(dividende->getPartieImaginaire()->produit(diviseur->getPartieImaginaire())));
-    Complexe* re = new Complexe(re_num->getPartieReelle()->division(denom->getPartieReelle()));
-
-    Complexe* im_num = new Complexe(diviseur->getPartieReelle()->produit(dividende->getPartieImaginaire())->soustraction(dividende->getPartieReelle()->produit(diviseur->getPartieImaginaire())));
-    Complexe* im = new Complexe(im_num->getPartieReelle()->division(denom->getPartieReelle()));
-
-    Complexe* res = new Complexe(re->getPartieReelle(), im->getPartieReelle());
-    //delete(denom);
-    //delete(re_num);
-    //delete(im_num);
-    return res;
+    Complexe tmp(c);
+    return this->produit(tmp.inv());
     /**
       * \brief Division de 2 complexes
       * \details  On utilise la multiplication par le conjuguÃ© du diviseur au numÃ©rateur et au dÃ©nominateur
@@ -148,14 +113,8 @@ Constante* Complexe::division(Constante *c)
 }
 
 Constante* Complexe::signe(){
-    Constante *c = this->recopie();
-    Complexe *tmp = dynamic_cast<Complexe *>(c);
-    Entier e(-1);
-    Complexe tmp1(tmp->getPartieImaginaire()->produit(&e));
-    tmp->setImaginaire(tmp1.getPartieReelle());
-    Complexe tmp2(tmp->getPartieReelle()->produit(&e));
-    tmp->setReelle(tmp2.getPartieReelle());
-    return c;
+    Constante* e = new Entier(-1);
+    return new Complexe(this->getPartieReelle()->produit(e), this->getPartieImaginaire()->produit(e));
     /**
       * \brief Changement de signe
       * \details On recopie tout d'abord la constante, qu'on caste ensuite en complexe. On crée un entier de valeur -1
@@ -166,16 +125,8 @@ Constante* Complexe::signe(){
 }
 
 Constante* Complexe::soustraction(Constante* c){
-    Complexe *c_complexe = new Complexe(c);
-    //les parties imaginaires sont des reels/rationnels/entiers donc leur somme renvoie un complexe donc l'im est nulle
-    Complexe* re = new Complexe(this->getPartieReelle()->soustraction(c_complexe->getPartieReelle()));
-    //les parties réelles sont des reels/rationnels/entiers donc leur somme renvoie un complexe donc l'im est nulle
-    Complexe* im = new Complexe(this->getPartieImaginaire()->soustraction(c_complexe->getPartieImaginaire()));
-    c_complexe->setImaginaire(im->getPartieReelle());
-    c_complexe->setReelle(re->getPartieReelle());
-    //delete(re);
-    //delete(im);
-    return c_complexe;
+    Complexe tmp(c);
+    return this->addition(tmp.inv());
     /**
       * \brief Différence de deux complexes
       * \details De la même façon, cette fois \a re va être la différence des 2 parties réelles, et \a im la différence des
@@ -243,31 +194,11 @@ Constante* Complexe::tangenteh(bool angle)
 
 
 Constante* Complexe::inv()
-{    
-    Complexe *diviseur = this;
-    Entier *e1 = new Entier(1);
-    Entier *e0 = new Entier(0);
-    Complexe *dividende= new Complexe(e1, e0);
-
-    Complexe* denom = new Complexe(diviseur->getPartieReelle()->produit(diviseur->getPartieReelle())->addition(diviseur->getPartieImaginaire()->produit(diviseur->getPartieImaginaire())));
-
-    Complexe* re_num = new Complexe(dividende->getPartieReelle()->produit(diviseur->getPartieReelle())->addition(dividende->getPartieImaginaire()->produit(diviseur->getPartieImaginaire())));
-    Complexe* re = new Complexe(re_num->getPartieReelle()->division(denom->getPartieReelle()));
-
-    Complexe* im_num = new Complexe(diviseur->getPartieReelle()->produit(dividende->getPartieImaginaire())->soustraction(dividende->getPartieReelle()->produit(diviseur->getPartieImaginaire())));
-    Complexe* im = new Complexe(im_num->getPartieReelle()->division(denom->getPartieReelle()));
-
-    Complexe* res = new Complexe(re->getPartieReelle(), im->getPartieReelle());
-    //delete(denom);
-    //delete(re_num);
-    //delete(im_num);
-    return res;
-    /*
-    if (this->reel_pur())
-        return this->getPartieReelle()->inv();
-    throw LogMessage(2,"La fonction INV n'est pas implémentée pour les complexes.", moyen);
-    return this;
-    */
+{   
+    return new Complexe(
+        this->getPartieReelle()->division(this->getPartieReelle()->carre()->addition(this->getPartieImaginaire()->carre())),
+        this->getPartieImaginaire()->signe()->division(this->getPartieReelle()->carre()->addition(this->getPartieImaginaire()->carre()))
+        );
 }
 
 Constante* Complexe::carre()

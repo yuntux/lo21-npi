@@ -1,10 +1,10 @@
-.TH "/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h" 3 "Thu Jun 7 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
+.TH "/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.h" 3 "Samedi Juin 16 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
-/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.h \- 
+/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.h \- 
 .PP
-\fBCalculatrice\fP en polonais inversé\&. Classe de la GUI QT-MainWindow\&.  
+\fBCalculatrice\fP en polonais inversé\&. Classe composite de gestion des constantes\&.  
 
 .SH SYNOPSIS
 .br
@@ -13,6 +13,10 @@
 .br
 \fC#include <QtGui>\fP
 .br
+\fC#include 'logmessage\&.h'\fP
+.br
+\fC#include 'logsystem\&.h'\fP
+.br
 
 .SS "Classes"
 
@@ -20,22 +24,21 @@
 .ti -1c
 .RI "class \fBConstante\fP"
 .br
-.ti -1c
-.RI "class \fBFrabriqueConstante\fP"
-.br
 .in -1c
-.SS "Enumerations"
+.SS "Énumérations"
 
 .in +1c
 .ti -1c
 .RI "enum \fBType\fP { \fBentier\fP, \fBrationnel\fP, \fBreel\fP, \fBcomplexe\fP, \fBexpression\fP }"
 .br
 .in -1c
-.SH "Detailed Description"
+.SH "Description détaillée"
 .PP 
-\fBCalculatrice\fP en polonais inversé\&. Classe de la GUI QT-MainWindow\&. 
+\fBCalculatrice\fP en polonais inversé\&. Classe composite de gestion des constantes\&. 
 
-\fBAuthor:\fP
+\fBCalculatrice\fP en polonais inversé\&. Classe de la GUI QT-MainWindow\&.
+.PP
+\fBAuteur:\fP
 .RS 4
 Aurélien DUMAINE 
 .PP
@@ -53,6 +56,27 @@ juin 2012
 .RE
 .PP
 Licence : GNU/GPL version 3 (http://www.gnu.org/copyleft/gpl.html) Dépot Git : http://code.google.com/p/lo21-npi/ 
-.SH "Author"
+.PP
+Définition dans le fichier \fBconstante\&.h\fP\&.
+.SH "Documentation du type de l'énumération"
 .PP 
-Generated automatically by Doxygen for Calculatrice polonais inversé LO21 from the source code\&.
+.SS "enum \fBType\fP"
+.PP
+\fBValeurs énumérées: \fP
+.in +1c
+.TP
+\fB\fIentier \fP\fP
+.TP
+\fB\fIrationnel \fP\fP
+.TP
+\fB\fIreel \fP\fP
+.TP
+\fB\fIcomplexe \fP\fP
+.TP
+\fB\fIexpression \fP\fP
+
+.PP
+Définition à la ligne 22 du fichier constante\&.h\&.
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Calculatrice polonais inversé LO21 à partir du code source\&.

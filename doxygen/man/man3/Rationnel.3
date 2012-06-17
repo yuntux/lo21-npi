@@ -1,4 +1,4 @@
-.TH "Rationnel" 3 "Thu Jun 7 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
+.TH "Rationnel" 3 "Samedi Juin 16 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -7,8 +7,10 @@ Rationnel \-
 .br
 .PP
 .PP
-Inherits \fBConstante\fP\&.
-.SS "Public Member Functions"
+\fC#include <rationnel\&.h>\fP
+.PP
+Est dérivée de \fBConstante\fP\&.
+.SS "Fonctions membres publiques"
 
 .in +1c
 .ti -1c
@@ -36,6 +38,9 @@ Inherits \fBConstante\fP\&.
 .RI "void \fBsimplification\fP ()"
 .br
 .ti -1c
+.RI "virtual \fB~Rationnel\fP ()"
+.br
+.ti -1c
 .RI "virtual \fBConstante\fP * \fBaddition\fP (\fBConstante\fP *c)"
 .br
 .ti -1c
@@ -57,10 +62,365 @@ Inherits \fBConstante\fP\&.
 .RI "virtual \fBConstante\fP * \fBfact\fP ()"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBsinus\fP ()"
+.RI "virtual \fBConstante\fP * \fBsinus\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcosinus\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBsinush\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcosinush\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBtangente\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBtangenteh\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBlogN\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBlog1\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBpuissance\fP (\fBConstante\fP *c)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcarre\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcube\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBracine\fP ()"
 .br
 .in -1c
-
-.SH "Author"
+.SH "Description détaillée"
 .PP 
-Generated automatically by Doxygen for Calculatrice polonais inversé LO21 from the source code\&.
+Définition à la ligne 13 du fichier rationnel\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBRationnel::Rationnel\fP (\fBConstante\fP *c)"Constructeur \fBRationnel\fP
+.PP
+Dans certains cas, selon le type du paramètre (\fBEntier\fP, \fBRationnel\fP), on effectue un dynamic cast sur le paramètre, et on affecte les valeurs aux attributs _numerateur et _denominateur 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une \fI\fBConstante\fP\fP, donc soit un \fBEntier\fP, soit un Réel, soit un \fBRationnel\fP, soit un \fBComplexe\fP
+.RE
+.PP
+
+.PP
+Définition à la ligne 41 du fichier rationnel\&.cpp\&.
+.SS "\fBRationnel::Rationnel\fP (intnum = \fC0\fP, intden = \fC1\fP)"Constructeur surchargé
+.PP
+Passage d'un numérateur et d'un dénominateur en paramètres et affectation des attributs\&. On lève une exception si le dénominateur est 0 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fInum\fP \fBEntier\fP correspondant au numérateur 
+.br
+\fIden\fP \fBEntier\fP correspondant au dénominateur
+.RE
+.PP
+
+.PP
+Définition à la ligne 78 du fichier rationnel\&.cpp\&.
+.SS "virtual \fBRationnel::~Rationnel\fP ()\fC [inline, virtual]\fP"
+.PP
+Définition à la ligne 35 du fichier rationnel\&.h\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "\fBConstante\fP * \fBRationnel::addition\fP (\fBConstante\fP *c)\fC [virtual]\fP"Somme de 2 rationnels
+.PP
+On vérifie le type du paramètre, et on crée une nouvelle instance de ce type en fonction, dont le ou les attributs seront en fait la somme des 2 rationnels dont l'on veut calculer l'addition\&.Cependant, si on est en mode \fBRationnel\fP, on ne doit pas avoir les autres types de constante\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une constante 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBRationnel\fP\fP construit, car on utilisera toujours les formes complexes pour les calculs
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 112 du fichier rationnel\&.cpp\&.
+.SS "QString \fBRationnel::afficher\fP () const\fC [virtual]\fP"Affichage \fBRationnel\fP
+.PP
+Affichage d'un \fBRationnel\fP, en affichant uniquement le numérateur si le dénominateur est égal à 1 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Une \fIQString\fP correspondant à l'affichage du rationnel
+.RE
+.PP
+
+.PP
+Implémente \fBConstante\fP\&.
+.PP
+Définition à la ligne 94 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::carre\fP ()\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 361 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::cosinus\fP (boolangle)\fC [virtual]\fP"Cosinus \fBRationnel\fP
+.PP
+La fonction \fIcos\fP de cmath étant implémentée pour un \fIfloat\fP, on fait le rapport du numérateur sur le dénominateur pour commencer\&. Ensuite, on teste si on est en degré\&. Si c'est le cas, on multiplie le résultat par PI/180 car \fIcos\fP est définie en radians\&. On calcule ensuite le cosinus\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Booléen, permet de savoir si l'on est en mode degré 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un nouveau \fI\fBComplexe\fP\fP construit à partir du \fBRationnel\fP contenant le résultat
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 226 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::cosinush\fP (boolangle)\fC [virtual]\fP"Cosinus Hyperbolique \fBRationnel\fP
+.PP
+La fonction \fIcosh\fP de cmath étant implémentée pour un \fIfloat\fP, on fait le rapport du numérateur sur le dénominateur pour commencer\&. Ensuite, on teste si on est en degré\&. Si c'est le cas, on multiplie le résultat par PI/180 car \fIcosh\fP est définie en radians\&. On calcule ensuite le cosinus hyperbolique\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Booléen, permet de savoir si l'on est en mode degré 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un nouveau \fI\fBComplexe\fP\fP construit à partir du \fBRationnel\fP contenant le résultat
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 258 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::cube\fP ()\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 368 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::division\fP (\fBConstante\fP *c)\fC [virtual]\fP"Division de rationnels
+.PP
+Comme pour la somme et le produit, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra le quotient demandé\&. Cependant, normalement en mode \fBRationnel\fP, on ne doit avoir que des rationnels\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une \fBConstante\fP 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBRationnel\fP\fP construit contenant le quotient
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 166 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::fact\fP ()\fC [virtual]\fP"Factoriel \fBRationnel\fP
+.PP
+Cette fonction n'est pas implémentée pour les rationnels, donc on lance un message pour prévenir l'utilisateur
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 199 du fichier rationnel\&.cpp\&.
+.SS "float \fBRationnel::getDenominateur\fP () const\fC [inline]\fP"
+.PP
+Définition à la ligne 21 du fichier rationnel\&.h\&.
+.SS "float \fBRationnel::getNumerateur\fP () const\fC [inline]\fP"
+.PP
+Définition à la ligne 20 du fichier rationnel\&.h\&.
+.SS "\fBConstante\fP * \fBRationnel::inv\fP ()\fC [virtual]\fP"Inverse \fBRationnel\fP
+.PP
+Pour inverser une fraction, il suffit d'échanger le numérateur et le dénominateur 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un nouveau \fI\fBRationnel\fP\fP contenant l'inverse de la fraction
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 307 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::log1\fP ()\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 340 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::logN\fP ()\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 333 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::produit\fP (\fBConstante\fP *c)\fC [virtual]\fP"Produit de deux rationnels
+.PP
+Comme pour la somme, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra le produit demandé\&. Cependant, normalement en mode \fBRationnel\fP, on ne doit avoir que des rationnels\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une \fBConstante\fP 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBRationnel\fP\fP construit contenant le produit
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 140 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::puissance\fP (\fBConstante\fP *c)\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 347 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::racine\fP ()\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 375 du fichier rationnel\&.cpp\&.
+.SS "void \fBRationnel::setDenominateur\fP (intv)\fC [inline]\fP"
+.PP
+Définition à la ligne 23 du fichier rationnel\&.h\&.
+.SS "void \fBRationnel::setNumerateur\fP (intv)\fC [inline]\fP"
+.PP
+Définition à la ligne 22 du fichier rationnel\&.h\&.
+.SS "\fBConstante\fP * \fBRationnel::signe\fP ()\fC [virtual]\fP"Inversion du signe
+.PP
+Il ne faut inverser le signe que d'un des deux attributs\&. On fait ici le choix du numérateur 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un nouveau \fI\fBRationnel\fP\fP avec numérateur opposé
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 178 du fichier rationnel\&.cpp\&.
+.SS "void \fBRationnel::simplification\fP ()"Simplifier fraction
+.PP
+Permet de simplifier un nombre \fBRationnel\fP
+.PP
+Définition à la ligne 317 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::sinus\fP (boolangle)\fC [virtual]\fP"Sinus \fBRationnel\fP
+.PP
+La fonction \fIsin\fP de cmath étant implémentée pour un \fIfloat\fP, on fait le rapport du numérateur sur le dénominateur pour commencer\&. Ensuite, on teste si on est en degré\&. Si c'est le cas, on multiplie le résultat par PI/180 car \fIsin\fP est définie en radians\&. On calcule ensuite le sinus\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Booléen, permet de savoir si l'on est en mode degré 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un nouveau \fI\fBComplexe\fP\fP construit à partir du \fBRationnel\fP contenant le résultat
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 209 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::sinush\fP (boolangle)\fC [virtual]\fP"Sinus Hyperbolique \fBRationnel\fP
+.PP
+La fonction \fIsinh\fP de cmath étant implémentée pour un \fIfloat\fP, on fait le rapport du numérateur sur le dénominateur pour commencer\&. Ensuite, on teste si on est en degré\&. Si c'est le cas, on multiplie le résultat par PI/180 car \fIsinh\fP est définie en radians\&. On calcule ensuite le sinus hyperbolique\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Booléen, permet de savoir si l'on est en mode degré 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un nouveau \fI\fBComplexe\fP\fP construit à partir du \fBRationnel\fP contenant le résultat
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 242 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::soustraction\fP (\fBConstante\fP *c)\fC [virtual]\fP"Différence de rationnels
+.PP
+Comme pour les autres opérations, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra la différence voulue\&. Cependant, normalement en mode \fBRationnel\fP, on ne doit avoir que des rationnels\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une \fBConstante\fP 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBRationnel\fP\fP construit contenant la différence
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 188 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::tangente\fP (boolangle)\fC [virtual]\fP"Tangente \fBRationnel\fP
+.PP
+La fonction \fItan\fP de cmath étant implémentée pour un \fIfloat\fP, on fait le rapport du numérateur sur le dénominateur pour commencer\&. Ensuite, on teste si on est en degré\&. Si c'est le cas, on multiplie le résultat par PI/180 car \fItan\fP est définie en radians\&. On calcule ensuite la tangente\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Booléen, permet de savoir si l'on est en mode degré 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un nouveau \fI\fBComplexe\fP\fP construit à partir du \fBRationnel\fP contenant le résultat
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 275 du fichier rationnel\&.cpp\&.
+.SS "\fBConstante\fP * \fBRationnel::tangenteh\fP (boolangle)\fC [virtual]\fP"Tangente Hyperbolique \fBRationnel\fP
+.PP
+La fonction \fItanh\fP de cmath étant implémentée pour un \fIfloat\fP, on fait le rapport du numérateur sur le dénominateur pour commencer\&. Ensuite, on teste si on est en degré\&. Si c'est le cas, on multiplie le résultat par PI/180 car \fItanh\fP est définie en radians\&. On calcule ensuite la tangente hyperbolique\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Booléen, permet de savoir si l'on est en mode degré 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un nouveau \fI\fBComplexe\fP\fP construit à partir du \fBRationnel\fP contenant le résultat
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 291 du fichier rationnel\&.cpp\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Calculatrice polonais inversé LO21 à partir du code source\&.

@@ -18,13 +18,6 @@ LogSystem::LogSystem()
 {
 }
 
-/*
-void LogSystem::ConstruireLog_ajouterConsoleEtFichierLog(int numero=0, string const &phrase="", enum niveau lev=faible){
-    LogMessage* m = new LogMessage(numero, phrase, niveau);
-    this->ajouterConsoleLog(*m);
-    this->ajouterFichierLog(*m);
-}
-*/
 void LogSystem::ajouterFcihierEtConsole(LogMessage m){
     this->ajouterConsoleLog(m);
     this->ajouterFichierLog(m);

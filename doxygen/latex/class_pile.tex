@@ -1,48 +1,512 @@
-\hypertarget{class_pile}{\section{\-Pile \-Class \-Reference}
+\hypertarget{class_pile}{\section{\-Référence de la classe \-Pile}
 \label{class_pile}\index{\-Pile@{\-Pile}}
 }
-\subsection*{\-Public \-Member \-Functions}
+
+
+{\ttfamily \#include $<$pile.\-h$>$}
+
+\subsection*{\-Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_pile_a2bbdc329f485cd017f8cbf88456ae68a}{\hyperlink{class_constante}{\-Constante} $\ast$ {\bfseries pop} ()}\label{class_pile_a2bbdc329f485cd017f8cbf88456ae68a}
-
+\hyperlink{class_constante}{\-Constante} $\ast$ \hyperlink{class_pile_a2bbdc329f485cd017f8cbf88456ae68a}{pop} ()
 \item 
-\hypertarget{class_pile_a25c322d47a76d758565bdf9df2253411}{\hyperlink{class_constante}{\-Constante} $\ast$ {\bfseries top} ()}\label{class_pile_a25c322d47a76d758565bdf9df2253411}
-
+\hyperlink{class_constante}{\-Constante} $\ast$ \hyperlink{class_pile_a25c322d47a76d758565bdf9df2253411}{top} ()
 \item 
-\hypertarget{class_pile_a18a4d9a9b8013b36a5423817f9fb9049}{void {\bfseries push} (\hyperlink{class_constante}{\-Constante} $\ast$ptr)}\label{class_pile_a18a4d9a9b8013b36a5423817f9fb9049}
-
+void \hyperlink{class_pile_a18a4d9a9b8013b36a5423817f9fb9049}{push} (\hyperlink{class_constante}{\-Constante} $\ast$ptr)
 \item 
-\hypertarget{class_pile_ae45e55f151180284728643cb9cfe4095}{bool {\bfseries is\-Empty} () const }\label{class_pile_ae45e55f151180284728643cb9cfe4095}
-
+bool \hyperlink{class_pile_ae45e55f151180284728643cb9cfe4095}{is\-Empty} () const 
 \item 
-\hypertarget{class_pile_aaae1107e877f7094bdbd97839c731634}{int {\bfseries size} () const }\label{class_pile_aaae1107e877f7094bdbd97839c731634}
-
+int \hyperlink{class_pile_aaae1107e877f7094bdbd97839c731634}{size} () const 
 \item 
-\hypertarget{class_pile_a07d95a908492bd45d1ac105aa78f9dcd}{{\bfseries \-Pile} (\-Q\-Object $\ast$parent=0)}\label{class_pile_a07d95a908492bd45d1ac105aa78f9dcd}
-
+\hyperlink{class_pile_a07d95a908492bd45d1ac105aa78f9dcd}{\-Pile} (\-Q\-Object $\ast$parent=0)
 \item 
-\hypertarget{class_pile_a91875101e0976f054d1db8869a00b11d}{\hyperlink{class_constante}{\-Constante} $\ast$ {\bfseries sum} (unsigned int x=2)}\label{class_pile_a91875101e0976f054d1db8869a00b11d}
-
+virtual \hyperlink{class_pile_ab2d1398d675586ff34994e2b109df152}{$\sim$\-Pile} ()
 \item 
-\hypertarget{class_pile_a4964563804a254503d6413e5ba83d3c5}{\-Q\-String {\bfseries afficher} () const }\label{class_pile_a4964563804a254503d6413e5ba83d3c5}
-
+\hyperlink{class_constante}{\-Constante} $\ast$ \hyperlink{class_pile_a91875101e0976f054d1db8869a00b11d}{sum} (unsigned int x=2)
 \item 
-\hypertarget{class_pile_a44545327a8d02ad9775a2c918ea5cdfc}{int {\bfseries row\-Count} (const \-Q\-Model\-Index \&parent) const }\label{class_pile_a44545327a8d02ad9775a2c918ea5cdfc}
-
+\hyperlink{class_constante}{\-Constante} $\ast$ \hyperlink{class_pile_a312bdfd2e167615c8d7f11adb2e639ed}{mean} (unsigned int x=2)
 \item 
-\hypertarget{class_pile_ac9d6e388d3a98eb57a786f9bbec30952}{\-Q\-Variant {\bfseries data} (const \-Q\-Model\-Index \&index, int role) const }\label{class_pile_ac9d6e388d3a98eb57a786f9bbec30952}
-
+void \hyperlink{class_pile_aa3991438f190580607d7bbbd50ecc0c3}{clear} ()
+\item 
+void \hyperlink{class_pile_a081f7843d01cae1f0f7be7d92e46d5d2}{dup} ()
+\item 
+void \hyperlink{class_pile_a7488ed257c6ceb16ed57a9fffb0726d5}{drop} ()
+\item 
+void \hyperlink{class_pile_ab6c3f9840427e2be87e0d76c8697fff5}{swap} (unsigned int x, unsigned int y)
+\item 
+\-Q\-String \hyperlink{class_pile_a4964563804a254503d6413e5ba83d3c5}{afficher} () const 
+\item 
+\hyperlink{class_pile}{\-Pile} $\ast$ \hyperlink{class_pile_a4be384a2c00fff0afed507231a2974dc}{copier\-\_\-pile} ()
+\item 
+void \hyperlink{class_pile_a380c3a467b58c175aef4f2cdc0f7a2c7}{sauv\-\_\-pile\-\_\-context} ()
+\item 
+int \hyperlink{class_pile_a44545327a8d02ad9775a2c918ea5cdfc}{row\-Count} (const \-Q\-Model\-Index \&parent) const 
+\item 
+\-Q\-Variant \hyperlink{class_pile_ac9d6e388d3a98eb57a786f9bbec30952}{data} (const \-Q\-Model\-Index \&index, int role) const 
 \end{DoxyCompactItemize}
-\subsection*{\-Protected \-Member \-Functions}
+\subsection*{\-Fonctions membres protégées}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_pile_a8d34708706c113ec9864f7c37c9083a2}{void {\bfseries operator=} (const \hyperlink{class_pile}{\-Pile} \&)}\label{class_pile_a8d34708706c113ec9864f7c37c9083a2}
-
+void \hyperlink{class_pile_a8d34708706c113ec9864f7c37c9083a2}{operator=} (const \hyperlink{class_pile}{\-Pile} \&)
 \end{DoxyCompactItemize}
 
 
-\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\subsection{\-Description détaillée}
+
+
+\-Définition à la ligne 10 du fichier pile.\-h.
+
+
+
+\subsection{\-Documentation des constructeurs et destructeur}
+\hypertarget{class_pile_a07d95a908492bd45d1ac105aa78f9dcd}{\index{\-Pile@{\-Pile}!\-Pile@{\-Pile}}
+\index{\-Pile@{\-Pile}!Pile@{\-Pile}}
+\subsubsection[{\-Pile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pile\-::\-Pile} (
+\begin{DoxyParamCaption}
+\item[{\-Q\-Object $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_pile_a07d95a908492bd45d1ac105aa78f9dcd}
+
+
+\-Définition à la ligne 23 du fichier pile.\-h.
+
+\hypertarget{class_pile_ab2d1398d675586ff34994e2b109df152}{\index{\-Pile@{\-Pile}!$\sim$\-Pile@{$\sim$\-Pile}}
+\index{$\sim$\-Pile@{$\sim$\-Pile}!Pile@{\-Pile}}
+\subsubsection[{$\sim$\-Pile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pile\-::$\sim$\-Pile} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}\label{class_pile_ab2d1398d675586ff34994e2b109df152}
+\-Destructeur de pile
+
+\-Destruction de la pile et de chaque membre de cette pile
+
+\-Définition à la ligne 45 du fichier pile.\-cpp.
+
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{class_pile_a4964563804a254503d6413e5ba83d3c5}{\index{\-Pile@{\-Pile}!afficher@{afficher}}
+\index{afficher@{afficher}!Pile@{\-Pile}}
+\subsubsection[{afficher}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-String {\bf \-Pile\-::afficher} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_pile_a4964563804a254503d6413e5ba83d3c5}
+\-Affichage pile
+
+\-On affiche chaque élément de la pile en concaténant dans une \-Q\-String \begin{DoxyReturn}{\-Renvoie}
+\-Une {\itshape \-Q\-String\/} correspondant à ce qui se trouve dans la pile
+\end{DoxyReturn}
+
+
+\-Définition à la ligne 58 du fichier pile.\-cpp.
+
+\hypertarget{class_pile_aa3991438f190580607d7bbbd50ecc0c3}{\index{\-Pile@{\-Pile}!clear@{clear}}
+\index{clear@{clear}!Pile@{\-Pile}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::clear} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_aa3991438f190580607d7bbbd50ecc0c3}
+\-Vider la pile
+
+\-On dépile chaque élément de la pile, en faisant appel à la fonction {\itshape pop\/} 
+
+\-Définition à la ligne 131 du fichier pile.\-cpp.
+
+
+
+\-Voici le graphe d'appel pour cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pile_aa3991438f190580607d7bbbd50ecc0c3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_pile_a4be384a2c00fff0afed507231a2974dc}{\index{\-Pile@{\-Pile}!copier\-\_\-pile@{copier\-\_\-pile}}
+\index{copier\-\_\-pile@{copier\-\_\-pile}!Pile@{\-Pile}}
+\subsubsection[{copier\-\_\-pile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pile} $\ast$ {\bf \-Pile\-::copier\-\_\-pile} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a4be384a2c00fff0afed507231a2974dc}
+\-Copier la pile
+
+\-Copie la pile et les éléments qu'elle contient
+
+\-Définition à la ligne 155 du fichier pile.\-cpp.
+
+
+
+\-Voici le graphe d'appel pour cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pile_a4be384a2c00fff0afed507231a2974dc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pile_a4be384a2c00fff0afed507231a2974dc_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_pile_ac9d6e388d3a98eb57a786f9bbec30952}{\index{\-Pile@{\-Pile}!data@{data}}
+\index{data@{data}!Pile@{\-Pile}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Variant {\bf \-Pile\-::data} (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-Model\-Index \&}]{index, }
+\item[{int}]{role}
+\end{DoxyParamCaption}
+) const}}\label{class_pile_ac9d6e388d3a98eb57a786f9bbec30952}
+
+
+\-Définition à la ligne 28 du fichier pile.\-cpp.
+
+\hypertarget{class_pile_a7488ed257c6ceb16ed57a9fffb0726d5}{\index{\-Pile@{\-Pile}!drop@{drop}}
+\index{drop@{drop}!Pile@{\-Pile}}
+\subsubsection[{drop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::drop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a7488ed257c6ceb16ed57a9fffb0726d5}
+\-Suppression premier élément
+
+\-Supprimer le premier élément de la pile
+
+\-Définition à la ligne 168 du fichier pile.\-cpp.
+
+
+
+\-Voici le graphe d'appel pour cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pile_a7488ed257c6ceb16ed57a9fffb0726d5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pile_a7488ed257c6ceb16ed57a9fffb0726d5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_pile_a081f7843d01cae1f0f7be7d92e46d5d2}{\index{\-Pile@{\-Pile}!dup@{dup}}
+\index{dup@{dup}!Pile@{\-Pile}}
+\subsubsection[{dup}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::dup} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a081f7843d01cae1f0f7be7d92e46d5d2}
+\-Duplication
+
+\-Duplication du premier élément de la pile
+
+\-Définition à la ligne 144 du fichier pile.\-cpp.
+
+
+
+\-Voici le graphe d'appel pour cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pile_a081f7843d01cae1f0f7be7d92e46d5d2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pile_a081f7843d01cae1f0f7be7d92e46d5d2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_pile_ae45e55f151180284728643cb9cfe4095}{\index{\-Pile@{\-Pile}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!Pile@{\-Pile}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Pile\-::is\-Empty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_pile_ae45e55f151180284728643cb9cfe4095}
+
+
+\-Définition à la ligne 21 du fichier pile.\-h.
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pile_ae45e55f151180284728643cb9cfe4095_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_pile_a312bdfd2e167615c8d7f11adb2e639ed}{\index{\-Pile@{\-Pile}!mean@{mean}}
+\index{mean@{mean}!Pile@{\-Pile}}
+\subsubsection[{mean}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Constante} $\ast$ {\bf \-Pile\-::mean} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{x = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a312bdfd2e167615c8d7f11adb2e639ed}
+\-Moyenne sur la pile
+
+\-Effectue la moyenne sur les {\itshape x\/} premiers éléments de la pile, en fonction du paramètre. \-Pour cela, on appelle la fonction {\itshape sum\/}, puis on divise en fonction du paramètre x 
+\begin{DoxyParams}{\-Paramètres}
+{\em x} & \hyperlink{class_entier}{\-Entier} correspondant au nombre d'éléments pour la moyenne \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+\-Une {\itshape \hyperlink{class_constante}{\-Constante}\/} contenant le résultat de la moyenne
+\end{DoxyReturn}
+
+
+\-Définition à la ligne 117 du fichier pile.\-cpp.
+
+
+
+\-Voici le graphe d'appel pour cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_pile_a312bdfd2e167615c8d7f11adb2e639ed_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_pile_a8d34708706c113ec9864f7c37c9083a2}{\index{\-Pile@{\-Pile}!operator=@{operator=}}
+\index{operator=@{operator=}!Pile@{\-Pile}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void \-Pile\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Pile} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_pile_a8d34708706c113ec9864f7c37c9083a2}
+\hypertarget{class_pile_a2bbdc329f485cd017f8cbf88456ae68a}{\index{\-Pile@{\-Pile}!pop@{pop}}
+\index{pop@{pop}!Pile@{\-Pile}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Constante} $\ast$ {\bf \-Pile\-::pop} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a2bbdc329f485cd017f8cbf88456ae68a}
+\-Dépiler
+
+\-Tester d'abord si la pile n'est pas vide. \-Si c'est bon, alors on dépile le premier élément, oorrespondant au dernier ajouté \begin{DoxyReturn}{\-Renvoie}
+\-Une {\itshape \hyperlink{class_constante}{\-Constante}\/} correspondant au dernier élément, ou \-N\-U\-L\-L
+\end{DoxyReturn}
+
+
+\-Définition à la ligne 74 du fichier pile.\-cpp.
+
+
+
+\-Voici le graphe d'appel pour cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pile_a2bbdc329f485cd017f8cbf88456ae68a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pile_a2bbdc329f485cd017f8cbf88456ae68a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_pile_a18a4d9a9b8013b36a5423817f9fb9049}{\index{\-Pile@{\-Pile}!push@{push}}
+\index{push@{push}!Pile@{\-Pile}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::push} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Constante} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a18a4d9a9b8013b36a5423817f9fb9049}
+\-Empiler
+
+\-Permet d'empiler la \hyperlink{class_constante}{\-Constante} entrée en paramètre dans la pile 
+\begin{DoxyParams}{\-Paramètres}
+{\em ptr} & \-Un pointeur de \hyperlink{class_constante}{\-Constante}\\
+\hline
+\end{DoxyParams}
+
+
+\-Définition à la ligne 8 du fichier pile.\-cpp.
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pile_a18a4d9a9b8013b36a5423817f9fb9049_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_pile_a44545327a8d02ad9775a2c918ea5cdfc}{\index{\-Pile@{\-Pile}!row\-Count@{row\-Count}}
+\index{row\-Count@{row\-Count}!Pile@{\-Pile}}
+\subsubsection[{row\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Pile\-::row\-Count} (
+\begin{DoxyParamCaption}
+\item[{const \-Q\-Model\-Index \&}]{parent}
+\end{DoxyParamCaption}
+) const}}\label{class_pile_a44545327a8d02ad9775a2c918ea5cdfc}
+\-Compteur \-Taille
+
+\-Permet de connaître la taille d'une pile 
+\begin{DoxyParams}{\-Paramètres}
+{\em parent} & \-Un \-Q\-Model\-Index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+\-Un entier correspondant à la taille de la pile
+\end{DoxyReturn}
+
+
+\-Définition à la ligne 17 du fichier pile.\-cpp.
+
+\hypertarget{class_pile_a380c3a467b58c175aef4f2cdc0f7a2c7}{\index{\-Pile@{\-Pile}!sauv\-\_\-pile\-\_\-context@{sauv\-\_\-pile\-\_\-context}}
+\index{sauv\-\_\-pile\-\_\-context@{sauv\-\_\-pile\-\_\-context}!Pile@{\-Pile}}
+\subsubsection[{sauv\-\_\-pile\-\_\-context}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::sauv\-\_\-pile\-\_\-context} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a380c3a467b58c175aef4f2cdc0f7a2c7}
+\-Sauvegarde de la pile
+
+\-Sauvegarde la pile dans le fichier ini
+
+\-Définition à la ligne 195 du fichier pile.\-cpp.
+
+
+
+\-Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pile_a380c3a467b58c175aef4f2cdc0f7a2c7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_pile_a380c3a467b58c175aef4f2cdc0f7a2c7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_pile_aaae1107e877f7094bdbd97839c731634}{\index{\-Pile@{\-Pile}!size@{size}}
+\index{size@{size}!Pile@{\-Pile}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Pile\-::size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_pile_aaae1107e877f7094bdbd97839c731634}
+
+
+\-Définition à la ligne 22 du fichier pile.\-h.
+
+\hypertarget{class_pile_a91875101e0976f054d1db8869a00b11d}{\index{\-Pile@{\-Pile}!sum@{sum}}
+\index{sum@{sum}!Pile@{\-Pile}}
+\subsubsection[{sum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Constante} $\ast$ {\bf \-Pile\-::sum} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{x = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a91875101e0976f054d1db8869a00b11d}
+\-Somme sur la pile
+
+\-Effectue la somme sur les {\itshape x\/} premiers éléments de la pile, en fonction du paramètre. \-Pour cela, on ajoute au résultat (qui est un \hyperlink{class_complexe}{\-Complexe}) la valeur de l'élément dépilé. \-On empile ensuite le résultat 
+\begin{DoxyParams}{\-Paramètres}
+{\em x} & \hyperlink{class_entier}{\-Entier} correspondant au nombre d'éléments à sommer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Renvoie}
+\-Une {\itshape \hyperlink{class_constante}{\-Constante}\/} contenant le résultat de la somme
+\end{DoxyReturn}
+
+
+\-Définition à la ligne 98 du fichier pile.\-cpp.
+
+
+
+\-Voici le graphe d'appel pour cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_pile_a91875101e0976f054d1db8869a00b11d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_pile_ab6c3f9840427e2be87e0d76c8697fff5}{\index{\-Pile@{\-Pile}!swap@{swap}}
+\index{swap@{swap}!Pile@{\-Pile}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Pile\-::swap} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{x, }
+\item[{unsigned int}]{y}
+\end{DoxyParamCaption}
+)}}\label{class_pile_ab6c3f9840427e2be87e0d76c8697fff5}
+Échange
+
+Échange des deux éléments dont les positions sont passées en paramètres 
+\begin{DoxyParams}{\-Paramètres}
+{\em x} & \hyperlink{class_entier}{\-Entier}, position du premier élément \\
+\hline
+{\em y} & \hyperlink{class_entier}{\-Entier}, position du second élément\\
+\hline
+\end{DoxyParams}
+
+
+\-Définition à la ligne 179 du fichier pile.\-cpp.
+
+\hypertarget{class_pile_a25c322d47a76d758565bdf9df2253411}{\index{\-Pile@{\-Pile}!top@{top}}
+\index{top@{top}!Pile@{\-Pile}}
+\subsubsection[{top}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Constante}$\ast$ {\bf \-Pile\-::top} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_pile_a25c322d47a76d758565bdf9df2253411}
+
+
+\-Définition à la ligne 19 du fichier pile.\-h.
+
+
+
+\-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
 \item 
-/home/yuntux/\-U\-T\-C/\-G\-I02/\-L\-O21/projet/lo21-\/npi.\-2/pile.\-h\item 
-/home/yuntux/\-U\-T\-C/\-G\-I02/\-L\-O21/projet/lo21-\/npi.\-2/pile.\-cpp\end{DoxyCompactItemize}
+/home/yuntux/\-U\-T\-C/\-G\-I02/\-L\-O21/projet/projet\-\_\-propre/\hyperlink{pile_8h}{pile.\-h}\item 
+/home/yuntux/\-U\-T\-C/\-G\-I02/\-L\-O21/projet/projet\-\_\-propre/\hyperlink{pile_8cpp}{pile.\-cpp}\end{DoxyCompactItemize}

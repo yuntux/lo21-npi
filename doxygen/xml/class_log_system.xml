@@ -2,8 +2,60 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="class_log_system" kind="class" prot="public">
     <compoundname>LogSystem</compoundname>
-      <sectiondef kind="private-func">
-      <memberdef kind="function" id="class_log_system_1a26650fa1e4d9792106e4c3ddd727aaa9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+    <includes refid="logsystem_8h" local="no">logsystem.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_log_system_1a40ad34c4008678ea9d44d36376ae7df7" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_log_system" kindref="compound">LogSystem</ref> *</type>
+        <definition>LogSystem * LogSystem::instance</definition>
+        <argsstring></argsstring>
+        <name>instance</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h" line="8" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_log_system_1ab5b398fac784d6c20576829056a364a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_log_system" kindref="compound">LogSystem</ref> &amp;</type>
+        <definition>LogSystem &amp; LogSystem::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h" line="12" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.cpp" bodystart="8" bodyend="11"/>
+        <references refid="class_log_system_1ac891dbbf0efb28b572555ee797b56998" compoundref="logsystem_8cpp" startline="17" endline="19">LogSystem</references>
+        <referencedby refid="class_main_window_1a2472c42b862ef1dc38b75c4111a28590" compoundref="mainwindow_8cpp" startline="848" endline="882">MainWindow::EVALClicked</referencedby>
+        <referencedby refid="class_pile_1a2bbdc329f485cd017f8cbf88456ae68a" compoundref="pile_8cpp" startline="74" endline="90">Pile::pop</referencedby>
+        <referencedby refid="class_pile_1aa3991438f190580607d7bbbd50ecc0c3" compoundref="pile_8cpp" startline="131" endline="142">Pile::clear</referencedby>
+        <referencedby refid="class_pile_1a081f7843d01cae1f0f7be7d92e46d5d2" compoundref="pile_8cpp" startline="144" endline="153">Pile::dup</referencedby>
+        <referencedby refid="class_pile_1a7488ed257c6ceb16ed57a9fffb0726d5" compoundref="pile_8cpp" startline="168" endline="177">Pile::drop</referencedby>
+        <referencedby refid="class_pile_1a380c3a467b58c175aef4f2cdc0f7a2c7" compoundref="pile_8cpp" startline="195" endline="209">Pile::sauv_pile_context</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_log_system_1a96ec47ba20361122fb990ef8e9729b82" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LogSystem::libereInstance</definition>
+        <argsstring>()</argsstring>
+        <name>libereInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h" line="13" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_log_system_1a26650fa1e4d9792106e4c3ddd727aaa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void LogSystem::ajouterFichierLog</definition>
         <argsstring>(LogMessage m)</argsstring>
@@ -17,10 +69,20 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h" line="7" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.cpp" bodystart="10" bodyend="26"/>
+<para>Ajouter Fichier Log</para><para>On parcourt le fichier pour ajouter à la fin <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Un <ref refid="class_log_message" kindref="compound">LogMessage</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h" line="14" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.cpp" bodystart="26" bodyend="48"/>
+        <references refid="class_log_message_1a2c6798fafd31aa115d18bd348da69e25" compoundref="logmessage_8h" startline="37" endline="37">LogMessage::what</references>
+        <referencedby refid="class_log_system_1a29ba53a9628ac2c2c517bf751cb84a9a" compoundref="logsystem_8cpp" startline="21" endline="24">ajouterFcihierEtConsole</referencedby>
       </memberdef>
-      <memberdef kind="function" id="class_log_system_1ad18f58f1ad0e8f23dc524c2f55d3e8fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_log_system_1ad18f58f1ad0e8f23dc524c2f55d3e8fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void LogSystem::ajouterConsoleLog</definition>
         <argsstring>(LogMessage m)</argsstring>
@@ -34,12 +96,55 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
+<para>Ajouter Console Log</para><para>On affiche le message sur la sotir standard d&apos;erreur.</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h" line="15" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.cpp" bodystart="50" bodyend="56"/>
+        <references refid="class_log_message_1a2c6798fafd31aa115d18bd348da69e25" compoundref="logmessage_8h" startline="37" endline="37">LogMessage::what</references>
+        <referencedby refid="class_log_system_1a29ba53a9628ac2c2c517bf751cb84a9a" compoundref="logsystem_8cpp" startline="21" endline="24">ajouterFcihierEtConsole</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_log_system_1a29ba53a9628ac2c2c517bf751cb84a9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LogSystem::ajouterFcihierEtConsole</definition>
+        <argsstring>(LogMessage m)</argsstring>
+        <name>ajouterFcihierEtConsole</name>
+        <param>
+          <type><ref refid="class_log_message" kindref="compound">LogMessage</ref></type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h" line="8" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.cpp" bodystart="28" bodyend="32"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h" line="16" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.cpp" bodystart="21" bodyend="24"/>
+        <references refid="class_log_system_1ad18f58f1ad0e8f23dc524c2f55d3e8fc" compoundref="logsystem_8cpp" startline="50" endline="56">ajouterConsoleLog</references>
+        <references refid="class_log_system_1a26650fa1e4d9792106e4c3ddd727aaa9" compoundref="logsystem_8cpp" startline="26" endline="48">ajouterFichierLog</references>
+        <referencedby refid="class_main_window_1a2472c42b862ef1dc38b75c4111a28590" compoundref="mainwindow_8cpp" startline="848" endline="882">MainWindow::EVALClicked</referencedby>
+        <referencedby refid="class_pile_1a2bbdc329f485cd017f8cbf88456ae68a" compoundref="pile_8cpp" startline="74" endline="90">Pile::pop</referencedby>
+        <referencedby refid="class_pile_1aa3991438f190580607d7bbbd50ecc0c3" compoundref="pile_8cpp" startline="131" endline="142">Pile::clear</referencedby>
+        <referencedby refid="class_pile_1a081f7843d01cae1f0f7be7d92e46d5d2" compoundref="pile_8cpp" startline="144" endline="153">Pile::dup</referencedby>
+        <referencedby refid="class_pile_1a7488ed257c6ceb16ed57a9fffb0726d5" compoundref="pile_8cpp" startline="168" endline="177">Pile::drop</referencedby>
+        <referencedby refid="class_pile_1a380c3a467b58c175aef4f2cdc0f7a2c7" compoundref="pile_8cpp" startline="195" endline="209">Pile::sauv_pile_context</referencedby>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="public-func">
-      <memberdef kind="function" id="class_log_system_1ac891dbbf0efb28b572555ee797b56998" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_log_system_1adc3513336bc3959e888b343ce6304922" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>LogSystem::LogSystem</definition>
+        <argsstring>(const LogSystem &amp;)</argsstring>
+        <name>LogSystem</name>
+        <param>
+          <type>const <ref refid="class_log_system" kindref="compound">LogSystem</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h" line="19" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_log_system_1ac891dbbf0efb28b572555ee797b56998" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>LogSystem::LogSystem</definition>
         <argsstring>()</argsstring>
@@ -50,18 +155,41 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h" line="10" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.cpp" bodystart="6" bodyend="8"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h" line="20" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.cpp" bodystart="17" bodyend="19"/>
+        <referencedby refid="class_log_system_1ab5b398fac784d6c20576829056a364a2" compoundref="logsystem_8cpp" startline="8" endline="11">getInstance</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_log_system_1a259a97306f0a436f4d8b767b3b0ab8b2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LogSystem::operator=</definition>
+        <argsstring>(const LogSystem &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_log_system" kindref="compound">LogSystem</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h" line="22"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h" line="6" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h" bodystart="5" bodyend="11"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h" line="7" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h" bodystart="6" bodyend="23"/>
     <listofallmembers>
-      <member refid="class_log_system_1ad18f58f1ad0e8f23dc524c2f55d3e8fc" prot="private" virt="non-virtual"><scope>LogSystem</scope><name>ajouterConsoleLog</name></member>
-      <member refid="class_log_system_1a26650fa1e4d9792106e4c3ddd727aaa9" prot="private" virt="non-virtual"><scope>LogSystem</scope><name>ajouterFichierLog</name></member>
-      <member refid="class_log_system_1ac891dbbf0efb28b572555ee797b56998" prot="public" virt="non-virtual"><scope>LogSystem</scope><name>LogSystem</name></member>
+      <member refid="class_log_system_1ad18f58f1ad0e8f23dc524c2f55d3e8fc" prot="public" virt="non-virtual"><scope>LogSystem</scope><name>ajouterConsoleLog</name></member>
+      <member refid="class_log_system_1a29ba53a9628ac2c2c517bf751cb84a9a" prot="public" virt="non-virtual"><scope>LogSystem</scope><name>ajouterFcihierEtConsole</name></member>
+      <member refid="class_log_system_1a26650fa1e4d9792106e4c3ddd727aaa9" prot="public" virt="non-virtual"><scope>LogSystem</scope><name>ajouterFichierLog</name></member>
+      <member refid="class_log_system_1ab5b398fac784d6c20576829056a364a2" prot="public" virt="non-virtual"><scope>LogSystem</scope><name>getInstance</name></member>
+      <member refid="class_log_system_1a40ad34c4008678ea9d44d36376ae7df7" prot="private" virt="non-virtual"><scope>LogSystem</scope><name>instance</name></member>
+      <member refid="class_log_system_1a96ec47ba20361122fb990ef8e9729b82" prot="public" virt="non-virtual"><scope>LogSystem</scope><name>libereInstance</name></member>
+      <member refid="class_log_system_1adc3513336bc3959e888b343ce6304922" prot="protected" virt="non-virtual"><scope>LogSystem</scope><name>LogSystem</name></member>
+      <member refid="class_log_system_1ac891dbbf0efb28b572555ee797b56998" prot="protected" virt="non-virtual"><scope>LogSystem</scope><name>LogSystem</name></member>
+      <member refid="class_log_system_1a259a97306f0a436f4d8b767b3b0ab8b2" prot="protected" virt="non-virtual"><scope>LogSystem</scope><name>operator=</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

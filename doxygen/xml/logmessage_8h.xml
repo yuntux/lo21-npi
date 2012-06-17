@@ -4,77 +4,271 @@
     <compoundname>logmessage.h</compoundname>
     <includes local="no">QtGui</includes>
     <includes local="no">exception</includes>
-    <includedby refid="rationnel_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h</includedby>
-    <includedby refid="logmessage_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.cpp</includedby>
-    <includedby refid="logsystem_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h</includedby>
-    <includedby refid="main_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/main.cpp</includedby>
+    <includedby refid="constante_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.h</includedby>
+    <includedby refid="logsystem_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h</includedby>
+    <includedby refid="rationnel_8h" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h</includedby>
+    <includedby refid="calculatrice_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp</includedby>
+    <includedby refid="logmessage_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/main.cpp</includedby>
+    <includedby refid="pile_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp</includedby>
     <incdepgraph>
-      <node id="196">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h</label>
+      <node id="665">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h</label>
         <link refid="logmessage.h"/>
-        <childnode refid="197" relation="include">
+        <childnode refid="666" relation="include">
         </childnode>
-        <childnode refid="198" relation="include">
+        <childnode refid="667" relation="include">
         </childnode>
       </node>
-      <node id="198">
+      <node id="667">
         <label>exception</label>
       </node>
-      <node id="197">
+      <node id="666">
         <label>QtGui</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="201">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/pile.h</label>
-        <link refid="pile_8h_source"/>
-        <childnode refid="202" relation="include">
+      <node id="676">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h</label>
+        <link refid="mainwindow_8h"/>
+        <childnode refid="671" relation="include">
         </childnode>
-        <childnode refid="203" relation="include">
+        <childnode refid="677" relation="include">
         </childnode>
-      </node>
-      <node id="199">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h</label>
-        <link refid="logmessage.h"/>
-        <childnode refid="200" relation="include">
+        <childnode refid="673" relation="include">
         </childnode>
-        <childnode refid="206" relation="include">
+        <childnode refid="678" relation="include">
         </childnode>
       </node>
-      <node id="203">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h</label>
-        <link refid="mainwindow_8h_source"/>
-        <childnode refid="202" relation="include">
+      <node id="686">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h</label>
+        <link refid="rationnel_8h"/>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
         </childnode>
       </node>
-      <node id="205">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/fonctions.h</label>
-        <link refid="fonctions_8h"/>
-      </node>
-      <node id="206">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logsystem.h</label>
-        <link refid="logsystem_8h_source"/>
-      </node>
-      <node id="204">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h</label>
-        <link refid="reel_8h_source"/>
-      </node>
-      <node id="200">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h</label>
-        <link refid="rationnel_8h_source"/>
-        <childnode refid="201" relation="include">
+      <node id="687">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h</label>
+        <link refid="reel_8h"/>
+        <childnode refid="681" relation="include">
         </childnode>
-        <childnode refid="204" relation="include">
+        <childnode refid="682" relation="include">
         </childnode>
-        <childnode refid="205" relation="include">
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
         </childnode>
       </node>
-      <node id="202">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h</label>
+      <node id="673">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="671">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h</label>
         <link refid="calculatrice_8h"/>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+      </node>
+      <node id="692">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.cpp</label>
+        <link refid="logmessage_8cpp"/>
+      </node>
+      <node id="675">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp</label>
+        <link refid="rationnel_8cpp"/>
+      </node>
+      <node id="670">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.h</label>
+        <link refid="pile_8h"/>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="676" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="679" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+      </node>
+      <node id="678">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/moc_mainwindow.cpp</label>
+        <link refid="moc__mainwindow_8cpp"/>
+      </node>
+      <node id="668">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h</label>
+        <link refid="logmessage.h"/>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="690" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="692" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+      </node>
+      <node id="689">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.cpp</label>
+        <link refid="expression_8cpp"/>
+      </node>
+      <node id="683">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/entier.cpp</label>
+        <link refid="entier_8cpp"/>
+      </node>
+      <node id="674">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/pile.cpp</label>
+        <link refid="pile_8cpp"/>
+      </node>
+      <node id="691">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.cpp</label>
+        <link refid="logsystem_8cpp"/>
+      </node>
+      <node id="688">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.h</label>
+        <link refid="expression_8h"/>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="689" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+      </node>
+      <node id="677">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="681">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp</label>
+        <link refid="complexe_8cpp"/>
+      </node>
+      <node id="680">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.h</label>
+        <link refid="complexe_8h"/>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+      </node>
+      <node id="672">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp</label>
+        <link refid="calculatrice_8cpp"/>
+      </node>
+      <node id="690">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logsystem.h</label>
+        <link refid="logsystem_8h"/>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="691" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="674" relation="include">
+        </childnode>
+      </node>
+      <node id="679">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/moc_pile.cpp</label>
+        <link refid="moc__pile_8cpp"/>
+      </node>
+      <node id="682">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.cpp</label>
+        <link refid="constante_8cpp"/>
+      </node>
+      <node id="684">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp</label>
+        <link refid="reel_8cpp"/>
+      </node>
+      <node id="685">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/entier.h</label>
+        <link refid="entier_8h"/>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="681" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="683" relation="include">
+        </childnode>
+        <childnode refid="677" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+        <childnode refid="675" relation="include">
+        </childnode>
+        <childnode refid="684" relation="include">
+        </childnode>
+      </node>
+      <node id="669">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.h</label>
+        <link refid="constante_8h"/>
+        <childnode refid="670" relation="include">
+        </childnode>
+        <childnode refid="680" relation="include">
+        </childnode>
+        <childnode refid="685" relation="include">
+        </childnode>
+        <childnode refid="686" relation="include">
+        </childnode>
+        <childnode refid="671" relation="include">
+        </childnode>
+        <childnode refid="687" relation="include">
+        </childnode>
+        <childnode refid="682" relation="include">
+        </childnode>
+        <childnode refid="688" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="class_log_message" prot="public">LogMessage</innerclass>
+    <innernamespace refid="namespacestd">std</innernamespace>
       <sectiondef kind="enum">
       <memberdef kind="enum" id="logmessage_8h_1ac0565c81f330a720d673510e0886bb71" prot="public" static="no">
         <name>niveau</name>
@@ -99,13 +293,20 @@
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
+        <enumvalue id="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" prot="public">
+          <name>tracabilite</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="6" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="6" bodyend="6"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" line="17" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" bodystart="17" bodyend="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -118,33 +319,53 @@
 <codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;QtGui&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;exception&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>niveau<sp/>{faible,<sp/>moyen,<sp/>important};</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9" refid="class_log_message" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_log_message" kindref="compound">LogMessage</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>exception</highlight></codeline>
-<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_numero;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Numéro<sp/>de<sp/>l&apos;erreur.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>m_phrase;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Description<sp/>de<sp/>l&apos;erreur.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>niveau<sp/>_level;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Niveau<sp/>de<sp/>l&apos;erreur.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_log_message" kindref="compound">LogMessage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numero=0,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>phrase=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>niveau<sp/>lev=faible)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">()<sp/>:<sp/>m_numero(numero),m_phrase(phrase),_level(lev){}</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>what()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">()<sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_phrase.c_str();<sp/>}</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*********CODES<sp/>ERREUR</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">0.Log<sp/>simple<sp/>pour<sp/>avoir<sp/>la<sp/>trace</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">1,&quot;Division<sp/>par<sp/>zéro&quot;,<sp/>important</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">2,&quot;La<sp/>fonction<sp/>X<sp/>n&apos;est<sp/>pas<sp/>implémentée<sp/>pour<sp/>les<sp/>Y.&quot;,<sp/>moyen</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">3,&quot;Type<sp/>de<sp/>constante<sp/>non<sp/>prévu<sp/>dans<sp/>la<sp/>fonction<sp/>Constante*<sp/>Reel::soustraction(Constante*<sp/>c).&quot;,<sp/>important</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">5,&quot;Nombre<sp/>d&apos;opérandes<sp/><sp/>dans<sp/>la<sp/>pile<sp/>insuffisant.&quot;,<sp/>moyen</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">6,&quot;La<sp/>chaine<sp/>saisie<sp/>est<sp/>invalide&quot;,<sp/>moyen</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">6,&quot;Action<sp/>impossible<sp/>dans<sp/>ce<sp/>mode&quot;,<sp/>moyen</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">8,&quot;Saisie<sp/>invalide&quot;,<sp/>moyen</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">**********/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71" kindref="member">niveau</ref><sp/>{<ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71a8c5b883bce87e721f1fab27140beffa9" kindref="member">faible</ref>,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" kindref="member">important</ref>,<sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" kindref="member">tracabilite</ref>};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>getNiveau()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">()</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_level==faible)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Faible&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_level==moyen)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Moyen&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_level==important)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Important&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Niveau<sp/>inconnu&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>~<ref refid="class_log_message" kindref="compound">LogMessage</ref>()<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal">()<sp/>{}</highlight></codeline>
-<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LOGMESSAGE_H</highlight></codeline>
+<codeline lineno="20" refid="class_log_message" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_log_message" kindref="compound">LogMessage</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>exception</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m_numero;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Numéro<sp/>de<sp/>l&apos;erreur.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>m_phrase;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Description<sp/>de<sp/>l&apos;erreur.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71" kindref="member">niveau</ref><sp/>_level;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Niveau<sp/>de<sp/>l&apos;erreur.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27" refid="class_log_message_1aab5078209d6e258af2664286ab5b36f1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_log_message_1aab5078209d6e258af2664286ab5b36f1" kindref="member">LogMessage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numero=0,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;phrase=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71" kindref="member">niveau</ref><sp/>lev=<ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71a8c5b883bce87e721f1fab27140beffa9" kindref="member">faible</ref>)<sp/>throw()<sp/>:<sp/>m_numero(numero),m_phrase(phrase),_level(lev){</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lev!=<ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" kindref="member">tracabilite</ref>){</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QMessageBox<sp/>msgBox;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>QString<sp/>contenu(this-&gt;what());</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contenu.toUtf8();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msgBox.setText(contenu);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msgBox.exec();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_log_message_1a2c6798fafd31aa115d18bd348da69e25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_log_message_1a2c6798fafd31aa115d18bd348da69e25" kindref="member">what</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>throw()<sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_phrase.c_str();<sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_log_message_1a433d0d6bdef1d3ec814fa08aec76e8ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>getNiveau()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>throw()</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_level==<ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71a8c5b883bce87e721f1fab27140beffa9" kindref="member">faible</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Faible&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_level==<ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" kindref="member">moyen</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Moyen&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_level==<ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" kindref="member">important</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Important&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_level==<ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" kindref="member">tracabilite</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;tracabilite&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Niveau<sp/>inconnu&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="class_log_message_1aa54fe583838d18c0f5bf6ce8d274b6f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_log_message_1aa54fe583838d18c0f5bf6ce8d274b6f7" kindref="member">~LogMessage</ref>()<sp/>throw()<sp/>{}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LOGMESSAGE_H</highlight></codeline>
     </programlisting>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h"/>
   </compounddef>
 </doxygen>

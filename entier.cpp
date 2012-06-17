@@ -10,49 +10,55 @@ Entier::Entier(Constante* c) {
     if (Entier *c_entier=dynamic_cast<Entier *>(c)){
         _valeur = c_entier->getValeur();
     } else if (typeid(*c)==typeid(Complexe)) {
-        //FIXME : impossible de construire un entier avec un complexe SAUF si la partie imaginaire est nulle
-  //      Complexe *c_complexe=dynamic_cast<Complexe *>(c);
-    //    if c_complexe->getPartieImaginaire()
+        Complexe *c_complexe=dynamic_cast<Complexe *>(c);
+        if (c_complexe->reel_pur()){
+            if (Entier *re_entiere=dynamic_cast<Entier *>(c_complexe->getPartieReelle())){
+                _valeur = re_entiere->getValeur();
+            } else {
+                throw LogMessage(3,"Seuls le complexes dont la partie r√©elle est enti√®re et la partie imaginaire est nulle permettent de construire un entier.", important);
+            }
+        } else {
+            throw LogMessage(3,"Seuls le complexes dont la partie r√©elle est enti√®re et la partie imaginaire est nulle permettent de construire un entier.", important);
+        }
     } else if (typeid(*c)==typeid(Rationnel)) {
-        //FIXME : impossible de construire un entier avec un rationnel SAUF si le dÈnominateur vaut 1
+        Rationnel *c_rationnel=dynamic_cast<Rationnel *>(c);
+        if (c_rationnel->getDenominateur()==1)
+            _valeur = c_rationnel->getNumerateur();
+        else
+            throw LogMessage(3,"Impossible de construir un entier √† partir d'un rationnel(ayant un d√©nominateur diff√©rent de 1) sans perte de pr√©cision.", important);
     } else if (typeid(*c)==typeid(Reel)) {
-        //FIXME : impossible de construire un entier √  partir d'un r√©el SAUF c'est la parti dÈcimale est nulle
+        throw LogMessage(3,"Impossible de construir un entier √† parti d'un r√©el sans perte de pr√©cision.", important);
     }
     /**
       * \brief Constructeur d'entier
-      * \details On vÈrifie le type de la constante passÈe en paramËtre, et si c'est un entier, on
-      *          recopie sa valeur dans le nouvel entier, sinon on lËve une exception.
-      * \param c Une constante, donc entier, rÈel, rationnel ou complexe
+      * \details On v√©rifie le type de la constante pass√©e en param√®tre, et si c'est un entier, on
+      *          recopie sa valeur dans le nouvel entier, sinon on l√®ve une exception.
+      * \param c Une constante, donc entier, r√©el, rationnel ou complexe
       */
 }
 
 Constante* Entier::addition(Constante* c){
-    qDebug() << "entrÈe dans l'addition" ;
-    qDebug() << "OPERANDE 1.SIgn()) "<< c->afficher();
     if (Entier *c_entier=dynamic_cast<Entier *>(c)){
-        Entier* tmp = new Entier(c_entier->getValeur()+_valeur);
-        return new Complexe(tmp);
+        return new Entier(c_entier->getValeur()+_valeur);
     }
     if (typeid(*c)==typeid(Complexe)) {
         Complexe *c_complexe=dynamic_cast<Complexe *>(c);
         return c_complexe->addition(this);
     } else if (typeid(*c)==typeid(Rationnel)) {
         Rationnel *c_rationnel=dynamic_cast<Rationnel *>(c);
-        Rationnel* tmp = new Rationnel((_valeur*c_rationnel->getDenominateur())+c_rationnel->getNumerateur(), c_rationnel->getDenominateur());
-        return new Complexe(tmp);
+        return new Rationnel((_valeur*c_rationnel->getDenominateur())+c_rationnel->getNumerateur(), c_rationnel->getDenominateur());
     } else if (typeid(*c)==typeid(Reel)) {
         Reel *c_reel=dynamic_cast<Reel *>(c);
-        Reel*  tmp = new Reel(_valeur+c_reel->getValeur());
-        return new Complexe(tmp);
+        return new Reel(_valeur+c_reel->getValeur());
     }
-    throw LogMessage(3,"Type de constante non prÈvu dans la fonction Constante* Entier::addition(Constante* c).", important);
+    throw LogMessage(3,"Type de constante non pr√©vu dans la fonction Constante* Entier::addition(Constante* c).", important);
     /**
       * \brief Somme de 2 entiers
-      * \details On vÈrifie le type du paramËtre, et on crÈe une nouvelle instance de ce type en fonction, dont le
+      * \details On v√©rifie le type du param√®tre, et on cr√©e une nouvelle instance de ce type en fonction, dont le
       *          ou les attributs seront en fait la somme des 2 entiers dont l'on veut calculer l'addition.Cependant, si on
       *          est en mode Entier, on ne doit pas avoir les autres types de constante.
       * \param c Une constante
-      * \return Un \e Complexe, car on utilisera toujours les formes complexes pour les calculs
+      * \return Un \e Entier construit, car on utilisera toujours les formes complexes pour les calculs
       */
 }
 
@@ -60,99 +66,59 @@ Constante* Entier::produit(Constante *c)
 {
     if(Entier *c_entier=dynamic_cast<Entier *>(c))
     {
-        Entier* tmp = new Entier(c_entier->getValeur()*_valeur);
-        return new Complexe(tmp);
+        return new Entier(c_entier->getValeur()*_valeur);
     }
     else if (typeid(*c)==typeid(Rationnel)) {
             Rationnel *c_rationnel=dynamic_cast<Rationnel *>(c);
-            Rationnel* tmp = new Rationnel((_valeur*c_rationnel->getNumerateur()),c_rationnel->getDenominateur());
-            return new Complexe(tmp);
+            return new Rationnel((_valeur*c_rationnel->getNumerateur()),c_rationnel->getDenominateur());
     }
     else if (typeid(*c)==typeid(Reel)) {
             Reel *c_reel=dynamic_cast<Reel *>(c);
-            Reel*  tmp = new Reel(_valeur*c_reel->getValeur());
-            return new Complexe(tmp);
+            return new Reel(_valeur*c_reel->getValeur());
         }
    else if (typeid(*c)==typeid(Complexe)) {
             Complexe *c_complexe=dynamic_cast<Complexe *>(c);
             return c_complexe->produit(this);
     }
-       throw LogMessage(3,"Type de constante non prÈvu dans la fonction Constante* Entier::produit(Constante* c).", important);
+       throw LogMessage(3,"Type de constante non pr√©vu dans la fonction Constante* Entier::produit(Constante* c).", important);
        /**
          * \brief Produit de deux entiers
-         * \details Comme pour la somme, on vÈrifie le type du paramËtre, et on crÈe une nouvelle instance de ce type qui contiendra
-         *          le produit demandÈ. Cependant, normalement en mode Entier, on ne doit avoir que des entiers.
+         * \details Comme pour la somme, on v√©rifie le type du param√®tre, et on cr√©e une nouvelle instance de ce type qui contiendra
+         *          le produit demand√©. Cependant, normalement en mode Entier, on ne doit avoir que des entiers.
          * \param c Une Constante
-         * \return Un \e Complexe contenant le produit
+         * \return Un \e Entier construit contenant le produit
          */
 }
 
 Constante* Entier::division(Constante *c)
 {
-    if(Entier *c_entier=dynamic_cast<Entier *>(c))
-    {
-        //On renvoie forcÈment un rationnel pour ne pas perdre en prÈcision
-        Rationnel* tmp = new Rationnel(_valeur, c_entier->getValeur());
-        return new Complexe(tmp);
-    }
-    else if (typeid(*c)==typeid(Rationnel)) {
-            Rationnel *c_rationnel=dynamic_cast<Rationnel *>(c);
-            Rationnel* tmp = new Rationnel((_valeur*c_rationnel->getDenominateur()),c_rationnel->getNumerateur());
-            return new Complexe(tmp);
-    }
-    else if (typeid(*c)==typeid(Reel)) {
-        //FIXME : perte de prÈcision ???
-            Reel *c_reel=dynamic_cast<Reel *>(c);
-            Reel*  tmp = new Reel(_valeur/c_reel->getValeur());
-            return new Complexe(tmp);
-        }
-   else if (typeid(*c)==typeid(Complexe)) {
-       Complexe *c_complexe=dynamic_cast<Complexe *>(c);
-       Complexe entier_complexe(this);
-       return entier_complexe.division(c_complexe);
-    }
-       throw LogMessage(3,"Type de constante non prÈvu dans la fonction Constante* Entier::division(Constante* c).", important);
+    return this->produit(c->inv());
        /**
          * \brief Division d'entiers
-         * \details Comme pour la somme et le produit, on vÈrifie le type du paramËtre, et on crÈe une nouvelle instance de ce type qui contiendra
-         *          le quotient demandÈ. Cependant, normalement en mode Entier, on ne doit avoir que des entiers.
+         * \details Comme pour la somme et le produit, on v√©rifie le type du param√®tre, et on cr√©e une nouvelle instance de ce type qui contiendra
+         *          le quotient demand√©. Cependant, normalement en mode Entier, on ne doit avoir que des entiers.
          * \param c Une Constante
-         * \return Un \e Complexe contenant le quotient
+         * \return Un \e Entier construit contenant le quotient
          */
 }
 
 Constante* Entier::signe(){
-    Constante* tmp = new Entier(-_valeur);
-    return new Complexe(tmp);
+    return new Entier(-_valeur);
     /**
       * \brief Inversion de signe d'un entier
-      * \details On crÈe un nouvel entier dont la valeur est l'opposÈe de celle initiale
-      * \return Un \e Entier, de valeur opposÈe
+      * \details On cr√©e un nouvel entier dont la valeur est l'oppos√©e de celle initiale
+      * \return Un \e Entier, de valeur oppos√©e
       */
 }
 
 Constante* Entier::soustraction(Constante* c){
-    if (Complexe *c_complexe=dynamic_cast<Complexe *>(c)){
-        return new Complexe(this->addition(c_complexe->signe()));
-    } else if (typeid(*c)==typeid(Entier)) {
-        //transtypage en entier
-        Entier *c_entier=dynamic_cast<Entier *>(c);
-        return new Complexe(this->addition(c_entier->signe()));
-    } else if (typeid(*c)==typeid(Rationnel)) {
-        Rationnel *c_rationnel=dynamic_cast<Rationnel *>(c);
-        //FIXME : on doit pouvoir mettre des type constantes pour les r√©els et rationnel => PAS DE CAST SUR LA CLASSE COMPLEXE
-        return new Complexe(this->addition(c_rationnel->signe()));
-    } else if (typeid(*c)==typeid(Reel)) {
-        Reel *c_reel=dynamic_cast<Reel *>(c);
-        return new Complexe(this->addition(c_reel->signe()));
-    }
-        throw LogMessage(3,"Type de constante non prÈvu dans la fonction Constante* Entier::soustraction(Constante* c).", important);
+    return this->addition(c->signe());
         /**
-          * \brief DiffÈrence d'entiers
-          * \details Comme pour les autres opÈrations, on vÈrifie le type du paramËtre, et on crÈe une nouvelle instance de ce type qui contiendra
-          *          la diffÈrence voulue. Cependant, normalement en mode Entier, on ne doit avoir que des entiers.
+          * \brief Diff√©rence d'entiers
+          * \details Comme pour les autres op√©rations, on v√©rifie le type du param√®tre, et on cr√©e une nouvelle instance de ce type qui contiendra
+          *          la diff√©rence voulue. Cependant, normalement en mode Entier, on ne doit avoir que des entiers.
           * \param c Une Constante
-          * \return Un \e Complexe contenant la diffÈrence
+          * \return Un \e Entier construit contenant la diff√©rence
           */
 }
 
@@ -161,18 +127,16 @@ Constante* Entier::fact()
     int result=1;
     if (this->getValeur()==0)
     {
-        Entier *e = new Entier(result);
-        return new Complexe(e);
+        return new Entier(result);
     }
     else
     for(int i=1;i<=this->getValeur();i++)
         result=result*i;
-    Entier *e = new Entier(result);
-    return new Complexe(e);
+    return new Entier(result);
     /**
       * \brief Calcul du factoriel
-      * \details De maniËre itÈrative, le rÈsultat est 1 si la valeur de l'entier est 0, et sinon on fait le calcul proprement dit
-      * \return Un nouveau \e Complexe, construit ‡ partir de l'entier qui contient la valeur du factoriel
+      * \details De mani√®re it√©rative, le r√©sultat est 1 si la valeur de l'entier est 0, et sinon on fait le calcul proprement dit
+      * \return Un nouveau \e Complexe, construit √† partir de l'entier qui contient la valeur du factoriel
       */
 }
 
@@ -181,14 +145,13 @@ Constante* Entier::sinus(bool angle)
     float res = _valeur;
     if(angle==true)
         res=res*PI/180;
-    Entier *e = new Entier(sin(res));
-    return new Complexe(e);
+    return new Entier(sin(res));
     /**
       * \brief Calcul du Sinus
-      * \details Si le paramËtre est vrai, on se situe en mode DegrÈ. Dans ce cas, il faut multiplier la valeur par PI/180,
-      *          car la fonction \e sin de cmath est dÈfinie en radians.
-      * \param angle Sert ‡ savoir si l'on est en mode DegrÈ ou non
-      * \return Un \e Complexe construit ‡ partir d'un entier contenant la valeur du sinus
+      * \details Si le param√®tre est vrai, on se situe en mode Degr√©. Dans ce cas, il faut multiplier la valeur par PI/180,
+      *          car la fonction \e sin de cmath est d√©finie en radians.
+      * \param angle Sert √† savoir si l'on est en mode Degr√© ou non
+      * \return Un \e Entier construit construit √† partir d'un entier contenant la valeur du sinus
       */
 }
 
@@ -197,14 +160,13 @@ Constante* Entier::cosinus(bool angle)
     float res = _valeur;
     if(angle==true)
         res=res*PI/180;
-    Entier *e = new Entier(cos(res));
-    return new Complexe(e);
+    return new Entier(cos(res));
     /**
       * \brief Calcul du Cosinus
-      * \details Si le paramËtre est vrai, on se situe en mode DegrÈ. Dans ce cas, il faut multiplier la valeur par PI/180,
-      *          car la fonction \e cos de cmath est dÈfinie en radians.
-      * \param angle Sert ‡ savoir si l'on est en mode DegrÈ ou non
-      * \return Un \e Complexe construit ‡ partir d'un entier contenant la valeur du cosinus
+      * \details Si le param√®tre est vrai, on se situe en mode Degr√©. Dans ce cas, il faut multiplier la valeur par PI/180,
+      *          car la fonction \e cos de cmath est d√©finie en radians.
+      * \param angle Sert √† savoir si l'on est en mode Degr√© ou non
+      * \return Un \e Entier construit construit √† partir d'un entier contenant la valeur du cosinus
       */
 }
 
@@ -213,14 +175,13 @@ Constante* Entier::sinush(bool angle)
     float res = _valeur;
     if(angle==true)
         res=res*PI/180;
-    Entier *e = new Entier(sinh(res));
-    return new Complexe(e);
+    return new Entier(sinh(res));
     /**
       * \brief Calcul du Sinus Hyperbolique
-      * \details Si le paramËtre est vrai, on se situe en mode DegrÈ. Dans ce cas, il faut multiplier la valeur par PI/180,
-      *          car la fonction \e sinh de cmath est dÈfinie en radians.
-      * \param angle Sert ‡ savoir si l'on est en mode DegrÈ ou non
-      * \return Un \e Complexe construit ‡ partir d'un entier contenant la valeur du sinus hyperbolique
+      * \details Si le param√®tre est vrai, on se situe en mode Degr√©. Dans ce cas, il faut multiplier la valeur par PI/180,
+      *          car la fonction \e sinh de cmath est d√©finie en radians.
+      * \param angle Sert √† savoir si l'on est en mode Degr√© ou non
+      * \return Un \e Entier construit construit √† partir d'un entier contenant la valeur du sinus hyperbolique
       */
 }
 
@@ -229,14 +190,13 @@ Constante* Entier::cosinush(bool angle)
     float res = _valeur;
     if(angle==true)
         res=res*PI/180;
-    Entier *e = new Entier(cosh(res));
-    return new Complexe(e);
+    return new Entier(cosh(res));
     /**
       * \brief Calcul du Cosinus Hyperbolique
-      * \details Si le paramËtre est vrai, on se situe en mode DegrÈ. Dans ce cas, il faut multiplier la valeur par PI/180,
-      *          car la fonction \e cosh de cmath est dÈfinie en radians.
-      * \param angle Sert ‡ savoir si l'on est en mode DegrÈ ou non
-      * \return Un \e Complexe construit ‡ partir d'un entier contenant la valeur du cosinus hyperbolique
+      * \details Si le param√®tre est vrai, on se situe en mode Degr√©. Dans ce cas, il faut multiplier la valeur par PI/180,
+      *          car la fonction \e cosh de cmath est d√©finie en radians.
+      * \param angle Sert √† savoir si l'on est en mode Degr√© ou non
+      * \return Un \e Entier construit construit √† partir d'un entier contenant la valeur du cosinus hyperbolique
       */
 }
 
@@ -246,14 +206,13 @@ Constante* Entier::tangente(bool angle)
     float res = _valeur;
     if(angle==true)
         res=res*PI/180;
-    Entier *e = new Entier(tan(res));
-    return new Complexe(e);
+    return new Entier(tan(res));
     /**
       * \brief Calcul de la Tangente
-      * \details Si le paramËtre est vrai, on se situe en mode DegrÈ. Dans ce cas, il faut multiplier la valeur par PI/180,
-      *          car la fonction \e tan de cmath est dÈfinie en radians.
-      * \param angle Sert ‡ savoir si l'on est en mode DegrÈ ou non
-      * \return Un \e Complexe construit ‡ partir d'un entier contenant la valeur de la tangente
+      * \details Si le param√®tre est vrai, on se situe en mode Degr√©. Dans ce cas, il faut multiplier la valeur par PI/180,
+      *          car la fonction \e tan de cmath est d√©finie en radians.
+      * \param angle Sert √† savoir si l'on est en mode Degr√© ou non
+      * \return Un \e Entier construit construit √† partir d'un entier contenant la valeur de la tangente
       */
 
 }
@@ -263,27 +222,25 @@ Constante* Entier::tangenteh(bool angle)
     float res = _valeur;
     if(angle==true)
         res=res*PI/180;
-    Entier *e = new Entier(tanh(res));
-    return new Complexe(e);
+    return new Entier(tanh(res));
     /**
       * \brief Calcul de la Tangente Hyperbolique
-      * \details Si le paramËtre est vrai, on se situe en mode DegrÈ. Dans ce cas, il faut multiplier la valeur par PI/180,
-      *          car la fonction \e tanh de cmath est dÈfinie en radians.
-      * \param angle Sert ‡ savoir si l'on est en mode DegrÈ ou non
-      * \return Un \e Complexe construit ‡ partir d'un entier contenant la valeur de la tangente hyperbolique
+      * \details Si le param√®tre est vrai, on se situe en mode Degr√©. Dans ce cas, il faut multiplier la valeur par PI/180,
+      *          car la fonction \e tanh de cmath est d√©finie en radians.
+      * \param angle Sert √† savoir si l'on est en mode Degr√© ou non
+      * \return Un \e Entier construit construit √† partir d'un entier contenant la valeur de la tangente hyperbolique
       */
 
 }
 
 Constante *Entier::inv()
 {
-    //FIXME : pas d'inverse pour les entiers sans perte de prÈcision
     return new Rationnel(1, this->getValeur());
     /**
       * \brief Inverse d'un entier
-      * \details L'inverse d'un nombre est situÈ entre 0 et 1. Si l'on est en mode entier, on a une importante perte
-      *          de prÈcision, car on ne retournera que 0 ou 1
-      * \return Un \e Rationnel car on perd moins de prÈcisions comme cela
+      * \details L'inverse d'un nombre est situ√© entre 0 et 1. Si l'on est en mode entier, on a une importante perte
+      *          de pr√©cision, car on ne retournera que 0 ou 1
+      * \return Un \e Rationnel car on perd moins de pr√©cisions comme cela
       */
 }
 
@@ -291,12 +248,11 @@ Constante* Entier::logN()
 {
     float res = _valeur;
     int l = log(res);
-    Entier* e = new Entier(l);
-    return new Complexe(e);
+    return new Entier(l);
     /**
-      * \brief Logarithme nÈpÈrien
-      * \details On crÈe un nouvel Entier dont la valeur est celle du logarithme nÈpÈrien de l'entier initial.
-      * \return Un \e Complexe construit avec cet entier
+      * \brief Logarithme n√©p√©rien
+      * \details On cr√©e un nouvel Entier dont la valeur est celle du logarithme n√©p√©rien de l'entier initial.
+      * \return Un \e Entier construit construit avec cet entier
       */
 }
 
@@ -304,12 +260,11 @@ Constante* Entier::log1()
 {
     float res = _valeur;
     int l = log10(res);
-    Entier* e = new Entier(l);
-    return new Complexe(e);
+    return new Entier(l);
     /**
-      * \brief Logarithme dÈcimal
-      * \details On crÈe un nouvel Entier dont la valeur est celle du logarithme dÈcimal de l'entier initial.
-      * \return Un \e Complexe construit avec cet entier
+      * \brief Logarithme d√©cimal
+      * \details On cr√©e un nouvel Entier dont la valeur est celle du logarithme d√©cimal de l'entier initial.
+      * \return Un \e Entier construit construit avec cet entier
       */
 }
 
@@ -324,14 +279,13 @@ Constante* Entier::puissance(Constante* c)
     float res2 = _valeur;
     res = pow(res2,value);
 
-    Entier *e = new Entier(res);
-    return new Complexe(e);
+    return new Entier(res);
     /**
       * \brief Puissance de deux entiers
-      * \details On effectue un transtypage en entier afin de rÈcupÈrer l'exposant sous forme entiËre.
-      *          On calcule ensuite gr‚ce ‡ la fonction \e pow de la bibliothËque \e cmath.
+      * \details On effectue un transtypage en entier afin de r√©cup√©rer l'exposant sous forme enti√®re.
+      *          On calcule ensuite gr√¢ce √† la fonction \e pow de la biblioth√®que \e cmath.
       * \param c Une \e Constante qui sera l'exposant
-      * \return Un \e Complexe construit ‡ partir du rÈsultat
+      * \return Un \e Entier construit construit √† partir du r√©sultat
       */
 }
 }
@@ -339,24 +293,22 @@ Constante* Entier::puissance(Constante* c)
 Constante* Entier::carre()
 {
     int res = _valeur*_valeur;
-    Entier *e = new Entier(res);
-    return new Complexe(e);
+    return new Entier(res);
     /**
-      * \brief Fonction carrÈ
-      * \details On crÈe un nouvel Entier dont la valeur est le rÈsultat du carrÈ
-      * \return Un \e Complexe construit ‡ partir du rÈsultat de la fonction
+      * \brief Fonction carr√©
+      * \details On cr√©e un nouvel Entier dont la valeur est le r√©sultat du carr√©
+      * \return Un \e Entier construit construit √† partir du r√©sultat de la fonction
       */
 }
 
 Constante* Entier::cube()
 {
     int res = _valeur*_valeur*_valeur;
-    Entier *e = new Entier(res);
-    return new Complexe(e);
+    return new Entier(res);
     /**
       * \brief Fonction cube
-      * \details On crÈe un nouvel Entier dont la valeur est le rÈsultat du cube
-      * \return Un \e Complexe construit ‡ partir du rÈsultat de la fonction
+      * \details On cr√©e un nouvel Entier dont la valeur est le r√©sultat du cube
+      * \return Un \e Entier construit construit √† partir du r√©sultat de la fonction
       */
 }
 
@@ -364,11 +316,10 @@ Constante* Entier::racine()
 {
     float res = _valeur;
     int res2 = sqrt(res);
-    Entier *e = new Entier(res2);
-    return new Complexe(e);
+    return new Entier(res2);
     /**
-      * \brief Fonction racine carrÈe
-      * \details On crÈe un nouvel Entier dont la valeur est le rÈsultat de la racine carrÈe
-      * \return Un \e Complexe construit ‡ partir du rÈsultat de la fonction
+      * \brief Fonction racine carr√©e
+      * \details On cr√©e un nouvel Entier dont la valeur est le r√©sultat de la racine carr√©e
+      * \return Un \e Entier construit construit √† partir du r√©sultat de la fonction
       */
 }

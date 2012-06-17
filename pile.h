@@ -10,8 +10,6 @@
 class Pile : public QAbstractListModel
 {
     Q_OBJECT
-//http://www.java2s.com/Code/Cpp/Qt/stringlistmodelexample.htm
-//http://www.developpez.net/forums/d414542/c-cpp/bibliotheques/qt/qabstractitemmodel-qlistview/
 
 private:
     QList<Constante*> p;
@@ -34,8 +32,7 @@ public:
     Pile* copier_pile();
     void sauv_pile_context();
 
-    //surcharge des fonctions virtuelles pures de QAbstractItemModel
-
+    //surcharge des fonctions virtuelles pures de QAbstractItemModel pour la MAJ du QListView
     int rowCount(const QModelIndex &parent) const;
     QVariant data(const QModelIndex &index, int role) const;
 

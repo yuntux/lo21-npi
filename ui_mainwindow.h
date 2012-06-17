@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sat Jun 16 15:38:08 2012
+** Created: Sat Jun 16 23:53:19 2012
 **      by: Qt User Interface Compiler version 4.7.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -22,12 +22,8 @@
 #include <QtGui/QLineEdit>
 #include <QtGui/QListView>
 #include <QtGui/QMainWindow>
-#include <QtGui/QMenu>
-#include <QtGui/QMenuBar>
 #include <QtGui/QPushButton>
 #include <QtGui/QRadioButton>
-#include <QtGui/QStatusBar>
-#include <QtGui/QToolBar>
 #include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
 
@@ -106,11 +102,6 @@ public:
     QPushButton *vider_pile;
     QPushButton *supprimer_tete_pile;
     QPushButton *dupliquer_tete_pile;
-    QMenuBar *menuBar;
-    QMenu *menuFichier;
-    QMenu *menu;
-    QToolBar *mainToolBar;
-    QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -253,7 +244,7 @@ public:
         _clavierBasicLayout->addWidget(EVAL, 8, 0, 1, 1);
 
         PIBOUTON = new QPushButton(widget_clavierBasic);
-        PIBOUTON->setObjectName(QString::fromUtf8("PI"));
+        PIBOUTON->setObjectName(QString::fromUtf8("PIBOUTON"));
 
         _clavierBasicLayout->addWidget(PIBOUTON, 5, 1, 1, 1);
 
@@ -466,24 +457,6 @@ public:
         horizontalLayout->addLayout(verticalLayout_2);
 
         MainWindow->setCentralWidget(centralWidget);
-        menuBar = new QMenuBar(MainWindow);
-        menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 958, 22));
-        menuFichier = new QMenu(menuBar);
-        menuFichier->setObjectName(QString::fromUtf8("menuFichier"));
-        menu = new QMenu(menuBar);
-        menu->setObjectName(QString::fromUtf8("menu"));
-        MainWindow->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(MainWindow);
-        mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
-        MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
-        statusBar = new QStatusBar(MainWindow);
-        statusBar->setObjectName(QString::fromUtf8("statusBar"));
-        MainWindow->setStatusBar(statusBar);
-
-        menuBar->addAction(menuFichier->menuAction());
-        menuBar->addAction(menu->menuAction());
-        menu->addAction(action_propos);
 
         retranslateUi(MainWindow);
 
@@ -571,8 +544,6 @@ public:
         vider_pile->setText(QApplication::translate("MainWindow", "Vider Pile", 0, QApplication::UnicodeUTF8));
         supprimer_tete_pile->setText(QApplication::translate("MainWindow", "Supprimer la t\303\252te", 0, QApplication::UnicodeUTF8));
         dupliquer_tete_pile->setText(QApplication::translate("MainWindow", "Dupliquer la t\303\252te", 0, QApplication::UnicodeUTF8));
-        menuFichier->setTitle(QApplication::translate("MainWindow", "Fichier", 0, QApplication::UnicodeUTF8));
-        menu->setTitle(QApplication::translate("MainWindow", "?", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

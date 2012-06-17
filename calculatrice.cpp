@@ -10,6 +10,7 @@ Calculatrice* Calculatrice::instance=0;
   */
 
 Calculatrice::~Calculatrice(){
+    delete(context);
     /**
      * \brief Le destructeur de la classe
       */
@@ -19,7 +20,6 @@ Calculatrice::Calculatrice() : context(new QSettings("context.ini", QSettings::I
 {
     Historique.prepend(new Pile);
     indice_pile_actuelle = 0;
-    _modComplexe = true;
 
     //CHARGEMENT DE LA PILE
      context->beginGroup("PileStockage");
@@ -36,6 +36,10 @@ Calculatrice::Calculatrice() : context(new QSettings("context.ini", QSettings::I
 
      LogMessage msg(0, "Chargement de la pile.", tracabilite);
      LogSystem::getInstance().ajouterFcihierEtConsole(msg);
+     /**
+     * \brief Constructeur de la calculatrice
+     * \details Construit le QSettings context et restaure la pile enregistré lors de la dernière utilisation.
+     */
 }
 
 void Calculatrice::saisie_nouvelle_pile(Pile* nouvelle){
@@ -56,6 +60,10 @@ void Calculatrice::annuler(){
     }
     LogMessage msg(0, "Annulation.", tracabilite);
     LogSystem::getInstance().ajouterFcihierEtConsole(msg);
+    /**
+    * \brief Fonction annulé
+    * \details Annule la dernière action.
+    */
 }
 
 void Calculatrice::retablir(){
@@ -63,6 +71,10 @@ void Calculatrice::retablir(){
         indice_pile_actuelle--;
     LogMessage msg(0, "Retablissement.", tracabilite);
     LogSystem::getInstance().ajouterFcihierEtConsole(msg);
+    /**
+    * \brief Fonction rétablir
+    * \details Rétabli le dernier état annulé de la pile Historique.
+    */
 }
 
 void Calculatrice::afficher_toutes_piles_hitorique(){

@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="class_calculatrice" kind="class" prot="public">
     <compoundname>Calculatrice</compoundname>
+    <includes refid="calculatrice_8h" local="no">calculatrice.h</includes>
       <sectiondef kind="private-static-attrib">
       <memberdef kind="variable" id="class_calculatrice_1a7b654b55f83dddf4719e64b9821ac8a3" prot="private" static="yes" mutable="no">
         <type><ref refid="class_calculatrice" kindref="compound">Calculatrice</ref> *</type>
@@ -15,12 +16,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="22" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="22" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="24" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_calculatrice_1aae4b0775ebfcbfbd1fdfb254a77d10da" prot="private" static="no" mutable="no">
-        <type>enum MesureAngle</type>
+        <type>enum <ref refid="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6a" kindref="member">MesureAngle</ref></type>
         <definition>enum MesureAngle Calculatrice::_modAngle</definition>
         <argsstring></argsstring>
         <name>_modAngle</name>
@@ -30,10 +31,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="24" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="24" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="26" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_calculatrice_1a0f33449073788fd8dc3875ce3a995345" prot="private" static="no" mutable="no">
-        <type>enum Type</type>
+        <type>enum <ref refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">Type</ref></type>
         <definition>enum Type Calculatrice::_modConstante</definition>
         <argsstring></argsstring>
         <name>_modConstante</name>
@@ -43,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="25" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="25" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="27" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_calculatrice_1a2ad1b63edaa3e381bb0fc1a8b9772270" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -56,151 +57,46 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="26" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="26" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="28" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_calculatrice_1a6253c64f9b3f3b666b399541c0404db0" prot="private" static="no" mutable="no">
-        <type><ref refid="class_pile" kindref="compound">Pile</ref></type>
-        <definition>Pile Calculatrice::_pileStockage</definition>
+      <memberdef kind="variable" id="class_calculatrice_1a3f842c8a82f035ab3cd8cbb459580639" prot="private" static="no" mutable="no">
+        <type>QList&lt; <ref refid="class_pile" kindref="compound">Pile</ref> * &gt;</type>
+        <definition>QList&lt;Pile*&gt; Calculatrice::Historique</definition>
         <argsstring></argsstring>
-        <name>_pileStockage</name>
+        <name>Historique</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="28" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="30" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="30" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="class_calculatrice_1a50ac48e6a2393482f42727364ff32a91" prot="private" static="no" mutable="no">
-        <type><ref refid="class_pile" kindref="compound">Pile</ref></type>
-        <definition>Pile Calculatrice::_pileAffichage</definition>
+      <memberdef kind="variable" id="class_calculatrice_1a33717fefce73e7d2be5dfe98888d7b0e" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Calculatrice::indice_pile_actuelle</definition>
         <argsstring></argsstring>
-        <name>_pileAffichage</name>
+        <name>indice_pile_actuelle</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="29" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="29" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="31" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="31" bodyend="-1"/>
       </memberdef>
-      </sectiondef>
-      <sectiondef kind="private-func">
-      <memberdef kind="function" id="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="class_pile" kindref="compound">Pile</ref> *</type>
-        <definition>Pile* Calculatrice::getPileStockage</definition>
-        <argsstring>()</argsstring>
-        <name>getPileStockage</name>
+      <memberdef kind="variable" id="class_calculatrice_1a8a04ff729193401b24e4af0598a4c89a" prot="private" static="no" mutable="no">
+        <type>QSettings *</type>
+        <definition>QSettings* Calculatrice::context</definition>
+        <argsstring></argsstring>
+        <name>context</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="31" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="31" bodyend="31"/>
-      </memberdef>
-      <memberdef kind="function" id="class_calculatrice_1a5fdd4414f03aa9210343c9ab03706b7e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="class_pile" kindref="compound">Pile</ref> *</type>
-        <definition>Pile* Calculatrice::getPileAffichage</definition>
-        <argsstring>()</argsstring>
-        <name>getPileAffichage</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="32" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="32" bodyend="32"/>
-      </memberdef>
-      <memberdef kind="function" id="class_calculatrice_1af2b58ecc00a772e959e166645c802cf2" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>enum MesureAngle</type>
-        <definition>enum MesureAngle Calculatrice::getMesureAngle</definition>
-        <argsstring>() const </argsstring>
-        <name>getMesureAngle</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="33" bodyend="33"/>
-      </memberdef>
-      <memberdef kind="function" id="class_calculatrice_1a72d29725e5fdc334caf6b27d1b81221a" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>enum Type</type>
-        <definition>enum Type Calculatrice::getModConstante</definition>
-        <argsstring>() const </argsstring>
-        <name>getModConstante</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="34" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="34" bodyend="34"/>
-      </memberdef>
-      <memberdef kind="function" id="class_calculatrice_1ad5a63f289cc5df7ccc7677ada5ca92b8" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool Calculatrice::getModComplexe</definition>
-        <argsstring>() const </argsstring>
-        <name>getModComplexe</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="35" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="35" bodyend="35"/>
-      </memberdef>
-      <memberdef kind="function" id="class_calculatrice_1a349cc6b05ea447fb0bde7221b560dab0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void Calculatrice::setModConstante</definition>
-        <argsstring>(enum Type t)</argsstring>
-        <name>setModConstante</name>
-        <param>
-          <type>enum Type</type>
-          <declname>t</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="36" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="36" bodyend="36"/>
-      </memberdef>
-      <memberdef kind="function" id="class_calculatrice_1a51db82ce20ffafc4a6188b9f13b27fe1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void Calculatrice::setMesureAngle</definition>
-        <argsstring>(enum MesureAngle a)</argsstring>
-        <name>setMesureAngle</name>
-        <param>
-          <type>enum MesureAngle</type>
-          <declname>a</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="37" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="37" bodyend="37"/>
-      </memberdef>
-      <memberdef kind="function" id="class_calculatrice_1ab5ad75216e44c3ca263c2706083def2b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void Calculatrice::setModComplexe</definition>
-        <argsstring>(bool c)</argsstring>
-        <name>setModComplexe</name>
-        <param>
-          <type>bool</type>
-          <declname>c</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="38" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="38" bodyend="38"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -210,14 +106,20 @@
         <argsstring>()</argsstring>
         <name>Calculatrice</name>
         <briefdescription>
-        </briefdescription>
+<para>Constructeur de la calculatrice. </para>        </briefdescription>
         <detaileddescription>
-        </detaileddescription>
+<para>Construit le QSettings context et restaure la pile enregistré lors de la dernière utilisation. </para>        </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="43" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.cpp" bodystart="8" bodyend="8"/>
+<para>Constructeur de la calculatrice</para><para>Construit le QSettings context et restaure la pile enregistré lors de la dernière utilisation.</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="36" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp" bodystart="46" bodyend="71"/>
+        <references refid="mainwindow_8cpp_1a108d15359aba86f26b1bb30e7d0fd505" compoundref="mainwindow_8cpp" startline="795" endline="836">stringToConstante</references>
+        <references refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" compoundref="calculatrice_8h" startline="46" endline="46">getPileStockage</references>
+        <references refid="class_pile_1a18a4d9a9b8013b36a5423817f9fb9049" compoundref="pile_8cpp" startline="8" endline="15">Pile::push</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" compoundref="logmessage_8h" startline="17">tracabilite</references>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">getInstance</references>
+        <referencedby refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">getInstance</referencedby>
       </memberdef>
-      <memberdef kind="function" id="class_calculatrice_1a2761ae6e08c02c2268ba5e499a013724" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_calculatrice_1a2761ae6e08c02c2268ba5e499a013724" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>Calculatrice::Calculatrice</definition>
         <argsstring>(const Calculatrice &amp;)</argsstring>
@@ -231,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="44"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="37" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="37" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="class_calculatrice_1acb4b6278eb955ce932e16df29276be52" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -239,12 +141,12 @@
         <argsstring>()</argsstring>
         <name>~Calculatrice</name>
         <briefdescription>
-        </briefdescription>
+<para>Dans un Singleton, nécessité d&apos;avoir une instante de type static. </para>        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="45" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.cpp" bodystart="5" bodyend="6"/>
+<para>Le destructeur de la classe</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="38" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp" bodystart="12" bodyend="16"/>
       </memberdef>
       <memberdef kind="function" id="class_calculatrice_1ad03d57208ee06d8ebef905efbbfec7b6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -260,7 +162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="46"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="39"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -274,8 +176,36 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="48" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.cpp" bodystart="10" bodyend="13"/>
+<para>Récupération de l&apos;instance</para><para>Permet de ne pas instancier plus d&apos;une fois la classe</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="41" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp" bodystart="114" bodyend="121"/>
+        <references refid="class_calculatrice_1a01b91f69f7ac10d737af66b3fa968db9" compoundref="calculatrice_8cpp" startline="46" endline="71">Calculatrice</references>
+        <referencedby refid="class_calculatrice_1a01b91f69f7ac10d737af66b3fa968db9" compoundref="calculatrice_8cpp" startline="46" endline="71">Calculatrice</referencedby>
+        <referencedby refid="class_calculatrice_1ae04068faaa66847c3f318c018824a277" compoundref="calculatrice_8cpp" startline="85" endline="95">annuler</referencedby>
+        <referencedby refid="class_calculatrice_1ac9fea1beaab60d0c73c017a5d225a56c" compoundref="calculatrice_8cpp" startline="97" endline="106">retablir</referencedby>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_main_window_1a164eb394f8581e1f80fba559bcc3d2e5" compoundref="mainwindow_8cpp" startline="101" endline="105">MainWindow::vider_pileClicked</referencedby>
+        <referencedby refid="class_main_window_1a10bc645984994b33d7176946fc06eff2" compoundref="mainwindow_8cpp" startline="107" endline="112">MainWindow::supprimer_tete_pileClicked</referencedby>
+        <referencedby refid="class_main_window_1a4d771b6ac11d2280aa5e45e4d47a2011" compoundref="mainwindow_8cpp" startline="114" endline="120">MainWindow::dupliquer_tete_pileClicked</referencedby>
+        <referencedby refid="class_main_window_1aa181a30bc86fd676299a828b6806fff7" compoundref="mainwindow_8cpp" startline="179" endline="191">MainWindow::_modDegresToggled</referencedby>
+        <referencedby refid="class_main_window_1ae1cb8b4b1f79083accb25c66e6847abc" compoundref="mainwindow_8cpp" startline="193" endline="205">MainWindow::_modRadiansToggled</referencedby>
+        <referencedby refid="class_main_window_1a6febb02daee1abb1c9c0d0f9d190b25c" compoundref="mainwindow_8cpp" startline="207" endline="220">MainWindow::_modComplexeONClicked</referencedby>
+        <referencedby refid="class_main_window_1a85b97292e1728650fc34d989170a0886" compoundref="mainwindow_8cpp" startline="222" endline="235">MainWindow::_modComplexeOFFClicked</referencedby>
+        <referencedby refid="class_main_window_1a0056914c89217bbef8879ccae4466e28" compoundref="mainwindow_8cpp" startline="237" endline="253">MainWindow::_clavierBasicStateChange</referencedby>
+        <referencedby refid="class_main_window_1a9200740951f715069c9f2bc7809f6e07" compoundref="mainwindow_8cpp" startline="255" endline="268">MainWindow::_clavierAvanceStateChange</referencedby>
+        <referencedby refid="class_main_window_1a29e8205bc963cebba7a96f94f4d3c40f" compoundref="mainwindow_8cpp" startline="270" endline="286">MainWindow::_modReel</referencedby>
+        <referencedby refid="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" compoundref="mainwindow_8cpp" startline="289" endline="305">MainWindow::_modRationnel</referencedby>
+        <referencedby refid="class_main_window_1a05cfdc8bf99fa145e67ce4d9eed03f20" compoundref="mainwindow_8cpp" startline="308" endline="324">MainWindow::_modEntier</referencedby>
+        <referencedby refid="class_main_window_1ad796f3d5c13e4ed2ea90e17aa0a3d7a8" compoundref="mainwindow_8cpp" startline="641" endline="644">MainWindow::annulerClicked</referencedby>
+        <referencedby refid="class_main_window_1abc93f16a699c5df5e5aedd67e1ad7e92" compoundref="mainwindow_8cpp" startline="645" endline="648">MainWindow::retablirClicked</referencedby>
+        <referencedby refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" compoundref="mainwindow_8cpp" startline="649" endline="706">MainWindow::ENTERClicked</referencedby>
+        <referencedby refid="class_main_window_1a1ccb4aa361ba5710af1ee09263a994fe" compoundref="mainwindow_8cpp" startline="708" endline="793">MainWindow::traiter_bloc_calcul</referencedby>
+        <referencedby refid="mainwindow_8h_1a5381fbfe5e9fcfad0c41b48f45ea8640" compoundref="mainwindow_8cpp" startline="795" endline="836">stringToConstante</referencedby>
+        <referencedby refid="class_main_window_1a5820c5fa916142942adc9984c434793e" compoundref="mainwindow_8cpp" startline="838" endline="846">MainWindow::traiter_bloc_expression</referencedby>
+        <referencedby refid="class_main_window_1a2472c42b862ef1dc38b75c4111a28590" compoundref="mainwindow_8cpp" startline="848" endline="882">MainWindow::EVALClicked</referencedby>
+        <referencedby refid="class_main_window_1aa9bae53abcb888f5e8cda8aa654e50e5" compoundref="mainwindow_8cpp" startline="885" endline="906">MainWindow::dernier_element_expression</referencedby>
+        <referencedby refid="class_main_window_1a4e20a4a065fbb0e4d3532a45a0a91425" compoundref="mainwindow_8cpp" startline="908" endline="916">MainWindow::closeEvent</referencedby>
+        <referencedby refid="class_pile_1a380c3a467b58c175aef4f2cdc0f7a2c7" compoundref="pile_8cpp" startline="195" endline="209">Pile::sauv_pile_context</referencedby>
+        <referencedby refid="class_rationnel_1aef5b4fb13f34b03cdf9132c272b5144f" compoundref="rationnel_8cpp" startline="94" endline="110">Rationnel::afficher</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_calculatrice_1aa974f5b58c583ef3aaee055eac238466" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -287,35 +217,267 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
+<para>destruction de l&apos;instance</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="42" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp" bodystart="123" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_calculatrice_1ae04068faaa66847c3f318c018824a277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Calculatrice::annuler</definition>
+        <argsstring>()</argsstring>
+        <name>annuler</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Fonction annulé</para><para>Annule la dernière action.</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="44" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp" bodystart="85" bodyend="95"/>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" compoundref="logmessage_8h" startline="17">tracabilite</references>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">getInstance</references>
+        <referencedby refid="class_main_window_1ad796f3d5c13e4ed2ea90e17aa0a3d7a8" compoundref="mainwindow_8cpp" startline="641" endline="644">MainWindow::annulerClicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_calculatrice_1ac9fea1beaab60d0c73c017a5d225a56c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Calculatrice::retablir</definition>
+        <argsstring>()</argsstring>
+        <name>retablir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Fonction rétablir</para><para>Rétabli le dernier état annulé de la pile Historique.</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="45" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp" bodystart="97" bodyend="106"/>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" compoundref="logmessage_8h" startline="17">tracabilite</references>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">getInstance</references>
+        <referencedby refid="class_main_window_1abc93f16a699c5df5e5aedd67e1ad7e92" compoundref="mainwindow_8cpp" startline="645" endline="648">MainWindow::retablirClicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_pile" kindref="compound">Pile</ref> *</type>
+        <definition>Pile* Calculatrice::getPileStockage</definition>
+        <argsstring>()</argsstring>
+        <name>getPileStockage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="49" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.cpp" bodystart="15" bodyend="17"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="46" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="46" bodyend="46"/>
+        <referencedby refid="class_calculatrice_1a01b91f69f7ac10d737af66b3fa968db9" compoundref="calculatrice_8cpp" startline="46" endline="71">Calculatrice</referencedby>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow::MainWindow</referencedby>
+        <referencedby refid="class_main_window_1a10bc645984994b33d7176946fc06eff2" compoundref="mainwindow_8cpp" startline="107" endline="112">MainWindow::supprimer_tete_pileClicked</referencedby>
+        <referencedby refid="class_main_window_1a4d771b6ac11d2280aa5e45e4d47a2011" compoundref="mainwindow_8cpp" startline="114" endline="120">MainWindow::dupliquer_tete_pileClicked</referencedby>
+        <referencedby refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" compoundref="mainwindow_8cpp" startline="649" endline="706">MainWindow::ENTERClicked</referencedby>
+        <referencedby refid="class_main_window_1a1ccb4aa361ba5710af1ee09263a994fe" compoundref="mainwindow_8cpp" startline="708" endline="793">MainWindow::traiter_bloc_calcul</referencedby>
+        <referencedby refid="class_main_window_1a5820c5fa916142942adc9984c434793e" compoundref="mainwindow_8cpp" startline="838" endline="846">MainWindow::traiter_bloc_expression</referencedby>
+        <referencedby refid="class_main_window_1a2472c42b862ef1dc38b75c4111a28590" compoundref="mainwindow_8cpp" startline="848" endline="882">MainWindow::EVALClicked</referencedby>
+        <referencedby refid="class_main_window_1aa9bae53abcb888f5e8cda8aa654e50e5" compoundref="mainwindow_8cpp" startline="885" endline="906">MainWindow::dernier_element_expression</referencedby>
+        <referencedby refid="class_main_window_1a4e20a4a065fbb0e4d3532a45a0a91425" compoundref="mainwindow_8cpp" startline="908" endline="916">MainWindow::closeEvent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_calculatrice_1a45ec794c15d65a56fb8101dd9ca4812b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Calculatrice::taille_pile_hitorique</definition>
+        <argsstring>()</argsstring>
+        <name>taille_pile_hitorique</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="47" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calculatrice_1a3558f924d00e69cbfbfd7b1ee6b088a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Calculatrice::afficher_toutes_piles_hitorique</definition>
+        <argsstring>()</argsstring>
+        <name>afficher_toutes_piles_hitorique</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="48" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp" bodystart="108" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calculatrice_1acc6b301035c21041dbd4ffb7f6f5645e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Calculatrice::saisie_nouvelle_pile</definition>
+        <argsstring>(Pile *nouvelle)</argsstring>
+        <name>saisie_nouvelle_pile</name>
+        <param>
+          <type><ref refid="class_pile" kindref="compound">Pile</ref> *</type>
+          <declname>nouvelle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="50" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.cpp" bodystart="73" bodyend="83"/>
+        <referencedby refid="class_main_window_1a164eb394f8581e1f80fba559bcc3d2e5" compoundref="mainwindow_8cpp" startline="101" endline="105">MainWindow::vider_pileClicked</referencedby>
+        <referencedby refid="class_main_window_1a10bc645984994b33d7176946fc06eff2" compoundref="mainwindow_8cpp" startline="107" endline="112">MainWindow::supprimer_tete_pileClicked</referencedby>
+        <referencedby refid="class_main_window_1a4d771b6ac11d2280aa5e45e4d47a2011" compoundref="mainwindow_8cpp" startline="114" endline="120">MainWindow::dupliquer_tete_pileClicked</referencedby>
+        <referencedby refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" compoundref="mainwindow_8cpp" startline="649" endline="706">MainWindow::ENTERClicked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_calculatrice_1af2b58ecc00a772e959e166645c802cf2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>enum <ref refid="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6a" kindref="member">MesureAngle</ref></type>
+        <definition>enum MesureAngle Calculatrice::getMesureAngle</definition>
+        <argsstring>() const </argsstring>
+        <name>getMesureAngle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="52" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="52" bodyend="52"/>
+        <referencedby refid="class_main_window_1a1ccb4aa361ba5710af1ee09263a994fe" compoundref="mainwindow_8cpp" startline="708" endline="793">MainWindow::traiter_bloc_calcul</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_calculatrice_1a72d29725e5fdc334caf6b27d1b81221a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>enum <ref refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">Type</ref></type>
+        <definition>enum Type Calculatrice::getModConstante</definition>
+        <argsstring>() const </argsstring>
+        <name>getModConstante</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="53" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_calculatrice_1ad5a63f289cc5df7ccc7677ada5ca92b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Calculatrice::getModComplexe</definition>
+        <argsstring>() const </argsstring>
+        <name>getModComplexe</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="54" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="54" bodyend="54"/>
+        <referencedby refid="mainwindow_8h_1a5381fbfe5e9fcfad0c41b48f45ea8640" compoundref="mainwindow_8cpp" startline="795" endline="836">stringToConstante</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_calculatrice_1ac1fd3f178488afb8bc25dae790a9756d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>QSettings *</type>
+        <definition>QSettings* Calculatrice::getContext</definition>
+        <argsstring>()</argsstring>
+        <name>getContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="55" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="55" bodyend="55"/>
+        <referencedby refid="class_main_window_1aa181a30bc86fd676299a828b6806fff7" compoundref="mainwindow_8cpp" startline="179" endline="191">MainWindow::_modDegresToggled</referencedby>
+        <referencedby refid="class_main_window_1ae1cb8b4b1f79083accb25c66e6847abc" compoundref="mainwindow_8cpp" startline="193" endline="205">MainWindow::_modRadiansToggled</referencedby>
+        <referencedby refid="class_main_window_1a6febb02daee1abb1c9c0d0f9d190b25c" compoundref="mainwindow_8cpp" startline="207" endline="220">MainWindow::_modComplexeONClicked</referencedby>
+        <referencedby refid="class_main_window_1a85b97292e1728650fc34d989170a0886" compoundref="mainwindow_8cpp" startline="222" endline="235">MainWindow::_modComplexeOFFClicked</referencedby>
+        <referencedby refid="class_main_window_1a0056914c89217bbef8879ccae4466e28" compoundref="mainwindow_8cpp" startline="237" endline="253">MainWindow::_clavierBasicStateChange</referencedby>
+        <referencedby refid="class_main_window_1a9200740951f715069c9f2bc7809f6e07" compoundref="mainwindow_8cpp" startline="255" endline="268">MainWindow::_clavierAvanceStateChange</referencedby>
+        <referencedby refid="class_main_window_1a29e8205bc963cebba7a96f94f4d3c40f" compoundref="mainwindow_8cpp" startline="270" endline="286">MainWindow::_modReel</referencedby>
+        <referencedby refid="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" compoundref="mainwindow_8cpp" startline="289" endline="305">MainWindow::_modRationnel</referencedby>
+        <referencedby refid="class_main_window_1a05cfdc8bf99fa145e67ce4d9eed03f20" compoundref="mainwindow_8cpp" startline="308" endline="324">MainWindow::_modEntier</referencedby>
+        <referencedby refid="class_pile_1a380c3a467b58c175aef4f2cdc0f7a2c7" compoundref="pile_8cpp" startline="195" endline="209">Pile::sauv_pile_context</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_calculatrice_1a349cc6b05ea447fb0bde7221b560dab0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Calculatrice::setModConstante</definition>
+        <argsstring>(enum Type t)</argsstring>
+        <name>setModConstante</name>
+        <param>
+          <type>enum <ref refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7" kindref="member">Type</ref></type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="56" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="56" bodyend="56"/>
+        <referencedby refid="class_main_window_1a29e8205bc963cebba7a96f94f4d3c40f" compoundref="mainwindow_8cpp" startline="270" endline="286">MainWindow::_modReel</referencedby>
+        <referencedby refid="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" compoundref="mainwindow_8cpp" startline="289" endline="305">MainWindow::_modRationnel</referencedby>
+        <referencedby refid="class_main_window_1a05cfdc8bf99fa145e67ce4d9eed03f20" compoundref="mainwindow_8cpp" startline="308" endline="324">MainWindow::_modEntier</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_calculatrice_1a51db82ce20ffafc4a6188b9f13b27fe1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Calculatrice::setMesureAngle</definition>
+        <argsstring>(enum MesureAngle a)</argsstring>
+        <name>setMesureAngle</name>
+        <param>
+          <type>enum <ref refid="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6a" kindref="member">MesureAngle</ref></type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="57" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="57" bodyend="57"/>
+        <referencedby refid="class_main_window_1aa181a30bc86fd676299a828b6806fff7" compoundref="mainwindow_8cpp" startline="179" endline="191">MainWindow::_modDegresToggled</referencedby>
+        <referencedby refid="class_main_window_1ae1cb8b4b1f79083accb25c66e6847abc" compoundref="mainwindow_8cpp" startline="193" endline="205">MainWindow::_modRadiansToggled</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_calculatrice_1ab5ad75216e44c3ca263c2706083def2b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Calculatrice::setModComplexe</definition>
+        <argsstring>(bool c)</argsstring>
+        <name>setModComplexe</name>
+        <param>
+          <type>bool</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="58" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="58" bodyend="58"/>
+        <referencedby refid="class_main_window_1a6febb02daee1abb1c9c0d0f9d190b25c" compoundref="mainwindow_8cpp" startline="207" endline="220">MainWindow::_modComplexeONClicked</referencedby>
+        <referencedby refid="class_main_window_1a85b97292e1728650fc34d989170a0886" compoundref="mainwindow_8cpp" startline="222" endline="235">MainWindow::_modComplexeOFFClicked</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" line="21" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/calculatrice.h" bodystart="20" bodyend="50"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" line="23" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/calculatrice.h" bodystart="22" bodyend="59"/>
     <listofallmembers>
       <member refid="class_calculatrice_1aae4b0775ebfcbfbd1fdfb254a77d10da" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>_modAngle</name></member>
       <member refid="class_calculatrice_1a2ad1b63edaa3e381bb0fc1a8b9772270" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>_modComplexe</name></member>
       <member refid="class_calculatrice_1a0f33449073788fd8dc3875ce3a995345" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>_modConstante</name></member>
-      <member refid="class_calculatrice_1a50ac48e6a2393482f42727364ff32a91" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>_pileAffichage</name></member>
-      <member refid="class_calculatrice_1a6253c64f9b3f3b666b399541c0404db0" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>_pileStockage</name></member>
+      <member refid="class_calculatrice_1a3558f924d00e69cbfbfd7b1ee6b088a3" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>afficher_toutes_piles_hitorique</name></member>
+      <member refid="class_calculatrice_1ae04068faaa66847c3f318c018824a277" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>annuler</name></member>
       <member refid="class_calculatrice_1a01b91f69f7ac10d737af66b3fa968db9" prot="protected" virt="non-virtual"><scope>Calculatrice</scope><name>Calculatrice</name></member>
       <member refid="class_calculatrice_1a2761ae6e08c02c2268ba5e499a013724" prot="protected" virt="non-virtual"><scope>Calculatrice</scope><name>Calculatrice</name></member>
+      <member refid="class_calculatrice_1a8a04ff729193401b24e4af0598a4c89a" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>context</name></member>
+      <member refid="class_calculatrice_1ac1fd3f178488afb8bc25dae790a9756d" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>getContext</name></member>
       <member refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>getInstance</name></member>
-      <member refid="class_calculatrice_1af2b58ecc00a772e959e166645c802cf2" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>getMesureAngle</name></member>
-      <member refid="class_calculatrice_1ad5a63f289cc5df7ccc7677ada5ca92b8" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>getModComplexe</name></member>
-      <member refid="class_calculatrice_1a72d29725e5fdc334caf6b27d1b81221a" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>getModConstante</name></member>
-      <member refid="class_calculatrice_1a5fdd4414f03aa9210343c9ab03706b7e" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>getPileAffichage</name></member>
-      <member refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>getPileStockage</name></member>
+      <member refid="class_calculatrice_1af2b58ecc00a772e959e166645c802cf2" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>getMesureAngle</name></member>
+      <member refid="class_calculatrice_1ad5a63f289cc5df7ccc7677ada5ca92b8" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>getModComplexe</name></member>
+      <member refid="class_calculatrice_1a72d29725e5fdc334caf6b27d1b81221a" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>getModConstante</name></member>
+      <member refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>getPileStockage</name></member>
+      <member refid="class_calculatrice_1a3f842c8a82f035ab3cd8cbb459580639" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>Historique</name></member>
+      <member refid="class_calculatrice_1a33717fefce73e7d2be5dfe98888d7b0e" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>indice_pile_actuelle</name></member>
       <member refid="class_calculatrice_1a7b654b55f83dddf4719e64b9821ac8a3" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>instance</name></member>
       <member refid="class_calculatrice_1aa974f5b58c583ef3aaee055eac238466" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>libereInstance</name></member>
       <member refid="class_calculatrice_1ad03d57208ee06d8ebef905efbbfec7b6" prot="protected" virt="non-virtual"><scope>Calculatrice</scope><name>operator=</name></member>
-      <member refid="class_calculatrice_1a51db82ce20ffafc4a6188b9f13b27fe1" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>setMesureAngle</name></member>
-      <member refid="class_calculatrice_1ab5ad75216e44c3ca263c2706083def2b" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>setModComplexe</name></member>
-      <member refid="class_calculatrice_1a349cc6b05ea447fb0bde7221b560dab0" prot="private" virt="non-virtual"><scope>Calculatrice</scope><name>setModConstante</name></member>
+      <member refid="class_calculatrice_1ac9fea1beaab60d0c73c017a5d225a56c" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>retablir</name></member>
+      <member refid="class_calculatrice_1acc6b301035c21041dbd4ffb7f6f5645e" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>saisie_nouvelle_pile</name></member>
+      <member refid="class_calculatrice_1a51db82ce20ffafc4a6188b9f13b27fe1" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>setMesureAngle</name></member>
+      <member refid="class_calculatrice_1ab5ad75216e44c3ca263c2706083def2b" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>setModComplexe</name></member>
+      <member refid="class_calculatrice_1a349cc6b05ea447fb0bde7221b560dab0" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>setModConstante</name></member>
+      <member refid="class_calculatrice_1a45ec794c15d65a56fb8101dd9ca4812b" prot="public" virt="non-virtual"><scope>Calculatrice</scope><name>taille_pile_hitorique</name></member>
       <member refid="class_calculatrice_1acb4b6278eb955ce932e16df29276be52" prot="protected" virt="virtual"><scope>Calculatrice</scope><name>~Calculatrice</name></member>
     </listofallmembers>
   </compounddef>

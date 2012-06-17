@@ -3,6 +3,7 @@
   <compounddef id="class_reel" kind="class" prot="public">
     <compoundname>Reel</compoundname>
     <basecompoundref refid="class_constante" prot="public" virt="non-virtual">Constante</basecompoundref>
+    <includes refid="reel_8h" local="no">reel.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_reel_1a8f6ba4bf0a56375d423b2be6c4522155" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -15,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="9" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" bodystart="9" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="9" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" bodystart="9" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -29,12 +30,28 @@
           <declname>e</declname>
         </param>
         <briefdescription>
-<para>Reel(float e):_valeur(e){}. </para>        </briefdescription>
+        </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="13" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" bodystart="13" bodyend="13"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="12" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" bodystart="12" bodyend="12"/>
+        <referencedby refid="class_reel_1a916d41fd6be293e13db43ef0a7866f40" compoundref="reel_8cpp" startline="52" endline="75">addition</referencedby>
+        <referencedby refid="class_reel_1ad87571a6e4d315eef54b55e6ded1f8f5" compoundref="reel_8cpp" startline="77" endline="101">produit</referencedby>
+        <referencedby refid="class_reel_1aec5959f07be6fdce8e87d58c1fa97a59" compoundref="reel_8cpp" startline="116" endline="123">signe</referencedby>
+        <referencedby refid="class_reel_1ac2388aae44a03e17a80efaf322583784" compoundref="reel_8cpp" startline="136" endline="144">inv</referencedby>
+        <referencedby refid="class_reel_1a189184ab88846b6d48e660a4308269cd" compoundref="reel_8cpp" startline="146" endline="159">sinus</referencedby>
+        <referencedby refid="class_reel_1a2ac819db4ede5a6ee712c33ae6a454ae" compoundref="reel_8cpp" startline="161" endline="174">cosinus</referencedby>
+        <referencedby refid="class_reel_1a355737e3925c2352f4e7fdfe16755f05" compoundref="reel_8cpp" startline="176" endline="189">cosinush</referencedby>
+        <referencedby refid="class_reel_1acaeed5fe69edf50145bb355a88ebf372" compoundref="reel_8cpp" startline="192" endline="205">tangente</referencedby>
+        <referencedby refid="class_reel_1a9184526f7eefa9a83f5394393ce86911" compoundref="reel_8cpp" startline="207" endline="220">tangenteh</referencedby>
+        <referencedby refid="class_reel_1a9bffd052bb8d163e1f0b7c1f86b27c1a" compoundref="reel_8cpp" startline="222" endline="235">sinush</referencedby>
+        <referencedby refid="class_reel_1ad793874a4f9bf2f12889a085f705ab3b" compoundref="reel_8cpp" startline="243" endline="252">logN</referencedby>
+        <referencedby refid="class_reel_1ae006122aff6f67f662affe4ac7686962" compoundref="reel_8cpp" startline="254" endline="263">log1</referencedby>
+        <referencedby refid="class_reel_1af88c9ab592354cfdcfe821f35e1d56af" compoundref="reel_8cpp" startline="265" endline="285">puissance</referencedby>
+        <referencedby refid="class_reel_1ad658ce7744a0b152c7f42ffd3c79baaf" compoundref="reel_8cpp" startline="287" endline="296">carre</referencedby>
+        <referencedby refid="class_reel_1af8c335c6e20697e9adb9fbb4e5f4577b" compoundref="reel_8cpp" startline="298" endline="307">cube</referencedby>
+        <referencedby refid="class_reel_1a164e9b499ff9c5521d59a5f6e607c409" compoundref="reel_8cpp" startline="309" endline="318">racine</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_reel_1a02f5d2d30d048ae139b1d8112f6c6f9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -50,8 +67,33 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
+<para>Constructeur de réel</para><para>On vérifie le type de la constante passée en paramètre, et si c&apos;est un réel, on recopie sa valeur dans le nouvel entier, sinon on lève une exception. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une constante, donc entier, réel, rationnel ou complexe</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="13" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="21" bodyend="50"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">Complexe::reel_pur</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">Complexe::getPartieReelle</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" compoundref="logmessage_8h" startline="17">important</references>
+        <references refid="class_reel_1a6412ad4d84dcd302c1fae1f7ec3ede46" compoundref="reel_8h" startline="16" endline="16">getValeur</references>
+      </memberdef>
+      <memberdef kind="function" id="class_reel_1ac86835592eeeb54a8d4ce31fae3be10e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Reel::~Reel</definition>
+        <argsstring>()</argsstring>
+        <name>~Reel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="14" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.cpp" bodystart="18" bodyend="30"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="14" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" bodystart="14" bodyend="14"/>
       </memberdef>
       <memberdef kind="function" id="class_reel_1a01af7b4e76fb88a85796a41f63b00420" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>QString</type>
@@ -65,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="15" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" bodystart="15" bodyend="15"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="15" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" bodystart="15" bodyend="15"/>
       </memberdef>
       <memberdef kind="function" id="class_reel_1a6412ad4d84dcd302c1fae1f7ec3ede46" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -78,7 +120,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="17" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" bodystart="17" bodyend="17"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="16" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" bodystart="16" bodyend="16"/>
+        <referencedby refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">Complexe::reel_pur</referencedby>
+        <referencedby refid="class_entier_1ab093dd3f0aa7777c4300362f7ba78ff4" compoundref="entier_8cpp" startline="40" endline="63">Entier::addition</referencedby>
+        <referencedby refid="class_entier_1aa83349a1b984adbd53766ebac2614faf" compoundref="entier_8cpp" startline="65" endline="91">Entier::produit</referencedby>
+        <referencedby refid="class_rationnel_1aa1a21dae65f5fb48c56a376aea420bd6" compoundref="rationnel_8cpp" startline="140" endline="164">Rationnel::produit</referencedby>
+        <referencedby refid="class_reel_1a02f5d2d30d048ae139b1d8112f6c6f9a" compoundref="reel_8cpp" startline="21" endline="50">Reel</referencedby>
+        <referencedby refid="class_reel_1a916d41fd6be293e13db43ef0a7866f40" compoundref="reel_8cpp" startline="52" endline="75">addition</referencedby>
+        <referencedby refid="class_reel_1ad87571a6e4d315eef54b55e6ded1f8f5" compoundref="reel_8cpp" startline="77" endline="101">produit</referencedby>
+        <referencedby refid="class_reel_1ac2388aae44a03e17a80efaf322583784" compoundref="reel_8cpp" startline="136" endline="144">inv</referencedby>
+        <referencedby refid="class_reel_1af88c9ab592354cfdcfe821f35e1d56af" compoundref="reel_8cpp" startline="265" endline="285">puissance</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_reel_1ae2ce4ae994a0fb3762eea2eb854af5cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -95,27 +146,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="18" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" bodystart="18" bodyend="18"/>
-      </memberdef>
-      <memberdef kind="function" id="class_reel_1acd01be68d30b8eec1e411903f3051672" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="class_rationnel" kindref="compound">Rationnel</ref></type>
-        <definition>Rationnel Reel::toRationnel</definition>
-        <argsstring>() const </argsstring>
-        <name>toRationnel</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="20" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.cpp" bodystart="9" bodyend="16"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="17" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" bodystart="17" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="class_reel_1a916d41fd6be293e13db43ef0a7866f40" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Reel::addition</definition>
         <argsstring>(Constante *c)</argsstring>
         <name>addition</name>
-        <reimplements refid="class_constante_1a580f4535e16d4c9331da85750be6e5ad">addition</reimplements>
+        <reimplements refid="class_constante_1a243b6eabd1fd476af827c5b523cddfac">addition</reimplements>
         <param>
           <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
           <declname>c</declname>
@@ -125,15 +163,31 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="22" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.cpp" bodystart="32" bodyend="48"/>
+<para>Somme de 2 réels</para><para>On vérifie le type du paramètre, et on crée une nouvelle instance de ce type en fonction, dont le ou les attributs seront en fait la somme des 2 réels dont l&apos;on veut calculer l&apos;addition.Cependant, si on est en mode Réel, on ne doit pas avoir les autres types de constante. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une constante </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit, car on utilisera toujours les formes complexes pour les calculs</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="21" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="52" bodyend="75"/>
+        <references refid="class_constante_1a243b6eabd1fd476af827c5b523cddfac" compoundref="constante_8h" startline="35" endline="35">Constante::addition</references>
+        <references refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" compoundref="complexe_8cpp" startline="73" endline="86">Complexe::addition</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" compoundref="logmessage_8h" startline="17">important</references>
+        <references refid="class_rationnel_1a4dc6b238834ace05451e69ea2bb6d02a" compoundref="rationnel_8cpp" startline="112" endline="138">Rationnel::addition</references>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+        <references refid="class_reel_1a6412ad4d84dcd302c1fae1f7ec3ede46" compoundref="reel_8h" startline="16" endline="16">getValeur</references>
+        <referencedby refid="class_reel_1a3c53208d46d2139790598fc5a7f29b7d" compoundref="reel_8cpp" startline="125" endline="134">soustraction</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_reel_1ad87571a6e4d315eef54b55e6ded1f8f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Reel::produit</definition>
         <argsstring>(Constante *c)</argsstring>
         <name>produit</name>
-        <reimplements refid="class_constante_1ad805854dd4e53f0ef5b2d482398b682a">produit</reimplements>
+        <reimplements refid="class_constante_1a650e88b74d2f8a052e6a11363b3ec816">produit</reimplements>
         <param>
           <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
           <declname>c</declname>
@@ -143,15 +197,31 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="23" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.cpp" bodystart="50" bodyend="68"/>
+<para>Produit de deux réels</para><para>Comme pour la somme, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra le produit demandé. Cependant, normalement en mode Réel, on ne doit avoir que des réels. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une <ref refid="class_constante" kindref="compound">Constante</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit contenant le produit</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="22" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="77" bodyend="101"/>
+        <references refid="class_constante_1a650e88b74d2f8a052e6a11363b3ec816" compoundref="constante_8h" startline="36" endline="36">Constante::produit</references>
+        <references refid="class_rationnel_1aa1a21dae65f5fb48c56a376aea420bd6" compoundref="rationnel_8cpp" startline="140" endline="164">Rationnel::produit</references>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+        <references refid="class_reel_1a6412ad4d84dcd302c1fae1f7ec3ede46" compoundref="reel_8h" startline="16" endline="16">getValeur</references>
+        <references refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" compoundref="complexe_8cpp" startline="88" endline="101">Complexe::produit</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" compoundref="logmessage_8h" startline="17">important</references>
+        <referencedby refid="class_reel_1af82effc61166bcc5f2ed9d0a2c97bee1" compoundref="reel_8cpp" startline="104" endline="114">division</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_reel_1af82effc61166bcc5f2ed9d0a2c97bee1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Reel::division</definition>
         <argsstring>(Constante *c)</argsstring>
         <name>division</name>
-        <reimplements refid="class_constante_1ab9b969ad6ad0d8463d44a1273667ee79">division</reimplements>
+        <reimplements refid="class_constante_1ac41fa56ac5ebdfbcc886b8d249fb876d">division</reimplements>
         <param>
           <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
           <declname>c</declname>
@@ -161,29 +231,42 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="24" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.cpp" bodystart="71" bodyend="95"/>
+<para>Division de réels</para><para>Comme pour la somme et le produit, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra le quotient demandé. Cependant, normalement en mode Réel, on ne doit avoir que des réels. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une <ref refid="class_constante" kindref="compound">Constante</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit contenant le quotient</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="23" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="104" bodyend="114"/>
+        <references refid="class_reel_1ad87571a6e4d315eef54b55e6ded1f8f5" compoundref="reel_8cpp" startline="77" endline="101">produit</references>
+        <references refid="class_constante_1a5ea6dd472ce568576961fa78b3b674b5" compoundref="constante_8h" startline="41" endline="41">Constante::inv</references>
       </memberdef>
       <memberdef kind="function" id="class_reel_1aec5959f07be6fdce8e87d58c1fa97a59" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Reel::signe</definition>
         <argsstring>()</argsstring>
         <name>signe</name>
-        <reimplements refid="class_constante_1a1c6f79dbc7623529ee4fd5ae9c556b45">signe</reimplements>
+        <reimplements refid="class_constante_1a59fcc22949ea02eb02244dad693696aa">signe</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="25" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.cpp" bodystart="97" bodyend="99"/>
+<para>Inversion de signe d&apos;un réel</para><para>On crée un nouvel entier dont la valeur est l&apos;opposée de celle initiale <simplesect kind="return"><para>Un <emphasis>Réel</emphasis>, de valeur opposée</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="24" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="116" bodyend="123"/>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
       </memberdef>
       <memberdef kind="function" id="class_reel_1a3c53208d46d2139790598fc5a7f29b7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Reel::soustraction</definition>
         <argsstring>(Constante *c)</argsstring>
         <name>soustraction</name>
-        <reimplements refid="class_constante_1ad1df4970f093fdb4235d4945ec2dbf12">soustraction</reimplements>
+        <reimplements refid="class_constante_1a3f3e5ad91d9e4eef33a5e6955fe91cb5">soustraction</reimplements>
         <param>
           <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
           <declname>c</declname>
@@ -193,50 +276,334 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="26" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.cpp" bodystart="101" bodyend="116"/>
+<para>Différence de réels</para><para>Comme pour les autres opérations, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra la différence voulue. Cependant, normalement en mode Réel, on ne doit avoir que des réels. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une <ref refid="class_constante" kindref="compound">Constante</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit contenant la différence</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="25" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="125" bodyend="134"/>
+        <references refid="class_reel_1a916d41fd6be293e13db43ef0a7866f40" compoundref="reel_8cpp" startline="52" endline="75">addition</references>
+        <references refid="class_constante_1a59fcc22949ea02eb02244dad693696aa" compoundref="constante_8h" startline="38" endline="38">Constante::signe</references>
       </memberdef>
       <memberdef kind="function" id="class_reel_1ac2388aae44a03e17a80efaf322583784" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Reel::inv</definition>
         <argsstring>()</argsstring>
         <name>inv</name>
-        <reimplements refid="class_constante_1a63d03e59594b74aa2fbc35f559b0ad46">inv</reimplements>
+        <reimplements refid="class_constante_1a5ea6dd472ce568576961fa78b3b674b5">inv</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="27" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.cpp" bodystart="118" bodyend="121"/>
+<para>Inversion d&apos;un réel</para><para>Pour un réel, on peut créer un nouveau réel contenant l&apos;inverse de celui que l&apos;on veut <simplesect kind="return"><para>Un <emphasis>Réel</emphasis> contenant le résultat</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="26" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="136" bodyend="144"/>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+        <references refid="class_reel_1a6412ad4d84dcd302c1fae1f7ec3ede46" compoundref="reel_8h" startline="16" endline="16">getValeur</references>
       </memberdef>
       <memberdef kind="function" id="class_reel_1a93cccda34883afa19ea08f9e84a6d22e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Reel::fact</definition>
         <argsstring>()</argsstring>
         <name>fact</name>
-        <reimplements refid="class_constante_1a57dafd18c718935af9f97dcbb8de9ad9">fact</reimplements>
+        <reimplements refid="class_constante_1a96e23d33bd45f79589f8911473ef2e32">fact</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.cpp" bodystart="129" bodyend="133"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="27" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="236" bodyend="240"/>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
       </memberdef>
-      <memberdef kind="function" id="class_reel_1a8e943954e7d3c46031b3e2e59b2f1717" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="class_reel_1a189184ab88846b6d48e660a4308269cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Reel::sinus</definition>
-        <argsstring>()</argsstring>
+        <argsstring>(bool angle)</argsstring>
         <name>sinus</name>
-        <reimplements refid="class_constante_1ad1a0ed2f6f6e9c3e7fc3f0c4ffaeaa76">sinus</reimplements>
+        <reimplements refid="class_constante_1a3b6827eba7936c4ce61f64da9dd826b4">sinus</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="29" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.cpp" bodystart="123" bodyend="127"/>
+<para>Calcul du Sinus</para><para>Si le paramètre est vrai, on se situe en mode Degré. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction <emphasis>sin</emphasis> de cmath est définie en radians. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sert à savoir si l&apos;on est en mode Degré ou non </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit construit à partir d&apos;un entier contenant la valeur du sinus</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="146" bodyend="159"/>
+        <references refid="reel_8cpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="reel_8cpp" startline="8">PI</references>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_reel_1a2ac819db4ede5a6ee712c33ae6a454ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Reel::cosinus</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>cosinus</name>
+        <reimplements refid="class_constante_1af6784ed749b7f2be92d6017628e5b935">cosinus</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calcul du Cosinus</para><para>Si le paramètre est vrai, on se situe en mode Degré. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction <emphasis>cos</emphasis> de cmath est définie en radians. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sert à savoir si l&apos;on est en mode Degré ou non </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit construit à partir d&apos;un entier contenant la valeur du cosinus</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="29" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="161" bodyend="174"/>
+        <references refid="reel_8cpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="reel_8cpp" startline="8">PI</references>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_reel_1a9bffd052bb8d163e1f0b7c1f86b27c1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Reel::sinush</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>sinush</name>
+        <reimplements refid="class_constante_1a101b4506f71295a23c764d34b7f7ecfb">sinush</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Sinus Hyperbolique Réel</para><para>Si le paramètre est vrai, on se situe en mode Degré. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction <emphasis>tanh</emphasis> de cmath est définie en radians. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen, permet de savoir si l&apos;on est en mode degré </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un nouveau <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit à partir du <ref refid="class_reel" kindref="compound">Reel</ref> contenant le résultat</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="30" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="222" bodyend="235"/>
+        <references refid="reel_8cpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="reel_8cpp" startline="8">PI</references>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_reel_1a355737e3925c2352f4e7fdfe16755f05" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Reel::cosinush</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>cosinush</name>
+        <reimplements refid="class_constante_1a0b1cbba53e1112aa65a081ae6231acb5">cosinush</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calcul du Cosinus Hyperbolique</para><para>Si le paramètre est vrai, on se situe en mode Degré. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction <emphasis>cosh</emphasis> de cmath est définie en radians. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sert à savoir si l&apos;on est en mode Degré ou non </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit construit à partir d&apos;un entier contenant la valeur du cosinus hyperbolique</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="31" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="176" bodyend="189"/>
+        <references refid="reel_8cpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="reel_8cpp" startline="8">PI</references>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_reel_1acaeed5fe69edf50145bb355a88ebf372" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Reel::tangente</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>tangente</name>
+        <reimplements refid="class_constante_1a51bffad2fa33a397de6ed422a621b1a1">tangente</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calcul de la Tangente</para><para>Si le paramètre est vrai, on se situe en mode Degré. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction <emphasis>tan</emphasis> de cmath est définie en radians. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sert à savoir si l&apos;on est en mode Degré ou non </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit construit à partir d&apos;un entier contenant la valeur de la tangente</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="32" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="192" bodyend="205"/>
+        <references refid="reel_8cpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="reel_8cpp" startline="8">PI</references>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_reel_1a9184526f7eefa9a83f5394393ce86911" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Reel::tangenteh</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>tangenteh</name>
+        <reimplements refid="class_constante_1a6f5f971e61ac831355f1182289c3952f">tangenteh</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calcul de la Tangente Hyperbolique</para><para>Si le paramètre est vrai, on se situe en mode Degré. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction <emphasis>tanh</emphasis> de cmath est définie en radians. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sert à savoir si l&apos;on est en mode Degré ou non </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> la valeur de la tangente hyperbolique</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="207" bodyend="220"/>
+        <references refid="reel_8cpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="reel_8cpp" startline="8">PI</references>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_reel_1ad793874a4f9bf2f12889a085f705ab3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Reel::logN</definition>
+        <argsstring>()</argsstring>
+        <name>logN</name>
+        <reimplements refid="class_constante_1aa28e3269159806101c2ac0d09c036c2c">logN</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Logarithme népérien</para><para>On crée un nouveau Réel dont la valeur est celle du logarithme népérien du réel initial. <simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit avec ce réel</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="34" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="243" bodyend="252"/>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_reel_1ae006122aff6f67f662affe4ac7686962" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Reel::log1</definition>
+        <argsstring>()</argsstring>
+        <name>log1</name>
+        <reimplements refid="class_constante_1aad178503c937682acd3c9f19aec37dc6">log1</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Logarithme décimal</para><para>On crée un nouveau Réel dont la valeur est celle du logarithme décimal du réel initial. <simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit avec ce réel</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="35" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="254" bodyend="263"/>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_reel_1af88c9ab592354cfdcfe821f35e1d56af" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Reel::puissance</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>puissance</name>
+        <reimplements refid="class_constante_1a2ed5e0a77fb7766fbce6abb4ebd0b01e">puissance</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Puissance de deux réels</para><para>On effectue un transtypage en réel afin de récupérer l&apos;exposant sous forme réelle. On calcule ensuite grâce à la fonction <emphasis>pow</emphasis> de la bibliothèque <emphasis>cmath</emphasis>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une <emphasis><ref refid="class_constante" kindref="compound">Constante</ref></emphasis> qui sera l&apos;exposant </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit à partir du résultat</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="36" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="265" bodyend="285"/>
+        <references refid="class_reel_1a6412ad4d84dcd302c1fae1f7ec3ede46" compoundref="reel_8h" startline="16" endline="16">getValeur</references>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_reel_1ad658ce7744a0b152c7f42ffd3c79baaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Reel::carre</definition>
+        <argsstring>()</argsstring>
+        <name>carre</name>
+        <reimplements refid="class_constante_1af8029cf3c52e8fdadeb21647ee9591f3">carre</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Fonction carré</para><para>On crée un nouveau Réel dont la valeur est le résultat du carré <simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit à partir du résultat de la fonction</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="37" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="287" bodyend="296"/>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_reel_1af8c335c6e20697e9adb9fbb4e5f4577b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Reel::cube</definition>
+        <argsstring>()</argsstring>
+        <name>cube</name>
+        <reimplements refid="class_constante_1a4590414eecfb9e739194a321a73c7931">cube</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Fonction cube</para><para>On crée un nouveau Réel dont la valeur est le résultat du cube <simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit à partir du résultat de la fonction</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="38" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="298" bodyend="307"/>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_reel_1a164e9b499ff9c5521d59a5f6e607c409" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Reel::racine</definition>
+        <argsstring>()</argsstring>
+        <name>racine</name>
+        <reimplements refid="class_constante_1a57604347a44e29f6aa7e36a045b4df1c">racine</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Fonction racine carrée</para><para>On crée un nouveau Réel dont la valeur est le résultat de la racine carrée <simplesect kind="return"><para>Un <emphasis><ref refid="class_reel" kindref="compound">Reel</ref></emphasis> construit à partir du résultat de la fonction</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="39" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp" bodystart="309" bodyend="318"/>
+        <references refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" compoundref="reel_8h" startline="12" endline="12">Reel</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -244,48 +611,59 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="101">
+      <node id="81">
         <label>Reel</label>
         <link refid="class_reel"/>
-        <childnode refid="102" relation="public-inheritance">
+        <childnode refid="82" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="102">
+      <node id="82">
         <label>Constante</label>
         <link refid="class_constante"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="103">
+      <node id="83">
         <label>Reel</label>
         <link refid="class_reel"/>
-        <childnode refid="104" relation="public-inheritance">
+        <childnode refid="84" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="104">
+      <node id="84">
         <label>Constante</label>
         <link refid="class_constante"/>
       </node>
     </collaborationgraph>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" line="7" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h" bodystart="7" bodyend="30"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" line="7" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h" bodystart="7" bodyend="40"/>
     <listofallmembers>
       <member refid="class_reel_1a8f6ba4bf0a56375d423b2be6c4522155" prot="private" virt="non-virtual"><scope>Reel</scope><name>_valeur</name></member>
       <member refid="class_reel_1a916d41fd6be293e13db43ef0a7866f40" prot="public" virt="virtual"><scope>Reel</scope><name>addition</name></member>
       <member refid="class_reel_1a01af7b4e76fb88a85796a41f63b00420" prot="public" virt="virtual"><scope>Reel</scope><name>afficher</name></member>
+      <member refid="class_reel_1ad658ce7744a0b152c7f42ffd3c79baaf" prot="public" virt="virtual"><scope>Reel</scope><name>carre</name></member>
+      <member refid="class_reel_1a2ac819db4ede5a6ee712c33ae6a454ae" prot="public" virt="virtual"><scope>Reel</scope><name>cosinus</name></member>
+      <member refid="class_reel_1a355737e3925c2352f4e7fdfe16755f05" prot="public" virt="virtual"><scope>Reel</scope><name>cosinush</name></member>
+      <member refid="class_reel_1af8c335c6e20697e9adb9fbb4e5f4577b" prot="public" virt="virtual"><scope>Reel</scope><name>cube</name></member>
       <member refid="class_reel_1af82effc61166bcc5f2ed9d0a2c97bee1" prot="public" virt="virtual"><scope>Reel</scope><name>division</name></member>
       <member refid="class_reel_1a93cccda34883afa19ea08f9e84a6d22e" prot="public" virt="virtual"><scope>Reel</scope><name>fact</name></member>
       <member refid="class_reel_1a6412ad4d84dcd302c1fae1f7ec3ede46" prot="public" virt="non-virtual"><scope>Reel</scope><name>getValeur</name></member>
       <member refid="class_reel_1ac2388aae44a03e17a80efaf322583784" prot="public" virt="virtual"><scope>Reel</scope><name>inv</name></member>
+      <member refid="class_reel_1ae006122aff6f67f662affe4ac7686962" prot="public" virt="virtual"><scope>Reel</scope><name>log1</name></member>
+      <member refid="class_reel_1ad793874a4f9bf2f12889a085f705ab3b" prot="public" virt="virtual"><scope>Reel</scope><name>logN</name></member>
       <member refid="class_reel_1ad87571a6e4d315eef54b55e6ded1f8f5" prot="public" virt="virtual"><scope>Reel</scope><name>produit</name></member>
+      <member refid="class_reel_1af88c9ab592354cfdcfe821f35e1d56af" prot="public" virt="virtual"><scope>Reel</scope><name>puissance</name></member>
+      <member refid="class_reel_1a164e9b499ff9c5521d59a5f6e607c409" prot="public" virt="virtual"><scope>Reel</scope><name>racine</name></member>
       <member refid="class_constante_1ac6fb071229429f82cf489f8313461efa" prot="public" virt="non-virtual"><scope>Reel</scope><name>recopie</name></member>
       <member refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" prot="public" virt="non-virtual"><scope>Reel</scope><name>Reel</name></member>
       <member refid="class_reel_1a02f5d2d30d048ae139b1d8112f6c6f9a" prot="public" virt="non-virtual"><scope>Reel</scope><name>Reel</name></member>
       <member refid="class_reel_1ae2ce4ae994a0fb3762eea2eb854af5cd" prot="public" virt="non-virtual"><scope>Reel</scope><name>setValeur</name></member>
       <member refid="class_reel_1aec5959f07be6fdce8e87d58c1fa97a59" prot="public" virt="virtual"><scope>Reel</scope><name>signe</name></member>
-      <member refid="class_reel_1a8e943954e7d3c46031b3e2e59b2f1717" prot="public" virt="virtual"><scope>Reel</scope><name>sinus</name></member>
+      <member refid="class_reel_1a189184ab88846b6d48e660a4308269cd" prot="public" virt="virtual"><scope>Reel</scope><name>sinus</name></member>
+      <member refid="class_reel_1a9bffd052bb8d163e1f0b7c1f86b27c1a" prot="public" virt="virtual"><scope>Reel</scope><name>sinush</name></member>
       <member refid="class_reel_1a3c53208d46d2139790598fc5a7f29b7d" prot="public" virt="virtual"><scope>Reel</scope><name>soustraction</name></member>
-      <member refid="class_reel_1acd01be68d30b8eec1e411903f3051672" prot="public" virt="non-virtual"><scope>Reel</scope><name>toRationnel</name></member>
+      <member refid="class_reel_1acaeed5fe69edf50145bb355a88ebf372" prot="public" virt="virtual"><scope>Reel</scope><name>tangente</name></member>
+      <member refid="class_reel_1a9184526f7eefa9a83f5394393ce86911" prot="public" virt="virtual"><scope>Reel</scope><name>tangenteh</name></member>
       <member refid="class_constante_1af747f270ad3d50813786a1b013bac959" prot="public" virt="virtual"><scope>Reel</scope><name>~Constante</name></member>
+      <member refid="class_reel_1ac86835592eeeb54a8d4ce31fae3be10e" prot="public" virt="virtual"><scope>Reel</scope><name>~Reel</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

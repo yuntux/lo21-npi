@@ -1,4 +1,4 @@
-.TH "MainWindow" 3 "Thu Jun 7 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
+.TH "MainWindow" 3 "Samedi Juin 16 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,7 +6,9 @@ MainWindow \-
 .SH SYNOPSIS
 .br
 .PP
-.SS "Public Slots"
+.PP
+\fC#include <mainwindow\&.h>\fP
+.SS "Connecteurs publics"
 
 .in +1c
 .ti -1c
@@ -97,6 +99,9 @@ MainWindow \-
 .RI "void \fBnum9Clicked\fP ()"
 .br
 .ti -1c
+.RI "void \fBPIBOUTONClicked\fP ()"
+.br
+.ti -1c
 .RI "void \fBPOINTClicked\fP ()"
 .br
 .ti -1c
@@ -145,23 +150,419 @@ MainWindow \-
 .RI "void \fB_modEntier\fP (bool)"
 .br
 .ti -1c
+.RI "void \fBretablirClicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBannulerClicked\fP ()"
+.br
+.ti -1c
 .RI "void \fBENTERClicked\fP ()"
 .br
+.ti -1c
+.RI "void \fBEVALClicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBvider_pileClicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBsupprimer_tete_pileClicked\fP ()"
+.br
+.ti -1c
+.RI "void \fBdupliquer_tete_pileClicked\fP ()"
+.br
 .in -1c
-.SS "Public Member Functions"
+.SS "Fonctions membres publiques"
 
 .in +1c
 .ti -1c
 .RI "\fBMainWindow\fP (QWidget *parent=0)"
 .br
 .ti -1c
-.RI "void \fBtraitement_expr\fP (int i, int j, QStringList list)"
+.RI "bool \fBdernier_element_expression\fP (QString chaine)"
 .br
 .ti -1c
-.RI "void \fBempiler\fP (float r)"
+.RI "\fB~MainWindow\fP ()"
+.br
+.ti -1c
+.RI "void \fBtraiter_bloc_expression\fP (QString s)"
+.br
+.ti -1c
+.RI "void \fBtraiter_bloc_calcul\fP (QString s)"
 .br
 .in -1c
+.SS "Fonctions membres protégées"
 
-.SH "Author"
+.in +1c
+.ti -1c
+.RI "void \fBcloseEvent\fP (QCloseEvent *event)"
+.br
+.in -1c
+.SH "Description détaillée"
 .PP 
-Generated automatically by Doxygen for Calculatrice polonais inversé LO21 from the source code\&.
+Définition à la ligne 30 du fichier mainwindow\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBMainWindow::MainWindow\fP (QWidget *parent = \fC0\fP)\fC [explicit]\fP"
+.PP
+Définition à la ligne 16 du fichier mainwindow\&.cpp\&.
+.SS "\fBMainWindow::~MainWindow\fP ()"Destructeur de \fBMainWindow\fP
+.PP
+Destruction de ui
+.PP
+Définition à la ligne 632 du fichier mainwindow\&.cpp\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBMainWindow::_clavierAvanceStateChange\fP (intcochee)\fC [slot]\fP"Clavier avancé
+.PP
+Permet de montrer ou de cacher le clavier avancé, selon la valeur du paramètre 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIcochee\fP \fBEntier\fP permettant de savoir si on cache ou non le clavier avancé
+.RE
+.PP
+
+.PP
+Définition à la ligne 255 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::_clavierBasicStateChange\fP (intcochee)\fC [slot]\fP"Clavier basique
+.PP
+Permet de montrer ou de cacher le clavier basique, selon la valeur du paramètre 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIcochee\fP \fBEntier\fP permettant de savoir si on cache ou non le clavier basique
+.RE
+.PP
+
+.PP
+Définition à la ligne 237 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::_modComplexeOFFClicked\fP (boolb)\fC [slot]\fP"Mode \fBComplexe\fP inactif
+.PP
+Passage en mode complexe 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIb\fP Booléen permettant de déterminer si le mode est désactivé
+.RE
+.PP
+
+.PP
+Définition à la ligne 222 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::_modComplexeONClicked\fP (boolb)\fC [slot]\fP"Mode \fBComplexe\fP actif
+.PP
+Passage en mode complexe 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIb\fP Booléen permettant de déterminer si le mode est activé
+.RE
+.PP
+
+.PP
+Définition à la ligne 207 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::_modDegresToggled\fP (boolb)\fC [slot]\fP"Mode Degré
+.PP
+Passage en mode degré 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIb\fP Booléen permettant de déterminer le mode
+.RE
+.PP
+
+.PP
+Définition à la ligne 179 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::_modEntier\fP (boolb)\fC [slot]\fP"Mode rationnel
+.PP
+Permet le passage du mode constante en rationnel, en fonction de la valeur du paramètre, puis sauvegarder dans un fichier 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIb\fP Booléen permettant le passage dans ce mode
+.RE
+.PP
+
+.PP
+Définition à la ligne 308 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::_modRadiansToggled\fP (boolb)\fC [slot]\fP"Mode Radian
+.PP
+Passage en mode radian 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIb\fP Booléen permettant de déterminer le mode
+.RE
+.PP
+
+.PP
+Définition à la ligne 193 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::_modRationnel\fP (boolb)\fC [slot]\fP"Mode rationnel
+.PP
+Permet le passage du mode constante en rationnel, en fonction de la valeur du paramètre, puis sauvegarder dans un fichier 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIb\fP Booléen permettant le passage dans ce mode
+.RE
+.PP
+
+.PP
+Définition à la ligne 289 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::_modReel\fP (boolb)\fC [slot]\fP"Mode réel
+.PP
+Permet le passage du mode constante en réel, en fonction de la valeur du paramètre, puis sauvegarder dans un fichier 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIb\fP Booléen permettant le passage dans ce mode
+.RE
+.PP
+
+.PP
+Définition à la ligne 270 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::ADDITIONNERClicked\fP ()\fC [slot]\fP"Clic sur le bouton +
+.PP
+Lorsque l'on clique sur le bouton +, on ajoute + sur la inputline
+.PP
+Définition à la ligne 443 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::annulerClicked\fP ()\fC [slot]\fP"
+.PP
+Définition à la ligne 641 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::CClicked\fP ()\fC [slot]\fP"Clic sur le bouton C
+.PP
+Lorsque l'on clique sur le bouton C, on retire le dernier caractère entré sur la inputline
+.PP
+Définition à la ligne 621 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::CEClicked\fP ()\fC [slot]\fP"Clic sur le bouton CE
+.PP
+Lorsque l'on clique sur le bouton CE, on retire tout ce qu'il y a sur la inputline, et on reset la listview
+.PP
+Définition à la ligne 611 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::closeEvent\fP (QCloseEvent *event)\fC [protected]\fP"Méthode executée lorsque l'on quite
+.PP
+Sauvegarde la pile lorsque l'on quitte\&. la QTextLine suivi d'un click sur ENTER\&.
+.PP
+Définition à la ligne 908 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::COSClicked\fP ()\fC [slot]\fP"Clic sur le bouton COS
+.PP
+Lorsque l'on clique sur le bouton COS, on ajoute COS sur la inputline
+.PP
+Définition à la ligne 491 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::COSHClicked\fP ()\fC [slot]\fP"Clic sur le bouton COSH
+.PP
+Lorsque l'on clique sur le bouton COSH, on ajoute COSH sur la inputline
+.PP
+Définition à la ligne 515 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::CUBEClicked\fP ()\fC [slot]\fP"Clic sur le bouton CUBE
+.PP
+Lorsque l'on clique sur le bouton CUBE, on ajoute CUBE sur la inputline
+.PP
+Définition à la ligne 563 du fichier mainwindow\&.cpp\&.
+.SS "bool \fBMainWindow::dernier_element_expression\fP (QStringchaine)"
+.PP
+Définition à la ligne 885 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::DIVISERClicked\fP ()\fC [slot]\fP"Clic sur le bouton /
+.PP
+Lorsque l'on clique sur le bouton /, on ajoute / sur la inputline
+.PP
+Définition à la ligne 467 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::DOLLARClicked\fP ()\fC [slot]\fP"Clic sur le bouton $
+.PP
+Lorsque l'on clique sur le bouton $, on ajoute $ sur la inputline
+.PP
+Définition à la ligne 595 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::dupliquer_tete_pileClicked\fP ()\fC [slot]\fP"
+.PP
+Définition à la ligne 114 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::ENTERClicked\fP ()\fC [slot]\fP"Clic sur le bouton ENTER
+.PP
+Récupération de la inputline sous forme de QString et traitement de plusieurs cas\&. En fonction de l'interrupteur booléen \fIdans_une_exp\fP, on va déterminer si l'on se trouve ou non dans une expression\&. En fonction de cela, on enverra soit la fonction \fItraiter_bloc_expression\fP, soit la fonction \fItraiter_bloc_calcul\fP 
+.PP
+Définition à la ligne 649 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::ESPACEClicked\fP ()\fC [slot]\fP"Clic sur le bouton espace
+.PP
+Lorsque l'on clique sur le bouton '_', on ajoute un espace sur la inputline
+.PP
+Définition à la ligne 427 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::EVALClicked\fP ()\fC [slot]\fP"EVALClicked
+.PP
+Lorsque l'on clique sur EVAL, on vérifie que la pile est non vide, que son dernier élément est une expression puis on simule une saisie de l'expression dans la QTextLine suivi d'un click sur ENTER\&.
+.PP
+Définition à la ligne 848 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::FACTORIELClicked\fP ()\fC [slot]\fP"Clic sur le bouton !
+.PP
+Lorsque l'on clique sur le bouton !, on ajoute ! sur la inputline
+.PP
+Définition à la ligne 435 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::INVClicked\fP ()\fC [slot]\fP"Clic sur le bouton INV
+.PP
+Lorsque l'on clique sur le bouton INV, on ajoute INV sur la inputline
+.PP
+Définition à la ligne 587 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::LNClicked\fP ()\fC [slot]\fP"Clic sur le bouton LN
+.PP
+Lorsque l'on clique sur le bouton LN, on ajoute LN sur la inputline
+.PP
+Définition à la ligne 571 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::LOGClicked\fP ()\fC [slot]\fP"Clic sur le bouton LOG
+.PP
+Lorsque l'on clique sur le bouton LOG, on ajoute LOG sur la inputline
+.PP
+Définition à la ligne 579 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::MODClicked\fP ()\fC [slot]\fP"Clic sur le bouton MOD
+.PP
+Lorsque l'on clique sur le bouton MOD, on ajoute MOD sur la inputline
+.PP
+Définition à la ligne 531 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::MULTIPLIERClicked\fP ()\fC [slot]\fP"Clic sur le bouton *
+.PP
+Lorsque l'on clique sur le bouton *, on ajoute * sur la inputline
+.PP
+Définition à la ligne 459 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::num0Clicked\fP ()\fC [slot]\fP"Clic sur le bouton 0
+.PP
+Lorsque l'on clique sur le bouton 0, on ajoute 0 sur la inputline
+.PP
+Définition à la ligne 335 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::num1Clicked\fP ()\fC [slot]\fP"Clic sur le bouton 1
+.PP
+Lorsque l'on clique sur le bouton 1, on ajoute 1 sur la inputline
+.PP
+Définition à la ligne 344 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::num2Clicked\fP ()\fC [slot]\fP"Clic sur le bouton 2
+.PP
+Lorsque l'on clique sur le bouton 2, on ajoute 2 sur la inputline
+.PP
+Définition à la ligne 352 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::num3Clicked\fP ()\fC [slot]\fP"Clic sur le bouton 3
+.PP
+Lorsque l'on clique sur le bouton 3, on ajoute 3 sur la inputline
+.PP
+Définition à la ligne 360 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::num4Clicked\fP ()\fC [slot]\fP"Clic sur le bouton 4
+.PP
+Lorsque l'on clique sur le bouton 4, on ajoute 4 sur la inputline
+.PP
+Définition à la ligne 369 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::num5Clicked\fP ()\fC [slot]\fP"Clic sur le bouton 5
+.PP
+Lorsque l'on clique sur le bouton 5, on ajoute 5 sur la inputline
+.PP
+Définition à la ligne 377 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::num6Clicked\fP ()\fC [slot]\fP"Clic sur le bouton 6
+.PP
+Lorsque l'on clique sur le bouton 6, on ajoute 6 sur la inputline
+.PP
+Définition à la ligne 385 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::num7Clicked\fP ()\fC [slot]\fP"Clic sur le bouton 7
+.PP
+Lorsque l'on clique sur le bouton 7, on ajoute 7 sur la inputline
+.PP
+Définition à la ligne 393 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::num8Clicked\fP ()\fC [slot]\fP"Clic sur le bouton 8
+.PP
+Lorsque l'on clique sur le bouton 8, on ajoute 8 sur la inputline
+.PP
+Définition à la ligne 401 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::num9Clicked\fP ()\fC [slot]\fP"Clic sur le bouton 9
+.PP
+Lorsque l'on clique sur le bouton 9, on ajoute 8 sur la inputline
+.PP
+Définition à la ligne 409 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::PIBOUTONClicked\fP ()\fC [slot]\fP"Clic sur le bouton PI
+.PP
+Lorsque l'on clique sur le bouton 0, on ajoute une valeur approchée de PI sur la inputline
+.PP
+Définition à la ligne 326 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::POINTClicked\fP ()\fC [slot]\fP"Clic sur le bouton '\&.'
+.PP
+Lorsque l'on clique sur le bouton '\&.', on ajoute un point sur la inputline
+.PP
+Définition à la ligne 418 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::POWClicked\fP ()\fC [slot]\fP"Clic sur le bouton POW
+.PP
+Lorsque l'on clique sur le bouton POW, on ajoute POW sur la inputline
+.PP
+Définition à la ligne 475 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::QUOTEClicked\fP ()\fC [slot]\fP"Clic sur le bouton '
+.PP
+Lorsque l'on clique sur le bouton ', on ajoute ' sur la inputline
+.PP
+Définition à la ligne 603 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::retablirClicked\fP ()\fC [slot]\fP"
+.PP
+Définition à la ligne 645 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::SIGNClicked\fP ()\fC [slot]\fP"Clic sur le bouton SIGN
+.PP
+Lorsque l'on clique sur le bouton SIGN, on ajoute SIGN sur la inputline
+.PP
+Définition à la ligne 539 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::SINClicked\fP ()\fC [slot]\fP"Clic sur le bouton SIN
+.PP
+Lorsque l'on clique sur le bouton SIN, on ajoute SIN sur la inputline
+.PP
+Définition à la ligne 483 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::SINHClicked\fP ()\fC [slot]\fP"Clic sur le bouton SINH
+.PP
+Lorsque l'on clique sur le bouton SINH, on ajoute SINH sur la inputline
+.PP
+Définition à la ligne 507 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::SOUSTRAIREClicked\fP ()\fC [slot]\fP"Clic sur le bouton -
+.PP
+Lorsque l'on clique sur le bouton -, on ajoute - sur la inputline
+.PP
+Définition à la ligne 451 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::SQRClicked\fP ()\fC [slot]\fP"Clic sur le bouton SQR
+.PP
+Lorsque l'on clique sur le bouton SQR, on ajoute SQR sur la inputline
+.PP
+Définition à la ligne 547 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::SQRTClicked\fP ()\fC [slot]\fP"Clic sur le bouton SQRT
+.PP
+Lorsque l'on clique sur le bouton SQRT, on ajoute SQRT sur la inputline
+.PP
+Définition à la ligne 555 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::supprimer_tete_pileClicked\fP ()\fC [slot]\fP"
+.PP
+Définition à la ligne 107 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::TANClicked\fP ()\fC [slot]\fP"Clic sur le bouton TAN
+.PP
+Lorsque l'on clique sur le bouton TAN, on ajoute TAN sur la inputline
+.PP
+Définition à la ligne 499 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::TANHClicked\fP ()\fC [slot]\fP"Clic sur le bouton TANH
+.PP
+Lorsque l'on clique sur le bouton TANH, on ajoute TANH sur la inputline
+.PP
+Définition à la ligne 523 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::traiter_bloc_calcul\fP (QStrings)"Traitement d'un bloc calcul
+.PP
+Permet de traiter un bloc de calcul\&. Effectue un split en fonction de l'espace, puis regarde pour chaque membre de la liste si c'est un opérateur\&. Si c'est le cas, on dépile un premier opérande\&. Si, de plus, c'est un opérateur binaire, alors on dépile un deuxième opérande\&. On effectue ensuite le calcul puis on empile le résultat 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIs\fP Une QString
+.RE
+.PP
+
+.PP
+Définition à la ligne 708 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::traiter_bloc_expression\fP (QStrings)"Traitement d'un expression
+.PP
+Crée une expression avec la chaine passée en argument et empile cette chaine\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIs\fP Une QString
+.RE
+.PP
+
+.PP
+Définition à la ligne 838 du fichier mainwindow\&.cpp\&.
+.SS "void \fBMainWindow::vider_pileClicked\fP ()\fC [slot]\fP"
+.PP
+Définition à la ligne 101 du fichier mainwindow\&.cpp\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Calculatrice polonais inversé LO21 à partir du code source\&.

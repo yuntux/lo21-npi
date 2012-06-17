@@ -1,4 +1,4 @@
-.TH "Calculatrice" 3 "Thu Jun 7 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
+.TH "Calculatrice" 3 "Samedi Juin 16 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,7 +6,52 @@ Calculatrice \-
 .SH SYNOPSIS
 .br
 .PP
-.SS "Static Public Member Functions"
+.PP
+\fC#include <calculatrice\&.h>\fP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "void \fBannuler\fP ()"
+.br
+.ti -1c
+.RI "void \fBretablir\fP ()"
+.br
+.ti -1c
+.RI "\fBPile\fP * \fBgetPileStockage\fP ()"
+.br
+.ti -1c
+.RI "int \fBtaille_pile_hitorique\fP ()"
+.br
+.ti -1c
+.RI "void \fBafficher_toutes_piles_hitorique\fP ()"
+.br
+.ti -1c
+.RI "void \fBsaisie_nouvelle_pile\fP (\fBPile\fP *nouvelle)"
+.br
+.ti -1c
+.RI "enum \fBMesureAngle\fP \fBgetMesureAngle\fP () const "
+.br
+.ti -1c
+.RI "enum \fBType\fP \fBgetModConstante\fP () const "
+.br
+.ti -1c
+.RI "bool \fBgetModComplexe\fP () const "
+.br
+.ti -1c
+.RI "QSettings * \fBgetContext\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetModConstante\fP (enum \fBType\fP t)"
+.br
+.ti -1c
+.RI "void \fBsetMesureAngle\fP (enum \fBMesureAngle\fP a)"
+.br
+.ti -1c
+.RI "void \fBsetModComplexe\fP (bool c)"
+.br
+.in -1c
+.SS "Fonctions membres publiques statiques"
 
 .in +1c
 .ti -1c
@@ -16,17 +61,99 @@ Calculatrice \-
 .RI "static void \fBlibereInstance\fP ()"
 .br
 .in -1c
-.SS "Protected Member Functions"
+.SS "Fonctions membres protégées"
 
 .in +1c
+.ti -1c
+.RI "\fBCalculatrice\fP ()"
+.br
+.RI "\fIConstructeur de la calculatrice\&. \fP"
 .ti -1c
 .RI "\fBCalculatrice\fP (const \fBCalculatrice\fP &)"
 .br
 .ti -1c
+.RI "virtual \fB~Calculatrice\fP ()"
+.br
+.RI "\fIDans un Singleton, nécessité d'avoir une instante de type static\&. \fP"
+.ti -1c
 .RI "void \fBoperator=\fP (const \fBCalculatrice\fP &)"
 .br
 .in -1c
-
-.SH "Author"
+.SH "Description détaillée"
 .PP 
-Generated automatically by Doxygen for Calculatrice polonais inversé LO21 from the source code\&.
+Définition à la ligne 22 du fichier calculatrice\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBCalculatrice::Calculatrice\fP ()\fC [protected]\fP"
+.PP
+Constructeur de la calculatrice\&. Construit le QSettings context et restaure la pile enregistré lors de la dernière utilisation\&. Constructeur de la calculatrice
+.PP
+Construit le QSettings context et restaure la pile enregistré lors de la dernière utilisation\&.
+.PP
+Définition à la ligne 46 du fichier calculatrice\&.cpp\&.
+.SS "\fBCalculatrice::Calculatrice\fP (const \fBCalculatrice\fP &)\fC [inline, protected]\fP"
+.PP
+Définition à la ligne 37 du fichier calculatrice\&.h\&.
+.SS "\fBCalculatrice::~Calculatrice\fP ()\fC [protected, virtual]\fP"
+.PP
+Dans un Singleton, nécessité d'avoir une instante de type static\&. Le destructeur de la classe
+.PP
+Définition à la ligne 12 du fichier calculatrice\&.cpp\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void \fBCalculatrice::afficher_toutes_piles_hitorique\fP ()"
+.PP
+Définition à la ligne 108 du fichier calculatrice\&.cpp\&.
+.SS "void \fBCalculatrice::annuler\fP ()"Fonction annulé
+.PP
+Annule la dernière action\&.
+.PP
+Définition à la ligne 85 du fichier calculatrice\&.cpp\&.
+.SS "QSettings* \fBCalculatrice::getContext\fP ()\fC [inline]\fP"
+.PP
+Définition à la ligne 55 du fichier calculatrice\&.h\&.
+.SS "\fBCalculatrice\fP & \fBCalculatrice::getInstance\fP ()\fC [static]\fP"Récupération de l'instance
+.PP
+Permet de ne pas instancier plus d'une fois la classe
+.PP
+Définition à la ligne 114 du fichier calculatrice\&.cpp\&.
+.SS "enum \fBMesureAngle\fP \fBCalculatrice::getMesureAngle\fP () const\fC [inline]\fP"
+.PP
+Définition à la ligne 52 du fichier calculatrice\&.h\&.
+.SS "bool \fBCalculatrice::getModComplexe\fP () const\fC [inline]\fP"
+.PP
+Définition à la ligne 54 du fichier calculatrice\&.h\&.
+.SS "enum \fBType\fP \fBCalculatrice::getModConstante\fP () const\fC [inline]\fP"
+.PP
+Définition à la ligne 53 du fichier calculatrice\&.h\&.
+.SS "\fBPile\fP* \fBCalculatrice::getPileStockage\fP ()\fC [inline]\fP"
+.PP
+Définition à la ligne 46 du fichier calculatrice\&.h\&.
+.SS "void \fBCalculatrice::libereInstance\fP ()\fC [static]\fP"destruction de l'instance
+.PP
+Définition à la ligne 123 du fichier calculatrice\&.cpp\&.
+.SS "void Calculatrice::operator= (const \fBCalculatrice\fP &)\fC [protected]\fP"
+.SS "void \fBCalculatrice::retablir\fP ()"Fonction rétablir
+.PP
+Rétabli le dernier état annulé de la pile Historique\&.
+.PP
+Définition à la ligne 97 du fichier calculatrice\&.cpp\&.
+.SS "void \fBCalculatrice::saisie_nouvelle_pile\fP (\fBPile\fP *nouvelle)"
+.PP
+Définition à la ligne 73 du fichier calculatrice\&.cpp\&.
+.SS "void \fBCalculatrice::setMesureAngle\fP (enum \fBMesureAngle\fPa)\fC [inline]\fP"
+.PP
+Définition à la ligne 57 du fichier calculatrice\&.h\&.
+.SS "void \fBCalculatrice::setModComplexe\fP (boolc)\fC [inline]\fP"
+.PP
+Définition à la ligne 58 du fichier calculatrice\&.h\&.
+.SS "void \fBCalculatrice::setModConstante\fP (enum \fBType\fPt)\fC [inline]\fP"
+.PP
+Définition à la ligne 56 du fichier calculatrice\&.h\&.
+.SS "int \fBCalculatrice::taille_pile_hitorique\fP ()\fC [inline]\fP"
+.PP
+Définition à la ligne 47 du fichier calculatrice\&.h\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Calculatrice polonais inversé LO21 à partir du code source\&.

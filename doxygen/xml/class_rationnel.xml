@@ -3,6 +3,7 @@
   <compounddef id="class_rationnel" kind="class" prot="public">
     <compoundname>Rationnel</compoundname>
     <basecompoundref refid="class_constante" prot="public" virt="non-virtual">Constante</basecompoundref>
+    <includes refid="rationnel_8h" local="no">rationnel.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_rationnel_1ae81ee8a165cb6e3c18a66791e50c6f1e" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -15,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="10" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="10" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="14" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_rationnel_1a243f6f39a8bca7e35f16ad8fe4173ba8" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -28,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="11" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="11" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="15" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" bodystart="15" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -43,8 +44,13 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="15" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="36" bodyend="42"/>
+<para>Affichage <ref refid="class_rationnel" kindref="compound">Rationnel</ref></para><para>Affichage d&apos;un <ref refid="class_rationnel" kindref="compound">Rationnel</ref>, en affichant uniquement le numérateur si le dénominateur est égal à 1 <simplesect kind="return"><para>Une <emphasis>QString</emphasis> correspondant à l&apos;affichage du rationnel</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="19" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="94" bodyend="110"/>
+        <references refid="class_rationnel_1ae2a533befbdf1ec3977d36cd792af2ea" compoundref="rationnel_8h" startline="21" endline="21">getDenominateur</references>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7a310a841612cf153caf2103c7d7136070" compoundref="constante_8h" startline="23">entier</references>
+        <references refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7ab76fc0da4fc267a87fce3e239e9b0290" compoundref="constante_8h" startline="25">reel</references>
       </memberdef>
       <memberdef kind="function" id="class_rationnel_1a5802a9dda12b8af3ffef1eae3ee23d4a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -57,7 +63,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="16" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="16" bodyend="16"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="20" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" bodystart="20" bodyend="20"/>
+        <referencedby refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">Complexe::reel_pur</referencedby>
+        <referencedby refid="class_entier_1a94158ae6fbad4c9a74815716f5f0f629" compoundref="entier_8cpp" startline="9" endline="38">Entier::Entier</referencedby>
+        <referencedby refid="class_entier_1ab093dd3f0aa7777c4300362f7ba78ff4" compoundref="entier_8cpp" startline="40" endline="63">Entier::addition</referencedby>
+        <referencedby refid="class_entier_1aa83349a1b984adbd53766ebac2614faf" compoundref="entier_8cpp" startline="65" endline="91">Entier::produit</referencedby>
+        <referencedby refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</referencedby>
+        <referencedby refid="class_rationnel_1a4dc6b238834ace05451e69ea2bb6d02a" compoundref="rationnel_8cpp" startline="112" endline="138">addition</referencedby>
+        <referencedby refid="class_rationnel_1aa1a21dae65f5fb48c56a376aea420bd6" compoundref="rationnel_8cpp" startline="140" endline="164">produit</referencedby>
+        <referencedby refid="class_rationnel_1a45dd892e3366ff9be810fde32739b899" compoundref="rationnel_8cpp" startline="307" endline="315">inv</referencedby>
+        <referencedby refid="class_rationnel_1af437497d370b037d563a96fd6184b37f" compoundref="rationnel_8cpp" startline="347" endline="359">puissance</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_rationnel_1ae2a533befbdf1ec3977d36cd792af2ea" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>float</type>
@@ -70,7 +85,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="17" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="17" bodyend="17"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="21" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" bodystart="21" bodyend="21"/>
+        <referencedby refid="class_entier_1a94158ae6fbad4c9a74815716f5f0f629" compoundref="entier_8cpp" startline="9" endline="38">Entier::Entier</referencedby>
+        <referencedby refid="class_entier_1ab093dd3f0aa7777c4300362f7ba78ff4" compoundref="entier_8cpp" startline="40" endline="63">Entier::addition</referencedby>
+        <referencedby refid="class_entier_1aa83349a1b984adbd53766ebac2614faf" compoundref="entier_8cpp" startline="65" endline="91">Entier::produit</referencedby>
+        <referencedby refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</referencedby>
+        <referencedby refid="class_rationnel_1aef5b4fb13f34b03cdf9132c272b5144f" compoundref="rationnel_8cpp" startline="94" endline="110">afficher</referencedby>
+        <referencedby refid="class_rationnel_1a4dc6b238834ace05451e69ea2bb6d02a" compoundref="rationnel_8cpp" startline="112" endline="138">addition</referencedby>
+        <referencedby refid="class_rationnel_1aa1a21dae65f5fb48c56a376aea420bd6" compoundref="rationnel_8cpp" startline="140" endline="164">produit</referencedby>
+        <referencedby refid="class_rationnel_1a45dd892e3366ff9be810fde32739b899" compoundref="rationnel_8cpp" startline="307" endline="315">inv</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_rationnel_1ae96e448dcef2ceade17d42ddc58076bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -87,7 +110,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="18" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="18" bodyend="18"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="22" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" bodystart="22" bodyend="22"/>
+        <references refid="class_rationnel_1a90d440a5d909748f5fda471e027e3a85" compoundref="rationnel_8cpp" startline="317" endline="331">simplification</references>
       </memberdef>
       <memberdef kind="function" id="class_rationnel_1a09af735e39194e35ca2bfbaa6f8eb0b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -104,7 +128,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="19" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="19" bodyend="27"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="23" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" bodystart="23" bodyend="31"/>
+        <references refid="class_rationnel_1a90d440a5d909748f5fda471e027e3a85" compoundref="rationnel_8cpp" startline="317" endline="331">simplification</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" compoundref="logmessage_8h" startline="17">important</references>
       </memberdef>
       <memberdef kind="function" id="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -120,8 +146,39 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="8" bodyend="25"/>
+<para>Constructeur <ref refid="class_rationnel" kindref="compound">Rationnel</ref></para><para>Dans certains cas, selon le type du paramètre (<ref refid="class_entier" kindref="compound">Entier</ref>, <ref refid="class_rationnel" kindref="compound">Rationnel</ref>), on effectue un dynamic cast sur le paramètre, et on affecte les valeurs aux attributs _numerateur et _denominateur <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une <emphasis><ref refid="class_constante" kindref="compound">Constante</ref></emphasis>, donc soit un <ref refid="class_entier" kindref="compound">Entier</ref>, soit un Réel, soit un <ref refid="class_rationnel" kindref="compound">Rationnel</ref>, soit un <ref refid="class_complexe" kindref="compound">Complexe</ref></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="32" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="41" bodyend="76"/>
+        <references refid="class_complexe_1a64fbf7a898e40d86cc0fb2be00c4bddf" compoundref="complexe_8cpp" startline="248" endline="264">Complexe::reel_pur</references>
+        <references refid="class_complexe_1a4441d56fc9776ce78efd8b5d95d9170b" compoundref="complexe_8h" startline="30" endline="30">Complexe::getPartieReelle</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" compoundref="logmessage_8h" startline="17">important</references>
+        <references refid="class_entier_1afe38ee7f81afc3c88a2c774ff0af2bcd" compoundref="entier_8h" startline="26" endline="26">Entier::getValeur</references>
+        <references refid="class_rationnel_1a5802a9dda12b8af3ffef1eae3ee23d4a" compoundref="rationnel_8h" startline="20" endline="20">getNumerateur</references>
+        <references refid="class_rationnel_1ae2a533befbdf1ec3977d36cd792af2ea" compoundref="rationnel_8h" startline="21" endline="21">getDenominateur</references>
+        <references refid="class_rationnel_1a90d440a5d909748f5fda471e027e3a85" compoundref="rationnel_8cpp" startline="317" endline="331">simplification</references>
+        <referencedby refid="class_rationnel_1a4dc6b238834ace05451e69ea2bb6d02a" compoundref="rationnel_8cpp" startline="112" endline="138">addition</referencedby>
+        <referencedby refid="class_rationnel_1aa1a21dae65f5fb48c56a376aea420bd6" compoundref="rationnel_8cpp" startline="140" endline="164">produit</referencedby>
+        <referencedby refid="class_rationnel_1a12ba8bcf6c200e85c4d260ee0bbb78b6" compoundref="rationnel_8cpp" startline="178" endline="185">signe</referencedby>
+        <referencedby refid="class_rationnel_1a5845bc3ef6eff4f427668fd3892e0f5f" compoundref="rationnel_8cpp" startline="209" endline="224">sinus</referencedby>
+        <referencedby refid="class_rationnel_1a2740232bc9f557bc4a896e2347312dc8" compoundref="rationnel_8cpp" startline="226" endline="240">cosinus</referencedby>
+        <referencedby refid="class_rationnel_1a48c54830a508d28a80d4b2be6762c9ae" compoundref="rationnel_8cpp" startline="242" endline="256">sinush</referencedby>
+        <referencedby refid="class_rationnel_1af52bac0dacd387a802b08fa09e899e22" compoundref="rationnel_8cpp" startline="258" endline="272">cosinush</referencedby>
+        <referencedby refid="class_rationnel_1af8e760a8cca5eea97ae2f7446074eb89" compoundref="rationnel_8cpp" startline="275" endline="289">tangente</referencedby>
+        <referencedby refid="class_rationnel_1ac6f49836dd9d00e79965d247a4d9daee" compoundref="rationnel_8cpp" startline="291" endline="305">tangenteh</referencedby>
+        <referencedby refid="class_rationnel_1a45dd892e3366ff9be810fde32739b899" compoundref="rationnel_8cpp" startline="307" endline="315">inv</referencedby>
+        <referencedby refid="class_rationnel_1a5d671bc8d584725f11a130b91332400e" compoundref="rationnel_8cpp" startline="333" endline="338">logN</referencedby>
+        <referencedby refid="class_rationnel_1a93eea5c6c08ad840340743182231454f" compoundref="rationnel_8cpp" startline="340" endline="345">log1</referencedby>
+        <referencedby refid="class_rationnel_1af437497d370b037d563a96fd6184b37f" compoundref="rationnel_8cpp" startline="347" endline="359">puissance</referencedby>
+        <referencedby refid="class_rationnel_1aa191437241e88bb3a6f8953822489ac0" compoundref="rationnel_8cpp" startline="361" endline="366">carre</referencedby>
+        <referencedby refid="class_rationnel_1a48edd766bd572445e3bc31926e6c24e1" compoundref="rationnel_8cpp" startline="368" endline="373">cube</referencedby>
+        <referencedby refid="class_rationnel_1a3be00da71666a64e42dcf3737c5c153a" compoundref="rationnel_8cpp" startline="375" endline="382">racine</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_rationnel_1abfbb081364b14280bd0dad5c446078d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -143,8 +200,25 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="29" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="27" bodyend="34"/>
+<para>Constructeur surchargé</para><para>Passage d&apos;un numérateur et d&apos;un dénominateur en paramètres et affectation des attributs. On lève une exception si le dénominateur est 0 <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_entier" kindref="compound">Entier</ref> correspondant au numérateur </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>den</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_entier" kindref="compound">Entier</ref> correspondant au dénominateur</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="78" bodyend="92"/>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" compoundref="logmessage_8h" startline="17">important</references>
+        <references refid="class_rationnel_1a90d440a5d909748f5fda471e027e3a85" compoundref="rationnel_8cpp" startline="317" endline="331">simplification</references>
       </memberdef>
       <memberdef kind="function" id="class_rationnel_1a90d440a5d909748f5fda471e027e3a85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -156,15 +230,34 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
+<para>Simplifier fraction</para><para>Permet de simplifier un nombre <ref refid="class_rationnel" kindref="compound">Rationnel</ref></para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="34" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="317" bodyend="331"/>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" compoundref="logmessage_8h" startline="17">important</references>
+        <references refid="rationnel_8cpp_1a7a18f1d2b66a88b6fce563c918d62198" compoundref="rationnel_8cpp" startline="9" endline="22">pgcd</references>
+        <referencedby refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</referencedby>
+        <referencedby refid="class_rationnel_1a4dc6b238834ace05451e69ea2bb6d02a" compoundref="rationnel_8cpp" startline="112" endline="138">addition</referencedby>
+        <referencedby refid="class_rationnel_1ae96e448dcef2ceade17d42ddc58076bf" compoundref="rationnel_8h" startline="22" endline="22">setNumerateur</referencedby>
+        <referencedby refid="class_rationnel_1a09af735e39194e35ca2bfbaa6f8eb0b9" compoundref="rationnel_8h" startline="23" endline="31">setDenominateur</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a6710cf28d22bb53fda5474059877c2cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual Rationnel::~Rationnel</definition>
+        <argsstring>()</argsstring>
+        <name>~Rationnel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="30" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="161" bodyend="171"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="35" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" bodystart="35" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="class_rationnel_1a4dc6b238834ace05451e69ea2bb6d02a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Rationnel::addition</definition>
         <argsstring>(Constante *c)</argsstring>
         <name>addition</name>
-        <reimplements refid="class_constante_1a580f4535e16d4c9331da85750be6e5ad">addition</reimplements>
+        <reimplements refid="class_constante_1a243b6eabd1fd476af827c5b523cddfac">addition</reimplements>
         <param>
           <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
           <declname>c</declname>
@@ -174,15 +267,33 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="32" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="44" bodyend="70"/>
+<para>Somme de 2 rationnels</para><para>On vérifie le type du paramètre, et on crée une nouvelle instance de ce type en fonction, dont le ou les attributs seront en fait la somme des 2 rationnels dont l&apos;on veut calculer l&apos;addition.Cependant, si on est en mode <ref refid="class_rationnel" kindref="compound">Rationnel</ref>, on ne doit pas avoir les autres types de constante. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une constante </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_rationnel" kindref="compound">Rationnel</ref></emphasis> construit, car on utilisera toujours les formes complexes pour les calculs</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="36" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="112" bodyend="138"/>
+        <references refid="class_entier_1ab093dd3f0aa7777c4300362f7ba78ff4" compoundref="entier_8cpp" startline="40" endline="63">Entier::addition</references>
+        <references refid="class_complexe_1adb3491a51a6b76d8e2c41ab87e519003" compoundref="complexe_8cpp" startline="73" endline="86">Complexe::addition</references>
+        <references refid="class_rationnel_1ae2a533befbdf1ec3977d36cd792af2ea" compoundref="rationnel_8h" startline="21" endline="21">getDenominateur</references>
+        <references refid="class_rationnel_1a5802a9dda12b8af3ffef1eae3ee23d4a" compoundref="rationnel_8h" startline="20" endline="20">getNumerateur</references>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
+        <references refid="class_rationnel_1a90d440a5d909748f5fda471e027e3a85" compoundref="rationnel_8cpp" startline="317" endline="331">simplification</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" compoundref="logmessage_8h" startline="17">important</references>
+        <referencedby refid="class_rationnel_1a268c0a861cdacea0593774b50a346a98" compoundref="rationnel_8cpp" startline="188" endline="197">soustraction</referencedby>
+        <referencedby refid="class_reel_1a916d41fd6be293e13db43ef0a7866f40" compoundref="reel_8cpp" startline="52" endline="75">Reel::addition</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_rationnel_1aa1a21dae65f5fb48c56a376aea420bd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Rationnel::produit</definition>
         <argsstring>(Constante *c)</argsstring>
         <name>produit</name>
-        <reimplements refid="class_constante_1ad805854dd4e53f0ef5b2d482398b682a">produit</reimplements>
+        <reimplements refid="class_constante_1a650e88b74d2f8a052e6a11363b3ec816">produit</reimplements>
         <param>
           <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
           <declname>c</declname>
@@ -192,15 +303,33 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="72" bodyend="91"/>
+<para>Produit de deux rationnels</para><para>Comme pour la somme, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra le produit demandé. Cependant, normalement en mode <ref refid="class_rationnel" kindref="compound">Rationnel</ref>, on ne doit avoir que des rationnels. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une <ref refid="class_constante" kindref="compound">Constante</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_rationnel" kindref="compound">Rationnel</ref></emphasis> construit contenant le produit</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="37" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="140" bodyend="164"/>
+        <references refid="class_constante_1a650e88b74d2f8a052e6a11363b3ec816" compoundref="constante_8h" startline="36" endline="36">Constante::produit</references>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
+        <references refid="class_rationnel_1a5802a9dda12b8af3ffef1eae3ee23d4a" compoundref="rationnel_8h" startline="20" endline="20">getNumerateur</references>
+        <references refid="class_rationnel_1ae2a533befbdf1ec3977d36cd792af2ea" compoundref="rationnel_8h" startline="21" endline="21">getDenominateur</references>
+        <references refid="class_reel_1a6412ad4d84dcd302c1fae1f7ec3ede46" compoundref="reel_8h" startline="16" endline="16">Reel::getValeur</references>
+        <references refid="class_complexe_1a921d9d4a3efcf108cb437b265cd65c10" compoundref="complexe_8cpp" startline="88" endline="101">Complexe::produit</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" compoundref="logmessage_8h" startline="17">important</references>
+        <referencedby refid="class_rationnel_1acf6c7167cfd8005ac723ce11feae2845" compoundref="rationnel_8cpp" startline="166" endline="176">division</referencedby>
+        <referencedby refid="class_reel_1ad87571a6e4d315eef54b55e6ded1f8f5" compoundref="reel_8cpp" startline="77" endline="101">Reel::produit</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_rationnel_1acf6c7167cfd8005ac723ce11feae2845" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Rationnel::division</definition>
         <argsstring>(Constante *c)</argsstring>
         <name>division</name>
-        <reimplements refid="class_constante_1ab9b969ad6ad0d8463d44a1273667ee79">division</reimplements>
+        <reimplements refid="class_constante_1ac41fa56ac5ebdfbcc886b8d249fb876d">division</reimplements>
         <param>
           <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
           <declname>c</declname>
@@ -210,29 +339,308 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="34" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="93" bodyend="118"/>
+<para>Division de rationnels</para><para>Comme pour la somme et le produit, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra le quotient demandé. Cependant, normalement en mode <ref refid="class_rationnel" kindref="compound">Rationnel</ref>, on ne doit avoir que des rationnels. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une <ref refid="class_constante" kindref="compound">Constante</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_rationnel" kindref="compound">Rationnel</ref></emphasis> construit contenant le quotient</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="38" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="166" bodyend="176"/>
+        <references refid="class_rationnel_1aa1a21dae65f5fb48c56a376aea420bd6" compoundref="rationnel_8cpp" startline="140" endline="164">produit</references>
+        <references refid="class_constante_1a5ea6dd472ce568576961fa78b3b674b5" compoundref="constante_8h" startline="41" endline="41">Constante::inv</references>
       </memberdef>
       <memberdef kind="function" id="class_rationnel_1a12ba8bcf6c200e85c4d260ee0bbb78b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Rationnel::signe</definition>
         <argsstring>()</argsstring>
         <name>signe</name>
-        <reimplements refid="class_constante_1a1c6f79dbc7623529ee4fd5ae9c556b45">signe</reimplements>
+        <reimplements refid="class_constante_1a59fcc22949ea02eb02244dad693696aa">signe</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="35" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="120" bodyend="122"/>
+<para>Inversion du signe</para><para>Il ne faut inverser le signe que d&apos;un des deux attributs. On fait ici le choix du numérateur <simplesect kind="return"><para>Un nouveau <emphasis><ref refid="class_rationnel" kindref="compound">Rationnel</ref></emphasis> avec numérateur opposé</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="39" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="178" bodyend="185"/>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
       </memberdef>
       <memberdef kind="function" id="class_rationnel_1a268c0a861cdacea0593774b50a346a98" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
         <definition>Constante * Rationnel::soustraction</definition>
         <argsstring>(Constante *c)</argsstring>
         <name>soustraction</name>
-        <reimplements refid="class_constante_1ad1df4970f093fdb4235d4945ec2dbf12">soustraction</reimplements>
+        <reimplements refid="class_constante_1a3f3e5ad91d9e4eef33a5e6955fe91cb5">soustraction</reimplements>
+        <param>
+          <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Différence de rationnels</para><para>Comme pour les autres opérations, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra la différence voulue. Cependant, normalement en mode <ref refid="class_rationnel" kindref="compound">Rationnel</ref>, on ne doit avoir que des rationnels. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une <ref refid="class_constante" kindref="compound">Constante</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un <emphasis><ref refid="class_rationnel" kindref="compound">Rationnel</ref></emphasis> construit contenant la différence</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="40" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="188" bodyend="197"/>
+        <references refid="class_rationnel_1a4dc6b238834ace05451e69ea2bb6d02a" compoundref="rationnel_8cpp" startline="112" endline="138">addition</references>
+        <references refid="class_constante_1a59fcc22949ea02eb02244dad693696aa" compoundref="constante_8h" startline="38" endline="38">Constante::signe</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a45dd892e3366ff9be810fde32739b899" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::inv</definition>
+        <argsstring>()</argsstring>
+        <name>inv</name>
+        <reimplements refid="class_constante_1a5ea6dd472ce568576961fa78b3b674b5">inv</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Inverse <ref refid="class_rationnel" kindref="compound">Rationnel</ref></para><para>Pour inverser une fraction, il suffit d&apos;échanger le numérateur et le dénominateur <simplesect kind="return"><para>Un nouveau <emphasis><ref refid="class_rationnel" kindref="compound">Rationnel</ref></emphasis> contenant l&apos;inverse de la fraction</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="41" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="307" bodyend="315"/>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
+        <references refid="class_rationnel_1ae2a533befbdf1ec3977d36cd792af2ea" compoundref="rationnel_8h" startline="21" endline="21">getDenominateur</references>
+        <references refid="class_rationnel_1a5802a9dda12b8af3ffef1eae3ee23d4a" compoundref="rationnel_8h" startline="20" endline="20">getNumerateur</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a68ab5e97a92bb2a08d667861eb920052" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::fact</definition>
+        <argsstring>()</argsstring>
+        <name>fact</name>
+        <reimplements refid="class_constante_1a96e23d33bd45f79589f8911473ef2e32">fact</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Factoriel <ref refid="class_rationnel" kindref="compound">Rationnel</ref></para><para>Cette fonction n&apos;est pas implémentée pour les rationnels, donc on lance un message pour prévenir l&apos;utilisateur</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="42" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="199" bodyend="207"/>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a5845bc3ef6eff4f427668fd3892e0f5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::sinus</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>sinus</name>
+        <reimplements refid="class_constante_1a3b6827eba7936c4ce61f64da9dd826b4">sinus</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Sinus <ref refid="class_rationnel" kindref="compound">Rationnel</ref></para><para>La fonction <emphasis>sin</emphasis> de cmath étant implémentée pour un <emphasis>float</emphasis>, on fait le rapport du numérateur sur le dénominateur pour commencer. Ensuite, on teste si on est en degré. Si c&apos;est le cas, on multiplie le résultat par PI/180 car <emphasis>sin</emphasis> est définie en radians. On calcule ensuite le sinus. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen, permet de savoir si l&apos;on est en mode degré </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un nouveau <emphasis><ref refid="class_complexe" kindref="compound">Complexe</ref></emphasis> construit à partir du <ref refid="class_rationnel" kindref="compound">Rationnel</ref> contenant le résultat</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="43" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="209" bodyend="224"/>
+        <references refid="rationnel_8cpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="rationnel_8cpp" startline="7">PI</references>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a2740232bc9f557bc4a896e2347312dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::cosinus</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>cosinus</name>
+        <reimplements refid="class_constante_1af6784ed749b7f2be92d6017628e5b935">cosinus</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Cosinus <ref refid="class_rationnel" kindref="compound">Rationnel</ref></para><para>La fonction <emphasis>cos</emphasis> de cmath étant implémentée pour un <emphasis>float</emphasis>, on fait le rapport du numérateur sur le dénominateur pour commencer. Ensuite, on teste si on est en degré. Si c&apos;est le cas, on multiplie le résultat par PI/180 car <emphasis>cos</emphasis> est définie en radians. On calcule ensuite le cosinus. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen, permet de savoir si l&apos;on est en mode degré </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un nouveau <emphasis><ref refid="class_complexe" kindref="compound">Complexe</ref></emphasis> construit à partir du <ref refid="class_rationnel" kindref="compound">Rationnel</ref> contenant le résultat</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="44" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="226" bodyend="240"/>
+        <references refid="rationnel_8cpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="rationnel_8cpp" startline="7">PI</references>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a48c54830a508d28a80d4b2be6762c9ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::sinush</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>sinush</name>
+        <reimplements refid="class_constante_1a101b4506f71295a23c764d34b7f7ecfb">sinush</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Sinus Hyperbolique <ref refid="class_rationnel" kindref="compound">Rationnel</ref></para><para>La fonction <emphasis>sinh</emphasis> de cmath étant implémentée pour un <emphasis>float</emphasis>, on fait le rapport du numérateur sur le dénominateur pour commencer. Ensuite, on teste si on est en degré. Si c&apos;est le cas, on multiplie le résultat par PI/180 car <emphasis>sinh</emphasis> est définie en radians. On calcule ensuite le sinus hyperbolique. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen, permet de savoir si l&apos;on est en mode degré </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un nouveau <emphasis><ref refid="class_complexe" kindref="compound">Complexe</ref></emphasis> construit à partir du <ref refid="class_rationnel" kindref="compound">Rationnel</ref> contenant le résultat</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="45" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="242" bodyend="256"/>
+        <references refid="rationnel_8cpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="rationnel_8cpp" startline="7">PI</references>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1af52bac0dacd387a802b08fa09e899e22" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::cosinush</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>cosinush</name>
+        <reimplements refid="class_constante_1a0b1cbba53e1112aa65a081ae6231acb5">cosinush</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Cosinus Hyperbolique <ref refid="class_rationnel" kindref="compound">Rationnel</ref></para><para>La fonction <emphasis>cosh</emphasis> de cmath étant implémentée pour un <emphasis>float</emphasis>, on fait le rapport du numérateur sur le dénominateur pour commencer. Ensuite, on teste si on est en degré. Si c&apos;est le cas, on multiplie le résultat par PI/180 car <emphasis>cosh</emphasis> est définie en radians. On calcule ensuite le cosinus hyperbolique. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen, permet de savoir si l&apos;on est en mode degré </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un nouveau <emphasis><ref refid="class_complexe" kindref="compound">Complexe</ref></emphasis> construit à partir du <ref refid="class_rationnel" kindref="compound">Rationnel</ref> contenant le résultat</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="46" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="258" bodyend="272"/>
+        <references refid="rationnel_8cpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="rationnel_8cpp" startline="7">PI</references>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1af8e760a8cca5eea97ae2f7446074eb89" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::tangente</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>tangente</name>
+        <reimplements refid="class_constante_1a51bffad2fa33a397de6ed422a621b1a1">tangente</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Tangente <ref refid="class_rationnel" kindref="compound">Rationnel</ref></para><para>La fonction <emphasis>tan</emphasis> de cmath étant implémentée pour un <emphasis>float</emphasis>, on fait le rapport du numérateur sur le dénominateur pour commencer. Ensuite, on teste si on est en degré. Si c&apos;est le cas, on multiplie le résultat par PI/180 car <emphasis>tan</emphasis> est définie en radians. On calcule ensuite la tangente. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen, permet de savoir si l&apos;on est en mode degré </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un nouveau <emphasis><ref refid="class_complexe" kindref="compound">Complexe</ref></emphasis> construit à partir du <ref refid="class_rationnel" kindref="compound">Rationnel</ref> contenant le résultat</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="47" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="275" bodyend="289"/>
+        <references refid="rationnel_8cpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="rationnel_8cpp" startline="7">PI</references>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1ac6f49836dd9d00e79965d247a4d9daee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::tangenteh</definition>
+        <argsstring>(bool angle)</argsstring>
+        <name>tangenteh</name>
+        <reimplements refid="class_constante_1a6f5f971e61ac831355f1182289c3952f">tangenteh</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Tangente Hyperbolique <ref refid="class_rationnel" kindref="compound">Rationnel</ref></para><para>La fonction <emphasis>tanh</emphasis> de cmath étant implémentée pour un <emphasis>float</emphasis>, on fait le rapport du numérateur sur le dénominateur pour commencer. Ensuite, on teste si on est en degré. Si c&apos;est le cas, on multiplie le résultat par PI/180 car <emphasis>tanh</emphasis> est définie en radians. On calcule ensuite la tangente hyperbolique. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>angle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen, permet de savoir si l&apos;on est en mode degré </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Un nouveau <emphasis><ref refid="class_complexe" kindref="compound">Complexe</ref></emphasis> construit à partir du <ref refid="class_rationnel" kindref="compound">Rationnel</ref> contenant le résultat</para></simplesect>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="48" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="291" bodyend="305"/>
+        <references refid="rationnel_8cpp_1a598a3330b3c21701223ee0ca14316eca" compoundref="rationnel_8cpp" startline="7">PI</references>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a5d671bc8d584725f11a130b91332400e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::logN</definition>
+        <argsstring>()</argsstring>
+        <name>logN</name>
+        <reimplements refid="class_constante_1aa28e3269159806101c2ac0d09c036c2c">logN</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="49" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="333" bodyend="338"/>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1a93eea5c6c08ad840340743182231454f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::log1</definition>
+        <argsstring>()</argsstring>
+        <name>log1</name>
+        <reimplements refid="class_constante_1aad178503c937682acd3c9f19aec37dc6">log1</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="50" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="340" bodyend="345"/>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
+      </memberdef>
+      <memberdef kind="function" id="class_rationnel_1af437497d370b037d563a96fd6184b37f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
+        <definition>Constante * Rationnel::puissance</definition>
+        <argsstring>(Constante *c)</argsstring>
+        <name>puissance</name>
+        <reimplements refid="class_constante_1a2ed5e0a77fb7766fbce6abb4ebd0b01e">puissance</reimplements>
         <param>
           <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
           <declname>c</declname>
@@ -243,49 +651,54 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="36" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="125" bodyend="141"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="51" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="347" bodyend="359"/>
+        <references refid="class_rationnel_1a5802a9dda12b8af3ffef1eae3ee23d4a" compoundref="rationnel_8h" startline="20" endline="20">getNumerateur</references>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
       </memberdef>
-      <memberdef kind="function" id="class_rationnel_1a45dd892e3366ff9be810fde32739b899" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="class_rationnel_1aa191437241e88bb3a6f8953822489ac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
-        <definition>Constante * Rationnel::inv</definition>
+        <definition>Constante * Rationnel::carre</definition>
         <argsstring>()</argsstring>
-        <name>inv</name>
-        <reimplements refid="class_constante_1a63d03e59594b74aa2fbc35f559b0ad46">inv</reimplements>
+        <name>carre</name>
+        <reimplements refid="class_constante_1af8029cf3c52e8fdadeb21647ee9591f3">carre</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="37" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="155" bodyend="159"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="52" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="361" bodyend="366"/>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
       </memberdef>
-      <memberdef kind="function" id="class_rationnel_1a68ab5e97a92bb2a08d667861eb920052" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="class_rationnel_1a48edd766bd572445e3bc31926e6c24e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
-        <definition>Constante * Rationnel::fact</definition>
+        <definition>Constante * Rationnel::cube</definition>
         <argsstring>()</argsstring>
-        <name>fact</name>
-        <reimplements refid="class_constante_1a57dafd18c718935af9f97dcbb8de9ad9">fact</reimplements>
+        <name>cube</name>
+        <reimplements refid="class_constante_1a4590414eecfb9e739194a321a73c7931">cube</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="38" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="143" bodyend="147"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="53" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="368" bodyend="373"/>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
       </memberdef>
-      <memberdef kind="function" id="class_rationnel_1a4082f9cbebb6d96c496552b93b106c99" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+      <memberdef kind="function" id="class_rationnel_1a3be00da71666a64e42dcf3737c5c153a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_constante" kindref="compound">Constante</ref> *</type>
-        <definition>Constante * Rationnel::sinus</definition>
+        <definition>Constante * Rationnel::racine</definition>
         <argsstring>()</argsstring>
-        <name>sinus</name>
-        <reimplements refid="class_constante_1ad1a0ed2f6f6e9c3e7fc3f0c4ffaeaa76">sinus</reimplements>
+        <name>racine</name>
+        <reimplements refid="class_constante_1a57604347a44e29f6aa7e36a045b4df1c">racine</reimplements>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="39" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp" bodystart="149" bodyend="153"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="54" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp" bodystart="375" bodyend="382"/>
+        <references refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" compoundref="rationnel_8cpp" startline="41" endline="76">Rationnel</references>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -293,41 +706,49 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="97">
+      <node id="77">
         <label>Rationnel</label>
         <link refid="class_rationnel"/>
-        <childnode refid="98" relation="public-inheritance">
+        <childnode refid="78" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="98">
+      <node id="78">
         <label>Constante</label>
         <link refid="class_constante"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="99">
+      <node id="79">
         <label>Rationnel</label>
         <link refid="class_rationnel"/>
-        <childnode refid="100" relation="public-inheritance">
+        <childnode refid="80" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="100">
+      <node id="80">
         <label>Constante</label>
         <link refid="class_constante"/>
       </node>
     </collaborationgraph>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" line="9" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.h" bodystart="9" bodyend="42"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" line="13" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.h" bodystart="13" bodyend="55"/>
     <listofallmembers>
       <member refid="class_rationnel_1a243f6f39a8bca7e35f16ad8fe4173ba8" prot="private" virt="non-virtual"><scope>Rationnel</scope><name>_denominateur</name></member>
       <member refid="class_rationnel_1ae81ee8a165cb6e3c18a66791e50c6f1e" prot="private" virt="non-virtual"><scope>Rationnel</scope><name>_numerateur</name></member>
       <member refid="class_rationnel_1a4dc6b238834ace05451e69ea2bb6d02a" prot="public" virt="virtual"><scope>Rationnel</scope><name>addition</name></member>
       <member refid="class_rationnel_1aef5b4fb13f34b03cdf9132c272b5144f" prot="public" virt="virtual"><scope>Rationnel</scope><name>afficher</name></member>
+      <member refid="class_rationnel_1aa191437241e88bb3a6f8953822489ac0" prot="public" virt="virtual"><scope>Rationnel</scope><name>carre</name></member>
+      <member refid="class_rationnel_1a2740232bc9f557bc4a896e2347312dc8" prot="public" virt="virtual"><scope>Rationnel</scope><name>cosinus</name></member>
+      <member refid="class_rationnel_1af52bac0dacd387a802b08fa09e899e22" prot="public" virt="virtual"><scope>Rationnel</scope><name>cosinush</name></member>
+      <member refid="class_rationnel_1a48edd766bd572445e3bc31926e6c24e1" prot="public" virt="virtual"><scope>Rationnel</scope><name>cube</name></member>
       <member refid="class_rationnel_1acf6c7167cfd8005ac723ce11feae2845" prot="public" virt="virtual"><scope>Rationnel</scope><name>division</name></member>
       <member refid="class_rationnel_1a68ab5e97a92bb2a08d667861eb920052" prot="public" virt="virtual"><scope>Rationnel</scope><name>fact</name></member>
       <member refid="class_rationnel_1ae2a533befbdf1ec3977d36cd792af2ea" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>getDenominateur</name></member>
       <member refid="class_rationnel_1a5802a9dda12b8af3ffef1eae3ee23d4a" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>getNumerateur</name></member>
       <member refid="class_rationnel_1a45dd892e3366ff9be810fde32739b899" prot="public" virt="virtual"><scope>Rationnel</scope><name>inv</name></member>
+      <member refid="class_rationnel_1a93eea5c6c08ad840340743182231454f" prot="public" virt="virtual"><scope>Rationnel</scope><name>log1</name></member>
+      <member refid="class_rationnel_1a5d671bc8d584725f11a130b91332400e" prot="public" virt="virtual"><scope>Rationnel</scope><name>logN</name></member>
       <member refid="class_rationnel_1aa1a21dae65f5fb48c56a376aea420bd6" prot="public" virt="virtual"><scope>Rationnel</scope><name>produit</name></member>
+      <member refid="class_rationnel_1af437497d370b037d563a96fd6184b37f" prot="public" virt="virtual"><scope>Rationnel</scope><name>puissance</name></member>
+      <member refid="class_rationnel_1a3be00da71666a64e42dcf3737c5c153a" prot="public" virt="virtual"><scope>Rationnel</scope><name>racine</name></member>
       <member refid="class_rationnel_1a7e09e73d23a43aeb59086cabcd87381a" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>Rationnel</name></member>
       <member refid="class_rationnel_1abfbb081364b14280bd0dad5c446078d5" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>Rationnel</name></member>
       <member refid="class_constante_1ac6fb071229429f82cf489f8313461efa" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>recopie</name></member>
@@ -335,9 +756,13 @@
       <member refid="class_rationnel_1ae96e448dcef2ceade17d42ddc58076bf" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>setNumerateur</name></member>
       <member refid="class_rationnel_1a12ba8bcf6c200e85c4d260ee0bbb78b6" prot="public" virt="virtual"><scope>Rationnel</scope><name>signe</name></member>
       <member refid="class_rationnel_1a90d440a5d909748f5fda471e027e3a85" prot="public" virt="non-virtual"><scope>Rationnel</scope><name>simplification</name></member>
-      <member refid="class_rationnel_1a4082f9cbebb6d96c496552b93b106c99" prot="public" virt="virtual"><scope>Rationnel</scope><name>sinus</name></member>
+      <member refid="class_rationnel_1a5845bc3ef6eff4f427668fd3892e0f5f" prot="public" virt="virtual"><scope>Rationnel</scope><name>sinus</name></member>
+      <member refid="class_rationnel_1a48c54830a508d28a80d4b2be6762c9ae" prot="public" virt="virtual"><scope>Rationnel</scope><name>sinush</name></member>
       <member refid="class_rationnel_1a268c0a861cdacea0593774b50a346a98" prot="public" virt="virtual"><scope>Rationnel</scope><name>soustraction</name></member>
+      <member refid="class_rationnel_1af8e760a8cca5eea97ae2f7446074eb89" prot="public" virt="virtual"><scope>Rationnel</scope><name>tangente</name></member>
+      <member refid="class_rationnel_1ac6f49836dd9d00e79965d247a4d9daee" prot="public" virt="virtual"><scope>Rationnel</scope><name>tangenteh</name></member>
       <member refid="class_constante_1af747f270ad3d50813786a1b013bac959" prot="public" virt="virtual"><scope>Rationnel</scope><name>~Constante</name></member>
+      <member refid="class_rationnel_1a6710cf28d22bb53fda5474059877c2cd" prot="public" virt="virtual"><scope>Rationnel</scope><name>~Rationnel</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -4,60 +4,120 @@
     <compoundname>reel.h</compoundname>
     <includes refid="constante_8h" local="yes">constante.h</includes>
     <includes refid="rationnel_8h" local="yes">rationnel.h</includes>
-    <includedby refid="complexe_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/complexe.cpp</includedby>
-    <includedby refid="constante_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/constante.cpp</includedby>
-    <includedby refid="entier_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/entier.cpp</includedby>
-    <includedby refid="main_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/main.cpp</includedby>
-    <includedby refid="mainwindow_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp</includedby>
-    <includedby refid="rationnel_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/rationnel.cpp</includedby>
-    <includedby refid="reel_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.cpp</includedby>
+    <includedby refid="complexe_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp</includedby>
+    <includedby refid="constante_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.cpp</includedby>
+    <includedby refid="entier_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/entier.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/main.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp</includedby>
+    <includedby refid="rationnel_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp</includedby>
+    <includedby refid="reel_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp</includedby>
     <incdepgraph>
-      <node id="401">
-        <label>logmessage.h</label>
-        <link refid="logmessage_8h_source"/>
-        <childnode refid="399" relation="include">
+      <node id="946">
+        <label>rationnel.h</label>
+        <link refid="rationnel_8h"/>
+        <childnode refid="940" relation="include">
         </childnode>
-        <childnode refid="402" relation="include">
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
         </childnode>
       </node>
-      <node id="402">
+      <node id="939">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h</label>
+        <link refid="reel.h"/>
+        <childnode refid="940" relation="include">
+        </childnode>
+        <childnode refid="946" relation="include">
+        </childnode>
+      </node>
+      <node id="943">
+        <label>logmessage.h</label>
+        <link refid="logmessage_8h"/>
+        <childnode refid="942" relation="include">
+        </childnode>
+        <childnode refid="944" relation="include">
+        </childnode>
+      </node>
+      <node id="944">
         <label>exception</label>
       </node>
-      <node id="396">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h</label>
-        <link refid="reel.h"/>
-        <childnode refid="397" relation="include">
+      <node id="945">
+        <label>logsystem.h</label>
+        <link refid="logsystem_8h"/>
+        <childnode refid="943" relation="include">
         </childnode>
-        <childnode refid="400" relation="include">
+        <childnode refid="941" relation="include">
         </childnode>
       </node>
-      <node id="398">
+      <node id="941">
         <label>iostream</label>
       </node>
-      <node id="400">
-        <label>rationnel.h</label>
-        <link refid="rationnel_8h_source"/>
-        <childnode refid="397" relation="include">
-        </childnode>
-        <childnode refid="398" relation="include">
-        </childnode>
-        <childnode refid="401" relation="include">
-        </childnode>
-        <childnode refid="402" relation="include">
-        </childnode>
-      </node>
-      <node id="397">
-        <label>constante.h</label>
-        <link refid="constante_8h"/>
-        <childnode refid="398" relation="include">
-        </childnode>
-        <childnode refid="399" relation="include">
-        </childnode>
-      </node>
-      <node id="399">
+      <node id="942">
         <label>QtGui</label>
       </node>
+      <node id="940">
+        <label>constante.h</label>
+        <link refid="constante_8h"/>
+        <childnode refid="941" relation="include">
+        </childnode>
+        <childnode refid="942" relation="include">
+        </childnode>
+        <childnode refid="943" relation="include">
+        </childnode>
+        <childnode refid="945" relation="include">
+        </childnode>
+      </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="947">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h</label>
+        <link refid="reel.h"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+        <childnode refid="949" relation="include">
+        </childnode>
+        <childnode refid="950" relation="include">
+        </childnode>
+        <childnode refid="951" relation="include">
+        </childnode>
+        <childnode refid="952" relation="include">
+        </childnode>
+        <childnode refid="953" relation="include">
+        </childnode>
+        <childnode refid="954" relation="include">
+        </childnode>
+      </node>
+      <node id="952">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="953">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/rationnel.cpp</label>
+        <link refid="rationnel_8cpp"/>
+      </node>
+      <node id="950">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/entier.cpp</label>
+        <link refid="entier_8cpp"/>
+      </node>
+      <node id="951">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="948">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/complexe.cpp</label>
+        <link refid="complexe_8cpp"/>
+      </node>
+      <node id="949">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.cpp</label>
+        <link refid="constante_8cpp"/>
+      </node>
+      <node id="954">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.cpp</label>
+        <link refid="reel_8cpp"/>
+      </node>
+    </invincdepgraph>
     <innerclass refid="class_reel" prot="public">Reel</innerclass>
     <briefdescription>
     </briefdescription>
@@ -67,35 +127,46 @@
 <codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>REEL_H</highlight></codeline>
 <codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>REEL_H</highlight></codeline>
 <codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="constante_8h" kindref="compound" tooltip="Calculatrice en polonais inversé. Classe de la GUI QT-MainWindow.">constante.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rationnel.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="constante_8h" kindref="compound" tooltip="Calculatrice en polonais inversé. Classe composite de gestion des constantes.">constante.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rationnel_8h" kindref="compound">rationnel.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7" refid="class_reel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_reel" kindref="compound">Reel</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>{</highlight></codeline>
 <codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//float<sp/>_valeur;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>_valeur;</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="13" refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" kindref="member" tooltip="Reel(float e):_valeur(e){}.">Reel</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e):_valeur(e){}</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" kindref="member" tooltip="Reel(float e):_valeur(e){}.">Reel</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QString<sp/>afficher()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QString::number(_valeur);}</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//float<sp/>getValeur()<sp/>const<sp/>{return<sp/>_valeur;}</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>getValeur()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_valeur;}</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setValeur(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v){_valeur=v;}</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_rationnel" kindref="compound">Rationnel</ref><sp/>toRationnel()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>addition(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>produit(<ref refid="class_constante" kindref="compound">Constante</ref><sp/>*c);</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>division(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>signe();</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>soustraction(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>inv();</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>fact();</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>sinus();</highlight></codeline>
-<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>REEL_H</highlight></codeline>
+<codeline lineno="12" refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" kindref="member">Reel</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e):_valeur(e){}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_reel_1ac186094d182a46f84199deabf90cbd0e" kindref="member">Reel</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
+<codeline lineno="14" refid="class_reel_1ac86835592eeeb54a8d4ce31fae3be10e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_reel_1ac86835592eeeb54a8d4ce31fae3be10e" kindref="member">~Reel</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="15" refid="class_reel_1a01af7b4e76fb88a85796a41f63b00420" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QString<sp/><ref refid="class_reel_1a01af7b4e76fb88a85796a41f63b00420" kindref="member">afficher</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>QString::number(_valeur);}</highlight></codeline>
+<codeline lineno="16" refid="class_reel_1a6412ad4d84dcd302c1fae1f7ec3ede46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_reel_1a6412ad4d84dcd302c1fae1f7ec3ede46" kindref="member">getValeur</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_valeur;}</highlight></codeline>
+<codeline lineno="17" refid="class_reel_1ae2ce4ae994a0fb3762eea2eb854af5cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_reel_1ae2ce4ae994a0fb3762eea2eb854af5cd" kindref="member">setValeur</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v){_valeur=v;}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Rationnel<sp/>toRationnel()<sp/>const;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1a916d41fd6be293e13db43ef0a7866f40" kindref="member">addition</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1ad87571a6e4d315eef54b55e6ded1f8f5" kindref="member">produit</ref>(<ref refid="class_constante" kindref="compound">Constante</ref><sp/>*c);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1af82effc61166bcc5f2ed9d0a2c97bee1" kindref="member">division</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1aec5959f07be6fdce8e87d58c1fa97a59" kindref="member">signe</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1a3c53208d46d2139790598fc5a7f29b7d" kindref="member">soustraction</ref>(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1ac2388aae44a03e17a80efaf322583784" kindref="member">inv</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1a93cccda34883afa19ea08f9e84a6d22e" kindref="member">fact</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1a189184ab88846b6d48e660a4308269cd" kindref="member">sinus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1a2ac819db4ede5a6ee712c33ae6a454ae" kindref="member">cosinus</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1a9bffd052bb8d163e1f0b7c1f86b27c1a" kindref="member">sinush</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1a355737e3925c2352f4e7fdfe16755f05" kindref="member">cosinush</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1acaeed5fe69edf50145bb355a88ebf372" kindref="member">tangente</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1a9184526f7eefa9a83f5394393ce86911" kindref="member">tangenteh</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>angle);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1ad793874a4f9bf2f12889a085f705ab3b" kindref="member">logN</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1ae006122aff6f67f662affe4ac7686962" kindref="member">log1</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1af88c9ab592354cfdcfe821f35e1d56af" kindref="member">puissance</ref>(<ref refid="class_constante" kindref="compound">Constante</ref><sp/>*c);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1ad658ce7744a0b152c7f42ffd3c79baaf" kindref="member">carre</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1af8c335c6e20697e9adb9fbb4e5f4577b" kindref="member">cube</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/><ref refid="class_reel_1a164e9b499ff9c5521d59a5f6e607c409" kindref="member">racine</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>REEL_H</highlight></codeline>
     </programlisting>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/reel.h"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/reel.h"/>
   </compounddef>
 </doxygen>

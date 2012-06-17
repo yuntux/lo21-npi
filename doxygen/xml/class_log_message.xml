@@ -2,6 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="class_log_message" kind="class" prot="public">
     <compoundname>LogMessage</compoundname>
+    <includes refid="logmessage_8h" local="no">logmessage.h</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="class_log_message_1a0fdfa76fd0ba15d8bab5567a58b3724f" prot="private" static="no" mutable="no">
         <type>int</type>
@@ -14,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="11" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="11" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" line="22" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_log_message_1a8db6d79f38965e96c25dfd07ebd33871" prot="private" static="no" mutable="no">
         <type>string</type>
@@ -27,10 +28,10 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="12" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="12" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" line="23" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_log_message_1aa771201c9bd2ef0d369c877fa44b9d80" prot="private" static="no" mutable="no">
-        <type>enum niveau</type>
+        <type>enum <ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71" kindref="member">niveau</ref></type>
         <definition>enum niveau LogMessage::_level</definition>
         <argsstring></argsstring>
         <name>_level</name>
@@ -40,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="13" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="13" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" line="24" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -60,9 +61,9 @@
           <defval>&quot;&quot;</defval>
         </param>
         <param>
-          <type>enum niveau</type>
+          <type>enum <ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71" kindref="member">niveau</ref></type>
           <declname>lev</declname>
-          <defval>faible</defval>
+          <defval><ref refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71a8c5b883bce87e721f1fab27140beffa9" kindref="member">faible</ref></defval>
         </param>
         <exceptions> throw ()</exceptions>
         <briefdescription>
@@ -71,7 +72,8 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="16" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="16" bodyend="16"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" line="27" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" bodystart="27" bodyend="35"/>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" compoundref="logmessage_8h" startline="17">tracabilite</references>
       </memberdef>
       <memberdef kind="function" id="class_log_message_1a2c6798fafd31aa115d18bd348da69e25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>const char *</type>
@@ -85,7 +87,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="18" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="18" bodyend="18"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" line="37" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" bodystart="37" bodyend="37"/>
+        <referencedby refid="class_log_system_1a26650fa1e4d9792106e4c3ddd727aaa9" compoundref="logsystem_8cpp" startline="26" endline="48">LogSystem::ajouterFichierLog</referencedby>
+        <referencedby refid="class_log_system_1ad18f58f1ad0e8f23dc524c2f55d3e8fc" compoundref="logsystem_8cpp" startline="50" endline="56">LogSystem::ajouterConsoleLog</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_log_message_1a433d0d6bdef1d3ec814fa08aec76e8ca" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>const char *</type>
@@ -99,7 +103,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="21" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="20" bodyend="26"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" line="40" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" bodystart="39" bodyend="46"/>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71a8c5b883bce87e721f1fab27140beffa9" compoundref="logmessage_8h" startline="17">faible</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" compoundref="logmessage_8h" startline="17">important</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" compoundref="logmessage_8h" startline="17">tracabilite</references>
       </memberdef>
       <memberdef kind="function" id="class_log_message_1aa54fe583838d18c0f5bf6ce8d274b6f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -113,14 +121,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="28" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="28" bodyend="28"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" line="48" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" bodystart="48" bodyend="48"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" line="10" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/logmessage.h" bodystart="9" bodyend="29"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" line="21" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/logmessage.h" bodystart="20" bodyend="49"/>
     <listofallmembers>
       <member refid="class_log_message_1aa771201c9bd2ef0d369c877fa44b9d80" prot="private" virt="non-virtual"><scope>LogMessage</scope><name>_level</name></member>
       <member refid="class_log_message_1a433d0d6bdef1d3ec814fa08aec76e8ca" prot="public" virt="virtual"><scope>LogMessage</scope><name>getNiveau</name></member>

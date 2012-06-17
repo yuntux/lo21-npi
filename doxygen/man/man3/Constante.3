@@ -1,4 +1,4 @@
-.TH "Constante" 3 "Thu Jun 7 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
+.TH "Constante" 3 "Samedi Juin 16 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -7,42 +7,200 @@ Constante \-
 .br
 .PP
 .PP
-Inherited by \fBComplexe\fP, \fBEntier\fP, \fBExpression\fP, \fBRationnel\fP, and \fBReel\fP\&.
-.SS "Public Member Functions"
+\fC#include <constante\&.h>\fP
+.PP
+Dérivée par \fBComplexe\fP, \fBEntier\fP, \fBExpression\fP, \fBRationnel\fP, et \fBReel\fP\&.
+.SS "Fonctions membres publiques"
 
 .in +1c
+.ti -1c
+.RI "virtual \fB~Constante\fP ()"
+.br
 .ti -1c
 .RI "virtual QString \fBafficher\fP () const =0"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBaddition\fP (\fBConstante\fP *c)=0"
+.RI "virtual \fBConstante\fP * \fBaddition\fP (\fBConstante\fP *c)"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBproduit\fP (\fBConstante\fP *c)=0"
+.RI "virtual \fBConstante\fP * \fBproduit\fP (\fBConstante\fP *c)"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBdivision\fP (\fBConstante\fP *c)=0"
+.RI "virtual \fBConstante\fP * \fBdivision\fP (\fBConstante\fP *c)"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBsigne\fP ()=0"
+.RI "virtual \fBConstante\fP * \fBsigne\fP ()"
 .br
 .ti -1c
 .RI "\fBConstante\fP * \fBrecopie\fP ()"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBsoustraction\fP (\fBConstante\fP *c)=0"
+.RI "virtual \fBConstante\fP * \fBsoustraction\fP (\fBConstante\fP *c)"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBinv\fP ()=0"
+.RI "virtual \fBConstante\fP * \fBinv\fP ()"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBfact\fP ()=0"
+.RI "virtual \fBConstante\fP * \fBfact\fP ()"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBsinus\fP ()=0"
+.RI "virtual \fBConstante\fP * \fBsinus\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcosinus\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBsinush\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcosinush\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBtangente\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBtangenteh\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBlogN\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBlog1\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBpuissance\fP (\fBConstante\fP *c)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcarre\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcube\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBracine\fP ()"
 .br
 .in -1c
-
-.SH "Author"
+.SH "Description détaillée"
 .PP 
-Generated automatically by Doxygen for Calculatrice polonais inversé LO21 from the source code\&.
+Définition à la ligne 30 du fichier constante\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "virtual \fBConstante::~Constante\fP ()\fC [inline, virtual]\fP"
+.PP
+Définition à la ligne 33 du fichier constante\&.h\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "virtual \fBConstante\fP* \fBConstante::addition\fP (\fBConstante\fP *c)\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 35 du fichier constante\&.h\&.
+.SS "virtual QString \fBConstante::afficher\fP () const\fC [pure virtual]\fP"
+.PP
+Implémenté dans \fBComplexe\fP, \fBEntier\fP, \fBRationnel\fP, \fBExpression\fP, et \fBReel\fP\&.
+.SS "virtual \fBConstante\fP* \fBConstante::carre\fP ()\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 52 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::cosinus\fP (boolangle)\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 44 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::cosinush\fP (boolangle)\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 46 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::cube\fP ()\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 53 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::division\fP (\fBConstante\fP *c)\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 37 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::fact\fP ()\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 42 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::inv\fP ()\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 41 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::log1\fP ()\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 50 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::logN\fP ()\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 49 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::produit\fP (\fBConstante\fP *c)\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 36 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::puissance\fP (\fBConstante\fP *c)\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 51 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::racine\fP ()\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 54 du fichier constante\&.h\&.
+.SS "\fBConstante\fP * \fBConstante::recopie\fP ()"Recopie d'une constante
+.PP
+Suivant le type de \fBConstante\fP, on va faire un dynamic cast\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Une \fI\fBConstante\fP\fP reprenant les mêmes attributs que celle copiée\&.
+.RE
+.PP
+
+.PP
+Définition à la ligne 9 du fichier constante\&.cpp\&.
+.SS "virtual \fBConstante\fP* \fBConstante::signe\fP ()\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 38 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::sinus\fP (boolangle)\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 43 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::sinush\fP (boolangle)\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 45 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::soustraction\fP (\fBConstante\fP *c)\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 40 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::tangente\fP (boolangle)\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 47 du fichier constante\&.h\&.
+.SS "virtual \fBConstante\fP* \fBConstante::tangenteh\fP (boolangle)\fC [inline, virtual]\fP"
+.PP
+Réimplémentée dans \fBComplexe\fP, \fBRationnel\fP, \fBEntier\fP, et \fBReel\fP\&.
+.PP
+Définition à la ligne 48 du fichier constante\&.h\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Calculatrice polonais inversé LO21 à partir du code source\&.

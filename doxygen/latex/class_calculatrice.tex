@@ -1,27 +1,476 @@
-\hypertarget{class_calculatrice}{\section{\-Calculatrice \-Class \-Reference}
+\hypertarget{class_calculatrice}{\section{\-Référence de la classe \-Calculatrice}
 \label{class_calculatrice}\index{\-Calculatrice@{\-Calculatrice}}
 }
-\subsection*{\-Static \-Public \-Member \-Functions}
+
+
+{\ttfamily \#include $<$calculatrice.\-h$>$}
+
+\subsection*{\-Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_calculatrice_a6311c8e75ac47e9f43ecd47ebc22c10b}{static \hyperlink{class_calculatrice}{\-Calculatrice} \& {\bfseries get\-Instance} ()}\label{class_calculatrice_a6311c8e75ac47e9f43ecd47ebc22c10b}
-
+void \hyperlink{class_calculatrice_ae04068faaa66847c3f318c018824a277}{annuler} ()
 \item 
-\hypertarget{class_calculatrice_aa974f5b58c583ef3aaee055eac238466}{static void {\bfseries libere\-Instance} ()}\label{class_calculatrice_aa974f5b58c583ef3aaee055eac238466}
-
+void \hyperlink{class_calculatrice_ac9fea1beaab60d0c73c017a5d225a56c}{retablir} ()
+\item 
+\hyperlink{class_pile}{\-Pile} $\ast$ \hyperlink{class_calculatrice_abc998bdc47fd8e4388f2d8b03f1d9949}{get\-Pile\-Stockage} ()
+\item 
+int \hyperlink{class_calculatrice_a45ec794c15d65a56fb8101dd9ca4812b}{taille\-\_\-pile\-\_\-hitorique} ()
+\item 
+void \hyperlink{class_calculatrice_a3558f924d00e69cbfbfd7b1ee6b088a3}{afficher\-\_\-toutes\-\_\-piles\-\_\-hitorique} ()
+\item 
+void \hyperlink{class_calculatrice_acc6b301035c21041dbd4ffb7f6f5645e}{saisie\-\_\-nouvelle\-\_\-pile} (\hyperlink{class_pile}{\-Pile} $\ast$nouvelle)
+\item 
+enum \hyperlink{mainwindow_8h_ac57a15745dfbb2ebe6ba80230b7e5c6a}{\-Mesure\-Angle} \hyperlink{class_calculatrice_af2b58ecc00a772e959e166645c802cf2}{get\-Mesure\-Angle} () const 
+\item 
+enum \hyperlink{constante_8h_a1d1cfd8ffb84e947f82999c682b666a7}{\-Type} \hyperlink{class_calculatrice_a72d29725e5fdc334caf6b27d1b81221a}{get\-Mod\-Constante} () const 
+\item 
+bool \hyperlink{class_calculatrice_ad5a63f289cc5df7ccc7677ada5ca92b8}{get\-Mod\-Complexe} () const 
+\item 
+\-Q\-Settings $\ast$ \hyperlink{class_calculatrice_ac1fd3f178488afb8bc25dae790a9756d}{get\-Context} ()
+\item 
+void \hyperlink{class_calculatrice_a349cc6b05ea447fb0bde7221b560dab0}{set\-Mod\-Constante} (enum \hyperlink{constante_8h_a1d1cfd8ffb84e947f82999c682b666a7}{\-Type} t)
+\item 
+void \hyperlink{class_calculatrice_a51db82ce20ffafc4a6188b9f13b27fe1}{set\-Mesure\-Angle} (enum \hyperlink{mainwindow_8h_ac57a15745dfbb2ebe6ba80230b7e5c6a}{\-Mesure\-Angle} a)
+\item 
+void \hyperlink{class_calculatrice_ab5ad75216e44c3ca263c2706083def2b}{set\-Mod\-Complexe} (bool c)
 \end{DoxyCompactItemize}
-\subsection*{\-Protected \-Member \-Functions}
+\subsection*{\-Fonctions membres publiques statiques}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_calculatrice_a2761ae6e08c02c2268ba5e499a013724}{{\bfseries \-Calculatrice} (const \hyperlink{class_calculatrice}{\-Calculatrice} \&)}\label{class_calculatrice_a2761ae6e08c02c2268ba5e499a013724}
-
+static \hyperlink{class_calculatrice}{\-Calculatrice} \& \hyperlink{class_calculatrice_a6311c8e75ac47e9f43ecd47ebc22c10b}{get\-Instance} ()
 \item 
-\hypertarget{class_calculatrice_ad03d57208ee06d8ebef905efbbfec7b6}{void {\bfseries operator=} (const \hyperlink{class_calculatrice}{\-Calculatrice} \&)}\label{class_calculatrice_ad03d57208ee06d8ebef905efbbfec7b6}
-
+static void \hyperlink{class_calculatrice_aa974f5b58c583ef3aaee055eac238466}{libere\-Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{\-Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_calculatrice_a01b91f69f7ac10d737af66b3fa968db9}{\-Calculatrice} ()
+\begin{DoxyCompactList}\small\item\em \-Constructeur de la calculatrice. \end{DoxyCompactList}\item 
+\hyperlink{class_calculatrice_a2761ae6e08c02c2268ba5e499a013724}{\-Calculatrice} (const \hyperlink{class_calculatrice}{\-Calculatrice} \&)
+\item 
+virtual \hyperlink{class_calculatrice_acb4b6278eb955ce932e16df29276be52}{$\sim$\-Calculatrice} ()
+\begin{DoxyCompactList}\small\item\em \-Dans un \-Singleton, nécessité d'avoir une instante de type static. \end{DoxyCompactList}\item 
+void \hyperlink{class_calculatrice_ad03d57208ee06d8ebef905efbbfec7b6}{operator=} (const \hyperlink{class_calculatrice}{\-Calculatrice} \&)
 \end{DoxyCompactItemize}
 
 
-\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\subsection{\-Description détaillée}
+
+
+\-Définition à la ligne 22 du fichier calculatrice.\-h.
+
+
+
+\subsection{\-Documentation des constructeurs et destructeur}
+\hypertarget{class_calculatrice_a01b91f69f7ac10d737af66b3fa968db9}{\index{\-Calculatrice@{\-Calculatrice}!\-Calculatrice@{\-Calculatrice}}
+\index{\-Calculatrice@{\-Calculatrice}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{\-Calculatrice}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Calculatrice\-::\-Calculatrice} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_calculatrice_a01b91f69f7ac10d737af66b3fa968db9}
+
+
+\-Constructeur de la calculatrice. 
+
+\-Construit le \-Q\-Settings context et restaure la pile enregistré lors de la dernière utilisation. \-Constructeur de la calculatrice
+
+\-Construit le \-Q\-Settings context et restaure la pile enregistré lors de la dernière utilisation.
+
+\-Définition à la ligne 46 du fichier calculatrice.\-cpp.
+
+
+
+\-Voici le graphe d'appel pour cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_a01b91f69f7ac10d737af66b3fa968db9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_a01b91f69f7ac10d737af66b3fa968db9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_calculatrice_a2761ae6e08c02c2268ba5e499a013724}{\index{\-Calculatrice@{\-Calculatrice}!\-Calculatrice@{\-Calculatrice}}
+\index{\-Calculatrice@{\-Calculatrice}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{\-Calculatrice}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Calculatrice\-::\-Calculatrice} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Calculatrice} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, protected\mbox{]}}}}\label{class_calculatrice_a2761ae6e08c02c2268ba5e499a013724}
+
+
+\-Définition à la ligne 37 du fichier calculatrice.\-h.
+
+\hypertarget{class_calculatrice_acb4b6278eb955ce932e16df29276be52}{\index{\-Calculatrice@{\-Calculatrice}!$\sim$\-Calculatrice@{$\sim$\-Calculatrice}}
+\index{$\sim$\-Calculatrice@{$\sim$\-Calculatrice}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{$\sim$\-Calculatrice}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Calculatrice\-::$\sim$\-Calculatrice} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected, virtual\mbox{]}}}}\label{class_calculatrice_acb4b6278eb955ce932e16df29276be52}
+
+
+\-Dans un \-Singleton, nécessité d'avoir une instante de type static. 
+
+\-Le destructeur de la classe
+
+\-Définition à la ligne 12 du fichier calculatrice.\-cpp.
+
+
+
+\subsection{\-Documentation des fonctions membres}
+\hypertarget{class_calculatrice_a3558f924d00e69cbfbfd7b1ee6b088a3}{\index{\-Calculatrice@{\-Calculatrice}!afficher\-\_\-toutes\-\_\-piles\-\_\-hitorique@{afficher\-\_\-toutes\-\_\-piles\-\_\-hitorique}}
+\index{afficher\-\_\-toutes\-\_\-piles\-\_\-hitorique@{afficher\-\_\-toutes\-\_\-piles\-\_\-hitorique}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{afficher\-\_\-toutes\-\_\-piles\-\_\-hitorique}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Calculatrice\-::afficher\-\_\-toutes\-\_\-piles\-\_\-hitorique} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_calculatrice_a3558f924d00e69cbfbfd7b1ee6b088a3}
+
+
+\-Définition à la ligne 108 du fichier calculatrice.\-cpp.
+
+\hypertarget{class_calculatrice_ae04068faaa66847c3f318c018824a277}{\index{\-Calculatrice@{\-Calculatrice}!annuler@{annuler}}
+\index{annuler@{annuler}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{annuler}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Calculatrice\-::annuler} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_calculatrice_ae04068faaa66847c3f318c018824a277}
+\-Fonction annulé
+
+\-Annule la dernière action.
+
+\-Définition à la ligne 85 du fichier calculatrice.\-cpp.
+
+
+
+\-Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_ae04068faaa66847c3f318c018824a277_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_ae04068faaa66847c3f318c018824a277_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_calculatrice_ac1fd3f178488afb8bc25dae790a9756d}{\index{\-Calculatrice@{\-Calculatrice}!get\-Context@{get\-Context}}
+\index{get\-Context@{get\-Context}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{get\-Context}]{\setlength{\rightskip}{0pt plus 5cm}\-Q\-Settings$\ast$ {\bf \-Calculatrice\-::get\-Context} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_calculatrice_ac1fd3f178488afb8bc25dae790a9756d}
+
+
+\-Définition à la ligne 55 du fichier calculatrice.\-h.
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_ac1fd3f178488afb8bc25dae790a9756d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_calculatrice_a6311c8e75ac47e9f43ecd47ebc22c10b}{\index{\-Calculatrice@{\-Calculatrice}!get\-Instance@{get\-Instance}}
+\index{get\-Instance@{get\-Instance}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{get\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Calculatrice} \& {\bf \-Calculatrice\-::get\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_calculatrice_a6311c8e75ac47e9f43ecd47ebc22c10b}
+\-Récupération de l'instance
+
+\-Permet de ne pas instancier plus d'une fois la classe
+
+\-Définition à la ligne 114 du fichier calculatrice.\-cpp.
+
+
+
+\-Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_a6311c8e75ac47e9f43ecd47ebc22c10b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_a6311c8e75ac47e9f43ecd47ebc22c10b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_calculatrice_af2b58ecc00a772e959e166645c802cf2}{\index{\-Calculatrice@{\-Calculatrice}!get\-Mesure\-Angle@{get\-Mesure\-Angle}}
+\index{get\-Mesure\-Angle@{get\-Mesure\-Angle}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{get\-Mesure\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-Mesure\-Angle} {\bf \-Calculatrice\-::get\-Mesure\-Angle} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_calculatrice_af2b58ecc00a772e959e166645c802cf2}
+
+
+\-Définition à la ligne 52 du fichier calculatrice.\-h.
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_af2b58ecc00a772e959e166645c802cf2_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_calculatrice_ad5a63f289cc5df7ccc7677ada5ca92b8}{\index{\-Calculatrice@{\-Calculatrice}!get\-Mod\-Complexe@{get\-Mod\-Complexe}}
+\index{get\-Mod\-Complexe@{get\-Mod\-Complexe}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{get\-Mod\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf \-Calculatrice\-::get\-Mod\-Complexe} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_calculatrice_ad5a63f289cc5df7ccc7677ada5ca92b8}
+
+
+\-Définition à la ligne 54 du fichier calculatrice.\-h.
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_ad5a63f289cc5df7ccc7677ada5ca92b8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_calculatrice_a72d29725e5fdc334caf6b27d1b81221a}{\index{\-Calculatrice@{\-Calculatrice}!get\-Mod\-Constante@{get\-Mod\-Constante}}
+\index{get\-Mod\-Constante@{get\-Mod\-Constante}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{get\-Mod\-Constante}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf \-Type} {\bf \-Calculatrice\-::get\-Mod\-Constante} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_calculatrice_a72d29725e5fdc334caf6b27d1b81221a}
+
+
+\-Définition à la ligne 53 du fichier calculatrice.\-h.
+
+\hypertarget{class_calculatrice_abc998bdc47fd8e4388f2d8b03f1d9949}{\index{\-Calculatrice@{\-Calculatrice}!get\-Pile\-Stockage@{get\-Pile\-Stockage}}
+\index{get\-Pile\-Stockage@{get\-Pile\-Stockage}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{get\-Pile\-Stockage}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Pile}$\ast$ {\bf \-Calculatrice\-::get\-Pile\-Stockage} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_calculatrice_abc998bdc47fd8e4388f2d8b03f1d9949}
+
+
+\-Définition à la ligne 46 du fichier calculatrice.\-h.
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_abc998bdc47fd8e4388f2d8b03f1d9949_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_calculatrice_aa974f5b58c583ef3aaee055eac238466}{\index{\-Calculatrice@{\-Calculatrice}!libere\-Instance@{libere\-Instance}}
+\index{libere\-Instance@{libere\-Instance}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{libere\-Instance}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Calculatrice\-::libere\-Instance} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}\label{class_calculatrice_aa974f5b58c583ef3aaee055eac238466}
+destruction de l'instance
+
+\-Définition à la ligne 123 du fichier calculatrice.\-cpp.
+
+\hypertarget{class_calculatrice_ad03d57208ee06d8ebef905efbbfec7b6}{\index{\-Calculatrice@{\-Calculatrice}!operator=@{operator=}}
+\index{operator=@{operator=}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}void \-Calculatrice\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Calculatrice} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_calculatrice_ad03d57208ee06d8ebef905efbbfec7b6}
+\hypertarget{class_calculatrice_ac9fea1beaab60d0c73c017a5d225a56c}{\index{\-Calculatrice@{\-Calculatrice}!retablir@{retablir}}
+\index{retablir@{retablir}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{retablir}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Calculatrice\-::retablir} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_calculatrice_ac9fea1beaab60d0c73c017a5d225a56c}
+\-Fonction rétablir
+
+\-Rétabli le dernier état annulé de la pile \-Historique.
+
+\-Définition à la ligne 97 du fichier calculatrice.\-cpp.
+
+
+
+\-Voici le graphe d'appel pour cette fonction \-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_ac9fea1beaab60d0c73c017a5d225a56c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_ac9fea1beaab60d0c73c017a5d225a56c_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_calculatrice_acc6b301035c21041dbd4ffb7f6f5645e}{\index{\-Calculatrice@{\-Calculatrice}!saisie\-\_\-nouvelle\-\_\-pile@{saisie\-\_\-nouvelle\-\_\-pile}}
+\index{saisie\-\_\-nouvelle\-\_\-pile@{saisie\-\_\-nouvelle\-\_\-pile}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{saisie\-\_\-nouvelle\-\_\-pile}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Calculatrice\-::saisie\-\_\-nouvelle\-\_\-pile} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Pile} $\ast$}]{nouvelle}
+\end{DoxyParamCaption}
+)}}\label{class_calculatrice_acc6b301035c21041dbd4ffb7f6f5645e}
+
+
+\-Définition à la ligne 73 du fichier calculatrice.\-cpp.
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_acc6b301035c21041dbd4ffb7f6f5645e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_calculatrice_a51db82ce20ffafc4a6188b9f13b27fe1}{\index{\-Calculatrice@{\-Calculatrice}!set\-Mesure\-Angle@{set\-Mesure\-Angle}}
+\index{set\-Mesure\-Angle@{set\-Mesure\-Angle}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{set\-Mesure\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Calculatrice\-::set\-Mesure\-Angle} (
+\begin{DoxyParamCaption}
+\item[{enum {\bf \-Mesure\-Angle}}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_calculatrice_a51db82ce20ffafc4a6188b9f13b27fe1}
+
+
+\-Définition à la ligne 57 du fichier calculatrice.\-h.
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_a51db82ce20ffafc4a6188b9f13b27fe1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_calculatrice_ab5ad75216e44c3ca263c2706083def2b}{\index{\-Calculatrice@{\-Calculatrice}!set\-Mod\-Complexe@{set\-Mod\-Complexe}}
+\index{set\-Mod\-Complexe@{set\-Mod\-Complexe}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{set\-Mod\-Complexe}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Calculatrice\-::set\-Mod\-Complexe} (
+\begin{DoxyParamCaption}
+\item[{bool}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_calculatrice_ab5ad75216e44c3ca263c2706083def2b}
+
+
+\-Définition à la ligne 58 du fichier calculatrice.\-h.
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_ab5ad75216e44c3ca263c2706083def2b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_calculatrice_a349cc6b05ea447fb0bde7221b560dab0}{\index{\-Calculatrice@{\-Calculatrice}!set\-Mod\-Constante@{set\-Mod\-Constante}}
+\index{set\-Mod\-Constante@{set\-Mod\-Constante}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{set\-Mod\-Constante}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Calculatrice\-::set\-Mod\-Constante} (
+\begin{DoxyParamCaption}
+\item[{enum {\bf \-Type}}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_calculatrice_a349cc6b05ea447fb0bde7221b560dab0}
+
+
+\-Définition à la ligne 56 du fichier calculatrice.\-h.
+
+
+
+\-Voici le graphe des appelants de cette fonction \-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_calculatrice_a349cc6b05ea447fb0bde7221b560dab0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_calculatrice_a45ec794c15d65a56fb8101dd9ca4812b}{\index{\-Calculatrice@{\-Calculatrice}!taille\-\_\-pile\-\_\-hitorique@{taille\-\_\-pile\-\_\-hitorique}}
+\index{taille\-\_\-pile\-\_\-hitorique@{taille\-\_\-pile\-\_\-hitorique}!Calculatrice@{\-Calculatrice}}
+\subsubsection[{taille\-\_\-pile\-\_\-hitorique}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Calculatrice\-::taille\-\_\-pile\-\_\-hitorique} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_calculatrice_a45ec794c15d65a56fb8101dd9ca4812b}
+
+
+\-Définition à la ligne 47 du fichier calculatrice.\-h.
+
+
+
+\-La documentation de cette classe a été générée à partir des fichiers suivants \-:\begin{DoxyCompactItemize}
 \item 
-/home/yuntux/\-U\-T\-C/\-G\-I02/\-L\-O21/projet/lo21-\/npi.\-2/\hyperlink{calculatrice_8h}{calculatrice.\-h}\item 
-/home/yuntux/\-U\-T\-C/\-G\-I02/\-L\-O21/projet/lo21-\/npi.\-2/calculatrice.\-cpp\end{DoxyCompactItemize}
+/home/yuntux/\-U\-T\-C/\-G\-I02/\-L\-O21/projet/projet\-\_\-propre/\hyperlink{calculatrice_8h}{calculatrice.\-h}\item 
+/home/yuntux/\-U\-T\-C/\-G\-I02/\-L\-O21/projet/projet\-\_\-propre/\hyperlink{calculatrice_8cpp}{calculatrice.\-cpp}\end{DoxyCompactItemize}

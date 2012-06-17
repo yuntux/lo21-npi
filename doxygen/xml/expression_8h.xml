@@ -3,29 +3,78 @@
   <compounddef id="expression_8h" kind="file">
     <compoundname>expression.h</compoundname>
     <includes refid="constante_8h" local="yes">constante.h</includes>
-    <includedby refid="expression_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.cpp</includedby>
+    <includedby refid="constante_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.cpp</includedby>
+    <includedby refid="expression_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.cpp</includedby>
+    <includedby refid="mainwindow_8cpp" local="yes">/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp</includedby>
     <incdepgraph>
-      <node id="162">
+      <node id="653">
+        <label>logmessage.h</label>
+        <link refid="logmessage_8h"/>
+        <childnode refid="652" relation="include">
+        </childnode>
+        <childnode refid="654" relation="include">
+        </childnode>
+      </node>
+      <node id="654">
+        <label>exception</label>
+      </node>
+      <node id="649">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.h</label>
+        <link refid="expression.h"/>
+        <childnode refid="650" relation="include">
+        </childnode>
+      </node>
+      <node id="655">
+        <label>logsystem.h</label>
+        <link refid="logsystem_8h"/>
+        <childnode refid="653" relation="include">
+        </childnode>
+        <childnode refid="651" relation="include">
+        </childnode>
+      </node>
+      <node id="651">
         <label>iostream</label>
       </node>
-      <node id="161">
-        <label>constante.h</label>
-        <link refid="constante_8h"/>
-        <childnode refid="162" relation="include">
-        </childnode>
-        <childnode refid="163" relation="include">
-        </childnode>
-      </node>
-      <node id="163">
+      <node id="652">
         <label>QtGui</label>
       </node>
-      <node id="160">
-        <label>/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h</label>
-        <link refid="expression.h"/>
-        <childnode refid="161" relation="include">
+      <node id="650">
+        <label>constante.h</label>
+        <link refid="constante_8h"/>
+        <childnode refid="651" relation="include">
+        </childnode>
+        <childnode refid="652" relation="include">
+        </childnode>
+        <childnode refid="653" relation="include">
+        </childnode>
+        <childnode refid="655" relation="include">
         </childnode>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="659">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp</label>
+        <link refid="mainwindow_8cpp"/>
+      </node>
+      <node id="658">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.cpp</label>
+        <link refid="expression_8cpp"/>
+      </node>
+      <node id="656">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.h</label>
+        <link refid="expression.h"/>
+        <childnode refid="657" relation="include">
+        </childnode>
+        <childnode refid="658" relation="include">
+        </childnode>
+        <childnode refid="659" relation="include">
+        </childnode>
+      </node>
+      <node id="657">
+        <label>/home/yuntux/UTC/GI02/LO21/projet/projet_propre/constante.cpp</label>
+        <link refid="constante_8cpp"/>
+      </node>
+    </invincdepgraph>
     <innerclass refid="class_expression" prot="public">Expression</innerclass>
     <briefdescription>
     </briefdescription>
@@ -34,25 +83,22 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>EXPRESSION_H</highlight></codeline>
 <codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>EXPRESSION_H</highlight></codeline>
-<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="constante_8h" kindref="compound" tooltip="Calculatrice en polonais inversé. Classe de la GUI QT-MainWindow.">constante.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="constante_8h" kindref="compound" tooltip="Calculatrice en polonais inversé. Classe composite de gestion des constantes.">constante.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5" refid="class_expression" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_expression" kindref="compound">Expression</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref></highlight></codeline>
-<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>_expr;</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_expression" kindref="compound">Expression</ref>(QString<sp/>s);</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>addition(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>produit(<ref refid="class_constante" kindref="compound">Constante</ref><sp/>*c);</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>division(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>signe();</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>soustraction(<ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>c);</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>inv();</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>fact();</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref>*<sp/>sinus();</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QString<sp/>afficher()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>EXPRESSION_H</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_expression" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_expression" kindref="compound">Expression</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_constante" kindref="compound">Constante</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/>_expr;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11" refid="class_expression_1ac25fb301ae3947c964a4da9a95883e72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_expression_1ac25fb301ae3947c964a4da9a95883e72" kindref="member">Expression</ref>(QString<sp/>s)<sp/>:_expr(s){}</highlight></codeline>
+<codeline lineno="12" refid="class_expression_1a2f6cee3469dea6cbc3e5af93587f7c25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_expression_1a2f6cee3469dea6cbc3e5af93587f7c25" kindref="member">~Expression</ref>(){}</highlight></codeline>
+<codeline lineno="13" refid="class_expression_1adecc12cf329336d20c1891d46e31bd51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>QString<sp/><ref refid="class_expression_1adecc12cf329336d20c1891d46e31bd51" kindref="member">getExpr</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_expr;}</highlight></codeline>
+<codeline lineno="14" refid="class_expression_1ad724f94577826207bb12a09822e57acc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_expression_1ad724f94577826207bb12a09822e57acc" kindref="member">setExpr</ref>(QString<sp/>e){<sp/>_expr<sp/>=<sp/>e;}</highlight></codeline>
+<codeline lineno="15" refid="class_expression_1ac251603d59d6f4924320586131f1dec6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>QString<sp/><ref refid="class_expression_1ac251603d59d6f4924320586131f1dec6" kindref="member">afficher</ref>()</highlight><highlight class="keyword"><sp/>const</highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_expr;<sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>EXPRESSION_H</highlight></codeline>
     </programlisting>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/expression.h"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/expression.h"/>
   </compounddef>
 </doxygen>

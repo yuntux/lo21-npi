@@ -2,98 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.7.6.1">
   <compounddef id="class_main_window" kind="class" prot="public">
     <compoundname>MainWindow</compoundname>
+    <includes refid="mainwindow_8h" local="no">mainwindow.h</includes>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="class_main_window_1a7b6885be3b8c6d0222aafa77748b852d" prot="private" static="no" mutable="no">
-        <type>enum MesureAngle</type>
-        <definition>enum MesureAngle MainWindow::_modAngle</definition>
-        <argsstring></argsstring>
-        <name>_modAngle</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="33" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="33" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_main_window_1a2fab64d84959d8048ae0c7e47a7c3fd7" prot="private" static="no" mutable="no">
-        <type>enum Type</type>
-        <definition>enum Type MainWindow::_modConstante</definition>
-        <argsstring></argsstring>
-        <name>_modConstante</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="34" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="34" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_main_window_1a1d3d51f25fd1414069631111de1c1c24" prot="private" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool MainWindow::_modComplexe</definition>
-        <argsstring></argsstring>
-        <name>_modComplexe</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="35" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="35" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_main_window_1ab55da16dd118ff5a3718e25b3e4f0476" prot="private" static="no" mutable="no">
-        <type><ref refid="class_pile" kindref="compound">Pile</ref></type>
-        <definition>Pile MainWindow::_pileStockage</definition>
-        <argsstring></argsstring>
-        <name>_pileStockage</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="38" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="38" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_main_window_1a0e09dbed6be4c5b1bbfaa9fa852b7aef" prot="private" static="no" mutable="no">
-        <type>QStack&lt; QString &gt;</type>
-        <definition>QStack&lt;QString&gt; MainWindow::_pileAffichage</definition>
-        <argsstring></argsstring>
-        <name>_pileAffichage</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="39" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="39" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_main_window_1add21502d1d68dd52ef18375379f57ff8" prot="private" static="no" mutable="no">
-        <type>QStack&lt; float &gt;</type>
-        <definition>QStack&lt;float&gt; MainWindow::_pileStockageReelle</definition>
-        <argsstring></argsstring>
-        <name>_pileStockageReelle</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="40" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="40" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="class_main_window_1a211bdf68e726481ddd5ced4626189c4b" prot="private" static="no" mutable="no">
-        <type>QStack&lt; <ref refid="class_complexe" kindref="compound">Complexe</ref> &gt;</type>
-        <definition>QStack&lt;Complexe&gt; MainWindow::_pileStockageComplexe</definition>
-        <argsstring></argsstring>
-        <name>_pileStockageComplexe</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="41" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="41" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" static="no" mutable="no">
         <type><ref refid="class_ui_1_1_main_window" kindref="compound">Ui::MainWindow</ref> *</type>
         <definition>Ui::MainWindow* MainWindow::ui</definition>
@@ -105,40 +15,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="102" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="102" bodyend="-1"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="104" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" bodystart="104" bodyend="-1"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="private-func">
-      <memberdef kind="function" id="class_main_window_1a810709db5f60967d9ac69169ce4cbecc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_main_window_1a4e20a4a065fbb0e4d3532a45a0a91425" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void MainWindow::afficheur_pile</definition>
-        <argsstring>(Pile p)</argsstring>
-        <name>afficheur_pile</name>
+        <definition>void MainWindow::closeEvent</definition>
+        <argsstring>(QCloseEvent *event)</argsstring>
+        <name>closeEvent</name>
         <param>
-          <type><ref refid="class_pile" kindref="compound">Pile</ref></type>
-          <declname>p</declname>
+          <type>QCloseEvent *</type>
+          <declname>event</declname>
         </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="37" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="97" bodyend="101"/>
+<para>Méthode executée lorsque l&apos;on quite</para><para>Sauvegarde la pile lorsque l&apos;on quitte. la QTextLine suivi d&apos;un click sur ENTER.</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="35" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="908" bodyend="916"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" compoundref="calculatrice_8h" startline="46" endline="46">Calculatrice::getPileStockage</references>
+        <references refid="class_pile_1a380c3a467b58c175aef4f2cdc0f7a2c7" compoundref="pile_8cpp" startline="195" endline="209">Pile::sauv_pile_context</references>
       </memberdef>
-      <memberdef kind="function" id="class_main_window_1a80381181e476064c086666abb2cfa2ce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void MainWindow::saveToFile</definition>
-        <argsstring>()</argsstring>
-        <name>saveToFile</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="43" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="104" bodyend="142"/>
-      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
       <memberdef kind="function" id="class_main_window_1a233bee15277ba8e4eebbb121bd547839" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void MainWindow::loadFromFile</definition>
@@ -149,8 +51,8 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="44" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="145" bodyend="214"/>
+<para>Chargement du contexte</para><para>Cette fonction sert à charger le contexte qui a été sauvegardé dans la fonction saveToFile. Pour cela on regarde les paramètres stockés et on modifie les paramètres de <ref refid="class_main_window" kindref="compound">MainWindow</ref> en fonction</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="37" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="122" bodyend="177"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -170,24 +72,126 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="47" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="14" bodyend="94"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="40" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="16" bodyend="99"/>
+        <references refid="class_ui___main_window_1acf4a0872c4c77d8f43a2ec66ed849b58" compoundref="ui__mainwindow_8h" startline="106" endline="464">Ui_MainWindow::setupUi</references>
+        <references refid="class_ui___main_window_1ad451216d14bbfb46a45e691f81bd5697" compoundref="ui__mainwindow_8h" startline="51">Ui_MainWindow::num0</references>
+        <references refid="class_main_window_1ab408f985cff16c7d939d48cfa3d5f0b1" compoundref="mainwindow_8cpp" startline="335" endline="342">num0Clicked</references>
+        <references refid="class_ui___main_window_1a06046b98ba8522d7866ff59b214208d4" compoundref="ui__mainwindow_8h" startline="48">Ui_MainWindow::num1</references>
+        <references refid="class_main_window_1a538b702a2feed14f756f9fff0a53d2f5" compoundref="mainwindow_8cpp" startline="344" endline="350">num1Clicked</references>
+        <references refid="class_ui___main_window_1a42840810d6ba204b30a10316437fbac8" compoundref="ui__mainwindow_8h" startline="49">Ui_MainWindow::num2</references>
+        <references refid="class_main_window_1a857a81084ff261633c9896f24bdd6fb5" compoundref="mainwindow_8cpp" startline="352" endline="358">num2Clicked</references>
+        <references refid="class_ui___main_window_1a1cba0408985417af8b8f84ecf490f251" compoundref="ui__mainwindow_8h" startline="50">Ui_MainWindow::num3</references>
+        <references refid="class_main_window_1aaf2e8e4cdcabb0c9cd2496e662038b64" compoundref="mainwindow_8cpp" startline="360" endline="366">num3Clicked</references>
+        <references refid="class_ui___main_window_1acec9d7e0484591592b5b5aebe17c4d4c" compoundref="ui__mainwindow_8h" startline="45">Ui_MainWindow::num4</references>
+        <references refid="class_main_window_1a6d79c0dc7b05f66d0dd2d5eb57d870a2" compoundref="mainwindow_8cpp" startline="369" endline="375">num4Clicked</references>
+        <references refid="class_ui___main_window_1ae2cb73580dc5ebe9ff8bfdeb0be7fa4d" compoundref="ui__mainwindow_8h" startline="46">Ui_MainWindow::num5</references>
+        <references refid="class_main_window_1a9dfa9a2ba4c04d27047f1b6cf50eb309" compoundref="mainwindow_8cpp" startline="377" endline="383">num5Clicked</references>
+        <references refid="class_ui___main_window_1a45c01137210fb27261aaa19e878b2771" compoundref="ui__mainwindow_8h" startline="47">Ui_MainWindow::num6</references>
+        <references refid="class_main_window_1ae581f160bb58ff7b92fb10488dad1cb7" compoundref="mainwindow_8cpp" startline="385" endline="391">num6Clicked</references>
+        <references refid="class_ui___main_window_1a6b99070e2ed530d98b26f79ce1b5ecdf" compoundref="ui__mainwindow_8h" startline="42">Ui_MainWindow::num7</references>
+        <references refid="class_main_window_1ae34dccd3c4bdff6452250ec4807977e4" compoundref="mainwindow_8cpp" startline="393" endline="399">num7Clicked</references>
+        <references refid="class_ui___main_window_1aeca50b654eb96a8bb380a34405c0e8a6" compoundref="ui__mainwindow_8h" startline="43">Ui_MainWindow::num8</references>
+        <references refid="class_main_window_1ab86f29d78da5c85373b2126cdbfadf78" compoundref="mainwindow_8cpp" startline="401" endline="407">num8Clicked</references>
+        <references refid="class_ui___main_window_1a2a726c1956d35bdc8131b967f8a6d152" compoundref="ui__mainwindow_8h" startline="44">Ui_MainWindow::num9</references>
+        <references refid="class_main_window_1a48cd898abe91cf0b7784dfce7258b8f6" compoundref="mainwindow_8cpp" startline="409" endline="415">num9Clicked</references>
+        <references refid="class_ui___main_window_1afea79b7d0abfd420abade70c22e611e9" compoundref="ui__mainwindow_8h" startline="62">Ui_MainWindow::POINT</references>
+        <references refid="class_main_window_1a96f5509a262bda1ee40ceaddb081bff6" compoundref="mainwindow_8cpp" startline="418" endline="424">POINTClicked</references>
+        <references refid="class_ui___main_window_1a2857c52a8366fe68798acdc44afa0fed" compoundref="ui__mainwindow_8h" startline="61">Ui_MainWindow::ESPACE</references>
+        <references refid="class_main_window_1a4f3a33c651ac011d7a4ee62f70c88e44" compoundref="mainwindow_8cpp" startline="427" endline="433">ESPACEClicked</references>
+        <references refid="class_ui___main_window_1a56acbb096ec7433f9afe533b440d8123" compoundref="ui__mainwindow_8h" startline="53">Ui_MainWindow::DOLLAR</references>
+        <references refid="class_main_window_1adc9d3f1638131c5d291c54380fda801f" compoundref="mainwindow_8cpp" startline="595" endline="601">DOLLARClicked</references>
+        <references refid="class_ui___main_window_1a1e4151d33099f88be6126ffa57e3a6a8" compoundref="ui__mainwindow_8h" startline="63">Ui_MainWindow::QUOTE</references>
+        <references refid="class_main_window_1aa3cc15e4ab21e8d1d02b2c908f7ed955" compoundref="mainwindow_8cpp" startline="603" endline="609">QUOTEClicked</references>
+        <references refid="class_ui___main_window_1a416e9c24bb7c8e85be227044461177ec" compoundref="ui__mainwindow_8h" startline="55">Ui_MainWindow::CE</references>
+        <references refid="class_main_window_1a1a093a266d6f67c63e27b410de323e3f" compoundref="mainwindow_8cpp" startline="611" endline="619">CEClicked</references>
+        <references refid="class_ui___main_window_1ab159e22a78929113617dcf7d4af66b7e" compoundref="ui__mainwindow_8h" startline="54">Ui_MainWindow::C</references>
+        <references refid="class_main_window_1acd5bbd32604f72b223e69a58088ddabd" compoundref="mainwindow_8cpp" startline="621" endline="630">CClicked</references>
+        <references refid="class_ui___main_window_1a7d4645de7ef62f35bd4f0d0ff78a7611" compoundref="ui__mainwindow_8h" startline="52">Ui_MainWindow::ENTER</references>
+        <references refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" compoundref="mainwindow_8cpp" startline="649" endline="706">ENTERClicked</references>
+        <references refid="class_ui___main_window_1aafa19488033af699d2e20192f189de49" compoundref="ui__mainwindow_8h" startline="64">Ui_MainWindow::EVAL</references>
+        <references refid="class_main_window_1a2472c42b862ef1dc38b75c4111a28590" compoundref="mainwindow_8cpp" startline="848" endline="882">EVALClicked</references>
+        <references refid="class_ui___main_window_1a10499cba7898eb6c0827b13d2b2e09e4" compoundref="ui__mainwindow_8h" startline="65">Ui_MainWindow::PIBOUTON</references>
+        <references refid="class_main_window_1a5c1743c01e8cf19b5b0e678a09734363" compoundref="mainwindow_8cpp" startline="326" endline="333">PIBOUTONClicked</references>
+        <references refid="class_ui___main_window_1a3b9631153562751675ef6fe58d72fe68" compoundref="ui__mainwindow_8h" startline="60">Ui_MainWindow::FACTORIEL</references>
+        <references refid="class_main_window_1a97ac3886016cc9dc1cc7ae1be4abac65" compoundref="mainwindow_8cpp" startline="435" endline="441">FACTORIELClicked</references>
+        <references refid="class_ui___main_window_1a5881999c31ff45cbe8bdb517a8884e3f" compoundref="ui__mainwindow_8h" startline="57">Ui_MainWindow::ADDITIONNER</references>
+        <references refid="class_main_window_1a7babfc70d1010ea3e7efe67b788e0ec5" compoundref="mainwindow_8cpp" startline="443" endline="449">ADDITIONNERClicked</references>
+        <references refid="class_ui___main_window_1ac0e681bd2bc1ee327deede20741b33c7" compoundref="ui__mainwindow_8h" startline="56">Ui_MainWindow::SOUSTRAIRE</references>
+        <references refid="class_main_window_1aef8aa8858f4a280f6da4ef6f6b4cf208" compoundref="mainwindow_8cpp" startline="451" endline="457">SOUSTRAIREClicked</references>
+        <references refid="class_ui___main_window_1a0093863cdee1f0a9f32f80a145eb9d74" compoundref="ui__mainwindow_8h" startline="59">Ui_MainWindow::MULTIPLIER</references>
+        <references refid="class_main_window_1a0fe4c051d0deac4c5eec64a6cd3d3682" compoundref="mainwindow_8cpp" startline="459" endline="465">MULTIPLIERClicked</references>
+        <references refid="class_ui___main_window_1aa03160fab513dd8c4942725310a79bbb" compoundref="ui__mainwindow_8h" startline="58">Ui_MainWindow::DIVISER</references>
+        <references refid="class_main_window_1a785abff91c01b674c3b795dc289ae629" compoundref="mainwindow_8cpp" startline="467" endline="473">DIVISERClicked</references>
+        <references refid="class_ui___main_window_1a02bdc78125dfec5dfb5653ce0776eeb3" compoundref="ui__mainwindow_8h" startline="69">Ui_MainWindow::POW</references>
+        <references refid="class_main_window_1ab623e042d0384fce67ee67b86aa092ab" compoundref="mainwindow_8cpp" startline="475" endline="481">POWClicked</references>
+        <references refid="class_ui___main_window_1ac1caf33332e6d63e4ec1a9071713493b" compoundref="ui__mainwindow_8h" startline="70">Ui_MainWindow::SIN</references>
+        <references refid="class_main_window_1a694058b9993bdad7bf4c96b7bae1af37" compoundref="mainwindow_8cpp" startline="483" endline="489">SINClicked</references>
+        <references refid="class_ui___main_window_1acba7c9022bfdd86ca0513771138d1f79" compoundref="ui__mainwindow_8h" startline="75">Ui_MainWindow::COS</references>
+        <references refid="class_main_window_1acc7b69effe16bf3936be897b1e9697a2" compoundref="mainwindow_8cpp" startline="491" endline="497">COSClicked</references>
+        <references refid="class_ui___main_window_1a17184ec702aa5040677142c4a143e5f2" compoundref="ui__mainwindow_8h" startline="80">Ui_MainWindow::TAN</references>
+        <references refid="class_main_window_1abd6beb62d32cc0922fd78819e3c4a9cd" compoundref="mainwindow_8cpp" startline="499" endline="505">TANClicked</references>
+        <references refid="class_ui___main_window_1a22cb4dc418e7679c26754c84c1529a29" compoundref="ui__mainwindow_8h" startline="71">Ui_MainWindow::SINH</references>
+        <references refid="class_main_window_1ae18b7a59154a29d9166dae53a02da0cd" compoundref="mainwindow_8cpp" startline="507" endline="513">SINHClicked</references>
+        <references refid="class_ui___main_window_1ab6f966dfd75b5b8164555868f5331ada" compoundref="ui__mainwindow_8h" startline="76">Ui_MainWindow::COSH</references>
+        <references refid="class_main_window_1ae0cb839c1a84f68cfe7d55d75679bf32" compoundref="mainwindow_8cpp" startline="515" endline="521">COSHClicked</references>
+        <references refid="class_ui___main_window_1aa0b74bbccda6715c999c78240332fda0" compoundref="ui__mainwindow_8h" startline="81">Ui_MainWindow::TANH</references>
+        <references refid="class_main_window_1a9674367d1b35c2b7fcb37547982c7142" compoundref="mainwindow_8cpp" startline="523" endline="529">TANHClicked</references>
+        <references refid="class_ui___main_window_1a8340a7d6e9beca550e886c360dbc7afb" compoundref="ui__mainwindow_8h" startline="74">Ui_MainWindow::MOD</references>
+        <references refid="class_main_window_1a4edf9a5fcb637c43e2d4d4e107fd0c62" compoundref="mainwindow_8cpp" startline="531" endline="537">MODClicked</references>
+        <references refid="class_ui___main_window_1a5a851ab1cd3ae5dac5d8cf6b6e22e956" compoundref="ui__mainwindow_8h" startline="79">Ui_MainWindow::SIGN</references>
+        <references refid="class_main_window_1aada810f5e314c0180e159729f1af13f5" compoundref="mainwindow_8cpp" startline="539" endline="545">SIGNClicked</references>
+        <references refid="class_ui___main_window_1a62e9dca715645175577d6143bc93fd9f" compoundref="ui__mainwindow_8h" startline="72">Ui_MainWindow::LN</references>
+        <references refid="class_main_window_1a16e852b776efdec4876c32f0fb56a5b0" compoundref="mainwindow_8cpp" startline="571" endline="577">LNClicked</references>
+        <references refid="class_ui___main_window_1a47f156cd397be49d22f6f7fe15b0fde4" compoundref="ui__mainwindow_8h" startline="77">Ui_MainWindow::LOG</references>
+        <references refid="class_main_window_1a0e9e909347465ac2945668a5229c4688" compoundref="mainwindow_8cpp" startline="579" endline="585">LOGClicked</references>
+        <references refid="class_ui___main_window_1a8f44a583b70486ec7584db651ddc3fa6" compoundref="ui__mainwindow_8h" startline="82">Ui_MainWindow::INV</references>
+        <references refid="class_main_window_1a254c2a0ab491f878157d6abb8d4a8381" compoundref="mainwindow_8cpp" startline="587" endline="593">INVClicked</references>
+        <references refid="class_ui___main_window_1a6259c463080f8ffe0be91053e874780b" compoundref="ui__mainwindow_8h" startline="78">Ui_MainWindow::SQR</references>
+        <references refid="class_main_window_1ad6048a7bb41b1e0ac37bb1f05e458cc8" compoundref="mainwindow_8cpp" startline="547" endline="553">SQRClicked</references>
+        <references refid="class_ui___main_window_1a6e35980b83db49bf01e02faf128a8ba4" compoundref="ui__mainwindow_8h" startline="73">Ui_MainWindow::SQRT</references>
+        <references refid="class_main_window_1a40ff97255a9f62068bf20312468060dd" compoundref="mainwindow_8cpp" startline="555" endline="561">SQRTClicked</references>
+        <references refid="class_ui___main_window_1a6808a4c8810a4b54cdcfc0def3b69e4c" compoundref="ui__mainwindow_8h" startline="83">Ui_MainWindow::CUBE</references>
+        <references refid="class_main_window_1a7e0ee20d8b3f6c4638ddced7d894c595" compoundref="mainwindow_8cpp" startline="563" endline="569">CUBEClicked</references>
+        <references refid="class_ui___main_window_1afcd80e9772c362343c8b1343fe9cc46f" compoundref="ui__mainwindow_8h" startline="100">Ui_MainWindow::annuler</references>
+        <references refid="class_main_window_1ad796f3d5c13e4ed2ea90e17aa0a3d7a8" compoundref="mainwindow_8cpp" startline="641" endline="644">annulerClicked</references>
+        <references refid="class_ui___main_window_1a63ba859b403fa2f74b1e5f3b3f258575" compoundref="ui__mainwindow_8h" startline="101">Ui_MainWindow::retablir</references>
+        <references refid="class_main_window_1abc93f16a699c5df5e5aedd67e1ad7e92" compoundref="mainwindow_8cpp" startline="645" endline="648">retablirClicked</references>
+        <references refid="class_ui___main_window_1a48b51edf0d95abf4e0da82b6846d7c3d" compoundref="ui__mainwindow_8h" startline="102">Ui_MainWindow::vider_pile</references>
+        <references refid="class_main_window_1a164eb394f8581e1f80fba559bcc3d2e5" compoundref="mainwindow_8cpp" startline="101" endline="105">vider_pileClicked</references>
+        <references refid="class_ui___main_window_1a6b4a0425c46ea6e3c9c530196d69b695" compoundref="ui__mainwindow_8h" startline="103">Ui_MainWindow::supprimer_tete_pile</references>
+        <references refid="class_main_window_1a10bc645984994b33d7176946fc06eff2" compoundref="mainwindow_8cpp" startline="107" endline="112">supprimer_tete_pileClicked</references>
+        <references refid="class_ui___main_window_1af9616decd222a39cd79adc405991d373" compoundref="ui__mainwindow_8h" startline="104">Ui_MainWindow::dupliquer_tete_pile</references>
+        <references refid="class_main_window_1a4d771b6ac11d2280aa5e45e4d47a2011" compoundref="mainwindow_8cpp" startline="114" endline="120">dupliquer_tete_pileClicked</references>
+        <references refid="class_ui___main_window_1aface0fc9ed198a25292a75ce279e02c8" compoundref="ui__mainwindow_8h" startline="98">Ui_MainWindow::_clavierBasic</references>
+        <references refid="class_main_window_1a0056914c89217bbef8879ccae4466e28" compoundref="mainwindow_8cpp" startline="237" endline="253">_clavierBasicStateChange</references>
+        <references refid="class_ui___main_window_1a322846c1c07376202f7e18ce4b80e81a" compoundref="ui__mainwindow_8h" startline="99">Ui_MainWindow::_clavierAvance</references>
+        <references refid="class_main_window_1a9200740951f715069c9f2bc7809f6e07" compoundref="mainwindow_8cpp" startline="255" endline="268">_clavierAvanceStateChange</references>
+        <references refid="class_ui___main_window_1a1da65de8d4c3c8d5bbf78b0e7796cacf" compoundref="ui__mainwindow_8h" startline="89">Ui_MainWindow::_modComplexeOFF</references>
+        <references refid="class_main_window_1a85b97292e1728650fc34d989170a0886" compoundref="mainwindow_8cpp" startline="222" endline="235">_modComplexeOFFClicked</references>
+        <references refid="class_ui___main_window_1a905fbcb76b7a5accc476b5c1c9391ea5" compoundref="ui__mainwindow_8h" startline="88">Ui_MainWindow::_modComplexeON</references>
+        <references refid="class_main_window_1a6febb02daee1abb1c9c0d0f9d190b25c" compoundref="mainwindow_8cpp" startline="207" endline="220">_modComplexeONClicked</references>
+        <references refid="class_ui___main_window_1a8d6879ed9b5c3d2cf3b9adda602ff3f2" compoundref="ui__mainwindow_8h" startline="91">Ui_MainWindow::_modDegres</references>
+        <references refid="class_main_window_1aa181a30bc86fd676299a828b6806fff7" compoundref="mainwindow_8cpp" startline="179" endline="191">_modDegresToggled</references>
+        <references refid="class_ui___main_window_1a55f174647d09c0bd1a532524444d79ee" compoundref="ui__mainwindow_8h" startline="92">Ui_MainWindow::_modRadians</references>
+        <references refid="class_main_window_1ae1cb8b4b1f79083accb25c66e6847abc" compoundref="mainwindow_8cpp" startline="193" endline="205">_modRadiansToggled</references>
+        <references refid="class_ui___main_window_1a86335a0c2e9f36f7c9b8cd195b25a1c0" compoundref="ui__mainwindow_8h" startline="94">Ui_MainWindow::_modEntiers</references>
+        <references refid="class_main_window_1a05cfdc8bf99fa145e67ce4d9eed03f20" compoundref="mainwindow_8cpp" startline="308" endline="324">_modEntier</references>
+        <references refid="class_ui___main_window_1a533df173469e3e35768e358b00758ae4" compoundref="ui__mainwindow_8h" startline="95">Ui_MainWindow::_modRationnels</references>
+        <references refid="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" compoundref="mainwindow_8cpp" startline="289" endline="305">_modRationnel</references>
+        <references refid="class_ui___main_window_1a4b3a8bd75eb6ad2a9be60867badc9a41" compoundref="ui__mainwindow_8h" startline="96">Ui_MainWindow::_modReels</references>
+        <references refid="class_main_window_1a29e8205bc963cebba7a96f94f4d3c40f" compoundref="mainwindow_8cpp" startline="270" endline="286">_modReel</references>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" compoundref="calculatrice_8h" startline="46" endline="46">Calculatrice::getPileStockage</references>
+        <references refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" compoundref="ui__mainwindow_8h" startline="85">Ui_MainWindow::listView</references>
       </memberdef>
-      <memberdef kind="function" id="class_main_window_1a2a1ee33b84e16a22e7656bc43220483d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void MainWindow::traitement_expr</definition>
-        <argsstring>(int i, int j, QStringList list)</argsstring>
-        <name>traitement_expr</name>
+      <memberdef kind="function" id="class_main_window_1aa9bae53abcb888f5e8cda8aa654e50e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool MainWindow::dernier_element_expression</definition>
+        <argsstring>(QString chaine)</argsstring>
+        <name>dernier_element_expression</name>
         <param>
-          <type>int</type>
-          <declname>i</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>j</declname>
-        </param>
-        <param>
-          <type>QStringList</type>
-          <declname>list</declname>
+          <type>QString</type>
+          <declname>chaine</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -195,7 +199,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="48" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="1089" bodyend="1104"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="41" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="885" bodyend="906"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" compoundref="calculatrice_8h" startline="46" endline="46">Calculatrice::getPileStockage</references>
+        <references refid="class_pile_1a2bbdc329f485cd017f8cbf88456ae68a" compoundref="pile_8cpp" startline="74" endline="90">Pile::pop</references>
+        <references refid="class_main_window_1a5820c5fa916142942adc9984c434793e" compoundref="mainwindow_8cpp" startline="838" endline="846">traiter_bloc_expression</references>
+        <references refid="class_pile_1a18a4d9a9b8013b36a5423817f9fb9049" compoundref="pile_8cpp" startline="8" endline="15">Pile::push</references>
+        <referencedby refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" compoundref="mainwindow_8cpp" startline="649" endline="706">ENTERClicked</referencedby>
       </memberdef>
       <memberdef kind="function" id="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -207,25 +217,92 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="49" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="1078" bodyend="1081"/>
+<para>Destructeur de <ref refid="class_main_window" kindref="compound">MainWindow</ref></para><para>Destruction de ui</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="42" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="632" bodyend="639"/>
       </memberdef>
-      <memberdef kind="function" id="class_main_window_1a71be435db24c12ee4c320a16a0b33ef6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_main_window_1a5820c5fa916142942adc9984c434793e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void MainWindow::empiler</definition>
-        <argsstring>(float r)</argsstring>
-        <name>empiler</name>
+        <definition>void MainWindow::traiter_bloc_expression</definition>
+        <argsstring>(QString s)</argsstring>
+        <name>traiter_bloc_expression</name>
         <param>
-          <type>float</type>
-          <declname>r</declname>
+          <type>QString</type>
+          <declname>s</declname>
         </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="50" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="1083" bodyend="1086"/>
+<para>Traitement d&apos;un expression</para><para>Crée une expression avec la chaine passée en argument et empile cette chaine. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une QString</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="43" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="838" bodyend="846"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" compoundref="calculatrice_8h" startline="46" endline="46">Calculatrice::getPileStockage</references>
+        <references refid="class_pile_1a18a4d9a9b8013b36a5423817f9fb9049" compoundref="pile_8cpp" startline="8" endline="15">Pile::push</references>
+        <referencedby refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" compoundref="mainwindow_8cpp" startline="649" endline="706">ENTERClicked</referencedby>
+        <referencedby refid="class_main_window_1aa9bae53abcb888f5e8cda8aa654e50e5" compoundref="mainwindow_8cpp" startline="885" endline="906">dernier_element_expression</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_main_window_1a1ccb4aa361ba5710af1ee09263a994fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::traiter_bloc_calcul</definition>
+        <argsstring>(QString s)</argsstring>
+        <name>traiter_bloc_calcul</name>
+        <param>
+          <type>QString</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Traitement d&apos;un bloc calcul</para><para>Permet de traiter un bloc de calcul. Effectue un split en fonction de l&apos;espace, puis regarde pour chaque membre de la liste si c&apos;est un opérateur. Si c&apos;est le cas, on dépile un premier opérande. Si, de plus, c&apos;est un opérateur binaire, alors on dépile un deuxième opérande. On effectue ensuite le calcul puis on empile le résultat <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Une QString</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="44" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="708" bodyend="793"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1af2b58ecc00a772e959e166645c802cf2" compoundref="calculatrice_8h" startline="52" endline="52">Calculatrice::getMesureAngle</references>
+        <references refid="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6aaaaea1ab3c48044ff4c241e60aa12973e" compoundref="mainwindow_8h" startline="22">degre</references>
+        <references refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" compoundref="calculatrice_8h" startline="46" endline="46">Calculatrice::getPileStockage</references>
+        <references refid="class_pile_1ae45e55f151180284728643cb9cfe4095" compoundref="pile_8h" startline="21" endline="21">Pile::isEmpty</references>
+        <references refid="class_pile_1a2bbdc329f485cd017f8cbf88456ae68a" compoundref="pile_8cpp" startline="74" endline="90">Pile::pop</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71adf401a3bb36823971749977b65761888" compoundref="logmessage_8h" startline="17">moyen</references>
+        <references refid="class_pile_1a18a4d9a9b8013b36a5423817f9fb9049" compoundref="pile_8cpp" startline="8" endline="15">Pile::push</references>
+        <references refid="class_constante_1a243b6eabd1fd476af827c5b523cddfac" compoundref="constante_8h" startline="35" endline="35">Constante::addition</references>
+        <references refid="class_constante_1a650e88b74d2f8a052e6a11363b3ec816" compoundref="constante_8h" startline="36" endline="36">Constante::produit</references>
+        <references refid="class_constante_1ac41fa56ac5ebdfbcc886b8d249fb876d" compoundref="constante_8h" startline="37" endline="37">Constante::division</references>
+        <references refid="class_constante_1a3f3e5ad91d9e4eef33a5e6955fe91cb5" compoundref="constante_8h" startline="40" endline="40">Constante::soustraction</references>
+        <references refid="class_constante_1a96e23d33bd45f79589f8911473ef2e32" compoundref="constante_8h" startline="42" endline="42">Constante::fact</references>
+        <references refid="class_constante_1a3b6827eba7936c4ce61f64da9dd826b4" compoundref="constante_8h" startline="43" endline="43">Constante::sinus</references>
+        <references refid="class_constante_1a101b4506f71295a23c764d34b7f7ecfb" compoundref="constante_8h" startline="45" endline="45">Constante::sinush</references>
+        <references refid="class_constante_1af6784ed749b7f2be92d6017628e5b935" compoundref="constante_8h" startline="44" endline="44">Constante::cosinus</references>
+        <references refid="class_constante_1a0b1cbba53e1112aa65a081ae6231acb5" compoundref="constante_8h" startline="46" endline="46">Constante::cosinush</references>
+        <references refid="class_constante_1a51bffad2fa33a397de6ed422a621b1a1" compoundref="constante_8h" startline="47" endline="47">Constante::tangente</references>
+        <references refid="class_constante_1a6f5f971e61ac831355f1182289c3952f" compoundref="constante_8h" startline="48" endline="48">Constante::tangenteh</references>
+        <references refid="class_constante_1a5ea6dd472ce568576961fa78b3b674b5" compoundref="constante_8h" startline="41" endline="41">Constante::inv</references>
+        <references refid="class_constante_1a59fcc22949ea02eb02244dad693696aa" compoundref="constante_8h" startline="38" endline="38">Constante::signe</references>
+        <references refid="class_constante_1af8029cf3c52e8fdadeb21647ee9591f3" compoundref="constante_8h" startline="52" endline="52">Constante::carre</references>
+        <references refid="class_constante_1a57604347a44e29f6aa7e36a045b4df1c" compoundref="constante_8h" startline="54" endline="54">Constante::racine</references>
+        <references refid="class_constante_1a4590414eecfb9e739194a321a73c7931" compoundref="constante_8h" startline="53" endline="53">Constante::cube</references>
+        <references refid="class_constante_1aa28e3269159806101c2ac0d09c036c2c" compoundref="constante_8h" startline="49" endline="49">Constante::logN</references>
+        <references refid="class_constante_1a2ed5e0a77fb7766fbce6abb4ebd0b01e" compoundref="constante_8h" startline="51" endline="51">Constante::puissance</references>
+        <references refid="class_constante_1aad178503c937682acd3c9f19aec37dc6" compoundref="constante_8h" startline="50" endline="50">Constante::log1</references>
+        <references refid="mainwindow_8cpp_1a108d15359aba86f26b1bb30e7d0fd505" compoundref="mainwindow_8cpp" startline="795" endline="836">stringToConstante</references>
+        <referencedby refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" compoundref="mainwindow_8cpp" startline="649" endline="706">ENTERClicked</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-slot">
@@ -239,8 +316,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="53" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="400" bodyend="402"/>
+<para>Clic sur le bouton POW</para><para>Lorsque l&apos;on clique sur le bouton POW, on ajoute POW sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="48" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="475" bodyend="481"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a694058b9993bdad7bf4c96b7bae1af37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -252,8 +331,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="54" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="404" bodyend="406"/>
+<para>Clic sur le bouton SIN</para><para>Lorsque l&apos;on clique sur le bouton SIN, on ajoute SIN sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="49" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="483" bodyend="489"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1acc7b69effe16bf3936be897b1e9697a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -265,8 +346,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="55" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="408" bodyend="410"/>
+<para>Clic sur le bouton COS</para><para>Lorsque l&apos;on clique sur le bouton COS, on ajoute COS sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="50" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="491" bodyend="497"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1abd6beb62d32cc0922fd78819e3c4a9cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -278,8 +361,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="56" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="412" bodyend="414"/>
+<para>Clic sur le bouton TAN</para><para>Lorsque l&apos;on clique sur le bouton TAN, on ajoute TAN sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="51" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="499" bodyend="505"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1ae18b7a59154a29d9166dae53a02da0cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -291,8 +376,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="57" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="416" bodyend="418"/>
+<para>Clic sur le bouton SINH</para><para>Lorsque l&apos;on clique sur le bouton SINH, on ajoute SINH sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="52" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="507" bodyend="513"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1ae0cb839c1a84f68cfe7d55d75679bf32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -304,8 +391,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="58" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="420" bodyend="422"/>
+<para>Clic sur le bouton COSH</para><para>Lorsque l&apos;on clique sur le bouton COSH, on ajoute COSH sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="53" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="515" bodyend="521"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a9674367d1b35c2b7fcb37547982c7142" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -317,8 +406,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="59" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="424" bodyend="426"/>
+<para>Clic sur le bouton TANH</para><para>Lorsque l&apos;on clique sur le bouton TANH, on ajoute TANH sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="54" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="523" bodyend="529"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a4edf9a5fcb637c43e2d4d4e107fd0c62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -330,8 +421,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="60" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="428" bodyend="430"/>
+<para>Clic sur le bouton MOD</para><para>Lorsque l&apos;on clique sur le bouton MOD, on ajoute MOD sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="55" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="531" bodyend="537"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1aada810f5e314c0180e159729f1af13f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -343,8 +436,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="61" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="432" bodyend="434"/>
+<para>Clic sur le bouton SIGN</para><para>Lorsque l&apos;on clique sur le bouton SIGN, on ajoute SIGN sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="56" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="539" bodyend="545"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a16e852b776efdec4876c32f0fb56a5b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -356,8 +451,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="62" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="448" bodyend="450"/>
+<para>Clic sur le bouton LN</para><para>Lorsque l&apos;on clique sur le bouton LN, on ajoute LN sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="57" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="571" bodyend="577"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a0e9e909347465ac2945668a5229c4688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -369,8 +466,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="63" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="452" bodyend="454"/>
+<para>Clic sur le bouton LOG</para><para>Lorsque l&apos;on clique sur le bouton LOG, on ajoute LOG sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="58" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="579" bodyend="585"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a254c2a0ab491f878157d6abb8d4a8381" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -382,8 +481,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="64" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="456" bodyend="458"/>
+<para>Clic sur le bouton INV</para><para>Lorsque l&apos;on clique sur le bouton INV, on ajoute INV sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="59" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="587" bodyend="593"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1ad6048a7bb41b1e0ac37bb1f05e458cc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -395,8 +496,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="65" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="436" bodyend="438"/>
+<para>Clic sur le bouton SQR</para><para>Lorsque l&apos;on clique sur le bouton SQR, on ajoute SQR sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="60" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="547" bodyend="553"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a40ff97255a9f62068bf20312468060dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -408,8 +511,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="66" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="440" bodyend="442"/>
+<para>Clic sur le bouton SQRT</para><para>Lorsque l&apos;on clique sur le bouton SQRT, on ajoute SQRT sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="61" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="555" bodyend="561"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a7e0ee20d8b3f6c4638ddced7d894c595" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -421,8 +526,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="67" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="444" bodyend="446"/>
+<para>Clic sur le bouton CUBE</para><para>Lorsque l&apos;on clique sur le bouton CUBE, on ajoute CUBE sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="62" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="563" bodyend="569"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1aa3cc15e4ab21e8d1d02b2c908f7ed955" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -434,8 +541,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="68" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="464" bodyend="466"/>
+<para>Clic sur le bouton &apos;</para><para>Lorsque l&apos;on clique sur le bouton &apos;, on ajoute &apos; sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="63" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="603" bodyend="609"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1acd5bbd32604f72b223e69a58088ddabd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -447,8 +556,11 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="69" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="472" bodyend="476"/>
+<para>Clic sur le bouton C</para><para>Lorsque l&apos;on clique sur le bouton C, on retire le dernier caractère entré sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="64" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="621" bodyend="630"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <references refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" compoundref="ui__mainwindow_8h" startline="85">Ui_MainWindow::listView</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a1a093a266d6f67c63e27b410de323e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -460,8 +572,11 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="70" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="468" bodyend="470"/>
+<para>Clic sur le bouton CE</para><para>Lorsque l&apos;on clique sur le bouton CE, on retire tout ce qu&apos;il y a sur la inputline, et on reset la listview</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="65" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="611" bodyend="619"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <references refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" compoundref="ui__mainwindow_8h" startline="85">Ui_MainWindow::listView</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1adc9d3f1638131c5d291c54380fda801f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -473,8 +588,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="71" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="460" bodyend="462"/>
+<para>Clic sur le bouton $</para><para>Lorsque l&apos;on clique sur le bouton $, on ajoute $ sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="66" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="595" bodyend="601"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1ab408f985cff16c7d939d48cfa3d5f0b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -486,8 +603,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="72" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="328" bodyend="331"/>
+<para>Clic sur le bouton 0</para><para>Lorsque l&apos;on clique sur le bouton 0, on ajoute 0 sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="67" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="335" bodyend="342"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a538b702a2feed14f756f9fff0a53d2f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -499,8 +618,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="73" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="333" bodyend="335"/>
+<para>Clic sur le bouton 1</para><para>Lorsque l&apos;on clique sur le bouton 1, on ajoute 1 sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="68" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="344" bodyend="350"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a857a81084ff261633c9896f24bdd6fb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -512,8 +633,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="74" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="337" bodyend="339"/>
+<para>Clic sur le bouton 2</para><para>Lorsque l&apos;on clique sur le bouton 2, on ajoute 2 sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="69" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="352" bodyend="358"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1aaf2e8e4cdcabb0c9cd2496e662038b64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -525,8 +648,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="75" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="341" bodyend="343"/>
+<para>Clic sur le bouton 3</para><para>Lorsque l&apos;on clique sur le bouton 3, on ajoute 3 sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="70" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="360" bodyend="366"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a6d79c0dc7b05f66d0dd2d5eb57d870a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -538,8 +663,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="76" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="346" bodyend="348"/>
+<para>Clic sur le bouton 4</para><para>Lorsque l&apos;on clique sur le bouton 4, on ajoute 4 sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="71" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="369" bodyend="375"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a9dfa9a2ba4c04d27047f1b6cf50eb309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -551,8 +678,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="77" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="350" bodyend="352"/>
+<para>Clic sur le bouton 5</para><para>Lorsque l&apos;on clique sur le bouton 5, on ajoute 5 sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="72" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="377" bodyend="383"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1ae581f160bb58ff7b92fb10488dad1cb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -564,8 +693,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="78" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="354" bodyend="356"/>
+<para>Clic sur le bouton 6</para><para>Lorsque l&apos;on clique sur le bouton 6, on ajoute 6 sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="73" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="385" bodyend="391"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1ae34dccd3c4bdff6452250ec4807977e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -577,8 +708,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="79" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="358" bodyend="360"/>
+<para>Clic sur le bouton 7</para><para>Lorsque l&apos;on clique sur le bouton 7, on ajoute 7 sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="74" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="393" bodyend="399"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1ab86f29d78da5c85373b2126cdbfadf78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -590,8 +723,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="80" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="362" bodyend="364"/>
+<para>Clic sur le bouton 8</para><para>Lorsque l&apos;on clique sur le bouton 8, on ajoute 8 sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="75" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="401" bodyend="407"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a48cd898abe91cf0b7784dfce7258b8f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -603,8 +738,25 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="81" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="366" bodyend="368"/>
+<para>Clic sur le bouton 9</para><para>Lorsque l&apos;on clique sur le bouton 9, on ajoute 8 sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="76" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="409" bodyend="415"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a5c1743c01e8cf19b5b0e678a09734363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::PIBOUTONClicked</definition>
+        <argsstring>()</argsstring>
+        <name>PIBOUTONClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Clic sur le bouton PI</para><para>Lorsque l&apos;on clique sur le bouton 0, on ajoute une valeur approchée de PI sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="77" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="326" bodyend="333"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a96f5509a262bda1ee40ceaddb081bff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -616,8 +768,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="82" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="371" bodyend="373"/>
+<para>Clic sur le bouton &quot;.&quot;</para><para>Lorsque l&apos;on clique sur le bouton &quot;.&quot;, on ajoute un point sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="78" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="418" bodyend="424"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a4f3a33c651ac011d7a4ee62f70c88e44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -629,8 +783,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="83" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="376" bodyend="378"/>
+<para>Clic sur le bouton espace</para><para>Lorsque l&apos;on clique sur le bouton &quot;_&quot;, on ajoute un espace sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="79" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="427" bodyend="433"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a97ac3886016cc9dc1cc7ae1be4abac65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -642,8 +798,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="84" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="380" bodyend="382"/>
+<para>Clic sur le bouton !</para><para>Lorsque l&apos;on clique sur le bouton !, on ajoute ! sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="80" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="435" bodyend="441"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a7babfc70d1010ea3e7efe67b788e0ec5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -655,8 +813,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="85" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="384" bodyend="386"/>
+<para>Clic sur le bouton +</para><para>Lorsque l&apos;on clique sur le bouton +, on ajoute + sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="81" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="443" bodyend="449"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1aef8aa8858f4a280f6da4ef6f6b4cf208" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -668,8 +828,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="86" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="388" bodyend="390"/>
+<para>Clic sur le bouton -</para><para>Lorsque l&apos;on clique sur le bouton -, on ajoute - sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="82" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="451" bodyend="457"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a0fe4c051d0deac4c5eec64a6cd3d3682" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -681,8 +843,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="87" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="392" bodyend="394"/>
+<para>Clic sur le bouton *</para><para>Lorsque l&apos;on clique sur le bouton *, on ajoute * sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="83" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="459" bodyend="465"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a785abff91c01b674c3b795dc289ae629" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -694,8 +858,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="88" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="396" bodyend="398"/>
+<para>Clic sur le bouton /</para><para>Lorsque l&apos;on clique sur le bouton /, on ajoute / sur la inputline</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="84" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="467" bodyend="473"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a0056914c89217bbef8879ccae4466e28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -711,8 +877,21 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="89" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="266" bodyend="277"/>
+<para>Clavier basique</para><para>Permet de montrer ou de cacher le clavier basique, selon la valeur du paramètre <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cochee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_entier" kindref="compound">Entier</ref> permettant de savoir si on cache ou non le clavier basique</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="85" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="237" bodyend="253"/>
+        <references refid="class_ui___main_window_1a4684b35f7b6ce7e3b2372b2b01037ea2" compoundref="ui__mainwindow_8h" startline="39">Ui_MainWindow::widget_clavierBasic</references>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1ac1fd3f178488afb8bc25dae790a9756d" compoundref="calculatrice_8h" startline="55" endline="55">Calculatrice::getContext</references>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a9200740951f715069c9f2bc7809f6e07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -728,8 +907,20 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="90" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="279" bodyend="287"/>
+<para>Clavier avancé</para><para>Permet de montrer ou de cacher le clavier avancé, selon la valeur du paramètre <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cochee</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="class_entier" kindref="compound">Entier</ref> permettant de savoir si on cache ou non le clavier avancé</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="86" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="255" bodyend="268"/>
+        <references refid="class_ui___main_window_1afc376b376159bf114d26ad55b43e87b0" compoundref="ui__mainwindow_8h" startline="66">Ui_MainWindow::widget_clavierAvance</references>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1ac1fd3f178488afb8bc25dae790a9756d" compoundref="calculatrice_8h" startline="55" endline="55">Calculatrice::getContext</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a6febb02daee1abb1c9c0d0f9d190b25c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -745,8 +936,23 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="91" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="238" bodyend="250"/>
+<para>Mode <ref refid="class_complexe" kindref="compound">Complexe</ref> actif</para><para>Passage en mode complexe <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen permettant de déterminer si le mode est activé</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="87" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="207" bodyend="220"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1ab5ad75216e44c3ca263c2706083def2b" compoundref="calculatrice_8h" startline="58" endline="58">Calculatrice::setModComplexe</references>
+        <references refid="class_ui___main_window_1a56acbb096ec7433f9afe533b440d8123" compoundref="ui__mainwindow_8h" startline="53">Ui_MainWindow::DOLLAR</references>
+        <references refid="class_calculatrice_1ac1fd3f178488afb8bc25dae790a9756d" compoundref="calculatrice_8h" startline="55" endline="55">Calculatrice::getContext</references>
+        <references refid="class_main_window_1a85b97292e1728650fc34d989170a0886" compoundref="mainwindow_8cpp" startline="222" endline="235">_modComplexeOFFClicked</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
+        <referencedby refid="class_main_window_1a85b97292e1728650fc34d989170a0886" compoundref="mainwindow_8cpp" startline="222" endline="235">_modComplexeOFFClicked</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a85b97292e1728650fc34d989170a0886" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -762,8 +968,23 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="92" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="252" bodyend="264"/>
+<para>Mode <ref refid="class_complexe" kindref="compound">Complexe</ref> inactif</para><para>Passage en mode complexe <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen permettant de déterminer si le mode est désactivé</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="88" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="222" bodyend="235"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1ab5ad75216e44c3ca263c2706083def2b" compoundref="calculatrice_8h" startline="58" endline="58">Calculatrice::setModComplexe</references>
+        <references refid="class_ui___main_window_1a56acbb096ec7433f9afe533b440d8123" compoundref="ui__mainwindow_8h" startline="53">Ui_MainWindow::DOLLAR</references>
+        <references refid="class_calculatrice_1ac1fd3f178488afb8bc25dae790a9756d" compoundref="calculatrice_8h" startline="55" endline="55">Calculatrice::getContext</references>
+        <references refid="class_main_window_1a6febb02daee1abb1c9c0d0f9d190b25c" compoundref="mainwindow_8cpp" startline="207" endline="220">_modComplexeONClicked</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
+        <referencedby refid="class_main_window_1a6febb02daee1abb1c9c0d0f9d190b25c" compoundref="mainwindow_8cpp" startline="207" endline="220">_modComplexeONClicked</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1ae1cb8b4b1f79083accb25c66e6847abc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -779,8 +1000,23 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="93" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="227" bodyend="236"/>
+<para>Mode Radian</para><para>Passage en mode radian <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen permettant de déterminer le mode</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="89" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="193" bodyend="205"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1a51db82ce20ffafc4a6188b9f13b27fe1" compoundref="calculatrice_8h" startline="57" endline="57">Calculatrice::setMesureAngle</references>
+        <references refid="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6aae016078d0a68a6325ab6c0a3e53969b0" compoundref="mainwindow_8h" startline="22">radian</references>
+        <references refid="class_calculatrice_1ac1fd3f178488afb8bc25dae790a9756d" compoundref="calculatrice_8h" startline="55" endline="55">Calculatrice::getContext</references>
+        <references refid="class_main_window_1aa181a30bc86fd676299a828b6806fff7" compoundref="mainwindow_8cpp" startline="179" endline="191">_modDegresToggled</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
+        <referencedby refid="class_main_window_1aa181a30bc86fd676299a828b6806fff7" compoundref="mainwindow_8cpp" startline="179" endline="191">_modDegresToggled</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1aa181a30bc86fd676299a828b6806fff7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -796,8 +1032,23 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="94" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="216" bodyend="225"/>
+<para>Mode Degré</para><para>Passage en mode degré <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen permettant de déterminer le mode</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="90" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="179" bodyend="191"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1a51db82ce20ffafc4a6188b9f13b27fe1" compoundref="calculatrice_8h" startline="57" endline="57">Calculatrice::setMesureAngle</references>
+        <references refid="mainwindow_8h_1ac57a15745dfbb2ebe6ba80230b7e5c6aaaaea1ab3c48044ff4c241e60aa12973e" compoundref="mainwindow_8h" startline="22">degre</references>
+        <references refid="class_calculatrice_1ac1fd3f178488afb8bc25dae790a9756d" compoundref="calculatrice_8h" startline="55" endline="55">Calculatrice::getContext</references>
+        <references refid="class_main_window_1ae1cb8b4b1f79083accb25c66e6847abc" compoundref="mainwindow_8cpp" startline="193" endline="205">_modRadiansToggled</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
+        <referencedby refid="class_main_window_1ae1cb8b4b1f79083accb25c66e6847abc" compoundref="mainwindow_8cpp" startline="193" endline="205">_modRadiansToggled</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a29e8205bc963cebba7a96f94f4d3c40f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -813,8 +1064,24 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="95" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="289" bodyend="299"/>
+<para>Mode réel</para><para>Permet le passage du mode constante en réel, en fonction de la valeur du paramètre, puis sauvegarder dans un fichier <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen permettant le passage dans ce mode</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="91" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="270" bodyend="286"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1a349cc6b05ea447fb0bde7221b560dab0" compoundref="calculatrice_8h" startline="56" endline="56">Calculatrice::setModConstante</references>
+        <references refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7ab76fc0da4fc267a87fce3e239e9b0290" compoundref="constante_8h" startline="25">reel</references>
+        <references refid="class_calculatrice_1ac1fd3f178488afb8bc25dae790a9756d" compoundref="calculatrice_8h" startline="55" endline="55">Calculatrice::getContext</references>
+        <references refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" compoundref="ui__mainwindow_8h" startline="85">Ui_MainWindow::listView</references>
+        <references refid="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" compoundref="mainwindow_8cpp" startline="289" endline="305">_modRationnel</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
+        <referencedby refid="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" compoundref="mainwindow_8cpp" startline="289" endline="305">_modRationnel</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -830,8 +1097,25 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-        </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="96" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="302" bodyend="312"/>
+<para>Mode rationnel</para><para>Permet le passage du mode constante en rationnel, en fonction de la valeur du paramètre, puis sauvegarder dans un fichier <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen permettant le passage dans ce mode</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="92" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="289" bodyend="305"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1a349cc6b05ea447fb0bde7221b560dab0" compoundref="calculatrice_8h" startline="56" endline="56">Calculatrice::setModConstante</references>
+        <references refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7a0ec75e38f86c720d5b37dac4e7efbeb5" compoundref="constante_8h" startline="24">rationnel</references>
+        <references refid="class_calculatrice_1ac1fd3f178488afb8bc25dae790a9756d" compoundref="calculatrice_8h" startline="55" endline="55">Calculatrice::getContext</references>
+        <references refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" compoundref="ui__mainwindow_8h" startline="85">Ui_MainWindow::listView</references>
+        <references refid="class_main_window_1a29e8205bc963cebba7a96f94f4d3c40f" compoundref="mainwindow_8cpp" startline="270" endline="286">_modReel</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
+        <referencedby refid="class_main_window_1a29e8205bc963cebba7a96f94f4d3c40f" compoundref="mainwindow_8cpp" startline="270" endline="286">_modReel</referencedby>
+        <referencedby refid="class_main_window_1a05cfdc8bf99fa145e67ce4d9eed03f20" compoundref="mainwindow_8cpp" startline="308" endline="324">_modEntier</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a05cfdc8bf99fa145e67ce4d9eed03f20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -847,8 +1131,57 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
+<para>Mode rationnel</para><para>Permet le passage du mode constante en rationnel, en fonction de la valeur du paramètre, puis sauvegarder dans un fichier <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Booléen permettant le passage dans ce mode</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="93" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="308" bodyend="324"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1a349cc6b05ea447fb0bde7221b560dab0" compoundref="calculatrice_8h" startline="56" endline="56">Calculatrice::setModConstante</references>
+        <references refid="constante_8h_1a1d1cfd8ffb84e947f82999c682b666a7a310a841612cf153caf2103c7d7136070" compoundref="constante_8h" startline="23">entier</references>
+        <references refid="class_calculatrice_1ac1fd3f178488afb8bc25dae790a9756d" compoundref="calculatrice_8h" startline="55" endline="55">Calculatrice::getContext</references>
+        <references refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" compoundref="ui__mainwindow_8h" startline="85">Ui_MainWindow::listView</references>
+        <references refid="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" compoundref="mainwindow_8cpp" startline="289" endline="305">_modRationnel</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1abc93f16a699c5df5e5aedd67e1ad7e92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::retablirClicked</definition>
+        <argsstring>()</argsstring>
+        <name>retablirClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="97" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="315" bodyend="325"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="95" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="645" bodyend="648"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1ac9fea1beaab60d0c73c017a5d225a56c" compoundref="calculatrice_8cpp" startline="97" endline="106">Calculatrice::retablir</references>
+        <references refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" compoundref="ui__mainwindow_8h" startline="85">Ui_MainWindow::listView</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1ad796f3d5c13e4ed2ea90e17aa0a3d7a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::annulerClicked</definition>
+        <argsstring>()</argsstring>
+        <name>annulerClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="96" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="641" bodyend="644"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1ae04068faaa66847c3f318c018824a277" compoundref="calculatrice_8cpp" startline="85" endline="95">Calculatrice::annuler</references>
+        <references refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" compoundref="ui__mainwindow_8h" startline="85">Ui_MainWindow::listView</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       <memberdef kind="slot" id="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -860,44 +1193,133 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
+<para>Clic sur le bouton ENTER</para><para>Récupération de la inputline sous forme de QString et traitement de plusieurs cas. En fonction de l&apos;interrupteur booléen <emphasis>dans_une_exp</emphasis>, on va déterminer si l&apos;on se trouve ou non dans une expression. En fonction de cela, on enverra soit la fonction <emphasis>traiter_bloc_expression</emphasis>, soit la fonction <emphasis>traiter_bloc_calcul</emphasis> </para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="97" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="649" bodyend="706"/>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" compoundref="calculatrice_8h" startline="46" endline="46">Calculatrice::getPileStockage</references>
+        <references refid="class_pile_1a4be384a2c00fff0afed507231a2974dc" compoundref="pile_8cpp" startline="155" endline="166">Pile::copier_pile</references>
+        <references refid="class_calculatrice_1acc6b301035c21041dbd4ffb7f6f5645e" compoundref="calculatrice_8cpp" startline="73" endline="83">Calculatrice::saisie_nouvelle_pile</references>
+        <references refid="class_main_window_1aa9bae53abcb888f5e8cda8aa654e50e5" compoundref="mainwindow_8cpp" startline="885" endline="906">dernier_element_expression</references>
+        <references refid="class_main_window_1a5820c5fa916142942adc9984c434793e" compoundref="mainwindow_8cpp" startline="838" endline="846">traiter_bloc_expression</references>
+        <references refid="class_main_window_1a1ccb4aa361ba5710af1ee09263a994fe" compoundref="mainwindow_8cpp" startline="708" endline="793">traiter_bloc_calcul</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" compoundref="logmessage_8h" startline="17">important</references>
+        <references refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" compoundref="ui__mainwindow_8h" startline="85">Ui_MainWindow::listView</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
+        <referencedby refid="class_main_window_1a2472c42b862ef1dc38b75c4111a28590" compoundref="mainwindow_8cpp" startline="848" endline="882">EVALClicked</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a2472c42b862ef1dc38b75c4111a28590" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::EVALClicked</definition>
+        <argsstring>()</argsstring>
+        <name>EVALClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>EVALClicked</para><para>Lorsque l&apos;on clique sur EVAL, on vérifie que la pile est non vide, que son dernier élément est une expression puis on simule une saisie de l&apos;expression dans la QTextLine suivi d&apos;un click sur ENTER.</para>        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="98" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="848" bodyend="882"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" compoundref="calculatrice_8h" startline="46" endline="46">Calculatrice::getPileStockage</references>
+        <references refid="class_pile_1a2bbdc329f485cd017f8cbf88456ae68a" compoundref="pile_8cpp" startline="74" endline="90">Pile::pop</references>
+        <references refid="class_ui___main_window_1ade144a88c11ba1e7ef5e5e33036eea35" compoundref="ui__mainwindow_8h" startline="84">Ui_MainWindow::inputLine</references>
+        <references refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" compoundref="mainwindow_8cpp" startline="649" endline="706">ENTERClicked</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71aafb733ab41298343829a774830914459" compoundref="logmessage_8h" startline="17">tracabilite</references>
+        <references refid="class_log_system_1ab5b398fac784d6c20576829056a364a2" compoundref="logsystem_8cpp" startline="8" endline="11">LogSystem::getInstance</references>
+        <references refid="class_log_system_1a29ba53a9628ac2c2c517bf751cb84a9a" compoundref="logsystem_8cpp" startline="21" endline="24">LogSystem::ajouterFcihierEtConsole</references>
+        <references refid="logmessage_8h_1ac0565c81f330a720d673510e0886bb71ad1ddbfba3ebb4db9f8a7c5af53b23777" compoundref="logmessage_8h" startline="17">important</references>
+        <references refid="class_pile_1a18a4d9a9b8013b36a5423817f9fb9049" compoundref="pile_8cpp" startline="8" endline="15">Pile::push</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a164eb394f8581e1f80fba559bcc3d2e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::vider_pileClicked</definition>
+        <argsstring>()</argsstring>
+        <name>vider_pileClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
         </inbodydescription>
-        <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="99" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.cpp" bodystart="478" bodyend="1076"/>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="99" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="101" bodyend="105"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1acc6b301035c21041dbd4ffb7f6f5645e" compoundref="calculatrice_8cpp" startline="73" endline="83">Calculatrice::saisie_nouvelle_pile</references>
+        <references refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" compoundref="ui__mainwindow_8h" startline="85">Ui_MainWindow::listView</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a10bc645984994b33d7176946fc06eff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::supprimer_tete_pileClicked</definition>
+        <argsstring>()</argsstring>
+        <name>supprimer_tete_pileClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="100" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="107" bodyend="112"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" compoundref="calculatrice_8h" startline="46" endline="46">Calculatrice::getPileStockage</references>
+        <references refid="class_pile_1a4be384a2c00fff0afed507231a2974dc" compoundref="pile_8cpp" startline="155" endline="166">Pile::copier_pile</references>
+        <references refid="class_calculatrice_1acc6b301035c21041dbd4ffb7f6f5645e" compoundref="calculatrice_8cpp" startline="73" endline="83">Calculatrice::saisie_nouvelle_pile</references>
+        <references refid="class_pile_1a7488ed257c6ceb16ed57a9fffb0726d5" compoundref="pile_8cpp" startline="168" endline="177">Pile::drop</references>
+        <references refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" compoundref="ui__mainwindow_8h" startline="85">Ui_MainWindow::listView</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
+      </memberdef>
+      <memberdef kind="slot" id="class_main_window_1a4d771b6ac11d2280aa5e45e4d47a2011" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MainWindow::dupliquer_tete_pileClicked</definition>
+        <argsstring>()</argsstring>
+        <name>dupliquer_tete_pileClicked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="101" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.cpp" bodystart="114" bodyend="120"/>
+        <references refid="class_calculatrice_1a6311c8e75ac47e9f43ecd47ebc22c10b" compoundref="calculatrice_8cpp" startline="114" endline="121">Calculatrice::getInstance</references>
+        <references refid="class_calculatrice_1abc998bdc47fd8e4388f2d8b03f1d9949" compoundref="calculatrice_8h" startline="46" endline="46">Calculatrice::getPileStockage</references>
+        <references refid="class_pile_1a4be384a2c00fff0afed507231a2974dc" compoundref="pile_8cpp" startline="155" endline="166">Pile::copier_pile</references>
+        <references refid="class_calculatrice_1acc6b301035c21041dbd4ffb7f6f5645e" compoundref="calculatrice_8cpp" startline="73" endline="83">Calculatrice::saisie_nouvelle_pile</references>
+        <references refid="class_pile_1a081f7843d01cae1f0f7be7d92e46d5d2" compoundref="pile_8cpp" startline="144" endline="153">Pile::dup</references>
+        <references refid="class_ui___main_window_1aaf97aba343edd00a0114b406c2b77365" compoundref="ui__mainwindow_8h" startline="85">Ui_MainWindow::listView</references>
+        <referencedby refid="class_main_window_1a8b244be8b7b7db1b08de2a2acb9409db" compoundref="mainwindow_8cpp" startline="16" endline="99">MainWindow</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" line="29" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/lo21-npi.2/mainwindow.h" bodystart="28" bodyend="103"/>
+    <location file="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" line="31" bodyfile="/home/yuntux/UTC/GI02/LO21/projet/projet_propre/mainwindow.h" bodystart="30" bodyend="105"/>
     <listofallmembers>
       <member refid="class_main_window_1a9200740951f715069c9f2bc7809f6e07" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_clavierAvanceStateChange</name></member>
       <member refid="class_main_window_1a0056914c89217bbef8879ccae4466e28" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_clavierBasicStateChange</name></member>
-      <member refid="class_main_window_1a7b6885be3b8c6d0222aafa77748b852d" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_modAngle</name></member>
-      <member refid="class_main_window_1a1d3d51f25fd1414069631111de1c1c24" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_modComplexe</name></member>
       <member refid="class_main_window_1a85b97292e1728650fc34d989170a0886" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modComplexeOFFClicked</name></member>
       <member refid="class_main_window_1a6febb02daee1abb1c9c0d0f9d190b25c" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modComplexeONClicked</name></member>
-      <member refid="class_main_window_1a2fab64d84959d8048ae0c7e47a7c3fd7" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_modConstante</name></member>
       <member refid="class_main_window_1aa181a30bc86fd676299a828b6806fff7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modDegresToggled</name></member>
       <member refid="class_main_window_1a05cfdc8bf99fa145e67ce4d9eed03f20" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modEntier</name></member>
       <member refid="class_main_window_1ae1cb8b4b1f79083accb25c66e6847abc" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modRadiansToggled</name></member>
       <member refid="class_main_window_1af8e967129145a378e37fc2ff4eb1379c" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modRationnel</name></member>
       <member refid="class_main_window_1a29e8205bc963cebba7a96f94f4d3c40f" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>_modReel</name></member>
-      <member refid="class_main_window_1a0e09dbed6be4c5b1bbfaa9fa852b7aef" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_pileAffichage</name></member>
-      <member refid="class_main_window_1ab55da16dd118ff5a3718e25b3e4f0476" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_pileStockage</name></member>
-      <member refid="class_main_window_1a211bdf68e726481ddd5ced4626189c4b" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_pileStockageComplexe</name></member>
-      <member refid="class_main_window_1add21502d1d68dd52ef18375379f57ff8" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>_pileStockageReelle</name></member>
       <member refid="class_main_window_1a7babfc70d1010ea3e7efe67b788e0ec5" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ADDITIONNERClicked</name></member>
-      <member refid="class_main_window_1a810709db5f60967d9ac69169ce4cbecc" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>afficheur_pile</name></member>
+      <member refid="class_main_window_1ad796f3d5c13e4ed2ea90e17aa0a3d7a8" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>annulerClicked</name></member>
       <member refid="class_main_window_1acd5bbd32604f72b223e69a58088ddabd" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>CClicked</name></member>
       <member refid="class_main_window_1a1a093a266d6f67c63e27b410de323e3f" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>CEClicked</name></member>
+      <member refid="class_main_window_1a4e20a4a065fbb0e4d3532a45a0a91425" prot="protected" virt="non-virtual"><scope>MainWindow</scope><name>closeEvent</name></member>
       <member refid="class_main_window_1acc7b69effe16bf3936be897b1e9697a2" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>COSClicked</name></member>
       <member refid="class_main_window_1ae0cb839c1a84f68cfe7d55d75679bf32" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>COSHClicked</name></member>
       <member refid="class_main_window_1a7e0ee20d8b3f6c4638ddced7d894c595" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>CUBEClicked</name></member>
+      <member refid="class_main_window_1aa9bae53abcb888f5e8cda8aa654e50e5" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>dernier_element_expression</name></member>
       <member refid="class_main_window_1a785abff91c01b674c3b795dc289ae629" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>DIVISERClicked</name></member>
       <member refid="class_main_window_1adc9d3f1638131c5d291c54380fda801f" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>DOLLARClicked</name></member>
-      <member refid="class_main_window_1a71be435db24c12ee4c320a16a0b33ef6" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>empiler</name></member>
+      <member refid="class_main_window_1a4d771b6ac11d2280aa5e45e4d47a2011" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>dupliquer_tete_pileClicked</name></member>
       <member refid="class_main_window_1a0ae0ae526c8fcc96c7f32fc3b3727224" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ENTERClicked</name></member>
       <member refid="class_main_window_1a4f3a33c651ac011d7a4ee62f70c88e44" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>ESPACEClicked</name></member>
+      <member refid="class_main_window_1a2472c42b862ef1dc38b75c4111a28590" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>EVALClicked</name></member>
       <member refid="class_main_window_1a97ac3886016cc9dc1cc7ae1be4abac65" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>FACTORIELClicked</name></member>
       <member refid="class_main_window_1a254c2a0ab491f878157d6abb8d4a8381" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>INVClicked</name></member>
       <member refid="class_main_window_1a16e852b776efdec4876c32f0fb56a5b0" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>LNClicked</name></member>
@@ -916,20 +1338,24 @@
       <member refid="class_main_window_1ae34dccd3c4bdff6452250ec4807977e4" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>num7Clicked</name></member>
       <member refid="class_main_window_1ab86f29d78da5c85373b2126cdbfadf78" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>num8Clicked</name></member>
       <member refid="class_main_window_1a48cd898abe91cf0b7784dfce7258b8f6" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>num9Clicked</name></member>
+      <member refid="class_main_window_1a5c1743c01e8cf19b5b0e678a09734363" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>PIBOUTONClicked</name></member>
       <member refid="class_main_window_1a96f5509a262bda1ee40ceaddb081bff6" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>POINTClicked</name></member>
       <member refid="class_main_window_1ab623e042d0384fce67ee67b86aa092ab" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>POWClicked</name></member>
       <member refid="class_main_window_1aa3cc15e4ab21e8d1d02b2c908f7ed955" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>QUOTEClicked</name></member>
-      <member refid="class_main_window_1a80381181e476064c086666abb2cfa2ce" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>saveToFile</name></member>
+      <member refid="class_main_window_1abc93f16a699c5df5e5aedd67e1ad7e92" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>retablirClicked</name></member>
       <member refid="class_main_window_1aada810f5e314c0180e159729f1af13f5" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>SIGNClicked</name></member>
       <member refid="class_main_window_1a694058b9993bdad7bf4c96b7bae1af37" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>SINClicked</name></member>
       <member refid="class_main_window_1ae18b7a59154a29d9166dae53a02da0cd" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>SINHClicked</name></member>
       <member refid="class_main_window_1aef8aa8858f4a280f6da4ef6f6b4cf208" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>SOUSTRAIREClicked</name></member>
       <member refid="class_main_window_1ad6048a7bb41b1e0ac37bb1f05e458cc8" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>SQRClicked</name></member>
       <member refid="class_main_window_1a40ff97255a9f62068bf20312468060dd" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>SQRTClicked</name></member>
+      <member refid="class_main_window_1a10bc645984994b33d7176946fc06eff2" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>supprimer_tete_pileClicked</name></member>
       <member refid="class_main_window_1abd6beb62d32cc0922fd78819e3c4a9cd" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>TANClicked</name></member>
       <member refid="class_main_window_1a9674367d1b35c2b7fcb37547982c7142" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>TANHClicked</name></member>
-      <member refid="class_main_window_1a2a1ee33b84e16a22e7656bc43220483d" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>traitement_expr</name></member>
+      <member refid="class_main_window_1a1ccb4aa361ba5710af1ee09263a994fe" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>traiter_bloc_calcul</name></member>
+      <member refid="class_main_window_1a5820c5fa916142942adc9984c434793e" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>traiter_bloc_expression</name></member>
       <member refid="class_main_window_1a35466a70ed47252a0191168126a352a5" prot="private" virt="non-virtual"><scope>MainWindow</scope><name>ui</name></member>
+      <member refid="class_main_window_1a164eb394f8581e1f80fba559bcc3d2e5" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>vider_pileClicked</name></member>
       <member refid="class_main_window_1ae98d00a93bc118200eeef9f9bba1dba7" prot="public" virt="non-virtual"><scope>MainWindow</scope><name>~MainWindow</name></member>
     </listofallmembers>
   </compounddef>

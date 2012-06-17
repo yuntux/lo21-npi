@@ -1,4 +1,4 @@
-.TH "Entier" 3 "Thu Jun 7 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
+.TH "Entier" 3 "Samedi Juin 16 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -7,8 +7,10 @@ Entier \-
 .br
 .PP
 .PP
-Inherits \fBConstante\fP\&.
-.SS "Public Member Functions"
+\fC#include <entier\&.h>\fP
+.PP
+Est dérivée de \fBConstante\fP\&.
+.SS "Fonctions membres publiques"
 
 .in +1c
 .ti -1c
@@ -16,6 +18,9 @@ Inherits \fBConstante\fP\&.
 .br
 .ti -1c
 .RI "\fBEntier\fP (\fBConstante\fP *c)"
+.br
+.ti -1c
+.RI "virtual \fB~Entier\fP ()"
 .br
 .ti -1c
 .RI "virtual QString \fBafficher\fP () const "
@@ -45,16 +50,407 @@ Inherits \fBConstante\fP\&.
 .RI "int \fBmod\fP (\fBEntier\fP *c)"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBinv\fP ()"
-.br
-.ti -1c
 .RI "virtual \fBConstante\fP * \fBfact\fP ()"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBsinus\fP ()"
+.RI "virtual \fBConstante\fP * \fBinv\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBsinus\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcosinus\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBsinush\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcosinush\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBtangente\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBtangenteh\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBlogN\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBlog1\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBpuissance\fP (\fBConstante\fP *c)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcarre\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcube\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBracine\fP ()"
 .br
 .in -1c
-
-.SH "Author"
+.SH "Description détaillée"
 .PP 
-Generated automatically by Doxygen for Calculatrice polonais inversé LO21 from the source code\&.
+Définition à la ligne 18 du fichier entier\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBEntier::Entier\fP (inte)\fC [inline]\fP"
+.PP
+Définition à la ligne 22 du fichier entier\&.h\&.
+.SS "\fBEntier::Entier\fP (\fBConstante\fP *c)"Constructeur d'entier
+.PP
+On vérifie le type de la constante passée en paramètre, et si c'est un entier, on recopie sa valeur dans le nouvel entier, sinon on lève une exception\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une constante, donc entier, réel, rationnel ou complexe
+.RE
+.PP
+
+.PP
+Définition à la ligne 9 du fichier entier\&.cpp\&.
+.SS "virtual \fBEntier::~Entier\fP ()\fC [inline, virtual]\fP"
+.PP
+Définition à la ligne 24 du fichier entier\&.h\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "\fBConstante\fP * \fBEntier::addition\fP (\fBConstante\fP *c)\fC [virtual]\fP"Somme de 2 entiers
+.PP
+On vérifie le type du paramètre, et on crée une nouvelle instance de ce type en fonction, dont le ou les attributs seront en fait la somme des 2 entiers dont l'on veut calculer l'addition\&.Cependant, si on est en mode \fBEntier\fP, on ne doit pas avoir les autres types de constante\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une constante 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit, car on utilisera toujours les formes complexes pour les calculs
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 40 du fichier entier\&.cpp\&.
+.SS "virtual QString \fBEntier::afficher\fP () const\fC [inline, virtual]\fP"
+.PP
+Implémente \fBConstante\fP\&.
+.PP
+Définition à la ligne 25 du fichier entier\&.h\&.
+.SS "\fBConstante\fP * \fBEntier::carre\fP ()\fC [virtual]\fP"Fonction carré
+.PP
+On crée un nouvel \fBEntier\fP dont la valeur est le résultat du carré 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit construit à partir du résultat de la fonction
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 293 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::cosinus\fP (boolangle)\fC [virtual]\fP"Calcul du Cosinus
+.PP
+Si le paramètre est vrai, on se situe en mode Degré\&. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction \fIcos\fP de cmath est définie en radians\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Sert à savoir si l'on est en mode Degré ou non 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit construit à partir d'un entier contenant la valeur du cosinus
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 158 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::cosinush\fP (boolangle)\fC [virtual]\fP"Calcul du Cosinus Hyperbolique
+.PP
+Si le paramètre est vrai, on se situe en mode Degré\&. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction \fIcosh\fP de cmath est définie en radians\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Sert à savoir si l'on est en mode Degré ou non 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit construit à partir d'un entier contenant la valeur du cosinus hyperbolique
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 188 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::cube\fP ()\fC [virtual]\fP"Fonction cube
+.PP
+On crée un nouvel \fBEntier\fP dont la valeur est le résultat du cube 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit construit à partir du résultat de la fonction
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 304 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::division\fP (\fBConstante\fP *c)\fC [virtual]\fP"Division d'entiers
+.PP
+Comme pour la somme et le produit, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra le quotient demandé\&. Cependant, normalement en mode \fBEntier\fP, on ne doit avoir que des entiers\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une \fBConstante\fP 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit contenant le quotient
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 93 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::fact\fP ()\fC [virtual]\fP"Calcul du factoriel
+.PP
+De manière itérative, le résultat est 1 si la valeur de l'entier est 0, et sinon on fait le calcul proprement dit 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un nouveau \fI\fBComplexe\fP\fP, construit à partir de l'entier qui contient la valeur du factoriel
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 125 du fichier entier\&.cpp\&.
+.SS "int \fBEntier::getValeur\fP () const\fC [inline]\fP"
+.PP
+Définition à la ligne 26 du fichier entier\&.h\&.
+.SS "\fBConstante\fP * \fBEntier::inv\fP ()\fC [virtual]\fP"Inverse d'un entier
+.PP
+L'inverse d'un nombre est situé entre 0 et 1\&. Si l'on est en mode entier, on a une importante perte de précision, car on ne retournera que 0 ou 1 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBRationnel\fP\fP car on perd moins de précisions comme cela
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 236 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::log1\fP ()\fC [virtual]\fP"Logarithme décimal
+.PP
+On crée un nouvel \fBEntier\fP dont la valeur est celle du logarithme décimal de l'entier initial\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit construit avec cet entier
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 259 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::logN\fP ()\fC [virtual]\fP"Logarithme népérien
+.PP
+On crée un nouvel \fBEntier\fP dont la valeur est celle du logarithme népérien de l'entier initial\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit construit avec cet entier
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 247 du fichier entier\&.cpp\&.
+.SS "int \fBEntier::mod\fP (\fBEntier\fP *c)"
+.SS "\fBConstante\fP * \fBEntier::produit\fP (\fBConstante\fP *c)\fC [virtual]\fP"Produit de deux entiers
+.PP
+Comme pour la somme, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra le produit demandé\&. Cependant, normalement en mode \fBEntier\fP, on ne doit avoir que des entiers\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une \fBConstante\fP 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit contenant le produit
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 65 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::puissance\fP (\fBConstante\fP *c)\fC [virtual]\fP"Puissance de deux entiers
+.PP
+On effectue un transtypage en entier afin de récupérer l'exposant sous forme entière\&. On calcule ensuite grâce à la fonction \fIpow\fP de la bibliothèque \fIcmath\fP\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une \fI\fBConstante\fP\fP qui sera l'exposant 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit construit à partir du résultat
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 271 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::racine\fP ()\fC [virtual]\fP"Fonction racine carrée
+.PP
+On crée un nouvel \fBEntier\fP dont la valeur est le résultat de la racine carrée 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit construit à partir du résultat de la fonction
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 315 du fichier entier\&.cpp\&.
+.SS "void \fBEntier::setValeur\fP (intv)\fC [inline]\fP"
+.PP
+Définition à la ligne 27 du fichier entier\&.h\&.
+.SS "\fBConstante\fP * \fBEntier::signe\fP ()\fC [virtual]\fP"Inversion de signe d'un entier
+.PP
+On crée un nouvel entier dont la valeur est l'opposée de celle initiale 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP, de valeur opposée
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 105 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::sinus\fP (boolangle)\fC [virtual]\fP"Calcul du Sinus
+.PP
+Si le paramètre est vrai, on se situe en mode Degré\&. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction \fIsin\fP de cmath est définie en radians\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Sert à savoir si l'on est en mode Degré ou non 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit construit à partir d'un entier contenant la valeur du sinus
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 143 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::sinush\fP (boolangle)\fC [virtual]\fP"Calcul du Sinus Hyperbolique
+.PP
+Si le paramètre est vrai, on se situe en mode Degré\&. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction \fIsinh\fP de cmath est définie en radians\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Sert à savoir si l'on est en mode Degré ou non 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit construit à partir d'un entier contenant la valeur du sinus hyperbolique
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 173 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::soustraction\fP (\fBConstante\fP *c)\fC [virtual]\fP"Différence d'entiers
+.PP
+Comme pour les autres opérations, on vérifie le type du paramètre, et on crée une nouvelle instance de ce type qui contiendra la différence voulue\&. Cependant, normalement en mode \fBEntier\fP, on ne doit avoir que des entiers\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP Une \fBConstante\fP 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit contenant la différence
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 114 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::tangente\fP (boolangle)\fC [virtual]\fP"Calcul de la Tangente
+.PP
+Si le paramètre est vrai, on se situe en mode Degré\&. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction \fItan\fP de cmath est définie en radians\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Sert à savoir si l'on est en mode Degré ou non 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit construit à partir d'un entier contenant la valeur de la tangente
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 204 du fichier entier\&.cpp\&.
+.SS "\fBConstante\fP * \fBEntier::tangenteh\fP (boolangle)\fC [virtual]\fP"Calcul de la Tangente Hyperbolique
+.PP
+Si le paramètre est vrai, on se situe en mode Degré\&. Dans ce cas, il faut multiplier la valeur par PI/180, car la fonction \fItanh\fP de cmath est définie en radians\&. 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIangle\fP Sert à savoir si l'on est en mode Degré ou non 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBEntier\fP\fP construit construit à partir d'un entier contenant la valeur de la tangente hyperbolique
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 220 du fichier entier\&.cpp\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Calculatrice polonais inversé LO21 à partir du code source\&.

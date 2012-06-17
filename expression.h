@@ -8,29 +8,10 @@ class Expression : public Constante
 {
     QString _expr;
 public:
-    Expression(QString s);
+    Expression(QString s) :_expr(s){}
     virtual ~Expression(){}
     QString getExpr() const {return _expr;}
     void setExpr(QString e){ _expr = e;}
-    virtual Constante* addition(Constante* c);
-    virtual Constante* produit(Constante *c);
-    virtual Constante* division(Constante* c);
-    virtual Constante* signe();
-    virtual Constante* soustraction(Constante* c);
-    virtual Constante* inv();
-    virtual Constante* fact();
-    virtual Constante* sinus(bool angle);
-    virtual Constante* cosinus(bool angle);
-    virtual Constante* sinush(bool angle);
-    virtual Constante* cosinush(bool angle);
-    virtual Constante* tangente(bool angle);
-    virtual Constante* tangenteh(bool angle);
-    virtual Constante* logN();
-    virtual Constante* log1();
-    virtual Constante* puissance(Constante *c);
-    virtual Constante* carre();
-    virtual Constante* cube();
-    virtual Constante* racine();
-    virtual QString afficher() const;
+    virtual QString afficher() const{ return _expr; }
 };
 #endif // EXPRESSION_H

@@ -1,4 +1,4 @@
-.TH "Pile" 3 "Thu Jun 7 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
+.TH "Pile" 3 "Samedi Juin 16 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,7 +6,9 @@ Pile \-
 .SH SYNOPSIS
 .br
 .PP
-.SS "Public Member Functions"
+.PP
+\fC#include <pile\&.h>\fP
+.SS "Fonctions membres publiques"
 
 .in +1c
 .ti -1c
@@ -28,10 +30,34 @@ Pile \-
 .RI "\fBPile\fP (QObject *parent=0)"
 .br
 .ti -1c
+.RI "virtual \fB~Pile\fP ()"
+.br
+.ti -1c
 .RI "\fBConstante\fP * \fBsum\fP (unsigned int x=2)"
 .br
 .ti -1c
+.RI "\fBConstante\fP * \fBmean\fP (unsigned int x=2)"
+.br
+.ti -1c
+.RI "void \fBclear\fP ()"
+.br
+.ti -1c
+.RI "void \fBdup\fP ()"
+.br
+.ti -1c
+.RI "void \fBdrop\fP ()"
+.br
+.ti -1c
+.RI "void \fBswap\fP (unsigned int x, unsigned int y)"
+.br
+.ti -1c
 .RI "QString \fBafficher\fP () const "
+.br
+.ti -1c
+.RI "\fBPile\fP * \fBcopier_pile\fP ()"
+.br
+.ti -1c
+.RI "void \fBsauv_pile_context\fP ()"
 .br
 .ti -1c
 .RI "int \fBrowCount\fP (const QModelIndex &parent) const "
@@ -40,14 +66,168 @@ Pile \-
 .RI "QVariant \fBdata\fP (const QModelIndex &index, int role) const "
 .br
 .in -1c
-.SS "Protected Member Functions"
+.SS "Fonctions membres protégées"
 
 .in +1c
 .ti -1c
 .RI "void \fBoperator=\fP (const \fBPile\fP &)"
 .br
 .in -1c
-
-.SH "Author"
+.SH "Description détaillée"
 .PP 
-Generated automatically by Doxygen for Calculatrice polonais inversé LO21 from the source code\&.
+Définition à la ligne 10 du fichier pile\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBPile::Pile\fP (QObject *parent = \fC0\fP)\fC [inline]\fP"
+.PP
+Définition à la ligne 23 du fichier pile\&.h\&.
+.SS "\fBPile::~Pile\fP ()\fC [virtual]\fP"Destructeur de pile
+.PP
+Destruction de la pile et de chaque membre de cette pile
+.PP
+Définition à la ligne 45 du fichier pile\&.cpp\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "QString \fBPile::afficher\fP () const"Affichage pile
+.PP
+On affiche chaque élément de la pile en concaténant dans une QString 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Une \fIQString\fP correspondant à ce qui se trouve dans la pile
+.RE
+.PP
+
+.PP
+Définition à la ligne 58 du fichier pile\&.cpp\&.
+.SS "void \fBPile::clear\fP ()"Vider la pile
+.PP
+On dépile chaque élément de la pile, en faisant appel à la fonction \fIpop\fP 
+.PP
+Définition à la ligne 131 du fichier pile\&.cpp\&.
+.SS "\fBPile\fP * \fBPile::copier_pile\fP ()"Copier la pile
+.PP
+Copie la pile et les éléments qu'elle contient
+.PP
+Définition à la ligne 155 du fichier pile\&.cpp\&.
+.SS "QVariant \fBPile::data\fP (const QModelIndex &index, introle) const"
+.PP
+Définition à la ligne 28 du fichier pile\&.cpp\&.
+.SS "void \fBPile::drop\fP ()"Suppression premier élément
+.PP
+Supprimer le premier élément de la pile
+.PP
+Définition à la ligne 168 du fichier pile\&.cpp\&.
+.SS "void \fBPile::dup\fP ()"Duplication
+.PP
+Duplication du premier élément de la pile
+.PP
+Définition à la ligne 144 du fichier pile\&.cpp\&.
+.SS "bool \fBPile::isEmpty\fP () const\fC [inline]\fP"
+.PP
+Définition à la ligne 21 du fichier pile\&.h\&.
+.SS "\fBConstante\fP * \fBPile::mean\fP (unsigned intx = \fC2\fP)"Moyenne sur la pile
+.PP
+Effectue la moyenne sur les \fIx\fP premiers éléments de la pile, en fonction du paramètre\&. Pour cela, on appelle la fonction \fIsum\fP, puis on divise en fonction du paramètre x 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIx\fP \fBEntier\fP correspondant au nombre d'éléments pour la moyenne 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Une \fI\fBConstante\fP\fP contenant le résultat de la moyenne
+.RE
+.PP
+
+.PP
+Définition à la ligne 117 du fichier pile\&.cpp\&.
+.SS "void Pile::operator= (const \fBPile\fP &)\fC [protected]\fP"
+.SS "\fBConstante\fP * \fBPile::pop\fP ()"Dépiler
+.PP
+Tester d'abord si la pile n'est pas vide\&. Si c'est bon, alors on dépile le premier élément, oorrespondant au dernier ajouté 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Une \fI\fBConstante\fP\fP correspondant au dernier élément, ou NULL
+.RE
+.PP
+
+.PP
+Définition à la ligne 74 du fichier pile\&.cpp\&.
+.SS "void \fBPile::push\fP (\fBConstante\fP *ptr)"Empiler
+.PP
+Permet d'empiler la \fBConstante\fP entrée en paramètre dans la pile 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIptr\fP Un pointeur de \fBConstante\fP
+.RE
+.PP
+
+.PP
+Définition à la ligne 8 du fichier pile\&.cpp\&.
+.SS "int \fBPile::rowCount\fP (const QModelIndex &parent) const"Compteur Taille
+.PP
+Permet de connaître la taille d'une pile 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIparent\fP Un QModelIndex 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un entier correspondant à la taille de la pile
+.RE
+.PP
+
+.PP
+Définition à la ligne 17 du fichier pile\&.cpp\&.
+.SS "void \fBPile::sauv_pile_context\fP ()"Sauvegarde de la pile
+.PP
+Sauvegarde la pile dans le fichier ini
+.PP
+Définition à la ligne 195 du fichier pile\&.cpp\&.
+.SS "int \fBPile::size\fP () const\fC [inline]\fP"
+.PP
+Définition à la ligne 22 du fichier pile\&.h\&.
+.SS "\fBConstante\fP * \fBPile::sum\fP (unsigned intx = \fC2\fP)"Somme sur la pile
+.PP
+Effectue la somme sur les \fIx\fP premiers éléments de la pile, en fonction du paramètre\&. Pour cela, on ajoute au résultat (qui est un \fBComplexe\fP) la valeur de l'élément dépilé\&. On empile ensuite le résultat 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIx\fP \fBEntier\fP correspondant au nombre d'éléments à sommer 
+.RE
+.PP
+\fBRenvoie:\fP
+.RS 4
+Une \fI\fBConstante\fP\fP contenant le résultat de la somme
+.RE
+.PP
+
+.PP
+Définition à la ligne 98 du fichier pile\&.cpp\&.
+.SS "void \fBPile::swap\fP (unsigned intx, unsigned inty)"Échange
+.PP
+Échange des deux éléments dont les positions sont passées en paramètres 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIx\fP \fBEntier\fP, position du premier élément 
+.br
+\fIy\fP \fBEntier\fP, position du second élément
+.RE
+.PP
+
+.PP
+Définition à la ligne 179 du fichier pile\&.cpp\&.
+.SS "\fBConstante\fP* \fBPile::top\fP ()\fC [inline]\fP"
+.PP
+Définition à la ligne 19 du fichier pile\&.h\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Calculatrice polonais inversé LO21 à partir du code source\&.

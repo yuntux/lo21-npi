@@ -1,4 +1,4 @@
-.TH "Complexe" 3 "Thu Jun 7 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
+.TH "Complexe" 3 "Samedi Juin 16 2012" "Calculatrice polonais inversé LO21" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -7,14 +7,20 @@ Complexe \-
 .br
 .PP
 .PP
-Inherits \fBConstante\fP\&.
+\fC#include <complexe\&.h>\fP
 .PP
-Inherited by \fBFrabriqueComplexe\fP\&.
-.SS "Public Member Functions"
+Est dérivée de \fBConstante\fP\&.
+.SS "Fonctions membres publiques"
 
 .in +1c
 .ti -1c
+.RI "\fBComplexe\fP ()"
+.br
+.ti -1c
 .RI "\fBComplexe\fP (\fBConstante\fP *r, \fBConstante\fP *i)"
+.br
+.ti -1c
+.RI "virtual \fB~Complexe\fP ()"
 .br
 .ti -1c
 .RI "virtual QString \fBafficher\fP () const "
@@ -33,6 +39,9 @@ Inherited by \fBFrabriqueComplexe\fP\&.
 .br
 .ti -1c
 .RI "\fBComplexe\fP (\fBConstante\fP *c)"
+.br
+.ti -1c
+.RI "bool \fBreel_pur\fP () const "
 .br
 .ti -1c
 .RI "virtual \fBConstante\fP * \fBaddition\fP (\fBConstante\fP *c)"
@@ -56,10 +65,253 @@ Inherited by \fBFrabriqueComplexe\fP\&.
 .RI "virtual \fBConstante\fP * \fBfact\fP ()"
 .br
 .ti -1c
-.RI "virtual \fBConstante\fP * \fBsinus\fP ()"
+.RI "virtual \fBConstante\fP * \fBsinus\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcosinus\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBsinush\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcosinush\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBtangente\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBtangenteh\fP (bool angle)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBlogN\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBlog1\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBpuissance\fP (\fBConstante\fP *c)"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcarre\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBcube\fP ()"
+.br
+.ti -1c
+.RI "virtual \fBConstante\fP * \fBracine\fP ()"
 .br
 .in -1c
-
-.SH "Author"
+.SH "Description détaillée"
 .PP 
-Generated automatically by Doxygen for Calculatrice polonais inversé LO21 from the source code\&.
+Définition à la ligne 20 du fichier complexe\&.h\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "\fBComplexe::Complexe\fP ()\fC [inline]\fP"
+.PP
+Définition à la ligne 26 du fichier complexe\&.h\&.
+.SS "\fBComplexe::Complexe\fP (\fBConstante\fP *r, \fBConstante\fP *i)"Constructeur surchargé de complexe
+.PP
+On vérifie le type des 2 constantes, et on lève une exception si ce sont des complexes, car un complexe ne peut pas être composé lui même de complexes 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIr\fP la partie réelle est une \fBConstante\fP 
+.br
+\fIi\fP la partie imaginaire est une \fBConstante\fP aussi
+.RE
+.PP
+
+.PP
+Définition à la ligne 17 du fichier complexe\&.cpp\&.
+.SS "\fBComplexe::~Complexe\fP ()\fC [virtual]\fP"Destructeru de complexe
+.PP
+Rétabli le dernier état annulé de la pile Historique\&.
+.PP
+Définition à la ligne 8 du fichier complexe\&.cpp\&.
+.SS "\fBComplexe::Complexe\fP (\fBConstante\fP *c)"Constructeur surchargé à un paramètre
+.PP
+On vérifie les types, et on crée un complexe qui n'aura qu'une partie réelle 
+.PP
+\fBParamètres:\fP
+.RS 4
+\fIc\fP seul paramètre, qui est une \fBConstante\fP
+.RE
+.PP
+
+.PP
+Définition à la ligne 34 du fichier complexe\&.cpp\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "\fBConstante\fP * \fBComplexe::addition\fP (\fBConstante\fP *c)\fC [virtual]\fP"Addition de 2 complexes
+.PP
+On crée 3 complexes : \fIc_entier\fP, construit à partir du paramètre, \fIre\fP, qui est l'addition des 2 parties réelles et \fIim\fP, qui est l'addition des 2 parties imaginaires 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Une \fI\fBConstante\fP\fP, qui est en fait un \fI\fBComplexe\fP\fP, dont la partie imaginaire est \fIre\fP et la partie imaginaire \fIim\fP\&.
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 73 du fichier complexe\&.cpp\&.
+.SS "QString \fBComplexe::afficher\fP () const\fC [virtual]\fP"Méthode d'affichae d'un \fBComplexe\fP
+.PP
+On vérifie le type de la partie imaginaire, et on crée une nouvelle constante de ce type\&. Si la partie imaginaire est nule, on affiche la partie réelle, sinon on affiche la partie réelle, un $ et la partie imaginaire\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Une \fIQString\fP permettant l'affichage
+.RE
+.PP
+
+.PP
+Implémente \fBConstante\fP\&.
+.PP
+Définition à la ligne 59 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::carre\fP ()\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 204 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::cosinus\fP (boolangle)\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 155 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::cosinush\fP (boolangle)\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 171 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::cube\fP ()\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 210 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::division\fP (\fBConstante\fP *c)\fC [virtual]\fP"Division de 2 complexes
+.PP
+On utilise la multiplication par le conjuguÃ© du diviseur au numÃ©rateur et au dÃ©nominateur a+ib / c+id = (a+ib)*(c-id) / (c+id)*(c-id) = \&.\&.\&. = [(ac+bd)/(cÂ²+dÂ²)] + i[(cb-ad)/(cÂ²+dÂ²)] 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBComplexe\fP\fP comme pour les autres opérations
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 103 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::fact\fP ()\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 139 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP* \fBComplexe::getPartieImaginaire\fP () const\fC [inline]\fP"
+.PP
+Définition à la ligne 31 du fichier complexe\&.h\&.
+.SS "\fBConstante\fP* \fBComplexe::getPartieReelle\fP () const\fC [inline]\fP"
+.PP
+Définition à la ligne 30 du fichier complexe\&.h\&.
+.SS "\fBConstante\fP * \fBComplexe::inv\fP ()\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 196 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::log1\fP ()\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 240 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::logN\fP ()\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 232 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::produit\fP (\fBConstante\fP *c)\fC [virtual]\fP"Produit de 2 complexes
+.PP
+Comme pour l'addition, on crée trois complexes\&. Cette fois, \fIre\fP est le produit des parties réelles, de la forme a*c - b*d, et \fIim\fP est le produit des parties imaginaires, de la forme a*d + c*b\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBComplexe\fP\fP comme pour l'addition
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 88 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::puissance\fP (\fBConstante\fP *c)\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 224 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::racine\fP ()\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 216 du fichier complexe\&.cpp\&.
+.SS "bool \fBComplexe::reel_pur\fP () const"
+.PP
+Définition à la ligne 248 du fichier complexe\&.cpp\&.
+.SS "void \fBComplexe::setImaginaire\fP (\fBConstante\fP *im)\fC [inline]\fP"
+.PP
+Définition à la ligne 33 du fichier complexe\&.h\&.
+.SS "void \fBComplexe::setReelle\fP (\fBConstante\fP *re)\fC [inline]\fP"
+.PP
+Définition à la ligne 32 du fichier complexe\&.h\&.
+.SS "\fBConstante\fP * \fBComplexe::signe\fP ()\fC [virtual]\fP"Changement de signe
+.PP
+On recopie tout d'abord la constante, qu'on caste ensuite en complexe\&. On crée un entier de valeur -1 qu'on va multiplier avec les parties réelles et imaginaires de 2 nouveaux complexes qui servent temporairement pour ensuite modifier la valeur du complexe initial 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Le nouveau \fI\fBComplexe\fP\fP 
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 115 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::sinus\fP (boolangle)\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 147 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::sinush\fP (boolangle)\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 163 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::soustraction\fP (\fBConstante\fP *c)\fC [virtual]\fP"Différence de deux complexes
+.PP
+De la même façon, cette fois \fIre\fP va être la différence des 2 parties réelles, et \fIim\fP la différence des parties imaginaires\&. 
+.PP
+\fBRenvoie:\fP
+.RS 4
+Un \fI\fBComplexe\fP\fP dont la partie réelle est \fIre\fP et la partie imaginaire est \fIim\fP\&.
+.RE
+.PP
+
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 127 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::tangente\fP (boolangle)\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 179 du fichier complexe\&.cpp\&.
+.SS "\fBConstante\fP * \fBComplexe::tangenteh\fP (boolangle)\fC [virtual]\fP"
+.PP
+Réimplémentée à partir de \fBConstante\fP\&.
+.PP
+Définition à la ligne 187 du fichier complexe\&.cpp\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour Calculatrice polonais inversé LO21 à partir du code source\&.

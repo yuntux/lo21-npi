@@ -59,9 +59,4 @@ public:
     virtual Constante* racine();
 };
 
-class FrabriqueComplexe : public Complexe{
-public:
-    Complexe fabriquer();
-};
-
 #endif // COMPLEXE_H
